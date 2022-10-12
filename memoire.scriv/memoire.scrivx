@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.1.0" Device="LAPTOP-3B08EOV7" Modified="2022-10-12 09:35:52 +0200" ModID="67F2217C-6863-4BEE-B1E0-A6F869EF8650">
+    <Binder>
+        <BinderItem UUID="8E61D5F6-11A8-44D9-9378-A48333405434" Type="DraftFolder" Created="2021-09-06 15:50:24 +0200" Modified="2021-09-06 15:50:24 +0200">
+            <Title>Draft</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem UUID="A596FC36-6D37-48CB-BFBE-A5C64E17A566" Type="Text" Created="2021-09-06 19:46:59 +0200" Modified="2022-10-12 09:35:50 +0200">
+                    <Title>Projet de recherche revu</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextMode>General</TextMode>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="A9394880-F5D6-462F-A916-2A703EA7B05F" Type="Folder" Created="2021-09-06 15:57:58 +0200" Modified="2021-09-06 15:58:37 +0200">
+                    <Title>Notes</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem UUID="1811AFFD-7722-455C-BF35-B431A3FA4C2F" Type="ResearchFolder" Created="2021-09-06 15:50:24 +0200" Modified="2021-09-06 15:50:24 +0200">
+            <Title>Research</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+        </BinderItem>
+        <BinderItem UUID="B0599A73-B398-41B0-B3D1-51E092E15E1C" Type="TrashFolder" Created="2021-09-06 15:50:24 +0200" Modified="2021-09-06 15:50:24 +0200">
+            <Title>Trash</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem UUID="74944775-1794-439A-8C5F-9FEC62D2BACD" Type="Text" Created="2021-09-06 15:57:50 +0200" Modified="2021-09-06 17:29:55 +0200">
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>308,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+    </Binder>
+    <Collections>
+        <Collection Type="Binder" ID="CA7E6BB2-DEB5-464E-A21C-BE893237EB15" Color="0.400000 0.600000 0.800000">
+            <Title>Binder</Title>
+        </Collection>
+        <Collection Type="RecentSearch" ID="1CAEFC5B-720F-43D1-84E5-22AF5646D49F" Color="0.000000 0.984314 0.662745">
+            <Title>Search Results</Title>
+            <SearchSettings Operator="Any" Type="All" Scope="All" CompileSetting="All" CaseSensitive="No" IgnoreDiacritics="No"></SearchSettings>
+        </Collection>
+    </Collections>
+    <Keywords>
+        <Keyword ID="9">
+            <Title>Pensées</Title>
+            <Color>0.910964 0.089662 0.185473</Color>
+            <Children>
+                <Keyword ID="32">
+                    <Title>Théorie littéraire PERSO</Title>
+                    <Color>0.000000 0.000000 0.600000</Color>
+                    <Children>
+                        <Keyword ID="39">
+                            <Title>Personnages</Title>
+                            <Color>0.000000 1.000000 0.501961</Color>
+                            <Children>
+                                <Keyword ID="43">
+                                    <Title>Syd</Title>
+                                    <Color>0.000000 0.501961 0.250980</Color>
+                                </Keyword>
+                                <Keyword ID="42">
+                                    <Title>Shin</Title>
+                                    <Color>0.482277 0.628748 0.500298</Color>
+                                </Keyword>
+                                <Keyword ID="41">
+                                    <Title>Kitty</Title>
+                                    <Color>0.000000 1.000000 1.000000</Color>
+                                </Keyword>
+                                <Keyword ID="40">
+                                    <Title>Asuka</Title>
+                                    <Color>0.000000 0.600000 0.600000</Color>
+                                </Keyword>
+                            </Children>
+                        </Keyword>
+                        <Keyword ID="38">
+                            <Title>Obscur</Title>
+                            <Color>0.200000 0.200000 0.600000</Color>
+                        </Keyword>
+                        <Keyword ID="37">
+                            <Title>Narration</Title>
+                            <Color>0.400000 0.400000 1.000000</Color>
+                        </Keyword>
+                        <Keyword ID="36">
+                            <Title>Autofiction</Title>
+                            <Color>0.000000 0.000000 1.000000</Color>
+                        </Keyword>
+                    </Children>
+                </Keyword>
+                <Keyword ID="31">
+                    <Title>Théorie littéraire GEN</Title>
+                    <Color>0.200000 0.400000 0.400000</Color>
+                </Keyword>
+                <Keyword ID="30">
+                    <Title>Théorie littéraire AUTRE</Title>
+                    <Color>0.369650 0.868849 0.879652</Color>
+                </Keyword>
+                <Keyword ID="29">
+                    <Title>Politique et social</Title>
+                    <Color>0.400000 0.400000 1.000000</Color>
+                </Keyword>
+                <Keyword ID="28">
+                    <Title>Philosophie</Title>
+                    <Color>0.600000 0.200000 1.000000</Color>
+                </Keyword>
+                <Keyword ID="27">
+                    <Title>Mythes</Title>
+                    <Color>0.497734 0.000000 0.000000</Color>
+                </Keyword>
+                <Keyword ID="26">
+                    <Title>Musique</Title>
+                    <Color>0.765148 0.389563 0.908141</Color>
+                    <Children>
+                        <Keyword ID="35">
+                            <Title>Hip-hop</Title>
+                            <Color>0.944900 0.858396 0.543359</Color>
+                        </Keyword>
+                        <Keyword ID="34">
+                            <Title>Blues</Title>
+                            <Color>0.996475 0.725566 0.178119</Color>
+                        </Keyword>
+                    </Children>
+                </Keyword>
+                <Keyword ID="25">
+                    <Title>Modernité</Title>
+                    <Color>0.779278 0.704921 0.203830</Color>
+                </Keyword>
+                <Keyword ID="24">
+                    <Title>Journal</Title>
+                    <Color>1.000000 0.471260 0.719921</Color>
+                    <Children>
+                        <Keyword ID="33">
+                            <Title>Drogue</Title>
+                            <Color>0.794842 0.660029 0.773754</Color>
+                        </Keyword>
+                    </Children>
+                </Keyword>
+                <Keyword ID="23">
+                    <Title>Internet</Title>
+                    <Color>0.270237 0.125765 0.583871</Color>
+                </Keyword>
+                <Keyword ID="22">
+                    <Title>Haine</Title>
+                    <Color>0.800000 0.200000 0.400000</Color>
+                </Keyword>
+                <Keyword ID="21">
+                    <Title>Contre/culture</Title>
+                    <Color>0.820523 0.766812 0.592920</Color>
+                </Keyword>
+                <Keyword ID="20">
+                    <Title>Classique</Title>
+                    <Color>0.235920 0.708431 0.478264</Color>
+                </Keyword>
+                <Keyword ID="19">
+                    <Title>Animalité</Title>
+                    <Color>0.383597 0.978134 0.066789</Color>
+                </Keyword>
+                <Keyword ID="18">
+                    <Title>Amour/sexe</Title>
+                    <Color>0.697917 0.187350 0.526650</Color>
+                </Keyword>
+            </Children>
+        </Keyword>
+        <Keyword ID="8">
+            <Title>Oeuvres</Title>
+            <Color>1.000000 1.000000 1.000000</Color>
+            <Children>
+                <Keyword ID="17">
+                    <Title>L'île des bienheureux</Title>
+                    <Color>1.000000 0.585092 0.211887</Color>
+                </Keyword>
+                <Keyword ID="16">
+                    <Title>Génération K</Title>
+                    <Color>0.501961 0.328038 0.053620</Color>
+                </Keyword>
+                <Keyword ID="15">
+                    <Title>Dérive Continentale</Title>
+                    <Color>0.800000 0.800000 0.800000</Color>
+                </Keyword>
+                <Keyword ID="14">
+                    <Title>Compilation</Title>
+                    <Color>0.000000 0.000000 0.000000</Color>
+                </Keyword>
+                <Keyword ID="13">
+                    <Title>Cocyte</Title>
+                    <Color>0.506783 0.506783 0.506783</Color>
+                </Keyword>
+                <Keyword ID="12">
+                    <Title>Caïn</Title>
+                    <Color>0.200000 0.200000 0.200000</Color>
+                </Keyword>
+            </Children>
+        </Keyword>
+        <Keyword ID="7">
+            <Title>Mort</Title>
+            <Color>0.669337 0.238422 0.962020</Color>
+        </Keyword>
+        <Keyword ID="6">
+            <Title>M0</Title>
+            <Color>0.200000 0.200000 0.200000</Color>
+        </Keyword>
+        <Keyword ID="5">
+            <Title>Le signe et son singe</Title>
+            <Color>0.147601 0.277043 0.218647</Color>
+        </Keyword>
+        <Keyword ID="4">
+            <Title>Esquisse/concept</Title>
+            <Color>1.000000 0.800000 0.400000</Color>
+        </Keyword>
+        <Keyword ID="3">
+            <Title>Communication</Title>
+            <Color>0.869123 0.133516 0.634623</Color>
+        </Keyword>
+        <Keyword ID="2">
+            <Title>Auteurs (Mangrove)</Title>
+            <Color>0.369574 0.773922 0.975647</Color>
+            <Children>
+                <Keyword ID="11">
+                    <Title>Sous Lieutenand</Title>
+                    <Color>0.615656 0.074693 0.014282</Color>
+                </Keyword>
+                <Keyword ID="10">
+                    <Title>Cosmy</Title>
+                    <Color>0.680339 0.712749 0.214069</Color>
+                </Keyword>
+            </Children>
+        </Keyword>
+        <Keyword ID="1">
+            <Title>Angoisse/névrose</Title>
+            <Color>0.541955 0.370901 0.064729</Color>
+        </Keyword>
+    </Keywords>
+    <SectionTypes>
+        <TypeDefinitions>
+            <Type ID="1F3374B9-F38C-4524-8F97-FB8E8C83E291">Heading</Type>
+            <Type ID="821DA6EA-42BC-429D-BCA2-91E7D6A9BBDA">Sub-Heading</Type>
+            <Type ID="1C227C63-B9AE-4619-BA45-F92FD4E09431">Section</Type>
+        </TypeDefinitions>
+        <LevelTypes>
+            <Folders>
+                <Type>1F3374B9-F38C-4524-8F97-FB8E8C83E291</Type>
+            </Folders>
+            <Containers>
+                <Type>1C227C63-B9AE-4619-BA45-F92FD4E09431</Type>
+            </Containers>
+            <Files>
+                <Type>1C227C63-B9AE-4619-BA45-F92FD4E09431</Type>
+            </Files>
+        </LevelTypes>
+    </SectionTypes>
+    <LabelSettings>
+        <Title>Type</Title>
+        <DefaultLabelID>-1</DefaultLabelID>
+        <Labels>
+            <Label ID="-1">No Label</Label>
+            <Label ID="6" Color="1.000000 0.471260 0.719921">Administratif</Label>
+            <Label ID="7" Color="0.000000 0.000000 0.000000">Cours</Label>
+            <Label ID="8" Color="1.000000 1.000000 1.000000">Devoir</Label>
+            <Label ID="9" Color="0.600000 0.600000 0.600000">Exposé</Label>
+            <Label ID="10" Color="1.000000 0.585092 0.211887">Lectures</Label>
+            <Label ID="11" Color="1.000000 0.800000 0.400000">Concept</Label>
+            <Label ID="12" Color="1.000000 1.000000 0.000000">Article</Label>
+            <Label ID="13" Color="0.596567 0.427466 0.313512">Esquisses</Label>
+            <Label ID="14" Color="0.400000 0.400000 1.000000">Texte</Label>
+            <Label ID="15" Color="0.283680 0.630045 0.672572">Rêve</Label>
+            <Label ID="16" Color="0.000000 1.000000 0.501961">Texte inséré</Label>
+            <Label ID="17" Color="0.000000 0.400000 0.000000">Refrain</Label>
+            <Label ID="18" Color="0.602045 0.040681 0.060273">Personnages</Label>
+            <Label ID="19" Color="0.250980 0.000000 0.501961">Lieux</Label>
+            <Label ID="20" Color="0.596567 0.427466 0.313512">Esquisse</Label>
+            <Label ID="21" Color="0.000000 1.000000 0.501961">Fragment(s)/extrait(s)</Label>
+        </Labels>
+    </LabelSettings>
+    <StatusSettings>
+        <Title>Status</Title>
+        <DefaultStatusID>-1</DefaultStatusID>
+        <StatusItems>
+            <Status ID="-1">No Status</Status>
+            <Status ID="6">À faire</Status>
+            <Status ID="7">Utilisable pour travail approfondi</Status>
+            <Status ID="8">Première ébauche</Status>
+            <Status ID="9">Ébauche révisée</Status>
+            <Status ID="10">Ébauche finale</Status>
+            <Status ID="11">Rédigé V.1</Status>
+            <Status ID="12">Rédigé V.2</Status>
+            <Status ID="13">Rédigé V.3+</Status>
+            <Status ID="14">Rédigé V.4</Status>
+            <Status ID="15">Rédigé V.5</Status>
+            <Status ID="16">Publié</Status>
+            <Status ID="17">OK</Status>
+        </StatusItems>
+    </StatusSettings>
+    <ProjectTargets Notify="No">
+        <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2021-09-06 15:50:24 +0200" IgnoreDeadline="Yes">0</DraftTarget>
+        <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
+        <PreviousSession Words="0" Characters="0" Date="2022-10-12 09:35:52 +0200"/>
+    </ProjectTargets>
+    <BookmarksFolderUUID>A9394880-F5D6-462F-A916-2A703EA7B05F</BookmarksFolderUUID>
+    <RecentWritingHistory Date="2022-10-12 00:00:00 +0200">
+        <DraftWordCount>0</DraftWordCount>
+        <DraftCharCount>0</DraftCharCount>
+        <OtherWordCount>0</OtherWordCount>
+        <OtherCharCount>0</OtherCharCount>
+    </RecentWritingHistory>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="72.0" BottomMargin="72.0" PaperType="iso-a4" Orientation="Portrait" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" PagesAcross="1" PagesDown="1"/>
+</ScrivenerProject>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="74944775-1794-439A-8C5F-9FEC62D2BACD">
+            <Text>BLOCNOTE titre
+BOCNOTE corps
+fac citation longue
+RD 1234567
+RD insert central/gauche ordinateur
+
+
+RD intertitre 1 times NR
+RD corps
+RD metatextuel
+RD signature Bill
+RD signature S1mio
+RD sms agressif
+RD sms+internet sobre
+RD texte cité agressif
+RD texte cité1
+RD texte en sérif
+SMS en courrier 12</Text>
+        </Document>
+        <Document ID="A596FC36-6D37-48CB-BFBE-A5C64E17A566">
+            <Title>Projet de recherche revu</Title>
+        </Document>
+        <Document ID="A9394880-F5D6-462F-A916-2A703EA7B05F">
+            <Title>Notes</Title>
+        </Document>
+    </Documents>
+</SearchIndexes>
