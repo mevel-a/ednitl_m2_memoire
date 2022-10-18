@@ -18,14 +18,14 @@
         <Collapse>CustomMetaData</Collapse>
         <FootnoteNumbers Prompt="No">No</FootnoteNumbers>
     </Inspector>
-    <Split>None</Split>
+    <Split>Horizontal</Split>
     <BinderAffects>Current</BinderAffects>
     <Labels>
-        <Binder FullWidth="No">No</Binder>
+        <Binder FullWidth="Yes">No</Binder>
         <Icons>Yes</Icons>
         <IndexCards>Yes</IndexCards>
         <OutlinerRows>No</OutlinerRows>
-        <ScriveningsTitles>No</ScriveningsTitles>
+        <ScriveningsTitles>Yes</ScriveningsTitles>
     </Labels>
     <Corkboards>
         <LabelIndicators>Yes</LabelIndicators>
@@ -39,7 +39,7 @@
         <ShowFormatBar>Yes</ShowFormatBar>
         <UseVerticalLayout>No</UseVerticalLayout>
         <ShowScriveningsTitles>No</ShowScriveningsTitles>
-        <ShowInvisibles>No</ShowInvisibles>
+        <ShowInvisibles>Yes</ShowInvisibles>
         <RevisionMode>0</RevisionMode>
         <TextChecking>
             <Spelling>Yes</Spelling>
@@ -53,7 +53,7 @@
         <PageLayout Facing="No">No</PageLayout>
         <TypewriterScrolling>Yes</TypewriterScrolling>
     </FullScreen>
-    <Editors Primary="Editor1" Active="Editor2">
+    <Editors Primary="Editor2" Active="Editor1">
         <Editor1>
             <View>
                 <ShowHeader>Yes</ShowHeader>
@@ -61,15 +61,21 @@
                 <GroupsViewMode>Corkboard</GroupsViewMode>
                 <CurrentViewMode>Single</CurrentViewMode>
                 <SelectionAffects>Current</SelectionAffects>
-                <Content/>
-                <NavigationHistory CurrentIndex="-1"/>
+                <Content>
+                    <ItemID>A596FC36-6D37-48CB-BFBE-A5C64E17A566</ItemID>
+                </Content>
+                <NavigationHistory CurrentIndex="2">
+                    <HistoryItem Type="BinderItems" ViewMode="Single">A596FC36-6D37-48CB-BFBE-A5C64E17A566</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">DCF57CCC-3439-4889-BB5A-C4634F8A9A60</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">A596FC36-6D37-48CB-BFBE-A5C64E17A566</HistoryItem>
+                </NavigationHistory>
             </View>
             <Text>
                 <ShowRuler>Yes</ShowRuler>
                 <PageLayout Facing="No">No</PageLayout>
                 <TypewriterScrolling>No</TypewriterScrolling>
                 <LineNumbers Interval="1">No</LineNumbers>
-                <Selection>0,0</Selection>
+                <Selection>1548,0</Selection>
             </Text>
             <Outliner>
                 <Columns>
@@ -112,7 +118,7 @@
                 <Content>
                     <ItemID>A596FC36-6D37-48CB-BFBE-A5C64E17A566</ItemID>
                 </Content>
-                <NavigationHistory CurrentIndex="11">
+                <NavigationHistory CurrentIndex="21">
                     <HistoryItem Type="BinderItems" ViewMode="Corkboard">8E61D5F6-11A8-44D9-9378-A48333405434</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Single">74944775-1794-439A-8C5F-9FEC62D2BACD</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Corkboard">A9394880-F5D6-462F-A916-2A703EA7B05F</HistoryItem>
@@ -124,6 +130,16 @@
                     <HistoryItem Type="BinderItems" ViewMode="Corkboard">A9394880-F5D6-462F-A916-2A703EA7B05F</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Single">74944775-1794-439A-8C5F-9FEC62D2BACD</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Corkboard">8E61D5F6-11A8-44D9-9378-A48333405434</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">A596FC36-6D37-48CB-BFBE-A5C64E17A566</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">DCF57CCC-3439-4889-BB5A-C4634F8A9A60</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">A596FC36-6D37-48CB-BFBE-A5C64E17A566</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">DCF57CCC-3439-4889-BB5A-C4634F8A9A60</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">A596FC36-6D37-48CB-BFBE-A5C64E17A566</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">DCF57CCC-3439-4889-BB5A-C4634F8A9A60</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">A596FC36-6D37-48CB-BFBE-A5C64E17A566</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">DCF57CCC-3439-4889-BB5A-C4634F8A9A60</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">A596FC36-6D37-48CB-BFBE-A5C64E17A566</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">DCF57CCC-3439-4889-BB5A-C4634F8A9A60</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Single">A596FC36-6D37-48CB-BFBE-A5C64E17A566</HistoryItem>
                 </NavigationHistory>
             </View>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.1.0" Device="LAPTOP-3B08EOV7" Modified="2022-10-12 09:35:52 +0200" ModID="67F2217C-6863-4BEE-B1E0-A6F869EF8650">
+<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.1.0" Device="LAPTOP-3B08EOV7" Modified="2022-10-17 16:59:10 +0200" ModID="302CF4C7-CE04-41C2-91D0-54E3D456CF8B">
     <Binder>
         <BinderItem UUID="8E61D5F6-11A8-44D9-9378-A48333405434" Type="DraftFolder" Created="2021-09-06 15:50:24 +0200" Modified="2021-09-06 15:50:24 +0200">
             <Title>Draft</Title>
@@ -7,13 +7,24 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <Children>
-                <BinderItem UUID="A596FC36-6D37-48CB-BFBE-A5C64E17A566" Type="Text" Created="2021-09-06 19:46:59 +0200" Modified="2022-10-12 09:35:50 +0200">
-                    <Title>Projet de recherche revu</Title>
+                <BinderItem UUID="A596FC36-6D37-48CB-BFBE-A5C64E17A566" Type="Text" Created="2021-09-06 19:46:59 +0200" Modified="2022-10-17 13:41:17 +0200">
+                    <Title>Pour un nouveau roman lecture 17/10/22</Title>
                     <MetaData>
+                        <LabelID>10</LabelID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <NotesTextSelection>356,0</NotesTextSelection>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>1687,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="DCF57CCC-3439-4889-BB5A-C4634F8A9A60" Type="Text" Created="2022-10-17 11:18:45 +0200" Modified="2022-10-17 13:41:31 +0200">
+                    <Title>DataBase</Title>
+                    <MetaData>
+                        <LabelID>11</LabelID>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextMode>General</TextMode>
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
@@ -311,12 +322,12 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2021-09-06 15:50:24 +0200" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="0" Characters="0" Date="2022-10-12 09:35:52 +0200"/>
+        <PreviousSession Words="292" Characters="1916" Date="2022-10-17 16:59:10 +0200"/>
     </ProjectTargets>
     <BookmarksFolderUUID>A9394880-F5D6-462F-A916-2A703EA7B05F</BookmarksFolderUUID>
-    <RecentWritingHistory Date="2022-10-12 00:00:00 +0200">
-        <DraftWordCount>0</DraftWordCount>
-        <DraftCharCount>0</DraftCharCount>
+    <RecentWritingHistory Date="2022-10-17 00:00:00 +0200">
+        <DraftWordCount>292</DraftWordCount>
+        <DraftCharCount>1916</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
