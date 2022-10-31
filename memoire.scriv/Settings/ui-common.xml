@@ -53,7 +53,7 @@
         <PageLayout Facing="No">No</PageLayout>
         <TypewriterScrolling>Yes</TypewriterScrolling>
     </FullScreen>
-    <Editors Primary="Editor2" Active="Editor1">
+    <Editors Primary="Editor2" Active="Editor2">
         <Editor1>
             <View>
                 <ShowHeader>Yes</ShowHeader>
@@ -96,7 +96,7 @@
                 <PageLayout Facing="No">No</PageLayout>
                 <TypewriterScrolling>No</TypewriterScrolling>
                 <LineNumbers Interval="1">No</LineNumbers>
-                <Selection>11906,282</Selection>
+                <Selection>9259,0</Selection>
             </Text>
             <Outliner>
                 <Columns>

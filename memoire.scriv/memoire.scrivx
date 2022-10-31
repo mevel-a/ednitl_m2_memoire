@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.2.0" Device="LAPTOP-3B08EOV7" Modified="2022-10-24 18:58:58 +0200" ModID="DDFC1C95-562E-48B2-844C-695D1A55BDCB">
+<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.2.0" Device="LAPTOP-3B08EOV7" Modified="2022-10-31 14:41:11 +0100" ModID="855F9BF9-CF5D-4EBE-BFA9-4E51F11AB270">
     <Binder>
-        <BinderItem UUID="8E61D5F6-11A8-44D9-9378-A48333405434" Type="DraftFolder" Created="2021-09-06 15:50:24 +0200" Modified="2021-09-06 15:50:24 +0200">
+        <BinderItem UUID="8E61D5F6-11A8-44D9-9378-A48333405434" Type="DraftFolder" Created="2021-09-06 15:50:24 +0100" Modified="2021-09-06 15:50:24 +0100">
             <Title>Draft</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <Children>
-                <BinderItem UUID="A596FC36-6D37-48CB-BFBE-A5C64E17A566" Type="Text" Created="2021-09-06 19:46:59 +0200" Modified="2022-10-24 18:58:58 +0200">
+                <BinderItem UUID="A596FC36-6D37-48CB-BFBE-A5C64E17A566" Type="Text" Created="2021-09-06 19:46:59 +0100" Modified="2022-10-31 14:40:49 +0100">
                     <Title>Pour un nouveau roman lecture 17/10/22</Title>
                     <MetaData>
                         <LabelID>10</LabelID>
@@ -15,20 +15,20 @@
                         <NotesTextSelection>356,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>24971,0</TextSelection>
+                        <TextSelection>28304,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="37AC9DB5-E56D-473D-AC1B-24CF5F89E5AB" Type="Text" Created="2022-10-22 11:13:16 +0200" Modified="2022-10-24 18:28:12 +0200">
+                <BinderItem UUID="37AC9DB5-E56D-473D-AC1B-24CF5F89E5AB" Type="Text" Created="2022-10-22 11:13:16 +0100" Modified="2022-10-31 14:41:11 +0100">
                     <Title>Trouver :</Title>
                     <MetaData>
                         <LabelID>13</LabelID>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>11906,282</TextSelection>
+                        <TextSelection>9259,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="9168EFE9-B0CC-4D23-BA0B-8D5F1650FF08" Type="Text" Created="2022-10-22 11:23:56 +0200" Modified="2022-10-22 13:42:00 +0200">
+                <BinderItem UUID="9168EFE9-B0CC-4D23-BA0B-8D5F1650FF08" Type="Text" Created="2022-10-22 11:23:56 +0100" Modified="2022-10-22 13:42:00 +0100">
                     <Title>À propos du terme &quot;Nouveau roman&quot;</Title>
                     <MetaData>
                         <LabelID>10</LabelID>
@@ -38,7 +38,7 @@
                         <TextSelection>351,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="DCF57CCC-3439-4889-BB5A-C4634F8A9A60" Type="Text" Created="2022-10-17 11:18:45 +0200" Modified="2022-10-17 13:41:31 +0200">
+                <BinderItem UUID="DCF57CCC-3439-4889-BB5A-C4634F8A9A60" Type="Text" Created="2022-10-17 11:18:45 +0100" Modified="2022-10-17 13:41:31 +0100">
                     <Title>DataBase</Title>
                     <MetaData>
                         <LabelID>11</LabelID>
@@ -48,7 +48,7 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="787B3096-CF1B-4D04-B794-4358EA83BDAE" Type="Text" Created="2022-10-22 13:25:04 +0200" Modified="2022-10-22 13:26:19 +0200">
+                <BinderItem UUID="787B3096-CF1B-4D04-B794-4358EA83BDAE" Type="Text" Created="2022-10-22 13:25:04 +0100" Modified="2022-10-22 13:26:19 +0100">
                     <Title>Chronologie</Title>
                     <MetaData>
                         <LabelID>11</LabelID>
@@ -58,7 +58,7 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="A9394880-F5D6-462F-A916-2A703EA7B05F" Type="Folder" Created="2021-09-06 15:57:58 +0200" Modified="2021-09-06 15:58:37 +0200">
+                <BinderItem UUID="A9394880-F5D6-462F-A916-2A703EA7B05F" Type="Folder" Created="2021-09-06 15:57:58 +0100" Modified="2021-09-06 15:58:37 +0100">
                     <Title>Notes</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -69,19 +69,19 @@
                 </BinderItem>
             </Children>
         </BinderItem>
-        <BinderItem UUID="1811AFFD-7722-455C-BF35-B431A3FA4C2F" Type="ResearchFolder" Created="2021-09-06 15:50:24 +0200" Modified="2021-09-06 15:50:24 +0200">
+        <BinderItem UUID="1811AFFD-7722-455C-BF35-B431A3FA4C2F" Type="ResearchFolder" Created="2021-09-06 15:50:24 +0100" Modified="2021-09-06 15:50:24 +0100">
             <Title>Research</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
         </BinderItem>
-        <BinderItem UUID="B0599A73-B398-41B0-B3D1-51E092E15E1C" Type="TrashFolder" Created="2021-09-06 15:50:24 +0200" Modified="2021-09-06 15:50:24 +0200">
+        <BinderItem UUID="B0599A73-B398-41B0-B3D1-51E092E15E1C" Type="TrashFolder" Created="2021-09-06 15:50:24 +0100" Modified="2021-09-06 15:50:24 +0100">
             <Title>Trash</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <Children>
-                <BinderItem UUID="74944775-1794-439A-8C5F-9FEC62D2BACD" Type="Text" Created="2021-09-06 15:57:50 +0200" Modified="2021-09-06 17:29:55 +0200">
+                <BinderItem UUID="74944775-1794-439A-8C5F-9FEC62D2BACD" Type="Text" Created="2021-09-06 15:57:50 +0100" Modified="2021-09-06 17:29:55 +0100">
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
@@ -352,12 +352,12 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2021-09-06 15:50:24 +0200" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="1535" Characters="9822" Date="2022-10-24 18:58:58 +0200"/>
+        <PreviousSession Words="440" Characters="2546" Date="2022-10-31 14:41:11 +0100"/>
     </ProjectTargets>
     <BookmarksFolderUUID>A9394880-F5D6-462F-A916-2A703EA7B05F</BookmarksFolderUUID>
-    <RecentWritingHistory Date="2022-10-24 00:00:00 +0200">
-        <DraftWordCount>1535</DraftWordCount>
-        <DraftCharCount>9822</DraftCharCount>
+    <RecentWritingHistory Date="2022-10-31 00:00:00 +0100">
+        <DraftWordCount>440</DraftWordCount>
+        <DraftCharCount>2546</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
