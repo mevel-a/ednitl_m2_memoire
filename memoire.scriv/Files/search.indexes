@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
+        <Document ID="23901DCE-7BA8-4360-94E0-96230DFCAFE2">
+            <Title>Recovered File-1</Title>
+            <Text>Pour notre bibliographie nous décidons de la produire en xml afin de, pensons-nous, gagner du temps pour la produire en pdf et en html.
+
+Depuis une root &lt;bibliography&gt; des éléments &lt;div&gt; avec des &lt;head&gt; contiennent les sections titrées de la bibliographie
+
+&lt;ref @xml:id @read(2/1/0)&gt;&lt;author&gt;&lt;name&gt;&lt;surname&gt;&lt;/author&gt;&lt;title&gt;&lt;city&gt;&lt;ed&gt;&lt;coll&gt;&lt;date @type&gt;&lt;/ref&gt;
+
+@read = 2 —&gt; lu il y a longtemps
+@red = 1 —&gt; lu récemment
+@read = 0 —&gt; pas lu
+</Text>
+        </Document>
         <Document ID="37AC9DB5-E56D-473D-AC1B-24CF5F89E5AB">
             <Title>Trouver :</Title>
             <Synopsis>Quelques possibilité de contextualisation
@@ -240,6 +253,59 @@ p. 182 « On répète, de l'extrême droite à l'extrême gauche, que cet art 
 
 p. 183 « La critique académique voudrait même faire croire au public que les techniques nouvelles vont simplement être absorbées par le roman &quot;éternel&quot; et vont servir à perfectionner quelque détail du personnage balzacien, de l'intrigue chronologique et de l'humanisme transcendant. »</Text>
             <Comments>inconsistance ici je crois avoir lu un &quot;i&quot; à une mention précédente.</Comments>
+        </Document>
+        <Document ID="5776BCEF-5EA8-424A-8A57-5BB812268ADC">
+            <Title>Recovered File-2</Title>
+            <Text># Présentation générale
+
+
+
+
+## Commentaire stylistique
+
+### Un mot sur les moyens rhétoriques
+
+
+
+## Unité de l'œuvre ?
+
+
+
+## Chronologie
+
+
+## Glossaire des adversaires
+### Présentation du glossaire et explicitation des choix
+### Auquel s'oppose des notions vue comme positives ?
+
+# La transtextualité de l'œuvre
+
+## Référents philosophiques
+### Théorie littR sous-jacente
+### Une pensée d'époque
+## Adversaires désignés
+## Les alliés choisis, la tradition dans laquelle il décide de s'inscrire
+
+# Contre Sartre
+# Un portrait en creux d'un certain Balzac
+# Le tableau d'une littérature à défaire
+# Et d'une autre à faire
+# L'esquisse d'une littérature à faire…
+	filiation
+# Et d'une autre à défaire
+	ici glossaire des adversaires ?
+# Publication fait suite à des œuvres et &quot;réactions&quot; suscitées
+
+# Bibliographie ordonnée
+</Text>
+            <Notes>À la manière de l'édition des lettres, tenter de dégager des axes de lectures plutôt que des patés comme ça.
+
+
+
+Plusieurs petits textes critiques qui peuvent être modulables selon les pages d'un site. Ainsi un même paragraphe sur x lien avec tel auteur peut être réexploité dans une partie cosacrée à l'intertextualité.
+
+
+Sachant que certains éléments notamment le &quot;contre sartre&quot; ou &quot;balzac&quot; peuvent faire l'objet de notes plutôt que de développement.</Notes>
         </Document>
         <Document ID="74944775-1794-439A-8C5F-9FEC62D2BACD">
             <Text>BLOCNOTE titre
@@ -824,6 +890,40 @@ Cohérence de l'ensemble
         </Document>
         <Document ID="A9394880-F5D6-462F-A916-2A703EA7B05F">
             <Title>Notes</Title>
+        </Document>
+        <Document ID="BCFC49AF-EFD4-4B7A-9C8C-53F23585E636">
+            <Title>Recovered Files (08/11/2022, 10:32)</Title>
+        </Document>
+        <Document ID="D493B8BB-8B67-47F2-BEEF-81955969C5DE">
+            <Title>Recovered File-3</Title>
+            <Text>Prix Louis DELLUL en 1963
+
+~ 00:13:00 propos sur la poésie arabe 'sultan salim'
+
+Vrai/faux, les apparences l'absence de profondeur
+temps &quot;nié&quot; du moins chronologie indifférente et descontruite
+
+économie des acteurs et transition subite, faux raccords
+
+propos sur les guides 00:19:00 &quot;oh les guides&quot; (en gros)
+
+subjectivité du regard pas toujours déclaré mais probable et suggéré par els mouvements de la caméra qui parcourt (du regard souhaite t-on dire) la ville pour s'arrêter sur l'objet de la scène. Et de manière plus classique par champs/contre champs encore que le personnages qui devient la subjectivité de la caméra est lui non classique mais un passant un élément du décor presque un figurant qui puisqu'ils sont joué par des acteurs peu nombreux deviennent de fait presque des personnages selon les critères habituelles. 
+
+Interrogation de l'identité des figurants/personnages et leurs statuts.
+
+nomrbeux sucadrage
+
+enquête et tous parlent de prostitution +/- comprennent en tout cas qu'il veut acheter des femmes. Incompréhension encore, tout lui résiste à ce brave homme !
+
+Joli scène avec braque qui pénètre dans salle hiboustyle (à colonne, je me souviens mal du terme) dans un supposé temple (par moi) inondé.
+
+01:30:00 environ scène dans le cimetière sur la signification
+
+la langue étrangère
+
+l'important c'est l'étrangeté aux choses confronté à l'altérité, d'une femme, de tout un lot de personnages et d'objets supposés contenir des indices des traces une profondeur cachée, tout le onde lui dit qu'il n'y a rien derrière mais il insiste jusqu'à se donner la mort.
+
+belles images d'Istanbul notamment ~01:31:00 </Text>
         </Document>
         <Document ID="DCF57CCC-3439-4889-BB5A-C4634F8A9A60">
             <Title>DataBase</Title>
