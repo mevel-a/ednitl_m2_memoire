@@ -6,7 +6,6 @@
         <SubdocumentCounts>No</SubdocumentCounts>
         <ExpandedItems>
             <ItemID>8E61D5F6-11A8-44D9-9378-A48333405434</ItemID>
-            <ItemID>BCFC49AF-EFD4-4B7A-9C8C-53F23585E636</ItemID>
         </ExpandedItems>
         <Selection>
             <ItemID>A596FC36-6D37-48CB-BFBE-A5C64E17A566</ItemID>
@@ -111,7 +110,7 @@
                 <PageLayout Facing="No">No</PageLayout>
                 <TypewriterScrolling>No</TypewriterScrolling>
                 <LineNumbers Interval="1">No</LineNumbers>
-                <Selection>0,0</Selection>
+                <Selection>1288,0</Selection>
             </Text>
             <Outliner>
                 <Columns>
