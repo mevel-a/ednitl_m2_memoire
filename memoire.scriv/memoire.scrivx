@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.2.0" Device="LAPTOP-3B08EOV7" Modified="2022-10-31 14:41:11 +0100" ModID="855F9BF9-CF5D-4EBE-BFA9-4E51F11AB270">
+<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.2.0" Device="LAPTOP-9OFQSFHP" Modified="2022-10-31 16:17:37 +0100" ModID="855F9BF9-CF5D-4EBE-BFA9-4E51F11AB270">
     <Binder>
         <BinderItem UUID="8E61D5F6-11A8-44D9-9378-A48333405434" Type="DraftFolder" Created="2021-09-06 15:50:24 +0100" Modified="2021-09-06 15:50:24 +0100">
             <Title>Draft</Title>
@@ -25,7 +25,7 @@
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>9259,0</TextSelection>
+                        <TextSelection>10132,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="9168EFE9-B0CC-4D23-BA0B-8D5F1650FF08" Type="Text" Created="2022-10-22 11:23:56 +0100" Modified="2022-10-22 13:42:00 +0100">
@@ -352,7 +352,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2021-09-06 15:50:24 +0200" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="440" Characters="2546" Date="2022-10-31 14:41:11 +0100"/>
+        <PreviousSession Words="440" Characters="2546" Date="2022-10-31 16:17:37 +0100"/>
     </ProjectTargets>
     <BookmarksFolderUUID>A9394880-F5D6-462F-A916-2A703EA7B05F</BookmarksFolderUUID>
     <RecentWritingHistory Date="2022-10-31 00:00:00 +0100">
