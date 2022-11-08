@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.2.0" Device="LAPTOP-3B08EOV7" Modified="2022-11-08 14:20:09 +0100" ModID="5497775A-AEFD-45EF-A879-5E5B3253EC2C">
+=======
+<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.2.0" Device="LAPTOP-9OFQSFHP" Modified="2022-11-08 14:17:46 +0100" ModID="1222BCB2-2D68-479F-B62C-F8BB8040C89E">
+>>>>>>> f594afe9bd9f5138eec247546c21912c1a7bc84f
     <Binder>
         <BinderItem UUID="8E61D5F6-11A8-44D9-9378-A48333405434" Type="DraftFolder" Created="2021-09-06 15:50:24 +0100" Modified="2021-09-06 15:50:24 +0100">
             <Title>Draft</Title>
@@ -25,6 +29,7 @@
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
+<<<<<<< HEAD
                         <TextSelection>9141,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
@@ -37,6 +42,9 @@
                     </MetaData>
                     <TextSettings>
                         <TextSelection>545,0</TextSelection>
+=======
+                        <TextSelection Caret="13845">0,13845</TextSelection>
+>>>>>>> f594afe9bd9f5138eec247546c21912c1a7bc84f
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="9168EFE9-B0CC-4D23-BA0B-8D5F1650FF08" Type="Text" Created="2022-10-22 11:23:56 +0100" Modified="2022-10-22 13:42:00 +0100">
@@ -59,16 +67,6 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="D493B8BB-8B67-47F2-BEEF-81955969C5DE" Type="Text" Created="2022-11-07 14:05:00 +0100" Modified="2022-11-07 14:14:26 +0100">
-                    <Title>L'Immortelle, ARG, 1963</Title>
-                    <MetaData>
-                        <LabelID>10</LabelID>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                    </MetaData>
-                    <TextSettings>
-                        <TextSelection>1288,0</TextSelection>
-                    </TextSettings>
-                </BinderItem>
                 <BinderItem UUID="787B3096-CF1B-4D04-B794-4358EA83BDAE" Type="Text" Created="2022-10-22 13:25:04 +0100" Modified="2022-10-22 13:26:19 +0100">
                     <Title>Chronologie</Title>
                     <MetaData>
@@ -77,15 +75,6 @@
                     </MetaData>
                     <TextSettings>
                         <TextSelection>0,0</TextSelection>
-                    </TextSettings>
-                </BinderItem>
-                <BinderItem UUID="23901DCE-7BA8-4360-94E0-96230DFCAFE2" Type="Text" Created="2022-11-07 15:40:36 +0100" Modified="2022-11-07 15:48:11 +0100">
-                    <Title>Bibliography, méthode encodage</Title>
-                    <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                    </MetaData>
-                    <TextSettings>
-                        <TextSelection>436,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="A9394880-F5D6-462F-A916-2A703EA7B05F" Type="Folder" Created="2021-09-06 15:57:58 +0100" Modified="2021-09-06 15:58:37 +0100">
@@ -117,6 +106,48 @@
                     </MetaData>
                     <TextSettings>
                         <TextSelection>308,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem UUID="BCFC49AF-EFD4-4B7A-9C8C-53F23585E636" Type="Folder" Created="2022-11-08 10:32:14 +0100" Modified="2022-11-08 10:32:14 +0100">
+            <Title>Recovered Files (08/11/2022, 10:32)</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+                <IconFileName>Warning.tiff</IconFileName>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>0,0</TextSelection>
+            </TextSettings>
+            <Children>
+                <BinderItem UUID="23901DCE-7BA8-4360-94E0-96230DFCAFE2" Type="Text" Created="2022-11-08 10:32:14 +0100" Modified="2022-11-08 10:32:14 +0100">
+                    <Title>Recovered File-1</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>rtf</FileExtension>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="5776BCEF-5EA8-424A-8A57-5BB812268ADC" Type="Text" Created="2022-11-08 10:32:14 +0100" Modified="2022-11-08 10:32:14 +0100">
+                    <Title>Recovered File-2</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>rtf</FileExtension>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="D493B8BB-8B67-47F2-BEEF-81955969C5DE" Type="Text" Created="2022-11-08 10:32:14 +0100" Modified="2022-11-08 10:32:14 +0100">
+                    <Title>Recovered File-3</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>rtf</FileExtension>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
             </Children>
@@ -382,7 +413,11 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2021-09-06 15:50:24 +0200" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
+<<<<<<< HEAD
         <PreviousSession Words="0" Characters="0" Date="2022-11-08 14:20:09 +0100"/>
+=======
+        <PreviousSession Words="0" Characters="0" Date="2022-11-08 14:17:46 +0100"/>
+>>>>>>> f594afe9bd9f5138eec247546c21912c1a7bc84f
     </ProjectTargets>
     <BookmarksFolderUUID>A9394880-F5D6-462F-A916-2A703EA7B05F</BookmarksFolderUUID>
     <RecentWritingHistory Date="2022-11-08 00:00:00 +0100">
