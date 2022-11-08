@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.2.0" Device="LAPTOP-3B08EOV7" Modified="2022-11-07 17:41:11 +0100" ModID="5497775A-AEFD-45EF-A879-5E5B3253EC2C">
+<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.2.0" Device="LAPTOP-3B08EOV7" Modified="2022-11-08 14:20:09 +0100" ModID="5497775A-AEFD-45EF-A879-5E5B3253EC2C">
     <Binder>
         <BinderItem UUID="8E61D5F6-11A8-44D9-9378-A48333405434" Type="DraftFolder" Created="2021-09-06 15:50:24 +0100" Modified="2021-09-06 15:50:24 +0100">
             <Title>Draft</Title>
@@ -15,7 +15,7 @@
                         <NotesTextSelection>356,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>6400,0</TextSelection>
+                        <TextSelection Caret="38009">0,38009</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="37AC9DB5-E56D-473D-AC1B-24CF5F89E5AB" Type="Text" Created="2022-10-22 11:13:16 +0100" Modified="2022-10-31 14:41:11 +0100">
@@ -25,7 +25,7 @@
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>9259,0</TextSelection>
+                        <TextSelection>9141,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="5776BCEF-5EA8-424A-8A57-5BB812268ADC" Type="Text" Created="2022-11-06 17:10:43 +0100" Modified="2022-11-06 20:46:09 +0100">
@@ -382,12 +382,12 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2021-09-06 15:50:24 +0200" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="323" Characters="2067" Date="2022-11-07 17:41:11 +0100"/>
+        <PreviousSession Words="0" Characters="0" Date="2022-11-08 14:20:09 +0100"/>
     </ProjectTargets>
     <BookmarksFolderUUID>A9394880-F5D6-462F-A916-2A703EA7B05F</BookmarksFolderUUID>
-    <RecentWritingHistory Date="2022-11-07 00:00:00 +0100">
-        <DraftWordCount>323</DraftWordCount>
-        <DraftCharCount>2067</DraftCharCount>
+    <RecentWritingHistory Date="2022-11-08 00:00:00 +0100">
+        <DraftWordCount>0</DraftWordCount>
+        <DraftCharCount>0</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
