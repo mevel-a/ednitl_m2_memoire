@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.2.0" Device="LAPTOP-3B08EOV7" Modified="2022-11-08 14:20:09 +0100" ModID="5497775A-AEFD-45EF-A879-5E5B3253EC2C">
+=======
 <ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.2.0" Device="LAPTOP-9OFQSFHP" Modified="2022-11-08 14:17:46 +0100" ModID="1222BCB2-2D68-479F-B62C-F8BB8040C89E">
+>>>>>>> f594afe9bd9f5138eec247546c21912c1a7bc84f
     <Binder>
         <BinderItem UUID="8E61D5F6-11A8-44D9-9378-A48333405434" Type="DraftFolder" Created="2021-09-06 15:50:24 +0100" Modified="2021-09-06 15:50:24 +0100">
             <Title>Draft</Title>
@@ -25,7 +29,22 @@
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
+<<<<<<< HEAD
+                        <TextSelection>9141,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="5776BCEF-5EA8-424A-8A57-5BB812268ADC" Type="Text" Created="2022-11-06 17:10:43 +0100" Modified="2022-11-06 20:46:09 +0100">
+                    <Title>Éléments pour une édition critique</Title>
+                    <MetaData>
+                        <LabelID>11</LabelID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <NotesTextSelection>321,0</NotesTextSelection>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>545,0</TextSelection>
+=======
                         <TextSelection Caret="13845">0,13845</TextSelection>
+>>>>>>> f594afe9bd9f5138eec247546c21912c1a7bc84f
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="9168EFE9-B0CC-4D23-BA0B-8D5F1650FF08" Type="Text" Created="2022-10-22 11:23:56 +0100" Modified="2022-10-22 13:42:00 +0100">
@@ -394,7 +413,11 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2021-09-06 15:50:24 +0200" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
+<<<<<<< HEAD
+        <PreviousSession Words="0" Characters="0" Date="2022-11-08 14:20:09 +0100"/>
+=======
         <PreviousSession Words="0" Characters="0" Date="2022-11-08 14:17:46 +0100"/>
+>>>>>>> f594afe9bd9f5138eec247546c21912c1a7bc84f
     </ProjectTargets>
     <BookmarksFolderUUID>A9394880-F5D6-462F-A916-2A703EA7B05F</BookmarksFolderUUID>
     <RecentWritingHistory Date="2022-11-08 00:00:00 +0100">
