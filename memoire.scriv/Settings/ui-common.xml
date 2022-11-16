@@ -8,7 +8,7 @@
             <ItemID>8E61D5F6-11A8-44D9-9378-A48333405434</ItemID>
         </ExpandedItems>
         <Selection>
-            <ItemID>A596FC36-6D37-48CB-BFBE-A5C64E17A566</ItemID>
+            <ItemID>37AC9DB5-E56D-473D-AC1B-24CF5F89E5AB</ItemID>
         </Selection>
         <SearchResultsSort Titles="Ascending" Dates="Ascending">None</SearchResultsSort>
     </Binder>
@@ -110,7 +110,7 @@
                 <PageLayout Facing="No">No</PageLayout>
                 <TypewriterScrolling>No</TypewriterScrolling>
                 <LineNumbers Interval="1">No</LineNumbers>
-                <Selection>1288,0</Selection>
+                <Selection>13176,0</Selection>
             </Text>
             <Outliner>
                 <Columns>
@@ -151,9 +151,9 @@
                 <CurrentViewMode>Single</CurrentViewMode>
                 <SelectionAffects>Current</SelectionAffects>
                 <Content>
-                    <ItemID>D493B8BB-8B67-47F2-BEEF-81955969C5DE</ItemID>
+                    <ItemID>37AC9DB5-E56D-473D-AC1B-24CF5F89E5AB</ItemID>
                 </Content>
-                <NavigationHistory CurrentIndex="26">
+                <NavigationHistory CurrentIndex="27">
                     <HistoryItem Type="BinderItems" ViewMode="Corkboard">8E61D5F6-11A8-44D9-9378-A48333405434</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Single">74944775-1794-439A-8C5F-9FEC62D2BACD</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Corkboard">A9394880-F5D6-462F-A916-2A703EA7B05F</HistoryItem>
@@ -181,6 +181,7 @@
                     <HistoryItem Type="BinderItems" ViewMode="Single">D493B8BB-8B67-47F2-BEEF-81955969C5DE</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Single">DCF57CCC-3439-4889-BB5A-C4634F8A9A60</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Single">D493B8BB-8B67-47F2-BEEF-81955969C5DE</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">37AC9DB5-E56D-473D-AC1B-24CF5F89E5AB</HistoryItem>
                 </NavigationHistory>
             </View>
             <Text>
