@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.2.0" Device="LAPTOP-3B08EOV7" Modified="2022-11-15 14:35:17 +0100" ModID="69703AB6-573E-4C39-9888-61F5710FAE4A">
+<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.2.0" Device="LAPTOP-3B08EOV7" Modified="2022-11-19 12:57:30 +0100" ModID="69703AB6-573E-4C39-9888-61F5710FAE4A">
     <Binder>
         <BinderItem UUID="8E61D5F6-11A8-44D9-9378-A48333405434" Type="DraftFolder" Created="2021-09-06 15:50:24 +0100" Modified="2021-09-06 15:50:24 +0100">
             <Title>Draft</Title>
@@ -15,7 +15,7 @@
                         <NotesTextSelection>356,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>35743,0</TextSelection>
+                        <TextSelection>598,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="37AC9DB5-E56D-473D-AC1B-24CF5F89E5AB" Type="Text" Created="2022-10-22 11:13:16 +0100" Modified="2022-11-15 13:35:02 +0100">
@@ -382,12 +382,12 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2021-09-06 15:50:24 +0200" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="6" Characters="42" Date="2022-11-15 14:35:17 +0100"/>
+        <PreviousSession Words="0" Characters="0" Date="2022-11-19 12:57:30 +0100"/>
     </ProjectTargets>
     <BookmarksFolderUUID>A9394880-F5D6-462F-A916-2A703EA7B05F</BookmarksFolderUUID>
-    <RecentWritingHistory Date="2022-11-15 00:00:00 +0100">
-        <DraftWordCount>6</DraftWordCount>
-        <DraftCharCount>42</DraftCharCount>
+    <RecentWritingHistory Date="2022-11-19 00:00:00 +0100">
+        <DraftWordCount>0</DraftWordCount>
+        <DraftCharCount>0</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
