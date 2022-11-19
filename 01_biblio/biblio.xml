@@ -367,7 +367,7 @@
 		</ref>
 		<ref xml:id="s01" read="2">
 			<author>
-				<name/>Stendhal
+				<name>Stendhal</name>
 				<surname/>
 			</author>
 			<metamark>, </metamark>
@@ -381,6 +381,81 @@
 			<metamark>, </metamark>
 			<date type="effective">2008</date>
 			<date type="first">1839</date>
+		</ref>
+		<ref xml:id="rr01" read="0">
+			<author>
+				<name>Roussel</name>
+				<surname>Raymond</surname>
+				<metamark>,</metamark>
+				<title>Locus solus</title>
+				<metamark>,</metamark>
+				<city>Paris</city>
+				<metamark>,</metamark>
+				<ed>Flammarion</ed>
+				<metamark>,</metamark>
+				<coll>GF</coll>
+				<metamark>,</metamark>
+				<date type="effective">2005</date>
+				<date type="first">1965</date>
+			</author>
+		</ref>
+		<ref xml:id="is01" read="0">
+			<author>
+				<name>Svevo</name>
+				<surname>Italo</surname>
+			</author>
+			<metamark>,</metamark>
+			<traductor>
+				<name>Michel</name>
+				<surname>Paul-Henri</surname>
+				<name>Fusco</name>
+				<surname>Mario</surname>
+			</traductor>
+			<metamark>,</metamark>
+			<title>La Conscience de Zeno</title>
+			<metamark>,</metamark>
+			<city>Paris</city>
+			<metamark>,</metamark>
+			<ed>Gallimard</ed>
+			<coll>Folio</coll>
+			<metamark>,</metamark>
+			<date type="effective">2010</date>
+			<date type="trad">1986</date>
+			<date type="first">1954</date>
+		</ref>
+		<ref xml:id="rp01" read="0">
+			<author>
+				<name>Pinget</name>
+				<surname>Robert</surname>
+			</author>
+			<metamark>, </metamark>
+			<title>Mahu ou le matériau</title>
+			<metamark>, </metamark>
+			<city>Paris</city>
+			<metamark>, </metamark>
+			<ed>Les Éditions de Minuit</ed>
+			<metamark>, </metamark>
+			<coll/>
+			<metamark>, </metamark>
+			<date type="effective">1997</date>
+			<date type="first">1952</date>
+		</ref>
+		<ref xml:id="rp02" read="0">
+			<author>
+				<name>Pinget</name>
+				<surname>Robert</surname>
+			</author>
+			<metamark>, </metamark>
+			<title>Le Renard et la boussole</title>
+			<metamark>, </metamark>
+			<city>Paris</city>
+			<metamark>, </metamark>
+			<ed>Les Éditions de Minuit</ed>
+			<metamark>, </metamark>
+			<coll/>
+			<metamark>, </metamark>
+			<date type="effective">2000</date>
+			<date type="first">1953</date>
 		</ref>
 	</div>
 	<div>
