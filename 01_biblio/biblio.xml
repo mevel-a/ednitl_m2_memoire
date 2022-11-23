@@ -20,7 +20,7 @@
 
 	<div>
 		<head>Édition citée de Pour un nouveau roman</head>
-		<ref xml:id="arg00" read="1">
+		<ref xml:id="rga00" read="1">
 			<author>
 				<name>Robbe-Grillet</name>
 				<surname>Alain</surname>
@@ -40,7 +40,7 @@
 	</div>
 	<div>
 		<head>Œuvres d'Alain Robbe-Grillet citées</head>
-		<ref xml:id="arg01" read="2">
+		<ref xml:id="rga01" read="2">
 			<author>
 				<name>Robbe-Grillet</name>
 				<surname>Alain</surname>
@@ -63,7 +63,7 @@
 	</div>
 	<div>
 		<head>Sur le Nouveau Roman</head>
-		<ref xml:id="jr01" read="1">
+		<ref xml:id="rj01" read="1">
 			<author>
 				<name>Ricardou</name>
 				<surname>Jean</surname>
@@ -81,13 +81,23 @@
 			<date type="effective">1990</date>
 			<date type="first">1973</date>
 		</ref>
-		<ref xml:id="gy01" read="0">
+		<ref xml:id="cf01" read="1" type="article">
+			<author>
+				<name>de Chalonge</name>
+				<surname>Florence</surname>
+			</author>
+			<title>Les Défis du Nouveau roman</title>
+			<city>Paris</city>
+			<ed>Canopé</ed>
+			<coll/>
+			<date type="effective">11/07/2017</date>
+			<pages>p. 64-67</pages>
+		</ref>
+		<ref xml:id="yg01" read="0">
 			<author>
 				<name>Yanoshevsky</name>
 				<surname>Galia</surname>
 			</author>
-			<metamark>, </metamark>
-			<title type="article">Pour un nouveau roman (1063)</title>
 			<metamark>, </metamark>
 			<title>Les discours du Nouveau Roman : Essais, entretiens, débats</title>
 			<metamark>, </metamark>
@@ -97,14 +107,16 @@
 			<metamark>, </metamark>
 			<coll/>
 			<metamark>, </metamark>
-			<online>https://doi-org.ressources-electroniques.univ-lille.fr/10.4000/books.septentrion.54734</online>
+			
 			<date type="effective">2006</date>
 			<date type="first"/>
+			<online>https://doi-org.ressources-electroniques.univ-lille.fr/10.4000/books.septentrion.54734</online>
 		</ref>
+		
 	</div>
 	<div>
 		<head>Œuvres citées</head>
-		<ref xml:id="sb01" read="0">
+		<ref xml:id="bb01" read="0">
 			<author>
 				<name>Beckett</name>
 				<surname>Samuel</surname>
@@ -121,7 +133,7 @@
 			<date type="effective">1982</date>
 			<date type="first">1951</date>
 		</ref>
-		<ref xml:id="sb02" read="2">
+		<ref xml:id="bs02" read="2">
 			<author>
 				<name>Beckett</name>
 				<surname>Samuel</surname>
@@ -138,7 +150,7 @@
 			<date type="effective">2009</date>
 			<date type="first">1957</date>
 		</ref>
-		<ref xml:id="sb03" read="2">
+		<ref xml:id="bs03" read="2">
 			<author>
 				<name>Beckett</name>
 				<surname>Samuel</surname>
@@ -155,7 +167,7 @@
 			<date type="effective">2007</date>
 			<date type="first">1952</date>
 		</ref>
-		<ref xml:id="ac01" read="2">
+		<ref xml:id="ca01" read="2">
 			<author>
 				<name>Camus</name>
 				<surname>Albert</surname>
@@ -210,7 +222,7 @@
 			<date type="trad">2002</date>
 			<date type="first">1880</date>
 		</ref>
-		<ref xml:id="wf01" read="2">
+		<ref xml:id="fw01" read="2">
 			<author>
 				<name>Faulkner</name>
 				<surname>William</surname>
@@ -232,7 +244,7 @@
 			<date type="trad">1972</date>
 			<date type="first">1931</date>
 		</ref>
-		<ref xml:id="fk01" read="2">
+		<ref xml:id="kf01" read="2">
 			<author>
 				<name>Kafka</name>
 				<surname>Franz</surname>
@@ -254,7 +266,7 @@
 			<date type="trad">2001</date>
 			<date type="first">1926</date>
 		</ref>
-		<ref xml:id="fk02" read="2">
+		<ref xml:id="kf02" read="2">
 			<author>
 				<name>Kafka</name>
 				<surname>Franz</surname>
@@ -276,7 +288,7 @@
 			<date type="trad">1933</date>
 			<date type="first">1925</date>
 		</ref>
-		<ref xml:id="bp" read="2">
+		<ref xml:id="pb" read="2">
 			<author>
 				<name>Pascal</name>
 				<surname>Blaise</surname>
@@ -297,7 +309,7 @@
 			<date type="effective">2009</date>
 			<date type="first">1670</date>
 		</ref>
-		<ref xml:id="mp01" read="0">
+		<ref xml:id="pm01" read="0">
 			<author>
 				<name>Proust</name>
 				<surname>Marcel</surname>
@@ -314,7 +326,7 @@
 			<date type="effective">1988</date>
 			<date type="first">1913</date>
 		</ref>
-		<ref xml:id="rq01" read="2">
+		<ref xml:id="qr01" read="2">
 			<author>
 				<name>Queneau</name>
 				<surname>Raymond</surname>
@@ -331,7 +343,7 @@
 			<date type="effective">2009</date>
 			<date type="first">1933</date>
 		</ref>
-		<ref xml:id="jps02" read="2">
+		<ref xml:id="sjp02" read="2">
 			<author>
 				<name>Sartre</name>
 				<surname>Jean-Paul</surname>
@@ -348,7 +360,7 @@
 			<date type="effective">2009</date>
 			<date type="first">1938</date>
 		</ref>
-		<ref xml:id="jps01" read="2">
+		<ref xml:id="sjp01" read="2">
 			<author>
 				<name>Sartre</name>
 				<surname>Jean-Paul</surname>
@@ -399,7 +411,7 @@
 				<date type="first">1965</date>
 			</author>
 		</ref>
-		<ref xml:id="is01" read="0">
+		<ref xml:id="si01" read="0">
 			<author>
 				<name>Svevo</name>
 				<surname>Italo</surname>
@@ -423,7 +435,7 @@
 			<date type="trad">1986</date>
 			<date type="first">1954</date>
 		</ref>
-		<ref xml:id="rp01" read="0">
+		<ref xml:id="pr01" read="0">
 			<author>
 				<name>Pinget</name>
 				<surname>Robert</surname>
@@ -440,7 +452,7 @@
 			<date type="effective">1997</date>
 			<date type="first">1952</date>
 		</ref>
-		<ref xml:id="rp02" read="0">
+		<ref xml:id="pr02" read="0">
 			<author>
 				<name>Pinget</name>
 				<surname>Robert</surname>
@@ -480,6 +492,15 @@
 			<metamark>, </metamark>
 			<date type="effective">2021</date>
 			<date type="first">1678</date>
+		</ref>
+		<ref xml:id="rj02" read="1" type="online">
+<!--			<author>
+				<name>Ricardou</name>
+				<surname>Jean</surname>
+			</author>-->
+			<title>Site du fonds Jean Ricardou</title>
+			<online>https://jeanricardou.org/</online>
+			<date>23 novembre 2022</date>
 		</ref>
 	</div>
 	<div>
