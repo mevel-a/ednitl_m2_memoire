@@ -93,6 +93,14 @@
 			<date type="effective">11/07/2017</date>
 			<pages>p. 64-67</pages>
 		</ref>
+		<ref xml:id="dr01" read="1" type="article">
+			<author><name>Duval</name> <surname>Romain</surname></author>
+			<title>Le formalisme contre les formes</title>
+			<ed>Nouvelle revue d’esthétique, 2012/2 (n° 10) </ed>
+			<online>https://www.cairn.info/revue-nouvelle-revue-d-esthetique-2012-2-page-141.htm</online>
+			<date type="effective">2012</date>
+			<pages>p. 141-151</pages>
+		</ref>
 		<ref xml:id="yg01" read="0">
 			<author>
 				<name>Yanoshevsky</name>
