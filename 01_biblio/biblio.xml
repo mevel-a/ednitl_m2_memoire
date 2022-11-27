@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bibliography>
-	<ref xml:id="" read="">
+	<!--<ref xml:id="" read="">
 		<author>
 			<name/>
 			<surname/>
 		</author>
-		<metamark>, </metamark>
+		
 		<title/>
-		<metamark>, </metamark>
+		
 		<city/>
-		<metamark>, </metamark>
+		
 		<ed/>
-		<metamark>, </metamark>
+		
 		<coll/>
-		<metamark>, </metamark>
+		
 		<date type="effective"/>
 		<date type="first"/>
-	</ref>
+	</ref>-->
 
 	<div>
 		<head>Édition citée de Pour un nouveau roman</head>
@@ -25,15 +25,15 @@
 				<name>Robbe-Grillet</name>
 				<surname>Alain</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>Pour un nouveau roman</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Les Éditions de Minuit</ed>
-			<metamark>, </metamark>
+			
 			<coll>Double</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">2013</date>
 			<date type="first">1963</date>
 		</ref>
@@ -45,21 +45,23 @@
 				<name>Robbe-Grillet</name>
 				<surname>Alain</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>Les Gommes</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Les Éditions de Minuit</ed>
-			<metamark>, </metamark>
-			<coll/>
-			<metamark>, </metamark>
+			
+<!--			<coll/>-->
+			
 			<date type="effective">1998</date>
 			<date type="first">1953</date>
 		</ref>
+<!--		Marienbad l'immortelle le voyeur le labyrinthe, jalousie-->
 	</div>
 	<div>
 		<head>Œuvres d'Alain Robbe-Grillet non citées lues</head>
+<!--		djiin, les derniers jours de corinthe un régicide-->
 	</div>
 	<div>
 		<head>Sur le Nouveau Roman</head>
@@ -68,16 +70,16 @@
 				<name>Ricardou</name>
 				<surname>Jean</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>Le Nouveau Roman</title>
 			<title type="sub"><metamark>suivi de </metamark>Les Raisons de l'ensemble</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Éditions du Seuil</ed>
-			<metamark>, </metamark>
+			
 			<coll>Points</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">1990</date>
 			<date type="first">1973</date>
 		</ref>
@@ -89,55 +91,93 @@
 			<title>Les Défis du Nouveau roman</title>
 			<city>Paris</city>
 			<ed>Canopé</ed>
-			<coll/>
+<!--			<coll/>-->
 			<date type="effective">11/07/2017</date>
-			<pages>p. 64-67</pages>
+			<pages>64-67</pages>
 		</ref>
 		<ref xml:id="dr01" read="1" type="article">
 			<author><name>Duval</name> <surname>Romain</surname></author>
 			<title>Le formalisme contre les formes</title>
 			<ed>Nouvelle revue d’esthétique, 2012/2 (n° 10) </ed>
-			<online>https://www.cairn.info/revue-nouvelle-revue-d-esthetique-2012-2-page-141.htm</online>
+		<city>Paris</city>	<online>https://www.cairn.info/revue-nouvelle-revue-d-esthetique-2012-2-page-141.htm</online>
 			<date type="effective">2012</date>
-			<pages>p. 141-151</pages>
+			<pages>141-151</pages>
 		</ref>
 		<ref xml:id="yg01" read="0">
 			<author>
 				<name>Yanoshevsky</name>
 				<surname>Galia</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>Les discours du Nouveau Roman : Essais, entretiens, débats</title>
-			<metamark>, </metamark>
+			
 			<city>Villeneyve d'Ascq</city>
-			<metamark>, </metamark>
+			
 			<ed>Presses universitaires du Septentrion</ed>
-			<metamark>, </metamark>
-			<coll/>
-			<metamark>, </metamark>
+			
+<!--			<coll/>-->
+			
 			
 			<date type="effective">2006</date>
-			<date type="first"/>
-			<online>https://doi-org.ressources-electroniques.univ-lille.fr/10.4000/books.septentrion.54734</online>
+<!--			<date type="first"/>-->
+<online>https://doi-org.ressources-electroniques.univ-lille.fr/10.4000/books.septentrion.54734</online>
 		</ref>
 		
 	</div>
 	<div>
+		<head>Critiques généralistes</head>
+		<ref xml:id="hv01" read="2">
+			<author>
+				<name>Hugo</name>
+				<surname>Victor</surname>
+			</author>
+			<title>Ruy Blas</title>
+			<city>Paris</city>
+			<ed>Livre de poche</ed>
+			<date type="effective">2009</date>
+			<date type="first">1838</date>
+		</ref>
+	</div>
+	<div>
 		<head>Œuvres citées</head>
+		<ref xml:id="bh01" read="2">
+			<author>
+				<name>Balzac</name>
+				<surname>Honoré</surname>
+			</author>
+			<title>Le Père Goriot</title>
+			<city>Paris</city>
+			<ed>Pocket</ed>
+			<coll>Pocket Classique</coll>
+			<date type="effective">1989</date>
+			<date type="first">1842</date>
+		</ref>
+		<ref xml:id="fg01" read="2">
+			<author>
+				<name>Flaubert</name>
+				<surname>Gustave</surname>
+			</author>
+			<title>Madame Bovary</title>
+			<city>Paris</city>
+			<ed>Pocket</ed>
+			<coll>Pocket Classique</coll>
+			<date type="effective">1998</date>
+			<date type="first">1857</date>
+		</ref>
 		<ref xml:id="bb01" read="0">
 			<author>
 				<name>Beckett</name>
 				<surname>Samuel</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>Molloy</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Les Éditions de Minuit</ed>
-			<metamark>, </metamark>
+			
 			<coll>Double</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">1982</date>
 			<date type="first">1951</date>
 		</ref>
@@ -146,15 +186,15 @@
 				<name>Beckett</name>
 				<surname>Samuel</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>Fin de partie</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Les Éditions de Minuit</ed>
-			<metamark>, </metamark>
-			<coll/>
-			<metamark>, </metamark>
+			
+<!--			<coll/>-->
+			
 			<date type="effective">2009</date>
 			<date type="first">1957</date>
 		</ref>
@@ -163,15 +203,15 @@
 				<name>Beckett</name>
 				<surname>Samuel</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>En attendant Godot</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Les Éditions de Minuit</ed>
-			<metamark>, </metamark>
-			<coll/>
-			<metamark>, </metamark>
+			
+<!--			<coll/>-->
+			
 			<date type="effective">2007</date>
 			<date type="first">1952</date>
 		</ref>
@@ -180,15 +220,15 @@
 				<name>Camus</name>
 				<surname>Albert</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>L'Étranger</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Gallimard</ed>
-			<metamark>, </metamark>
+			
 			<coll>Folio</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">2010</date>
 			<date type="first">1942</date>
 		</ref>
@@ -197,15 +237,15 @@
 				<name>Céline</name>
 				<surname/>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>Voyage au bout de la nuit</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Gallimard</ed>
-			<metamark>, </metamark>
+			
 			<coll>Folioplus classiques</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">2011</date>
 			<date type="first">1952</date>
 		</ref>
@@ -218,15 +258,15 @@
 				<name>Markowicz</name>
 				<surname>André</surname>
 			</traductor>
-			<metamark>, </metamark>
+			
 			<title>Les Fères Karamazov</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Actes Sud</ed>
-			<metamark>, </metamark>
+			
 			<coll>Babel</coll>
-			<metamark>, </metamark>
+			
 			<date type="trad">2002</date>
 			<date type="first">1880</date>
 		</ref>
@@ -239,15 +279,15 @@
 				<name>Coindreau</name>
 				<surname>Maurice Edgar</surname>
 			</traductor>
-			<metamark>, </metamark>
+			
 			<title>Le Bruit et la fureur</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Gallimard</ed>
-			<metamark>, </metamark>
+			
 			<coll>Folio</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">2007</date>
 			<date type="trad">1972</date>
 			<date type="first">1931</date>
@@ -261,15 +301,15 @@
 				<name>Nesme</name>
 				<surname>Axel</surname>
 			</traductor>
-			<metamark>, </metamark>
+			
 			<title>Le Château</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Librairie Générale Française</ed>
-			<metamark>, </metamark>
+			
 			<coll>Le Livre de poche</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">2007</date>
 			<date type="trad">2001</date>
 			<date type="first">1926</date>
@@ -283,15 +323,15 @@
 				<name>Vialatte</name>
 				<surname>Alexandre</surname>
 			</traductor>
-			<metamark>, </metamark>
+			
 			<title>Le Procès</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Gallimard</ed>
-			<metamark>, </metamark>
+			
 			<coll>Folio classique</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">2009</date>
 			<date type="trad">1933</date>
 			<date type="first">1925</date>
@@ -305,15 +345,15 @@
 				<name>Sellier</name>
 				<prenom>Philippe</prenom>
 			</editor>
-			<metamark>, </metamark>
+			
 			<title>Pensées</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Pocket</ed>
-			<metamark>, </metamark>
+			
 			<coll>Agora</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">2009</date>
 			<date type="first">1670</date>
 		</ref>
@@ -322,15 +362,15 @@
 				<name>Proust</name>
 				<surname>Marcel</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>Du côté de chez Swann</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Gallimard</ed>
-			<metamark>, </metamark>
+			
 			<coll>Folio classique</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">1988</date>
 			<date type="first">1913</date>
 		</ref>
@@ -339,15 +379,15 @@
 				<name>Queneau</name>
 				<surname>Raymond</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>Le Chiendent</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Gallimard</ed>
-			<metamark>, </metamark>
+			
 			<coll>Folio</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">2009</date>
 			<date type="first">1933</date>
 		</ref>
@@ -356,15 +396,15 @@
 				<name>Sartre</name>
 				<surname>Jean-Paul</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>La Nausée</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Gallimard</ed>
-			<metamark>, </metamark>
+			
 			<coll>Folio</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">2009</date>
 			<date type="first">1938</date>
 		</ref>
@@ -373,15 +413,15 @@
 				<name>Sartre</name>
 				<surname>Jean-Paul</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>Qu'est-ce que la littérature ?</title>
-			<metamark>, </metamark>
+			
 			<city>Parus</city>
-			<metamark>, </metamark>
+			
 			<ed>Gallimard</ed>
-			<metamark>, </metamark>
+			
 			<coll>Folio essais</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">2008</date>
 			<date type="first">1948</date>
 		</ref>
@@ -390,15 +430,15 @@
 				<name>Stendhal</name>
 				<surname/>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>La Chartreuse de Parme</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Pocket</ed>
-			<metamark>, </metamark>
+			
 			<coll>Pocket Classiques</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">2008</date>
 			<date type="first">1839</date>
 		</ref>
@@ -406,39 +446,38 @@
 			<author>
 				<name>Roussel</name>
 				<surname>Raymond</surname>
-				<metamark>,</metamark>
+			</author>
 				<title>Locus solus</title>
-				<metamark>,</metamark>
+				
 				<city>Paris</city>
-				<metamark>,</metamark>
+				
 				<ed>Flammarion</ed>
-				<metamark>,</metamark>
+				
 				<coll>GF</coll>
-				<metamark>,</metamark>
+				
 				<date type="effective">2005</date>
 				<date type="first">1965</date>
-			</author>
 		</ref>
 		<ref xml:id="si01" read="0">
 			<author>
 				<name>Svevo</name>
 				<surname>Italo</surname>
 			</author>
-			<metamark>,</metamark>
+			
 			<traductor>
 				<name>Michel</name>
 				<surname>Paul-Henri</surname>
 				<name>Fusco</name>
 				<surname>Mario</surname>
 			</traductor>
-			<metamark>,</metamark>
+			
 			<title>La Conscience de Zeno</title>
-			<metamark>,</metamark>
+			
 			<city>Paris</city>
-			<metamark>,</metamark>
+			
 			<ed>Gallimard</ed>
 			<coll>Folio</coll>
-			<metamark>,</metamark>
+			
 			<date type="effective">2010</date>
 			<date type="trad">1986</date>
 			<date type="first">1954</date>
@@ -448,15 +487,14 @@
 				<name>Pinget</name>
 				<surname>Robert</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>Mahu ou le matériau</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Les Éditions de Minuit</ed>
-			<metamark>, </metamark>
-			<coll/>
-			<metamark>, </metamark>
+			
+			
 			<date type="effective">1997</date>
 			<date type="first">1952</date>
 		</ref>
@@ -465,17 +503,29 @@
 				<name>Pinget</name>
 				<surname>Robert</surname>
 			</author>
-			<metamark>, </metamark>
+			
 			<title>Le Renard et la boussole</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Les Éditions de Minuit</ed>
-			<metamark>, </metamark>
-			<coll/>
-			<metamark>, </metamark>
+			
+			
 			<date type="effective">2000</date>
 			<date type="first">1953</date>
+		</ref>
+		<ref xml:id="pf01" read="1">
+			<author>
+				<name>Ponge</name>
+				<surname>Francis</surname>
+				
+			</author>
+			<title>Le Parti pris des choses</title>
+			<city>Paris</city>
+			<ed>Gallimard</ed>
+			<coll>nrf</coll>
+			<date type="effective">2013</date>
+			<date type="first">1942</date>
 		</ref>
 	</div>
 	<div>
@@ -483,21 +533,20 @@
 		<ref xml:id="v01" read="1">
 			<author>
 				<name>Valincourt</name>
-				<surname/>
 			</author>
 			<editor>
 				<name>Montalbetti</name>
 				<surname>Christine</surname>
 			</editor>
-			<metamark>, </metamark>
+			
 			<title>Lettres à Madame la marquise *** sur le sujet de La Princese de Clèves</title>
-			<metamark>, </metamark>
+			
 			<city>Paris</city>
-			<metamark>, </metamark>
+			
 			<ed>Flammarion</ed>
-			<metamark>, </metamark>
+			
 			<coll>Garnier Flammarion</coll>
-			<metamark>, </metamark>
+			
 			<date type="effective">2021</date>
 			<date type="first">1678</date>
 		</ref>
@@ -514,7 +563,7 @@
 	<div>
 		<head>Première publication des textes constituants l'ensemble</head>
 	</div>
-	<ref xml:id="" read="">
+	<!--<ref xml:id="" read="">
 		<author>
 			<name/>
 			<surname/>
@@ -524,5 +573,5 @@
 		<ed/>
 		<coll/>
 		<date type=""/>
-	</ref>
+	</ref>-->
 </bibliography>
