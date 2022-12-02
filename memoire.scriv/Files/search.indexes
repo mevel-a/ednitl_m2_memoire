@@ -705,8 +705,6 @@ dans les USA il y a en plus de l’oppression et du racisme, aussi la revendicat
         </Document>
         <Document ID="37AC9DB5-E56D-473D-AC1B-24CF5F89E5AB">
             <Title>Trouver :</Title>
-            <Synopsis>Quelques possibilité de contextualisation
-Et bibliographie</Synopsis>
             <Text>Les parutions originales dan l'express cf p. 7
 
 Les critiques de Les Gommes (peut-être inexistantes) p. 7
@@ -941,7 +939,6 @@ p. 181« La vie d'aujourd'hui, la science d'ajourd'hui, réalisent le dépasse
 p. 182 « On répète, de l'extrême droite à l'extrême gauche, que cet art nouveau est malsain, décadent, inhumain et noir. »
 
 p. 183 « La critique académique voudrait même faire croire au public que les techniques nouvelles vont simplement être absorbées par le roman &quot;éternel&quot; et vont servir à perfectionner quelque détail du personnage balzacien, de l'intrigue chronologique et de l'humanisme transcendant. »</Text>
-            <Comments>inconsistance ici je crois avoir lu un &quot;i&quot; à une mention précédente.</Comments>
         </Document>
         <Document ID="400A2D15-E2E9-408E-9C39-D4F25BABA611">
             <Title>Glossaire des adversaires</Title>
@@ -1275,56 +1272,6 @@ La plupart des écrivains, surotut ceux qui font de longues phrases, prennent de
         </Document>
         <Document ID="5776BCEF-5EA8-424A-8A57-5BB812268ADC">
             <Title>Éléments pour une édition critique</Title>
-            <Text># Présentation générale
-
-
-
-
-## Commentaire stylistique
-
-### Un mot sur les moyens rhétoriques
-
-
-
-## Unité de l'œuvre ?
-
-
-
-## Chronologie
-
-
-## Glossaire des adversaires
-### Présentation du glossaire et explicitation des choix
-### Auquel s'oppose des notions vue comme positives ?
-
-# La transtextualité de l'œuvre
-
-## Référents philosophiques
-### Théorie littR sous-jacente
-### Une pensée d'époque
-## Adversaires désignés
-## Les alliés choisis, la tradition dans laquelle il décide de s'inscrire
-
-# Contre Sartre
-# Un portrait en creux d'un certain Balzac
-# Le tableau d'une littérature à défaire
-# Et d'une autre à faire
-# L'esquisse d'une littérature à faire…
-	filiation
-# Et d'une autre à défaire
-	ici glossaire des adversaires ?
-# Publication fait suite à des œuvres et &quot;réactions&quot; suscitées
-
-# Bibliographie ordonnée
-</Text>
-            <Notes>À la manière de l'édition des lettres, tenter de dégager des axes de lectures plutôt que des patés comme ça.
-
-
-
-Plusieurs petits textes critiques qui peuvent être modulables selon les pages d'un site. Ainsi un même paragraphe sur x lien avec tel auteur peut être réexploité dans une partie cosacrée à l'intertextualité.
-
-
-Sachant que certains éléments notamment le &quot;contre sartre&quot; ou &quot;balzac&quot; peuvent faire l'objet de notes plutôt que de développement.</Notes>
         </Document>
         <Document ID="61A99AFA-44D0-4887-A4E6-03AFDE038215">
             <Title>etrentiens3</Title>
@@ -1449,33 +1396,9 @@ le récit d’une performance d’un boufon qui déblatère des insultes et en f
 
 p. 308 « Les fonctions saines, « naturelles », de la nature humaine s’accomplissaient en contrebande, si l’on peut dire, de façon sauvage, parce que l’idéologie ne les sanctifiait point. »</Text>
         </Document>
-        <Document ID="74944775-1794-439A-8C5F-9FEC62D2BACD">
-            <Text>BLOCNOTE titre
-BOCNOTE corps
-fac citation longue
-RD 1234567
-RD insert central/gauche ordinateur
-
-
-RD intertitre 1 times NR
-RD corps
-RD metatextuel
-RD signature Bill
-RD signature S1mio
-RD sms agressif
-RD sms+internet sobre
-RD texte cité agressif
-RD texte cité1
-RD texte en sérif
-SMS en courrier 12
-fdsfdsfds
-
-</Text>
-        </Document>
+        <Document ID="74944775-1794-439A-8C5F-9FEC62D2BACD"/>
         <Document ID="787B3096-CF1B-4D04-B794-4358EA83BDAE">
             <Title>Chronologie</Title>
-            <Synopsis>Établir une chrono des œuvres liées à PnR et des publications/republications des textes chronoiques critiques etc...
-Pourquoi pas une frise chronologique.</Synopsis>
             <Text>1956 L'Ère du soupçon
 juillet 1956 parution de « Une Voie pour le roman futur » paraît dans La Nouvelle revue française
 </Text>
@@ -1677,8 +1600,6 @@ p. 162</Text>
         </Document>
         <Document ID="9168EFE9-B0CC-4D23-BA0B-8D5F1650FF08">
             <Title>À propos du terme &quot;Nouveau roman&quot;</Title>
-            <Text>p. 9-10 se justifiant de l'employer « il n'y a là qu'une appelation commode englobant tous ceux qui cherchent de nouvelles formes romanesques, cables d'exprimer (ou de créer) de nouvelles relations entre l'homme et le monde, tous ceux qui sont décidés à inventer le roman, c'est-à-dire à inventer l'homme. »
-&lt;— théorie sous-jacente et définition du NR</Text>
         </Document>
         <Document ID="9B1F5397-81F3-4CC9-A584-AA5307A27D04">
             <Title>Une théorie littéraire ?</Title>
@@ -2080,10 +2001,6 @@ qq part il a écrit « crépitement, grésillement de la brosse dans la chevelu
         </Document>
         <Document ID="A596FC36-6D37-48CB-BFBE-A5C64E17A566">
             <Title>Pour un nouveau roman lecture 17/10/22</Title>
-            <Synopsis>Notes sur la (re)lecture du texte 17/10/22
-commentaires édition
-et notes de lectures (littéraire, rhétorique)
-«  »</Synopsis>
             <Text># Notes sur l'édition
 
 Robbe-Grillet Alain, Pour un nouveau roman, Paris, Les Éditions de Minuit, coll. &quot;double&quot;, 2013 [1963]
@@ -2608,23 +2525,6 @@ p. 183 « La critique académique voudrait même faire croire au public que le
 ces dernières pages semblent servir aussi à préciser la pensé
 
 termine sur déclaration d'un nouveau nouveau roman cahngeant encore le sens du terme.</Text>
-            <Notes>Inscription du texte dans l'époque
-	- procédés rhétoriques, tropes courants et style année 60 ?
-	-théorie(s) sous-jacente(s)
-		-auteurs cités
-	-réception du truc
-	-les articles dont il sous-entend qu'ils l'ont poussé à écrire ceci
-
-Les textes en eux-mêmes
-	-charge rhétorique
-	-sujets
-	-méthode de datation
-
-Cohérence de l'ensemble
-	-une décennie de textes, unicité non évidente
-
-
-</Notes>
         </Document>
         <Document ID="A9394880-F5D6-462F-A916-2A703EA7B05F">
             <Title>Notes</Title>
@@ -2922,34 +2822,6 @@ p. 52 retourne le stigmate en prétendant le rétablir (après tout pourquoi pa
         </Document>
         <Document ID="D493B8BB-8B67-47F2-BEEF-81955969C5DE">
             <Title>L'Immortelle, ARG, 1963</Title>
-            <Text>Prix Louis DELLUL en 1963
-
-~ 00:13:00 propos sur la poésie arabe 'sultan salim'
-
-Vrai/faux, les apparences l'absence de profondeur
-temps &quot;nié&quot; du moins chronologie indifférente et descontruite
-
-économie des acteurs et transition subite, faux raccords
-
-propos sur les guides 00:19:00 &quot;oh les guides&quot; (en gros)
-
-subjectivité du regard pas toujours déclaré mais probable et suggéré par els mouvements de la caméra qui parcourt (du regard souhaite t-on dire) la ville pour s'arrêter sur l'objet de la scène. Et de manière plus classique par champs/contre champs encore que le personnages qui devient la subjectivité de la caméra est lui non classique mais un passant un élément du décor presque un figurant qui puisqu'ils sont joué par des acteurs peu nombreux deviennent de fait presque des personnages selon les critères habituelles. 
-
-Interrogation de l'identité des figurants/personnages et leurs statuts.
-
-nomrbeux sucadrage
-
-enquête et tous parlent de prostitution +/- comprennent en tout cas qu'il veut acheter des femmes. Incompréhension encore, tout lui résiste à ce brave homme !
-
-Joli scène avec braque qui pénètre dans salle hiboustyle (à colonne, je me souviens mal du terme) dans un supposé temple (par moi) inondé.
-
-01:30:00 environ scène dans le cimetière sur la signification
-
-la langue étrangère
-
-l'important c'est l'étrangeté aux choses confronté à l'altérité, d'une femme, de tout un lot de personnages et d'objets supposés contenir des indices des traces une profondeur cachée, tout le onde lui dit qu'il n'y a rien derrière mais il insiste jusqu'à se donner la mort.
-
-belles images d'Istanbul notamment ~01:31:00 </Text>
         </Document>
         <Document ID="D9A47FF1-F176-4E7D-8570-5D059E98B952">
             <Title>Faerber Johan, « La photo Minuit, du cliché nocture à la lumière du négatif », Fabula / Les colloques, L'idée de littérature dans les années 1950, URL : http://www.fabula.org/colloques/document64.php, page consultée le 19 novembre 2022. </Title>
@@ -2988,7 +2860,6 @@ p. 122
         </Document>
         <Document ID="DCF57CCC-3439-4889-BB5A-C4634F8A9A60">
             <Title>DataBase</Title>
-            <Synopsis>Préparation du travail pour database des articles</Synopsis>
             <Text>Intertexte à quoi servent les théories
 
 critiques Les Gommes p. 7
@@ -3095,11 +2966,7 @@ Butor Micheln, Marie-Jo, Universos paralelos : uma viagem fotoliteraria de Miche
 p.343 &quot;Dans les légendes poétiques de Butor, il ne s'agit pas de décrire ou de rivaliser avec la photographie, selon le modèle classique de l'(it) ekphrasis, dans une tentative d'immobilisation par les mots de l'instantané photographique. L'effet du texte sur la photot est &quot;puissant et précieux&quot;, selon les mots de Butor, il introduit du mouvement , ou plutôt des rythmes, dans la relation texte images.&quot;
 dans l'oeil qui parcoure la page, parcoure la photo, vérifie les propos de Butor et découvre de nouveaux éléments se sent parcourir l'image comme on navigue dans les textes blanchi de B (ce paragraphe c'est moi la meuf (ou le mec?) est même pas capable de sortir une idée correcte en fait.)
 la photo INDE 2008, Samode et le commentaire sont très beaux</Text>
-            <Notes>improductif irrespectueu, fainéant j’ai poussé le nombrilisme à vouloir que mon action ait un sens. En plus j’aimerais bien avoir une machine à laver. 
-Ah ! mais nous y voilà ! mes parents ont la vitrocéramique et sont propriétaires, ils ne se sentent pas en danger, ils ont même un travail stable et s’épanouissent. ils étaient content de voler Mitterand sont content de s’être trouver trompé, ça fait partie du jeu rient-ils devant nous, le poulet nous sépare, qui nous demandons si je vais pas aller creuser un champs médiocre pour arrêter de faire la queue, gratos et me reprochant encore d’exister. 
-J’aiguise un sécateur rouilllé que je conserve pour tout ceux qui me paraissent de l’autre côté de la barrière. J’égorgerais père et mère pour prendre ce qui m’est du. 
-Macron : « Si j’ »tais chômeur je me battrais. »
-Tenons le nous pour dit. </Notes>
+            <Notes>improductif irrespectueu, fainéant j’ai poussé le nombrilisme à vouloir que mon action ait un sens. En plus j’aimerais bien avoir une machine à laver. Ah ! mais nous y voilà ! mes parents ont la vitrocéramique et sont propriétaires, ils ne se sentent pas en danger, ils ont même un travail stable et s’épanouissent. ils étaient content de voler Mitterand sont content de s’être trouver trompé, ça fait partie du jeu rient-ils devant nous, le poulet nous sépare, qui nous demandons si je vais pas aller creuser un champs médiocre pour arrêter de faire la queue, gratos et me reprochant encore d’exister. J’aiguise un sécateur rouilllé que je conserve pour tout ceux qui me paraissent de l’autre côté de la barrière. J’égorgerais père et mère pour prendre ce qui m’est du. Macron : « Si j’ »tais chômeur je me battrais. »Tenons le nous pour dit. </Notes>
         </Document>
         <Document ID="EF60EAAE-FB95-42F1-A779-0389F91941E6">
             <Title>Crépuscule des idoles Nietzsche</Title>
