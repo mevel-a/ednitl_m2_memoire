@@ -57,11 +57,103 @@
 			<date type="effective">1998</date>
 			<date type="first">1953</date>
 		</ref>
+		<ref xml:id="rga02" read="0">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Le Voyeur</title>
+			<city>Paris</city>
+			<ed>Les Éditions de Minuit</ed>
+			
+			<!--			<coll/>-->
+			
+<!--			<date type="effective">1998</date>-->
+			<date type="first">1955</date>
+		</ref>
+		<ref xml:id="rga03" read="1">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			
+			<title>La Jalousie</title>
+			
+			<city>Paris</city>
+			
+			<ed>Les Éditions de Minuit</ed>
+			
+			<coll>Double</coll>
+			
+			<date type="effective">1957</date>
+			<date type="first">2017</date>
+		</ref>
+		<ref xml:id="rga04" read="0">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Dans le labyrinthe</title>
+			<city>Paris</city>
+			<ed>Les Éditions de Minuit</ed>
+			
+			<!--			<coll/>-->
+			
+			<!--			<date type="effective">1998</date>-->
+			<date type="first">1959</date>
+		</ref>
+		<ref xml:id="rga05" read="1">
+			<author>
+				<name>Resnais</name>
+				<surname>Alain</surname>
+			</author>
+			<title>L'Année dernière à Marienbad</title>
+			<ed>Silverfilms, Argos Films, Cinétel, Les Films Tamara, Precitel, Société Nouvelle des films Cormoran, Cineriz, Como Films, Terra Film Produktion</ed>
+			<date type="effective">1961</date>
+		</ref>
+		
+		<ref xml:id="rga06" read="1">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>L'Immortelle</title>
+			<ed>Cocinor, Como Films, Dino De Laurentiis Cinematografica, Les Films Tamara</ed>
+			<date type="effective">1963</date>
+		</ref>
 <!--		Marienbad l'immortelle le voyeur le labyrinthe, jalousie-->
 	</div>
 	<div>
 		<head>Œuvres d'Alain Robbe-Grillet non citées lues</head>
 <!--		djiin, les derniers jours de corinthe un régicide-->
+		<ref xml:id="rga08" read="1">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			
+			<title>Djinn</title>
+			
+			<city>Paris</city>
+			
+			<ed>Les Éditions de Minuit</ed>
+			
+			<coll>Double</coll>
+			
+			<date type="effective">1981</date>
+			<date type="first">2018</date>
+		</ref>
+		<ref xml:id="rga07" read="1">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Un Régicide</title>
+			<city>Paris</city>
+			<ed>Les Éditions de Minuit</ed>
+			<date type="effective">2006</date>
+			<date type="first">1978</date>
+		</ref>
 	</div>
 	<div>
 		<head>Sur le Nouveau Roman</head>
@@ -98,10 +190,19 @@
 		<ref xml:id="dr01" read="1" type="article">
 			<author><name>Duval</name> <surname>Romain</surname></author>
 			<title>Le formalisme contre les formes</title>
-			<ed>Nouvelle revue d’esthétique, 2012/2 (n° 10) </ed>
+			<ed>Nouvelle revue d’esthétique</ed>
 		<city>Paris</city>	<online>https://www.cairn.info/revue-nouvelle-revue-d-esthetique-2012-2-page-141.htm</online>
-			<date type="effective">2012</date>
+			<date type="effective">2012/2</date>
 			<pages>141-151</pages>
+		</ref>
+		<ref xml:id="mc01" read="1" type="article">
+			<author><name>Milat</name><surname>Christian</surname></author>
+			<title>Sartre et Robbe-Grillet, ou les chemins de l'écriture</title>
+			<ed>Revue d'Histoire littéraire de la France</ed>
+			<city>Paris</city>
+			<online>https://www.jstor.org/stable/40534639</online>
+			<date type="effective">Janvier-Février, 2002</date>
+			<pages>83-96</pages>
 		</ref>
 		<ref xml:id="yg01" read="0">
 			<author>
@@ -111,7 +212,7 @@
 			
 			<title>Les discours du Nouveau Roman : Essais, entretiens, débats</title>
 			
-			<city>Villeneyve d'Ascq</city>
+			<city>Villeneuve d'Ascq</city>
 			
 			<ed>Presses universitaires du Septentrion</ed>
 			
@@ -122,7 +223,18 @@
 <!--			<date type="first"/>-->
 <online>https://doi-org.ressources-electroniques.univ-lille.fr/10.4000/books.septentrion.54734</online>
 		</ref>
-		
+		<ref xml:id="sn00" read="0">
+			<author>
+				<name>Sarraute</name>
+				<surname>Nathalie</surname>
+			</author>
+			<title>L'Ère du soupçon</title>
+			<city>Paris</city>
+			<ed>Gallimard</ed>
+			<coll>Pléiade</coll>
+			<date type="effective">1996</date>
+			<date type="first">1956</date>
+		</ref>
 	</div>
 	<div>
 		<head>Critiques généralistes</head>
@@ -550,6 +662,17 @@
 			<date type="effective">2021</date>
 			<date type="first">1678</date>
 		</ref>
+		<ref xml:id="dm00" read="1">
+			<author>
+				<name>Duras</name>
+				<surname>Marguerite</surname>
+			</author>
+			<title>Œuvres complètes</title>
+			<city>Paris</city>
+			<ed>Gallimard</ed>
+			<coll>Pléiade</coll>
+			<date type="effective">2011</date>
+		</ref>
 		<ref xml:id="rj02" read="1" type="online">
 <!--			<author>
 				<name>Ricardou</name>
@@ -562,7 +685,258 @@
 	</div>
 	<div>
 		<head>Première publication des textes constituants l'ensemble</head>
+		<ref xml:id="rga10" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Il écrit comme Stendhal</title>
+			<ed>L'Express, </ed>
+			<city>Paris</city>
+			<date type="effective">1955/10/25</date>
+			<pages>8</pages>
+		</ref>
+		<ref xml:id="rga11" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>La littérature aujourd'hui - VI</title>
+			<ed>Tel Quel, n°14</ed>
+			<city>Paris</city>
+			<date type="effective">1963 été</date>
+			<pages>39-45</pages>
+		</ref>
+		<ref xml:id="rga12" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Une voie pour le roman futur</title>
+			<ed>Nouvelle Revue Française, n°43</ed>
+			<city>Paris</city>
+			<date type="effective">1956/07</date>
+			<pages>77-84</pages>
+		</ref>
+		<ref xml:id="rga13" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Pour un réalisme de la présence</title>
+			<ed>L'Express</ed>
+			<city>Paris</city>
+			<date type="effective">1956/01/17</date>
+			<pages>11</pages>
+		</ref>
+		<ref xml:id="rga14" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Réalisme et révolution</title>
+			<ed>L'Express</ed>
+			<city>Paris</city>
+			<date type="effective">1955/01/03</date>
+			<pages>15</pages>
+		</ref>
+		<ref xml:id="rga15" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Littérature engagée, littérature réactionnaire</title>
+			<ed>L'Express</ed>
+			<city>Paris</city>
+			<date type="effective">1955/12/20</date>
+			<pages>11</pages>
+		</ref>
+		<ref xml:id="rga16" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>La Forme et le contenu</title>
+			<ed>France Observateur, n°392</ed>
+			<city>Paris</city>
+			<date type="effective">1957/11/14</date>
+			<pages>19</pages>
+		</ref>
+		<ref xml:id="rga17" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Il n'y a pas "d'avant garde"</title>
+			<ed>France Observateur, n°388</ed>
+			<city>Paris</city>
+			<date type="effective">1957/10/17</date>
+			<pages>19</pages>
+		</ref>
+		<ref xml:id="rga18" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Un joli talent de conteur</title>
+			<ed>France Observateur, n°390</ed>
+			<city>Paris</city>
+			<date type="effective">1957/10/31</date>
+			<pages>19</pages>
+		</ref>
+		<ref xml:id="rga19" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Écrire pour son temps</title>
+			<ed>France Observateur, n°387</ed>
+			<city>Paris</city>
+			<date type="effective">1957/10/10</date>
+			<pages>17</pages>
+		</ref>
+		<ref xml:id="rga20" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Le réalisme socialiste est bourgeois</title>
+			<ed>L'Express</ed>
+			<city>Paris</city>
+			<date type="effective">1956/02/21</date>
+			<pages>11</pages>
+		</ref>
+		<ref xml:id="rga21" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>La mort du personnage</title>
+			<ed>France Observateur, n°389</ed>
+			<city>Paris</city>
+			<date type="effective">1957/10/24</date>
+			<pages>20</pages>
+		</ref>
+		<ref xml:id="rga22" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Nature, Humanisme, Tragédie</title>
+			<ed>Nouvelle Revue Française, n°70</ed>
+			<city>Paris</city>
+			<date type="effective">1958/10</date>
+			<pages>580-603</pages>
+		</ref>
+		<ref xml:id="rga23" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Énigmes et transparences chez Raymond Roussel</title>
+			<ed>Critique, n°199</ed>
+			<city>Paris</city>
+			<date type="effective">1963/12</date>
+			<pages>1027-1033</pages>
+		</ref>
+		<ref xml:id="rga24" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>La conscience malade de Zeno</title>
+			<ed>Nouvelle Revue Française, n°19</ed>
+			<city>Paris</city>
+			<date type="effective">1954/07</date>
+			<pages>138-141</pages>
+		</ref>
+		<ref xml:id="rga25" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Joë Bousquet le rêveur</title>
+			<ed>Critique, n°77</ed>
+			<city>Paris</city>
+			<date type="effective">1953/10</date>
+			<pages>819-829</pages>
+		</ref>
+		<ref xml:id="rga26" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Samuel Beckette ou la présence sur la scène</title>
+			<ed>Critique, n°189</ed>
+			<city>Paris</city>
+			<date type="effective">1963/02</date>
+			<pages>108-114</pages>
+		</ref>
+		<ref xml:id="rga27" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Samuel Beckett, Auteur dramatique</title>
+			<ed>Critique, n°69</ed>
+			<city>Paris</city>
+			<date type="effective">1953/02</date>
+			<pages>108-114</pages>
+		</ref>
+		<ref xml:id="rga28" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Un roman qui s'invente lui-même</title>
+			<ed>Critique, n°80</ed>
+			<city>Paris</city>
+			<date type="effective">1954/01</date>
+			<pages>82-88</pages>
+		</ref>
+		<ref xml:id="rga29" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Nouveau roman, homme nouveau</title>
+			<ed>Revue de Paris, n°68</ed>
+			<city>Paris</city>
+			<date type="effective">1961/09</date>
+			<pages>115-121</pages>
+		</ref>
+		<ref xml:id="rga30" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Comment mesurer l'inventeur des mesures</title>
+			<ed>L'Express, n°627</ed>
+			<city>Paris</city>
+			<date type="effective">1963/06/20</date>
+			<pages>44-45</pages>
+		</ref>
+		<ref xml:id="rga31" read="0" type="article">
+			<author>
+				<name>Robbe-Grillet</name>
+				<surname>Alain</surname>
+			</author>
+			<title>Monsieur Personne répond... Pour un "nouveau roman"</title>
+			<ed>Le Figaro Littéraire</ed>
+			<city>Paris</city>
+			<date type="effective">1963/12/05-11</date>
+			<pages>1-26</pages>
+		</ref>
 	</div>
+	
+	<!--<ref xml:id="dr01" read="1" type="article">
+		<author><name>Duval</name> <surname>Romain</surname></author>
+		<title>Le formalisme contre les formes</title>
+		<ed>Nouvelle revue d’esthétique, 2012/2 (n° 10) </ed>
+		<city>Paris</city>	<online>https://www.cairn.info/revue-nouvelle-revue-d-esthetique-2012-2-page-141.htm</online>
+		<date type="effective">2012</date>
+		<pages>141-151</pages>
+	</ref>-->
 	<!--<ref xml:id="" read="">
 		<author>
 			<name/>
