@@ -19,8 +19,42 @@ for ($file=1; $file<14; $file=$file+1){
 	binmode(CORPUS, ":utf8");
 	while(my $line=<CORPUS>){
 		chop $line;
-		$line=~s/<\?xml.*<body class=\"pagechap\" id=\"(page\d+)\">/\n<!--DÉBUT CHAPITRE-->\n<section class=\"pagechap\" id=\"$1\">/;
-		$line=~s/<\/body><\/html/<\/section>\n<!--FIN CHAPITRE-->\n/;
+		$line=~s/<\?xml.*<body class=\"pagechap\" id=\"(page\d+)\">/\n<!--DÉBUT CHAPITRE-->\n<section class=\"pagechap\" id=\"$1\">/g;
+		$line=~s/<\/body><\/html/<\/section>\n<!--FIN CHAPITRE-->\n/g;
+		$line=~s/<div class=\"real_spc\" style=\"font-size: (\d\.\dem)\"> <\/div>/\n<!--GAP HERE $1-->\n/g;
+		$line=~s/<a id=\"(pg_)(\d+)\" \/>/<pb n=\"$2\"\/>/g;
+		$line=~s/<i>/<hi rend=\"italic\">/g;
+		$line=~s/<\/i>/<\/hi>/g;
+		$line=~s/<p class=\"txt\"><span>/\n<p>/g;
+		$line=~s/<h1 class=\"tit_right\">/<title>/g;
+		$line=~s/<\/h1>/<\/title>/g;
+		$line=~s/<b>/<hi rend=\"bold\">/g;
+		$line=~s/<\/b>/<\/hi>/g;
+		$line=~s/<p class=\"txt_right\"><span>/\n<p rend=\"txt_right\">/g;
+		$line=~s/<\/span><\/p>/<\/p>\n/g;
+		$line=~s/<\/div>//g;
+		$line=~s/<div class=\"tit_part_l0 tit_right\">/<!--début bloc titre-->/g;
+		$line=~s/<small>/<hi rend=\"small_caps\">/g;
+		$line=~s/<\/small>/<\/hi>/g;
+		$line=~s/<sup>/<hi rend=\"exposant\">/g;
+		$line=~s/<\/sup>/<\/hi>/g;
+		$line=~s/<h2 class=\"tit_right\"><span>/<title type=\"subsection_title\">/g;
+		$line=~s/<\/span><\/h2>/<\/title>/g;
+		$line=~s/<blockquote class=\"epigraphe\">/\n<cit type="epigraph">\n/g;
+		$line=~s/<\/blockquote>/<\/ref>\n<\/cit>/g;
+		$line=~s/<p class=\"txt_center cit_ref cit_aut\"><span>/\n<ref>/g;
+		$line=~s/« /<quote>« /g;
+		$line=~s/ »/ »<\/quote>/g;
+		$line=~s/<div class=\"tit_chap_l0 tit_right\">/<!--début bloc titre anthologie-->/;
+		$line=~s/<h2 class=\"tit_right\">/<title type=\"subsection_title\">/g;
+		$line=~s/<\/h2>/<\/title>/g;
+		$line=~s/<div (id=\"tit\d+)\" class=\"tit_sect_l0 tit_right\">/<!--début bloc titre sous-section : $1-->/g;
+		# $line=~s///g;
+		# $line=~s///g;
+		# $line=~s///g;
+		# $line=~s///g;
+		# $line=~s///g;
+		# $line=~s///g;
 		$txt = $txt.$line."\n";#récupération texte complet, stockage dans une variable
 	}
 	close (CORPUS);

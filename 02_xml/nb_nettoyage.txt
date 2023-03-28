@@ -1,0 +1,69 @@
+<div class="real_spc" style="font-size: 3.7em"> </div>
+<div class="real_spc" style="font-size: 2.7em"> </div>
+<div class="real_spc" style="font-size: 0.5em"> </div>
+<div class="real_spc" style="font-size: 0.9em"> 
+<div class="real_spc" style="font-size: 2.4em"> </div>
+<div class="real_spc" style="font-size: 0.7em"> </div>
+<div class="real_spc" style="font-size: 2.2em"> </div>
+<div class="real_spc" style="font-size: 0.6em"> </div>
+
+= small gap 0.6em
+
+
+
+<a id="pg_13" />
+
+
+= pb n=""
+
+
+<i>
+
+= italic
+
+<p class="txt"><span>
+
+= paragraphe
+
+<div class="tit_chap_l0 tit_right">
+<div class="tit_part_l0 tit_right">
+= début bloc titre
+
+
+<h1 class="tit_right"><b><a id="pg_16" />Une voie pour le roman futur</b></h1>
+
+= titre
+
+<p class="txt_right"><span>(1956)</span></p>
+= sous-titre
+
+
+</div>
+= 
+
+<small>
+=hi rend="small_caps"
+
+<sup>
+= hi rend="exposant"
+
+
+<div id="tit9" class="tit_sect_l0 tit_right">
+=début bloc titre anthologie
+
+
+<h2 class="tit_right"><span>
+= title type="subsection"
+
+</span></h2>
+
+
+<blockquote class="epigraphe">
+<p class="txt_center cit_ref cit_aut"><span>
+</blockquote>
+
+= cit
+
+
+</span></p>
+=</p>\n
