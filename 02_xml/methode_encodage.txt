@@ -1,7 +1,0 @@
-Méthode encodage : 
-- récupérer un epub acheté
-- ziper epub en changeant l'extension de .epub à .zip
-- récupérer les fichiers .html contenant le texte
-- script perl pour lier tout ça en un seul 
-- supprimer les balises en trop
-- nettoyage en conservant grâce à des commentaires les traces de balises supprimées mais qu'on pourrait vouloir restaurer (voir "bloc titre")
