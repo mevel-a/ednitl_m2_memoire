@@ -1,0 +1,302 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fancyhdr}
+\usepackage{reledmac}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{wallpaper}
+\usepackage[top=2.5cm, bottom=2cm, left=2cm, right=2cm, heightrounded, marginparwidth=3.5cm, marginparsep=0.3cm]{geometry}
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0.3pt}
+\usepackage{hyperref}
+\pagestyle{fancy}
+\lhead{{\scshape{Mével}} Adrien M2 EdNitl}
+\chead{}
+\rhead{2022-2023}
+\fancyfoot[]{}
+\rfoot{\thepage}
+\usepackage[french]{babel}
+\setlength{\headheight}{20.61049pt}
+
+\begin{document}
+\ULCornerWallPaper{0.23}{img/logo_u_lille.png}
+
+
+\begin{titlepage}
+  
+
+\vspace*{3cm}
+
+ 
+\begin{center}
+\textsc{\huge Mémoire de recherche}
+
+\textsc{\textit{Pour un nouveau roman}, édition numérique}
+
+
+
+%Version du 
+\today
+
+
+\vspace*{2cm}
+Mme~Florence~\textsc{de Challonge}
+
+
+M.~Matthieu~\textsc{Marchal}
+
+
+
+
+\vspace*{11cm}
+\small
+\textsc{Mével}~Adrien
+
+Master~2 Lettres Modernes,
+
+«~Éditions numériques et imprimées de textes littéraires~»
+
+\vspace*{2.5cm}
+Année universitaire 2022-2023
+
+
+
+
+\end{center}
+
+
+\end{titlepage}	
+
+\newcommand{\punr}{\textit{Pour un nouveau roman}}
+\newcommand{\robbe}{Alain~Robbe-Grillet}
+\newcommand{\go}{«~}
+\newcommand{\gf}{~»}
+
+
+
+
+\vspace{3cm}
+
+\section{Projet d'édition}
+\section{Conception et réalisation d'une base de donnée}
+    \subsection{Principes généraux}
+    On appelle base de donnée un mode de structuration de l'information qui permet de stocker un grand nombre d'informations sur un petit espace disque. Il existe plusieurs modèles de structuration de ces bases de données, mais pour le présent travail n'est employé que le modèle le plus courant~: le modèle relationnel.
+
+    Dans une base de donnée relationnelle on ne stocke pas seulement des informations brutes telles «~Robbe-Grillet, Une voie pour le roman futur~» mais bien des informations mises en relations les unes avec les autres, chacune ayant une nature définie au sein de la base, on aurait donc plutôt~: «~L'auteur Robbe-Grillet a écrit l'article nommé "Une voie pour le roman futur".~».
+
+    Nous nous proposons d'illustrer via une base de données les liens que tisse chacun des textes constituant l'ensemble avec les publications antérieures et les référents (textuels ou autres) qui sous-tendent l'argumentation tout en rendant compte des différents thèmes abordés afin de donner une vue d'ensemble du recueil perçu comme un tissu de textes au sein d'un environnement dont il donne, de manière implicite et/ou explicite, une représentation.
+    %Rapide, modifiable à souhait et pratique d'utilisation pour une alimentation continue au fil d'une lecture, la base de donnée relationnelle nous parût un outil performant pour traiter et mettre en valeur les relations transtextuelles qui parcourent \textit{Pour un nouveau roman} et l'intègrent au sein d'un corpus plus vaste.
+
+
+   
+
+
+
+
+    \subsection{Mise en œuvre}
+
+    Dès décembre~2022, nous avons produit une première version de cette base de donnée relationnelle dans le cadre de l'évaluation du cours de base données animé par Mme~Delphine~\textsc{Tribout}. Le modèle soumis alors à évaluation nécessitait quatre entités~: la base incluait une entité «~SUBJECTS~», un recensement des domaines abstraits dont traitaient les ARTICLES. Afin d'être le plus pertinent possible nous nous proposions de produire des valeurs les plus précises possibles pour l'attribut sDomain («~théorie Litteraire \textsc{xx}\textsuperscript{e}~» plutôt que «~litterature~»).
+
+    Cette entité a depuis été retirée du modèle car elle nous semblait avoir peu d'intérêt tant le choix des domaines à affubler à tel ou tel article était d'une part redondant, d'autre part le fruit d'une appréciation personnelle parfois difficile à objectiver. Si tel outil est toujours le produit d'une recherche particulière et, dès lors, le résultat d'une lecture donnée, le découpage des domaines traités par les articles du recueil nous paraissait au mieux d'un intérêt limité («~À quoi servent les théories~» traite de théorie littéraire du \textsc{xx}\textsuperscript{e} et de philosophie), au pire, difficilement défendable. Par exemple, nous avions réuni l'ensemble des filiations du nouveau roman tels «~Faulkner~» ou «~Kafka~» généralement mentionnés ensemble au sein du domaine «~histoire littéraire internationale synchronique~» plutôt que de les séparer dans des catégories par siècle et/ou pays car \robbe{} ne fait pas une histoire de la littérature anglaise ou tchèque mais inscrits ses références dans une histoire littéraire internationale~; on aurait pu également considérer que ces références puisqu'elles s'inscrivent dans une volonté de décrire une filiation au nouveau roman devraient être rattachées au domaine «~théorie littéraire \textsc{xx}\textsuperscript{e}~». De manière générale, il nous semblait que l'attribution de domaine aux références toujours effectuées en fonction de notre lecture du recueil induisait trop de choix problématiques pour être pleinement satisfaisante.
+
+
+
+    
+
+
+\subsubsection{Modèle conceptuel}
+\label{ref:db_modele_conceptuel}
+ La première étape de constitution d'une base de donnée est l'élaboration d'un modèle conceptuel. Ce modèle conceptuel constitue une représentation sommaire d'une partie restreinte du monde, en l'occurence une lecture donnée de \punr%{}, voir \ref{modele_conceptuel}
+ . Les modèles conceptuels sont constitués~: 
+    \begin{itemize}
+        \item d'entité, les objets représentés (par exemple~: les premières publications, les articles de \punr{}, les références transtextuelles)
+        \item d'attributs, les qualités de ces objets (par exemple~: date de publication, page de début, nature de la référence)
+        \item d'association, les relations qui unissent les entités (par exemple~: «~correspond à~», «~mentionne~»)
+        \item chacune des associations sont munies de cardinalité qui précisent le nombre de fois minimal et maximal où l’entité est impliquée dans l’association (par exemple~: l'entité «~ARTICLE~» peut ne pas mentionner d'entités de TRANSTEXTS et peut en mentionné un nombre virtuellement infini, la cardinalité de l'association «~MENTION~» à l'endroit de «~ARTICLES~» sera donc 0,n).
+    \end{itemize}
+    Par convention on évite l'usage d'accents et d'espace et les noms d'entités et d'associations sont inscrits en majuscule, les entités sont représentées par un rectangle, les associations par un cercle%, voir \ref{modele_conceptuel}
+    . Par ailleurs, parmi les attributs, notons la nécessité d'utiliser l'un des attributs comme clef primaire souslignée par convention, identifiant de chacun des objets.
+%INSTANCE
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{img/MEMmodele_conceptuel.png}
+    \caption{Modèle conceptuel}
+    \label{concept}
+\end{figure}
+Afin de permettre une implémentation aisée et rigoureuse nous préfixons nos attributs avec la (ou les) première(s) lettre(s) de l'entité ou de l'association à laquelle ils renvoient~; dans les cas où une association commence par la même lettre qu'une autre entité nous lui substituons les initiales des deux entités mises en relation.
+
+Chacun des articles de \punr{} constitue une instance de l'entité ARTICLES définit par un identifiant (aIdent), leur titre (aTitle), une ou deux dates (aDateFirst et aDateLast) déclarée(s) par \robbe{} leur place dans le recueil (aOrder) et leur étendue incarnée par deux attributs aPageBegining et aPageEnd correspondant respectivement à la première et à la dernière page de l'article.
+
+La deuxième entité FIRSTPUBLICATIONS est liée par une association FROM à 
+ARTICLES. Ses attributs préfixés «~fp~» caractérisent l'instance constituée par la première publication, ceux préfixés «~fpSrc~» décrivent la source de cette première publication, soit le journal ou la revue dont elles sont issues. Créer une nouvelle entité pour ces sources ne nous parut pas signifiant car ces sources ne nous intéressent qu'en ce qu'elles induisent une tonalité (polémique, scientifique, savante, profane) ou une réception particulière aux premières publications.
+
+La troisième entité SUBJECTS est un recensement des domaines abstraits dont traitent (association ABOUT) les ARTICLES. Afin d'être le plus pertinent possible nous nous proposons de produire des valeurs les plus précises possibles pour l'attribut sDomain («~théorie Litteraire \textsc{xx}\textsuperscript{e}~» plutôt que «~litterature~»).
+
+Intitulée TRANSTEXTS la quatrième et dernière entité est constituée de toutes les œuvres, auteurs ou concepts (identifiés comme étant de seconde main) mentionné par \robbe{}. La nature diverse («~caricature bien connue~» ou simplement «~Heidegger~») des instances de cette entité explique le foisonnement d'attributs qui seront, selon les cas, sans valeur ou bel et bien mobilisés.
+
+L'association MENTION illustre les liens qu'entretiennent les ARTICLES avec les TRANSTEXTS, les attributs mAxiologicStatus et mReferenceStatus caractérise le lien que \punr{} entretient avec telle ou telle référence. Si les valeurs possibles de mAxiologicStatus sont relativement restreintes («~eloge~», «~blame~», «~ambigue~»), les valeurs de mReferenceStatus sont plus difficiles à caractériser simplement. En effet si dans certains cas \robbe{} cite une œuvre de manière explicite en donnant auteur et titre, il s'épargne bien souvent de donner ses références précises~; alors nous faut-il être en mesure de caractériser toutes les nuances de l'implicite~: l'auteur est-il cité sans être nommé~? l'emprunt manifeste est-il désigné comme un emprunt d'une source à son tour déclarée ou non~? etc. Aussi optons-nous pour un système similaire à celui mis en œuvre pour l'attribut asImportance. Si nous nous sommes efforcés d'établir un système rigoureux et adapté au texte, telles catégories ne se défont jamais tout à fait d'une appréciation subjective (voir \ref{ref:dbEtabValeurs}).
+
+
+
+
+\subsubsection{Modèle relationnel}
+\label{ref:db_modele_relationnel}
+La deuxième étape de la constitution d'une base de donnée est la conversion du modèle conceptuel au modèle relationnel qui correspond à une représentation schématique de la manière dont les données seront inscrits dans la base. Le point crucial de cette conversion est la gestion des associations. Entités et associations sont remplacés par des relations ou \textit{table} qui, selon les cas, illustre des relations de dépendances ou non entre elles.
+
+En effet, lorsqu'une seule des entités liées par une association à une autre a une cardinalité maximale de «~1~», cela signifie qu'elle n'a pas d'existence indépendante de l'autre entité. Alors l'association ne devient pas une relation mais n'est plus présente dans le modèle relationnel que par la présence d'une «~clef secondaire~» dans la relation dépendante de l'autre, cette clef secondaire à la même valeur que la clef primaire de l'instance cible.
+Au contraire, lorsque les deux entités sont reliées par une association dont les cardinalités maximales sont «~n~», alors l'association devient une relation contenant %AUTRE CAS
+% explication modèle relationnel
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.3]{img/MEMmodele_relationnel.png}
+    \caption{Modèle relationnel}
+    \label{relationnel}
+\end{figure}
+
+L'association FROM reliant les entités FIRSTPUBLICATIONS et ARTICLES disparaît dans le modèle relationnel car la cardinalité maximal de FIRSTPUBLICATIONS a pour valeur «~1~», laquelle est donc dépendante de ARTICLE dont la cardinalité maximale a pour valeur «~n~» (un article peut être une compilation ou une réécriture de plusieurs publications premières mais les articles originaux ne correspondent jamais qu'à un seul article du recueil final). Dès lors les instances FIRSTPUBLICATIONS contiennent désormais une clef secondaire qui correspond à la clef primaire d'une instance de ARTICLES.
+
+L'association ABOUT devient une table car les deux entités qu'elle relie ont pour cardinalité maximale «~n~» (un même SUBJECT peut être traité par plusieurs ARTICLES et chaque ARTICLES peut traiter de plusieurs SUBJECT). ABOUT est dans le modèle relationnel une relation avec pour clef primaire deux clefs secondaires, l'une correspondant à la clef primaire de ARTICLES, l'autre correspondant à la clef primaire de SUBJECTS.
+
+L'association MENTION devient une table car les deux entités qu'elle relie ont pour cardinalité maximale «~n~» (un même ARTICLES peut faire référence à plusieurs TRANSTEXTS et chaque TRANSTEXTS peut être mentionnée par plusieurs ARTICLES). MENTION est dans le modèle relationnel une relation avec pour clef primaire deux clefs secondaires, l'une correspondant à la clef primaire de ARTICLES, l'autre correspondant à la clef primaire de TRANSTEXTS.
+
+%L'association BELONG devient une table car les deux entités qu'elle relie ont pour cardinalité maximale «~n~» (un même TRANSTEXTS peut s'inscrire dans plusieurs SUBJECTS et chaque SUBJECTS peut être partagé par plusieurs TRANSTEXTS). BELONG est dans le modèle relationnel une relation avec pour clef primaire deux clefs secondaires, l'une correspondant à la clef primaire de TRANSTEXTS, l'autre correspondant à la clef primaire de SUBJECTS.
+
+\subsubsection{Implémentation}
+    Lors de l'implémentation, nous nous connectons à un serveur local (soit un serveur hébergé sur notre propre machine) via un logiciel dédié et rentrons à la main ou grâce à des scripts les données qui prennent dans l'interface de l'application l'apparence de tableaux (on retrouve notre modèle relationnel). %Proche de la langue naturel les scripts servant à la création de la base n'ont en eux-même que peu d'intérêt, on envoie litttéralement des chaînes de caractères dans un ordre donné.
+    %SCREEN PHPmyAdmin
+
+\subsection{Mode d'établissement des valeurs}
+\label{ref:dbEtabValeurs}
+\subsubsection{aOrder, conception de la structure du recueil}
+Il convient de noter une particularité dans la structure du recueil qui nécessita un choix de notre part~: cinq articles sont présentés dans le recueil comme des sous-sections d'un chapitre «~Éléments d'une anthologie moderne~», dès lors il eût pu paraître nécessaire de prévoir des valeurs de aOrder sur le modèle 5.1, 5.2 etc. dénotant section et sous-section, cependant dans la mesure où l'article enchâssant les cinq critiques littéraires constituant l'ensemble est ajouté \textit{a posteriori} il nous parut préférable de le considérer comme un article à part entière détaché de ses sous-articles qui n'entretiennent aucun lien explicite si ce n'est leur introduction, sorte de propos général ayant une fonction de seuil, ce choix nous paraît d'autant plus déterminant que l'on note l'absence de conclusion achevant de constituer l'ensemble.
+
+De même si la table des matières de \punr{} présente des sous-sections «~personnage~», «~intrigue~», «~engagement~» de l'article «~De quelques notions périmées~», ces sous-sections sont bien moins marquées dans le texte et nous semblent constituer davantage des paragraphes titrés issus d'articles fortement réécrits pour s'intégrer comme un tout homogène.
+
+%expique aussi pourquoi nous choisissons d'y mettre la valeur aOrder bien que l'ordre devrait pouvoir être déduit 
+
+
+\subsubsection{Valeurs de mReferenceStatus}
+Afin de modéliser de manière efficace et rigoureuse le statut des références, nous avons opté pour un système d'entiers inversement proportionnels au degré d'explicite des références dans le texte d'\robbe.
+
+\begin{itemize}
+    \item Valeur \textbf{0, explicite} citation, du moins segment présenté dans le texte comme telle dont la source (auteur ou œuvre est mentionné).
+    \item Valeur \textbf{1, mention} l'entité est mentionnée sans être citée. Il peut s'agir d'une glose interprétée (où l'interprétation de Robbe-Grillet est explicite).
+    \item Valeur \textbf{2, mention ambiguë} cette valeur est réservée presque exclusivement à des entités collectives mentionnées sans nécessairement que les signifiés (les auteurs désignés par «~les critiques traditionnels~») soit identifiable. Pareille identification étant difficile voire impossible~: on constate qu'il s'agit bien souvent d'un procédé rhétorique visant à discréditer sans les nommer des adversaires réels ou imaginaires.
+    \item Valeur \textbf{3, emprunt non déclaré fortement suggéré} réservée aux cas où \robbe{} emrunte un concept cite ou glose une référence dont il ne donnera pas la source mais dont la paternité est suffisamment présente à l'esprit de ces lecteurs ou suffisamment appuyé par lui pour être inféré. Ainsi lorsque Robbe-Grillet disserte sur tel élément de Balzac qui «~fait vrai~» le lecteur compétent reconnaît sans mal la conception de Barthes régulièrement mobilisé par \robbe.
+    \item Valeur \textbf{4, emprunt ou mention non déclaré(e) non suggéré(e) reconstitué(e)} réservée pour des emprunts qui sont reconnus par l'éditeur sans qu'ils ne soient signalés par l'auteur, ainsi p.~69 lorsque \robbe{} cite des lieux propices à la poésie romantique y glissant «~vallon~» nous identifions Lamartine. Faisant l'objet d'une intervention de l'éditeur qui peut reconnaître des références non produites par Robbe-Grillet ou au contraire ne pas en reconnaître il nous a semblé nécessaire de différencier cette valeur de «~3~». Enfin notons que dans ces cas comme dans les cas précédents lorsque la valeur de l'un des attributs est reconstituée par l'éditeur nous les insérons entre crochet, pour les repérer et corriger aisément si besoin mais également par honnêteté intellectuelle si pareil travail devait être amené à intégrer un travail de recherche plus vaste sur \punr{}.
+\end{itemize}
+
+\subsubsection{Valeurs de mAxiologicStatus}
+Pour délimiter les valeurs de axiologicStatus nous partons de deux polarités premières, le blâme et l'éloge constituant le moteur des théories de \robbe{} et le cœur de sa rhétorique, auxquels nous adjoignons deux autres statuts axiologique l'ambiguïté et l'indifférence. 
+
+S'il est aisé de reconnaître que la référence Balzac (ses œuvres ou le concept emprunt des conceptions de Barthes) fait l'objet d'un blâme il est plus difficile de juger le statut d'un référent comme Stendhal qui n'est pas mentionné pour lui-même mais comme argument servant à critiquer «~un jeune écrivain contemporain qui écrirait comme Stendhal~». Nous avons choisi d'utiliser les valeurs blâme et éloge de manière indifférente lorsque la référence est critiquée ou vantée de manière explicite ou sollicité comme raison d'une critique ou d'un éloge portant sur une tierce référence.
+
+Le statut «~ambiguë~» sert lorsque \robbe{} exprime de manière explicite une difficulté à rejeter ou inclure tout à fait une référence comme étant symptomatique de la modernité (objet d'éloge) ou de la tradition (objet de blâme). Cette valeur sert également dans les cas où \robbe{} se sert d'un argument proprement sartrien pour critiquer Sartre (parfois désigné de manière implicite (valeur 3 de mReferenceStatus) par une formule tel «~les engagés~» ou pléthore de synonyme désignant ce que l'on qualifierait encore aujourd'hui de «~staliniste~»). Cette valeur marque donc également l'habilité rhétorique, d'aucuns diraient la «~mauvaise foi~» d'\robbe{}. Notons cependant que le pastiche à valeur de charge tel au sein de «~Nouveau roman, homme nouveau~» n'est pas considéré comme ambiguë car l'emprunt à Sartre ici ne sert qu'à renforcer encore une opposition frontale à ses thèses.
+
+Enfin la valeur «~indifférent~» sert à désigner une mention qui n'est pas mobilisée dans l'argumentation semblant avoir une valeur plus neutre de comparaison dénuée du moindre jugement de valeur sur le référent lui-même. En effet dans les premières pages du recueil \robbe{} s'attaque à un «~dictionnaire encyclopédique de notre temps~» pour la définition que celui-ci propose de Schönberg, si dans ce cas la référence au musicien n'est pas tout à fait neutre (le choix de ce compositeur intellectuel supposé hermétique rappelle le nouveau roman), il est difficile de rattacher le référent «~Schönberg~» au système axiologique de l'essai~; c'est bien le dictionnaire encyclopédique qui fait l'objet d'une charge et si l'on devine une sympathie pour le musicien de la part de Robbe-Grillet cette sympathie est inférée par le lecteur sans être partie prenante de l'argumentaire.
+   
+
+%\subsubsection{Constitution des valeurs de sDomain}
+
+%Fortement subjectif, le découpage en catégorie de champs intellectuels dont les degrés de proximité des uns par rapport aux autres a varié à travers l'histoire et dont \robbe{} use d'une manière libérale propre à un essai, est une tâche difficile. Pour mener ce travail nous avons produit une première liste induite à la lecture du recueil puis nous l'avons confrontée au texte, testée, améliorée jusqu'à obtenir une liste qui nous parut exhaustive.
+
+%Il nous semble nécessaire d'insister sur les choix de regroupement ou de séparation effectués. Nous avons jugé utile de séparer «~histoire de l'art synchronique~» de «~cinéma~» au motif qu'\robbe{} eut une carrière de cinéaste et non de peintre, nous avons réuni l'ensemble des filiations du nouveau roman tels «~Faulkner~» ou «~Kafka~» généralement mentionnés ensemble au sein du domaine «~histoire littéraire internationale synchronique~» plutôt que de les séparer dans des catégories par siècle et/ou pays car \robbe{} ne fait pas une histoire de la littérature anglaise ou tchèque mais inscrits ses références dans une histoire littéraire internationale et française. Si des exemples internationaux sont mobilisés c'est en tant que chef-d'œuvre dont les innovations littéraires doivent remettre en cause la tradition française, au sein de laquelle \robbe{} distingue également des modernes tels Proust ou Flaubert. Cette observation nous amène au point capital de ce travail~: nous nous efforçons de produire un découpage induit par le texte de la manière dont il articule les arguments ou références de divers champs, ainsi des thèses philosophiques qui peuvent paraître liées telles «~phénoménologie française~» et «~existentialisme français~» seront bien séparées car si les théories de Robbe-Grillet sont empruntes de phénoménologie (pensée de l'altérité, de l'objet, mise en cause des perceptions et refus de la métaphysique) elles s'opposent aux conclusions existentialistes qu'a pu en tirer un auteur comme Sartre (fait que nous inférons de l'intérêt, serait-il moindre, de Robbe-Grillet pour Heiddegger).
+%Selon les cas, le thème de l'histoire littéraire sera lié à la littérature française avant de l'être à la littérature international, ou l'inverse dans les moments où \robbe sous-entend que la littérature française est en retard sur une littéra
+
+%Il n'en demeure pas moins que la pertinence de ce découpage est tributaire du degré de compétence du lecteur et pourrait sans doute être enrichi ou discuté en bien des points.
+
+%\subsubsection{Constitution des valeurs de asImportance}
+
+
+%L'attribut de ABOUT, asImportance, permet de donner pour chaque article une représentation de l'importance de chacun des sujets traités par les articles. La difficulté à objectiviser telle appréciation et à prévoir l'étendue des valeurs possibles nous pousse à préférer un système de valeurs inversement proportionnelles à l'importance des instances de SUBJECTS (ainsi une valeur de asImportance de «~0~» signifierait une importance très élevée et «~9~», infime). Dans les faits une échelle de valeurs allant de «~0~» à «~3~» nous parût suffisant.
+%\begin{itemize}
+%    \item Valeur \textbf{0, sujet principal}. Pour chacun des articles nous nous efforçons de dégager un sujet principal déclaré du moins fortement induit par le projet que se donne le texte.
+%    \item Valeur \textbf{1, sujets principaux}. S'ils ont souvent un lien avec le sujet ayant une valeur de 0, ce lien ne semble pas tant hiérarchique qu'analogique. 
+%    \item Valeur \textbf{2, sujets secondaires} à considérer comme sous-sujet d'un sujet ayant une valeur de~1.
+%    \item Valeur \textbf{3, sujets secondaires} à considérer comme sous-sujet d'un sujet ayant une valeur de~2.
+%\end{itemize}
+
+%Notons que nous nous sommes efforcé de dégager l'importance des sujets en fonction des articles et non du recueil dans son ensemble. En effet, de par la mise ensemble d'articles divers on pourrait considérer que les cinq critiques relèvent davantage de la théorie littéraire du \textsc{xx}\textsuperscript{e}~siècle que de la critique littéraire synchronique, cependant pris individuellement chacun de ces textes sont avant tout des critiques d'œuvres dont la valeur théorique n'émerge que parce qu'ils sont réunis dans l'ensemble et précédé d'un texte à valeur de seuil (le cinquième article «~Éléments d'une anthologie moderne~»).
+
+%Par ailleurs cette valeur de «~seuil~» si elle ne semble pas être un sujet au sens habituel du terme nous a paru nécessaire pour permettre une modélisation complète du recueil dont la cohérence mérite d'être jaugé~: nous pensons que ce sont précisément trois textes à valeur de seuil («~À quoi servent les théories~»,«~Éléments d'une anthologie moderne~» et «~Du réalisme à la réalité~») qui unifient l'ensemble, de par le projet que ces textes induisent, ils traitent non seulement de théorie, de critique etc. mais surtout du recueil lui-même. À ce titre la valeur de «~seuil~» serait synonyme de «~métareflexif~» avec en plus la connotation justifiant le choix de ce terme de «~présentation~» du recueil, de quelques articles, des œuvres futures.
+
+\subsubsection{Les valeurs datées de TRANSTEXTS et FIRSTPUBLICATIONS en \textit{string}}
+Dans le cas des dates de TRANSTEXTS constituées selon les cas d'une seule date ttDateFirst (de publication) ou de deux ttDateFirst et ttDateLast (naissance et mort d'un auteur ou première publication et traduction française antérieure à la publication de l'article au sein duquel la référence est mobilisée), nous avons dû opter pour le domaine \textit{string} car certaines dates étaient antérieures à 1900, limite posée par SQL.
+
+Dans le cas des FIRSTPUBLICATIONS, nous avons choisi dans le modèle relationnel d'utiliser le domaine \textit{string} pour l'attribut fpDate car selon la nature de la source (quotidien, mensuel, annuel) la valeur de l'attribut changera de structure (10~octobre 1957, été 1963) ne permettant pas de l'inscrire comme une date (à moins de créer des dates arbitraires, ce qui n'aurait à nos yeux pas de sens).
+
+%jointure externe nous a permis d'identifier une erreur dans le travail de Galia Y. a rentré le n° de l'article sur Becket de 53 au lieu de 63 (189) et laissé celui de 1953 vide. Au demeurant pas encore pu vérifier que 63 était bien article de 189. 
+
+\subsubsection{Valeurs de l'attribut ttTitle de TRANSTEXTS}
+
+Au sein de TRANSTEXTS nous réunissons des instances de nature diverses (les discriminer est le rôle de l'attribut ttNature) pour lesquels le choix de l'attribut ttTitle peut sembler étrange~: nous nous trouvons parfois à employer cet attribut pour inscrire le nom d'un concept dans la base. En effet si la dénomination de «~titre~» peut paraître saugrenue pour des instances de nature «~concept~» elle nous paraissait moins arbitraire que n'aurait pu l'être «~nom~» pour des œuvres, au demeurant l'emploi de «~nom~» ne nous satisfaisait pas non plus pour désigner les concepts. Par ailleurs considérer un concept comme un titre avait l'avantage de pouvoir plus aisément lui attribuer un auteur, voire appliquer des mises à jour ultérieures sur la base dans le cas où l'usage particulier que Robbe-Grillet fait de tel ou tel concept pourrait être rattaché à une œuvre particulière.
+
+Notons que dans les cas où nous reconstituons une référence non mentionnée et peu sous-entendu (valeur «~4~» de mReferenceStatus) ou complétons pour paraphraser des propos allusifs de Robbe-Grillet, nous ajoutons des crochets droits à la valeur afin de noter notre intervention. Dans ces cas nous nous sommes efforcés de suivre une dénomination canonique non ambiguë.
+
+Enfin si nous aurions pu faire des «~entités collectives~» des concepts en vertu du fait que les «~critiques traditionnels~» semblent davantage une idée abstraite qu'un groupe nettement délimité, dès lors nous aurions pu faire des valeurs ttAuthor «~critiques traditionnel~» un ttTitle, titre du concept. Nous avons privilégié la valeur «~entités collectives~» car ces instances sont mobilisées par \robbe{} bel et bien en tant que producteurs de textes et l'abstraction relativement élevée de pareille dénomination nous semble un procédé rhétorique permettant de cibler le plus grand nombre de personnes sans jamais les nommer, typique d'un écrit à la charge polémique aussi élevée.
+
+
+%défendre altérité, barthes, sarraute, urss
+
+
+\section{Encodage}
+Afin de proposer une édition numérique enrichie de \punr, nous optons pour un encodage en XML-tei. Pensé courant octobre et novembre, l'encodage à proprement parler commence début mars.
+    \subsection{Principes généraux}
+Le langage XML est un langage de balisage~: l'encodeur entoure chacun des éléments qu'il juge devoir être encodé (l'ensemble du texte, un paragraphe, un mot voire une lettre seule) de balises ouvrantes et fermantes éclairant la nature du passage qu'elles entourent (libre à l'encodeur d'encadrer un paragraphe en tant que paragraphe ou en tant que saut sémantique).
+
+%SCREEN BALISAGE
+
+L'encodeur étant libre de choisir les éléments qu'il encode et comment il les encode, des conventions internationales ont émérgés afin de permettre l'interopérabilité des corpus balisés. Le plus utilisé en science humaine demeure sans doute le standard de la \textit{Text Encoding Initiative} (TEI) que nous employons pour la présente édition. Initialement pensé pour la restitution de sources anciennes (tels des manuscrits du \textsc{XVI}\textsuperscript{e}) cet encodage nous permet d'identifier des éléments structurel très fin et de mettre en correspondance différents extraits constituant un corpus (voir \ref{tei}).
+
+
+    \subsection{Mise en œuvre}
+}
+
+\subsubsection{Un premier fichier d'encodage}
+\label{premier_enc}
+Afin de pouvoir encoder le texte du \punr{} nous nous procurons une version numérique du texte en achetant la seule édition disponible de l'œuvre au format \go.epub\gf. Nous savons que les fichiers d'un epub se présente sous la forme d'une archive~: il suffit de changer l'extension «~.epub~» en «~.zip~» pour pouvoir explorer son contenu et en extraire les fichiers contenant le texte.
+
+Ces fichiers se présentent sous la forme de fichiers «~.html~», un fichier par chapitre du recueil. Grâce à un script perl nous récupérons l'ensemble du contenu textuel et procédons à son nettoyage (nous remplaçons les balises html par des balises xml-tei lorsque cela est pertinent et supprimons toutes les balises inutiles).
+%DÉTAIL EN ITEMIZE VOIR NB8NETTOYAGE;TXT
+
+%- nettoyage en conservant grâce à des commentaires les traces de balises supprimées mais qu'on pourrait vouloir restaurer (voir "bloc titre")
+
+Nous obtenons alors un fichier \go.xml\gf pas tout à fait valide mais qui constitue un bon point de départ pour un encodage plus complet.
+
+\subsubsection{Vers un encodage XML-TEI en vue d'une édition numérique}
+\label{tei}
+
+Afin d'intégrer les références transtextuelles de \punr{} à notre édition pour permettre l'édition enrichie que nous nous proposons de réaliser nous employons un encodage de type «~corpus\gf. 
+%SCREEN ENCODAGE VIDE
+Alors que la majorité des encodages TEI se contente d'un seul élément <text> contenant l'œuvre ou le manuscrit encodé nous employons un élément corpus> qui contiendra plusieurs éléments <text> identifiés grâce à des attributs @xml:id.
+
+Si nous reproduisons l'intégralité de \punr{} dans l'élément <text> qui lui correspond nous n'insérons dans les autres éléments <text> que les extraits qui nous intérèsse~: nous produisons bien une édition de \punr{} inscrit dans un corpus plus vaste, pas l'édition d'un corpus dont \punr{} ne serait qu'un détail. Extraits transtextuels et passages de \punr{} correspondant sont ensuite liés via un jeu d'attributs @corresp et @xml:id.
+%screen corresp
+
+
+
+\section{Vers l'édition numérique : transformation XSL}
+Une fois l'encodage terminé, l'encodeur concçoit une transformation XSL, soit un fichier contenant des informations de traitement afin de passer d'un fichier XML peu lisible pour le lecteur à une édition numérique au format HTML. En effet les feuilles de styles XSL permettent de conserver le fichier XML originel pour en créer d'autres de types divers, en l'occurence nous nous contentons de produire un site internet, soit des pages au format HTML. Notons que le langage de balisage HTML est un dérivé de l'XML qui ne permet pas de structurer le contenu aussi finement que l'XML mais permet un affichage via navigateur web pour lecture.
+    \subsection{Principes généraux}
+Les transformations XSL fonctionne par \textit{template}, patron, qui commande le traitement d'un ou de plusieurs éléments XML selon des restrictions diverses laissées au soin de l'auteur de la transformation. On peut par exemple transformer un élément <ab> muni d'un attribut @corresp en un lien hypertexte, qui, lié à des scripts (voir \ref{js}) permettra l'affichage de contenu supplémentaire. 
+    \subsection{}
+}
+\section{Une expérience de lecture~: ajouts de script}
+\label{js}
+    \subsection{Script pour la lecture}
+    \subsection{Interactivité de la base de donnée}
+
+
+
+
+
+
+
+
+\end{document}
