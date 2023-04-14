@@ -79,6 +79,11 @@ Année universitaire 2022-2023
 
 
 \vspace{3cm}
+\section{Introduction}
+%le projet en général viteuf
+% reflexion blabla
+
+Le présent document se veut un exposé des modalités et difficultés techniques que nous avons pû rencontrer et des moyens mis en œuvre pour les surmonter. Chaque outil utilisé fera l'objet d'une présentation succinte, après quoi leur apport au projet et les choix ayant mené à la réalisation de l'édition numérique de \punr{} seront détaillés.
 
 \section{Projet d'édition}
 \section{Conception et réalisation d'une base de donnée}
@@ -113,8 +118,9 @@ Année universitaire 2022-2023
  . Les modèles conceptuels sont constitués~: 
     \begin{itemize}
         \item d'entité, les objets représentés (par exemple~: les premières publications, les articles de \punr{}, les références transtextuelles)
+        \item chacun des objets d'une entité sont appelés «~instances~» (ainsi «~Une voie pour le roman futur~» est une instance de l'entité ARTICLES)
         \item d'attributs, les qualités de ces objets (par exemple~: date de publication, page de début, nature de la référence)
-        \item d'association, les relations qui unissent les entités (par exemple~: «~correspond à~», «~mentionne~»)
+        \item d'association, les relations qui unissent les entités (par exemple~: «~correspond à~», «~mentionne~»), elles peuvent également être munies d'attributs
         \item chacune des associations sont munies de cardinalité qui précisent le nombre de fois minimal et maximal où l’entité est impliquée dans l’association (par exemple~: l'entité «~ARTICLE~» peut ne pas mentionner d'entités de TRANSTEXTS et peut en mentionné un nombre virtuellement infini, la cardinalité de l'association «~MENTION~» à l'endroit de «~ARTICLES~» sera donc 0,n).
     \end{itemize}
     Par convention on évite l'usage d'accents et d'espace et les noms d'entités et d'associations sont inscrits en majuscule, les entités sont représentées par un rectangle, les associations par un cercle%, voir \ref{modele_conceptuel}
@@ -149,7 +155,7 @@ L'association MENTION illustre les liens qu'entretiennent les ARTICLES avec les 
 La deuxième étape de la constitution d'une base de donnée est la conversion du modèle conceptuel au modèle relationnel qui correspond à une représentation schématique de la manière dont les données seront inscrits dans la base. Le point crucial de cette conversion est la gestion des associations. Entités et associations sont remplacés par des relations ou \textit{table} qui, selon les cas, illustre des relations de dépendances ou non entre elles.
 
 En effet, lorsqu'une seule des entités liées par une association à une autre a une cardinalité maximale de «~1~», cela signifie qu'elle n'a pas d'existence indépendante de l'autre entité. Alors l'association ne devient pas une relation mais n'est plus présente dans le modèle relationnel que par la présence d'une «~clef secondaire~» dans la relation dépendante de l'autre, cette clef secondaire à la même valeur que la clef primaire de l'instance cible.
-Au contraire, lorsque les deux entités sont reliées par une association dont les cardinalités maximales sont «~n~», alors l'association devient une relation contenant %AUTRE CAS
+Au contraire, lorsque les deux entités sont reliées par une association dont les cardinalités maximales sont «~n~», alors l'association devient une relation contenant deux clefs secondaires~: les clefs primaires des deux instances liées par l'association.
 % explication modèle relationnel
 
 \begin{figure}[H]
@@ -168,10 +174,10 @@ L'association MENTION devient une table car les deux entités qu'elle relie ont 
 %L'association BELONG devient une table car les deux entités qu'elle relie ont pour cardinalité maximale «~n~» (un même TRANSTEXTS peut s'inscrire dans plusieurs SUBJECTS et chaque SUBJECTS peut être partagé par plusieurs TRANSTEXTS). BELONG est dans le modèle relationnel une relation avec pour clef primaire deux clefs secondaires, l'une correspondant à la clef primaire de TRANSTEXTS, l'autre correspondant à la clef primaire de SUBJECTS.
 
 \subsubsection{Implémentation}
-    Lors de l'implémentation, nous nous connectons à un serveur local (soit un serveur hébergé sur notre propre machine) via un logiciel dédié et rentrons à la main ou grâce à des scripts les données qui prennent dans l'interface de l'application l'apparence de tableaux (on retrouve notre modèle relationnel). %Proche de la langue naturel les scripts servant à la création de la base n'ont en eux-même que peu d'intérêt, on envoie litttéralement des chaînes de caractères dans un ordre donné.
+    Lors de l'implémentation, nous nous connectons à un serveur local (soit un serveur hébergé sur notre propre machine) via un logiciel dédié et rentrons à la main ou grâce à des scripts les données qui prennent dans l'interface de l'application l'apparence de tableaux (on retrouve notre modèle relationnel). Proches de la langue naturel, les scripts servant à la création de la base n'ont en eux-même que peu d'intérêt, on envoie litttéralement des chaînes de caractères dans un ordre donné.
     %SCREEN PHPmyAdmin
 
-\subsection{Mode d'établissement des valeurs}
+\subsection{Mode d'établissement des valeurs} des attributs.
 \label{ref:dbEtabValeurs}
 \subsubsection{aOrder, conception de la structure du recueil}
 Il convient de noter une particularité dans la structure du recueil qui nécessita un choix de notre part~: cinq articles sont présentés dans le recueil comme des sous-sections d'un chapitre «~Éléments d'une anthologie moderne~», dès lors il eût pu paraître nécessaire de prévoir des valeurs de aOrder sur le modèle 5.1, 5.2 etc. dénotant section et sous-section, cependant dans la mesure où l'article enchâssant les cinq critiques littéraires constituant l'ensemble est ajouté \textit{a posteriori} il nous parut préférable de le considérer comme un article à part entière détaché de ses sous-articles qui n'entretiennent aucun lien explicite si ce n'est leur introduction, sorte de propos général ayant une fonction de seuil, ce choix nous paraît d'autant plus déterminant que l'on note l'absence de conclusion achevant de constituer l'ensemble.
@@ -264,7 +270,16 @@ Afin de pouvoir encoder le texte du \punr{} nous nous procurons une version num�
 
 Ces fichiers se présentent sous la forme de fichiers «~.html~», un fichier par chapitre du recueil. Grâce à un script perl nous récupérons l'ensemble du contenu textuel et procédons à son nettoyage (nous remplaçons les balises html par des balises xml-tei lorsque cela est pertinent et supprimons toutes les balises inutiles).
 %DÉTAIL EN ITEMIZE VOIR NB8NETTOYAGE;TXT
-
+Ont été supprimés~:
+\begin{itemize}
+    \item les éléments <div> vides servant à espacer le corps du texte (une indication des suppressions et des tailles des éléments supprimés est à chaque fois ajoutée en commentaire dans le fichier d'encodage)
+    \item les éléments <span> parasite qui redoublait, entre autres, tous les éléments <p> sans ajouter d'information de mise en forme
+\end{itemize}
+Ont été remplacés par les balises xml-tei jugée pertinentes~:
+\begin{itemize}
+    \item les éléments <a> muni d'un attribut @id signalant les débuts de page par des éléments <pb> muni d'un attribut @n
+    \item les éléments <i>, au demeurant dépréci
+\end{itemize}
 %- nettoyage en conservant grâce à des commentaires les traces de balises supprimées mais qu'on pourrait vouloir restaurer (voir "bloc titre")
 
 Nous obtenons alors un fichier \go.xml\gf pas tout à fait valide mais qui constitue un bon point de départ pour un encodage plus complet.
