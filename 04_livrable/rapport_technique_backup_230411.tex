@@ -79,13 +79,13 @@ Année universitaire 2022-2023
 
 
 \vspace{3cm}
-\section{Introduction}
+\section{Introduction au projet d'édition numérique}
 %le projet en général viteuf
 % reflexion blabla
 
 Le présent document se veut un exposé des modalités et difficultés techniques que nous avons pû rencontrer et des moyens mis en œuvre pour les surmonter. Chaque outil utilisé fera l'objet d'une présentation succinte, après quoi leur apport au projet et les choix ayant mené à la réalisation de l'édition numérique de \punr{} seront détaillés.
 
-\section{Projet d'édition}
+% \section{Projet d'édition}
 \section{Conception et réalisation d'une base de donnée}
     \subsection{Principes généraux}
     On appelle base de donnée un mode de structuration de l'information qui permet de stocker un grand nombre d'informations sur un petit espace disque. Il existe plusieurs modèles de structuration de ces bases de données, mais pour le présent travail n'est employé que le modèle le plus courant~: le modèle relationnel.
@@ -254,11 +254,13 @@ Enfin si nous aurions pu faire des «~entités collectives~» des concepts en ve
 \section{Encodage}
 Afin de proposer une édition numérique enrichie de \punr, nous optons pour un encodage en XML-tei. Pensé courant octobre et novembre, l'encodage à proprement parler commence début mars.
     \subsection{Principes généraux}
-Le langage XML est un langage de balisage~: l'encodeur entoure chacun des éléments qu'il juge devoir être encodé (l'ensemble du texte, un paragraphe, un mot voire une lettre seule) de balises ouvrantes et fermantes éclairant la nature du passage qu'elles entourent (libre à l'encodeur d'encadrer un paragraphe en tant que paragraphe ou en tant que saut sémantique).
+Le langage XML est un langage de balisage~: l'encodeur entoure chacun des éléments qu'il juge devoir être encodé (l'ensemble du texte, un paragraphe, un mot, voire une lettre) de balises ouvrantes et fermantes éclairant la nature du passage qu'elles entourent (libre à l'encodeur d'encadrer un paragraphe en tant que paragraphe ou en tant que saut sémantique).
 
 %SCREEN BALISAGE
 
 L'encodeur étant libre de choisir les éléments qu'il encode et comment il les encode, des conventions internationales ont émérgés afin de permettre l'interopérabilité des corpus balisés. Le plus utilisé en science humaine demeure sans doute le standard de la \textit{Text Encoding Initiative} (TEI) que nous employons pour la présente édition. Initialement pensé pour la restitution de sources anciennes (tels des manuscrits du \textsc{XVI}\textsuperscript{e}) cet encodage nous permet d'identifier des éléments structurel très fin et de mettre en correspondance différents extraits constituant un corpus (voir \ref{tei}).
+
+Lors du rapport d'étape soumis courant décembre 2022, nous avions l'intention de produire une ODD. Un fichier permettant la génération d'un schéma et d'une documentation technique sur les choix d'encodage fait pour le présent travail (soit une spécialisation des éléments xml-TEI), le temps nous a finalement manqué pour produire tel travail qui nous parût au demeurant en partie redondant avec le présent document.
 
 
     \subsection{Mise en œuvre}
@@ -268,41 +270,76 @@ L'encodeur étant libre de choisir les éléments qu'il encode et comment il les
 \label{premier_enc}
 Afin de pouvoir encoder le texte du \punr{} nous nous procurons une version numérique du texte en achetant la seule édition disponible de l'œuvre au format \go.epub\gf. Nous savons que les fichiers d'un epub se présente sous la forme d'une archive~: il suffit de changer l'extension «~.epub~» en «~.zip~» pour pouvoir explorer son contenu et en extraire les fichiers contenant le texte.
 
-Ces fichiers se présentent sous la forme de fichiers «~.html~», un fichier par chapitre du recueil. Grâce à un script perl nous récupérons l'ensemble du contenu textuel et procédons à son nettoyage (nous remplaçons les balises html par des balises xml-tei lorsque cela est pertinent et supprimons toutes les balises inutiles).
-%DÉTAIL EN ITEMIZE VOIR NB8NETTOYAGE;TXT
+Ces fichiers se présentent sous la forme de fichiers «~.html~», un fichier par chapitre du recueil. Grâce à un script perl nous récupérons l'ensemble du contenu textuel au sein d'un seul fichier .xml.
+
+Le même script procède simultanément au nettoyage des fichiers d'origine (nous remplaçons les balises html par des balises xml-tei lorsque cela est pertinent et supprimons toutes les balises inutiles).
+
 Ont été supprimés~:
 \begin{itemize}
     \item les éléments <div> vides servant à espacer le corps du texte (une indication des suppressions et des tailles des éléments supprimés est à chaque fois ajoutée en commentaire dans le fichier d'encodage)
     \item les éléments <span> parasite qui redoublait, entre autres, tous les éléments <p> sans ajouter d'information de mise en forme
+    \item les éléments <b> et <a> muni d'un attribut @id marquant le début des chaptires
 \end{itemize}
+
 Ont été remplacés par les balises xml-tei jugée pertinentes~:
 \begin{itemize}
     \item les éléments <a> muni d'un attribut @id signalant les débuts de page par des éléments <pb> muni d'un attribut @n
-    \item les éléments <i>, au demeurant dépréci
+    \item les éléments <i>, au demeurant déprécié selon les normes actuelles du web, par des éléments <hi> muni d'un attribut @rend avec pour valeur "italic"
+    \item les éléments <p> marquant les paragraphes ont été conservés mais sans leur attribut @class de valeur "txt"
+    \item les éléments <h1> marquant les titres ont été remplacé par des éléments <head>
+    \les éléments <h2> marquant les titres de sous-sections (par exemple « L'intrigue », sous-section de « De quelques notions périmés ») par des éléments <head> avec un attribut @type ayant pour valeur "subsection_head"
+    \item les éléments <small> par des éléments <hi> munis d'un attribut @rend avec pour valeur "small-caps"
+    \item les éléments <sup> par des éléments <hi> munis d'un attribut @rend avec pour valeur "exposant"
+    \item les éléments <blockquote> par des éléments <cit>
+    \item les éléments <p> et ses attributs marquant la mise en forme du nom de l'auteur de la citation mise en exergue, par un élément <ref>
 \end{itemize}
-%- nettoyage en conservant grâce à des commentaires les traces de balises supprimées mais qu'on pourrait vouloir restaurer (voir "bloc titre")
 
-Nous obtenons alors un fichier \go.xml\gf pas tout à fait valide mais qui constitue un bon point de départ pour un encodage plus complet.
+Notons que le nettoyage a été effectué en conservant grâce à des commentaires les traces de balises supprimées que l'on pourrait vouloir restaurer (tels les éléments <div> utilisé pour insérer du blanc dans le corps du texte).
+
+Nous ajoutons des balises ouvrantes <quote> à chaque fois que le script de nettoyage rencontre le caractère "«" et fermante après le caractère "»", afin d'effectuer un premier repérage automatique des citations ou emprunts, qui seront ensuite complété et corrigé à la main si besoin. Notons que le script de nettoyage ajoute également ces éléments en début et en fin de paragraphe du segment «~Joë Bousquet le rêveur~» où nécessaire (lorsque \robbe{} cite plus d'un paragraphe il n'insère pas de guillemets, rendant le balisage automatique plus laborieux).
+
+Nous ajoutons égalements des éléments <div> marquant les sections du texte autour de chaque article du recueil ainsi qu'autour des passages identifiables à des sous-sections (telles les «~notions périmées~») cette fois munis d'attributs @type ayant pour valeur "subsection".
+
+Nous obtenons alors un fichier \go.xml\gf valide qui n'est encore qu'une étape pour l'encodage complet.
 
 \subsubsection{Vers un encodage XML-TEI en vue d'une édition numérique}
 \label{tei}
 
 Afin d'intégrer les références transtextuelles de \punr{} à notre édition pour permettre l'édition enrichie que nous nous proposons de réaliser nous employons un encodage de type «~corpus\gf. 
 %SCREEN ENCODAGE VIDE
-Alors que la majorité des encodages TEI se contente d'un seul élément <text> contenant l'œuvre ou le manuscrit encodé nous employons un élément corpus> qui contiendra plusieurs éléments <text> identifiés grâce à des attributs @xml:id.
+Alors que la majorité des encodages TEI se contente d'un seul élément <TEI> contenant l'œuvre ou le manuscrit encodé nous employons un élément <corpus> qui contiendra plusieurs éléments <TEI> identifiés grâce à des attributs @xml:id. Une version vide du fichier xml a pour cela était produite. Cet xml vide converti au format texte brut est ensuite injecté par le script de fusion et de nettoyage des fichiers qui compose \punr. Il contient~:
+\begin{itemize}
+    \item un élément <teiHeader> (sorte de carte d'identité du document ou du texte) pour l'ensemble du fichier, contenant des informations succintes sur le projet d'édition auquel est rattaché le fichier
+    \item et quelques éléments <TEI> accompagnés de <teiHeader>, vides pour les extraits des références transtextuelles
+    \item un élément <TEI> et <teiHeader> contenant les informations relative à l'édition de \punr. C'est cet élément <TEI> dans lequel sera injecté le texte nettoyé et pré-encodé par le script.
+\end{itemize}
 
-Si nous reproduisons l'intégralité de \punr{} dans l'élément <text> qui lui correspond nous n'insérons dans les autres éléments <text> que les extraits qui nous intérèsse~: nous produisons bien une édition de \punr{} inscrit dans un corpus plus vaste, pas l'édition d'un corpus dont \punr{} ne serait qu'un détail. Extraits transtextuels et passages de \punr{} correspondant sont ensuite liés via un jeu d'attributs @corresp et @xml:id.
+Si nous reproduisons l'intégralité de \punr{} dans l'élément <text> qui lui correspond nous n'insérons dans les autres éléments <text> que les extraits qui nous intérèsse~: nous produisons bien une édition de \punr{} inscrit dans un corpus plus vaste, pas l'édition d'un corpus dont \punr{} ne serait qu'un élément. Extraits transtextuels et passages de \punr{} correspondant sont ensuite liés via un jeu d'attributs @corresp et @xml:id.
 %screen corresp
+\subsubsection{Encodage sémantique automatisé}
 
+On désigne généralement par «~encodage sémantique~» l'ajout d'éléments xml identifiant des noms de personnages, des toponymes, des dates, des références, etc. Afin d'accélerer cette étape fastidieuse nous optons pour un premier encodage automatisé. Pour cela, nous ajoutons à notre script de nettoyage des lignes servant à repérer les noms d'auteurs et à les baliser selon le modèle suivant~:
+\begin{itemize}
+    \item un élément <ref> (référence)
+    \item muni d'un attribut @type avec pour valeur "author"
+    \item et d'un attribut @cRef (référence canonique) dont la valeur est constituée sur le modèle «~nom_prenom~». Générée automatiquement par le script, cette valeur comprendra des majuscules et/ou des lettres accentuées (puisque \robbe{} écrit «~Samuel Beckett~» la valeur sera "Beckett_Samuel"), elle fera l'objet d'une correction grâce à l'emploi d'une feuille xsl.
+\end{itemize}
+Afin d'éviter le double balisage, nous balisons la dénomination complète («~Samuel Beckett~») en ajoutant un espace insécable entre le prénom et le nom, avant de baliser «~Beckett~» seul, s'il est précédé d'un espace sécable.
 
+Puis grâce à une transformation xsl (voir \ref{ref:xsl_gen})sommaire, nous générons l'affichage des éléments <quote>, <ref> et <hi> munis d'un attribut @rend="italic" afin de les identifier, corriger et compléter si besoin. Cette vérification se fait livre en main~: la transformation renvoie également pour chaque élément identifié la page à laquelle il apparaît. Cette étape est répétée plusieurs fois, ce qui nous permet de raffiner le balisage automatique à chaque passage.
+
+\subsubsection{Encodage sémantique à la main}
+Certains contenus textuels ne peuvent être repérés automatiquement et nécessitent donc d'être encodés à la main.
+% blabla
 
 \section{Vers l'édition numérique : transformation XSL}
+\label{ref:xsl_gen}
 Une fois l'encodage terminé, l'encodeur concçoit une transformation XSL, soit un fichier contenant des informations de traitement afin de passer d'un fichier XML peu lisible pour le lecteur à une édition numérique au format HTML. En effet les feuilles de styles XSL permettent de conserver le fichier XML originel pour en créer d'autres de types divers, en l'occurence nous nous contentons de produire un site internet, soit des pages au format HTML. Notons que le langage de balisage HTML est un dérivé de l'XML qui ne permet pas de structurer le contenu aussi finement que l'XML mais permet un affichage via navigateur web pour lecture.
     \subsection{Principes généraux}
-Les transformations XSL fonctionne par \textit{template}, patron, qui commande le traitement d'un ou de plusieurs éléments XML selon des restrictions diverses laissées au soin de l'auteur de la transformation. On peut par exemple transformer un élément <ab> muni d'un attribut @corresp en un lien hypertexte, qui, lié à des scripts (voir \ref{js}) permettra l'affichage de contenu supplémentaire. 
+Les transformations XSL fonctionne par \textit{template}, patron, qui commande le traitement d'un ou de plusieurs éléments XML selon des restrictions diverses laissées au soin de l'auteur de la transformation. On peut par exemple transformer un élément <quote> muni d'un attribut @corresp en un lien hypertexte, qui, lié à des scripts (voir \ref{js}) permettra l'affichage de contenus supplémentaires. 
     \subsection{}
 }
-\section{Une expérience de lecture~: ajouts de script}
+\section{Une expérience de lecture~: ajouts de scripts}
 \label{js}
     \subsection{Script pour la lecture}
     \subsection{Interactivité de la base de donnée}

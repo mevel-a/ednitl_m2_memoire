@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.2.0" Device="LAPTOP-3B08EOV7" Modified="2022-12-06 20:39:32 +0100" ModID="5AB59152-82CA-4114-9092-573B420669AF">
+<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.4.0" Device="LAPTOP-9OFQSFHP" Modified="2023-04-19 18:04:31 +0200" ModID="5AB59152-82CA-4114-9092-573B420669AF">
     <Binder>
-        <BinderItem UUID="8E61D5F6-11A8-44D9-9378-A48333405434" Type="DraftFolder" Created="2021-09-06 15:50:24 +0100" Modified="2021-09-06 15:50:24 +0100">
+        <BinderItem UUID="8E61D5F6-11A8-44D9-9378-A48333405434" Type="DraftFolder" Created="2021-09-06 16:50:24 +0200" Modified="2021-09-06 16:50:24 +0200">
             <Title>Draft</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <Children>
-                <BinderItem UUID="A596FC36-6D37-48CB-BFBE-A5C64E17A566" Type="Text" Created="2021-09-06 19:46:59 +0100" Modified="2022-11-21 17:40:30 +0100">
+                <BinderItem UUID="A596FC36-6D37-48CB-BFBE-A5C64E17A566" Type="Text" Created="2021-09-06 20:46:59 +0200" Modified="2022-11-21 17:40:30 +0200">
                     <Title>Pour un nouveau roman lecture 17/10/22</Title>
                     <MetaData>
                         <LabelID>10</LabelID>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>287,0</TextSelection>
+                        <TextSelection>4492,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="37AC9DB5-E56D-473D-AC1B-24CF5F89E5AB" Type="Text" Created="2022-10-22 11:13:16 +0100" Modified="2022-12-06 18:36:17 +0100">
+                <BinderItem UUID="37AC9DB5-E56D-473D-AC1B-24CF5F89E5AB" Type="Text" Created="2022-10-22 12:13:16 +0200" Modified="2022-12-06 18:36:17 +0200">
                     <Title>Trouver :</Title>
                     <MetaData>
                         <LabelID>13</LabelID>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection Caret="4188">4182,6</TextSelection>
+                        <TextSelection>13563,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="5776BCEF-5EA8-424A-8A57-5BB812268ADC" Type="Text" Created="2022-11-06 17:10:43 +0100" Modified="2022-11-06 20:46:09 +0100">
+                <BinderItem UUID="5776BCEF-5EA8-424A-8A57-5BB812268ADC" Type="Text" Created="2022-11-06 17:10:43 +0200" Modified="2022-11-06 20:46:09 +0200">
                     <Title>Éléments pour une édition critique</Title>
                     <MetaData>
                         <LabelID>11</LabelID>
@@ -38,7 +38,7 @@
                         <TextSelection>545,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="9168EFE9-B0CC-4D23-BA0B-8D5F1650FF08" Type="Text" Created="2022-10-22 11:23:56 +0100" Modified="2022-10-22 13:42:00 +0100">
+                <BinderItem UUID="9168EFE9-B0CC-4D23-BA0B-8D5F1650FF08" Type="Text" Created="2022-10-22 12:23:56 +0200" Modified="2022-10-22 14:42:00 +0200">
                     <Title>À propos du terme &quot;Nouveau roman&quot;</Title>
                     <MetaData>
                         <LabelID>10</LabelID>
@@ -48,7 +48,7 @@
                         <TextSelection>351,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="DCF57CCC-3439-4889-BB5A-C4634F8A9A60" Type="Text" Created="2022-10-17 11:18:45 +0100" Modified="2022-11-27 12:44:11 +0100">
+                <BinderItem UUID="DCF57CCC-3439-4889-BB5A-C4634F8A9A60" Type="Text" Created="2022-10-17 12:18:45 +0200" Modified="2022-11-27 12:44:11 +0200">
                     <Title>DataBase</Title>
                     <MetaData>
                         <LabelID>11</LabelID>
@@ -58,7 +58,7 @@
                         <TextSelection>120,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="D493B8BB-8B67-47F2-BEEF-81955969C5DE" Type="Text" Created="2022-11-07 14:05:00 +0100" Modified="2022-11-07 14:14:26 +0100">
+                <BinderItem UUID="D493B8BB-8B67-47F2-BEEF-81955969C5DE" Type="Text" Created="2022-11-07 14:05:00 +0200" Modified="2022-11-07 14:14:26 +0200">
                     <Title>L'Immortelle, ARG, 1963</Title>
                     <MetaData>
                         <LabelID>10</LabelID>
@@ -68,7 +68,7 @@
                         <TextSelection>1585,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="787B3096-CF1B-4D04-B794-4358EA83BDAE" Type="Text" Created="2022-10-22 13:25:04 +0100" Modified="2022-11-19 15:05:58 +0100">
+                <BinderItem UUID="787B3096-CF1B-4D04-B794-4358EA83BDAE" Type="Text" Created="2022-10-22 14:25:04 +0200" Modified="2022-11-19 15:05:58 +0200">
                     <Title>Chronologie</Title>
                     <MetaData>
                         <LabelID>11</LabelID>
@@ -79,7 +79,7 @@
                         <TextSelection Caret="119">110,9</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="1B2A891E-D47F-4ADA-8D46-390FD69C5094" Type="Text" Created="2022-11-23 11:50:56 +0100" Modified="2022-11-23 14:13:21 +0100">
+                <BinderItem UUID="1B2A891E-D47F-4ADA-8D46-390FD69C5094" Type="Text" Created="2022-11-23 11:50:56 +0200" Modified="2022-11-23 14:13:21 +0200">
                     <Title>Les discours du nouveau roman</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -90,7 +90,7 @@
                         <TextSelection>20261,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="AE103307-B604-470A-A6B1-C47DCCFB04CE" Type="Text" Created="2022-11-21 13:07:42 +0100" Modified="2022-11-21 13:08:10 +0100">
+                <BinderItem UUID="AE103307-B604-470A-A6B1-C47DCCFB04CE" Type="Text" Created="2022-11-21 13:07:42 +0200" Modified="2022-11-21 13:08:10 +0200">
                     <Title>Édition numérique, design et plan</Title>
                     <MetaData>
                         <LabelID>13</LabelID>
@@ -100,7 +100,7 @@
                         <TextSelection>159,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="BA7AA0D2-0D4E-48E4-8464-C1FE6D64D8EA" Type="Folder" Created="2022-11-21 15:58:13 +0100" Modified="2022-11-21 15:58:42 +0100">
+                <BinderItem UUID="BA7AA0D2-0D4E-48E4-8464-C1FE6D64D8EA" Type="Folder" Created="2022-11-21 15:58:13 +0200" Modified="2022-11-21 15:58:42 +0200">
                     <Title>Commentaires thématiques</Title>
                     <MetaData>
                         <LabelID>14</LabelID>
@@ -110,7 +110,7 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem UUID="D383CABF-8783-46BB-B141-9A71F36F3F49" Type="Text" Created="2022-11-20 17:16:13 +0100" Modified="2022-11-21 16:53:05 +0100">
+                        <BinderItem UUID="D383CABF-8783-46BB-B141-9A71F36F3F49" Type="Text" Created="2022-11-20 17:16:13 +0200" Modified="2022-11-21 16:53:05 +0200">
                             <Title>Un collectif ? Le Nouveau Roman</Title>
                             <MetaData>
                                 <LabelID>13</LabelID>
@@ -120,7 +120,7 @@
                                 <TextSelection>1366,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="9B1F5397-81F3-4CC9-A584-AA5307A27D04" Type="Text" Created="2022-11-21 15:58:05 +0100" Modified="2022-11-21 17:49:06 +0100">
+                        <BinderItem UUID="9B1F5397-81F3-4CC9-A584-AA5307A27D04" Type="Text" Created="2022-11-21 15:58:05 +0200" Modified="2022-11-21 17:49:06 +0200">
                             <Title>Une théorie littéraire ?</Title>
                             <MetaData>
                                 <LabelID>13</LabelID>
@@ -131,7 +131,7 @@
                                 <TextSelection>24527,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="400A2D15-E2E9-408E-9C39-D4F25BABA611" Type="Text" Created="2022-11-21 16:29:46 +0100" Modified="2022-11-21 17:45:32 +0100">
+                        <BinderItem UUID="400A2D15-E2E9-408E-9C39-D4F25BABA611" Type="Text" Created="2022-11-21 16:29:46 +0200" Modified="2022-11-21 17:45:32 +0200">
                             <Title>Glossaire des adversaires</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -141,7 +141,7 @@
                                 <TextSelection>5631,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="8B9E018A-8C0F-48D1-80BF-6DF9024354F2" Type="Text" Created="2022-11-21 16:00:32 +0100" Modified="2022-11-21 17:46:22 +0100">
+                        <BinderItem UUID="8B9E018A-8C0F-48D1-80BF-6DF9024354F2" Type="Text" Created="2022-11-21 16:00:32 +0200" Modified="2022-11-21 17:46:22 +0200">
                             <Title>Unité du recueil</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -151,7 +151,7 @@
                                 <TextSelection>1881,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="22BB3F9E-9029-4F46-8C63-098F13188064" Type="Text" Created="2022-11-21 17:18:30 +0100" Modified="2022-11-21 17:18:42 +0100">
+                        <BinderItem UUID="22BB3F9E-9029-4F46-8C63-098F13188064" Type="Text" Created="2022-11-21 17:18:30 +0200" Modified="2022-11-21 17:18:42 +0200">
                             <Title>ce qu'on fait des critiques de livre</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -160,7 +160,7 @@
                                 <TextSelection>0,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="AB68F3D3-6F63-4CB0-9D1F-B48482D21483" Type="Text" Created="2022-11-21 16:02:58 +0100" Modified="2022-11-21 17:48:56 +0100">
+                        <BinderItem UUID="AB68F3D3-6F63-4CB0-9D1F-B48482D21483" Type="Text" Created="2022-11-21 16:02:58 +0200" Modified="2022-11-21 17:48:56 +0200">
                             <Title>Inscrit dans un débat littéraire</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -170,7 +170,7 @@
                                 <TextSelection>7827,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="14615177-69B6-4812-851C-2B900046A53D" Type="Text" Created="2022-11-21 16:08:55 +0100" Modified="2022-11-21 17:46:48 +0100">
+                        <BinderItem UUID="14615177-69B6-4812-851C-2B900046A53D" Type="Text" Created="2022-11-21 16:08:55 +0200" Modified="2022-11-21 17:46:48 +0200">
                             <Title>Commentaire stylistique</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -182,7 +182,7 @@
                         </BinderItem>
                     </Children>
                 </BinderItem>
-                <BinderItem UUID="23901DCE-7BA8-4360-94E0-96230DFCAFE2" Type="Text" Created="2022-11-07 15:40:36 +0100" Modified="2022-11-21 13:07:29 +0100">
+                <BinderItem UUID="23901DCE-7BA8-4360-94E0-96230DFCAFE2" Type="Text" Created="2022-11-07 15:40:36 +0200" Modified="2022-11-21 13:07:29 +0200">
                     <Title>Bibliography, méthode encodage</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -191,7 +191,7 @@
                         <TextSelection>541,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="A9394880-F5D6-462F-A916-2A703EA7B05F" Type="Folder" Created="2021-09-06 15:57:58 +0100" Modified="2021-09-06 15:58:37 +0100">
+                <BinderItem UUID="A9394880-F5D6-462F-A916-2A703EA7B05F" Type="Folder" Created="2021-09-06 16:57:58 +0200" Modified="2021-09-06 16:58:37 +0200">
                     <Title>Notes</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -200,7 +200,7 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="DCF7807A-481B-4DF3-B366-BC2506ED06A7" Type="Folder" Created="2022-11-19 13:51:12 +0100" Modified="2022-11-19 13:51:21 +0100">
+                <BinderItem UUID="DCF7807A-481B-4DF3-B366-BC2506ED06A7" Type="Folder" Created="2022-11-19 13:51:12 +0200" Modified="2022-11-19 13:51:21 +0200">
                     <Title>Notes_lectures_perso</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -209,7 +209,7 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem UUID="6F68B889-BE85-4490-AD24-00186AB1D9BF" Type="Text" Created="2022-11-19 13:53:17 +0100" Modified="2022-11-19 13:53:17 +0100">
+                        <BinderItem UUID="6F68B889-BE85-4490-AD24-00186AB1D9BF" Type="Text" Created="2022-11-19 13:53:17 +0200" Modified="2022-11-19 13:53:17 +0200">
                             <Title>Sur ROBBE-GRILLET Pour un Nouveau roman</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -231,7 +231,7 @@
                                 <KeywordID>20</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="F5C8CABA-9665-4190-AB29-8EDF9D8245C6" Type="Text" Created="2022-11-19 13:53:17 +0100" Modified="2022-11-19 13:53:17 +0100">
+                        <BinderItem UUID="F5C8CABA-9665-4190-AB29-8EDF9D8245C6" Type="Text" Created="2022-11-19 13:53:17 +0200" Modified="2022-11-19 13:53:17 +0200">
                             <Title>SARRAUTE, Tropismes</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -255,7 +255,7 @@
                                 <KeywordID>32</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="E0B23EBC-EA76-4E4F-B634-6A4CEC5DB12A" Type="Text" Created="2022-11-19 13:53:17 +0100" Modified="2022-11-19 13:53:17 +0100">
+                        <BinderItem UUID="E0B23EBC-EA76-4E4F-B634-6A4CEC5DB12A" Type="Text" Created="2022-11-19 13:53:17 +0200" Modified="2022-11-19 13:53:17 +0200">
                             <Title>Notes en attendant à la Médiathèque du vieux lille</Title>
                             <MetaData>
                                 <LabelID>11</LabelID>
@@ -277,7 +277,7 @@
                                 <KeywordID>24</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="9E020E72-28A0-4C29-A002-35FE1463BF41" Type="Text" Created="2022-11-19 13:53:58 +0100" Modified="2022-11-19 13:53:58 +0100">
+                        <BinderItem UUID="9E020E72-28A0-4C29-A002-35FE1463BF41" Type="Text" Created="2022-11-19 13:53:58 +0200" Modified="2022-11-19 13:53:58 +0200">
                             <Title>Un régicie, Le planétarium, corps et biens</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -290,7 +290,7 @@
                                 <KeywordID>30</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="7CADE496-EF7C-448E-8CAA-623BC286ED68" Type="Text" Created="2022-11-19 13:54:49 +0100" Modified="2022-11-19 13:54:49 +0100">
+                        <BinderItem UUID="7CADE496-EF7C-448E-8CAA-623BC286ED68" Type="Text" Created="2022-11-19 13:54:49 +0200" Modified="2022-11-19 13:54:49 +0200">
                             <Title>Robbe-Grillet Les Derniers jours de Corinthe</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -305,7 +305,7 @@
                                 <KeywordID>5</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="DA3C976F-9358-4C4C-9C60-A9802B8B1FDC" Type="Text" Created="2022-11-19 13:54:49 +0100" Modified="2022-11-19 13:54:49 +0100">
+                        <BinderItem UUID="DA3C976F-9358-4C4C-9C60-A9802B8B1FDC" Type="Text" Created="2022-11-19 13:54:49 +0200" Modified="2022-11-19 13:54:49 +0200">
                             <Title>Sur la Mangrove, Robbe grillet (corinthe)</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -319,7 +319,7 @@
                                 <KeywordID>4</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="A2C54AD7-1A10-4740-B281-80297D0D5778" Type="Text" Created="2022-11-19 13:54:49 +0100" Modified="2022-11-19 13:54:49 +0100">
+                        <BinderItem UUID="A2C54AD7-1A10-4740-B281-80297D0D5778" Type="Text" Created="2022-11-19 13:54:49 +0200" Modified="2022-11-19 13:54:49 +0200">
                             <Title>La Jalousie</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -334,7 +334,7 @@
                                 <KeywordID>24</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="EF60EAAE-FB95-42F1-A779-0389F91941E6" Type="Text" Created="2022-11-19 13:57:01 +0100" Modified="2022-11-19 13:57:01 +0100">
+                        <BinderItem UUID="EF60EAAE-FB95-42F1-A779-0389F91941E6" Type="Text" Created="2022-11-19 13:57:01 +0200" Modified="2022-11-19 13:57:01 +0200">
                             <Title>Crépuscule des idoles Nietzsche</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -356,7 +356,7 @@
                                 <KeywordID>6</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="1B42158C-9384-4C44-9D81-F1054CF24F00" Type="Text" Created="2022-11-19 13:57:55 +0100" Modified="2022-11-19 13:57:56 +0100">
+                        <BinderItem UUID="1B42158C-9384-4C44-9D81-F1054CF24F00" Type="Text" Created="2022-11-19 13:57:55 +0200" Modified="2022-11-19 13:57:56 +0200">
                             <Title>La Tentation de saint Antoine, Flaubert, Gallimard, coll. &quot;folio classique&quot;, Paris, 1983 [rééd de 2008?]</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -375,7 +375,7 @@
                                 <KeywordID>28</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="0B9F43E3-A03F-42CB-AA53-3BBEBE737CC7" Type="Text" Created="2022-11-19 13:57:56 +0100" Modified="2022-11-19 13:57:56 +0100">
+                        <BinderItem UUID="0B9F43E3-A03F-42CB-AA53-3BBEBE737CC7" Type="Text" Created="2022-11-19 13:57:56 +0200" Modified="2022-11-19 13:57:56 +0200">
                             <Title>Le bruit et la fureur, FAULKNER William, folio, Maurice Edgar Coindreau (trad.), gallimard, 1972, Paris</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -392,7 +392,7 @@
                                 <KeywordID>7</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="48F3AF8A-E4E2-40D7-8543-B23C15FFA01A" Type="Text" Created="2022-11-19 13:57:56 +0100" Modified="2022-11-19 13:57:56 +0100">
+                        <BinderItem UUID="48F3AF8A-E4E2-40D7-8543-B23C15FFA01A" Type="Text" Created="2022-11-19 13:57:56 +0200" Modified="2022-11-19 13:57:56 +0200">
                             <Title>Monnaie de singe, Faulkner, GF-flammarion 2015- 1987 - 1926</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -409,7 +409,7 @@
                                 <KeywordID>30</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="72D4FFE0-4BAE-49B0-B19E-CF860F93A017" Type="Text" Created="2022-11-19 13:59:22 +0100" Modified="2022-11-19 13:59:22 +0100">
+                        <BinderItem UUID="72D4FFE0-4BAE-49B0-B19E-CF860F93A017" Type="Text" Created="2022-11-19 13:59:22 +0200" Modified="2022-11-19 13:59:22 +0200">
                             <Title>Esthétique et théorie du roman, BAKHTINE Mikhaïl, tel gallimard, paris, OLIVIER Daria trad., [1978 trad fr -75] 2016</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -431,7 +431,7 @@
                                 <KeywordID>25</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="CBD2E555-8104-420B-ABE2-514AC7F8D298" Type="Text" Created="2022-11-19 13:59:37 +0100" Modified="2022-11-19 13:59:37 +0100">
+                        <BinderItem UUID="CBD2E555-8104-420B-ABE2-514AC7F8D298" Type="Text" Created="2022-11-19 13:59:37 +0200" Modified="2022-11-19 13:59:37 +0200">
                             <Title>le degré zéro de l'écriture Barthes Roland, seuil, paris, [1953 et 1972]</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -450,7 +450,7 @@
                                 <KeywordID>31</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="8523175E-0A48-4A73-BDE9-C6739826B897" Type="Text" Created="2022-11-19 14:00:14 +0100" Modified="2022-11-19 14:00:14 +0100">
+                        <BinderItem UUID="8523175E-0A48-4A73-BDE9-C6739826B897" Type="Text" Created="2022-11-19 14:00:14 +0200" Modified="2022-11-19 14:00:14 +0200">
                             <Title>Paul VEYNE, Les Grecs ont-ils cru à leurs mythes ?</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -472,7 +472,7 @@
                                 <KeywordID>31</KeywordID>
                             </Keywords>
                         </BinderItem>
-                        <BinderItem UUID="365C206B-8AD2-4DED-80BD-0B1C9F3BC2C9" Type="Text" Created="2022-11-19 14:09:13 +0100" Modified="2022-11-19 14:09:14 +0100">
+                        <BinderItem UUID="365C206B-8AD2-4DED-80BD-0B1C9F3BC2C9" Type="Text" Created="2022-11-19 14:09:13 +0200" Modified="2022-11-19 14:09:14 +0200">
                             <Title>DE LA NATURE HUMAINE NOAM CHOMSKY MICHEL FOUCAULT</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -494,7 +494,7 @@
                         </BinderItem>
                     </Children>
                 </BinderItem>
-                <BinderItem UUID="BA12C2B3-5ACB-488B-8EF2-4F965E58BFBC" Type="Folder" Created="2022-11-19 13:46:14 +0100" Modified="2022-11-19 13:46:18 +0100">
+                <BinderItem UUID="BA12C2B3-5ACB-488B-8EF2-4F965E58BFBC" Type="Folder" Created="2022-11-19 13:46:14 +0200" Modified="2022-11-19 13:46:18 +0200">
                     <Title>Butor</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -503,7 +503,7 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem UUID="475B32E9-FB24-409D-9CC5-FEF0DEF6B429" Type="Text" Created="2022-11-19 13:46:27 +0100" Modified="2022-11-19 13:46:27 +0100">
+                        <BinderItem UUID="475B32E9-FB24-409D-9CC5-FEF0DEF6B429" Type="Text" Created="2022-11-19 13:46:27 +0200" Modified="2022-11-19 13:46:27 +0200">
                             <Title>André Helbo</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -513,7 +513,7 @@
                                 <TextSelection>0,0</TextSelection>
                             </TextSettings>
                             <Children>
-                                <BinderItem UUID="8F405762-C5DD-41AB-B880-9923F86161A7" Type="Text" Created="2022-11-19 13:46:27 +0100" Modified="2022-11-19 13:46:28 +0100">
+                                <BinderItem UUID="8F405762-C5DD-41AB-B880-9923F86161A7" Type="Text" Created="2022-11-19 13:46:27 +0200" Modified="2022-11-19 13:46:28 +0200">
                                     <Title>heblo humanisme de MB</Title>
                                     <MetaData>
                                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -524,7 +524,7 @@
                                 </BinderItem>
                             </Children>
                         </BinderItem>
-                        <BinderItem UUID="E1AED7AF-4041-4079-9D20-C67CA0CD4327" Type="Text" Created="2022-11-19 13:46:28 +0100" Modified="2022-11-19 17:19:31 +0100">
+                        <BinderItem UUID="E1AED7AF-4041-4079-9D20-C67CA0CD4327" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 17:19:31 +0200">
                             <Title>Le nouveau roman une césure dans l'histoire du récit.</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -534,7 +534,7 @@
                                 <TextSelection>1297,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="7CF88225-F4F4-40CB-B0DA-4DA51D1CBF44" Type="Text" Created="2022-11-19 13:46:28 +0100" Modified="2022-11-19 13:46:28 +0100">
+                        <BinderItem UUID="7CF88225-F4F4-40CB-B0DA-4DA51D1CBF44" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 13:46:28 +0200">
                             <Title>Note mitterand</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -544,7 +544,7 @@
                                 <TextSelection>0,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="EEE708B0-5479-4AF8-95EB-5A2DDF5D29B5" Type="Text" Created="2022-11-19 13:46:28 +0100" Modified="2022-11-19 13:46:28 +0100">
+                        <BinderItem UUID="EEE708B0-5479-4AF8-95EB-5A2DDF5D29B5" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 13:46:28 +0200">
                             <Title>transaction photolitttéraires</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -555,7 +555,7 @@
                                 <TextSelection>1869,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="803716AB-72A9-4203-A3F9-EB2A02788823" Type="Text" Created="2022-11-19 13:46:28 +0100" Modified="2022-11-19 13:46:28 +0100">
+                        <BinderItem UUID="803716AB-72A9-4203-A3F9-EB2A02788823" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 13:46:28 +0200">
                             <Title>La linguistique, PUF, coll. « quadrige manuels »</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -565,7 +565,7 @@
                                 <TextSelection>1029,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="19DD632E-C923-4530-B11B-BBC4059ED8A9" Type="Text" Created="2022-11-19 13:46:28 +0100" Modified="2022-11-19 13:46:28 +0100">
+                        <BinderItem UUID="19DD632E-C923-4530-B11B-BBC4059ED8A9" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 13:46:28 +0200">
                             <Title>Notes sur Oeuvres complètes de Michel Butor</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -575,7 +575,7 @@
                                 <TextSelection>0,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="4F75F7BC-73BF-4745-8B2C-E8C12F23CE3D" Type="Text" Created="2022-11-19 13:46:28 +0100" Modified="2022-11-19 13:46:28 +0100">
+                        <BinderItem UUID="4F75F7BC-73BF-4745-8B2C-E8C12F23CE3D" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 13:46:28 +0200">
                             <Title>Répertoire III</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -585,7 +585,7 @@
                                 <TextSelection>1462,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="2ECE7AE8-DC6C-4395-94A6-A08A1ED1F52B" Type="Text" Created="2022-11-19 13:46:28 +0100" Modified="2022-11-19 13:46:28 +0100">
+                        <BinderItem UUID="2ECE7AE8-DC6C-4395-94A6-A08A1ED1F52B" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 13:46:28 +0200">
                             <Title>Repertoire IV</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -595,7 +595,7 @@
                                 <TextSelection>25,0</TextSelection>
                             </TextSettings>
                             <Children>
-                                <BinderItem UUID="192F531D-B531-4872-9B93-F3C070E5B2B6" Type="Text" Created="2022-11-19 13:46:28 +0100" Modified="2022-11-19 13:46:28 +0100">
+                                <BinderItem UUID="192F531D-B531-4872-9B93-F3C070E5B2B6" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 13:46:28 +0200">
                                     <Title>repertoire 4</Title>
                                     <MetaData>
                                         <LabelID>10</LabelID>
@@ -607,7 +607,7 @@
                                 </BinderItem>
                             </Children>
                         </BinderItem>
-                        <BinderItem UUID="AC705D7D-9B14-4E7D-B6C6-8D9CAD4E968A" Type="Text" Created="2022-11-19 13:46:28 +0100" Modified="2022-11-19 13:46:28 +0100">
+                        <BinderItem UUID="AC705D7D-9B14-4E7D-B6C6-8D9CAD4E968A" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 13:46:28 +0200">
                             <Title>Entretien III</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -617,7 +617,7 @@
                                 <TextSelection Caret="5407">5398,9</TextSelection>
                             </TextSettings>
                             <Children>
-                                <BinderItem UUID="61A99AFA-44D0-4887-A4E6-03AFDE038215" Type="Text" Created="2022-11-19 13:46:28 +0100" Modified="2022-11-19 13:46:28 +0100">
+                                <BinderItem UUID="61A99AFA-44D0-4887-A4E6-03AFDE038215" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 13:46:28 +0200">
                                     <Title>etrentiens3</Title>
                                     <MetaData>
                                         <LabelID>10</LabelID>
@@ -627,7 +627,7 @@
                                         <TextSelection>0,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
-                                <BinderItem UUID="2025D73E-3CFB-40B6-B7DF-C17BC9982ED9" Type="Text" Created="2022-11-19 13:46:29 +0100" Modified="2022-11-19 13:46:29 +0100">
+                                <BinderItem UUID="2025D73E-3CFB-40B6-B7DF-C17BC9982ED9" Type="Text" Created="2022-11-19 13:46:29 +0200" Modified="2022-11-19 13:46:29 +0200">
                                     <Title>entretiens-3-butor</Title>
                                     <MetaData>
                                         <LabelID>10</LabelID>
@@ -641,7 +641,7 @@
                         </BinderItem>
                     </Children>
                 </BinderItem>
-                <BinderItem UUID="1AAC2CF0-7737-4E6A-A0B7-751A0824F7BB" Type="Folder" Created="2022-11-19 15:07:12 +0100" Modified="2022-11-19 15:07:23 +0100">
+                <BinderItem UUID="1AAC2CF0-7737-4E6A-A0B7-751A0824F7BB" Type="Folder" Created="2022-11-19 15:07:12 +0200" Modified="2022-11-19 15:07:23 +0200">
                     <Title>Notes lecture</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -650,7 +650,7 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem UUID="8D9863E4-356C-466B-96AF-4DF71E935D74" Type="Text" Created="2022-11-19 15:07:33 +0100" Modified="2022-11-19 16:57:22 +0100">
+                        <BinderItem UUID="8D9863E4-356C-466B-96AF-4DF71E935D74" Type="Text" Created="2022-11-19 15:07:33 +0200" Modified="2022-11-19 16:57:22 +0200">
                             <Title>YANOSHEVSKY, Galia, « Pour un nouveau roman (1963) », Les Discours du Nouveau Roman : Essais, entretiens, débats, Villeneuve d'Ascq, Presses universitaires du Septentrion, 2006 [consulté en ligne le 19/11/22] https://doi-org.ressources-electroniques.univ-lille.fr/10.4000/books.septentrion.54734.</Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -660,7 +660,7 @@
                                 <TextSelection>551,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="D9A47FF1-F176-4E7D-8570-5D059E98B952" Type="Text" Created="2022-11-19 15:43:39 +0100" Modified="2022-11-19 16:57:27 +0100">
+                        <BinderItem UUID="D9A47FF1-F176-4E7D-8570-5D059E98B952" Type="Text" Created="2022-11-19 15:43:39 +0200" Modified="2022-11-19 16:57:27 +0200">
                             <Title>Faerber Johan, « La photo Minuit, du cliché nocture à la lumière du négatif », Fabula / Les colloques, L'idée de littérature dans les années 1950, URL : http://www.fabula.org/colloques/document64.php, page consultée le 19 novembre 2022. </Title>
                             <MetaData>
                                 <LabelID>10</LabelID>
@@ -674,19 +674,19 @@
                 </BinderItem>
             </Children>
         </BinderItem>
-        <BinderItem UUID="1811AFFD-7722-455C-BF35-B431A3FA4C2F" Type="ResearchFolder" Created="2021-09-06 15:50:24 +0100" Modified="2021-09-06 15:50:24 +0100">
+        <BinderItem UUID="1811AFFD-7722-455C-BF35-B431A3FA4C2F" Type="ResearchFolder" Created="2021-09-06 16:50:24 +0200" Modified="2021-09-06 16:50:24 +0200">
             <Title>Research</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
         </BinderItem>
-        <BinderItem UUID="B0599A73-B398-41B0-B3D1-51E092E15E1C" Type="TrashFolder" Created="2021-09-06 15:50:24 +0100" Modified="2021-09-06 15:50:24 +0100">
+        <BinderItem UUID="B0599A73-B398-41B0-B3D1-51E092E15E1C" Type="TrashFolder" Created="2021-09-06 16:50:24 +0200" Modified="2021-09-06 16:50:24 +0200">
             <Title>Trash</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <Children>
-                <BinderItem UUID="74944775-1794-439A-8C5F-9FEC62D2BACD" Type="Text" Created="2021-09-06 15:57:50 +0100" Modified="2021-09-06 17:29:55 +0100">
+                <BinderItem UUID="74944775-1794-439A-8C5F-9FEC62D2BACD" Type="Text" Created="2021-09-06 16:57:50 +0200" Modified="2021-09-06 18:29:55 +0200">
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
@@ -694,7 +694,7 @@
                         <TextSelection>308,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="6901E214-1F36-4997-ACEE-28217E4B54AD" Type="Text" Created="2022-11-19 13:45:55 +0100" Modified="2022-11-19 13:45:55 +0100">
+                <BinderItem UUID="6901E214-1F36-4997-ACEE-28217E4B54AD" Type="Text" Created="2022-11-19 13:45:55 +0200" Modified="2022-11-19 13:45:55 +0200">
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
@@ -706,10 +706,10 @@
         </BinderItem>
     </Binder>
     <Collections>
-        <Collection Type="Binder" ID="CA7E6BB2-DEB5-464E-A21C-BE893237EB15" Color="0.400000 0.600000 0.800000">
+        <Collection Type="Binder" ID="CA7E6BB2-DEB5-464E-A21C-BE893237EB15" Color="0.000000 0.207843 0.313725">
             <Title>Binder</Title>
         </Collection>
-        <Collection Type="RecentSearch" ID="1CAEFC5B-720F-43D1-84E5-22AF5646D49F" Color="0.000000 0.984314 0.662745">
+        <Collection Type="RecentSearch" ID="1CAEFC5B-720F-43D1-84E5-22AF5646D49F" Color="0.113725 0.392157 0.360784">
             <Title>Search Results</Title>
             <SearchSettings Operator="Any" Type="All" Scope="All" CompileSetting="All" CaseSensitive="No" IgnoreDiacritics="No"></SearchSettings>
         </Collection>
@@ -965,10 +965,10 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2021-09-06 15:50:24 +0200" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="0" Characters="0" Date="2022-12-06 20:39:32 +0100"/>
+        <PreviousSession Words="0" Characters="0" Date="2023-04-19 18:04:31 +0200"/>
     </ProjectTargets>
     <BookmarksFolderUUID>A9394880-F5D6-462F-A916-2A703EA7B05F</BookmarksFolderUUID>
-    <RecentWritingHistory Date="2022-12-06 00:00:00 +0100">
+    <RecentWritingHistory Date="2023-04-19 00:00:00 +0200">
         <DraftWordCount>0</DraftWordCount>
         <DraftCharCount>0</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>

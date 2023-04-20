@@ -4,14 +4,15 @@
 	xmlns:math="http://www.w3.org/2005/xpath-functions/math"
 	xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
 	xmlns:tei="http://www.tei-c.org/ns/1.0"
-	exclude-result-prefixes="xs math xd"
+	xpath-default-namespace="http://www.tei-c.org/ns/1.0"
+	exclude-result-prefixes="xs math xd tei"
 	version="3.0">
 	<xd:doc scope="stylesheet">
 		<xd:desc>
 			<xd:p><xd:b>Created on:</xd:b> Nov 27, 2022</xd:p>
 			<xd:p><xd:b>Author:</xd:b> eXu</xd:p>
 			<xd:p>Conçu par Adrien Mével, étudiant en M2 EdNitl à L'unirsité de Lille dans le cadre d'un travail de recherche (mémoire) sous la direction de Mme Florence de Chalonge pour le versant scientifique et M. Mathieu Marchal pour le versant technique.</xd:p>
-			<xd:p>Xsl produisant une édition critique et numérique de Pour un nouveau roman d'Alain Robbe-Grillet.</xd:p>
+			<xd:p>xsl produisant une édition critique et numérique de Pour un nouveau roman d'Alain Robbe-Grillet.</xd:p>
 		</xd:desc>
 	</xd:doc>
 	
@@ -102,5 +103,60 @@
 				</body>
 			</html>
 		</xsl:result-document>
+	</xsl:template>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!--	MODE CORPUS, gère mise en forme du corpus
+	le faire sauter si on peut ?-->
+	
+	<xsl:template match="hi" mode="corpus">
+		<xsl:variable name="class">
+			<xsl:if test="@rend='exposant'">STDexposant</xsl:if>
+			<xsl:if test="@rend='italic'">STDitalic</xsl:if>
+			<xsl:if test="@rend='small_caps'">STDsc</xsl:if>
+<!--			<xsl:if test="@rend='italic'">STDitalic</xsl:if>-->
+<!--			<xsl:if test="@rend='italic'">STDitalic</xsl:if>-->
+		</xsl:variable>
+		<span class="{$class}">
+			<xsl:apply-templates/>
+		</span>
+	</xsl:template>
+	<xsl:template match="p" mode="corpus">
+		<p>
+			<xsl:apply-templates/>
+		</p>
+	</xsl:template>
+	<xsl:template match="head" mode="corpus">
+		<xsl:choose>
+			<xsl:when test="@type='subsection_head'">
+				<h4><xsl:apply-templates/></h4>
+			</xsl:when>
+			<xsl:otherwise>
+				<h3><xsl:apply-templates/></h3>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	<xsl:template mode="corpus" match="date[ancestor::head]">
+		<br /><span class="STDsmall"><xsl:apply-templates/></span>
+	</xsl:template>
+	<xsl:template match="pb[ancestor::TEI/@xml:id='punr']">
+		<a id="{concat('page_',@n)}"/>
+	</xsl:template>
+	<xsl:template match="div[ancestor::TEI/@xml:id='punr']">
+		<!--		mode="corpus"-->
+		<!--<div>
+			<xsl:apply-templates/>
+		</div>-->
+		
+<!--		À l'origine de la génération des != pages du site ? -->
+		
 	</xsl:template>
 </xsl:stylesheet>

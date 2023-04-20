@@ -11,58 +11,42 @@
 
 
 
-<a id="pg_13" />
+% <a id="pg_13" /> = pb n=""
 
 
-= pb n=""
+% <i> = italic
 
-
-<i>
-
-= italic
-
-<p class="txt"><span>
-
-= paragraphe
+% <p class="txt"><span>= paragraphe
 
 <div class="tit_chap_l0 tit_right">
 <div class="tit_part_l0 tit_right">
 = début bloc titre
 
 
-<h1 class="tit_right"><b><a id="pg_16" />Une voie pour le roman futur</b></h1>
-
-= titre
+% <h1 class="tit_right"><b><a id="pg_16" />Une voie pour le roman futur</b></h1> = titre
 
 <p class="txt_right"><span>(1956)</span></p>
 = sous-titre
 
 
-</div>
-= 
+% </div> = 
 
-<small>
-=hi rend="small_caps"
+% <small>=hi rend="small_caps"
 
-<sup>
-= hi rend="exposant"
+% <sup>= hi rend="exposant"
 
 
-<div id="tit9" class="tit_sect_l0 tit_right">
-=début bloc titre anthologie
+% <div id="tit9" class="tit_sect_l0 tit_right">=début bloc titre anthologie
 
 
-<h2 class="tit_right"><span>
-= title type="subsection"
+% <h2 class="tit_right"><span>= title type="subsection"
 
-</span></h2>
+% </span></h2>
 
 
-<blockquote class="epigraphe">
-<p class="txt_center cit_ref cit_aut"><span>
-</blockquote>
-
-= cit
+% <blockquote class="epigraphe">
+% <p class="txt_center cit_ref cit_aut"><span>
+% </blockquote>= cit
 
 
 </span></p>

@@ -2,7 +2,9 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-	exclude-result-prefixes="xs xd"
+	xmlns:tei="http://www.tei-c.org/ns/1.0"
+	xpath-default-namespace="http://www.tei-c.org/ns/1.0"
+	exclude-result-prefixes="xs xd tei"
 	version="2.0">
 	<xd:doc scope="stylesheet">
 		<xd:desc>
@@ -78,30 +80,49 @@
 				</xsl:call-template>
 				<body>
 					<xsl:call-template name="header"/>
-					<xsl:apply-templates select="//section" mode="verif_encodage"/>
+					<xsl:apply-templates select="//div" mode="verif_encodage"/>
 					<xsl:call-template name="footer"/>
 				</body>
 			</html>
 		</xsl:result-document>
 	</xsl:template>
-	<!--//quote|//title|//hi|-->
 	
-	<xsl:template match="section" mode="verif_encodage">
-		<h2><xsl:apply-templates select="descendant::title" mode="verif_encodage"/></h2>
-		<ol>
-			<xsl:apply-templates select="descendant::quote|descendant::hi[@rend='italic']|descendant::ref|descendant::cit" mode="verif_encodage"/>
-		</ol>
-		<xsl:apply-templates select="//hi[not(@rend='italic')]" mode="verif_encodage"/>
+	<xsl:template match="div[not(@type='subsection')]" mode="verif_encodage">
+<!--		NB : produit doublons du fait de sous-sections-->
+		<div>
+			<h2><xsl:apply-templates select="descendant::head[1]" mode="verif_encodage"/></h2>
+			<ol>
+				<xsl:apply-templates select="descendant::quote[not(ancestor::div[@type='subsection'])]|descendant::hi[@rend='italic'][not(ancestor::div[@type='subsection'])]|descendant::ref[not(ancestor::div[@type='subsection'])]" mode="verif_encodage"/>
+			</ol>
+			<xsl:apply-templates select="descendant::hi[not(@rend='italic')]" mode="verif_encodage"/>
+		</div>
 	</xsl:template>
-	<xsl:template match="quote|hi[@rend='italic']|cit|ref" mode="verif_encodage">
-		<li><xsl:value-of select="upper-case(local-name())"/>; <xsl:apply-templates/></li>
+	<xsl:template match="div[@type='subsection']" mode="verif_encodage">
+		<div>
+			<h3><xsl:apply-templates select="descendant::head[1]" mode="verif_encodage"/></h3>
+			<ol>
+				<xsl:apply-templates select="descendant::quote|descendant::hi[@rend='italic']|descendant::ref" mode="verif_encodage"/>
+			</ol>
+			<xsl:apply-templates select="descendant::hi[not(@rend='italic')]" mode="verif_encodage"/>
+		</div>
+	</xsl:template>
+	<xsl:template match="quote|hi[@rend='italic']" mode="verif_encodage">
+		<li><xsl:apply-templates/> ; <xsl:value-of select="upper-case(local-name())"/>; <xsl:value-of select="preceding::pb[1]/@n"/></li>
+	</xsl:template>
+	<xsl:template match="ref" mode="verif_encodage">
+		
+		<li><xsl:apply-templates/> ; <xsl:value-of select="upper-case(local-name())"/>; <xsl:value-of select="preceding::pb[1]/@n"/> CREF : <xsl:call-template name="lowerNoDia"><xsl:with-param name="treated" select="@cRef"/></xsl:call-template> TYPE : <xsl:value-of select="@type"/></li>
 	</xsl:template>
 	
+<!--	gère le changement de cRef vers cRef valide-->
+	<xsl:template name="lowerNoDia">
+		<xsl:param name="totreat"/>
+		<xsl:param name="treated">
+			<xsl:value-of select="translate(lower-case($totreat),'éêèëäàâîïìùùûüöôò','eeeeaaaiiiuuuuooo')"/>
+		</xsl:param>
+		<xsl:value-of select="$treated"/>
+	</xsl:template>
 	<xsl:template match="hi[not(@rend='italic')]" mode="verif_encodage">
 		<p><xsl:apply-templates/></p>
 	</xsl:template>
-	
-	
-<!--	ajouter encodage auto des auteurs etc. et vérif-->
-	
 </xsl:stylesheet>
