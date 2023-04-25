@@ -19,8 +19,8 @@
 
 
 	<xsl:output method="xml" encoding="UTF-8" indent="1"/>
+	<xsl:strip-space elements="*"/>
 	
-
 	<xsl:template match="*">
 		<xsl:element name="{local-name()}">
 			<xsl:for-each select="@*">
@@ -40,7 +40,7 @@
 			<xsl:apply-templates/>
 		</xsl:element>
 	</xsl:template>
-	<xsl:template match="p">
+	<!--<xsl:template match="p">
 		<p>
 			<xsl:for-each select="attribute()">
 				<xsl:choose>
@@ -52,7 +52,7 @@
 			</xsl:for-each>
 			<xsl:apply-templates/>
 		</p>
-	</xsl:template>
+	</xsl:template>-->
 	<xsl:template match="comment()">
 		<xsl:comment select="."/>
 	</xsl:template>
@@ -138,35 +138,19 @@
 	<!--	# quote @corresp="toDefine" @cert="mReferenceStatus" @ana="mAxiologicStatus" @type="ttNature"-->
 	<xsl:template match="quote">
 		<xsl:element name="{local-name()}">
-			<xsl:choose>
-				<xsl:when test="@type"/>
-				<xsl:otherwise>
-					<xsl:attribute name="type">ttNature</xsl:attribute>
-				</xsl:otherwise>
-			</xsl:choose>r
-			<xsl:choose>
-				<xsl:when test="@corresp"/>
-				<xsl:otherwise>
-					<xsl:attribute name="corresp">toDefine</xsl:attribute>
-				</xsl:otherwise>
-			</xsl:choose>
-			<xsl:choose>
-				<xsl:when test="@cert"/>
-				<xsl:otherwise>
-					<xsl:attribute name="cert">mReferenceStatus</xsl:attribute>
-				</xsl:otherwise>
-			</xsl:choose>
-			<xsl:choose>
-				<xsl:when test="@ana"/>
-				<xsl:otherwise>
-					<xsl:attribute name="ana">mAxiologicStatus</xsl:attribute>
-				</xsl:otherwise>
-			</xsl:choose>
-			<xsl:for-each select="@*">
-				<xsl:attribute name="{local-name()}">
-					<xsl:value-of select="."/>
-				</xsl:attribute>
-			</xsl:for-each>
+			<xsl:attribute name="type"><xsl:choose><xsl:when test="@type"><xsl:value-of select="@type"/></xsl:when>
+				<xsl:otherwise>ttNature</xsl:otherwise>
+			</xsl:choose></xsl:attribute>
+			<xsl:attribute name="corresp"><xsl:choose><xsl:when test="@corresp"><xsl:value-of select="@corresp"/></xsl:when><xsl:otherwise>toDefine</xsl:otherwise>
+			</xsl:choose></xsl:attribute>
+			<xsl:attribute name="cert"><xsl:choose>
+				<xsl:when test="@cert"><xsl:value-of select="@cert"/></xsl:when>
+				<xsl:otherwise>mReferenceStatus</xsl:otherwise>
+			</xsl:choose></xsl:attribute>
+			<xsl:attribute name="ana"><xsl:choose>
+				<xsl:when test="@ana"><xsl:value-of select="@ana"/></xsl:when>
+				<xsl:otherwise>mAxiologicStatus</xsl:otherwise>
+			</xsl:choose></xsl:attribute>
 			<xsl:apply-templates/>
 		</xsl:element>
 	</xsl:template>

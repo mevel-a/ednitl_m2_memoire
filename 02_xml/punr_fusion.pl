@@ -207,15 +207,34 @@ if($file=="08"){
 	$line=~s/(Descartes)/<ref type=\"author\" cRef=\"$1\">$1<\/ref>/g;
 	$line=~s/(Joë) (Bousquet)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
 	$line=~s/ (Bousquet)/ <ref type=\"author\" cRef=\"$1_joe\">$1<\/ref>/g;
+	$line=~s/(Heidegger)/ <ref type=\"author\" cRef=\"$1_martin\">$1<\/ref>/g;
 
 # madame de La Fayette
 	$line=~s/(Madame) (de) (La) (Fayette)/<ref type=\"author\" cRef=\"$3_$4_$1_$2\">$1 $2 $3 $4<\/ref>/g;	
 
 
-# ajouter en quote les personnages de beckett et autres
+	$line=~s/(Hamm)/<quote>$1<\/quote>/g;
+	$line=~s/(Clov)/<quote>$1<\/quote>/g;
+	$line=~s/(Murphy)/<quote>$1<\/quote>/g;
+	$line=~s/(Gogo)/<quote>$1<\/quote>/g;
+	$line=~s/(Pozzo)/<quote>$1<\/quote>/g;
+	$line=~s/(Lucky)/<quote>$1<\/quote>/g;
+	$line=~s/(Didi)/<quote>$1<\/quote>/g;
+	$line=~s/(Molloy)/<quote>$1<\/quote>/g;
+	$line=~s/(Malone)/<quote>$1<\/quote>/g;
+	$line=~s/(Mahood)/<quote>$1<\/quote>/g;
+	$line=~s/(Worm)/<quote>$1<\/quote>/g;
+	# $line=~s/()/<quote>$1<\/quote>/g;
+	# $line=~s/()/<quote>$1<\/quote>/g;
+
+
+#corrections diverses :
+	$line=~s/(<hi rend=\"small_caps\">)(XX)(<\/hi>)/$1xx$3/g;
+	$line=~s/(<hi rend=\"small_caps\">)(XIX)(<\/hi>)/$1xix$3/g;
 
 
 
+# id des références à établir, si citation = incluse ou non
 
 	# $line=~s/ (Rousseaux)/ <ref type=\"author\" cRef=\"$1_andré\">$1<\/ref>/g;
 

@@ -14,18 +14,14 @@ binmode(XML, "utf8");
 
 # à raffiner pour finaliser encodage des œuvres citées etc.
 # découpage par mot pour pas choper qu'un seul par ligne + de stopwords ?
-my @stopword = ('Ma','Et','Selon','Mais','Il','Elle','Je','Nous','Ref','Tout','Depuis','Enfin','Plus','Aussi','Ce','Cette','Ce','Dieu','La','Le','GAP','DÉBUT','FIN','De','Dans','Ainsi','Plus','Dire','Quant','Quand','TEI','Desc','Header','UTF','Pour','Stmt','Ils','Les','Cependant','Pourquoi','Comment','Alors','Puisqu','En','On','Bien','Une','Un','Pourtant','Tandis');
+my @stopword = ('Ma','Lorsqu','Corpus','Et','Selon','Mais','Il','Elle','Je','Nous','Ref','Tout','Depuis','Enfin','Plus','Aussi','Ce','Cette','Ce','Dieu','La','Le','GAP','DÉBUT','FIN','De','Dans','Ainsi','Plus','Dire','Quant','Quand','TEI','Desc','Header','UTF','Pour','Stmt','Ils','Les','Cependant','Pourquoi','Comment','Alors','Puisqu','En','On','Bien','Une','Un','Pourtant','Tandis');
 
 
 while (my $line=<XML>){
 	chop $line;
 	if ($line=~/([A-Z]\w+)/g){
-			if ($1 ~~ @stopword){}
-
-		# foreach my $stopword (@stopword){
-			# if($1 eq $stopword){}
-			else{print XMLdummy "$1\n";}
-		# }
+		if ($1 ~~ @stopword){}
+		else{print XMLdummy "$1\n";}
 	}
 }
 close (XML);
