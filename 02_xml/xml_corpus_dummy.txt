@@ -8,7 +8,7 @@
 				<title>Pour un nouveau roman, édition numérique</title>
 			</titleStmt>
 			<publicationStmt>
-				<p>Encodage de Pour un nouveau roman publié en 1963 par Alain Robbe-Grillet, produit par Adrien Mével en vu de produire une édition numérique de cette OEuvre dans le cadre d'un travail de recherche encadré par Mme Florence de Chalonge et M. Matthieu Marchal, effectué en Master 2 Éditions Numériques et Imprimées de Textes Littéraires, à l'Université de Lille, année universitaire 2022-2023.</p>
+				<p>Encodage de Pour un nouveau roman publié en 1963 par Alain Robbe-Grillet, produit par Adrien Mével en vu de produire une édition numérique de cette œuvre dans le cadre d'un travail de recherche encadré par Mme Florence de Chalonge et M. Matthieu Marchal, effectué en Master 2 Éditions Numériques et Imprimées de Textes Littéraires, à l'Université de Lille, année universitaire 2022-2023.</p>
 				<p>Le présent travail contient le texte de Pour un nouveau roman et quelques-uns de ses référents transtextuels ainsi que des variantes issus des premières publications des articles composant le recueil.</p>
 			</publicationStmt>
 			<sourceDesc>
@@ -63,7 +63,7 @@
 					<title>Pour un nouveau roman</title>
 				</titleStmt>
 				<publicationStmt>
-					<p>Encodage de Pour un nouveau roman publié en 1963 par Alain Robbe-Grillet, produit par Adrien Mével en vu de produire une édition numérique de cette OEuvre dans le cadre d'un travail de recherche encadré par Mme Florence de Chalonge et M. Matthieu Marchal, effectué en Master 2 Éditions Numériques et Imprimées de Textes Littéraires, à l'Université de Lille, année universitaire 2022-2023.</p>
+					<p>Encodage de Pour un nouveau roman publié en 1963 par Alain Robbe-Grillet, produit par Adrien Mével en vu de produire une édition numérique de cette œuvre dans le cadre d'un travail de recherche encadré par Mme Florence de Chalonge et M. Matthieu Marchal, effectué en Master 2 Éditions Numériques et Imprimées de Textes Littéraires, à l'Université de Lille, année universitaire 2022-2023.</p>
 				</publicationStmt>
 				<sourceDesc>
 					<p>Pour un nouveau roman publié en 1963 par Alain Robbe-Grillet.</p>

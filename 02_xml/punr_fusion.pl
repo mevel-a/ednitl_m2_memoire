@@ -138,7 +138,6 @@ if($file=="08"){
 	$line=~s/ (Pinget)/ <ref type=\"author\" cRef=\"$1_robert\">$1<\/ref>/g;
 	$line=~s/(Marguerite) (Duras)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;
 	$line=~s/ (Duras)/<ref type=\"author\" cRef=\"$1_marguerite\">$1<\/ref>/g;
-# Faulkner Kafka Flaubert Proust
 	$line=~s/(William) (Faulkner)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;
 	$line=~s/ (Faulkner)/ <ref type=\"author\" cRef=\"$1_william\">$1<\/ref>/g;
 	# $line=~s/(Franz) (Kafka)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;
@@ -146,8 +145,8 @@ if($file=="08"){
 	# $line=~s/(Gustave) (Flaubert)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;
 	$line=~s/(Flaubert)/<ref type=\"author\" cRef=\"$1_gustave\">$1<\/ref>/g;
 	$line=~s/(Marcel) (Proust)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;
-	# IL ME MANQUE UN PROUST EN DÉBUT DE LIGNE ==> VA FALLOIR FAIRE NOT\D
 	$line=~s/ (Proust)/ <ref type=\"author\" cRef=\"$1_marcel\">$1<\/ref>/g;
+	$line=~s/(Proust) /<ref type=\"author\" cRef=\"$1_marcel\">$1<\/ref> /g;
 	# $line=~s/(Gustave) (Flaubert)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
 	# $line=~s/ (Flaubert)/ <ref type=\"author\" cRef=\"$1_gustave\">$1<\/ref>/g;
 	$line=~s/ (Stendhal)/ <ref type=\"author\" cRef=\"$1\">$1<\/ref>/g;
@@ -185,9 +184,36 @@ if($file=="08"){
 	$line=~s/(Claudel)/<ref type=\"author\" cRef=\"$1_paul\">$1<\/ref>/g;
 	$line=~s/(Émile) (Zola)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
 	$line=~s/(Raymond) (Queneau)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
-	$line=~s/ (Queneau)/ <ref type=\"author\" cRef=\"$1_gustave\">$1<\/ref>/g;
+	$line=~s/ (Queneau)/ <ref type=\"author\" cRef=\"$1_raymond\">$1<\/ref>/g;
+	$line=~s/(Charles) (X)/<ref type=\"author\" cRef=\"$1_$2\">$1 $2<\/ref>/g;	
+	$line=~s/(Cervantès)/<ref type=\"author\" cRef=\"$1\">$1<\/ref>/g;
+	$line=~s/(Beethoven)/<ref type=\"author\" cRef=\"$1_ludwig\">$1<\/ref>/g;
+	$line=~s/(Delacroix)/<ref type=\"author\" cRef=\"$1_eugene\">$1<\/ref>/g;
+	$line=~s/(J\.-L\.) (Borgès)/ <ref type=\"author\" cRef=\"$2_jorge_luis\">$1 $2<\/ref>/g;
+	$line=~s/(Académie)/ <ref type=\"collective_entity\" cRef=\"$1_française\">$1<\/ref>/g;
+	$line=~s/(Lukacs)/<ref type=\"author\" cRef=\"$1_georg\">$1<\/ref>/g;
+	$line=~s/(Jdanov)/ <ref type=\"ToDefine\" cRef=\"$1\">$1<\/ref>/g;
+	$line=~s/(Gide)/<ref type=\"author\" cRef=\"$1_andre\">$1<\/ref>/g;
+	$line=~s/(Staline)/<ref type=\"ToDefine\" cRef=\"$1_joseph\">$1<\/ref>/g;
+	$line=~s/(Pascal)/<ref type=\"author\" cRef=\"$1\">$1<\/ref>/g;
+	$line=~s/(Sade)/<ref type=\"author\" cRef=\"$1_marquis\">$1<\/ref>/g;
+	$line=~s/(Lewis) (Carroll)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
+	$line=~s/(Claude) (Simon)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
+	$line=~s/ (Simon)/ <ref type=\"author\" cRef=\"$1_claude\">$1<\/ref>/g;
+	$line=~s/(Alfred) (Jarry)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
+	$line=~s/ (Jarry)/ <ref type=\"author\" cRef=\"$1_alfred\">$1<\/ref>/g;
+	$line=~s/(Alain) (Resnais)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
+	$line=~s/ (Resnais)/ <ref type=\"author\" cRef=\"$1_alain\">$1<\/ref>/g;
+	$line=~s/(Descartes)/<ref type=\"author\" cRef=\"$1\">$1<\/ref>/g;
+	$line=~s/(Joë) (Bousquet)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
+	$line=~s/ (Bousquet)/ <ref type=\"author\" cRef=\"$1_joe\">$1<\/ref>/g;
+
 # madame de La Fayette
 	$line=~s/(Madame) (de) (La) (Fayette)/<ref type=\"author\" cRef=\"$3_$4_$1_$2\">$1 $2 $3 $4<\/ref>/g;	
+
+
+# ajouter en quote les personnages de beckett et autres
+
 
 
 

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:math="http://www.w3.org/2005/xpath-functions/math"
-	xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:tei="http://www.tei-c.org/ns/1.0"
-	xpath-default-namespace="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="xs xd tei"
-	version="3.0">
+	xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+	xmlns:tei="http://www.tei-c.org/ns/1.0"
+	xpath-default-namespace="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all"
+	version="3.0"
+	xmlns="http://www.tei-c.org/ns/1.0">
 	<xd:doc scope="stylesheet">
 		<xd:desc>
 			<xd:p><xd:b>Created on:</xd:b> Apr 19, 2023</xd:p>
@@ -16,12 +19,13 @@
 
 
 	<xsl:output method="xml" encoding="UTF-8" indent="1"/>
+	
 
 	<xsl:template match="*">
 		<xsl:element name="{local-name()}">
 			<xsl:for-each select="@*">
 				<xsl:choose>
-					<xsl:when test="local-name() = 'xml:id'">
+					<xsl:when test="local-name() = 'id'">
 						<xsl:attribute name="xml:id">
 							<xsl:value-of select="."/>
 						</xsl:attribute>
@@ -36,7 +40,22 @@
 			<xsl:apply-templates/>
 		</xsl:element>
 	</xsl:template>
-
+	<xsl:template match="p">
+		<p>
+			<xsl:for-each select="attribute()">
+				<xsl:choose>
+					<xsl:when test="local-name()='part'"/>
+					<xsl:otherwise>
+						<xsl:attribute name="{local-name()}" select="."/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:for-each>
+			<xsl:apply-templates/>
+		</p>
+	</xsl:template>
+	<xsl:template match="comment()">
+		<xsl:comment select="."/>
+	</xsl:template>
 
 	<!--	récupération indication de date dans le titre-->
 	<xsl:template match="head">
@@ -62,10 +81,7 @@
 					</xsl:for-each>
 					<xsl:choose>
 						<xsl:when test="@type = 'subsection_head'">
-							<!--					ajout maj premier caractère, suppression caps sur les autres-->
-							<xsl:value-of
-								select="translate(substring(lower-case(.), 1, 1), 'abcdefghijklmnopqrstuvwxyzé', 'ABCDEFGHIJKLMNOPQRSTUVWXYZÉ')"
-							/>
+							<xsl:call-template name="rectif_subsection_head"><xsl:with-param name="originalString" select="."/></xsl:call-template>
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:apply-templates/>
@@ -73,15 +89,12 @@
 					</xsl:choose>
 					<!--					récupération des secondes parties de titre de sous-sections dans la première partie, avec la date-->
 					<xsl:if test="following-sibling::head[@type = 'subsection_head'][1]">
-						<xsl:value-of
-							select="translate(substring(lower-case(following-sibling::head[@type = 'subsection_head'][1]), 1, 1), 'abcdefghijklmnopqrstuvwxyzé', 'ABCDEFGHIJKLMNOPQRSTUVWXYZÉ')"/>
-						<xsl:text>
- </xsl:text>
+						<xsl:call-template name="rectif_subsection_head"><xsl:with-param name="originalString" select="following-sibling::head[@type = 'subsection_head'][1]"/><xsl:with-param name="second" select="'1'"/></xsl:call-template>
+						<xsl:text> </xsl:text>
 						<date rend="txt_right">
 							<xsl:value-of select="following-sibling::p[@rend = 'txt_right'][2]"/>
 						</date>
 					</xsl:if>
-					<!--					récupération de la date dans les autres cas ???-->
 					<xsl:if test="following-sibling::p[@rend = 'txt_right'][1]">
 						<!--				risque de capturer tous les following -->
 						<xsl:text>
@@ -117,6 +130,11 @@
 		</xsl:element>
 	</xsl:template>
 
+	<xsl:template match="ref">
+		<ref type="{@type}" cRef="{translate(lower-case(@cRef),'ë','e')}"><xsl:apply-templates/></ref>
+	</xsl:template>
+
+
 	<!--	# quote @corresp="toDefine" @cert="mReferenceStatus" @ana="mAxiologicStatus" @type="ttNature"-->
 	<xsl:template match="quote">
 		<xsl:element name="{local-name()}">
@@ -125,7 +143,7 @@
 				<xsl:otherwise>
 					<xsl:attribute name="type">ttNature</xsl:attribute>
 				</xsl:otherwise>
-			</xsl:choose>
+			</xsl:choose>r
 			<xsl:choose>
 				<xsl:when test="@corresp"/>
 				<xsl:otherwise>
@@ -151,5 +169,55 @@
 			</xsl:for-each>
 			<xsl:apply-templates/>
 		</xsl:element>
+	</xsl:template>
+	
+	
+	<xd:doc>
+		<xd:desc>
+			<xd:p>Template de traitement des "subsection_head", supprime les capitales de mise en forme (au demeurant peu élégante), rétablit les majuscules au nom propres et à la première lettre du titre. Pour ce faire le template teste via paramètre s'il s'agit de la première ligne d'un titre ou de la seconde (= un second élément dont la première lettre serait mise en capitale sinon) et ajoute un espace s'il s'agit de la deuxième ligne. </xd:p>
+		</xd:desc>
+		<xd:param name="originalString">la string originale envoyé depuis le template gérant les head</xd:param>
+		<xd:param name="second">s'il s'agit du deuxième élément d'un même titre de sous-section (une deuxième ligne), contient '1' envoyé depuis le template gérant les head</xd:param>
+		<xd:param name="lcString">le string originale transformée : première lettre en capitale le reste en minuscule.</xd:param>
+	</xd:doc>
+	<xsl:template name="rectif_subsection_head">
+		<xsl:param name="originalString"/>
+		<xsl:param name="second"/>
+		<xsl:param name="lcString">
+			<xsl:choose>
+				<xsl:when test="$second='1'">
+					<xsl:value-of select="concat(' ',lower-case($originalString))"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="concat(translate(substring(lower-case($originalString), 1, 1), 'abcdefghijklmnopqrstuvwxyzé', 'ABCDEFGHIJKLMNOPQRSTUVWXYZÉ'),substring(lower-case($originalString),2))"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:param> 
+		<xsl:variable name="rectifiedString">
+			<xsl:choose>
+				<xsl:when test="contains($lcString,'beckett')">
+					<xsl:value-of select="replace($lcString,' beckett',' Beckett')"/>
+				</xsl:when>
+				<xsl:when test="contains($lcString,'nouveau roman')">
+					<xsl:value-of select="replace($lcString,'nouveau roman','Nouveau Roman')"/>
+				</xsl:when>
+				<xsl:when test="contains($lcString,'Joë bousquet')">
+					<xsl:value-of select="replace($lcString,'Joë bousquet','Joë Bousquet')"/>
+				</xsl:when>
+				<xsl:when test="contains($lcString,'zeno')">
+					<xsl:value-of select="replace($lcString,'zeno','Zeno')"/>
+				</xsl:when>
+				<xsl:when test="contains($lcString,'raymond roussel')">
+					<xsl:value-of select="replace($lcString,'raymond roussel','Raymond Roussel')"/>
+				</xsl:when>
+				<!--<xsl:when test="contains($lcString,'')">
+				<xsl:variable name="rectifiedString" select="replace($lcString,'','')"/>
+			</xsl:when>-->
+				<xsl:otherwise>
+					<xsl:value-of select="$lcString"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:value-of select="$rectifiedString"/>
 	</xsl:template>
 </xsl:stylesheet>
