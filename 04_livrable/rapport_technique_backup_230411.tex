@@ -294,7 +294,7 @@ Ont été remplacés par les balises xml-tei jugée pertinentes~:
     \item les éléments <p> et ses attributs marquant la mise en forme du nom de l'auteur de la citation mise en exergue, par un élément <ref>
 \end{itemize}
 
-Notons que le nettoyage a été effectué en conservant grâce à des commentaires les traces de balises supprimées que l'on pourrait vouloir restaurer (tels les éléments <div> utilisé pour insérer du blanc dans le corps du texte).
+Notons que le nettoyage a été effectué en conservant, grâce à des commentaires, les traces de balises supprimées que l'on pourrait vouloir restaurer (tels les éléments <div> utilisés dans les fichiers html d'origine pour insérer du blanc dans le corps du texte).
 
 Nous ajoutons des balises ouvrantes <quote> à chaque fois que le script de nettoyage rencontre le caractère "«" et fermante après le caractère "»", afin d'effectuer un premier repérage automatique des citations ou emprunts, qui seront ensuite complété et corrigé à la main si besoin. Notons que le script de nettoyage ajoute également ces éléments en début et en fin de paragraphe du segment «~Joë Bousquet le rêveur~» où nécessaire (lorsque \robbe{} cite plus d'un paragraphe il n'insère pas de guillemets, rendant le balisage automatique plus laborieux).
 
@@ -325,6 +325,9 @@ On désigne généralement par «~encodage sémantique~» l'ajout d'éléments x
     \item et d'un attribut @cRef (référence canonique) dont la valeur est constituée sur le modèle «~nom_prenom~». Générée automatiquement par le script, cette valeur comprendra des majuscules et/ou des lettres accentuées (puisque \robbe{} écrit «~Samuel Beckett~» la valeur sera "Beckett_Samuel"), elle fera l'objet d'une correction grâce à l'emploi d'une feuille xsl.
 \end{itemize}
 Afin d'éviter le double balisage, nous balisons la dénomination complète («~Samuel Beckett~») en ajoutant un espace insécable entre le prénom et le nom, avant de baliser «~Beckett~» seul, s'il est précédé d'un espace sécable.
+% Voir ci-dessous si maintenu~:
+Nous ajoutons ensuite au script de nettoyage les noms des personnages des pièces de Beckett abondamment cité dans l'article « Samuel Beckett, ou la présence sur la scène » balisé en tant que <quote> et le concept de « Nature » balisé en tant que <ref> avec pour valeur de l'attribut @type "concept" et @cRef "philo_nature", ainsi que l'Académie française mentionnée deux fois et balisée en tant que <ref> de @type "entité collective". Notons que ces ajouts ont été effectué après l'emploi d'un autre script qui parcourt le texte complet et renvoit tous les mots commençant par une majuscule à l'exception d'une (longue) liste de terme à exclure (tel « Je » ou « ainsi » commençant une phrase) présent dans le corpus, permettant d'identifier les anthroponymes présents dans le recueil.
+
 
 Puis grâce à une transformation xsl (voir \ref{ref:xsl_gen})sommaire, nous générons l'affichage des éléments <quote>, <ref> et <hi> munis d'un attribut @rend="italic" afin de les identifier, corriger et compléter si besoin. Cette vérification se fait livre en main~: la transformation renvoie également pour chaque élément identifié la page à laquelle il apparaît. Cette étape est répétée plusieurs fois, ce qui nous permet de raffiner le balisage automatique à chaque passage.
 

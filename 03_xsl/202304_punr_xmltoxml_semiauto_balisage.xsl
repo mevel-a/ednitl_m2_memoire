@@ -18,11 +18,13 @@
 	</xd:doc>
 
 
-	<xsl:output method="xml" encoding="UTF-8" indent="1"/>
+	<xsl:output method="xml" encoding="UTF-8" indent="0"/>
 	<xsl:strip-space elements="*"/>
 	
 	<xsl:template match="*">
-		<xsl:element name="{local-name()}">
+		<xsl:if test="local-name()='p'"><xsl:text>
+			
+		</xsl:text></xsl:if><xsl:element name="{local-name()}">
 			<xsl:for-each select="@*">
 				<xsl:choose>
 					<xsl:when test="local-name() = 'id'">
@@ -96,7 +98,6 @@
 						</date>
 					</xsl:if>
 					<xsl:if test="following-sibling::p[@rend = 'txt_right'][1]">
-						<!--				risque de capturer tous les following -->
 						<xsl:text>
  </xsl:text>
 						<date rend="txt_right">
@@ -131,7 +132,7 @@
 	</xsl:template>
 
 	<xsl:template match="ref">
-		<ref type="{@type}" cRef="{translate(lower-case(@cRef),'ë','e')}"><xsl:apply-templates/></ref>
+		<ref type="{@type}" cRef="{translate(lower-case(@cRef),'ëéêèöï','eeeeoi')}"><xsl:apply-templates/></ref>
 	</xsl:template>
 
 
@@ -145,7 +146,8 @@
 			</xsl:choose></xsl:attribute>
 			<xsl:attribute name="cert"><xsl:choose>
 				<xsl:when test="@cert"><xsl:value-of select="@cert"/></xsl:when>
-				<xsl:otherwise>mReferenceStatus</xsl:otherwise>
+				<xsl:otherwise>9</xsl:otherwise>
+				<!--				mReferenceStatus-->
 			</xsl:choose></xsl:attribute>
 			<xsl:attribute name="ana"><xsl:choose>
 				<xsl:when test="@ana"><xsl:value-of select="@ana"/></xsl:when>

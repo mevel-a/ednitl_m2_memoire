@@ -130,6 +130,7 @@ if($file=="08"){
 
 	$line=~s/(Samuel) (Beckett)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;
 	$line=~s/ (Beckett)/ <ref type=\"author\" cRef=\"$1_samuel\">$1<\/ref>/g;
+	# $line=~s/(Roussel)/ $1/g;
 	$line=~s/(Raymond) (Roussel)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;
 	$line=~s/ (Roussel)/ <ref type=\"author\" cRef=\"$1_raymond\">$1<\/ref>/g;
 	$line=~s/(Jean-Paul) (Sartre)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;
@@ -154,7 +155,7 @@ if($file=="08"){
 	$line=~s/(Henri) (Clouard)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
 	$line=~s/ (Clouard)/ <ref type=\"author\" cRef=\"$1_henri\">$1<\/ref>/g;
 	$line=~s/ (Dostoïevski)/ <ref type=\"author\" cRef=\"$1_fedor\">$1<\/ref>/g;
-	$line=~s/ (Dostoïevsky)/ <ref type=\"author\" cRef=\"$1_fedor\">$1<\/ref>/g;
+	$line=~s/ (Dostoïevsky)/ <ref type=\"author\" cRef=\"dostoïevski_fedor\">$1<\/ref>/g;
 	$line=~s/(Nathalie) (Sarraute)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
 	$line=~s/ (Sarraute)/ <ref type=\"author\" cRef=\"$1_nathalie\">$1<\/ref>/g;
 	$line=~s/(Balzac)/<ref type=\"author\" cRef=\"$1_honore\">$1<\/ref>/g;
@@ -172,7 +173,7 @@ if($file=="08"){
 	$line=~s/(Jean) (Paulhan)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
 	$line=~s/ (Paulhan)/ <ref type=\"author\" cRef=\"$1_jean\">$1<\/ref>/g;
 	$line=~s/(Francis) (Ponge)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
-	$line=~s/ (Ponge)/ <ref type=\"author\" cRef=\"$1_gustave\">$1<\/ref>/g;
+	$line=~s/ (Ponge)/ <ref type=\"author\" cRef=\"$1_francis\">$1<\/ref>/g;
 	$line=~s/ (Unamuno)/ <ref type=\"author\" cRef=\"de_$1_miguel\">$1<\/ref>/g;
 	$line=~s/(Italo) (Svevo)/<ref type=\"author\" cRef=\"$2_$1\">$1 $2<\/ref>/g;	
 	$line=~s/ (Svevo)/ <ref type=\"author\" cRef=\"$1_italo\">$1<\/ref>/g;
@@ -228,6 +229,9 @@ if($file=="08"){
 	# $line=~s/()/<quote>$1<\/quote>/g;
 
 
+#Balisage de Nature en tant que concept ici, pour éviter de l'oublier (ne sera pas affiché par script data.pl)
+	$line=~s/(Nature)/<ref type="concept" cRef="philo_$1">$1<\/ref>/g;
+	#prefixée philo par sécurité
 #corrections diverses :
 	$line=~s/(<hi rend=\"small_caps\">)(XX)(<\/hi>)/$1xx$3/g;
 	$line=~s/(<hi rend=\"small_caps\">)(XIX)(<\/hi>)/$1xix$3/g;
