@@ -331,6 +331,26 @@ Nous ajoutons ensuite au script de nettoyage les noms des personnages des pièce
 
 Puis grâce à une transformation xsl (voir \ref{ref:xsl_gen})sommaire, nous générons l'affichage des éléments <quote>, <ref> et <hi> munis d'un attribut @rend="italic" afin de les identifier, corriger et compléter si besoin. Cette vérification se fait livre en main~: la transformation renvoie également pour chaque élément identifié la page à laquelle il apparaît. Cette étape est répétée plusieurs fois, ce qui nous permet de raffiner le balisage automatique à chaque passage.
 
+Avant de passer à l'encodage manuel nous utilisons une autre transformation xsl afin de faciliter cette étape fastidieuse~:
+\begin{itemize}
+    \item Nous ajoutons des attributs aux éléments <quote> qui n'en ont pas, leurs valeurs doivent correspondre autant que possible aux éléments répértorié dans notre base de donnée (voir \ref{
+    % AJOUTER ICI
+    }).
+    \begin{itemize}
+        \item @type correspondant à ttNature
+        \item @corresp qui correspond à l'@xml:id des extraits cités (encodé en <text>) et aux valeurs de ttIdent définie dans la base de donnée préfixé de "tt"
+        \item @cert qui correspond à mReferenceStatu, soit le statut de la référence (est-elle mentionnée, citée, etc.)
+        \item @ana correspondant au mAxiologicStatus (s'agit-il d'un blâme, d'un éloge, ou d'une mention indiférente~?).
+    \end{itemize}
+    \item Nous modifions les valeurs des @xml:id des éléments <div> qui entourent chacun des articles du texte, afin de les fairre correspondre aux valeurs de notre base de donnée.
+        \begin{itemize}
+            \item Ainsi le chapitre « À quoi servent les théories » encodé par un <div> n'aura plus comme valeur de l'@xml:id "page006" mais "1".
+        \end{itemize}
+    \item Nous retouchons les titres (de sections et de sous-sections) afin de corriger l'encodage d'origine qui encodait chacune des lignes d'un titre ou sous-titre ainsi que les dates dans deux éléments <head> différents. Les capitales sont égalements remplacés par des minuscules qui seront plus tard affichées en petites capitales.
+    \item Tous les autres éléments et attributs déjà présents sont reproduits à l'identique. Ce qui nous permets de réappliquer la transformation sur notre fichier d'encodage manuel autant de fois que nécessaire. Nous nous contenterons de modifier le nom du fichier de sortie afin de ne pas écraser les précédentes itérations. 
+\end{itemize}
+}
+
 \subsubsection{Encodage sémantique à la main}
 Certains contenus textuels ne peuvent être repérés automatiquement et nécessitent donc d'être encodés à la main.
 % blabla
