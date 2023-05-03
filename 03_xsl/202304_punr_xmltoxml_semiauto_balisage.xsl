@@ -127,6 +127,24 @@
 			</xsl:choose>				
 		</xsl:element>
 	</xsl:template>
+	<xsl:template match="hi[@rend='italic']">
+		<xsl:element name="{local-name()}">
+			<xsl:for-each select="@*">
+				<xsl:attribute name="{local-name()}">
+					<xsl:value-of select="."/>
+				</xsl:attribute>
+			</xsl:for-each>
+			<xsl:choose>
+				<xsl:when test=".='Les Gommes'">
+					<xsl:apply-templates/>
+<!--					ajouter <ref>-->
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:apply-templates/>
+				</xsl:otherwise>
+			</xsl:choose>				
+		</xsl:element>
+	</xsl:template>
 
 	<xsl:template match="ref">
 		<ref type="{@type}" cRef="{translate(lower-case(@cRef),'ëéêèöï','eeeeoi')}"><xsl:apply-templates/></ref>
