@@ -16,15 +16,14 @@
 				Robbe-Grillet. Cette feuille place les attributs corrige l'attribut @cRef.</xd:p>
 		</xd:desc>
 	</xd:doc>
-
+<xsl:variable name="apos" select='"&apos;"'/>
 
 	<xsl:output method="xml" encoding="UTF-8" indent="0"/>
 	<xsl:strip-space elements="*"/>
 	
 	<xsl:template match="*">
-		<xsl:if test="local-name()='p'"><xsl:text>
-			
-		</xsl:text></xsl:if><xsl:element name="{local-name()}">
+		<xsl:if test="(local-name()='p')or(local-name()='TEI')"><xsl:text>
+</xsl:text></xsl:if><xsl:element name="{local-name()}">
 			<xsl:for-each select="@*">
 				<xsl:choose>
 					<xsl:when test="local-name() = 'id'">
@@ -43,11 +42,15 @@
 		</xsl:element>
 	</xsl:template>
 	<xsl:template match="comment()">
-		<xsl:comment select="."/>
+		<xsl:text>
+</xsl:text><xsl:comment select="."/><xsl:text>
+</xsl:text>
 	</xsl:template>
 
 	<!--	récupération indication de date dans le titre-->
 	<xsl:template match="head">
+<xsl:text>
+</xsl:text>
 		<xsl:choose>
 			<!--suppression des secondes parties de subsection_head-->
 			<xsl:when
@@ -87,15 +90,11 @@
 						</date>-->
 					</xsl:if>
 					<xsl:if test="following-sibling::p[@rend = 'txt_right'][1]">
-						<xsl:text>
- </xsl:text>
 						<date rend="txt_right">
 							<xsl:value-of select="translate(following-sibling::p[@rend = 'txt_right'][1],'()','')"/>
 						</date>
 					</xsl:if>
 					<xsl:if test="descendant::date">
-						<xsl:text>
- </xsl:text>
 						<date rend="txt_right">
 							<xsl:value-of select="date"/>
 						</date>
@@ -135,10 +134,104 @@
 				</xsl:attribute>
 			</xsl:for-each>
 			<xsl:choose>
-				<xsl:when test=".='Les Gommes'">
-					<xsl:apply-templates/>
-<!--					ajouter <ref>-->
+				<xsl:when test=".='Les Gommes'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="robbe-grillet_les_gommes"><xsl:apply-templates/></ref>
 				</xsl:when>
+				<xsl:when test=".='Le Voyeur'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="robbe-grillet_le_voyeur"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='La Jalousie'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="robbe-grillet_la_jalousie"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Ficrions'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="borges_fictions"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Don Quichotte'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="cervantes_don_quichotte"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Les Faux-Monnayeurs'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="gide_les_faux_monnayeurs"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='La Nausée'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="sartre_la_nausee"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='La Princesse de Clèves'and(not(descendant::ref))">
+					<ref cert="9" type="œuvre" cRef="lafayette_la_princesse_de_cleve"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Père Goriot'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="balzac_le_pere_goriot"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Ulysse'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="joyce_ulysse"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Le Château'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="kafka_le_chateau"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Le Bruit et la Fureur'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="faulkner_le_bruit_et_la_fureur"><xsl:apply-templates/></ref>
+				</xsl:when>
+<!--				apostrophe problématique, à échapper ou faire à la main-->
+<!--				nécessite des @mReferenceStatus à la main + Godot doit parfois rêtre encodé en quote parfois en ref-->
+				<!--<xsl:when test=".=concat('L','','Étranger')and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="camus_l_etranger"><xsl:apply-templates/></ref>
+				</xsl:when>-->
+				<xsl:when test=".='Voyage au bout de la nuit'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="celine_voyage_au_bout_de_la_nuit"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='la Comédie Humaine'and(not(descendant::ref))">
+					<ref type="œuvre" cRef="balzac_la_comedie_humaine"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Madame Bovary'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="flaubert_madame_bovary"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Situations I'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="sartre_situation_i"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Le Parti pris des choses'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="ponge_le_parti_pris_des_choses"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Le Cageot'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="ponge_le_cageot"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Le Sentiment tragique de la vie'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="unamuno_le_sentiment_tragique_de_la_vie"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Chateau des Pyrénées...'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="magritte_le_chateau_des_pyrenees"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Molloy'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="beckett_molloy"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Le Meneur de Lune'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="bousquet_le_meneur_de_lune"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='En attendant Godot'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="beckett_en_attendant_godot"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Mahu ou le Matériau'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="pinget_mahu_ou_le_materiau"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Le Renard et la Boussole'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="pinget_le_renard_et_la_boussole"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='La Chartreuse de Parme'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="stendhal_la_chartreuse_de_parme"><xsl:apply-templates/></ref>
+				</xsl:when>
+<!--				<xsl:when test=".='L'Immortelle'and(not(descendant::ref))">-->
+<!--					<ref  type="œuvre" cRef="robbe-grillet_l_immortelle"><xsl:apply-templates/></ref>-->
+				<!--</xsl:when>-->
+				<!--<xsl:when test=".='L’Année dernière à Marienbad,'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="resnais_l_année_dernière_a_marienbad,"><xsl:apply-templates/></ref>
+				</xsl:when>-->
+				<xsl:when test=".='Le Chiendent'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="queneau_le_chiendent"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<xsl:when test=".='Loin du Rueil'and(not(descendant::ref))">
+					<ref  type="œuvre" cRef="queneau_loin_du_rueil"><xsl:apply-templates/></ref>
+				</xsl:when>
+				<!--<xsl:when test=".=''and(not(descendant::ref))">
+					<ref  type="œuvre" cRef=""><xsl:apply-templates/></ref>
+				</xsl:when>-->
 				<xsl:otherwise>
 					<xsl:apply-templates/>
 				</xsl:otherwise>
@@ -147,7 +240,13 @@
 	</xsl:template>
 
 	<xsl:template match="ref">
-		<ref type="{@type}" cRef="{translate(lower-case(@cRef),'ëéêèöï','eeeeoi')}"><xsl:apply-templates/></ref>
+		<xsl:variable name="cert">
+			<xsl:choose>
+				<xsl:when test="@cert"><xsl:value-of select="@cert"/></xsl:when>
+				<xsl:otherwise>9</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<ref type="{@type}" cRef="{translate(lower-case(@cRef),'ëéêèöï','eeeeoi')}" cert="{$cert}"><xsl:apply-templates/></ref>
 	</xsl:template>
 
 
@@ -173,30 +272,31 @@
 	</xsl:template>
 	
 	<xsl:template match="div">
+		<xsl:text>
+</xsl:text>
 		<div>
-			<xsl:if test="@id">
-				<xsl:attribute name="xml:id">
-					<xsl:choose>
-						<xsl:when test="@id='page006'">01</xsl:when>
-						<xsl:when test="@id='page016'">02</xsl:when>
-						<xsl:when test="@id='page028'">03</xsl:when>
-						<xsl:when test="@id='page054'">04</xsl:when>
-						<xsl:when test="@id='page084'">05</xsl:when>
-						<xsl:when test="@id='page086'">06</xsl:when>
-						<xsl:when test="@id='page095'">07</xsl:when>
-						<xsl:when test="@id='page101'">08</xsl:when>
-						<xsl:when test="@id='page118'">09</xsl:when>
-						<xsl:when test="@id='page135'">10</xsl:when>
-						<xsl:when test="@id='page142'">11</xsl:when>
-						<xsl:when test="@id='page154'">12</xsl:when>
-						<xsl:when test="@id='page170'">13</xsl:when>
-						<xsl:otherwise><xsl:value-of select="@id"/></xsl:otherwise>
-					</xsl:choose>
-				</xsl:attribute>
-			</xsl:if>
 			<xsl:for-each select="@*">
 				<xsl:choose>
-					<xsl:when test="local-name() = 'id'"/>
+					<xsl:when test="local-name() = 'id'">
+						<xsl:attribute name="xml:id">
+							<xsl:choose>
+								<xsl:when test=".='page006'">ch01</xsl:when>
+								<xsl:when test=".='page016'">ch02</xsl:when>
+								<xsl:when test=".='page028'">ch03</xsl:when>
+								<xsl:when test=".='page054'">ch04</xsl:when>
+								<xsl:when test=".='page084'">ch05</xsl:when>
+								<xsl:when test=".='page086'">ch06</xsl:when>
+								<xsl:when test=".='page095'">ch07</xsl:when>
+								<xsl:when test=".='page101'">ch08</xsl:when>
+								<xsl:when test=".='page118'">ch09</xsl:when>
+								<xsl:when test=".='page135'">ch10</xsl:when>
+								<xsl:when test=".='page142'">ch11</xsl:when>
+								<xsl:when test=".='page154'">ch12</xsl:when>
+								<xsl:when test=".='page170'">ch13</xsl:when>
+								<xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+							</xsl:choose>
+						</xsl:attribute>
+					</xsl:when>
 					<xsl:otherwise>
 						<xsl:attribute name="{local-name()}">
 							<xsl:value-of select="."/>
@@ -283,7 +383,7 @@
 		</xsl:variable>
 		<xsl:choose>
 			<xsl:when test="not($date='')">
-<!--				Suppression des parenthèses, qui si elles ne sont pas supprimés demeure à cause semble-t-il du moteur RegEx d'Oxygen, elles seronts ajoutées lors du passage à la version html-->
+<!--				Suppression des parenthèses, qui si elles ne sont pas supprimées demeurent à cause semble-t-il du moteur RegEx d'Oxygen, elles seronts ajoutées lors du passage à la version html-->
 				<xsl:value-of select="translate(replace($rectifiedString,$date,''),'()','')"/>
 			</xsl:when>
 			<xsl:otherwise>

@@ -27,7 +27,9 @@
 	<xsl:variable name="home" select="concat($basename,'home.html')"/>
 	<xsl:variable name="index" select="concat($basename,'index.html')"/>
 	<xsl:variable name="bib" select="concat($basename,'bibliography.html')"/>
+
 <!--	<xsl:variable name="" select="''"/>-->
+	
 	
 	
 <!--	template pour HEAD, métadonnées title et links-->
@@ -82,7 +84,7 @@
 	
 	
 	
-<!--	début des choses sérieuses : template matchant racine et générant la création des différentes pages selon des patrons enchaînés, du moins c'est l'idée.-->
+
 	
 	<xsl:template name="body">
 		<xsl:param name="doc"/><!--le nom du fichier généré-->
@@ -107,7 +109,18 @@
 	
 	
 	
+	<!--	début des choses sérieuses : template matchant racine et générant la création des différentes pages selon des patrons enchaînés, du moins c'est l'idée.-->
 	
+	<xsl:template match="/">
+<!--		3 mai 2023, non testé, un truc dans ce genre là ?-->
+		<xsl:for-each select="div[ancestor::TEI/@xml:id='punr'][@xml:id]">
+			<xsl:call-template name="body">
+				<xsl:with-param name="doc" select="concat($basename,'punr',@xml:id)"/>
+				<xsl:with-param name="title" select="concat('Pour un nouveau roman,',' ',@xml:id)"/>
+				<xsl:with-param name="content" select="@xml:id"/>
+			</xsl:call-template>
+		</xsl:for-each>
+	</xsl:template>
 	
 	
 	
@@ -145,18 +158,27 @@
 		</xsl:choose>
 	</xsl:template>
 	<xsl:template mode="corpus" match="date[ancestor::head]">
-		<br /><span class="STDsmall"><xsl:apply-templates/></span>
+		<br /><span class="STDsmall">(<xsl:apply-templates/>)</span>
 	</xsl:template>
 	<xsl:template match="pb[ancestor::TEI/@xml:id='punr']">
 		<a id="{concat('page_',@n)}"/>
 	</xsl:template>
-	<xsl:template match="div[ancestor::TEI/@xml:id='punr']">
+	<xsl:template match="div[ancestor::TEI/@xml:id='punr']" mode="corpus">
 		<!--		mode="corpus"-->
-		<!--<div>
+		
+		<div id="{@xml:id}" type="{@type}">
 			<xsl:apply-templates/>
-		</div>-->
+		</div>
 		
 <!--		À l'origine de la génération des != pages du site ? -->
-		
+<!--		<section> ????-->
+	</xsl:template>
+<!--	quote, ref
+	3 mai 2023,non testé, fout juste de la couleur pour être vu-->
+	<xsl:template mode="corpus" match="ref">
+		<span style="color:#0f0;"><xsl:apply-templates/></span>
+	</xsl:template>
+	<xsl:template mode="corpus" match="quote">
+		<span style="color:#f00;"><xsl:apply-templates/></span>
 	</xsl:template>
 </xsl:stylesheet>
