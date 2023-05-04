@@ -23,8 +23,8 @@
 		<p>Pour un nouveau roman publié en 1963 par Alain Robbe-Grillet.</p></sourceDesc></fileDesc></teiHeader><text><body><!--</body>
 		</text>
 	</TEI>
-</teiCorpus>--><!--DÉBUT CHAPITRE--><div type="pagechap" xml:id="page006"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="6"/>À quoi servent les théories
- <date rend="txt_right">(1955 et 1963)</date></head><!--GAP HERE 0.5em--><!--GAP HERE 2.7em-->
+</teiCorpus>--><!--DÉBUT CHAPITRE--><div type="pagechap"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="6"/>À quoi servent les théories
+ <date rend="txt_right">1955 et 1963</date></head><!--GAP HERE 0.5em--><!--GAP HERE 2.7em-->
 			
 		<p>Je ne suis pas un théoricien du roman. J’ai seulement, comme tous les romanciers sans doute, aussi
 bien du passé que du présent, été amené à faire quelques réflexions critiques sur les livres que j’avais
@@ -261,8 +261,8 @@ décrire, qui tous deux les anime, c’est bien elle que
 l’on retrouve dans le nouveau roman d’aujourd’hui.
 Au-delà du naturalisme de l’un et de l’onirisme métaphysique de l’autre, se dessinent les premiers éléments d’une écriture réaliste d’un genre inconnu, qui
 est en train maintenant de voir le jour. C’est ce nouveau réalisme dont le présent recueil tente de préciser
-quelques contours.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap" xml:id="page016"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="16"/>Une voie pour le roman futur
- <date rend="txt_right">(1956)</date></head><!--GAP HERE 0.5em--><!--GAP HERE 2.7em-->
+quelques contours.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="16"/>Une voie pour le roman futur
+ <date rend="txt_right">1956</date></head><!--GAP HERE 0.5em--><!--GAP HERE 2.7em-->
 			
 		<p>Il ne semble guère raisonnable, à première vue, de
 penser qu’une littérature entièrement <hi rend="italic">nouvelle</hi> soit un
@@ -551,8 +551,8 @@ en jour, la répugnance croissante des plus conscients
 devant le mot à caractère viscéral, analogique ou
 incantatoire. Cependant que l’adjectif optique, descriptif, celui qui se contente de mesurer, de situer, de
 limiter, de définir, montre probablement le chemin
-difficile d’un nouvel art romanesque.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap" xml:id="page028"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="28"/>Sur quelques notions périmées
- <date rend="txt_right">(1957)</date></head><!--GAP HERE 0.5em--><!--GAP HERE 3.5em-->
+difficile d’un nouvel art romanesque.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="28"/>Sur quelques notions périmées
+ <date rend="txt_right">1957</date></head><!--GAP HERE 0.5em--><!--GAP HERE 3.5em-->
 			
 		<p>La critique traditionnelle a son vocabulaire. Bien
 qu’elle se défende beaucoup de porter sur la littérature des jugements systématiques (prétendant, au contraire, aimer librement telle ou telle œuvre d’après
@@ -599,7 +599,7 @@ vigoureuses, bien vivantes, ont grandi depuis longtemps. <hi rend="italic">Ulyss
 vingt ans. Bien d’autres ont suivi. Pour ne pas les voir,
 nos bons critiques ont, chaque fois, prononcé quelques-uns de leurs mots magiques : <quote type="ttNature" corresp="toDefine" cert="9" ana="mAxiologicStatus">« avant-garde »</quote>,
 <pb n="30"/><quote type="ttNature" corresp="toDefine" cert="9" ana="mAxiologicStatus">« laboratoire »</quote>, <quote type="ttNature" corresp="toDefine" cert="9" ana="mAxiologicStatus">« anti-roman »</quote>... c’est-à-dire : <quote type="ttNature" corresp="toDefine" cert="9" ana="mAxiologicStatus">« fermons les yeux et revenons aux saines valeurs de la
-tradition française »</quote>.</p><!--GAP HERE 0.6em--><!--début bloc titre sous-section : id="tit8--><div type="subsection" xml:id="tit8"><head type="subsection_head">Le personnage</head><!--GAP HERE 0.6em-->
+tradition française »</quote>.</p><!--GAP HERE 0.6em--><!--début bloc titre sous-section : id="tit8--><div type="subsection"><head type="subsection_head">Le personnage</head><!--GAP HERE 0.6em-->
 			
 		<p>Nous en a-t-on assez parlé, du <quote type="ttNature" corresp="toDefine" cert="9" ana="mAxiologicStatus">« personnage »</quote> ! Et
 ça ne semble, hélas, pas près de finir. Cinquante
@@ -684,7 +684,7 @@ plus vaste, moins anthropocentriste. Le roman paraît
 chanceler, ayant perdu son meilleur soutien d’autrefois, le héros. S’il ne parvient pas à s’en remettre, c’est
 <pb n="33"/>que sa vie était liée à celle d’une société maintenant
 révolue. S’il y parvient, au contraire, une nouvelle voie
-s’ouvre pour lui, avec la promesse de nouvelles découvertes.</p><!--GAP HERE 0.6em--></div><!--début bloc titre sous-section : id="tit9--><div type="subsection" xml:id="tit9"><head type="subsection_head">L’histoire</head><!--GAP HERE 0.6em-->
+s’ouvre pour lui, avec la promesse de nouvelles découvertes.</p><!--GAP HERE 0.6em--></div><!--début bloc titre sous-section : id="tit9--><div type="subsection"><head type="subsection_head">L’histoire</head><!--GAP HERE 0.6em-->
 			
 		<p>Un roman, pour la plupart des amateurs – et des
 critiques –, c’est avant tout une <quote type="ttNature" corresp="toDefine" cert="9" ana="mAxiologicStatus">« histoire »</quote>. Un vrai
@@ -823,7 +823,7 @@ les jeunes romanciers de faire autre chose, la critique
 d’alors, trouvant une fois de plus qu’il ne se passe rien
 dans leurs livres, leur reprochera leur manque d’imagination et leur montrera nos romans en exemple :
 <quote type="ttNature" corresp="toDefine" cert="9" ana="mAxiologicStatus">« Voyez, diront-ils, comme, dans les années cinquante,
-on savait inventer des histoires ! »</quote></p><!--GAP HERE 0.6em--></div><!--début bloc titre sous-section : id="tit10--><div type="subsection" xml:id="tit10"><head type="subsection_head">L’engagement</head><!--GAP HERE 0.6em-->
+on savait inventer des histoires ! »</quote></p><!--GAP HERE 0.6em--></div><!--début bloc titre sous-section : id="tit10--><div type="subsection"><head type="subsection_head">L’engagement</head><!--GAP HERE 0.6em-->
 			
 		<p>Puisque raconter pour distraire est futile et que
 raconter pour faire croire est devenu suspect, le
@@ -1036,7 +1036,7 @@ propre langage, la conviction de leur extrême importance, la volonté de les r�
 là, pour lui, la seule chance de demeurer un artiste
 et, sans doute aussi, par voie de conséquence obscure
 et lointaine, de servir un jour peut-être à quelque
-chose – peut-être même à la révolution.</p><!--GAP HERE 0.6em--></div><!--début bloc titre sous-section : id="tit11--><div type="subsection" xml:id="tit11"><head type="subsection_head">La forme et le contenu</head><!--GAP HERE 0.6em-->
+chose – peut-être même à la révolution.</p><!--GAP HERE 0.6em--></div><!--début bloc titre sous-section : id="tit11--><div type="subsection"><head type="subsection_head">La forme et le contenu</head><!--GAP HERE 0.6em-->
 			
 		<p>Une chose devrait troubler les partisans du réalisme
 socialiste, c’est la parfaite ressemblance de leurs arguments, de leur vocabulaire, de leurs valeurs, avec ceux
@@ -1207,8 +1207,8 @@ tous les grands romanciers depuis plus de cent ans,
 nous savons par leurs journaux et leurs correspondances que le soin constant de leur travail, ce qui a
 été leur passion, leur exigence la plus spontanée, leur
 vie, ce fut justement cette forme, par quoi leur œuvre
-a survécu.</p></div></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap" xml:id="page054"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="54"/><ref type="concept" cRef="philo_nature">Nature</ref>, humanisme, tragédie
- <date rend="txt_right">(1958)</date></head><!--GAP HERE 0.5em--><!--GAP HERE 2.6em--><quote type="epigraph" corresp="toDefine" cert="9" ana="mAxiologicStatus">
+a survécu.</p></div></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="54"/><ref type="concept" cRef="philo_nature">Nature</ref>, humanisme, tragédie
+ <date rend="txt_right">1958</date></head><!--GAP HERE 0.5em--><!--GAP HERE 2.6em--><quote type="epigraph" corresp="toDefine" cert="9" ana="mAxiologicStatus">
 			
 		<p>La tragédie n’est qu’un moyen de
 recueillir le malheur humain, de le subsumer, donc de le justifier sous la forme
@@ -2070,15 +2070,14 @@ chercher plus loin.</p>
 tragique par excellence : vouloir combattre l’idée de
 tragédie, c’est déjà y succomber ; et il est si naturel
 de prendre les objets comme refuge... Peut-être. Mais
-peut-être que non. Et, dans ce cas...</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap" xml:id="page084"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="84"/>Éléments d’une anthologie moderne</head><!--GAP HERE 2.4em-->
+peut-être que non. Et, dans ce cas...</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="84"/>Éléments d’une anthologie moderne</head><!--GAP HERE 2.4em-->
 			
 		<p>Les quelques œuvres qui vont être rapidement analysées, ou commentées, dans les pages qui suivent sont
 loin d’être les seules à avoir marqué de leurs recherches la littérature de cette première moitié du <hi rend="small_caps">xx</hi><hi rend="exposant">e</hi> siècle. Ce ne sont même pas toujours celles qui m’auront
 personnellement le plus impressionné. On remarquera tout de suite l’absence, entre autres, de <ref type="author" cRef="kafka_franz">Kafka</ref>,
 et la présence au contraire d’écrivains de bien moindre importance. On ne manquera pas de dire aussi
 que <ref type="author" cRef="bousquet_joe">Joë Bousquet</ref> a des côtés très démodés, et que
-<hi rend="italic">Godot</hi><!-- 4cmwx+Or9OMM7eOdazSeesCjmw5M4wVd8CCHDJkx46T1d4Bn+T8eTOGqBU8I
-lEPxHf7ReyjsRgX+9NHh6WNSvT9F6P7d12kR2O2kZ7IE1mI=2707877 --> est trop à la mode, et que souvent ce ne sont
+<hi rend="italic">Godot</hi> est trop à la mode, et que souvent ce ne sont
 pas les ouvrages les plus accomplis qui ont été choisis
 pour représenter les auteurs retenus.</p>
 			
@@ -2090,8 +2089,8 @@ encore en train de se faire. Les premiers de ces exemples remontent déjà à pl
 derniers appartiennent à notre après-guerre. Tous
 offrent, de mon point de vue, quelque chose de pro<pb n="85"/>fondément actuel ; c’est ce quelque chose que j’essaie
 ici de dégager, et qu’il ne serait pas difficile de
-retrouver dans la plupart des recherches contemporaines.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap" xml:id="page086"><!--GAP HERE 3.5em--><!--début bloc titre anthologie--><head type="subsection_head">Énigmes et transparence chez Raymond Roussel <date rend="txt_right"/>
- <date rend="txt_right">(1963)</date></head><!--GAP HERE 0.7em--><!--GAP HERE 2.2em-->
+retrouver dans la plupart des recherches contemporaines.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap"><!--GAP HERE 3.5em--><!--début bloc titre anthologie--><head type="subsection_head">Énigmes et transparence chez Raymond Roussel 
+ <date rend="txt_right">1963</date></head><!--GAP HERE 0.7em--><!--GAP HERE 2.2em-->
 			
 		<p><ref type="author" cRef="roussel_raymond">Raymond Roussel</ref> décrit ; et, au-delà de ce qu’il
 décrit, il n’y a rien, rien de ce qui peut traditionnellement s’appeler un message. Pour reprendre une des
@@ -2327,8 +2326,8 @@ ce monde-ci, nous découvrons que nous ne pouvons
 plus sortir. Tout est à l’arrêt, tout est en train de se
 reproduire, et l’enfant pour toujours tient son bâton
 levé au-dessus du cerceau qui s’incline, et l’écume de
-la vague immobile va retomber...</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap" xml:id="page095"><!--GAP HERE 3.5em--><!--début bloc titre anthologie--><head type="subsection_head">La conscience malade de Zeno
- <date rend="txt_right">(1954)</date></head><!--GAP HERE 0.7em--><!--GAP HERE 2.2em-->
+la vague immobile va retomber...</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap"><!--GAP HERE 3.5em--><!--début bloc titre anthologie--><head type="subsection_head">La conscience malade de Zeno
+ <date rend="txt_right">1954</date></head><!--GAP HERE 0.7em--><!--GAP HERE 2.2em-->
 			
 		<p>Zeno Cosini, riche négociant triestin (le Trieste
 autrichien d’avant la guerre de 14), rédige pour un
@@ -2487,8 +2486,8 @@ geste que nous faisons pour étendre la main devient
 bizarre, maladroit ; les mots que nous nous écoutons
 prononcer sonnent faux tout à coup ; le temps de
 notre esprit n’est plus celui des horloges ; et l’écriture
-romanesque, à son tour, ne peut plus être innocente.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap" xml:id="page101"><!--GAP HERE 3.5em--><!--début bloc titre anthologie--><head type="subsection_head">Joë Bousquet le rêveur
- <date rend="txt_right">(1953)</date></head><!--GAP HERE 0.7em--><!--GAP HERE 2.6em--><quote type="epigraph" corresp="toDefine" cert="9" ana="mAxiologicStatus">
+romanesque, à son tour, ne peut plus être innocente.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap"><!--GAP HERE 3.5em--><!--début bloc titre anthologie--><head type="subsection_head">Joë Bousquet le rêveur
+ <date rend="txt_right">1953</date></head><!--GAP HERE 0.7em--><!--GAP HERE 2.6em--><quote type="epigraph" corresp="toDefine" cert="9" ana="mAxiologicStatus">
 			
 		<p>Un homme se connaissait comme le
 produit de ce monde. Il a voulu en devenir
@@ -2986,8 +2985,8 @@ homme, à son tour, doit réinventer les choses autour
 de lui. Ce sont les vraies choses, nettes, dures et brillantes, du monde réel. Elles ne renvoient à aucun
 autre monde. Elles ne sont le signe de rien d’autre
 que d’elles-mêmes. Et le seul contact que l’homme
-puisse entretenir avec elles, c’est de les imaginer.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap" xml:id="page118"><!--GAP HERE 3.5em--><!--début bloc titre anthologie--><head type="subsection_head">Samuel Beckett, ou la présence sur la scène <date rend="txt_right"/>
- <date rend="txt_right">(1953 et 1957)</date></head><!--GAP HERE 0.7em--><!--GAP HERE 2.2em-->
+puisse entretenir avec elles, c’est de les imaginer.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap"><!--GAP HERE 3.5em--><!--début bloc titre anthologie--><head type="subsection_head">Samuel Beckett, ou la présence sur la scène 
+ <date rend="txt_right">1953 et 1957</date></head><!--GAP HERE 0.7em--><!--GAP HERE 2.2em-->
 			
 		<p>La condition de l’homme, dit  <ref type="author" cRef="heidegger_martin">Heidegger</ref>, c’est
 d’être là. Probablement est-ce le théâtre, plus que tout
@@ -3473,8 +3472,8 @@ des fantômes de personnages. Puisqu’il n’est pas là
 <pb n="134"/>lui-même, il ne lui reste plus qu’à se raconter des
 histoires, à manœuvrer des marionnettes, à sa place,
 pour aider à passer le temps... À moins que Samuel
-Beckett ne nous réserve de nouvelles surprises...</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap" xml:id="page135"><!--GAP HERE 3.5em--><!--début bloc titre anthologie--><head type="subsection_head">Un roman qui s’invente lui-même
- <date rend="txt_right">(1954)</date></head><!--GAP HERE 0.7em--><!--GAP HERE 2.2em-->
+Beckett ne nous réserve de nouvelles surprises...</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap"><!--GAP HERE 3.5em--><!--début bloc titre anthologie--><head type="subsection_head">Un roman qui s’invente lui-même
+ <date rend="txt_right">1954</date></head><!--GAP HERE 0.7em--><!--GAP HERE 2.2em-->
 			
 		<p><quote type="ttNature" corresp="toDefine" cert="9" ana="mAxiologicStatus">« J’y pense, j’y pense, un livre quelle prétention dans
 un sens, mais quelle extraordinaire merveille s’il est
@@ -3624,8 +3623,8 @@ autres <quote type="ttNature" corresp="toDefine" cert="9" ana="mAxiologicStatus"
 			
 		<p>Une fois de plus tout est à refaire. Cependant, en
 un sens (le seul qui nous importe), <ref type="author" cRef="pinget_robert">Robert Pinget</ref> a
-encore <quote type="ttNature" corresp="toDefine" cert="9" ana="mAxiologicStatus">« gagné »</quote>.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap" xml:id="page142"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="142"/>Nouveau roman, homme nouveau
- <date rend="txt_right">(1961)</date></head><!--GAP HERE 0.5em--><!--GAP HERE 3.5em-->
+encore <quote type="ttNature" corresp="toDefine" cert="9" ana="mAxiologicStatus">« gagné »</quote>.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="142"/>Nouveau roman, homme nouveau
+ <date rend="txt_right">1961</date></head><!--GAP HERE 0.5em--><!--GAP HERE 3.5em-->
 			
 		<p>On a beaucoup écrit sur le <quote type="ttNature" corresp="toDefine" cert="9" ana="mAxiologicStatus">« Nouveau Roman »</quote>
 depuis quelques années. Malheureusement, parmi les
@@ -3903,9 +3902,9 @@ manière de dire, qui constitue son projet d’écrivain,
 contenu douteux de son livre. C’est peut-être, en fin
 de compte, ce contenu douteux d’un obscur projet
 de forme qui servira le mieux la cause de la liberté.
-Mais à quelle échéance ?</p></div></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap" xml:id="page154"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="154"/>Temps et description dans le récit
+Mais à quelle échéance ?</p></div></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="154"/>Temps et description dans le récit
 d’aujourd’hui
- <date rend="txt_right">(1963)</date></head><!--GAP HERE 0.5em--><!--GAP HERE 3.2em-->
+ <date rend="txt_right">1963</date></head><!--GAP HERE 0.5em--><!--GAP HERE 3.2em-->
 			
 		<p>La critique est une chose difficile, bien plus que
 l’art, en un sens. Alors que le romancier, par exemple,
@@ -4312,8 +4311,8 @@ n’est plus depuis longtemps celui qu’on lui propose.</p>
 concours actif, conscient, <hi rend="italic">créateur.</hi> Ce qu’il lui demande, ce n’est plus de recevoir tout fait un monde
 achevé, plein, clos sur lui-même, c’est au contraire de
 participer à une création, d’inventer à son tour
-l’œuvre – et le monde – et d’apprendre ainsi à inventer sa propre vie.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap" xml:id="page170"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="170"/>Du réalisme à la réalité
- <date rend="txt_right">(1955 et 1963)</date></head><!--GAP HERE 0.5em--><!--GAP HERE 2.7em-->
+l’œuvre – et le monde – et d’apprendre ainsi à inventer sa propre vie.</p></div><!--FIN CHAPITRE--><!--DÉBUT CHAPITRE--><div type="pagechap"><!--GAP HERE 3.7em--><!--début bloc titre--><head><pb n="170"/>Du réalisme à la réalité
+ <date rend="txt_right">1955 et 1963</date></head><!--GAP HERE 0.5em--><!--GAP HERE 2.7em-->
 			
 		<p>Tous les écrivains pensent être réalistes. Aucun
 jamais ne se prétend abstrait, illusionniste, chimérique, fantaisiste, faussaire... Le réalisme n’est pas une
