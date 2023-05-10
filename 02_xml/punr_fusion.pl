@@ -8,7 +8,7 @@ use open ':encoding(UTF-8)'; #debug UTF8 voir bookmark firefox
 
 #création variables et ouvertures de fichier pour écriture
 open (XMLdummy,"../02_xml/xml_corpus_dummy.txt");
-binmode(XMLdummy, "utf8");
+binmode(XMLdummy, ":utf8");
 my $XMLdummy="<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
 while (my $line=<XMLdummy>){
 	chop $line;
