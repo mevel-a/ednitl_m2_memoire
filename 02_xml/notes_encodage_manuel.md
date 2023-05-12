@@ -11,3 +11,7 @@ auteur = ref œuvre = quote
 
 + humaniste/me get ref type=concept cref=philo_humanisme
 + Tragédie get ref (mais pas tous) cRef=litt_tragedie
+
+
++ L'immortelle, l'étranger, l'année dernière à Marienbad DONE (not @)
++ les termes qui rentrent ensuite dans l'index des termes que ARG prête aux vilains critiques qui disent du mal de son livre sont à identifiés avec un @??? ou un @corresp commun. (absent de la DB)

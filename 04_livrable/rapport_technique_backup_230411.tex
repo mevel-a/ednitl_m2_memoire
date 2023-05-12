@@ -354,6 +354,20 @@ Avant de passer à l'encodage manuel nous utilisons une autre transformation xsl
 
 \subsubsection{Encodage sémantique à la main}
 Certains contenus textuels ne peuvent être repérés automatiquement et nécessitent donc d'être encodés à la main.
+
+En effet il convient d'attribuer les bonnes valeurs aux attributs voire, de rectifier l'encodage automatique qui ne peut, par exemple distinguer entre la mention à la page~164 d'un titre «~L'Année dernière à Marienbad~» et la mention d'un élément diégétique de cette œuvre «~se sont-ils vraiment rencontrés, aimés, l’année dernière à Marienbad~?~» un peu plus loin.
+
+Notons par ailleurs les difficultés à limiter le balisage. En effet l'on pourrait considérer certains éléments diégétique, tels les allusions aux personnages des œuvres de Beckett ou les supposées réactions sus-citées que \robbe{} prête au public comme devant être encodées en tant que <quote>~: citer un personnage d'une œuvre, n'est-ce pas citer l'œuvre~? ces réactions mêmes (re)constituées par \robbe{} ne sont-elles pas des éléments textuels mobilisés par \robbe{} à la manière de citation à réfuter~?
+
+Pour régler ces difficultés nous nous appuyons sur les objectifs que nous nous sommes fixés au moment où nous avons élaboré ce projet d'édition numérique~: nous souhaitons produire une édition qui expose les relations transtextuelles de \punr pour le replacer dans son époque, ou plutôt pour donner les représentations que le ce texte produit de son époque. Dès lors, il nous paraît intéressant de baliser les réactions (surtout (re)constituées) du public pour permettre de les comparer à la réalité de ces réactions. Au contraire les paraphrases (surtout si elles sont exactes) d'œuvres longuement commentées par \robbe, ne nous intérèsse que modéremment. La source identifiée, ou plutôt, vérifiée, l'intérêt des passages cités n'ont que peu d'interêt par rapport au commentaire dans son ensemble.
+
+De manière plus anecdotique, la recherche de chaîne de caractères contenant des appostrophe telles «~L'Étranger, L'Immortelle~» pose un problème épineux à résoudre car l'apostrophe est le signe utilisé par le moteur de recherche pour délimiter la chaîne. On écrit 
+\begin{itemize}
+    \item 'L'étranger', 
+    \item 'L\&apos;étranger',
+    \item 'L''''étranger'~; 
+\end{itemize}
+le moteur renvoie une erreur. Une solution existe sans doute mais pour moins d'une dizaine de mention aisément identifiées à la main, la chercher trop longtemps ne présentait aucun intérêt.
 % blabla
 
 \section{Vers l'édition numérique : transformation XSL}

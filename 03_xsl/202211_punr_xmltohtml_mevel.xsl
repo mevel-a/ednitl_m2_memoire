@@ -235,4 +235,29 @@
 	<xsl:template match="p[not(ancestor::TEI[@xml:id='punr'])]">
 		<p><xsl:apply-templates/></p>
 	</xsl:template>
+	
+	<xsl:template match="comment()">
+		<xsl:choose>
+			<xsl:when test=".='GAP HERE 0.6em'">
+<!--				ressemble à espace de callage mais bon..-->
+				<div class="smallgap"/>
+			</xsl:when>
+			<xsl:otherwise/>
+		</xsl:choose>
+	</xsl:template>
+	
+<!--	Les GAP 0.6em sont écarts normaux entre certains <p>
+	GAP 3.7 au-dessus des titres de chapitres
+	GAP 0.5 + 2.7 sont sous les titres de chapitres
+	y a aussi 0.5 + 3.5 sous chapitre et .3.7 au-dessus
+	y a pas de gap particulier pour les notions périmées
+	
+	
+	le seul truc intéressant c'est les 0.6
+	sous les @type="epigraph" 0.8 ou 0.9
+	
+	
+	les titres de chapitre sont espacés n'imp.-->
+	
+	
 </xsl:stylesheet>

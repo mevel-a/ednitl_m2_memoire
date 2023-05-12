@@ -173,7 +173,7 @@
 <!--				apostrophe problématique, à échapper ou faire à la main-->
 <!--				nécessite des @mReferenceStatus à la main + Godot doit parfois rêtre encodé en quote parfois en ref-->
 				<!--<xsl:when test=".=concat('L','','Étranger')and(not(descendant::ref))">
-					<ref  type="œuvre" cRef="camus_l_etranger"><xsl:apply-templates/></ref>
+					<ref type="œuvre" cRef="camus_l_etranger"><xsl:apply-templates/></ref>
 				</xsl:when>-->
 				<xsl:when test=".='Voyage au bout de la nuit'and(not(descendant::ref))">
 					<ref  type="œuvre" cRef="celine_voyage_au_bout_de_la_nuit"><xsl:apply-templates/></ref>
@@ -218,7 +218,7 @@
 					<ref  type="œuvre" cRef="stendhal_la_chartreuse_de_parme"><xsl:apply-templates/></ref>
 				</xsl:when>
 <!--				<xsl:when test=".='L'Immortelle'and(not(descendant::ref))">-->
-<!--					<ref  type="œuvre" cRef="robbe-grillet_l_immortelle"><xsl:apply-templates/></ref>-->
+<!--					<ref type="œuvre" cRef="robbe-grillet_l_immortelle"><xsl:apply-templates/></ref>-->
 				<!--</xsl:when>-->
 				<!--<xsl:when test=".='L’Année dernière à Marienbad,'and(not(descendant::ref))">
 					<ref  type="œuvre" cRef="resnais_l_année_dernière_a_marienbad,"><xsl:apply-templates/></ref>

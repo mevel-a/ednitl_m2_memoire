@@ -52,8 +52,37 @@ div.following{
 }
 
 
-
+/*to check use, callage ? saut sémantique ?
+==> ajouter au rapport technique*/
+div.smallgap{
+	height: 15px;
+	width:100%;
+}
 
 
 
 /*STD*/
+/*STANDARD*/
+.STDsc{
+	font-variant: small-caps;
+}
+.STDbig{
+	font-size: 16pt;
+}
+.STDsmall{
+	font-size: 9pt;
+}
+.STDitalic{
+	font-style: italic;
+}
+.STDbold{
+	font-weight: bold;
+}
+.STDexposant{
+	vertical-align: super;
+	font-size: 50%;
+}
+.STDindice{
+	vertical-align: sub;
+	font-size: 50%;
+}
