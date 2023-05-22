@@ -367,8 +367,11 @@ De manière plus anecdotique, la recherche de chaîne de caractères contenant d
     \item 'L\&apos;étranger',
     \item 'L''''étranger'~; 
 \end{itemize}
-le moteur renvoie une erreur. Une solution existe sans doute mais pour moins d'une dizaine de mention aisément identifiées à la main, la chercher trop longtemps ne présentait aucun intérêt.
+le moteur renvoie une erreur. Une solution existe sans doute mais pour moins d'une dizaine de mentions aisément identifiées à la main, la chercher trop longtemps ne présentait aucun intérêt.
 % blabla
+
+
+L'encodage des sources citées se fait également à la main, chacun des textes du corpus sont ajoutés aux éléments <TEI> munis d'un attribut @xml:id servant à les identifier sur le modèle : initialdel'auteur_numérodel'œuvre » ainsi \textit{Mahu ou le matériau} sera désigné par « pr_01 » et \textit{Le Renard et la boussole} par « pr_02 ». Chacun des extraits est ensuite inséré dans un élément <div> ayant aussi un attribut @xml:id construit sur le modèle : iddel'œuvre_ordredelacitation », ainsi le premier extrait de \textit{Le Renard et la boussole} correspondra à « pr_02_01 ».
 
 \section{Vers l'édition numérique : transformation XSL}
 \label{ref:xsl_gen}

@@ -27,7 +27,10 @@
 	<xsl:variable name="home" select="concat($basename,'home.html')"/>
 	<xsl:variable name="index" select="concat($basename,'index.html')"/>
 	<xsl:variable name="bib" select="concat($basename,'bibliography.html')"/>
-
+	
+	<xsl:variable name="tl" select="concat($basename,'timeline.html')"/>
+	<xsl:variable name="db" select="concat($basename,'database.html')"/>
+<!--	<xsl:variable name=""/>-->
 <!--	<xsl:variable name="" select="''"/>-->
 	
 	
@@ -161,6 +164,31 @@
 			<xsl:with-param name="content" select="'home'"/>
 		</xsl:call-template>
 		
+		<xsl:call-template name="body">
+			<xsl:with-param select="$db" name="doc"/>
+			<xsl:with-param name="title" select="'illustration de la base de données'"/>
+			<xsl:with-param name="content" select="'db'"/>
+		</xsl:call-template>
+		<xsl:call-template name="body">
+			<xsl:with-param name="doc" select="$tl"/>
+			<xsl:with-param name="title" select="'chronologie'"/>
+			<xsl:with-param name="content" select="'tl'"/>
+		</xsl:call-template>
+		<xsl:call-template name="body">
+			<xsl:with-param name="doc" select="$index"/>
+			<xsl:with-param name="title" select="'index'"/>
+			<xsl:with-param name="content" select="'index'"/>
+		</xsl:call-template>
+		<xsl:call-template name="body">
+			<xsl:with-param name="doc" select="$bib"/>
+			<xsl:with-param name="title" select="'bibliographie'"/>
+			<xsl:with-param name="content" select="'bib'"/>
+		</xsl:call-template>
+		<!--<xsl:call-template name="body">
+			<xsl:with-param name="doc" select="$"/>
+			<xsl:with-param name="title" select="'index'"/>
+			<xsl:with-param name="content" select="'index'"/>
+		</xsl:call-template>-->
 		
 		
 <!--		Appel des pages 
@@ -230,9 +258,18 @@
 		<span style="color:#f00;"><xsl:apply-templates/></span>
 	</xsl:template>
 	
-	
-	
-	<xsl:template match="p[not(ancestor::TEI[@xml:id='punr'])]">
+	<xsl:template match="pb[ancestor::TEI[not(@xml:id='punr')]]" mode="corpus">
+<!--		ajout numéro de page des citations.-->
+		<span class="STDsmall STDgray"><xsl:text>[</xsl:text><xsl:value-of select="@n"/><xsl:text>] </xsl:text></span>
+	</xsl:template>
+<!--	t'as pas écris la condition de la même manière TO CHECK-->
+	<xsl:template match="div[not(ancestor::TEI[@xml:id='punr'])]" mode="corpus">
+		<div id="{@xml:id}" class="ToDefine">
+			<xsl:apply-templates mode="corpus"/>
+			<p><span class="STDitalic"><xsl:value-of select="preceding::title[1]"/></span> <xsl:value-of select="preceding::sourceDesc[1]/p"/></p>
+		</div>
+	</xsl:template>
+	<xsl:template match="p[not(ancestor::TEI[@xml:id='punr'])]" mode="corpus">
 		<p><xsl:apply-templates/></p>
 	</xsl:template>
 	
