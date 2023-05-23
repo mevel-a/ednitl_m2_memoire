@@ -46,7 +46,7 @@
 			<meta name="author" content="adrien mevel, mathieu marchal, florence de chalonge, alain robbe-grillet"/>
 			<meta name="description" content="digital critical edition of pour un nouveau roman by alain robbe-grillet fist published in 1963 this word has been realised as student project"/>
 			<meta name="keywords" content="critical, edition, digital, robbe-grillet, litterature, french, 1963, nouveau roman, alain robbe-grillet, pour un nouveau roman, xxe siecle, xx, franch theory"/>
-			<link rel="javascript" src="punr_script.js"/>
+			<script src="script.js"/>
 				
 		</head>
 	</xsl:template>
@@ -130,6 +130,9 @@
 								<article>
 									<xsl:apply-templates mode="corpus"/>
 								</article>
+								<section class="extract_section">
+									<xsl:apply-templates mode="extract" select="//TEI[not(@xml:id='punr')]//body"/>
+								</section>
 							</xsl:when>
 							<xsl:when test="$content='home'">
 								<article>
@@ -239,6 +242,9 @@
 	<xsl:template match="pb[ancestor::TEI/@xml:id='punr']">
 		<a id="{concat('page_',@n)}"/>
 	</xsl:template>
+	<!--<xsl:template match="pb[ancestor::TEI/not(@xml:id='punr')]">
+		<span class="STDsmall STDgray"></span>
+	</xsl:template>-->
 	<xsl:template match="div[ancestor::TEI/@xml:id='punr'][@type='subsection']" mode="corpus">
 		<!--		mode="corpus"-->
 		
@@ -252,36 +258,45 @@
 <!--	quote, ref
 	3 mai 2023,non testé, fout juste de la couleur pour être vu-->
 	<xsl:template mode="corpus" match="ref">
-		<span style="color:#0f0;"><xsl:apply-templates/></span>
+		<span class="ref"><xsl:apply-templates/></span>
 	</xsl:template>
 	<xsl:template mode="corpus" match="quote">
-		<span style="color:#f00;"><xsl:apply-templates/></span>
+		<span class="quote" onclick="displayExtract('{@corresp}')"><xsl:apply-templates/></span>
 	</xsl:template>
-	
-	<xsl:template match="pb[ancestor::TEI[not(@xml:id='punr')]]" mode="corpus">
-<!--		ajout numéro de page des citations.-->
-		<span class="STDsmall STDgray"><xsl:text>[</xsl:text><xsl:value-of select="@n"/><xsl:text>] </xsl:text></span>
-	</xsl:template>
-<!--	t'as pas écris la condition de la même manière TO CHECK-->
-	<xsl:template match="div[not(ancestor::TEI[@xml:id='punr'])]" mode="corpus">
-		<div id="{@xml:id}" class="ToDefine">
-			<xsl:apply-templates mode="corpus"/>
-			<p><span class="STDitalic"><xsl:value-of select="preceding::title[1]"/></span> <xsl:value-of select="preceding::sourceDesc[1]/p"/></p>
-		</div>
-	</xsl:template>
-	<xsl:template match="p[not(ancestor::TEI[@xml:id='punr'])]" mode="corpus">
-		<p><xsl:apply-templates/></p>
-	</xsl:template>
-	
-	<xsl:template match="comment()">
+	<xsl:template match="comment()" mode="corpus">
 		<xsl:choose>
 			<xsl:when test=".='GAP HERE 0.6em'">
-<!--				ressemble à espace de callage mais bon..-->
+				<!--				ressemble à espace de callage mais bon..-->
 				<div class="smallgap"/>
 			</xsl:when>
 			<xsl:otherwise/>
 		</xsl:choose>
 	</xsl:template>
+	
+	
+<!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI-->
+	<!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI-->
+	<!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI--><!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI--><!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI--><!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI-->
+	<!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI--><!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI--><!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI--><!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI-->
+	
+	<xsl:template match="pb[not(ancestor::TEI[@xml:id='punr'])]">
+<!--		ajout numéro de page des citations.-->
+		<span class="STDsmall STDgray"><xsl:text>[</xsl:text><xsl:value-of select="@n"/><xsl:text>] </xsl:text></span>
+	</xsl:template>
+	<xsl:template match="div[not(ancestor::TEI[@xml:id='punr'])]" mode="extract">
+		<div id="{@xml:id}" class="extractHide">
+			<xsl:apply-templates mode="extract"/>
+			<p><span class="STDitalic"><xsl:value-of select="ancestor::TEI/teiHeader/fileDesc/titleStmt/title[1]"/></span> <xsl:value-of select="preceding::sourceDesc[1]/p"/></p>
+		</div>
+	</xsl:template>
+	<xsl:template match="p[not(ancestor::TEI[@xml:id='punr'])]" mode="extract">
+		<p><xsl:apply-templates/></p>
+	</xsl:template>
+	
+	
+	
+	
+	
 	
 <!--	Les GAP 0.6em sont écarts normaux entre certains <p>
 	GAP 3.7 au-dessus des titres de chapitres

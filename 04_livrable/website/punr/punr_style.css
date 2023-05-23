@@ -1,0 +1,225 @@
+/*Commun à toutes les pages*/
+*{
+/*	border: 1px solid red !important;*/
+	margin: 0;
+}
+body{
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+header{
+	margin: 0;
+	font-family: 'Source Code Pro', helvetica, sans-serif !important;
+	width: 100%;
+}
+nav{
+	min-width: 100%;
+	display: flex;
+	align-content: stretch;
+}
+.nav_top ul, .nav-top ul li, .nav_top ul li a{
+/*	nav du site*/
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+/*	flex-wrap: wrap;*/
+	align-content: center;
+/*	align-items: baseline;*/
+	font-size: 20pt;
+/*	max-width: 50%;*/
+}
+.nav_top ul{
+	height: 100px;
+}
+.nav_top ul li{
+	height: 100px;
+}
+.nav_top ul li a {
+	width: 100%;
+	display: block;
+	text-align: center;
+/*	height: 100%;*/
+	padding: 10px;
+}
+.nav_top ul li ol{
+/*	display: flex;*/
+	z-index: 999;
+	position: relative;
+	width: 100%;
+}
+.nav_top ul li ol li {
+	list-style: decimal;
+	max-width: 50px;
+	display: none;
+}
+.nav_top ul li ol:hover li {
+	display: block;
+}
+
+.chapter_nav{
+/*	nav entre les chapitre (menu déroulant)*/
+}
+
+h1{
+	font-size: 50pt;
+	text-align: center;
+/*	width: 100%;*/
+/*	font-family: ;*/
+	flex-grow: 1;
+	border-top: 10px;
+	font-variant: small-caps;
+	min-width: 100%;
+	align-self: flex-end;
+}
+article{
+	margin-top: 50px;
+	width: 40%;
+	align-self: center;
+}
+
+footer{
+	display: flex;
+	margin-top: 50px;
+/*	background-color: #ddd;*/
+	border-top: 1px solid #000;
+	width: 100%;
+}
+footer img{
+/*	le logo du l'université*/
+}
+div.legals{
+/*	contient les liens vers git et licence*/
+	display: grid;
+/*voir reppol.css*/
+}
+
+.logo, .logo img{
+	grid-row: 1;
+	height: 32px;
+	margin: 2px;
+}
+
+h2{
+	font-size: 35pt;
+	font-family: 'Source Code Pro', helvetica, sans-serif !important;
+	font-variant: small-caps;
+}
+
+/*Pages articles de punr*/
+h3{
+	font-size: 20pt;
+	font-family: 'Source Code Pro', helvetica, sans-serif !important;
+	font-variant: small-caps;
+	text-align: center;
+}
+h4{
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16pt;
+	margin-bottom: 0;
+}
+div.preceding{
+/*	le bouton précédent*/
+/*	position: absolute;*/
+	left: 0;
+	width: fit-content;
+	height: fit-content;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: helvetica sans-serif;
+	margin-right: auto;
+
+}
+div.following{
+/*le bouton suivaznt	*/
+/*	position: absolute;*/
+/*	position: relative;*/
+
+/*	right: 0;*/
+	width: fit-content;
+	height: fit-content;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: helvetica sans-serif;
+	margin-left: auto;
+
+}
+
+
+/*to check use, callage ? saut sémantique ?
+==> ajouter au rapport technique*/
+div.smallgap{
+	height: 15px;
+	width:100%;
+}
+p{
+	text-align: justify;
+	font-size: 14pt;
+	font-family: 'Times New Roman',times,serif;
+	margin-right: 5px;
+	orphans: 3;
+	widows: 3;
+	line-break: normal;
+}
+.quote{
+	color:#00f;
+	cursor: pointer;
+}
+.ref{
+	color: #0f0;
+	cursor: pointer;
+}
+
+/*Les extraits à afficher si clique*/
+section.extract_section{
+	width: 50%;
+	border:1px solid black;
+
+}
+.extractHide{
+	display: none;
+}
+
+.extractDisplay{
+/*	display: none;*/
+	border:1px solid black;
+/*	position: relative;*/
+/*	top: 0;*/
+	z-index: 999;
+/*	dégager la section, le centrer sur la page*/
+}
+
+
+
+
+/*STD
+/*STANDARD*/
+.STDsc{
+	font-variant: small-caps;
+}
+.STDbig{
+	font-size: 16pt;
+}
+.STDsmall{
+	font-size: 9pt;
+}
+.STDitalic{
+	font-style: italic;
+}
+.STDbold{
+	font-weight: bold;
+}
+.STDexposant{
+	vertical-align: super;
+	font-size: 50%;
+}
+.STDindice{
+	vertical-align: sub;
+	font-size: 50%;
+}
+.STDgray{
+	color: #333;
+}

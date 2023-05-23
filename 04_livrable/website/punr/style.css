@@ -1,4 +1,8 @@
 /*Commun à toutes les pages*/
+*{
+	border: 1px solid red !important;
+}
+
 
 header{
 	

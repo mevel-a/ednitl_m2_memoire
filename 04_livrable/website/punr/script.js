@@ -17,3 +17,25 @@ function autonavh3(){
 		nav.appendChild(li);
 	}
 }
+
+function clickedOn(){
+	// récupère le clique sur x
+	// identifie la nature du truc sur lequel on a cliqué:
+		// extrait cité
+		// œuvre citée
+	// attribue le script en suivant en passant les paramètres
+// A PRIORI inutile, 
+}
+
+
+
+// LES TEST SONT EFFECTUES SUR pr_02_01 
+function displayExtract(corresp){
+	// 
+	let toHide=document.getElementsByClassName('extractDisplay');
+	for (let toHides of toHide){
+		toHides.setAttribute('class','extractHide');
+	}
+	let toDisplay=document.getElementById(corresp);
+	toDisplay.setAttribute('class','extractDisplay');
+}
