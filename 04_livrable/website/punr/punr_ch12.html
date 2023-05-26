@@ -10,331 +10,340 @@
       <meta name="author" content="adrien mevel, mathieu marchal, florence de chalonge, alain robbe-grillet">
       <meta name="description" content="digital critical edition of pour un nouveau roman by alain robbe-grillet fist published in 1963 this word has been realised as student project">
       <meta name="keywords" content="critical, edition, digital, robbe-grillet, litterature, french, 1963, nouveau roman, alain robbe-grillet, pour un nouveau roman, xxe siecle, xx, franch theory"><script src="script.js"></script></head>
-   <body>
+   <body onload="initialise()">
       <header id="top">
-         <h1>Pour un nouveau roman</h1>
-         <nav class="nav_top">
-            <ul>
-               <li><a href="home.html">Accueil</a></li>
-               <li><a href=""></a></li>
-               <li><a href=""></a></li>
-               <li>
-                  <ol class="chapter_nav">
-                     <li><a href="punr_ch01.html">À quoi servent les théories1955&nbsp;et&nbsp;1963</a></li>
-                     <li><a href="punr_ch02.html">Une voie pour le roman futur1956</a></li>
-                     <li><a href="punr_ch03.html">Sur quelques notions périmées1957</a></li>
-                     <li><a href="punr_ch04.html">Nature, humanisme, tragédie1958</a></li>
-                     <li><a href="punr_ch05.html">Éléments d’une anthologie moderne</a></li>
-                     <li><a href="punr_ch06.html">Énigmes et transparence chez Raymond&nbsp;Roussel 1963</a></li>
-                     <li><a href="punr_ch07.html">La conscience malade de Zeno1954</a></li>
-                     <li><a href="punr_ch08.html">Joë&nbsp;Bousquet le rêveur1953</a></li>
-                     <li><a href="punr_ch09.html">Samuel&nbsp;Beckett, ou la présence sur la scène 1953&nbsp;et&nbsp;1957</a></li>
-                     <li><a href="punr_ch10.html">Un roman qui s’invente lui-même1954</a></li>
-                     <li><a href="punr_ch11.html">Nouveau roman, homme nouveau1961</a></li>
-                     <li><a href="punr_ch12.html">Temps et description dans le récit d’aujourd’hui1963</a></li>
-                     <li><a href="punr_ch13.html">Du réalisme à la réalité1955&nbsp;et&nbsp;1963</a></li>
-                  </ol>
-               </li>
-            </ul>
-         </nav>
-         <div class="legals"><a href="" target="blanck"><img src="img/GitHub-Mark-32px.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_cc.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_by.png"></a></div>
+         <h1>Pour un nouveau roman<br><span class="h1_subtitle">Édition critque et numérique</span></h1>
+         <div class="header_div">
+            <nav class="nav_top">
+               <ul>
+                  <li><a href="home.html">Accueil</a></li>
+                  <li><a href="presentation.html">Présentation de l'œuvre</a></li>
+                  <li style="width:200px; height:100px; padding-top:9px">Corpus
+                     					
+                     <ol class="chapter_nav">
+                        <li><a href="punr_ch01.html">À quoi servent les théories</a></li>
+                        <li><a href="punr_ch02.html">Une voie pour le roman futur</a></li>
+                        <li><a href="punr_ch03.html">Sur quelques notions périmées</a></li>
+                        <li><a href="punr_ch04.html">Nature, humanisme, tragédie</a></li>
+                        <li><a href="punr_ch05.html">Éléments d’une anthologie moderne</a></li>
+                        <li><a href="punr_ch06.html">Énigmes et transparence chez Raymond&nbsp;Roussel </a></li>
+                        <li><a href="punr_ch07.html">La conscience malade de Zeno</a></li>
+                        <li><a href="punr_ch08.html">Joë&nbsp;Bousquet le rêveur</a></li>
+                        <li><a href="punr_ch09.html">Samuel&nbsp;Beckett, ou la présence sur la scène </a></li>
+                        <li><a href="punr_ch10.html">Un roman qui s’invente lui-même</a></li>
+                        <li><a href="punr_ch11.html">Nouveau roman, homme nouveau</a></li>
+                        <li><a href="punr_ch12.html">Temps et description dans le récit d’aujourd’hui</a></li>
+                        <li><a href="punr_ch13.html">Du réalisme à la réalité</a></li>
+                     </ol>
+                  </li>
+                  <li><a href="database.html">Illsutration de la base de données</a></li>
+                  <li><a href="timeline.html">Chronologie</a></li>
+               </ul>
+            </nav>
+            <div class="legals"><a href="https://github.com/mevel-a/ednitl_m2_memoire" target="blanck" style="grid-column:1;"><img src="img/GitHub-Mark-32px.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:2;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_cc.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:3;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_by.png"></a><a href="files/punr.xml" download="" style="grid-column:3; grid-row:2;"><img src="img/logo_xml.png" alt="XML"></a></div>
+         </div>
       </header>
-      <div class="preceding"><a href="punr_ch11.html">&lt;</a></div>
-      <div class="following"><a href="punr_ch13.html">&gt;</a></div>
-      <article>
-         <h3>Temps et description dans le récit d’aujourd’hui<br><span class="STDsmall">(1963)</span></h3>
-         <p>La critique est une chose difficile, bien plus que l’art, en un sens. Alors que le
-            romancier, par exemple, peut se fier à sa seule sensibilité, sans toujours essayer
-            d’en comprendre les choix, et que le simple lecteur se contente de savoir s’il est
-            atteint ou non par le livre, si le livre le concerne ou non, s’il l’aime ou s’il ne
-            l’aime pas, s’il lui apporte quelque chose, le critique est censé, lui, donner les
-            raisons de tout cela&nbsp;: il doit préciser ce que le livre apporte, dire pourquoi il
-            l’aime, porter sur lui des jugements absolus de valeur.</p>
-         <p>Or il n’y a de valeurs que du passé. Ces valeurs, qui seules peuvent servir de critères,
-            elles ont été établies sur les grandes œuvres de nos pères, de nos grands-pères, souvent
-            même sur des œuvres plus anciennes. Ce sont ces œuvres qui, refusées jadis parce qu’elles
-            ne correspondaient pas aux valeurs de l’époque, ont apporté au monde des significations
-            nouvelles, de nouvelles valeurs, de nouveaux critères, sur lesquels nous vivons aujourd’hui.</p>
-         <p>Mais aujourd’hui, comme hier, les œuvres nouvelles n’ont de raison d’être que si elles
-            apportent à leur tour au monde de nouvelles significations, encore inconnues des auteurs
-            eux-mêmes, des significations qui existeront seulement plus tard, grâce à ces œuvres,
-            et sur lesquelles la société établira de nouvelles valeurs... qui de nouveau seront
-            inutiles, ou même néfastes, lorsqu’il s’agira de juger la littérature en train de
-            se faire.</p>
-         <p>Le critique est donc placé dans cette situation paradoxale&nbsp;: il est obligé de juger
-            les œuvres contemporaines en se servant de critères qui, au mieux, ne les concernent
-            pas. Ce qui fait que l’artiste a raison d’être mécontent de la critique, mais qu’il
-            a tort de croire qu’il y a de la part de celle-ci méchanceté ou bêtise. Puisqu’il
-            est en train d’inventer un nouveau monde, et des mesures neuves, il doit bien admettre
-            qu’il est difficile, sinon impossible, de le mesurer lui-même et d’établir un juste
-            bilan de ses mérites et de ses torts.</p>
-         <p>La meilleure méthode possible, c’est encore d’extrapoler, et c’est justement ce que
-            la critique vivante s’efforce de faire. En se basant sur l’évolution historique des
-            formes et de leurs significations, dans le roman occidental par exemple, elle peut
-            tenter d’imaginer ce que seront les significations de demain, et de porter ensuite
-            un jugement provisoire sur les formes qu’aujourd’hui l’artiste lui livre.</p>
-         <p>On comprend ce qu’une telle méthode peut avoir de périlleux, car elle suppose une
-            évolution s’accomplissant selon des règles prévisibles. Et les choses se compliquent encore lorsqu’il s’agit d’un art trop récent, le cinéma par exemple, où
-            le manque de recul rend toute extrapolation impraticable. Aussi n’est-il pas toujours
-            inutile que les auteurs, bien qu’ils ne possèdent pas par nature plus de lumières,
-            apportent leur contribution <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;théorique&nbsp;»</span> à cette recherche.</p>
-         <div class="smallgap"></div>
-         <p>On a souvent remarqué, et à juste titre, la grande place tenue par les descriptions
-            dans ce qu’il est convenu d’appeler Nouveau Roman, en particulier dans mes propres
-            livres. Bien que ces descriptions –&nbsp;objets immobiles ou fragments de scène&nbsp;–&nbsp;aient
-            en général agi sur les lecteurs de façon satisfaisante, le jugement que beaucoup de
-            spécialistes portent sur elles reste péjoratif&nbsp;; on les trouve inutiles et confuses&nbsp;;
-            inutiles, parce que sans rapport réel avec l’action, confuses parce que ne remplissant
-            pas ce que devrait être, censément, leur rôle fondamental&nbsp;: faire voir.</p>
-         <p>On a même dit, en se référant aux intentions supposées des auteurs, que ces romans
-            contemporains n’étaient que des films avortés et que la caméra devrait ici relayer
-            l’écriture défaillante. D’une part, l’image cinématographique montrerait du premier
-            coup, en quelques secondes de projection, ce que la littérature s’efforce en vain
-            de représenter au long de dizaines de pages&nbsp;; d’autre part, les détails superflus
-            se trouveraient par force remis à leur place, le pépin de pomme sur le plancher ne
-            risquant plus d’envahir tout le décor où la scène se déroule.</p>
-         <p>Et tout cela serait vrai, si l’on ne méconnaissait pas ainsi ce qui risque justement
-            de constituer le sens de ces descriptions pratiquées aujourd’hui dans le roman. Une fois de plus, il semble que ce soit bien par référence au passé que l’on
-            juge (et condamne) les recherches actuelles.</p>
-         <p>Reconnaissons d’abord que la description n’est pas une invention moderne. Le grand
-            roman français du <span class="STDsc">xix</span><span class="STDexposant">e</span> siècle en particulier, <span class="ref">Balzac</span> en tête, regorge de maisons, de mobiliers, de costumes, longuement, minutieusement
-            décrits, sans compter les visages, les corps, etc. Et il est certain que ces descriptions-là
-            ont pour but de faire voir et qu’elles y réussissent. Il s’agissait alors le plus
-            souvent de planter un décor, de définir le cadre de l’action, de présenter l’apparence
-            physique de ses protagonistes. Le poids des choses ainsi posées de façon précise constituait
-            un univers stable et sûr, auquel on pouvait ensuite se référer, et qui garantissait
-            par sa ressemblance avec le monde <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réel&nbsp;»</span> l’authenticité des événements, des paroles, des gestes que le romancier y ferait
-            survenir. L’assurance tranquille avec laquelle s’imposaient la disposition des lieux,
-            la décoration des intérieurs, la forme des habits, comme aussi les signes sociaux
-            ou caractériels contenus dans chaque élément et par lesquels celui-ci justifiait sa
-            présence, enfin le foisonnement de ces détails justes auquel il semblait que l’on
-            puisse indéfiniment puiser, tout cela ne pouvait que convaincre de l’existence objective&nbsp;–&nbsp;hors
-            de la littérature&nbsp;–&nbsp;d’un monde que le romancier paraissait seulement reproduire, copier,
-            transmettre, comme si l’on avait affaire à une chronique, à une biographie, à un quelconque
-            document.</p>
-         <p>Ce monde romanesque vivait bien de la même vie que son modèle&nbsp;: on y suivait même
-            à la trace l’écoulement des années. Non seulement d’un chapitre à l’autre, mais souvent dès la première
-            rencontre, il était aisé de reconnaître sur le plus modeste objet domestique, sur
-            le moindre trait du visage, la patine apportée par l’usage, l’usure laissée par le
-            temps.</p>
-         <p>Ainsi ce décor était-il déjà l’image de l’homme&nbsp;: chacun des murs ou des meubles de
-            la maison représentait un double du personnage qui l’habitait&nbsp;–&nbsp;riche ou pauvre, sévère
-            ou glorieux&nbsp;–&nbsp;et se trouvait de surcroît soumis au même destin, à la même fatalité.
-            Le lecteur trop pressé de connaître l’histoire pouvait même se croire autorisé à sauter
-            les descriptions&nbsp;: il ne s’agissait que d’un cadre, qui se trouvait d’ailleurs avoir
-            un sens identique à celui du tableau qu’il allait contenir.</p>
-         <p>Évidemment, lorsque ce même lecteur passe les descriptions, dans nos livres, il risque
-            fort de se retrouver, ayant tourné toutes les pages l’une après l’autre d’un index
-            rapide, à la fin du volume dont le contenu lui aurait entièrement échappé&nbsp;; croyant
-            avoir eu affaire jusqu’alors au seul cadre, il en serait encore à chercher le tableau.</p>
-         <p>C’est que la place et le rôle de la description ont changé du tout au tout. Tandis
-            que les préoccupations d’ordre descriptif envahissaient tout le roman, elles perdaient
-            en même temps leur sens traditionnel. Il n’est plus question pour elles de définitions
-            préliminaires. La description servait à situer les grandes lignes d’un décor, puis
-            à en éclairer quelques éléments particulièrement révélateurs&nbsp;; elle ne parle plus
-            que d’objets insignifiants, ou qu’elle s’attache à rendre tels. Elle prétendait reproduire
-            une réalité préexistante&nbsp;; elle affirme à présent sa fonction créatrice. Enfin, elle faisait voir les
-            choses et voilà qu’elle semble maintenant les détruire, comme si son acharnement à
-            en discourir ne visait qu’à en brouiller les lignes, à les rendre incompréhensibles,
-            à les faire disparaître totalement.</p>
-         <p>Il n’est pas rare en effet, dans ces romans modernes, de rencontrer une description
-            qui ne part de rien&nbsp;; elle ne donne pas d’abord une vue d’ensemble, elle paraît naître
-            d’un menu fragment sans importance –&nbsp;ce qui ressemble le plus à un point&nbsp;–&nbsp;à partir
-            duquel elle invente des lignes, des plans, une architecture&nbsp;; et on a d’autant plus
-            l’impression qu’elle les invente que soudain elle se contredit, se répète, se reprend,
-            bifurque, etc. Pourtant, on commence à entrevoir quelque chose, et l’on croit que
-            ce quelque chose va se préciser. Mais les lignes du dessin s’accumulent, se surchargent,
-            se nient, se déplacent, si bien que l’image est mise en doute à mesure qu’elle se
-            construit. Quelques paragraphes encore et, lorsque la description prend fin, on s’aperçoit
-            qu’elle n’a rien laissé debout derrière elle&nbsp;: elle s’est accomplie dans un double
-            mouvement de création et de gommage, que l’on retrouve d’ailleurs dans le livre à
-            tous les niveaux et en particulier dans sa structure globale&nbsp;–&nbsp;d’où vient la <span class="STDitalic">déception</span> inhérente aux œuvres d’aujourd’hui.</p>
-         <p>Le souci de précision qui confine parfois au délire (ces notions si peu visuelles
-            de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;droite&nbsp;»</span> et de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;gauche&nbsp;»</span>, ces comptages, ces mensurations, ces repères géométriques) ne parvient pas à empêcher
-            le monde d’être mouvant jusque dans ses aspects les plus matériels, et même au sein
-            de son apparente immobilité. Il ne s’agit plus ici de temps qui coule, puisque paradoxalement les gestes ne sont
-            au contraire donnés que figés dans l’instant. C’est la matière elle-même qui est à
-            la fois solide et instable, à la fois présente et rêvée, étrangère à l’homme et sans
-            cesse en train de s’inventer dans l’esprit de l’homme. Tout l’intérêt des pages descriptives&nbsp;–&nbsp;c’est-à-dire
-            la place de l’homme dans ces pages&nbsp;–&nbsp;n’est donc plus dans la chose décrite, mais dans
-            le mouvement même de la description.</p>
-         <div class="smallgap"></div>
-         <p>On voit dès lors combien il est faux de dire qu’une telle écriture tend vers la photographie
-            ou vers l’image cinématographique. L’image, prise isolément, ne peut que faire voir,
-            à l’instar de la description balzacienne, et semblerait donc faite au contraire pour
-            remplacer celle-ci, ce dont le cinéma naturaliste ne se prive pas, du reste.</p>
-         <p>L’attrait certain que la création cinématographique exerce sur beaucoup de nouveaux
-            romanciers doit, lui, être cherché ailleurs. Ce n’est pas l’objectivité de la caméra
-            qui les passionne, mais ses possibilités dans le domaine du subjectif, de l’imaginaire.
-            Ils ne conçoivent pas le cinéma comme un moyen d’expression, mais de recherche, et
-            ce qui retient le plus leur attention c’est, tout naturellement, ce qui échappait
-            le plus aux pouvoirs de la littérature&nbsp;: c’est-à-dire non pas tant l’image que la
-            bande sonore&nbsp;–&nbsp;le son des voix, les bruits, les ambiances, les musiques&nbsp;–&nbsp;et surtout
-            la possibilité d’agir sur deux sens à la fois, l’œil et l’oreille&nbsp;; enfin, dans l’image
-            comme dans le son, la possibilité de présenter avec toute l’apparence de l’objectivité
-            la moins contestable ce qui n’est, aussi bien, que rêve ou souvenir, en un mot ce qui n’est qu’imagination.</p>
-         <p>Il y a dans le son que le spectateur entend, dans l’image qu’il voit, une qualité
-            primordiale&nbsp;: c’est là, c’est du présent. Les ruptures de montage, les répétitions
-            de scène, les contradictions, les personnages tout à coup figés comme sur des photos
-            d’amateur, donnent à ce présent perpétuel toute sa force, toute sa violence. Il ne
-            s’agit plus alors de la nature des images, mais de leur composition, et c’est là seulement
-            que le romancier peut retrouver, quoique transformées, certaines de ses préoccupations
-            d’écriture.</p>
-         <p>Ces structures filmiques nouvelles, ce mouvement des images et des sons, se révèlent
-            directement sensibles au spectateur non prévenu&nbsp;; il semble même que, pour beaucoup,
-            leur pouvoir soit infiniment plus fort que celui de la littérature. Mais ils déclenchent
-            aussi, au sein de la critique traditionnelle, des réactions de défense encore plus
-            vives.</p>
-         <p>J’ai pu en faire personnellement l’expérience lors de la sortie de mon second film
-            (<span class="STDitalic">L’Immortelle</span>). Bien entendu, il n’y a pas lieu de s’étonner des jugements défavorables portés
-            sur lui par la plupart des feuilletonnistes&nbsp;; mais il peut être intéressant de noter
-            certains de leurs reproches, plus révélateurs souvent que des éloges. Voici donc les
-            points sur lesquels se sont portées les attaques les plus fréquentes et les plus violentes&nbsp;:
-            d’abord le manque de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;naturel&nbsp;»</span> dans le jeu des acteurs, ensuite l’impossibilité de distinguer clairement ce qui
-            est <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réel&nbsp;»</span> de ce qui est mental (souvenir ou phantasme), enfin la tendance des éléments à forte
-            charge passionnelle à se transformer en <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;cartes-postales&nbsp;»</span> (touristiques pour la ville d’Istamboul, érotiques pour l’héroïne, etc.).</p>
-         <p>On voit que ces trois reproches n’en constituent au fond qu’un seul&nbsp;: la structure
-            du film ne donne pas assez confiance dans la vérité objective des choses. Deux remarques,
-            à ce sujet, s’imposent. D’une part, Istamboul est une <span class="STDitalic">vraie</span> ville, et c’est bien elle que l’on voit d’un bout à l’autre de la projection&nbsp;; de
-            même l’héroïne est incarnée à l’écran par une <span class="STDitalic">vraie</span> femme. D’autre part, pour ce qui est de l’histoire, il est évident qu’elle est fausse&nbsp;:
-            ni l’acteur ni l’actrice ne sont morts au cours du tournage, ni même le chien. Ce
-            qui déroute les spectateurs épris de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réalisme&nbsp;»</span>, c’est que l’on n’essaie plus ici de leur faire croire à rien&nbsp;–&nbsp;je dirais presque&nbsp;:
-            au contraire... Le <span class="STDitalic">vrai,</span> le <span class="STDitalic">faux</span> et le <span class="STDitalic">faire croire</span> sont devenus plus ou moins le sujet de toute œuvre moderne&nbsp;; celle-ci, au lieu d’être
-            un prétendu morceau de réalité, se développe en tant que réflexion sur la réalité
-            (ou sur le <span class="STDitalic">peu de réalité,</span> comme on voudra). Elle ne cherche plus à cacher son caractère nécessairement mensonger,
-            en se présentant comme une <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;histoire vécue&nbsp;»</span>. Si bien que nous retrouvons là, dans l’écriture cinématographique, une fonction
-            voisine de celle assumée par la description en littérature&nbsp;: l’image ainsi traitée
-            (quant aux acteurs, au décor, au montage, dans ses rapports avec le son, etc.) empêche
-            de croire en même temps qu’elle affirme, comme la description empêchait de voir ce
-            qu’elle montrait.</p>
-         <div class="smallgap"></div>
-         <p>C’est ce même mouvement paradoxal (construire en détruisant) que l’on retrouve dans
-            le traitement du temps. Le film et le roman se présentent de prime abord sous la forme de déroulements
-            temporels –&nbsp;contrairement, par exemple, aux ouvrages plastiques, tableaux ou sculptures.
-            Le film, à l’instar de l’œuvre musicale, est même minuté de façon définitive (alors
-            que la durée de lecture peut varier à l’infini, d’une page à l’autre et d’un individu
-            à l’autre). En revanche, nous l’avons dit, le cinéma ne connaît qu’un seul mode grammatical&nbsp;:
-            le présent de l’indicatif. Film et roman se rencontrent en tout cas, aujourd’hui,
-            dans la construction d’instants, d’intervalles et de successions qui n’ont plus rien
-            à voir avec ceux des horloges ou du calendrier. Essayons d’en préciser un peu le rôle.</p>
-         <p>On a beaucoup répété, ces dernières années, que le temps était le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;personnage&nbsp;»</span> principal du roman contemporain. Depuis <span class="ref">Proust</span>, depuis <span class="ref">Faulkner</span>, les retours dans le passé, les ruptures de chronologie, semblent en effet à la base
-            de l’organisation même du récit, de son architecture. Il en serait de même évidemment
-            du cinéma&nbsp;: toute œuvre cinématographique moderne serait une réflexion sur la mémoire
-            humaine, ses incertitudes, son entêtement, ses drames, etc.</p>
-         <p>Tout cela est un peu vite dit. Ou plutôt, si le temps qui passe est bien le personnage
-            essentiel de beaucoup d’œuvres du début du siècle et de leurs séquelles, comme il
-            l’était déjà d’ailleurs d’œuvres du siècle dernier, les recherches actuelles semblent
-            au contraire mettre en scène, le plus souvent, des structures mentales privées de
-            <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;temps&nbsp;»</span>. Et c’est justement ce qui les rend au premier abord si déroutantes. Je prendrai
-            quelques exemples, encore, dans mes propres livres ou films, dont la grande critique a, sur ce point, presque toujours faussé le sens.</p>
-         <p><span class="STDitalic">L’Année dernière à Marienbad,</span> à cause de son titre, à cause aussi des œuvres dont <span class="ref">Alain&nbsp;Resnais</span> avait auparavant réalisé la mise en scène, a d’emblée été interprété comme une de
-            ces variations psychologiques sur l’amour perdu, l’oubli, le souvenir. Les questions
-            que l’on se posait le plus volontiers étaient&nbsp;: cet homme et cette femme se sont-ils
-            vraiment rencontrés, aimés, l’année dernière à Marienbad&nbsp;? La jeune femme se souvient-elle
-            et fait-elle seulement semblant de ne pas reconnaître le bel étranger&nbsp;? Ou bien a-t-elle
-            vraiment tout oublié de ce qui s’est passé entre eux&nbsp;? etc. Il faut dire les choses
-            nettement&nbsp;: ces questions n’ont aucun sens. L’univers dans lequel se déroule tout
-            le film est, de façon caractéristique, celui d’un présent perpétuel qui rend impossible
-            tout recours à la mémoire. C’est un monde sans passé qui se suffit à lui-même à chaque
-            instant et qui s’efface au fur et à mesure. Cet homme, cette femme commencent à exister
-            seulement lorsqu’ils apparaissent sur l’écran pour la première fois&nbsp;; auparavant ils
-            ne sont rien&nbsp;; et, une fois la projection terminée, ils ne sont plus rien de nouveau.
-            Leur existence ne dure que ce que dure le film. Il ne peut y avoir de réalité en dehors
-            des images que l’on voit, des paroles que l’on entend.</p>
-         <p>Ainsi la durée de l’œuvre moderne n’est-elle en aucune manière un résumé, un condensé,
-            d’une durée plus étendue et plus <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réelle&nbsp;»</span> qui serait celle de l’anecdote, de l’histoire racontée. Il y a au contraire identité
-            absolue entre les deux durées. Toute l’histoire de <span class="STDitalic">Marienbad</span> ne se passe ni en deux ans, ni en trois jours, mais exactement en une heure et demie. Et, quand à la fin
-            du film les deux héros se retrouvent pour partir ensemble, c’est comme si la jeune
-            femme admettait qu’il y a eu bel et bien quelque chose entre eux l’année dernière
-            à Marienbad, mais nous comprenons que nous étions justement l’année dernière, durant
-            toute la projection, et que nous étions à Marienbad. Cette histoire d’amour qu’on
-            nous racontait comme une chose passée était en fait en train de se dérouler sous nos
-            yeux, ici et maintenant. Car, bien entendu, il n’y a pas plus d’<span class="STDitalic">ailleurs</span> possible que d’<span class="STDitalic">autrefois.</span></p>
-         <p>Mais, dira-t-on, que représentent, dans ces conditions, les scènes auxquelles nous
-            avons assisté&nbsp;? Que signifient, en particulier, ces successions de plans diurnes et
-            nocturnes, ou ces trop nombreux changements de costumes, incompatibles avec une aussi
-            courte durée&nbsp;? C’est là évidemment que les choses se compliquent. Il ne peut s’agir
-            ici que d’un déroulement subjectif, mental, personnel. Ces choses doivent se passer
-            dans la tête de quelqu’un. Mais de qui&nbsp;? Du héros narrateur&nbsp;? Ou de l’héroïne hypnotisée&nbsp;?
-            Ou bien, par un échange constant d’images entre eux, des deux ensemble&nbsp;? Il vaudrait
-            mieux admettre une solution d’un autre ordre&nbsp;: de même que le seul temps qui importe
-            est celui du film, le seul <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;personnage&nbsp;»</span> important est le spectateur&nbsp;; c’est <span class="STDitalic">dans sa tête</span> que se déroule toute l’histoire, qui est exactement <span class="STDitalic">imaginée </span>par lui.</p>
-         <p>Encore une fois, l’œuvre n’est pas un témoignage sur une réalité extérieure, mais
-            elle est à elle-même sa propre réalité. Aussi est-il impossible à l’auteur de rassurer tel spectateur inquiet sur le sort des héros après le mot <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;fin&nbsp;»</span>. Après le mot <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;fin&nbsp;»</span>, il ne se passe plus rien du tout, par définition. Le seul avenir que l’œuvre puisse
-            accepter, c’est un nouveau déroulement identique&nbsp;: en remettant les bobines du film
-            dans l’appareil à projections.</p>
-         <p>De même, il était absurde de croire que dans le roman <span class="STDitalic">La Jalousie,</span> publié deux ans plus tôt, existait un ordre des événements, clair et univoque, et
-            qui n’était pas celui des phrases du livre, comme si je m’étais amusé à brouiller
-            moi-même un calendrier préétabli, ainsi qu’on bat un jeu de cartes. Le récit était
-            au contraire fait de telle façon que tout essai de reconstitution d’une chronologie
-            extérieure aboutissait tôt ou tard à une série de contradictions, donc à une impasse.
-            Et cela non pas dans le but stupide de dérouter l’ <span class="ref">Académie</span>, mais parce que précisément il n’existait pour moi aucun ordre possible en dehors
-            de celui du livre. Celui-ci n’était pas une narration emmêlée d’une anecdote simple
-            extérieure à lui, mais ici encore le déroulement même d’une histoire qui n’avait d’autre
-            réalité que celle du récit, déroulement qui ne s’opérait nulle part ailleurs que dans
-            la tête du narrateur invisible, c’est-à-dire de l’écrivain, et du lecteur.</p>
-         <p>Comment cette conception actuelle de l’œuvre pourrait-elle permettre que le temps
-            soit le personnage principal du livre, ou du film&nbsp;? N’est-ce pas plutôt au roman traditionnel,
-            au roman balzacien, par exemple, que s’appliquerait justement cette définition&nbsp;? Là
-            le temps jouait un rôle, et le premier&nbsp;: il accomplissait l’homme, il était l’agent
-            et la mesure de son destin. Qu’il s’agisse d’une ascension ou d’une déchéance, il réalisait un devenir,
-            à la fois gage de triomphe d’une société à la conquête du monde, et fatalité d’une
-            nature&nbsp;: la condition mortelle de l’homme. Les passions comme les événements ne pouvaient
-            être envisagés que dans un développement temporel&nbsp;: naissance, croissance, paroxysme,
-            déclin et chute.</p>
-         <p>Tandis que, dans le récit moderne, on dirait que le temps se trouve coupé de sa temporalité.
-            Il ne coule plus. Il n’accomplit plus rien. Et c’est sans doute ce qui explique cette
-            déception qui suit la lecture d’un livre d’aujourd’hui, ou la représentation d’un
-            film. Autant il y avait quelque chose de satisfaisant dans un <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;destin&nbsp;»</span>, même tragique, autant les plus belles des œuvres contemporaines nous laissent vides,
-            décontenancés. Non seulement elles ne prétendent à aucune autre réalité que celle
-            de la lecture, ou du spectacle, mais encore elles semblent toujours en train de se
-            contester, de se mettre en doute elles-mêmes à mesure qu’elles se construisent. Ici
-            l’espace détruit le temps, et le temps sabote l’espace. La description piétine, se
-            contredit, tourne en rond. L’instant nie la continuité.</p>
-         <div class="smallgap"></div>
-         <p>Or, si la temporalité comble l’attente, l’instantanéité la déçoit&nbsp;; de même que la
-            discontinuité spatiale <span class="STDitalic">déprend</span> du piège de l’anecdote. Ces descriptions dont le mouvement enlève toute confiance
-            dans les choses décrites, ces héros sans naturel comme sans identité, ce présent qui
-            s’invente sans cesse, comme au fil de l’écriture, qui se répète, se dédouble, se modifie,
-            se dément, sans jamais s’entasser pour constituer un passé&nbsp;–&nbsp;donc une <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;histoire&nbsp;»</span> au sens traditionnel&nbsp;–, tout cela ne peut que convier le lecteur (ou le spectateur)
-            à un autre mode de participation que celui dont il avait l’habitude. S’il est conduit
-            parfois à condamner les œuvres de son époque, c’est-à-dire celles qui s’adressent
-            le plus directement à lui, s’il se plaint même d’être délibérément délaissé, tenu
-            à l’écart, dédaigné par les auteurs, c’est uniquement parce qu’il s’obstine à rechercher
-            un genre de communication qui n’est plus depuis longtemps celui qu’on lui propose.</p>
-         <p>Car, loin de le négliger, l’auteur aujourd’hui proclame l’absolu besoin qu’il a de
-            son concours, un concours actif, conscient, <span class="STDitalic">créateur.</span> Ce qu’il lui demande, ce n’est plus de recevoir tout fait un monde achevé, plein,
-            clos sur lui-même, c’est au contraire de participer à une création, d’inventer à son
-            tour l’œuvre&nbsp;–&nbsp;et le monde&nbsp;–&nbsp;et d’apprendre ainsi à inventer sa propre vie.</p>
-      </article>
-      <section class="extract_section">
-         <p>Some text here.</p>
-         <div id="pr_02_01" class="extractHide">
-            <p><span class="STDsmall STDgray">[10] </span>[...] Ces gens-là j'ai essayé de les aimer, ils ont <span class="STDsmall STDgray">[11] </span>parfois un air qui trompe mais bien vite si tu leur parle de toi ils t'injurient,
-               ton chagrin leur fait horreur.</p>
-            <p>On m'a piqué avec une longue aiguille, c'est la vérité. Cette aiguille ellle m'est
-               restée vivante. Quand on commence une histoire le mieux est de dire je suis né, c'est
-               le meilleur départ car les enfances sont plus nombreuses à mesure qu'on grandit, ,
-               elles se multiplient et voilà déjà une cause de confusion. J'ai le cœur gros de commencements
-               toujours râtés. Et le but aussi, je n'en ai point.</p>
-            <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
-         </div>
-         <div id="pr_02_ToDefine" class="extractHide">
-            <p></p>
-            <p><span class="STDsmall STDgray">[16] </span>[...] Je me demande souvent si les esprits brillants existeraient sans leur mémoire,
-               je n'ai aucune mémoire, je voudrais pour n'être pas ridicule vivre dans un mon d'où
-               elle serait exclue, on ne pourrait partler que des choses du jour, et on inventerait,
-               on inventerait au fur et à mesure, c'est ça la vraie vie.</p>
-            <p>La naissance d'un objet, j'ai remarqué, n'a pas lieu aujourd'hui, il y a du mouvement
-               tout autour qui l'empêche de montrer la tête et demain tu t'avises qu'il existe. Par
-               conséquent la meilleure explication des origines serait de commencer par des bruits
-               de bouches et de glisser progressivement vers des paroles articulées jusqu'au moment
-               où l'auditeur sans se poser aucune question participe à ton histoire.</p>
-            <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
-         </div>
-         <p>
-            Some text here.</p>
-      </section>
-      <footer><a href="https://www.univ-lille.fr/" target="blanck"><img src="img/logo_u_lille.png" alt="logo université de lille">"</a></footer>
+      <div class="ch_nav"><a class="preceding" href="punr_ch11.html">&lt;</a><a class="following" href="punr_ch13.html">&gt;</a></div>
+      <nav class="articlenav">
+         <ol id="articlenav"></ol>
+      </nav>
+      <div class="corpus">
+         <article>
+            <h3>Temps et description dans le récit d’aujourd’hui<br><span class="STDsmall">(1963)</span></h3>
+            <p>La critique est une chose difficile, bien plus que l’art, en un sens. Alors que le
+               romancier, par exemple, peut se fier à sa seule sensibilité, sans toujours essayer
+               d’en comprendre les choix, et que le simple lecteur se contente de savoir s’il est
+               atteint ou non par le livre, si le livre le concerne ou non, s’il l’aime ou s’il ne
+               l’aime pas, s’il lui apporte quelque chose, le critique est censé, lui, donner les
+               raisons de tout cela&nbsp;: il doit préciser ce que le livre apporte, dire pourquoi il
+               l’aime, porter sur lui des jugements absolus de valeur.</p>
+            <p>Or il n’y a de valeurs que du passé. Ces valeurs, qui seules peuvent servir de critères,
+               elles ont été établies sur les grandes œuvres de nos pères, de nos grands-pères, souvent
+               même sur des œuvres plus anciennes. Ce sont ces œuvres qui, refusées jadis parce qu’elles
+               ne correspondaient pas aux valeurs de l’époque, ont apporté au monde des significations
+               nouvelles, de nouvelles valeurs, de nouveaux critères, sur lesquels nous vivons aujourd’hui.</p>
+            <p>Mais aujourd’hui, comme hier, les œuvres nouvelles n’ont de raison d’être que si elles
+               apportent à leur tour au monde de nouvelles significations, encore inconnues des auteurs
+               eux-mêmes, des significations qui existeront seulement plus tard, grâce à ces œuvres,
+               et sur lesquelles la société établira de nouvelles valeurs... qui de nouveau seront
+               inutiles, ou même néfastes, lorsqu’il s’agira de juger la littérature en train de
+               se faire.</p>
+            <p>Le critique est donc placé dans cette situation paradoxale&nbsp;: il est obligé de juger
+               les œuvres contemporaines en se servant de critères qui, au mieux, ne les concernent
+               pas. Ce qui fait que l’artiste a raison d’être mécontent de la critique, mais qu’il
+               a tort de croire qu’il y a de la part de celle-ci méchanceté ou bêtise. Puisqu’il
+               est en train d’inventer un nouveau monde, et des mesures neuves, il doit bien admettre
+               qu’il est difficile, sinon impossible, de le mesurer lui-même et d’établir un juste
+               bilan de ses mérites et de ses torts.</p>
+            <p>La meilleure méthode possible, c’est encore d’extrapoler, et c’est justement ce que
+               la critique vivante s’efforce de faire. En se basant sur l’évolution historique des
+               formes et de leurs significations, dans le roman occidental par exemple, elle peut
+               tenter d’imaginer ce que seront les significations de demain, et de porter ensuite
+               un jugement provisoire sur les formes qu’aujourd’hui l’artiste lui livre.</p>
+            <p>On comprend ce qu’une telle méthode peut avoir de périlleux, car elle suppose une
+               évolution s’accomplissant selon des règles prévisibles. Et les choses se compliquent encore lorsqu’il s’agit d’un art trop récent, le cinéma par exemple, où
+               le manque de recul rend toute extrapolation impraticable. Aussi n’est-il pas toujours
+               inutile que les auteurs, bien qu’ils ne possèdent pas par nature plus de lumières,
+               apportent leur contribution <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;théorique&nbsp;»</span> à cette recherche.</p>
+            <div class="smallgap"></div>
+            <p>On a souvent remarqué, et à juste titre, la grande place tenue par les descriptions
+               dans ce qu’il est convenu d’appeler Nouveau Roman, en particulier dans mes propres
+               livres. Bien que ces descriptions –&nbsp;objets immobiles ou fragments de scène&nbsp;–&nbsp;aient
+               en général agi sur les lecteurs de façon satisfaisante, le jugement que beaucoup de
+               spécialistes portent sur elles reste péjoratif&nbsp;; on les trouve inutiles et confuses&nbsp;;
+               inutiles, parce que sans rapport réel avec l’action, confuses parce que ne remplissant
+               pas ce que devrait être, censément, leur rôle fondamental&nbsp;: faire voir.</p>
+            <p>On a même dit, en se référant aux intentions supposées des auteurs, que ces romans
+               contemporains n’étaient que des films avortés et que la caméra devrait ici relayer
+               l’écriture défaillante. D’une part, l’image cinématographique montrerait du premier
+               coup, en quelques secondes de projection, ce que la littérature s’efforce en vain
+               de représenter au long de dizaines de pages&nbsp;; d’autre part, les détails superflus
+               se trouveraient par force remis à leur place, le pépin de pomme sur le plancher ne
+               risquant plus d’envahir tout le décor où la scène se déroule.</p>
+            <p>Et tout cela serait vrai, si l’on ne méconnaissait pas ainsi ce qui risque justement
+               de constituer le sens de ces descriptions pratiquées aujourd’hui dans le roman. Une fois de plus, il semble que ce soit bien par référence au passé que l’on
+               juge (et condamne) les recherches actuelles.</p>
+            <p>Reconnaissons d’abord que la description n’est pas une invention moderne. Le grand
+               roman français du <span class="STDsc">xix</span><span class="STDexposant">e</span> siècle en particulier, <span class="ref">Balzac</span> en tête, regorge de maisons, de mobiliers, de costumes, longuement, minutieusement
+               décrits, sans compter les visages, les corps, etc. Et il est certain que ces descriptions-là
+               ont pour but de faire voir et qu’elles y réussissent. Il s’agissait alors le plus
+               souvent de planter un décor, de définir le cadre de l’action, de présenter l’apparence
+               physique de ses protagonistes. Le poids des choses ainsi posées de façon précise constituait
+               un univers stable et sûr, auquel on pouvait ensuite se référer, et qui garantissait
+               par sa ressemblance avec le monde <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réel&nbsp;»</span> l’authenticité des événements, des paroles, des gestes que le romancier y ferait
+               survenir. L’assurance tranquille avec laquelle s’imposaient la disposition des lieux,
+               la décoration des intérieurs, la forme des habits, comme aussi les signes sociaux
+               ou caractériels contenus dans chaque élément et par lesquels celui-ci justifiait sa
+               présence, enfin le foisonnement de ces détails justes auquel il semblait que l’on
+               puisse indéfiniment puiser, tout cela ne pouvait que convaincre de l’existence objective&nbsp;–&nbsp;hors
+               de la littérature&nbsp;–&nbsp;d’un monde que le romancier paraissait seulement reproduire, copier,
+               transmettre, comme si l’on avait affaire à une chronique, à une biographie, à un quelconque
+               document.</p>
+            <p>Ce monde romanesque vivait bien de la même vie que son modèle&nbsp;: on y suivait même
+               à la trace l’écoulement des années. Non seulement d’un chapitre à l’autre, mais souvent dès la première
+               rencontre, il était aisé de reconnaître sur le plus modeste objet domestique, sur
+               le moindre trait du visage, la patine apportée par l’usage, l’usure laissée par le
+               temps.</p>
+            <p>Ainsi ce décor était-il déjà l’image de l’homme&nbsp;: chacun des murs ou des meubles de
+               la maison représentait un double du personnage qui l’habitait&nbsp;–&nbsp;riche ou pauvre, sévère
+               ou glorieux&nbsp;–&nbsp;et se trouvait de surcroît soumis au même destin, à la même fatalité.
+               Le lecteur trop pressé de connaître l’histoire pouvait même se croire autorisé à sauter
+               les descriptions&nbsp;: il ne s’agissait que d’un cadre, qui se trouvait d’ailleurs avoir
+               un sens identique à celui du tableau qu’il allait contenir.</p>
+            <p>Évidemment, lorsque ce même lecteur passe les descriptions, dans nos livres, il risque
+               fort de se retrouver, ayant tourné toutes les pages l’une après l’autre d’un index
+               rapide, à la fin du volume dont le contenu lui aurait entièrement échappé&nbsp;; croyant
+               avoir eu affaire jusqu’alors au seul cadre, il en serait encore à chercher le tableau.</p>
+            <p>C’est que la place et le rôle de la description ont changé du tout au tout. Tandis
+               que les préoccupations d’ordre descriptif envahissaient tout le roman, elles perdaient
+               en même temps leur sens traditionnel. Il n’est plus question pour elles de définitions
+               préliminaires. La description servait à situer les grandes lignes d’un décor, puis
+               à en éclairer quelques éléments particulièrement révélateurs&nbsp;; elle ne parle plus
+               que d’objets insignifiants, ou qu’elle s’attache à rendre tels. Elle prétendait reproduire
+               une réalité préexistante&nbsp;; elle affirme à présent sa fonction créatrice. Enfin, elle faisait voir les
+               choses et voilà qu’elle semble maintenant les détruire, comme si son acharnement à
+               en discourir ne visait qu’à en brouiller les lignes, à les rendre incompréhensibles,
+               à les faire disparaître totalement.</p>
+            <p>Il n’est pas rare en effet, dans ces romans modernes, de rencontrer une description
+               qui ne part de rien&nbsp;; elle ne donne pas d’abord une vue d’ensemble, elle paraît naître
+               d’un menu fragment sans importance –&nbsp;ce qui ressemble le plus à un point&nbsp;–&nbsp;à partir
+               duquel elle invente des lignes, des plans, une architecture&nbsp;; et on a d’autant plus
+               l’impression qu’elle les invente que soudain elle se contredit, se répète, se reprend,
+               bifurque, etc. Pourtant, on commence à entrevoir quelque chose, et l’on croit que
+               ce quelque chose va se préciser. Mais les lignes du dessin s’accumulent, se surchargent,
+               se nient, se déplacent, si bien que l’image est mise en doute à mesure qu’elle se
+               construit. Quelques paragraphes encore et, lorsque la description prend fin, on s’aperçoit
+               qu’elle n’a rien laissé debout derrière elle&nbsp;: elle s’est accomplie dans un double
+               mouvement de création et de gommage, que l’on retrouve d’ailleurs dans le livre à
+               tous les niveaux et en particulier dans sa structure globale&nbsp;–&nbsp;d’où vient la <span class="STDitalic">déception</span> inhérente aux œuvres d’aujourd’hui.</p>
+            <p>Le souci de précision qui confine parfois au délire (ces notions si peu visuelles
+               de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;droite&nbsp;»</span> et de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;gauche&nbsp;»</span>, ces comptages, ces mensurations, ces repères géométriques) ne parvient pas à empêcher
+               le monde d’être mouvant jusque dans ses aspects les plus matériels, et même au sein
+               de son apparente immobilité. Il ne s’agit plus ici de temps qui coule, puisque paradoxalement les gestes ne sont
+               au contraire donnés que figés dans l’instant. C’est la matière elle-même qui est à
+               la fois solide et instable, à la fois présente et rêvée, étrangère à l’homme et sans
+               cesse en train de s’inventer dans l’esprit de l’homme. Tout l’intérêt des pages descriptives&nbsp;–&nbsp;c’est-à-dire
+               la place de l’homme dans ces pages&nbsp;–&nbsp;n’est donc plus dans la chose décrite, mais dans
+               le mouvement même de la description.</p>
+            <div class="smallgap"></div>
+            <p>On voit dès lors combien il est faux de dire qu’une telle écriture tend vers la photographie
+               ou vers l’image cinématographique. L’image, prise isolément, ne peut que faire voir,
+               à l’instar de la description balzacienne, et semblerait donc faite au contraire pour
+               remplacer celle-ci, ce dont le cinéma naturaliste ne se prive pas, du reste.</p>
+            <p>L’attrait certain que la création cinématographique exerce sur beaucoup de nouveaux
+               romanciers doit, lui, être cherché ailleurs. Ce n’est pas l’objectivité de la caméra
+               qui les passionne, mais ses possibilités dans le domaine du subjectif, de l’imaginaire.
+               Ils ne conçoivent pas le cinéma comme un moyen d’expression, mais de recherche, et
+               ce qui retient le plus leur attention c’est, tout naturellement, ce qui échappait
+               le plus aux pouvoirs de la littérature&nbsp;: c’est-à-dire non pas tant l’image que la
+               bande sonore&nbsp;–&nbsp;le son des voix, les bruits, les ambiances, les musiques&nbsp;–&nbsp;et surtout
+               la possibilité d’agir sur deux sens à la fois, l’œil et l’oreille&nbsp;; enfin, dans l’image
+               comme dans le son, la possibilité de présenter avec toute l’apparence de l’objectivité
+               la moins contestable ce qui n’est, aussi bien, que rêve ou souvenir, en un mot ce qui n’est qu’imagination.</p>
+            <p>Il y a dans le son que le spectateur entend, dans l’image qu’il voit, une qualité
+               primordiale&nbsp;: c’est là, c’est du présent. Les ruptures de montage, les répétitions
+               de scène, les contradictions, les personnages tout à coup figés comme sur des photos
+               d’amateur, donnent à ce présent perpétuel toute sa force, toute sa violence. Il ne
+               s’agit plus alors de la nature des images, mais de leur composition, et c’est là seulement
+               que le romancier peut retrouver, quoique transformées, certaines de ses préoccupations
+               d’écriture.</p>
+            <p>Ces structures filmiques nouvelles, ce mouvement des images et des sons, se révèlent
+               directement sensibles au spectateur non prévenu&nbsp;; il semble même que, pour beaucoup,
+               leur pouvoir soit infiniment plus fort que celui de la littérature. Mais ils déclenchent
+               aussi, au sein de la critique traditionnelle, des réactions de défense encore plus
+               vives.</p>
+            <p>J’ai pu en faire personnellement l’expérience lors de la sortie de mon second film
+               (<span class="STDitalic">L’Immortelle</span>). Bien entendu, il n’y a pas lieu de s’étonner des jugements défavorables portés
+               sur lui par la plupart des feuilletonnistes&nbsp;; mais il peut être intéressant de noter
+               certains de leurs reproches, plus révélateurs souvent que des éloges. Voici donc les
+               points sur lesquels se sont portées les attaques les plus fréquentes et les plus violentes&nbsp;:
+               d’abord le manque de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;naturel&nbsp;»</span> dans le jeu des acteurs, ensuite l’impossibilité de distinguer clairement ce qui
+               est <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réel&nbsp;»</span> de ce qui est mental (souvenir ou phantasme), enfin la tendance des éléments à forte
+               charge passionnelle à se transformer en <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;cartes-postales&nbsp;»</span> (touristiques pour la ville d’Istamboul, érotiques pour l’héroïne, etc.).</p>
+            <p>On voit que ces trois reproches n’en constituent au fond qu’un seul&nbsp;: la structure
+               du film ne donne pas assez confiance dans la vérité objective des choses. Deux remarques,
+               à ce sujet, s’imposent. D’une part, Istamboul est une <span class="STDitalic">vraie</span> ville, et c’est bien elle que l’on voit d’un bout à l’autre de la projection&nbsp;; de
+               même l’héroïne est incarnée à l’écran par une <span class="STDitalic">vraie</span> femme. D’autre part, pour ce qui est de l’histoire, il est évident qu’elle est fausse&nbsp;:
+               ni l’acteur ni l’actrice ne sont morts au cours du tournage, ni même le chien. Ce
+               qui déroute les spectateurs épris de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réalisme&nbsp;»</span>, c’est que l’on n’essaie plus ici de leur faire croire à rien&nbsp;–&nbsp;je dirais presque&nbsp;:
+               au contraire... Le <span class="STDitalic">vrai,</span> le <span class="STDitalic">faux</span> et le <span class="STDitalic">faire croire</span> sont devenus plus ou moins le sujet de toute œuvre moderne&nbsp;; celle-ci, au lieu d’être
+               un prétendu morceau de réalité, se développe en tant que réflexion sur la réalité
+               (ou sur le <span class="STDitalic">peu de réalité,</span> comme on voudra). Elle ne cherche plus à cacher son caractère nécessairement mensonger,
+               en se présentant comme une <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;histoire vécue&nbsp;»</span>. Si bien que nous retrouvons là, dans l’écriture cinématographique, une fonction
+               voisine de celle assumée par la description en littérature&nbsp;: l’image ainsi traitée
+               (quant aux acteurs, au décor, au montage, dans ses rapports avec le son, etc.) empêche
+               de croire en même temps qu’elle affirme, comme la description empêchait de voir ce
+               qu’elle montrait.</p>
+            <div class="smallgap"></div>
+            <p>C’est ce même mouvement paradoxal (construire en détruisant) que l’on retrouve dans
+               le traitement du temps. Le film et le roman se présentent de prime abord sous la forme de déroulements
+               temporels –&nbsp;contrairement, par exemple, aux ouvrages plastiques, tableaux ou sculptures.
+               Le film, à l’instar de l’œuvre musicale, est même minuté de façon définitive (alors
+               que la durée de lecture peut varier à l’infini, d’une page à l’autre et d’un individu
+               à l’autre). En revanche, nous l’avons dit, le cinéma ne connaît qu’un seul mode grammatical&nbsp;:
+               le présent de l’indicatif. Film et roman se rencontrent en tout cas, aujourd’hui,
+               dans la construction d’instants, d’intervalles et de successions qui n’ont plus rien
+               à voir avec ceux des horloges ou du calendrier. Essayons d’en préciser un peu le rôle.</p>
+            <p>On a beaucoup répété, ces dernières années, que le temps était le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;personnage&nbsp;»</span> principal du roman contemporain. Depuis <span class="ref">Proust</span>, depuis <span class="ref">Faulkner</span>, les retours dans le passé, les ruptures de chronologie, semblent en effet à la base
+               de l’organisation même du récit, de son architecture. Il en serait de même évidemment
+               du cinéma&nbsp;: toute œuvre cinématographique moderne serait une réflexion sur la mémoire
+               humaine, ses incertitudes, son entêtement, ses drames, etc.</p>
+            <p>Tout cela est un peu vite dit. Ou plutôt, si le temps qui passe est bien le personnage
+               essentiel de beaucoup d’œuvres du début du siècle et de leurs séquelles, comme il
+               l’était déjà d’ailleurs d’œuvres du siècle dernier, les recherches actuelles semblent
+               au contraire mettre en scène, le plus souvent, des structures mentales privées de
+               <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;temps&nbsp;»</span>. Et c’est justement ce qui les rend au premier abord si déroutantes. Je prendrai
+               quelques exemples, encore, dans mes propres livres ou films, dont la grande critique a, sur ce point, presque toujours faussé le sens.</p>
+            <p><span class="STDitalic">L’Année dernière à Marienbad,</span> à cause de son titre, à cause aussi des œuvres dont <span class="ref">Alain&nbsp;Resnais</span> avait auparavant réalisé la mise en scène, a d’emblée été interprété comme une de
+               ces variations psychologiques sur l’amour perdu, l’oubli, le souvenir. Les questions
+               que l’on se posait le plus volontiers étaient&nbsp;: cet homme et cette femme se sont-ils
+               vraiment rencontrés, aimés, l’année dernière à Marienbad&nbsp;? La jeune femme se souvient-elle
+               et fait-elle seulement semblant de ne pas reconnaître le bel étranger&nbsp;? Ou bien a-t-elle
+               vraiment tout oublié de ce qui s’est passé entre eux&nbsp;? etc. Il faut dire les choses
+               nettement&nbsp;: ces questions n’ont aucun sens. L’univers dans lequel se déroule tout
+               le film est, de façon caractéristique, celui d’un présent perpétuel qui rend impossible
+               tout recours à la mémoire. C’est un monde sans passé qui se suffit à lui-même à chaque
+               instant et qui s’efface au fur et à mesure. Cet homme, cette femme commencent à exister
+               seulement lorsqu’ils apparaissent sur l’écran pour la première fois&nbsp;; auparavant ils
+               ne sont rien&nbsp;; et, une fois la projection terminée, ils ne sont plus rien de nouveau.
+               Leur existence ne dure que ce que dure le film. Il ne peut y avoir de réalité en dehors
+               des images que l’on voit, des paroles que l’on entend.</p>
+            <p>Ainsi la durée de l’œuvre moderne n’est-elle en aucune manière un résumé, un condensé,
+               d’une durée plus étendue et plus <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réelle&nbsp;»</span> qui serait celle de l’anecdote, de l’histoire racontée. Il y a au contraire identité
+               absolue entre les deux durées. Toute l’histoire de <span class="STDitalic">Marienbad</span> ne se passe ni en deux ans, ni en trois jours, mais exactement en une heure et demie. Et, quand à la fin
+               du film les deux héros se retrouvent pour partir ensemble, c’est comme si la jeune
+               femme admettait qu’il y a eu bel et bien quelque chose entre eux l’année dernière
+               à Marienbad, mais nous comprenons que nous étions justement l’année dernière, durant
+               toute la projection, et que nous étions à Marienbad. Cette histoire d’amour qu’on
+               nous racontait comme une chose passée était en fait en train de se dérouler sous nos
+               yeux, ici et maintenant. Car, bien entendu, il n’y a pas plus d’<span class="STDitalic">ailleurs</span> possible que d’<span class="STDitalic">autrefois.</span></p>
+            <p>Mais, dira-t-on, que représentent, dans ces conditions, les scènes auxquelles nous
+               avons assisté&nbsp;? Que signifient, en particulier, ces successions de plans diurnes et
+               nocturnes, ou ces trop nombreux changements de costumes, incompatibles avec une aussi
+               courte durée&nbsp;? C’est là évidemment que les choses se compliquent. Il ne peut s’agir
+               ici que d’un déroulement subjectif, mental, personnel. Ces choses doivent se passer
+               dans la tête de quelqu’un. Mais de qui&nbsp;? Du héros narrateur&nbsp;? Ou de l’héroïne hypnotisée&nbsp;?
+               Ou bien, par un échange constant d’images entre eux, des deux ensemble&nbsp;? Il vaudrait
+               mieux admettre une solution d’un autre ordre&nbsp;: de même que le seul temps qui importe
+               est celui du film, le seul <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;personnage&nbsp;»</span> important est le spectateur&nbsp;; c’est <span class="STDitalic">dans sa tête</span> que se déroule toute l’histoire, qui est exactement <span class="STDitalic">imaginée </span>par lui.</p>
+            <p>Encore une fois, l’œuvre n’est pas un témoignage sur une réalité extérieure, mais
+               elle est à elle-même sa propre réalité. Aussi est-il impossible à l’auteur de rassurer tel spectateur inquiet sur le sort des héros après le mot <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;fin&nbsp;»</span>. Après le mot <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;fin&nbsp;»</span>, il ne se passe plus rien du tout, par définition. Le seul avenir que l’œuvre puisse
+               accepter, c’est un nouveau déroulement identique&nbsp;: en remettant les bobines du film
+               dans l’appareil à projections.</p>
+            <p>De même, il était absurde de croire que dans le roman <span class="STDitalic">La Jalousie,</span> publié deux ans plus tôt, existait un ordre des événements, clair et univoque, et
+               qui n’était pas celui des phrases du livre, comme si je m’étais amusé à brouiller
+               moi-même un calendrier préétabli, ainsi qu’on bat un jeu de cartes. Le récit était
+               au contraire fait de telle façon que tout essai de reconstitution d’une chronologie
+               extérieure aboutissait tôt ou tard à une série de contradictions, donc à une impasse.
+               Et cela non pas dans le but stupide de dérouter l’ <span class="ref">Académie</span>, mais parce que précisément il n’existait pour moi aucun ordre possible en dehors
+               de celui du livre. Celui-ci n’était pas une narration emmêlée d’une anecdote simple
+               extérieure à lui, mais ici encore le déroulement même d’une histoire qui n’avait d’autre
+               réalité que celle du récit, déroulement qui ne s’opérait nulle part ailleurs que dans
+               la tête du narrateur invisible, c’est-à-dire de l’écrivain, et du lecteur.</p>
+            <p>Comment cette conception actuelle de l’œuvre pourrait-elle permettre que le temps
+               soit le personnage principal du livre, ou du film&nbsp;? N’est-ce pas plutôt au roman traditionnel,
+               au roman balzacien, par exemple, que s’appliquerait justement cette définition&nbsp;? Là
+               le temps jouait un rôle, et le premier&nbsp;: il accomplissait l’homme, il était l’agent
+               et la mesure de son destin. Qu’il s’agisse d’une ascension ou d’une déchéance, il réalisait un devenir,
+               à la fois gage de triomphe d’une société à la conquête du monde, et fatalité d’une
+               nature&nbsp;: la condition mortelle de l’homme. Les passions comme les événements ne pouvaient
+               être envisagés que dans un développement temporel&nbsp;: naissance, croissance, paroxysme,
+               déclin et chute.</p>
+            <p>Tandis que, dans le récit moderne, on dirait que le temps se trouve coupé de sa temporalité.
+               Il ne coule plus. Il n’accomplit plus rien. Et c’est sans doute ce qui explique cette
+               déception qui suit la lecture d’un livre d’aujourd’hui, ou la représentation d’un
+               film. Autant il y avait quelque chose de satisfaisant dans un <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;destin&nbsp;»</span>, même tragique, autant les plus belles des œuvres contemporaines nous laissent vides,
+               décontenancés. Non seulement elles ne prétendent à aucune autre réalité que celle
+               de la lecture, ou du spectacle, mais encore elles semblent toujours en train de se
+               contester, de se mettre en doute elles-mêmes à mesure qu’elles se construisent. Ici
+               l’espace détruit le temps, et le temps sabote l’espace. La description piétine, se
+               contredit, tourne en rond. L’instant nie la continuité.</p>
+            <div class="smallgap"></div>
+            <p>Or, si la temporalité comble l’attente, l’instantanéité la déçoit&nbsp;; de même que la
+               discontinuité spatiale <span class="STDitalic">déprend</span> du piège de l’anecdote. Ces descriptions dont le mouvement enlève toute confiance
+               dans les choses décrites, ces héros sans naturel comme sans identité, ce présent qui
+               s’invente sans cesse, comme au fil de l’écriture, qui se répète, se dédouble, se modifie,
+               se dément, sans jamais s’entasser pour constituer un passé&nbsp;–&nbsp;donc une <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;histoire&nbsp;»</span> au sens traditionnel&nbsp;–, tout cela ne peut que convier le lecteur (ou le spectateur)
+               à un autre mode de participation que celui dont il avait l’habitude. S’il est conduit
+               parfois à condamner les œuvres de son époque, c’est-à-dire celles qui s’adressent
+               le plus directement à lui, s’il se plaint même d’être délibérément délaissé, tenu
+               à l’écart, dédaigné par les auteurs, c’est uniquement parce qu’il s’obstine à rechercher
+               un genre de communication qui n’est plus depuis longtemps celui qu’on lui propose.</p>
+            <p>Car, loin de le négliger, l’auteur aujourd’hui proclame l’absolu besoin qu’il a de
+               son concours, un concours actif, conscient, <span class="STDitalic">créateur.</span> Ce qu’il lui demande, ce n’est plus de recevoir tout fait un monde achevé, plein,
+               clos sur lui-même, c’est au contraire de participer à une création, d’inventer à son
+               tour l’œuvre&nbsp;–&nbsp;et le monde&nbsp;–&nbsp;et d’apprendre ainsi à inventer sa propre vie.</p>
+         </article>
+         <section class="extract_section">
+            <p>Some text here.</p>
+            <div id="pr_02_01" class="extractHide">
+               <p><span class="STDsmall STDgray">[10] </span>[...] Ces gens-là j'ai essayé de les aimer, ils ont <span class="STDsmall STDgray">[11] </span>parfois un air qui trompe mais bien vite si tu leur parle de toi ils t'injurient,
+                  ton chagrin leur fait horreur.</p>
+               <p>On m'a piqué avec une longue aiguille, c'est la vérité. Cette aiguille ellle m'est
+                  restée vivante. Quand on commence une histoire le mieux est de dire je suis né, c'est
+                  le meilleur départ car les enfances sont plus nombreuses à mesure qu'on grandit, ,
+                  elles se multiplient et voilà déjà une cause de confusion. J'ai le cœur gros de commencements
+                  toujours râtés. Et le but aussi, je n'en ai point.</p>
+               <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
+            </div>
+            <div id="pr_02_ToDefine" class="extractHide">
+               <p></p>
+               <p><span class="STDsmall STDgray">[16] </span>[...] Je me demande souvent si les esprits brillants existeraient sans leur mémoire,
+                  je n'ai aucune mémoire, je voudrais pour n'être pas ridicule vivre dans un mon d'où
+                  elle serait exclue, on ne pourrait partler que des choses du jour, et on inventerait,
+                  on inventerait au fur et à mesure, c'est ça la vraie vie.</p>
+               <p>La naissance d'un objet, j'ai remarqué, n'a pas lieu aujourd'hui, il y a du mouvement
+                  tout autour qui l'empêche de montrer la tête et demain tu t'avises qu'il existe. Par
+                  conséquent la meilleure explication des origines serait de commencer par des bruits
+                  de bouches et de glisser progressivement vers des paroles articulées jusqu'au moment
+                  où l'auditeur sans se poser aucune question participe à ton histoire.</p>
+               <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
+            </div>
+            <p>
+               Some text here.</p>
+         </section>
+      </div>
+      <div class="ch_nav"><a class="preceding" href="punr_ch11.html">&lt;</a><a class="following" href="punr_ch13.html">&gt;</a></div>
+      <footer><a href="https://www.univ-lille.fr/" target="blanck"><img src="img/logo_u_lille.png" alt="logo université de lille"></a></footer>
    </body>
 </html>

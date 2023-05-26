@@ -10,286 +10,296 @@
       <meta name="author" content="adrien mevel, mathieu marchal, florence de chalonge, alain robbe-grillet">
       <meta name="description" content="digital critical edition of pour un nouveau roman by alain robbe-grillet fist published in 1963 this word has been realised as student project">
       <meta name="keywords" content="critical, edition, digital, robbe-grillet, litterature, french, 1963, nouveau roman, alain robbe-grillet, pour un nouveau roman, xxe siecle, xx, franch theory"><script src="script.js"></script></head>
-   <body>
+   <body onload="initialise()">
       <header id="top">
-         <h1>Pour un nouveau roman</h1>
-         <nav class="nav_top">
-            <ul>
-               <li><a href="home.html">Accueil</a></li>
-               <li><a href=""></a></li>
-               <li><a href=""></a></li>
-               <li>
-                  <ol class="chapter_nav">
-                     <li><a href="punr_ch01.html">À quoi servent les théories1955&nbsp;et&nbsp;1963</a></li>
-                     <li><a href="punr_ch02.html">Une voie pour le roman futur1956</a></li>
-                     <li><a href="punr_ch03.html">Sur quelques notions périmées1957</a></li>
-                     <li><a href="punr_ch04.html">Nature, humanisme, tragédie1958</a></li>
-                     <li><a href="punr_ch05.html">Éléments d’une anthologie moderne</a></li>
-                     <li><a href="punr_ch06.html">Énigmes et transparence chez Raymond&nbsp;Roussel 1963</a></li>
-                     <li><a href="punr_ch07.html">La conscience malade de Zeno1954</a></li>
-                     <li><a href="punr_ch08.html">Joë&nbsp;Bousquet le rêveur1953</a></li>
-                     <li><a href="punr_ch09.html">Samuel&nbsp;Beckett, ou la présence sur la scène 1953&nbsp;et&nbsp;1957</a></li>
-                     <li><a href="punr_ch10.html">Un roman qui s’invente lui-même1954</a></li>
-                     <li><a href="punr_ch11.html">Nouveau roman, homme nouveau1961</a></li>
-                     <li><a href="punr_ch12.html">Temps et description dans le récit d’aujourd’hui1963</a></li>
-                     <li><a href="punr_ch13.html">Du réalisme à la réalité1955&nbsp;et&nbsp;1963</a></li>
-                  </ol>
-               </li>
-            </ul>
-         </nav>
-         <div class="legals"><a href="" target="blanck"><img src="img/GitHub-Mark-32px.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_cc.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_by.png"></a></div>
+         <h1>Pour un nouveau roman<br><span class="h1_subtitle">Édition critque et numérique</span></h1>
+         <div class="header_div">
+            <nav class="nav_top">
+               <ul>
+                  <li><a href="home.html">Accueil</a></li>
+                  <li><a href="presentation.html">Présentation de l'œuvre</a></li>
+                  <li style="width:200px; height:100px; padding-top:9px">Corpus
+                     					
+                     <ol class="chapter_nav">
+                        <li><a href="punr_ch01.html">À quoi servent les théories</a></li>
+                        <li><a href="punr_ch02.html">Une voie pour le roman futur</a></li>
+                        <li><a href="punr_ch03.html">Sur quelques notions périmées</a></li>
+                        <li><a href="punr_ch04.html">Nature, humanisme, tragédie</a></li>
+                        <li><a href="punr_ch05.html">Éléments d’une anthologie moderne</a></li>
+                        <li><a href="punr_ch06.html">Énigmes et transparence chez Raymond&nbsp;Roussel </a></li>
+                        <li><a href="punr_ch07.html">La conscience malade de Zeno</a></li>
+                        <li><a href="punr_ch08.html">Joë&nbsp;Bousquet le rêveur</a></li>
+                        <li><a href="punr_ch09.html">Samuel&nbsp;Beckett, ou la présence sur la scène </a></li>
+                        <li><a href="punr_ch10.html">Un roman qui s’invente lui-même</a></li>
+                        <li><a href="punr_ch11.html">Nouveau roman, homme nouveau</a></li>
+                        <li><a href="punr_ch12.html">Temps et description dans le récit d’aujourd’hui</a></li>
+                        <li><a href="punr_ch13.html">Du réalisme à la réalité</a></li>
+                     </ol>
+                  </li>
+                  <li><a href="database.html">Illsutration de la base de données</a></li>
+                  <li><a href="timeline.html">Chronologie</a></li>
+               </ul>
+            </nav>
+            <div class="legals"><a href="https://github.com/mevel-a/ednitl_m2_memoire" target="blanck" style="grid-column:1;"><img src="img/GitHub-Mark-32px.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:2;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_cc.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:3;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_by.png"></a><a href="files/punr.xml" download="" style="grid-column:3; grid-row:2;"><img src="img/logo_xml.png" alt="XML"></a></div>
+         </div>
       </header>
-      <div class="preceding"><a href="punr_ch12.html">&lt;</a></div>
-      <article>
-         <h3>Du réalisme à la réalité<br><span class="STDsmall">(1955&nbsp;et&nbsp;1963)</span></h3>
-         <p>Tous les écrivains pensent être réalistes. Aucun jamais ne se prétend abstrait, illusionniste,
-            chimérique, fantaisiste, faussaire... Le réalisme n’est pas une théorie, définie sans
-            ambiguïté, qui permettrait d’opposer certains romanciers aux autres&nbsp;; c’est au contraire
-            un drapeau sous lequel se range l’immense majorité&nbsp;–&nbsp;sinon l’ensemble&nbsp;–&nbsp;des romanciers
-            d’aujourd’hui. Et sans doute faut-il, sur ce point, leur faire confiance à tous. C’est
-            le monde réel qui les intéresse&nbsp;; chacun s’efforce bel et bien de créer du <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réel&nbsp;»</span>.</p>
-         <p>Mais, s’ils se rassemblent sous ce drapeau, ce n’est pas du tout pour y mener un combat
-            commun&nbsp;; c’est pour se déchirer entre eux. Le réalisme est l’idéologie que chacun
-            brandit contre son voisin, la qualité que chacun estime posséder pour soi seul. Et
-            il en a toujours été de même&nbsp;: c’est par souci de réalisme que chaque nouvelle école
-            littéraire voulait abattre celle qui la précédait&nbsp;; c’était le mot d’ordre des romantiques contre les classiques, puis celui des naturalistes contre les romantiques&nbsp;; et
-            les surréalistes eux-mêmes affirmaient à leur tour ne s’occuper que du monde réel.
-            Le réalisme, chez les écrivains, semble donc aussi bien partagé que le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;bon sens&nbsp;»</span> selon <span class="ref">Descartes</span>.</p>
-         <p>Et, ici aussi, on doit conclure que tous ont raison. S’ils ne s’entendent pas, c’est
-            que chacun a, sur la réalité, des idées différentes. Les classiques pensaient qu’elle
-            est classique, les romantiques qu’elle est romantique, les surréalistes qu’elle est
-            surréelle, <span class="ref">Claudel</span> qu’elle est de nature divine, <span class="ref">Camus</span> qu’elle est absurde, les engagés qu’elle est avant tout économique et qu’elle va
-            vers le socialisme. Chacun parle du monde tel qu’il le voit, mais personne ne le voit
-            de la même façon.</p>
-         <p>On comprend d’ailleurs aisément pourquoi les révolutions littéraires se sont toujours
-            accomplies au nom du réalisme. Lorsque une forme d’écriture a perdu sa vitalité première,
-            sa force, sa violence, lorsqu’elle est devenue une vulgaire recette, un académisme
-            que les suiveurs ne respectent plus que par routine ou paresse, sans même se poser
-            de question sur sa nécessité, c’est bien un retour au réel que constitue la mise en
-            accusation des formules mortes et la recherche de formes nouvelles, capables de prendre
-            la relève. La découverte de la réalité ne continuera d’aller de l’avant que si l’on
-            abandonne les formes usées. À moins d’estimer que le monde est désormais entièrement
-            découvert (et, dans ce cas, le plus sage serait de s’arrêter tout à faire d’écrire),
-            on ne peut que tenter d’aller plus loin. Il ne s’agit pas de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;faire mieux&nbsp;»</span>, mais de s’avancer dans des voies encore inconnues, où une écriture nouvelle devient nécessaire.</p>
-         <p>À quoi cela sert-il, dira-t-on, si c’est pour aboutir ensuite, après un temps plus
-            ou moins long, à un nouveau formalisme, aussi sclérosé bientôt que ne l’était l’ancien&nbsp;?
-            Cela revient à demander pourquoi vivre, puisqu’il faut mourir et laisser la place
-            à d’autres vivants. L’art est vie. Rien n’y est jamais gagné de façon définitive.
-            Il ne peut exister sans cette remise en question permanente. Mais le mouvement de
-            ces évolutions et révolutions fait sa perpétuelle renaissance.</p>
-         <div class="smallgap"></div>
-         <p>Et puis le monde change, lui aussi. D’une part, il n’est plus objectivement le même,
-            sur de nombreux points, qu’il y a cent ans, par exemple&nbsp;; la vie matérielle, la vie
-            intellectuelle, la vie politique se sont modifiées considérablement, ainsi que l’aspect
-            physique de nos villes, de nos maisons, de nos villages, de nos routes, etc. D’autre
-            part, la connaissance que nous avons de ce qui est en nous et de ce qui nous entoure
-            (connaissance scientifique, qu’il s’agisse de sciences de la matière ou de sciences
-            de l’homme) a subi de façon parallèle des bouleversements extraordinaires. À cause
-            de ceci et de cela, les relations subjectives que nous entretenons avec le monde ont
-            changé du tout au tout.</p>
-         <p>Les modifications objectives de la réalité, jointes au <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;progrès&nbsp;»</span> de nos connaissances physiques, ont retenti profondément&nbsp;–&nbsp;continuent de retentir&nbsp;–&nbsp;au
-            sein de nos conceptions philosophiques, de notre métaphysique, de notre morale. Donc,
-            même si le roman ne faisait que reproduire la réalité, il ne serait guère normal que les bases
-            de son réalisme n’aient pas évolué parallèlement à ces transformations. Pour rendre
-            compte du réel d’aujourd’hui, le roman du <span class="STDsc">xix</span><span class="STDexposant">e</span> siècle ne serait pas du tout le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;bon outil&nbsp;»</span> dont la critique soviétique&nbsp;–&nbsp;avec plus de tranquille assurance encore que la critique
-            bourgeoise&nbsp;–&nbsp;reproche en toute occasion au Nouveau Roman de vouloir s’écarter, alors
-            qu’il pourrait encore servir (nous dit-on) à exposer au peuple les maux du monde actuel
-            et les remèdes à la mode, avec au besoin quelques améliorations de détail, comme s’il
-            s’agissait de perfectionner un marteau ou une faucille. Pour s’en tenir à cette image
-            de l’outil, personne ne considère une moissonneuse-batteuse comme un perfectionnement
-            de la faucille, a fortiori pour une machine qui servirait à une récolte sans aucun
-            rapport avec celle du blé.</p>
-         <p>Mais il y a plus grave. Comme nous avons déjà eu l’occasion de le préciser au cours
-            de cet ouvrage, le roman n’est pas un outil du tout. Il n’est pas conçu en vue d’un
-            travail défini à l’avance. Il ne sert pas à exposer, à traduire, des choses existant
-            avant lui, en dehors de lui. Il n’exprime pas, il recherche. Et ce qu’il recherche,
-            c’est lui-même.</p>
-         <div class="smallgap"></div>
-         <p>La critique académique, à l’Ouest comme dans les pays communistes, emploie le mot
-            <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réalisme&nbsp;»</span> comme si la réalité était déjà entièrement constituée (que ce soit, ou non, pour
-            toujours) lorsque l’écrivain entre en scène. Ainsi estime-t-elle que le rôle de ce
-            dernier se limite à <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;explorer&nbsp;»</span> et à <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;exprimer&nbsp;»</span> la réalité de son époque.</p>
-         <p>Le réalisme, selon cette optique, réclamerait seulement de la part du roman qu’il
-            respecte la vérité. Les qualités de l’auteur seraient surtout la perspicacité dans
-            l’observation et le constant souci de franchise (allié souvent au franc-parler). En
-            laissant de côté la répugnance absolue du réalisme-socialiste pour l’adultère et les
-            déviations sexuelles, il s’agirait donc de la peinture sans voile de scènes dures
-            ou pénibles (sans crainte, ô ironie, de choquer le lecteur&nbsp;!), avec naturellement
-            une particulière attention aux problèmes de la vie matérielle et principalement aux
-            difficultés domestiques des classes pauvres. L’usine et le bidonville seront ainsi,
-            par nature, plus <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réalistes&nbsp;»</span> que l’oisiveté ou le luxe, l’adversité plus réaliste que le bonheur. Il ne s’agit,
-            en somme, que de donner au monde des couleurs et une significations dépourvues de
-            mièvrerie, suivant une formule plus ou moins abâtardie d’<span class="ref">Émile&nbsp;Zola</span>.</p>
-         <p>Or tout cela n’a plus guère de sens à partir du moment où l’on s’aperçoit que, non
-            seulement chacun voit dans le monde sa propre réalité, mais que le roman est justement
-            ce qui la crée. L’écriture romanesque ne vise pas à informer, comme le fait la chronique,
-            le témoignage, ou la relation scientifique, elle <span class="STDitalic">constitue</span> la réalité. Elle ne sait jamais ce qu’elle cherche, elle ignore ce qu’elle a à dire&nbsp;;
-            elle est invention, invention du monde et de l’homme, invention constante et perpétuelle
-            remise en question. Tous ceux&nbsp;–&nbsp;politiciens ou autres&nbsp;–&nbsp;qui ne demandent au livre
-            que des stéréotypes, et qui craignent par-dessus tout l’esprit de contestation, ne
-            peuvent que se méfier de la littérature.</p>
-         <p>Il m’est arrivé, comme à tout le monde, d’être victime un instant de l’<span class="STDitalic">illusion réaliste.</span> À l’époque où j’écrivais <span class="STDitalic">Le Voyeur,</span> par exemple, tandis que je m’acharnais à décrire avec précision le vol des mouettes
-            et le mouvement des vagues, j’eus l’occasion de faire un bref voyage d’hiver sur la
-            côte bretonne. En route je me disais&nbsp;: voici une bonne occasion d’observer les choses
-            <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;sur le vif&nbsp;»</span> et de me <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;rafraîchir la mémoire&nbsp;»</span>... Mais, dès le premier oiseau de mer aperçu, je compris mon erreur&nbsp;: d’une part
-            les mouettes que je voyais à présent n’avaient que des rapports confus avec celles
-            que j’étais en train de décrire dans mon livre, et d’autre part cela m’était bien
-            égal. Les seules mouettes qui m’importaient, à ce moment-là, étaient celles qui se
-            trouvaient dans ma tête. Probablement venaient-elles aussi, d’une façon ou d’une autre,
-            du monde extérieur, et peut-être de Bretagne&nbsp;; mais elles s’étaient transformées,
-            devenant en même temps comme plus réelles, <span class="STDitalic">parce qu</span>’elles étaient maintenant imaginaires.</p>
-         <p>Quelquefois aussi, agacé par les objections du genre&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Les choses ne se passent pas comme ça dans la vie&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Il n’existe pas d’hôtel comme celui de votre Marienbad&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Un mari jaloux ne se comporte pas comme celui de votre Jalousie&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Les aventures turques de votre Français, dans L’Immortelle, sont invraisemblables&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Votre soldat perdu dans le Labyrinthe ne porte pas ses insignes militaires à la bonne place&nbsp;»</span>, etc., j’essaie de situer moi-même mes arguments sur le plan réaliste et je parle
-            de l’existence subjective de cet hôtel, ou de la vérité psychologique directe (donc
-            non conforme à l’analyse) de ce mari inquiet, fasciné par le comportement suspect
-            (ou trop naturel) de sa femme. Et sans doute j’espère que mes romans et mes films
-            sont défendables aussi de ce point de vue. Mais je sais bien que mon propos est ailleurs.
-            Je ne transcris pas, je construis. C’était déjà la vieille ambition de <span class="ref">Flaubert</span>&nbsp;: bâtir quelque chose à partir de rien, qui tienne debout tout seul sans avoir à
-            s’appuyer sur quoi que ce soit d’extérieur à l’œuvre&nbsp;; c’est aujourd’hui l’ambition
-            de tout le roman.</p>
-         <p>On mesure à quel point le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;vraisemblable&nbsp;»</span> et le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;conforme au type&nbsp;»</span> sont loin de pouvoir encore servir de critères. Tout se passe même comme si le <span class="STDitalic">faux</span>&nbsp;–&nbsp;c’est-à-dire à la fois le possible, l’impossible, l’hypothèse, le mensonge, etc.&nbsp;–&nbsp;était
-            devenu l’un des thèmes privilégiés de la fiction moderne&nbsp;; une nouvelle sorte de narrateur
-            y est né&nbsp;: ce n’est plus seulement un homme qui décrit les choses qu’il voit, mais
-            en même temps celui qui invente les choses autour de lui et qui voit les choses qu’il
-            invente. Dès que ces héros-narrateurs commencent un tant soit peu à ressembler à des
-            <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;personnages&nbsp;»</span>, ce sont aussitôt des menteurs, des schizophrènes ou des hallucinés (ou même des
-            écrivains, qui créent leur propre histoire). Il faut souligner ici l’importance, dans
-            cette perspective, des romans de <span class="ref">Raymond&nbsp;Queneau</span> (<span class="STDitalic">Le Chiendent </span>et <span class="STDitalic">Loin de Rueil</span> en particulier) dont la trame souvent et toujours le mouvement sont d’une façon rigoureuse
-            ceux de l’imagination.</p>
-         <div class="smallgap"></div>
-         <p>Dans ce réalisme nouveau, il n’est donc plus du tout question de <span class="STDitalic">vérisme.</span> Le petit détail qui <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;fait <a id="page_177"></a>vrai&nbsp;»</span> ne retient plus l’attention du romancier, dans le spectacle du monde ni en littérature&nbsp;;
-            ce qui le frappe&nbsp;–&nbsp;et que l’on retrouve après bien des avatars dans ce qu’il écrit&nbsp;–,
-            ce serait davantage, au contraire, le petit détail qui fait <span class="STDitalic">faux.</span></p>
-         <p>Ainsi déjà dans le journal de <span class="ref">Kafka</span>, lorsque celui-ci note les choses vues pendant la journée au cours de quelque promenade,
-            il ne retient guère que des fragments non seulement sans importance, mais encore qui
-            lui sont apparus coupés de leur signification –&nbsp;donc de leur <span class="STDitalic">vraisemblance</span>&nbsp;–, depuis la pierre abandonnée sans qu’on sache pourquoi au milieu d’une rue jusqu’au
-            geste bizarre d’un passant, inachevé, maladroit, ne paraissant répondre à aucune fonction
-            ou intention précise. Des objets partiels ou détachés de leur usage, des instants
-            immobilisés, des paroles séparées de leur contexte ou bien des conversations entremêlées,
-            tout ce qui sonne un peu faux, tout ce qui manque de naturel, c’est précisément cela
-            qui rend à l’oreille du romancier le son le plus juste.</p>
-         <p>S’agit-il là de ce qu’on nomme l’<span class="STDitalic">absurde&nbsp;?</span> Certainement pas. Car, ailleurs, un élément tout à fait rationnel et commun s’impose
-            soudain avec le même caractère d’évidence, de présence sans motif, de nécessité sans
-            raison. Cela <span class="STDitalic">est,</span> et c’est tout. Mais il y a un risque pour l’écrivain&nbsp;: avec le soupçon d’absurdité
-            revient le danger métaphysique. Le non-sens, l’a-causalité, le vide attirent irrésistiblement
-            les arrière-mondes et les sur-natures.</p>
-         <p>La mésaventure de <span class="ref">Kafka</span> dans ce domaine est exemplaire. Cet auteur <span class="STDitalic">réaliste</span> (dans l’acception nouvelle que nous tentons de définir&nbsp;: créateur d’un monde matériel, à la présence visionnaire) est aussi celui qui a été le plus chargé
-            de sens&nbsp;–&nbsp;de sens <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;profond&nbsp;»</span>&nbsp;–&nbsp;par ses admirateurs et exégètes. Très vite il est devenu, avant tout, aux yeux
-            du public, l’homme qui faisait semblant de nous parler des choses de ce monde, dans
-            le seul but de nous faire entrevoir l’existence problématique d’un au-delà. Ainsi
-            nous décrit-il les tribulations de son (faux) arpenteur obstiné, parmi les habitants
-            du village&nbsp;; mais son roman n’aurait d’autre intérêt que de nous faire rêver sur la
-            vie proche et lointaine d’un mystérieux château. Lorsqu’il nous montre les bureaux,
-            les escaliers et les couloirs où Joseph K... poursuit la justice, ce serait uniquement
-            pour nous entretenir de la notion théologique de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;grâce&nbsp;»</span>. Et le reste à l’avenant.</p>
-         <p>Les récits de <span class="ref">Kafka</span> ne seraient alors que des allégories. Non seulement ils appelleraient une explication
-            (qui les résumerait d’une façon parfaite, au point d’en épuiser tout le contenu),
-            mais cette signification aurait en outre pour effet de détruire radicalement l’univers
-            tangible qui en constitue la trame. La littérature, d’ailleurs, consisterait toujours,
-            et d’une manière systématique, à parler d’<span class="STDitalic">autre chose.</span> Il y aurait un monde présent et un monde réel&nbsp;; le premier serait seul visible, le
-            second seul important. Le rôle du romancier serait celui d’intercesseur&nbsp;: par une
-            description truquée des choses visibles&nbsp;–&nbsp;elles-mêmes tout à fait vaines&nbsp;–&nbsp;il évoquerait
-            le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réel&nbsp;»</span> qui se cache derrière.</p>
-         <p>Or, ce dont une lecture non prévenue nous convainc, au contraire, c’est de la réalité
-            absolue des choses que décrit <span class="ref">Kafka</span>. Le monde visible de ses romans est bien, pour lui, le monde réel, et ce qu’il y a derrière (s’il y a quelque
-            chose) paraît sans valeur, face à l’évidence des objets, gestes, paroles, etc. L’effet
-            d’hallucination provient de leur netteté extraordinaire, et non de flottements ou
-            de brumes. Rien n’est plus fantastique, en définitive, que la précision. Peut-être
-            les escaliers de <span class="ref">Kafka</span> mènent-ils ailleurs, mais eux sont là, et on les regarde, marche par marche, en suivant
-            le détail des barreaux et de la rampe. Peut-être ses murs gris cachent-ils quelque
-            chose, mais c’est à eux que la mémoire s’arrête, sur leur enduit craquelé, sur leurs
-            lézardes. Même ce dont le héros est en quête disparaît, devant l’obstination qu’il
-            met dans sa poursuite, ses trajets et ses mouvements, seuls rendus sensibles, seuls
-            vrais. Dans toute l’œuvre, les rapports de l’homme avec le monde, loin d’avoir un
-            caractère symbolique, sont constamment directs et immédiats.</p>
-         <div class="smallgap"></div>
-         <p>Il en est des significations profondes métaphysiques exactement comme des significations
-            politiques, psychologiques ou morales. Prendre celles qui sont déjà connues, pour
-            les exprimer, va contre l’exigence majeure de la littérature. Quant à celles qui,
-            plus tard, auront été apportées par l’œuvre romanesque au monde futur, le plus sage
-            (à la fois le plus honnête et le plus adroit) est de ne pas s’en soucier aujourd’hui.
-            On a pu juger depuis vingt ans le peu qui restait de l’univers kafkaien dans les œuvres
-            de ses prétendus descendants, lorsque ceux-ci ne faisaient que reproduire le contenu
-            métaphysique et oubliaient le réalisme du maître.</p>
-         <p>Reste donc cette signification immédiate des choses (descriptive, partielle, toujours
-            contestée), c’est-à-dire celle qui se place en deçà de l’histoire, de l’anecdote du
-            livre, comme la signification profonde (transcendante) se place au-delà. C’est sur
-            elle que portera désormais l’effort de recherche et de création. D’elle, en effet,
-            il ne peut être question de se débarrasser, sous peine de voir l’anecdote prendre
-            le dessus, et bientôt même la transcendance (la métaphysique aime le vide et s’y engouffre
-            comme la fumée dans un conduit de cheminée)&nbsp;; car, en deçà de la signification immédiate,
-            on trouve l’absurde, qui est théoriquement la signification nulle, mais qui en fait
-            mène aussitôt, par une récupération métaphysique bien connue, à une nouvelle transcendance&nbsp;;
-            et la fragmentation infinie du sens fonde ainsi une nouvelle totalité, tout aussi
-            dangereuse, tout aussi vaine. En deçà encore, il n’y a plus rien que le bruit des
-            mots.</p>
-         <div class="smallgap"></div>
-         <p>Mais les différents niveaux de signification du langage que nous venons de signaler
-            ont entre eux des interférences multiples. Et il est probable que le nouveau réalisme
-            détruira certaines de ces oppositions théoriques. La vie d’aujourd’hui, la science
-            d’aujourd’hui, réalisent le dépassement de beaucoup d’antinomies catégoriques établies
-            par le rationalisme des siècles passés. Il est normal que le roman, qui, comme tout
-            art, prétend devancer les systèmes de pensée et non les suivre, soit déjà en train
-            de fondre entre eux les deux termes d’autres couples de contraires&nbsp;: fond-forme, objectivité-subjectivité,
-            signification-absurdité, construction-destruction, mémoire-présent, imagination-réalité, etc.</p>
-         <p>On répète, de l’extrême droite à l’extrême gauche, que cet art nouveau est malsain,
-            décadent, inhumain et noir. Mais la bonne santé à laquelle ce jugement fait allusion
-            est celle des œillères et du formol, celle de la mort. On est toujours décadent par
-            rapport aux choses du passé&nbsp;: le béton armé par rapport à la pierre, le socialisme
-            par rapport à la monarchie paternaliste, <span class="ref">Proust</span> par rapport à <span class="ref">Balzac</span>. Et ce n’est guère être inhumain que de vouloir bâtir une nouvelle vie pour l’homme&nbsp;;
-            cette vie ne paraît noire que si&nbsp;–&nbsp;toujours en train de pleurer les anciennes couleurs&nbsp;–&nbsp;on
-            ne cherche pas à voir les nouvelles beautés qui l’éclairent. Ce que propose l’art
-            d’aujourd’hui au lecteur, au spectateur, c’est en tout cas une façon de vivre, dans
-            le monde présent, et de participer à la création permanente du monde de demain. Pour
-            y parvenir, le nouveau roman demande seulement au public d’avoir confiance encore
-            dans le pouvoir de la littérature, et il demande au romancier de n’avoir plus honte
-            d’en faire.</p>
-         <p>Une idée fort reçue concernant le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Nouveau Roman&nbsp;»</span>&nbsp;–&nbsp;et cela depuis que l’on a commencé à lui consacrer des articles&nbsp;–, c’est qu’il
-            s’agit là d’une <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;mode qui passe&nbsp;»</span>. Cette opinion, dès qu’on y réfléchit un peu, apparaît comme doublement saugrenue.
-            Même en assimilant telle ou telle écriture à une mode (et il y a toujours en effet
-            des suiveurs qui sentent le vent et copient des formes modernes sans en sentir la
-            nécessité, sans même en comprendre le fonctionnement, et bien entendu sans voir que
-            leur maniement demande au moins quelque rigueur), le Nouveau Roman serait, au pire, le mouvement
-            des modes, qui veut qu’elles se détruisent au fur et à mesure pour en engendrer continuellement
-            de nouvelles. Et, que les formes romanesques passent, c’est précisément ce que dit
-            le Nouveau Roman&nbsp;!</p>
-         <p>Il ne faut voir dans ce genre de propos&nbsp;–&nbsp;sur les modes qui passent, l’assagissement
-            des révoltés, le retour à la saine tradition et autres balivernes&nbsp;–&nbsp;que la bonne vieille
-            tentative de prouver, imperturbablement, désespérément, que <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;dans le fond rien ne change&nbsp;»</span> et qu’il n’y a <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;jamais rien de nouveau sous le soleil&nbsp;»</span>&nbsp;; alors qu’en vérité <span class="STDitalic">tout change sans cesse</span> et qu’il y a <span class="STDitalic">toujours du nouveau.</span> La critique académique voudrait même faire croire au public que les techniques nouvelles
-            vont simplement être absorbées par le roman <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;éternel&nbsp;»</span> et vont servir à perfectionner quelque détail du personnage balzacien, de l’intrigue
-            chronologique et de l’humanisme transcendant.</p>
-         <p>Il est possible que ce jour vienne en effet, et même assez vite. Mais dès que le Nouveau
-            Roman commencera à <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;servir à quelque chose&nbsp;»</span>, que ce soit à l’analyse psychologique, au roman catholique ou au réalisme socialiste,
-            ce sera le signal pour les inventeurs qu’un Nouveau Nouveau Roman demande à voir le
-            jour, dont on ne saurait pas encore à quoi il pourrait servir&nbsp;–&nbsp;sinon à la littérature.</p>
-      </article>
-      <section class="extract_section">
-         <p>Some text here.</p>
-         <div id="pr_02_01" class="extractHide">
-            <p><span class="STDsmall STDgray">[10] </span>[...] Ces gens-là j'ai essayé de les aimer, ils ont <span class="STDsmall STDgray">[11] </span>parfois un air qui trompe mais bien vite si tu leur parle de toi ils t'injurient,
-               ton chagrin leur fait horreur.</p>
-            <p>On m'a piqué avec une longue aiguille, c'est la vérité. Cette aiguille ellle m'est
-               restée vivante. Quand on commence une histoire le mieux est de dire je suis né, c'est
-               le meilleur départ car les enfances sont plus nombreuses à mesure qu'on grandit, ,
-               elles se multiplient et voilà déjà une cause de confusion. J'ai le cœur gros de commencements
-               toujours râtés. Et le but aussi, je n'en ai point.</p>
-            <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
-         </div>
-         <div id="pr_02_ToDefine" class="extractHide">
-            <p></p>
-            <p><span class="STDsmall STDgray">[16] </span>[...] Je me demande souvent si les esprits brillants existeraient sans leur mémoire,
-               je n'ai aucune mémoire, je voudrais pour n'être pas ridicule vivre dans un mon d'où
-               elle serait exclue, on ne pourrait partler que des choses du jour, et on inventerait,
-               on inventerait au fur et à mesure, c'est ça la vraie vie.</p>
-            <p>La naissance d'un objet, j'ai remarqué, n'a pas lieu aujourd'hui, il y a du mouvement
-               tout autour qui l'empêche de montrer la tête et demain tu t'avises qu'il existe. Par
-               conséquent la meilleure explication des origines serait de commencer par des bruits
-               de bouches et de glisser progressivement vers des paroles articulées jusqu'au moment
-               où l'auditeur sans se poser aucune question participe à ton histoire.</p>
-            <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
-         </div>
-         <p>
-            Some text here.</p>
-      </section>
-      <footer><a href="https://www.univ-lille.fr/" target="blanck"><img src="img/logo_u_lille.png" alt="logo université de lille">"</a></footer>
+      <div class="ch_nav"><a class="preceding" href="punr_ch12.html">&lt;</a></div>
+      <nav class="articlenav">
+         <ol id="articlenav"></ol>
+      </nav>
+      <div class="corpus">
+         <article>
+            <h3>Du réalisme à la réalité<br><span class="STDsmall">(1955&nbsp;et&nbsp;1963)</span></h3>
+            <p>Tous les écrivains pensent être réalistes. Aucun jamais ne se prétend abstrait, illusionniste,
+               chimérique, fantaisiste, faussaire... Le réalisme n’est pas une théorie, définie sans
+               ambiguïté, qui permettrait d’opposer certains romanciers aux autres&nbsp;; c’est au contraire
+               un drapeau sous lequel se range l’immense majorité&nbsp;–&nbsp;sinon l’ensemble&nbsp;–&nbsp;des romanciers
+               d’aujourd’hui. Et sans doute faut-il, sur ce point, leur faire confiance à tous. C’est
+               le monde réel qui les intéresse&nbsp;; chacun s’efforce bel et bien de créer du <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réel&nbsp;»</span>.</p>
+            <p>Mais, s’ils se rassemblent sous ce drapeau, ce n’est pas du tout pour y mener un combat
+               commun&nbsp;; c’est pour se déchirer entre eux. Le réalisme est l’idéologie que chacun
+               brandit contre son voisin, la qualité que chacun estime posséder pour soi seul. Et
+               il en a toujours été de même&nbsp;: c’est par souci de réalisme que chaque nouvelle école
+               littéraire voulait abattre celle qui la précédait&nbsp;; c’était le mot d’ordre des romantiques contre les classiques, puis celui des naturalistes contre les romantiques&nbsp;; et
+               les surréalistes eux-mêmes affirmaient à leur tour ne s’occuper que du monde réel.
+               Le réalisme, chez les écrivains, semble donc aussi bien partagé que le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;bon sens&nbsp;»</span> selon <span class="ref">Descartes</span>.</p>
+            <p>Et, ici aussi, on doit conclure que tous ont raison. S’ils ne s’entendent pas, c’est
+               que chacun a, sur la réalité, des idées différentes. Les classiques pensaient qu’elle
+               est classique, les romantiques qu’elle est romantique, les surréalistes qu’elle est
+               surréelle, <span class="ref">Claudel</span> qu’elle est de nature divine, <span class="ref">Camus</span> qu’elle est absurde, les engagés qu’elle est avant tout économique et qu’elle va
+               vers le socialisme. Chacun parle du monde tel qu’il le voit, mais personne ne le voit
+               de la même façon.</p>
+            <p>On comprend d’ailleurs aisément pourquoi les révolutions littéraires se sont toujours
+               accomplies au nom du réalisme. Lorsque une forme d’écriture a perdu sa vitalité première,
+               sa force, sa violence, lorsqu’elle est devenue une vulgaire recette, un académisme
+               que les suiveurs ne respectent plus que par routine ou paresse, sans même se poser
+               de question sur sa nécessité, c’est bien un retour au réel que constitue la mise en
+               accusation des formules mortes et la recherche de formes nouvelles, capables de prendre
+               la relève. La découverte de la réalité ne continuera d’aller de l’avant que si l’on
+               abandonne les formes usées. À moins d’estimer que le monde est désormais entièrement
+               découvert (et, dans ce cas, le plus sage serait de s’arrêter tout à faire d’écrire),
+               on ne peut que tenter d’aller plus loin. Il ne s’agit pas de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;faire mieux&nbsp;»</span>, mais de s’avancer dans des voies encore inconnues, où une écriture nouvelle devient nécessaire.</p>
+            <p>À quoi cela sert-il, dira-t-on, si c’est pour aboutir ensuite, après un temps plus
+               ou moins long, à un nouveau formalisme, aussi sclérosé bientôt que ne l’était l’ancien&nbsp;?
+               Cela revient à demander pourquoi vivre, puisqu’il faut mourir et laisser la place
+               à d’autres vivants. L’art est vie. Rien n’y est jamais gagné de façon définitive.
+               Il ne peut exister sans cette remise en question permanente. Mais le mouvement de
+               ces évolutions et révolutions fait sa perpétuelle renaissance.</p>
+            <div class="smallgap"></div>
+            <p>Et puis le monde change, lui aussi. D’une part, il n’est plus objectivement le même,
+               sur de nombreux points, qu’il y a cent ans, par exemple&nbsp;; la vie matérielle, la vie
+               intellectuelle, la vie politique se sont modifiées considérablement, ainsi que l’aspect
+               physique de nos villes, de nos maisons, de nos villages, de nos routes, etc. D’autre
+               part, la connaissance que nous avons de ce qui est en nous et de ce qui nous entoure
+               (connaissance scientifique, qu’il s’agisse de sciences de la matière ou de sciences
+               de l’homme) a subi de façon parallèle des bouleversements extraordinaires. À cause
+               de ceci et de cela, les relations subjectives que nous entretenons avec le monde ont
+               changé du tout au tout.</p>
+            <p>Les modifications objectives de la réalité, jointes au <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;progrès&nbsp;»</span> de nos connaissances physiques, ont retenti profondément&nbsp;–&nbsp;continuent de retentir&nbsp;–&nbsp;au
+               sein de nos conceptions philosophiques, de notre métaphysique, de notre morale. Donc,
+               même si le roman ne faisait que reproduire la réalité, il ne serait guère normal que les bases
+               de son réalisme n’aient pas évolué parallèlement à ces transformations. Pour rendre
+               compte du réel d’aujourd’hui, le roman du <span class="STDsc">xix</span><span class="STDexposant">e</span> siècle ne serait pas du tout le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;bon outil&nbsp;»</span> dont la critique soviétique&nbsp;–&nbsp;avec plus de tranquille assurance encore que la critique
+               bourgeoise&nbsp;–&nbsp;reproche en toute occasion au Nouveau Roman de vouloir s’écarter, alors
+               qu’il pourrait encore servir (nous dit-on) à exposer au peuple les maux du monde actuel
+               et les remèdes à la mode, avec au besoin quelques améliorations de détail, comme s’il
+               s’agissait de perfectionner un marteau ou une faucille. Pour s’en tenir à cette image
+               de l’outil, personne ne considère une moissonneuse-batteuse comme un perfectionnement
+               de la faucille, a fortiori pour une machine qui servirait à une récolte sans aucun
+               rapport avec celle du blé.</p>
+            <p>Mais il y a plus grave. Comme nous avons déjà eu l’occasion de le préciser au cours
+               de cet ouvrage, le roman n’est pas un outil du tout. Il n’est pas conçu en vue d’un
+               travail défini à l’avance. Il ne sert pas à exposer, à traduire, des choses existant
+               avant lui, en dehors de lui. Il n’exprime pas, il recherche. Et ce qu’il recherche,
+               c’est lui-même.</p>
+            <div class="smallgap"></div>
+            <p>La critique académique, à l’Ouest comme dans les pays communistes, emploie le mot
+               <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réalisme&nbsp;»</span> comme si la réalité était déjà entièrement constituée (que ce soit, ou non, pour
+               toujours) lorsque l’écrivain entre en scène. Ainsi estime-t-elle que le rôle de ce
+               dernier se limite à <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;explorer&nbsp;»</span> et à <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;exprimer&nbsp;»</span> la réalité de son époque.</p>
+            <p>Le réalisme, selon cette optique, réclamerait seulement de la part du roman qu’il
+               respecte la vérité. Les qualités de l’auteur seraient surtout la perspicacité dans
+               l’observation et le constant souci de franchise (allié souvent au franc-parler). En
+               laissant de côté la répugnance absolue du réalisme-socialiste pour l’adultère et les
+               déviations sexuelles, il s’agirait donc de la peinture sans voile de scènes dures
+               ou pénibles (sans crainte, ô ironie, de choquer le lecteur&nbsp;!), avec naturellement
+               une particulière attention aux problèmes de la vie matérielle et principalement aux
+               difficultés domestiques des classes pauvres. L’usine et le bidonville seront ainsi,
+               par nature, plus <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réalistes&nbsp;»</span> que l’oisiveté ou le luxe, l’adversité plus réaliste que le bonheur. Il ne s’agit,
+               en somme, que de donner au monde des couleurs et une significations dépourvues de
+               mièvrerie, suivant une formule plus ou moins abâtardie d’<span class="ref">Émile&nbsp;Zola</span>.</p>
+            <p>Or tout cela n’a plus guère de sens à partir du moment où l’on s’aperçoit que, non
+               seulement chacun voit dans le monde sa propre réalité, mais que le roman est justement
+               ce qui la crée. L’écriture romanesque ne vise pas à informer, comme le fait la chronique,
+               le témoignage, ou la relation scientifique, elle <span class="STDitalic">constitue</span> la réalité. Elle ne sait jamais ce qu’elle cherche, elle ignore ce qu’elle a à dire&nbsp;;
+               elle est invention, invention du monde et de l’homme, invention constante et perpétuelle
+               remise en question. Tous ceux&nbsp;–&nbsp;politiciens ou autres&nbsp;–&nbsp;qui ne demandent au livre
+               que des stéréotypes, et qui craignent par-dessus tout l’esprit de contestation, ne
+               peuvent que se méfier de la littérature.</p>
+            <p>Il m’est arrivé, comme à tout le monde, d’être victime un instant de l’<span class="STDitalic">illusion réaliste.</span> À l’époque où j’écrivais <span class="STDitalic">Le Voyeur,</span> par exemple, tandis que je m’acharnais à décrire avec précision le vol des mouettes
+               et le mouvement des vagues, j’eus l’occasion de faire un bref voyage d’hiver sur la
+               côte bretonne. En route je me disais&nbsp;: voici une bonne occasion d’observer les choses
+               <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;sur le vif&nbsp;»</span> et de me <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;rafraîchir la mémoire&nbsp;»</span>... Mais, dès le premier oiseau de mer aperçu, je compris mon erreur&nbsp;: d’une part
+               les mouettes que je voyais à présent n’avaient que des rapports confus avec celles
+               que j’étais en train de décrire dans mon livre, et d’autre part cela m’était bien
+               égal. Les seules mouettes qui m’importaient, à ce moment-là, étaient celles qui se
+               trouvaient dans ma tête. Probablement venaient-elles aussi, d’une façon ou d’une autre,
+               du monde extérieur, et peut-être de Bretagne&nbsp;; mais elles s’étaient transformées,
+               devenant en même temps comme plus réelles, <span class="STDitalic">parce qu</span>’elles étaient maintenant imaginaires.</p>
+            <p>Quelquefois aussi, agacé par les objections du genre&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Les choses ne se passent pas comme ça dans la vie&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Il n’existe pas d’hôtel comme celui de votre Marienbad&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Un mari jaloux ne se comporte pas comme celui de votre Jalousie&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Les aventures turques de votre Français, dans L’Immortelle, sont invraisemblables&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Votre soldat perdu dans le Labyrinthe ne porte pas ses insignes militaires à la bonne place&nbsp;»</span>, etc., j’essaie de situer moi-même mes arguments sur le plan réaliste et je parle
+               de l’existence subjective de cet hôtel, ou de la vérité psychologique directe (donc
+               non conforme à l’analyse) de ce mari inquiet, fasciné par le comportement suspect
+               (ou trop naturel) de sa femme. Et sans doute j’espère que mes romans et mes films
+               sont défendables aussi de ce point de vue. Mais je sais bien que mon propos est ailleurs.
+               Je ne transcris pas, je construis. C’était déjà la vieille ambition de <span class="ref">Flaubert</span>&nbsp;: bâtir quelque chose à partir de rien, qui tienne debout tout seul sans avoir à
+               s’appuyer sur quoi que ce soit d’extérieur à l’œuvre&nbsp;; c’est aujourd’hui l’ambition
+               de tout le roman.</p>
+            <p>On mesure à quel point le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;vraisemblable&nbsp;»</span> et le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;conforme au type&nbsp;»</span> sont loin de pouvoir encore servir de critères. Tout se passe même comme si le <span class="STDitalic">faux</span>&nbsp;–&nbsp;c’est-à-dire à la fois le possible, l’impossible, l’hypothèse, le mensonge, etc.&nbsp;–&nbsp;était
+               devenu l’un des thèmes privilégiés de la fiction moderne&nbsp;; une nouvelle sorte de narrateur
+               y est né&nbsp;: ce n’est plus seulement un homme qui décrit les choses qu’il voit, mais
+               en même temps celui qui invente les choses autour de lui et qui voit les choses qu’il
+               invente. Dès que ces héros-narrateurs commencent un tant soit peu à ressembler à des
+               <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;personnages&nbsp;»</span>, ce sont aussitôt des menteurs, des schizophrènes ou des hallucinés (ou même des
+               écrivains, qui créent leur propre histoire). Il faut souligner ici l’importance, dans
+               cette perspective, des romans de <span class="ref">Raymond&nbsp;Queneau</span> (<span class="STDitalic">Le Chiendent </span>et <span class="STDitalic">Loin de Rueil</span> en particulier) dont la trame souvent et toujours le mouvement sont d’une façon rigoureuse
+               ceux de l’imagination.</p>
+            <div class="smallgap"></div>
+            <p>Dans ce réalisme nouveau, il n’est donc plus du tout question de <span class="STDitalic">vérisme.</span> Le petit détail qui <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;fait <a id="page_177"></a>vrai&nbsp;»</span> ne retient plus l’attention du romancier, dans le spectacle du monde ni en littérature&nbsp;;
+               ce qui le frappe&nbsp;–&nbsp;et que l’on retrouve après bien des avatars dans ce qu’il écrit&nbsp;–,
+               ce serait davantage, au contraire, le petit détail qui fait <span class="STDitalic">faux.</span></p>
+            <p>Ainsi déjà dans le journal de <span class="ref">Kafka</span>, lorsque celui-ci note les choses vues pendant la journée au cours de quelque promenade,
+               il ne retient guère que des fragments non seulement sans importance, mais encore qui
+               lui sont apparus coupés de leur signification –&nbsp;donc de leur <span class="STDitalic">vraisemblance</span>&nbsp;–, depuis la pierre abandonnée sans qu’on sache pourquoi au milieu d’une rue jusqu’au
+               geste bizarre d’un passant, inachevé, maladroit, ne paraissant répondre à aucune fonction
+               ou intention précise. Des objets partiels ou détachés de leur usage, des instants
+               immobilisés, des paroles séparées de leur contexte ou bien des conversations entremêlées,
+               tout ce qui sonne un peu faux, tout ce qui manque de naturel, c’est précisément cela
+               qui rend à l’oreille du romancier le son le plus juste.</p>
+            <p>S’agit-il là de ce qu’on nomme l’<span class="STDitalic">absurde&nbsp;?</span> Certainement pas. Car, ailleurs, un élément tout à fait rationnel et commun s’impose
+               soudain avec le même caractère d’évidence, de présence sans motif, de nécessité sans
+               raison. Cela <span class="STDitalic">est,</span> et c’est tout. Mais il y a un risque pour l’écrivain&nbsp;: avec le soupçon d’absurdité
+               revient le danger métaphysique. Le non-sens, l’a-causalité, le vide attirent irrésistiblement
+               les arrière-mondes et les sur-natures.</p>
+            <p>La mésaventure de <span class="ref">Kafka</span> dans ce domaine est exemplaire. Cet auteur <span class="STDitalic">réaliste</span> (dans l’acception nouvelle que nous tentons de définir&nbsp;: créateur d’un monde matériel, à la présence visionnaire) est aussi celui qui a été le plus chargé
+               de sens&nbsp;–&nbsp;de sens <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;profond&nbsp;»</span>&nbsp;–&nbsp;par ses admirateurs et exégètes. Très vite il est devenu, avant tout, aux yeux
+               du public, l’homme qui faisait semblant de nous parler des choses de ce monde, dans
+               le seul but de nous faire entrevoir l’existence problématique d’un au-delà. Ainsi
+               nous décrit-il les tribulations de son (faux) arpenteur obstiné, parmi les habitants
+               du village&nbsp;; mais son roman n’aurait d’autre intérêt que de nous faire rêver sur la
+               vie proche et lointaine d’un mystérieux château. Lorsqu’il nous montre les bureaux,
+               les escaliers et les couloirs où Joseph K... poursuit la justice, ce serait uniquement
+               pour nous entretenir de la notion théologique de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;grâce&nbsp;»</span>. Et le reste à l’avenant.</p>
+            <p>Les récits de <span class="ref">Kafka</span> ne seraient alors que des allégories. Non seulement ils appelleraient une explication
+               (qui les résumerait d’une façon parfaite, au point d’en épuiser tout le contenu),
+               mais cette signification aurait en outre pour effet de détruire radicalement l’univers
+               tangible qui en constitue la trame. La littérature, d’ailleurs, consisterait toujours,
+               et d’une manière systématique, à parler d’<span class="STDitalic">autre chose.</span> Il y aurait un monde présent et un monde réel&nbsp;; le premier serait seul visible, le
+               second seul important. Le rôle du romancier serait celui d’intercesseur&nbsp;: par une
+               description truquée des choses visibles&nbsp;–&nbsp;elles-mêmes tout à fait vaines&nbsp;–&nbsp;il évoquerait
+               le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;réel&nbsp;»</span> qui se cache derrière.</p>
+            <p>Or, ce dont une lecture non prévenue nous convainc, au contraire, c’est de la réalité
+               absolue des choses que décrit <span class="ref">Kafka</span>. Le monde visible de ses romans est bien, pour lui, le monde réel, et ce qu’il y a derrière (s’il y a quelque
+               chose) paraît sans valeur, face à l’évidence des objets, gestes, paroles, etc. L’effet
+               d’hallucination provient de leur netteté extraordinaire, et non de flottements ou
+               de brumes. Rien n’est plus fantastique, en définitive, que la précision. Peut-être
+               les escaliers de <span class="ref">Kafka</span> mènent-ils ailleurs, mais eux sont là, et on les regarde, marche par marche, en suivant
+               le détail des barreaux et de la rampe. Peut-être ses murs gris cachent-ils quelque
+               chose, mais c’est à eux que la mémoire s’arrête, sur leur enduit craquelé, sur leurs
+               lézardes. Même ce dont le héros est en quête disparaît, devant l’obstination qu’il
+               met dans sa poursuite, ses trajets et ses mouvements, seuls rendus sensibles, seuls
+               vrais. Dans toute l’œuvre, les rapports de l’homme avec le monde, loin d’avoir un
+               caractère symbolique, sont constamment directs et immédiats.</p>
+            <div class="smallgap"></div>
+            <p>Il en est des significations profondes métaphysiques exactement comme des significations
+               politiques, psychologiques ou morales. Prendre celles qui sont déjà connues, pour
+               les exprimer, va contre l’exigence majeure de la littérature. Quant à celles qui,
+               plus tard, auront été apportées par l’œuvre romanesque au monde futur, le plus sage
+               (à la fois le plus honnête et le plus adroit) est de ne pas s’en soucier aujourd’hui.
+               On a pu juger depuis vingt ans le peu qui restait de l’univers kafkaien dans les œuvres
+               de ses prétendus descendants, lorsque ceux-ci ne faisaient que reproduire le contenu
+               métaphysique et oubliaient le réalisme du maître.</p>
+            <p>Reste donc cette signification immédiate des choses (descriptive, partielle, toujours
+               contestée), c’est-à-dire celle qui se place en deçà de l’histoire, de l’anecdote du
+               livre, comme la signification profonde (transcendante) se place au-delà. C’est sur
+               elle que portera désormais l’effort de recherche et de création. D’elle, en effet,
+               il ne peut être question de se débarrasser, sous peine de voir l’anecdote prendre
+               le dessus, et bientôt même la transcendance (la métaphysique aime le vide et s’y engouffre
+               comme la fumée dans un conduit de cheminée)&nbsp;; car, en deçà de la signification immédiate,
+               on trouve l’absurde, qui est théoriquement la signification nulle, mais qui en fait
+               mène aussitôt, par une récupération métaphysique bien connue, à une nouvelle transcendance&nbsp;;
+               et la fragmentation infinie du sens fonde ainsi une nouvelle totalité, tout aussi
+               dangereuse, tout aussi vaine. En deçà encore, il n’y a plus rien que le bruit des
+               mots.</p>
+            <div class="smallgap"></div>
+            <p>Mais les différents niveaux de signification du langage que nous venons de signaler
+               ont entre eux des interférences multiples. Et il est probable que le nouveau réalisme
+               détruira certaines de ces oppositions théoriques. La vie d’aujourd’hui, la science
+               d’aujourd’hui, réalisent le dépassement de beaucoup d’antinomies catégoriques établies
+               par le rationalisme des siècles passés. Il est normal que le roman, qui, comme tout
+               art, prétend devancer les systèmes de pensée et non les suivre, soit déjà en train
+               de fondre entre eux les deux termes d’autres couples de contraires&nbsp;: fond-forme, objectivité-subjectivité,
+               signification-absurdité, construction-destruction, mémoire-présent, imagination-réalité, etc.</p>
+            <p>On répète, de l’extrême droite à l’extrême gauche, que cet art nouveau est malsain,
+               décadent, inhumain et noir. Mais la bonne santé à laquelle ce jugement fait allusion
+               est celle des œillères et du formol, celle de la mort. On est toujours décadent par
+               rapport aux choses du passé&nbsp;: le béton armé par rapport à la pierre, le socialisme
+               par rapport à la monarchie paternaliste, <span class="ref">Proust</span> par rapport à <span class="ref">Balzac</span>. Et ce n’est guère être inhumain que de vouloir bâtir une nouvelle vie pour l’homme&nbsp;;
+               cette vie ne paraît noire que si&nbsp;–&nbsp;toujours en train de pleurer les anciennes couleurs&nbsp;–&nbsp;on
+               ne cherche pas à voir les nouvelles beautés qui l’éclairent. Ce que propose l’art
+               d’aujourd’hui au lecteur, au spectateur, c’est en tout cas une façon de vivre, dans
+               le monde présent, et de participer à la création permanente du monde de demain. Pour
+               y parvenir, le nouveau roman demande seulement au public d’avoir confiance encore
+               dans le pouvoir de la littérature, et il demande au romancier de n’avoir plus honte
+               d’en faire.</p>
+            <p>Une idée fort reçue concernant le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Nouveau Roman&nbsp;»</span>&nbsp;–&nbsp;et cela depuis que l’on a commencé à lui consacrer des articles&nbsp;–, c’est qu’il
+               s’agit là d’une <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;mode qui passe&nbsp;»</span>. Cette opinion, dès qu’on y réfléchit un peu, apparaît comme doublement saugrenue.
+               Même en assimilant telle ou telle écriture à une mode (et il y a toujours en effet
+               des suiveurs qui sentent le vent et copient des formes modernes sans en sentir la
+               nécessité, sans même en comprendre le fonctionnement, et bien entendu sans voir que
+               leur maniement demande au moins quelque rigueur), le Nouveau Roman serait, au pire, le mouvement
+               des modes, qui veut qu’elles se détruisent au fur et à mesure pour en engendrer continuellement
+               de nouvelles. Et, que les formes romanesques passent, c’est précisément ce que dit
+               le Nouveau Roman&nbsp;!</p>
+            <p>Il ne faut voir dans ce genre de propos&nbsp;–&nbsp;sur les modes qui passent, l’assagissement
+               des révoltés, le retour à la saine tradition et autres balivernes&nbsp;–&nbsp;que la bonne vieille
+               tentative de prouver, imperturbablement, désespérément, que <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;dans le fond rien ne change&nbsp;»</span> et qu’il n’y a <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;jamais rien de nouveau sous le soleil&nbsp;»</span>&nbsp;; alors qu’en vérité <span class="STDitalic">tout change sans cesse</span> et qu’il y a <span class="STDitalic">toujours du nouveau.</span> La critique académique voudrait même faire croire au public que les techniques nouvelles
+               vont simplement être absorbées par le roman <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;éternel&nbsp;»</span> et vont servir à perfectionner quelque détail du personnage balzacien, de l’intrigue
+               chronologique et de l’humanisme transcendant.</p>
+            <p>Il est possible que ce jour vienne en effet, et même assez vite. Mais dès que le Nouveau
+               Roman commencera à <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;servir à quelque chose&nbsp;»</span>, que ce soit à l’analyse psychologique, au roman catholique ou au réalisme socialiste,
+               ce sera le signal pour les inventeurs qu’un Nouveau Nouveau Roman demande à voir le
+               jour, dont on ne saurait pas encore à quoi il pourrait servir&nbsp;–&nbsp;sinon à la littérature.</p>
+         </article>
+         <section class="extract_section">
+            <p>Some text here.</p>
+            <div id="pr_02_01" class="extractHide">
+               <p><span class="STDsmall STDgray">[10] </span>[...] Ces gens-là j'ai essayé de les aimer, ils ont <span class="STDsmall STDgray">[11] </span>parfois un air qui trompe mais bien vite si tu leur parle de toi ils t'injurient,
+                  ton chagrin leur fait horreur.</p>
+               <p>On m'a piqué avec une longue aiguille, c'est la vérité. Cette aiguille ellle m'est
+                  restée vivante. Quand on commence une histoire le mieux est de dire je suis né, c'est
+                  le meilleur départ car les enfances sont plus nombreuses à mesure qu'on grandit, ,
+                  elles se multiplient et voilà déjà une cause de confusion. J'ai le cœur gros de commencements
+                  toujours râtés. Et le but aussi, je n'en ai point.</p>
+               <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
+            </div>
+            <div id="pr_02_ToDefine" class="extractHide">
+               <p></p>
+               <p><span class="STDsmall STDgray">[16] </span>[...] Je me demande souvent si les esprits brillants existeraient sans leur mémoire,
+                  je n'ai aucune mémoire, je voudrais pour n'être pas ridicule vivre dans un mon d'où
+                  elle serait exclue, on ne pourrait partler que des choses du jour, et on inventerait,
+                  on inventerait au fur et à mesure, c'est ça la vraie vie.</p>
+               <p>La naissance d'un objet, j'ai remarqué, n'a pas lieu aujourd'hui, il y a du mouvement
+                  tout autour qui l'empêche de montrer la tête et demain tu t'avises qu'il existe. Par
+                  conséquent la meilleure explication des origines serait de commencer par des bruits
+                  de bouches et de glisser progressivement vers des paroles articulées jusqu'au moment
+                  où l'auditeur sans se poser aucune question participe à ton histoire.</p>
+               <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
+            </div>
+            <p>
+               Some text here.</p>
+         </section>
+      </div>
+      <div class="ch_nav"><a class="preceding" href="punr_ch12.html">&lt;</a></div>
+      <footer><a href="https://www.univ-lille.fr/" target="blanck"><img src="img/logo_u_lille.png" alt="logo université de lille"></a></footer>
    </body>
 </html>

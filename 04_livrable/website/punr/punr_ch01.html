@@ -10,207 +10,217 @@
       <meta name="author" content="adrien mevel, mathieu marchal, florence de chalonge, alain robbe-grillet">
       <meta name="description" content="digital critical edition of pour un nouveau roman by alain robbe-grillet fist published in 1963 this word has been realised as student project">
       <meta name="keywords" content="critical, edition, digital, robbe-grillet, litterature, french, 1963, nouveau roman, alain robbe-grillet, pour un nouveau roman, xxe siecle, xx, franch theory"><script src="script.js"></script></head>
-   <body>
+   <body onload="initialise()">
       <header id="top">
-         <h1>Pour un nouveau roman</h1>
-         <nav class="nav_top">
-            <ul>
-               <li><a href="home.html">Accueil</a></li>
-               <li><a href=""></a></li>
-               <li><a href=""></a></li>
-               <li>
-                  <ol class="chapter_nav">
-                     <li><a href="punr_ch01.html">À quoi servent les théories1955&nbsp;et&nbsp;1963</a></li>
-                     <li><a href="punr_ch02.html">Une voie pour le roman futur1956</a></li>
-                     <li><a href="punr_ch03.html">Sur quelques notions périmées1957</a></li>
-                     <li><a href="punr_ch04.html">Nature, humanisme, tragédie1958</a></li>
-                     <li><a href="punr_ch05.html">Éléments d’une anthologie moderne</a></li>
-                     <li><a href="punr_ch06.html">Énigmes et transparence chez Raymond&nbsp;Roussel 1963</a></li>
-                     <li><a href="punr_ch07.html">La conscience malade de Zeno1954</a></li>
-                     <li><a href="punr_ch08.html">Joë&nbsp;Bousquet le rêveur1953</a></li>
-                     <li><a href="punr_ch09.html">Samuel&nbsp;Beckett, ou la présence sur la scène 1953&nbsp;et&nbsp;1957</a></li>
-                     <li><a href="punr_ch10.html">Un roman qui s’invente lui-même1954</a></li>
-                     <li><a href="punr_ch11.html">Nouveau roman, homme nouveau1961</a></li>
-                     <li><a href="punr_ch12.html">Temps et description dans le récit d’aujourd’hui1963</a></li>
-                     <li><a href="punr_ch13.html">Du réalisme à la réalité1955&nbsp;et&nbsp;1963</a></li>
-                  </ol>
-               </li>
-            </ul>
-         </nav>
-         <div class="legals"><a href="" target="blanck"><img src="img/GitHub-Mark-32px.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_cc.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_by.png"></a></div>
+         <h1>Pour un nouveau roman<br><span class="h1_subtitle">Édition critque et numérique</span></h1>
+         <div class="header_div">
+            <nav class="nav_top">
+               <ul>
+                  <li><a href="home.html">Accueil</a></li>
+                  <li><a href="presentation.html">Présentation de l'œuvre</a></li>
+                  <li style="width:200px; height:100px; padding-top:9px">Corpus
+                     					
+                     <ol class="chapter_nav">
+                        <li><a href="punr_ch01.html">À quoi servent les théories</a></li>
+                        <li><a href="punr_ch02.html">Une voie pour le roman futur</a></li>
+                        <li><a href="punr_ch03.html">Sur quelques notions périmées</a></li>
+                        <li><a href="punr_ch04.html">Nature, humanisme, tragédie</a></li>
+                        <li><a href="punr_ch05.html">Éléments d’une anthologie moderne</a></li>
+                        <li><a href="punr_ch06.html">Énigmes et transparence chez Raymond&nbsp;Roussel </a></li>
+                        <li><a href="punr_ch07.html">La conscience malade de Zeno</a></li>
+                        <li><a href="punr_ch08.html">Joë&nbsp;Bousquet le rêveur</a></li>
+                        <li><a href="punr_ch09.html">Samuel&nbsp;Beckett, ou la présence sur la scène </a></li>
+                        <li><a href="punr_ch10.html">Un roman qui s’invente lui-même</a></li>
+                        <li><a href="punr_ch11.html">Nouveau roman, homme nouveau</a></li>
+                        <li><a href="punr_ch12.html">Temps et description dans le récit d’aujourd’hui</a></li>
+                        <li><a href="punr_ch13.html">Du réalisme à la réalité</a></li>
+                     </ol>
+                  </li>
+                  <li><a href="database.html">Illsutration de la base de données</a></li>
+                  <li><a href="timeline.html">Chronologie</a></li>
+               </ul>
+            </nav>
+            <div class="legals"><a href="https://github.com/mevel-a/ednitl_m2_memoire" target="blanck" style="grid-column:1;"><img src="img/GitHub-Mark-32px.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:2;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_cc.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:3;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_by.png"></a><a href="files/punr.xml" download="" style="grid-column:3; grid-row:2;"><img src="img/logo_xml.png" alt="XML"></a></div>
+         </div>
       </header>
-      <div class="following"><a href="punr_ch02.html">&gt;</a></div>
-      <article>
-         <h3>À quoi servent les théories<br><span class="STDsmall">(1955&nbsp;et&nbsp;1963)</span></h3>
-         <p>Je ne suis pas un théoricien du roman. J’ai seulement, comme tous les romanciers sans
-            doute, aussi bien du passé que du présent, été amené à faire quelques réflexions critiques
-            sur les livres que j’avais écrits, sur ceux que je lisais, sur ceux encore que je
-            projetais d’écrire. La plupart du temps, ces réflexions étaient inspirées par certaines
-            réactions&nbsp;–&nbsp;qui me paraissent étonnantes ou déraisonnables&nbsp;–&nbsp;suscitées dans la presse
-            par mes propres livres.</p>
-         <p>Mes romans n’ont pas été accueillis, lors de leur parution, avec une chaleur unanime&nbsp;;
-            c’est le moins que l’on puisse dire. Du demi-silence réprobateur dans lequel tomba
-            le premier (<span class="STDitalic">Les Gommes</span>) au refus massif et violent que la grande presse opposa au second (<span class="STDitalic">Le Voyeur</span>), il n’y avait guère de progrès&nbsp;; sinon pour le tirage, qui s’accrut sensiblement.
-            Bien sûr, il y eut aussi quelques louanges, çà et là, mais qui parfois me déroutaient
-            encore davantage. Ce qui me surprenait le plus, dans les reproches comme dans les
-            éloges, c’était de rencontrer presque partout une référence implicite&nbsp;–&nbsp;ou même explicite&nbsp;–&nbsp;aux
-            grands romans du passé, qui toujours étaient posés comme le modèle sur quoi le jeune
-            écrivain devait garder les yeux fixés.</p>
-         <p>Dans les revues, je trouvais souvent plus de sérieux. Mais je ne réussissais pas à
-            me satisfaire d’être reconnu, goûté, étudié, par les seuls spécialistes qui m’avaient
-            encouragé dès le début&nbsp;; j’étais persuadé d’écrire pour le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;grand public&nbsp;»</span>, je souffrais d’être considéré comme un auteur <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;difficile&nbsp;»</span>. Mes étonnements, mes impatiences, étaient probablement d’autant plus vifs que j’ignorais
-            tout, par ma formation, des milieux littéraires et de leurs habitudes. Je publiais
-            donc, dans un journal politico-littéraire à grand tirage (<span class="STDitalic">L’Express</span>), une série de brefs articles où j’exposais quelques idées qui me semblaient tomber
-            sous le sens&nbsp;: disant par exemple que les formes romanesques doivent évoluer pour
-            rester vivantes, que les héros de <span class="ref">Kafka</span> n’ont que peu de rapport avec les personnages balzaciens, que le réalisme-socialiste
-            ou l’engagement sartrien sont difficilement conciliables avec l’exercice problématique
-            de la littérature, comme avec celui de n’importe quel art.</p>
-         <p>Le résultat de ces articles ne fut pas ce que j’attendais. Ils firent du bruit, mais
-            on les jugea, quasi-unanimement, à la fois simplistes et insensés. Poussé toujours
-            par le désir de convaincre, je repris alors en les développant les principaux points
-            en litige, dans un essai un peu plus long qui parut dans <span class="STDitalic">La Nouvelle Revue française.</span> L’effet ne fut hélas pas meilleur&nbsp;; et cette récidive&nbsp;–&nbsp;qualifiée de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;manifeste&nbsp;»</span>&nbsp;–&nbsp;me fit en outre sacrer théoricien d’une nouvelle <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;école&nbsp;»</span> romanesque, dont on n’attendait évidemment rien de bon, et dans laquelle on s’empressa
-            de ranger, un peu au hasard, tous les écrivains qu’on ne savait pas où mettre. <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;École du regard&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Roman objectif&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;École de Minuit&nbsp;»</span>, les appellations variaient&nbsp;; quant aux intentions que l’on me prêtait, elles étaient
-            en effet délirantes&nbsp;: chasser l’homme du monde, imposer ma propre écriture aux autres
-            romanciers, détruire toute ordonnance dans la composition des livres, etc.</p>
-         <p>Je tentais, dans de nouveaux articles, de mettre les choses au point, en éclairant
-            davantage les éléments qui avaient été les plus négligés par les critiques, ou les
-            plus distordus. Cette fois l’on m’accusa de me contredire, de me renier... Ainsi,
-            poussé tour à tour par mes recherches personnelles et par mes détracteurs, je continuais
-            irrégulièrement d’année en année à publier mes réflexions sur la littérature. C’est
-            cet ensemble qui se trouve aujourd’hui rassemblé dans le présent volume.</p>
-         <div class="smallgap"></div>
-         <p>Ces textes ne constituent en rien une théorie du roman&nbsp;; ils tentent seulement de
-            dégager quelques lignes d’évolution qui me paraissent capitales dans la littérature
-            contemporaine. Si j’emploie volontiers, dans bien des pages, le terme de <span class="STDitalic">Nouveau Roman</span>, ce n’est pas pour désigner une école, ni même un groupe défini et constitué d’écrivains
-            qui travailleraient dans le même sens&nbsp;; il n’y a là qu’une appellation commode englobant
-            tous ceux qui cherchent de nouvelles formes romanesques, capables d’exprimer (ou de
-            créer) de nouvelles relations entre l’homme et le monde, tous ceux qui sont décidés à inventer le roman, c’est-à-dire à inventer l’homme. Ils
-            savent, ceux-là, que la répétition systématique des formes du passé est non seulement
-            absurde et vaine, mais qu’elle peut même devenir nuisible&nbsp;: en nous fermant les yeux
-            sur notre situation réelle dans le monde présent, elle nous empêche en fin de compte
-            de construire le monde et l’homme de demain.</p>
-         <p>Louer un jeune écrivain d’aujourd’hui parce qu’il <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;écrit comme Stendhal&nbsp;»</span> représente une double malhonnêteté. D’une part cette prouesse n’aurait rien d’admirable,
-            comme on vient de le voir&nbsp;; d’autre part il s’agit là d’une chose parfaitement impossible&nbsp;:
-            pour écrire comme <span class="ref">Stendhal</span>, il faudrait d’abord écrire en 1830. Un écrivain qui réussirait un habile pastiche,
-            si habile même qu’il produirait des pages que <span class="ref">Stendhal</span> aurait pu signer à l’époque, n’aurait en aucune façon la valeur qui serait encore
-            aujourd’hui la sienne s’il avait rédigé ces mêmes pages sous <span class="ref">Charles&nbsp;X</span>. Ce n’était pas un paradoxe que développait à ce propos  <span class="ref">J.-L.&nbsp;Borgès</span> dans <span class="STDitalic">Fictions&nbsp;:</span> le romancier du <span class="STDsc">xx</span><span class="STDexposant">e</span> siècle qui recopierait mot pour mot le <span class="STDitalic">Don Quichotte</span> écrirait ainsi une œuvre totalement différente de celle de <span class="ref">Cervantès</span>.</p>
-         <p>D’ailleurs personne n’aurait l’idée de louer un musicien pour avoir, de nos jours,
-            fait du <span class="ref">Beethoven</span>, un peintre du <span class="ref">Delacroix</span>, ou un architecte d’avoir conçu une cathédrale gothique. Beaucoup de romanciers,
-            heureusement, savent qu’il en va de même en littérature, qu’elle aussi est vivante,
-            et que le roman depuis qu’il existe a toujours été nouveau. Comment l’écriture romanesque
-            aurait-elle pu demeurer immobile, figée, lorsque tout évoluait autour d’elle&nbsp;–&nbsp;assez vite même&nbsp;–&nbsp;au cours des
-            cent cinquante dernières années&nbsp;? <span class="ref">Flaubert</span> écrivait le nouveau roman de&nbsp;1860, <span class="ref">Proust</span> le nouveau roman de&nbsp;1910. L’écrivain doit accepter avec orgueil de porter sa propre
-            date, sachant qu’il n’y a pas de chef-d’œuvre dans l’éternité, mais seulement des
-            œuvres dans l’histoire&nbsp;; et qu’elles ne se survivent que dans la mesure où elles ont
-            laissé derrière elles le passé, et annoncé l’avenir.</p>
-         <div class="smallgap"></div>
-         <p>Cependant, il est une chose entre toutes que les critiques supportent mal, c’est que
-            les artistes s’expliquent. Je m’en rendis compte tout à fait lorsque, après avoir
-            exprimé ces évidences et quelques autres, je fis paraître mon troisième roman (<span class="STDitalic">La Jalousie</span>). Non seulement le livre déplut et fut considéré comme une sorte d’attentat saugrenu
-            contre les belles-lettres, mais on démontra de surcroît comment il était normal qu’il
-            fût à ce point exécrable, puisqu’il s’avouait le produit de la préméditation&nbsp;: son
-            auteur&nbsp;–&nbsp;ô scandale&nbsp;!&nbsp;–&nbsp;se permettait d’avoir des opinions sur son propre métier.</p>
-         <p>Ici encore, on constate que les mythes du <span class="STDsc">xix</span><span class="STDexposant">e</span> siècle conservent toute leur puissance&nbsp;: le grand romancier, le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;génie&nbsp;»</span>, est une sorte de monstre inconscient, irresponsable et fatal, voire légèrement imbécile,
-            de qui partent des <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;messages&nbsp;»</span> que seul le lecteur doit déchiffrer. Tout ce qui risque d’obscurcir le jugement de
-            l’écrivain est plus ou moins admis comme favorisant l’éclosion de son œuvre. L’alcoolisme,
-            le malheur, la drogue, la passion mystique, la folie, ont tellement encombré les biographies
-            plus ou moins romancées des artistes qu’il semble désormais tout naturel de voir là des nécessités essentielles de leur triste condition, de voir en
-            tout cas une antinomie entre création et conscience.</p>
-         <p>Loin d’être le résultat d’une étude honnête, cette attitude trahit une métaphysique.
-            Ces pages auxquelles l’écrivain a donné le jour comme à son insu, ces merveilles non
-            concertées, ces mots perdus, révèlent l’existence de quelque force supérieure qui
-            les a dictés. Le romancier, plus qu’un créateur au sens propre, ne serait alors qu’un
-            simple médiateur entre le commun des mortels et une puissance obscure, un au-delà
-            de l’humanité, un esprit éternel, un dieu...</p>
-         <p>Il suffit en réalité de lire le journal de <span class="ref">Kafka</span>, par exemple, ou la correspondance de <span class="ref">Flaubert</span>, pour se rendre compte aussitôt de la part primordiale prise, déjà dans les grandes
-            œuvres du passé, par la conscience créatrice, par la volonté, par la rigueur. Le travail
-            patient, la construction méthodique, l’architecture longuement méditée de chaque phrase
-            comme de l’ensemble du livre, cela a de tout temps joué son rôle. Après <span class="STDitalic">Les Faux-Monnayeurs</span>, après <span class="ref">Joyce</span>, après <span class="STDitalic">La Nausée</span>, il semble que l’on s’achemine de plus en plus vers une époque de la fiction où les
-            problèmes de l’écriture seront envisagés lucidement par le romancier, et où les soucis
-            critiques, loin de stériliser la création, pourront au contraire lui servir de moteur.</p>
-         <p>Il n’est pas question, nous l’avons vu, d’établir une théorie, un moule préalable
-            pour y couler les livres futurs. Chaque romancier, chaque roman, doit inventer sa
-            propre forme. Aucune recette ne peut remplacer cette réflexion continuelle. Le livre
-            crée pour lui seul ses propres règles. Encore le mouvement de l’écriture doit-il souvent conduire à les mettre en péril, en échec peut-être, et
-            à les faire éclater. Loin de respecter des formes immuables, chaque nouveau livre
-            tend à constituer ses lois de fonctionnement en même temps qu’à produire leur destruction.
-            Une fois l’œuvre achevée, la réflexion critique de l’écrivain lui servira encore à
-            prendre ses distances par rapport à elle, alimentant aussitôt de nouvelles recherches,
-            un nouveau départ.</p>
-         <p>Aussi n’est-il pas très intéressant de chercher à mettre en contradiction les vues
-            théoriques et les œuvres. La seule relation qui puisse exister entre elles est justement
-            de caractère dialectique&nbsp;: un double jeu d’accords et d’oppositions. Il n’est donc
-            pas étonnant, non plus, que l’on constate des évolutions d’un essai à l’autre, parmi
-            ceux que l’on va lire ici. Ce ne sont pas, bien entendu, les grossiers reniements
-            dénoncés à tort par des lecteurs un peu trop inattentifs&nbsp;–&nbsp;ou malveillants&nbsp;–, mais
-            des reprises sur un plan différent, des réexamens, la seconde face d’une même idée,
-            ou bien un complément, lorsqu’il ne s’agit pas d’une pure et simple mise en garde
-            contre une erreur d’interprétation.</p>
-         <div class="smallgap"></div>
-         <p>En outre, il est évident que les idées restent brèves, par rapport aux œuvres, et
-            que rien ne peut remplacer celles-ci. Un roman qui ne serait que l’exemple de grammaire
-            illustrant une règle&nbsp;–&nbsp;même accompagnée de son exception&nbsp;–&nbsp;serait naturellement inutile&nbsp;:
-            l’énoncé de la règle suffirait. Tout en réclamant pour l’écrivain le droit à l’intelligence
-            de sa création, et en insistant sur l’intérêt que présente pour lui la conscience de sa propre recherche, nous savons que c’est surtout au niveau de l’écriture
-            que cette recherche s’opère, et que tout n’est pas clair à l’instant de la décision.
-            Ainsi, après avoir indisposé les critiques en parlant de la littérature dont il rêve,
-            le romancier se sent soudain démuni lorsque ces mêmes critiques lui demandent&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Expliquez-nous donc pourquoi vous avez écrit ce livre, ce qu’il signifie, ce que
-               vous vouliez faire, dans quelle intention vous avez employé ce mot, construit cette
-               phrase de telle manière&nbsp;?&nbsp;»</span></p>
-         <p>Devant de pareilles questions, on dirait que son <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;intelligence&nbsp;»</span> ne lui est plus d’aucun secours. Ce qu’il a voulu faire, c’est seulement ce livre
-            lui-même. Cela ne veut pas dire qu’il en soit satisfait toujours&nbsp;; mais l’œuvre demeure,
-            dans tous les cas, la meilleure et la seule expression possible de son projet. S’il
-            avait eu la faculté d’en fournir une définition plus simple, ou de ramener ses deux
-            ou trois cents pages à quelque message en langage clair, d’en expliquer mot à mot
-            le fonctionnement, bref d’en donner la raison, il n’aurait pas éprouvé le besoin d’écrire
-            le livre. Car la fonction de l’art n’est jamais d’illustrer une vérité&nbsp;–&nbsp;ou même une
-            interrogation&nbsp;–&nbsp;connue à l’avance, mais de mettre au monde des interrogations (et
-            aussi peut-être, à terme, des réponses) qui ne se connaissent pas encore elles-mêmes.</p>
-         <p>Toute la conscience critique du romancier ne peut lui être utile qu’au niveau des
-            choix, non à celui de leur justification. Il sent la nécessité d’employer telle forme,
-            de refuser tel adjectif, de construire ce paragraphe de telle façon. Il met tout son
-            soin à la lente recherche du mot exact et de son juste emplacement. Mais de cette nécessité il ne peut produire aucune preuve (sinon, parfois, après coup).
-            Il supplie qu’on le croie, qu’on lui fasse confiance. Et lorsqu’on lui demande pourquoi
-            il a écrit son livre, il n’a qu’une réponse&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;C’est pour essayer de savoir pourquoi j’avais envie de l’écrire.&nbsp;»</span></p>
-         <div class="smallgap"></div>
-         <p>Quant à dire où va le roman, personne évidemment ne peut le faire avec certitude.
-            Il est d’ailleurs probable que différentes voies continueront d’exister pour lui parallèlement.
-            Pourtant il semble que l’une d’entre elles se dessine déjà avec plus de netteté que
-            les autres. De <span class="ref">Flaubert</span> à <span class="ref">Kafka</span>, une filiation s’impose à l’esprit, qui appelle un devenir. Cette passion de décrire,
-            qui tous deux les anime, c’est bien elle que l’on retrouve dans le nouveau roman d’aujourd’hui.
-            Au-delà du naturalisme de l’un et de l’onirisme métaphysique de l’autre, se dessinent
-            les premiers éléments d’une écriture réaliste d’un genre inconnu, qui est en train
-            maintenant de voir le jour. C’est ce nouveau réalisme dont le présent recueil tente
-            de préciser quelques contours.</p>
-      </article>
-      <section class="extract_section">
-         <p>Some text here.</p>
-         <div id="pr_02_01" class="extractHide">
-            <p><span class="STDsmall STDgray">[10] </span>[...] Ces gens-là j'ai essayé de les aimer, ils ont <span class="STDsmall STDgray">[11] </span>parfois un air qui trompe mais bien vite si tu leur parle de toi ils t'injurient,
-               ton chagrin leur fait horreur.</p>
-            <p>On m'a piqué avec une longue aiguille, c'est la vérité. Cette aiguille ellle m'est
-               restée vivante. Quand on commence une histoire le mieux est de dire je suis né, c'est
-               le meilleur départ car les enfances sont plus nombreuses à mesure qu'on grandit, ,
-               elles se multiplient et voilà déjà une cause de confusion. J'ai le cœur gros de commencements
-               toujours râtés. Et le but aussi, je n'en ai point.</p>
-            <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
-         </div>
-         <div id="pr_02_ToDefine" class="extractHide">
-            <p></p>
-            <p><span class="STDsmall STDgray">[16] </span>[...] Je me demande souvent si les esprits brillants existeraient sans leur mémoire,
-               je n'ai aucune mémoire, je voudrais pour n'être pas ridicule vivre dans un mon d'où
-               elle serait exclue, on ne pourrait partler que des choses du jour, et on inventerait,
-               on inventerait au fur et à mesure, c'est ça la vraie vie.</p>
-            <p>La naissance d'un objet, j'ai remarqué, n'a pas lieu aujourd'hui, il y a du mouvement
-               tout autour qui l'empêche de montrer la tête et demain tu t'avises qu'il existe. Par
-               conséquent la meilleure explication des origines serait de commencer par des bruits
-               de bouches et de glisser progressivement vers des paroles articulées jusqu'au moment
-               où l'auditeur sans se poser aucune question participe à ton histoire.</p>
-            <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
-         </div>
-         <p>
-            Some text here.</p>
-      </section>
-      <footer><a href="https://www.univ-lille.fr/" target="blanck"><img src="img/logo_u_lille.png" alt="logo université de lille">"</a></footer>
+      <div class="ch_nav"><a class="following" href="punr_ch02.html">&gt;</a></div>
+      <nav class="articlenav">
+         <ol id="articlenav"></ol>
+      </nav>
+      <div class="corpus">
+         <article>
+            <h3>À quoi servent les théories<br><span class="STDsmall">(1955&nbsp;et&nbsp;1963)</span></h3>
+            <p>Je ne suis pas un théoricien du roman. J’ai seulement, comme tous les romanciers sans
+               doute, aussi bien du passé que du présent, été amené à faire quelques réflexions critiques
+               sur les livres que j’avais écrits, sur ceux que je lisais, sur ceux encore que je
+               projetais d’écrire. La plupart du temps, ces réflexions étaient inspirées par certaines
+               réactions&nbsp;–&nbsp;qui me paraissent étonnantes ou déraisonnables&nbsp;–&nbsp;suscitées dans la presse
+               par mes propres livres.</p>
+            <p>Mes romans n’ont pas été accueillis, lors de leur parution, avec une chaleur unanime&nbsp;;
+               c’est le moins que l’on puisse dire. Du demi-silence réprobateur dans lequel tomba
+               le premier (<span class="STDitalic">Les Gommes</span>) au refus massif et violent que la grande presse opposa au second (<span class="STDitalic">Le Voyeur</span>), il n’y avait guère de progrès&nbsp;; sinon pour le tirage, qui s’accrut sensiblement.
+               Bien sûr, il y eut aussi quelques louanges, çà et là, mais qui parfois me déroutaient
+               encore davantage. Ce qui me surprenait le plus, dans les reproches comme dans les
+               éloges, c’était de rencontrer presque partout une référence implicite&nbsp;–&nbsp;ou même explicite&nbsp;–&nbsp;aux
+               grands romans du passé, qui toujours étaient posés comme le modèle sur quoi le jeune
+               écrivain devait garder les yeux fixés.</p>
+            <p>Dans les revues, je trouvais souvent plus de sérieux. Mais je ne réussissais pas à
+               me satisfaire d’être reconnu, goûté, étudié, par les seuls spécialistes qui m’avaient
+               encouragé dès le début&nbsp;; j’étais persuadé d’écrire pour le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;grand public&nbsp;»</span>, je souffrais d’être considéré comme un auteur <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;difficile&nbsp;»</span>. Mes étonnements, mes impatiences, étaient probablement d’autant plus vifs que j’ignorais
+               tout, par ma formation, des milieux littéraires et de leurs habitudes. Je publiais
+               donc, dans un journal politico-littéraire à grand tirage (<span class="STDitalic">L’Express</span>), une série de brefs articles où j’exposais quelques idées qui me semblaient tomber
+               sous le sens&nbsp;: disant par exemple que les formes romanesques doivent évoluer pour
+               rester vivantes, que les héros de <span class="ref">Kafka</span> n’ont que peu de rapport avec les personnages balzaciens, que le réalisme-socialiste
+               ou l’engagement sartrien sont difficilement conciliables avec l’exercice problématique
+               de la littérature, comme avec celui de n’importe quel art.</p>
+            <p>Le résultat de ces articles ne fut pas ce que j’attendais. Ils firent du bruit, mais
+               on les jugea, quasi-unanimement, à la fois simplistes et insensés. Poussé toujours
+               par le désir de convaincre, je repris alors en les développant les principaux points
+               en litige, dans un essai un peu plus long qui parut dans <span class="STDitalic">La Nouvelle Revue française.</span> L’effet ne fut hélas pas meilleur&nbsp;; et cette récidive&nbsp;–&nbsp;qualifiée de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;manifeste&nbsp;»</span>&nbsp;–&nbsp;me fit en outre sacrer théoricien d’une nouvelle <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;école&nbsp;»</span> romanesque, dont on n’attendait évidemment rien de bon, et dans laquelle on s’empressa
+               de ranger, un peu au hasard, tous les écrivains qu’on ne savait pas où mettre. <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;École du regard&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Roman objectif&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;École de Minuit&nbsp;»</span>, les appellations variaient&nbsp;; quant aux intentions que l’on me prêtait, elles étaient
+               en effet délirantes&nbsp;: chasser l’homme du monde, imposer ma propre écriture aux autres
+               romanciers, détruire toute ordonnance dans la composition des livres, etc.</p>
+            <p>Je tentais, dans de nouveaux articles, de mettre les choses au point, en éclairant
+               davantage les éléments qui avaient été les plus négligés par les critiques, ou les
+               plus distordus. Cette fois l’on m’accusa de me contredire, de me renier... Ainsi,
+               poussé tour à tour par mes recherches personnelles et par mes détracteurs, je continuais
+               irrégulièrement d’année en année à publier mes réflexions sur la littérature. C’est
+               cet ensemble qui se trouve aujourd’hui rassemblé dans le présent volume.</p>
+            <div class="smallgap"></div>
+            <p>Ces textes ne constituent en rien une théorie du roman&nbsp;; ils tentent seulement de
+               dégager quelques lignes d’évolution qui me paraissent capitales dans la littérature
+               contemporaine. Si j’emploie volontiers, dans bien des pages, le terme de <span class="STDitalic">Nouveau Roman</span>, ce n’est pas pour désigner une école, ni même un groupe défini et constitué d’écrivains
+               qui travailleraient dans le même sens&nbsp;; il n’y a là qu’une appellation commode englobant
+               tous ceux qui cherchent de nouvelles formes romanesques, capables d’exprimer (ou de
+               créer) de nouvelles relations entre l’homme et le monde, tous ceux qui sont décidés à inventer le roman, c’est-à-dire à inventer l’homme. Ils
+               savent, ceux-là, que la répétition systématique des formes du passé est non seulement
+               absurde et vaine, mais qu’elle peut même devenir nuisible&nbsp;: en nous fermant les yeux
+               sur notre situation réelle dans le monde présent, elle nous empêche en fin de compte
+               de construire le monde et l’homme de demain.</p>
+            <p>Louer un jeune écrivain d’aujourd’hui parce qu’il <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;écrit comme Stendhal&nbsp;»</span> représente une double malhonnêteté. D’une part cette prouesse n’aurait rien d’admirable,
+               comme on vient de le voir&nbsp;; d’autre part il s’agit là d’une chose parfaitement impossible&nbsp;:
+               pour écrire comme <span class="ref">Stendhal</span>, il faudrait d’abord écrire en 1830. Un écrivain qui réussirait un habile pastiche,
+               si habile même qu’il produirait des pages que <span class="ref">Stendhal</span> aurait pu signer à l’époque, n’aurait en aucune façon la valeur qui serait encore
+               aujourd’hui la sienne s’il avait rédigé ces mêmes pages sous <span class="ref">Charles&nbsp;X</span>. Ce n’était pas un paradoxe que développait à ce propos  <span class="ref">J.-L.&nbsp;Borgès</span> dans <span class="STDitalic">Fictions&nbsp;:</span> le romancier du <span class="STDsc">xx</span><span class="STDexposant">e</span> siècle qui recopierait mot pour mot le <span class="STDitalic">Don Quichotte</span> écrirait ainsi une œuvre totalement différente de celle de <span class="ref">Cervantès</span>.</p>
+            <p>D’ailleurs personne n’aurait l’idée de louer un musicien pour avoir, de nos jours,
+               fait du <span class="ref">Beethoven</span>, un peintre du <span class="ref">Delacroix</span>, ou un architecte d’avoir conçu une cathédrale gothique. Beaucoup de romanciers,
+               heureusement, savent qu’il en va de même en littérature, qu’elle aussi est vivante,
+               et que le roman depuis qu’il existe a toujours été nouveau. Comment l’écriture romanesque
+               aurait-elle pu demeurer immobile, figée, lorsque tout évoluait autour d’elle&nbsp;–&nbsp;assez vite même&nbsp;–&nbsp;au cours des
+               cent cinquante dernières années&nbsp;? <span class="ref">Flaubert</span> écrivait le nouveau roman de&nbsp;1860, <span class="ref">Proust</span> le nouveau roman de&nbsp;1910. L’écrivain doit accepter avec orgueil de porter sa propre
+               date, sachant qu’il n’y a pas de chef-d’œuvre dans l’éternité, mais seulement des
+               œuvres dans l’histoire&nbsp;; et qu’elles ne se survivent que dans la mesure où elles ont
+               laissé derrière elles le passé, et annoncé l’avenir.</p>
+            <div class="smallgap"></div>
+            <p>Cependant, il est une chose entre toutes que les critiques supportent mal, c’est que
+               les artistes s’expliquent. Je m’en rendis compte tout à fait lorsque, après avoir
+               exprimé ces évidences et quelques autres, je fis paraître mon troisième roman (<span class="STDitalic">La Jalousie</span>). Non seulement le livre déplut et fut considéré comme une sorte d’attentat saugrenu
+               contre les belles-lettres, mais on démontra de surcroît comment il était normal qu’il
+               fût à ce point exécrable, puisqu’il s’avouait le produit de la préméditation&nbsp;: son
+               auteur&nbsp;–&nbsp;ô scandale&nbsp;!&nbsp;–&nbsp;se permettait d’avoir des opinions sur son propre métier.</p>
+            <p>Ici encore, on constate que les mythes du <span class="STDsc">xix</span><span class="STDexposant">e</span> siècle conservent toute leur puissance&nbsp;: le grand romancier, le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;génie&nbsp;»</span>, est une sorte de monstre inconscient, irresponsable et fatal, voire légèrement imbécile,
+               de qui partent des <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;messages&nbsp;»</span> que seul le lecteur doit déchiffrer. Tout ce qui risque d’obscurcir le jugement de
+               l’écrivain est plus ou moins admis comme favorisant l’éclosion de son œuvre. L’alcoolisme,
+               le malheur, la drogue, la passion mystique, la folie, ont tellement encombré les biographies
+               plus ou moins romancées des artistes qu’il semble désormais tout naturel de voir là des nécessités essentielles de leur triste condition, de voir en
+               tout cas une antinomie entre création et conscience.</p>
+            <p>Loin d’être le résultat d’une étude honnête, cette attitude trahit une métaphysique.
+               Ces pages auxquelles l’écrivain a donné le jour comme à son insu, ces merveilles non
+               concertées, ces mots perdus, révèlent l’existence de quelque force supérieure qui
+               les a dictés. Le romancier, plus qu’un créateur au sens propre, ne serait alors qu’un
+               simple médiateur entre le commun des mortels et une puissance obscure, un au-delà
+               de l’humanité, un esprit éternel, un dieu...</p>
+            <p>Il suffit en réalité de lire le journal de <span class="ref">Kafka</span>, par exemple, ou la correspondance de <span class="ref">Flaubert</span>, pour se rendre compte aussitôt de la part primordiale prise, déjà dans les grandes
+               œuvres du passé, par la conscience créatrice, par la volonté, par la rigueur. Le travail
+               patient, la construction méthodique, l’architecture longuement méditée de chaque phrase
+               comme de l’ensemble du livre, cela a de tout temps joué son rôle. Après <span class="STDitalic">Les Faux-Monnayeurs</span>, après <span class="ref">Joyce</span>, après <span class="STDitalic">La Nausée</span>, il semble que l’on s’achemine de plus en plus vers une époque de la fiction où les
+               problèmes de l’écriture seront envisagés lucidement par le romancier, et où les soucis
+               critiques, loin de stériliser la création, pourront au contraire lui servir de moteur.</p>
+            <p>Il n’est pas question, nous l’avons vu, d’établir une théorie, un moule préalable
+               pour y couler les livres futurs. Chaque romancier, chaque roman, doit inventer sa
+               propre forme. Aucune recette ne peut remplacer cette réflexion continuelle. Le livre
+               crée pour lui seul ses propres règles. Encore le mouvement de l’écriture doit-il souvent conduire à les mettre en péril, en échec peut-être, et
+               à les faire éclater. Loin de respecter des formes immuables, chaque nouveau livre
+               tend à constituer ses lois de fonctionnement en même temps qu’à produire leur destruction.
+               Une fois l’œuvre achevée, la réflexion critique de l’écrivain lui servira encore à
+               prendre ses distances par rapport à elle, alimentant aussitôt de nouvelles recherches,
+               un nouveau départ.</p>
+            <p>Aussi n’est-il pas très intéressant de chercher à mettre en contradiction les vues
+               théoriques et les œuvres. La seule relation qui puisse exister entre elles est justement
+               de caractère dialectique&nbsp;: un double jeu d’accords et d’oppositions. Il n’est donc
+               pas étonnant, non plus, que l’on constate des évolutions d’un essai à l’autre, parmi
+               ceux que l’on va lire ici. Ce ne sont pas, bien entendu, les grossiers reniements
+               dénoncés à tort par des lecteurs un peu trop inattentifs&nbsp;–&nbsp;ou malveillants&nbsp;–, mais
+               des reprises sur un plan différent, des réexamens, la seconde face d’une même idée,
+               ou bien un complément, lorsqu’il ne s’agit pas d’une pure et simple mise en garde
+               contre une erreur d’interprétation.</p>
+            <div class="smallgap"></div>
+            <p>En outre, il est évident que les idées restent brèves, par rapport aux œuvres, et
+               que rien ne peut remplacer celles-ci. Un roman qui ne serait que l’exemple de grammaire
+               illustrant une règle&nbsp;–&nbsp;même accompagnée de son exception&nbsp;–&nbsp;serait naturellement inutile&nbsp;:
+               l’énoncé de la règle suffirait. Tout en réclamant pour l’écrivain le droit à l’intelligence
+               de sa création, et en insistant sur l’intérêt que présente pour lui la conscience de sa propre recherche, nous savons que c’est surtout au niveau de l’écriture
+               que cette recherche s’opère, et que tout n’est pas clair à l’instant de la décision.
+               Ainsi, après avoir indisposé les critiques en parlant de la littérature dont il rêve,
+               le romancier se sent soudain démuni lorsque ces mêmes critiques lui demandent&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Expliquez-nous donc pourquoi vous avez écrit ce livre, ce qu’il signifie, ce que
+                  vous vouliez faire, dans quelle intention vous avez employé ce mot, construit cette
+                  phrase de telle manière&nbsp;?&nbsp;»</span></p>
+            <p>Devant de pareilles questions, on dirait que son <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;intelligence&nbsp;»</span> ne lui est plus d’aucun secours. Ce qu’il a voulu faire, c’est seulement ce livre
+               lui-même. Cela ne veut pas dire qu’il en soit satisfait toujours&nbsp;; mais l’œuvre demeure,
+               dans tous les cas, la meilleure et la seule expression possible de son projet. S’il
+               avait eu la faculté d’en fournir une définition plus simple, ou de ramener ses deux
+               ou trois cents pages à quelque message en langage clair, d’en expliquer mot à mot
+               le fonctionnement, bref d’en donner la raison, il n’aurait pas éprouvé le besoin d’écrire
+               le livre. Car la fonction de l’art n’est jamais d’illustrer une vérité&nbsp;–&nbsp;ou même une
+               interrogation&nbsp;–&nbsp;connue à l’avance, mais de mettre au monde des interrogations (et
+               aussi peut-être, à terme, des réponses) qui ne se connaissent pas encore elles-mêmes.</p>
+            <p>Toute la conscience critique du romancier ne peut lui être utile qu’au niveau des
+               choix, non à celui de leur justification. Il sent la nécessité d’employer telle forme,
+               de refuser tel adjectif, de construire ce paragraphe de telle façon. Il met tout son
+               soin à la lente recherche du mot exact et de son juste emplacement. Mais de cette nécessité il ne peut produire aucune preuve (sinon, parfois, après coup).
+               Il supplie qu’on le croie, qu’on lui fasse confiance. Et lorsqu’on lui demande pourquoi
+               il a écrit son livre, il n’a qu’une réponse&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;C’est pour essayer de savoir pourquoi j’avais envie de l’écrire.&nbsp;»</span></p>
+            <div class="smallgap"></div>
+            <p>Quant à dire où va le roman, personne évidemment ne peut le faire avec certitude.
+               Il est d’ailleurs probable que différentes voies continueront d’exister pour lui parallèlement.
+               Pourtant il semble que l’une d’entre elles se dessine déjà avec plus de netteté que
+               les autres. De <span class="ref">Flaubert</span> à <span class="ref">Kafka</span>, une filiation s’impose à l’esprit, qui appelle un devenir. Cette passion de décrire,
+               qui tous deux les anime, c’est bien elle que l’on retrouve dans le nouveau roman d’aujourd’hui.
+               Au-delà du naturalisme de l’un et de l’onirisme métaphysique de l’autre, se dessinent
+               les premiers éléments d’une écriture réaliste d’un genre inconnu, qui est en train
+               maintenant de voir le jour. C’est ce nouveau réalisme dont le présent recueil tente
+               de préciser quelques contours.</p>
+         </article>
+         <section class="extract_section">
+            <p>Some text here.</p>
+            <div id="pr_02_01" class="extractHide">
+               <p><span class="STDsmall STDgray">[10] </span>[...] Ces gens-là j'ai essayé de les aimer, ils ont <span class="STDsmall STDgray">[11] </span>parfois un air qui trompe mais bien vite si tu leur parle de toi ils t'injurient,
+                  ton chagrin leur fait horreur.</p>
+               <p>On m'a piqué avec une longue aiguille, c'est la vérité. Cette aiguille ellle m'est
+                  restée vivante. Quand on commence une histoire le mieux est de dire je suis né, c'est
+                  le meilleur départ car les enfances sont plus nombreuses à mesure qu'on grandit, ,
+                  elles se multiplient et voilà déjà une cause de confusion. J'ai le cœur gros de commencements
+                  toujours râtés. Et le but aussi, je n'en ai point.</p>
+               <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
+            </div>
+            <div id="pr_02_ToDefine" class="extractHide">
+               <p></p>
+               <p><span class="STDsmall STDgray">[16] </span>[...] Je me demande souvent si les esprits brillants existeraient sans leur mémoire,
+                  je n'ai aucune mémoire, je voudrais pour n'être pas ridicule vivre dans un mon d'où
+                  elle serait exclue, on ne pourrait partler que des choses du jour, et on inventerait,
+                  on inventerait au fur et à mesure, c'est ça la vraie vie.</p>
+               <p>La naissance d'un objet, j'ai remarqué, n'a pas lieu aujourd'hui, il y a du mouvement
+                  tout autour qui l'empêche de montrer la tête et demain tu t'avises qu'il existe. Par
+                  conséquent la meilleure explication des origines serait de commencer par des bruits
+                  de bouches et de glisser progressivement vers des paroles articulées jusqu'au moment
+                  où l'auditeur sans se poser aucune question participe à ton histoire.</p>
+               <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
+            </div>
+            <p>
+               Some text here.</p>
+         </section>
+      </div>
+      <div class="ch_nav"><a class="following" href="punr_ch02.html">&gt;</a></div>
+      <footer><a href="https://www.univ-lille.fr/" target="blanck"><img src="img/logo_u_lille.png" alt="logo université de lille"></a></footer>
    </body>
 </html>

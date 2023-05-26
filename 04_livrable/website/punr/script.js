@@ -1,3 +1,12 @@
+function initialise{
+	autonavh3();
+	autonavh4();
+	/*gère la création de h4*/
+	autonavA();
+	/*gère la création d'un menu en fonction de l'argumentaire d'ARG*/
+}
+
+
 function autonavh3(){
 	var h3=document.getElementsByTagName('h3');
 	var nav=document.getElementById('articlenav');

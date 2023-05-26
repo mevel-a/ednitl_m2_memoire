@@ -10,313 +10,322 @@
       <meta name="author" content="adrien mevel, mathieu marchal, florence de chalonge, alain robbe-grillet">
       <meta name="description" content="digital critical edition of pour un nouveau roman by alain robbe-grillet fist published in 1963 this word has been realised as student project">
       <meta name="keywords" content="critical, edition, digital, robbe-grillet, litterature, french, 1963, nouveau roman, alain robbe-grillet, pour un nouveau roman, xxe siecle, xx, franch theory"><script src="script.js"></script></head>
-   <body>
+   <body onload="initialise()">
       <header id="top">
-         <h1>Pour un nouveau roman</h1>
-         <nav class="nav_top">
-            <ul>
-               <li><a href="home.html">Accueil</a></li>
-               <li><a href=""></a></li>
-               <li><a href=""></a></li>
-               <li>
-                  <ol class="chapter_nav">
-                     <li><a href="punr_ch01.html">À quoi servent les théories1955&nbsp;et&nbsp;1963</a></li>
-                     <li><a href="punr_ch02.html">Une voie pour le roman futur1956</a></li>
-                     <li><a href="punr_ch03.html">Sur quelques notions périmées1957</a></li>
-                     <li><a href="punr_ch04.html">Nature, humanisme, tragédie1958</a></li>
-                     <li><a href="punr_ch05.html">Éléments d’une anthologie moderne</a></li>
-                     <li><a href="punr_ch06.html">Énigmes et transparence chez Raymond&nbsp;Roussel 1963</a></li>
-                     <li><a href="punr_ch07.html">La conscience malade de Zeno1954</a></li>
-                     <li><a href="punr_ch08.html">Joë&nbsp;Bousquet le rêveur1953</a></li>
-                     <li><a href="punr_ch09.html">Samuel&nbsp;Beckett, ou la présence sur la scène 1953&nbsp;et&nbsp;1957</a></li>
-                     <li><a href="punr_ch10.html">Un roman qui s’invente lui-même1954</a></li>
-                     <li><a href="punr_ch11.html">Nouveau roman, homme nouveau1961</a></li>
-                     <li><a href="punr_ch12.html">Temps et description dans le récit d’aujourd’hui1963</a></li>
-                     <li><a href="punr_ch13.html">Du réalisme à la réalité1955&nbsp;et&nbsp;1963</a></li>
-                  </ol>
-               </li>
-            </ul>
-         </nav>
-         <div class="legals"><a href="" target="blanck"><img src="img/GitHub-Mark-32px.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_cc.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_by.png"></a></div>
+         <h1>Pour un nouveau roman<br><span class="h1_subtitle">Édition critque et numérique</span></h1>
+         <div class="header_div">
+            <nav class="nav_top">
+               <ul>
+                  <li><a href="home.html">Accueil</a></li>
+                  <li><a href="presentation.html">Présentation de l'œuvre</a></li>
+                  <li style="width:200px; height:100px; padding-top:9px">Corpus
+                     					
+                     <ol class="chapter_nav">
+                        <li><a href="punr_ch01.html">À quoi servent les théories</a></li>
+                        <li><a href="punr_ch02.html">Une voie pour le roman futur</a></li>
+                        <li><a href="punr_ch03.html">Sur quelques notions périmées</a></li>
+                        <li><a href="punr_ch04.html">Nature, humanisme, tragédie</a></li>
+                        <li><a href="punr_ch05.html">Éléments d’une anthologie moderne</a></li>
+                        <li><a href="punr_ch06.html">Énigmes et transparence chez Raymond&nbsp;Roussel </a></li>
+                        <li><a href="punr_ch07.html">La conscience malade de Zeno</a></li>
+                        <li><a href="punr_ch08.html">Joë&nbsp;Bousquet le rêveur</a></li>
+                        <li><a href="punr_ch09.html">Samuel&nbsp;Beckett, ou la présence sur la scène </a></li>
+                        <li><a href="punr_ch10.html">Un roman qui s’invente lui-même</a></li>
+                        <li><a href="punr_ch11.html">Nouveau roman, homme nouveau</a></li>
+                        <li><a href="punr_ch12.html">Temps et description dans le récit d’aujourd’hui</a></li>
+                        <li><a href="punr_ch13.html">Du réalisme à la réalité</a></li>
+                     </ol>
+                  </li>
+                  <li><a href="database.html">Illsutration de la base de données</a></li>
+                  <li><a href="timeline.html">Chronologie</a></li>
+               </ul>
+            </nav>
+            <div class="legals"><a href="https://github.com/mevel-a/ednitl_m2_memoire" target="blanck" style="grid-column:1;"><img src="img/GitHub-Mark-32px.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:2;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_cc.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:3;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_by.png"></a><a href="files/punr.xml" download="" style="grid-column:3; grid-row:2;"><img src="img/logo_xml.png" alt="XML"></a></div>
+         </div>
       </header>
-      <div class="preceding"><a href="punr_ch08.html">&lt;</a></div>
-      <div class="following"><a href="punr_ch10.html">&gt;</a></div>
-      <article>
-         <h4>Samuel&nbsp;Beckett, ou la présence sur la scène <br><span class="STDsmall">(1953&nbsp;et&nbsp;1957)</span></h4>
-         <p>La condition de l’homme, dit  <span class="ref">Heidegger</span>, c’est d’être là. Probablement est-ce le théâtre, plus que tout autre mode de représentation
-            du réel, qui reproduit le plus naturellement cette situation. Le personnage de théâtre
-            <span class="STDitalic">est en scène,</span> c’est sa première qualité&nbsp;: il est <span class="STDitalic">là.</span></p>
-         <p>La rencontre de <span class="ref">Samuel&nbsp;Beckett</span> avec cette exigence présentait, a priori, un exceptionnel intérêt&nbsp;: on allait enfin
-            voir l’homme de <span class="ref">Beckett</span>, on allait voir <span class="STDitalic">l’Homme.</span> Car le romancier, à force de s’exténuer dans sa recherche, ne parvenait qu’à réduire
-            de plus en plus, à chaque page, nos possibilités de l’appréhender.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">Murphy</span>, <span class="quote" onclick="displayExtract('toDefine')">Molloy</span>, <span class="quote" onclick="displayExtract('toDefine')">Malone</span>, <span class="quote" onclick="displayExtract('toDefine')">Mahood</span>, <span class="quote" onclick="displayExtract('toDefine')">Worm</span>, le héros des récits de <span class="ref">Beckett</span> se dégrade de livre en livre, et de plus en plus vite. Infirme, mais capable encore
-            de se déplacer sur une bicyclette, il perd rapidement l’usage de ses membres, l’un
-            après l’autre&nbsp;; ne pouvant même plus se traîner, il se voit ensuite enfermé dans une
-            chambre, où ses sens l’abandonnent peu à peu. La chambre en se rétrécissant est bientôt réduite à une simple jarre où un tronc pourrissant, et évidemment
-            muet, achève de se désagréger. Enfin il ne reste plus que ceci&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;la forme de l’œuf et la consistance du mucilage&nbsp;»</span>. Mais cette forme et cette consistance sont elles-mêmes niées aussitôt par un absurde
-            détail vestimentaire&nbsp;: le personnage porte des molletières, ce qui est particulièrement
-            impossible à un œuf. Nous sommes donc une fois de plus mis en garde&nbsp;: l’homme, ce
-            n’est pas encore cela.</p>
-         <p>Ainsi toutes ces créatures, qui ont défilé sous nos yeux, elles ne servaient qu’à
-            nous abuser&nbsp;; elles occupaient les phrases du roman à la place de l’être insaisissable
-            qui refuse toujours d’y paraître, l’homme incapable de récupérer sa propre existence,
-            celui qui ne parvient jamais à être présent.</p>
-         <div class="smallgap"></div>
-         <p>Mais, maintenant, nous sommes au théâtre. Voici que le rideau se lève...</p>
-         <p>Le décor ne représente rien, ou à peu près. Une route&nbsp;? Disons, d’une façon plus générale&nbsp;:
-            <span class="STDitalic">dehors.</span> La seule précision notable est constituée par un arbre, chétif, à peine un arbuste,
-            et sans la moindre feuille&nbsp;; disons&nbsp;: un squelette d’arbuste.</p>
-         <p>Deux hommes sont en scène, sans âge, sans profession, sans situation de famille. Sans
-            domicile non plus&nbsp;; donc&nbsp;: deux <span class="STDitalic">vagabonds.</span> Physiquement, ils ont l’air intacts. L’un enlève ses chaussures, l’autre parle des
-            Évangiles. Ils mangent une carotte. Ils n’ont rien à se dire. Ils s’adressent l’un
-            à l’autre en se servant de deux diminutifs, qui semblent ne se rapporter à aucun nom
-            identifiable&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> et <span class="quote" onclick="displayExtract('toDefine')">Didi</span>.</p>
-         <p>Ils regardent à droite et à gauche, ils font mine de partir, de se quitter, et reviennent
-            toujours l’un près de l’autre au milieu de la scène. Ils ne peuvent pas aller ailleurs&nbsp;:
-            ils attendent un nommé Godot, dont on ne sait rien non plus, sinon qu’il ne viendra
-            pas&nbsp;; depuis le début, cela, au moins, est évident pour tout le monde.</p>
-         <p>Et personne ne s’étonne lorsque arrive un jeune garçon (<span class="quote" onclick="displayExtract('toDefine')">Didi</span> croit d’ailleurs l’avoir déjà vu la veille) qui leur apporte ce message&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Monsieur Godot ne viendra pas aujourd’hui, il viendra demain sûrement.&nbsp;»</span> Puis, la lumière décroît, avec rapidité&nbsp;; c’est la nuit. Les deux vagabonds décident
-            de s’en aller, pour revenir le lendemain. Mais ils ne bougent pas. Le rideau tombe.</p>
-         <p>Auparavant, deux autres personnages sont venus faire diversion&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>, à l’aspect florissant, qui tenait en laisse <span class="quote" onclick="displayExtract('toDefine')">Lucky</span>, son serviteur&nbsp;–&nbsp;celui-là tout à fait en ruine. <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span> s’est assis sur un pliant, a mangé une cuisse de poulet, fumé une pipe&nbsp;; puis il
-            a entrepris une description ampoulée du crépuscule. <span class="quote" onclick="displayExtract('toDefine')">Lucky</span>, au commandement, a effectué quelques sautillements, en guise de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;danse&nbsp;»</span>, et débité à toute vitesse un incompréhensible discours, fait de bégaiements et de
-            lambeaux.</p>
-         <p>Voilà pour le premier acte.</p>
-         <p>Acte deux&nbsp;: le lendemain. Mais est-ce bien le lendemain&nbsp;? Ou après&nbsp;? Ou avant&nbsp;? En
-            tout cas le décor est le même, à un détail près&nbsp;: l’arbre a maintenant trois feuilles.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">Didi</span> chante une chanson, sur ce thème&nbsp;: un chien vola une saucisse, on le tua, on l’enterra,
-            sur sa tombe on écrivit&nbsp;: un chien vola une saucisse... (<span class="STDitalic">ad libitum</span>). <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> remet ses chaussures, il mange un radis, etc. Il ne se rappelle pas être déjà venu
-            en cet endroit.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">Pozzo</span> et <span class="quote" onclick="displayExtract('toDefine')">Lucky</span> reviennent&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">Lucky</span> est muet, <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span> est aveugle et ne se souvient de rien. Le même petit garçon revient porter le même
-            message&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Monsieur Godot ne viendra pas aujourd’hui&nbsp;; il viendra demain.&nbsp;»</span> Non, l’enfant ne connaît pas les deux vagabonds, il ne les a jamais vus nulle part.</p>
-         <p>De nouveau c’est la nuit. <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> et <span class="quote" onclick="displayExtract('toDefine')">Didi</span> essayeraient bien de se pendre&nbsp;–&nbsp;les branches de l’arbre sont peut-être assez solides&nbsp;–,
-            malheureusement ils n’ont pas de corde... Ils décident de s’en aller, pour revenir
-            le lendemain. Mais ils ne bougent pas. Le rideau tombe.</p>
-         <p>Cela s’appelle&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;En attendant Godot&nbsp;»</span>. La représentation dure près de trois heures.</p>
-         <div class="smallgap"></div>
-         <p>De ce seul point de vue, il y a là de quoi surprendre&nbsp;: pendant ces trois heures,
-            la pièce <span class="STDitalic">tient,</span> sans un creux alors qu’elle n’est faite que de vide, sans un à-coup alors qu’il semblerait
-            qu’elle n’ait jamais de raison de continuer ou de prendre fin. D’un bout à l’autre
-            les spectateurs suivent&nbsp;; ils peuvent perdre contenance parfois, mais ils restent
-            comme accrochés à ces deux êtres, qui ne font rien, qui ne disent à peu près rien,
-            qui n’ont d’autre qualité que d’être présents.</p>
-         <p>Dès la création, la critique quasi unanime soulignait le caractère <span class="STDitalic">public</span> du spectacle. En effet les mots <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;théâtre de laboratoire&nbsp;»</span> ne conviennent plus ici&nbsp;: il s’agit de théâtre tout court, que tout le monde peut
-            voir, dont chacun tire aussitôt son profit.</p>
-         <p>Est-ce à dire que personne ne se méprend&nbsp;? Certes, non. On se méprend même de toute
-            part, comme chacun justement se méprend sur sa propre misère. Les explications ne
-            manquent pas, qu’on nous souffle à droite et à gauche, plus vaines les unes que les
-            autres&nbsp;:</p>
-         <p>Godot, c’est Dieu. Ne voyez-vous pas la racine <span class="STDitalic">God</span> que l’auteur emprunte à sa langue maternelle&nbsp;? Après tout, pourquoi pas&nbsp;? Godot&nbsp;–&nbsp;pourquoi
-            pas, aussi bien&nbsp;?&nbsp;–, c’est l’idéal terrestre d’un ordre social meilleur. N’en espère-t-on
-            pas le vivre et le couvert, ainsi que la possibilité de ne plus recevoir de coups&nbsp;?
-            Et ce <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>, qui précisément n’est pas Godot, n’est-ce pas celui qui tient asservie la pensée&nbsp;?
-            Ou bien Godot, c’est la mort&nbsp;: on se pendra demain, si elle ne vient pas toute seule.
-            Godot, c’est le silence&nbsp;; il faut parler <span class="STDitalic">en l’attendant</span>&nbsp;: pour avoir à la fin le droit de se taire. Godot, c’est ce <span class="STDitalic">moi</span> inaccessible que Beckett poursuit à travers toute son œuvre, avec cet espoir, toujours&nbsp;:
-            <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Cette fois, peut-être, ça va être moi, enfin.&nbsp;»</span></p>
-         <p>Mais ces images, même les plus dérisoires, qui tentent ainsi tant bien que mal de
-            limiter les dégâts, n’effacent dans l’esprit de personne la réalité même du drame,
-            cette part à la fois la plus profonde et tout à fait superficielle, dont il n’y a
-            rien d’autre à dire&nbsp;: Godot, c’est ce personnage que deux vagabonds attendent au bord
-            d’une route, et qui ne vient pas.</p>
-         <p>Quant à <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> et <span class="quote" onclick="displayExtract('toDefine')">Didi</span>, ils refusent encore plus obstinément toute autre signification que la plus banale,
-            la plus immédiate&nbsp;: ce sont des hommes. Et leur situation se résume en ce simple constat,
-            au-delà duquel il ne paraît pas possible de progresser&nbsp;: ils sont là, ils sont sur la scène.</p>
-         <div class="smallgap"></div>
-         <p>Des tentatives existaient sans doute déjà, depuis quelque temps, qui refusaient le
-            mouvement scénique du théâtre bourgeois. <span class="STDitalic">Godot</span> cependant marque, dans ce domaine, une sorte d’aboutissement. Nulle part le risque
-            n’avait été si grand, car il s’agit bien cette fois, sans ambiguïté, de l’essentiel&nbsp;;
-            nulle part, non plus, les moyens employés n’avaient été si <span class="STDitalic">pauvres</span>&nbsp;; or jamais, en fin de compte, la marge de malentendu n’a été aussi négligeable.
-            À tel point que nous sommes obligés de faire un retour en arrière pour mesurer ce
-            risque et cette pauvreté.</p>
-         <p>Il paraissait raisonnable de penser, jusqu’à ces dernières années, que, si le roman
-            par exemple pouvait s’affranchir de beaucoup de ses règles et accessoires traditionnels,
-            le théâtre du moins devait montrer plus de prudence. L’œuvre dramatique, en effet,
-            n’accède à sa vie propre qu’à la condition d’une entente avec un public, quel qu’il
-            soit&nbsp;; il fallait donc entourer celui-ci d’attentions&nbsp;: lui présenter des personnages
-            hors-série, l’intéresser par des situations piquantes, le prendre dans les engrenages
-            d’une intrigue, ou alors le sortir violemment de lui-même par une invention verbale
-            constante, relevant plus ou moins du délire, ou du lyrisme poétique.</p>
-         <p>Que nous propose <span class="STDitalic">En attendant Godot&nbsp;?</span> C’est peu de dire qu’il ne s’y passe rien. Qu’il n’y ait ni engrenages ni intrigue
-            d’aucune sorte, cela d’ailleurs s’est déjà vu sur d’autres scènes. Ici, c’est <span class="STDitalic">moins que rien </span>qu’il faudrait écrire&nbsp;: comme si nous assistions à une espèce de régression au-delà du rien. Comme toujours chez <span class="ref">Samuel&nbsp;Beckett</span>, ce peu qu’on nous avait donné au départ&nbsp;–&nbsp;et qui nous semblait être rien&nbsp;–&nbsp;se corrompt
-            bientôt sous nos yeux, se dégrade encore, semblable à ce <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span> qui revient privé de la vue, traîné par un <span class="quote" onclick="displayExtract('toDefine')">Lucky</span> privé de la parole&nbsp;–&nbsp;semblable aussi, par dérision, à cette carotte qui au second
-            acte n’est plus qu’un radis...</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ceci devient vraiment insignifiant&nbsp;»</span>, dit à ce propos l’un des compères. <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Pas encore assez&nbsp;»</span>, dit l’autre. Et un long silence ponctue sa réponse.</p>
-         <p>On jugera du même coup, d’après ces deux répliques, à quelle distance nous nous trouvons
-            du délire verbal mentionné plus haut. Du début jusqu’à la fin le dialogue est <span class="STDitalic">mourant,</span> exténué, situé constamment à ces frontières de l’agonie où se meuvent tous les <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;héros&nbsp;»</span> de <span class="ref">Beckett</span>, dont même, bien souvent, on ne pourrait affirmer qu’ils sont encore de ce côté-ci
-            de leur mort. Au milieu des silences, des redites et des phrases toutes faites (du
-            genre&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;On est ce qu’on est. Le fond ne change pas&nbsp;»</span>), l’un ou l’autre des deux vagabonds propose çà et là, pour passer le temps, de faire
-            la conversation, de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;se repentir&nbsp;»</span>, de se pendre, de raconter des histoires, de s’injurier, de jouer à <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Pozzo et Lucky&nbsp;»</span>, mais chaque fois la tentative tourne court et se perd après quelques échanges incertains
-            dans des points de suspension, des renoncements, des échecs.</p>
-         <p>Quant à l’argument, il se résume en trois mots –&nbsp;<span class="quote" onclick="displayExtract('toDefine')">«&nbsp;On attend Godot&nbsp;»</span>&nbsp;–&nbsp;qui reviennent sans cesse, comme un refrain. Mais comme un refrain stupide et lassant,
-            car cette attente n’intéresse personne&nbsp;; elle ne possède pas, en tant qu’attente, la moindre valeur scénique. Ce n’est ni un espoir,
-            ni une angoisse, ni même un désespoir. C’est tout juste un alibi.</p>
-         <p>Dans cette désagrégation générale, il y a comme un point culminant&nbsp;–&nbsp;c’est-à-dire,
-            en l’occurrence, l’envers d’un point culminant&nbsp;: un bas-fond, un cul-de-basse-fosse.
-            <span class="quote" onclick="displayExtract('toDefine')">Lucky</span> et <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>, infirmes, se sont effondrés l’un sur l’autre au milieu de la route&nbsp;; ils ne peuvent
-            plus se relever. Après un long marchandage, <span class="quote" onclick="displayExtract('toDefine')">Didi</span> vient à leur secours, mais il trébuche et s’affale sur eux&nbsp;; il doit à son tour appeler
-            à l’aide. <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> lui tend la main, perd l’équilibre et tombe. Il n’y a plus un seul personnage debout.
-            Il n’y a plus sur la scène que ce tas grouillant et geignant, où l’on aperçoit alors
-            la figure de <span class="quote" onclick="displayExtract('toDefine')">Didi</span> qui s’éclaire, pour prononcer d’une voix presque rassérénée&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Nous sommes des hommes&nbsp;!&nbsp;»</span></p>
-         <div class="smallgap"></div>
-         <p>On connaissait le théâtre d’idées. C’était un sain exercice d’intelligence, qui avait
-            son public (bien qu’il y soit fait parfois bon marché des situations et de la progression
-            dramatique). On s’y ennuyait un peu, mais on y <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;pensait&nbsp;»</span> ferme, dans la salle comme sur la scène. La pensée, même subversive, a toujours quelque
-            chose de rassurant. La parole&nbsp;–&nbsp;la belle parole&nbsp;– rassure aussi. Combien le discours
-            noble et harmonieux n’aura-t-il pas créé de malentendus, servant de masque tour à
-            tour aux idées ou à leur absence&nbsp;!</p>
-         <p>Ici, pas de malentendu&nbsp;: pas plus de pensée que de belle parole&nbsp;; l’une comme l’autre
-            ne figure dans le texte que sous forme de parodie, d’<span class="STDitalic">envers</span> une fois de plus, ou de cadavre.</p>
-         <p>La parole, c’est ce <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;crépuscule&nbsp;»</span> décrit par <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>&nbsp;; annoncé comme un morceau de choix à grand renfort d’éclaircissements de gorge et
-            de claquements de fouet, truffé d’expressions choisies et de gestes dramatiques, mais
-            saboté parallèlement par des interruptions soudaines, des exclamations familières,
-            des baisses d’inspiration grotesques&nbsp;:</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;... (Sa voix se fait chantante.) Il y a une heure (il regarde sa montre, ton prosaïque)
-               environ, (ton à nouveau lyrique) après nous avoir versé depuis (il hésite, le ton
-               baisse) mettons dix heures du matin (le ton s’élève) sans faiblir des torrents de
-               lumière rouge et blanche&nbsp;»</span>, etc., jusqu’à cette fin en queue de poisson, crachée d’une voix morne, après un
-            silence&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;C’est comme ça que ça se passe sur cette putain de terre. (Long silence.)&nbsp;»</span></p>
-         <p>Et voici la pensée maintenant. Les deux vagabonds ont posé une question à <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>, mais personne ne peut se rappeler laquelle. Tous les trois se découvrent simultanément,
-            portent la main au front, se concentrent, crispés. Long silence. Tout à coup <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> s’exclame, il a trouvé&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Pourquoi ne dépose-t-il pas ses bagages&nbsp;?&nbsp;»</span></p>
-         <p>Il s’agit de <span class="quote" onclick="displayExtract('toDefine')">Lucky</span>. C’est effectivement la question qui a été posée quelques minutes plus tôt, mais
-            dans l’intervalle le serviteur a déposé les bagages&nbsp;; si bien que <span class="quote" onclick="displayExtract('toDefine')">Didi</span> convainc tout le monde en concluant&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Puisqu’il a déposé les bagages, il est impossible que nous ayons demandé pourquoi
-               il ne les dépose pas.&nbsp;»</span> Ce qui est la logique même. Dans cet univers où le temps ne coule pas, les mots <span class="STDitalic">avant</span> et <span class="STDitalic">après </span>n’ont aucun sens&nbsp;; seule compte la situation présente&nbsp;: les bagages <span class="STDitalic">sont</span> déposés, comme depuis toujours.</p>
-         <p>De tels raisonnements se rencontraient déjà chez <span class="ref">Lewis&nbsp;Carroll</span> ou <span class="ref">Jarry</span>. <span class="ref">Beckett</span> fait mieux&nbsp;: il nous montre son penseur spécialisé, <span class="quote" onclick="displayExtract('toDefine')">Lucky</span>&nbsp;; sur l’injonction de son maître (<span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Pense&nbsp;! Porc&nbsp;!&nbsp;»</span>), il commence&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Étant donné l’existence telle qu’elle jaillit des récents travaux publics de Poinçon
-               et Wattmann d’un Dieu personnel quaquaquaqua à barbe blanche quaqua hors du temps
-               de l’étendue qui du haut de sa divine apathie sa divine athambie sa divine aphasie
-               nous aime bien à quelques exceptions près on ne sait pourquoi mais ça viendra et souffre
-               à l’instar...&nbsp;»</span>, etc. Les autres sont obligés, pour le faire taire, de le renverser, de le bourrer
-            de coups, de le piétiner et, seule méthode vraiment efficace, de lui enlever son chapeau.
-            Comme dit l’un des deux compères&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Penser, ce n’est pas le pire.&nbsp;»</span></p>
-         <p>On ne saurait trop insister sur le sérieux de semblables réflexions. Soixante-dix
-            siècles, et plus, d’analyse et de métaphysique ont tendance, au lieu de nous rendre
-            modestes, à nous dissimuler la faiblesse de nos ressources lorsqu’il s’agit de l’essentiel.
-            En fait, tout se passe comme si l’importance réelle d’une question se mesurait, précisément,
-            à l’impossibilité où nous sommes de lui appliquer une pensée honnête, sinon pour la
-            faire rétrograder.</p>
-         <div class="smallgap"></div>
-         <p>C’est ce mouvement&nbsp;–&nbsp;cette régression si dangereusement contagieuse&nbsp;–&nbsp;que marque toute
-            l’œuvre de Beckett. Les deux comparses, <span class="quote" onclick="displayExtract('toDefine')">Lucky</span> et <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>, se sont donc dégradés d’un acte à l’autre, à l’instar des Murphy, <span class="quote" onclick="displayExtract('toDefine')">Molloy</span>, <span class="quote" onclick="displayExtract('toDefine')">Malone</span>, etc. Les carottes se sont réduites à des radis. La chanson cyclique sur le chien
-            voleur, <span class="quote" onclick="displayExtract('toDefine')">Didi</span> a même fini par en perdre le fil. Et il en est à l’avenant de tous les autres accessoires
-            de la pièce.</p>
-         <p>Mais les deux vagabonds, eux, demeurent intacts, inchangés. Aussi sommes-nous certains,
-            cette fois, qu’ils ne sont pas de simples marionnettes dont le rôle se bornerait à
-            masquer l’absence du protagoniste. Ce Godot qu’ils sont censés attendre, ce n’est
-            pas lui <span class="STDitalic">qui a</span><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;à être&nbsp;»</span>, mais eux, <span class="quote" onclick="displayExtract('toDefine')">Didi</span> et <span class="quote" onclick="displayExtract('toDefine')">Gogo</span>.</p>
-         <p>Nous saisissons tout à coup, en les regardant, cette fonction majeure de la représentation
-            théâtrale&nbsp;: montrer en quoi consiste le fait d’<span class="STDitalic">être là.</span> Car c’est cela, précisément, que nous n’avions pas encore vu sur une scène, ou en
-            tout cas que nous n’avions pas vu avec autant de netteté, si peu de concessions et
-            tant d’évidence. Le personnage de théâtre, le plus souvent, ne fait que <span class="STDitalic">jouer un rôle,</span> comme le font autour de nous ceux qui se dérobent à leur propre existence. Dans la
-            pièce de <span class="ref">Beckett</span>, au contraire, tout se passe comme si les deux vagabonds se trouvaient en scène <span class="STDitalic">sans avoir de rôle.</span></p>
-         <p>Ils sont là&nbsp;; il faut qu’ils s’expliquent. Mais ils ne semblent pas avoir de texte
-            tout préparé et soigneusement appris par cœur, pour les soutenir. Ils doivent inventer.
-            Ils sont libres.</p>
-         <p>Bien entendu, cette liberté est sans emploi&nbsp;: de même qu’ils n’ont rien à réciter,
-            ils n’ont rien <span class="STDitalic">à inventer</span> non plus&nbsp;; et leur conversation, qu’aucune trame ne soutient, se réduit à des fragments
-            dérisoires&nbsp;: répliques automatiques, jeux de mots, discussions fictives plus ou moins
-            avortées. Ils essaient un peu de tout, au hasard. La seule chose qu’ils ne sont pas libres de faire, c’est de s’en
-            aller, de cesser d’être là&nbsp;: il faut bien qu’ils demeurent puisqu’ils attendent Godot.
-            Ils sont là au premier acte, du début jusqu’à la fin, et quand le rideau tombe c’est,
-            malgré l’annonce de leur départ, sur deux hommes qui continuent d’attendre. Ils sont
-            là encore au deuxième acte, qui n’apporte rien de nouveau&nbsp;; et de nouveau, malgré
-            l’annonce de leur départ, ils restent en scène lorsque le rideau tombe. Ils seront
-            encore là le lendemain, le lendemain du lendemain, et ainsi de suite... <span class="STDitalic">from day to day, to-morrow, and to-morrow, and to-morrow... </span>seuls en scène, debout, inutiles, sans avenir ni passé, irrémédiablement présents.</p>
-         <div class="smallgap"></div>
-         <p>Mais voilà que l’homme lui-même, celui qui est là sous nos yeux, finit par se dégrader
-            à son tour. Le rideau se relève sur une nouvelle pièce&nbsp;: <span class="STDitalic">Fin de partie, </span>une <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;vieille fin de partie perdue&nbsp;»</span>, précise <span class="quote" onclick="displayExtract('toDefine')">Hamm</span>, le protagoniste.</p>
-         <p>Pas plus que ses prédécesseurs, <span class="quote" onclick="displayExtract('toDefine')">Didi</span> et <span class="quote" onclick="displayExtract('toDefine')">Gogo</span>, <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> n’a la possibilité de partir pour aller ailleurs. Mais la raison en est devenue tragiquement
-            physique&nbsp;: il est paralysé, assis dans un fauteuil au milieu de la scène, et il est
-            aveugle. Autour de lui il n’y a rien que de hauts murs nus, sans fenêtre accessible.
-            <span class="quote" onclick="displayExtract('toDefine')">Clov</span>, une sorte d’infirmier à demi impotent lui-même, s’occupe tant bien que mal du moribond&nbsp;:
-            il peut juste, en guise de promenade, traîner le fauteuil de celui-ci, en rond, le
-            long des murs.</p>
-         <p>Par rapport aux deux vagabonds, <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> a donc perdu cette liberté dérisoire qui leur restait&nbsp;: ce n’est plus lui qui choisit de ne pas s’en aller. Lorsqu’il demande à <span class="quote" onclick="displayExtract('toDefine')">Clov</span> de construire un radeau et de l’y transporter, afin d’abandonner son corps au gré
-            des courants marins, il ne peut s’agir cette fois que d’une plaisanterie&nbsp;; comme si
-            <span class="quote" onclick="displayExtract('toDefine')">Hamm</span>, en renonçant aussitôt à ce projet, cherchait à se donner l’illusion du choix. En
-            fait, il nous apparaît comme enfermé dans sa retraite&nbsp;; s’il n’a pas le désir d’en
-            sortir, il n’en a pas non plus les moyens. C’est là une notable différence&nbsp;: il ne
-            s’agit plus pour l’homme d’affirmer une position, mais de subir un sort.</p>
-         <p>Et cependant, à l’intérieur de sa prison, il opère encore une parodie de choix&nbsp;: sa
-            promenade, il l’interrompt tout de suite, il exige qu’on le ramène au centre, exactement
-            au centre de la scène&nbsp;; bien que ne voyant rien, il prétend être sensible au moindre
-            écart dans un sens ou dans l’autre.</p>
-         <p>Être au milieu, être immobile, ce n’est pas suffisant&nbsp;: il faut encore se débarrasser
-            de tous les accessoires inutiles&nbsp;; <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> rejette bientôt, hors de portée, tout ce qu’il possédait encore&nbsp;: un sifflet pour
-            appeler, un bâton dont il pouvait à la rigueur se servir pour déplacer son fauteuil,
-            une ébauche de chien en chiffon qu’il pouvait caresser. Enfin il faut la solitude&nbsp;:
-            <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;C’est fini, Clov, nous avons fini. Je n’ai plus besoin de toi.&nbsp;»</span></p>
-         <p>En effet, le rôle du compagnon se termine&nbsp;: il n’y a plus de biscuit, il n’y a plus
-            de calmant, il n’y a plus rien à donner au malade. <span class="quote" onclick="displayExtract('toDefine')">Clov</span> n’a plus qu’à s’en aller. Il le fait... ou du moins il décide de le faire, mais,
-            chapeau sur la tête et valise à la main, tandis que <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> l’appelle en vain et le croit déjà loin peut-être, <span class="quote" onclick="displayExtract('toDefine')">Clov</span> reste là, près de la porte ouverte, les yeux fixés sur <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> qui voile son visage sous un linge sanglant, tandis que le rideau tombe.</p>
-         <div class="smallgap"></div>
-         <p>Ainsi, jusque dans cette dernière image, nous retrouvons bien le thème essentiel de
-            la <span class="STDitalic">présence&nbsp;:</span> tout ce qui est <span class="STDitalic">est ici,</span> hors de la scène il n’y a que le néant, le non-être. Il ne suffit pas que <span class="quote" onclick="displayExtract('toDefine')">Clov</span>, monté sur un escabeau pour accéder aux minuscules ouvertures donnant sur le pseudo-monde
-            extérieur, nous renseigne d’un mot sur le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;paysage&nbsp;»</span>&nbsp;: une mer vide et grise côté cour, un désert côté jardin. En réalité cette mer, ce
-            désert, d’ailleurs invisibles pour le spectateur, sont inhabitables au sens le plus
-            strict du mot&nbsp;: autant que pourrait l’être une toile de fond où seraient peints de
-            l’eau ou du sable. D’où ce dialogue&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Pourquoi restes-tu avec moi&nbsp;?&nbsp;–&nbsp;Pourquoi me gardes-tu&nbsp;?&nbsp;–&nbsp;Il n’y a personne d’autre.&nbsp;–&nbsp;Il
-               n’y a pas d’autre place.&nbsp;»</span><span class="quote" onclick="displayExtract('toDefine')">Hamm</span>, d’ailleurs, ne cesse de le souligner&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Hors d’ici, c’est la mort&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Loin tu serais mort&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Loin de moi c’est la mort&nbsp;»</span>, etc.</p>
-         <p>De même, tout est présent dans le temps, comme tout l’est dans l’espace. À cet <span class="STDitalic">ici</span> inéluctable, répond un éternel <span class="STDitalic">maintenant&nbsp;:</span><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Hier&nbsp;! Qu’est-ce que ça veut dire&nbsp;: hier&nbsp;?&nbsp;»</span> s’exclame à plusieurs reprises <span class="quote" onclick="displayExtract('toDefine')">Hamm</span>. Et la conjonction de l’espace et du temps donne seulement, au sujet d’un troisième
-            personnage éventuel, cette certitude&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;S’il existe, il viendra ici.&nbsp;»</span></p>
-         <p>Sans passé, sans ailleurs, sans autre avenir que la mort, l’univers ainsi défini est
-            nécessairement privé de sens, dans les deux acceptions du terme&nbsp;: il exclut aussi
-            bien toute idée de <span class="STDitalic">progrès</span> qu’une quelconque <span class="STDitalic">signification.</span></p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">Hamm</span>, tout à coup, est pris d’un doute&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;On n’est pas en train de... de... signifier quelque chose&nbsp;?&nbsp;»</span> demande-t-il avec émotion. <span class="quote" onclick="displayExtract('toDefine')">Clov</span> le rassure aussitôt&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Signifier&nbsp;? Nous, signifier&nbsp;! (rire bref). Ah elle est bonne&nbsp;!&nbsp;»</span></p>
-         <div class="smallgap"></div>
-         <p>Mais cette attente de la mort, cette misère physique qui s’aggrave, ces menaces que
-            <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> brandit devant <span class="quote" onclick="displayExtract('toDefine')">Clov</span> (<span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Un jour tu seras aveugle. Comme moi. Tu seras assis quelque part, petit plein perdu
-               dans le vide, pour toujours, dans le noir. Comme moi. Un jour tu diras, Je suis fatigué,
-               je vais m’asseoir, et tu iras t’asseoir. Puis tu te diras, J’ai faim, je vais me lever
-               et me faire à manger. Mais tu ne te lèveras pas...&nbsp;»</span>), toute cette pourriture progressive du présent, cela constitue malgré tout un avenir.</p>
-         <p>Alors la peur de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;signifier quelque chose&nbsp;»</span> se justifie parfaitement&nbsp;: par cette conscience acceptée d’un déroulement tragique,
-            le monde a récupéré d’un seul coup toute sa signification.</p>
-         <p>Et parallèlement, devant une telle menace (ce futur à la fois terrible et fatal),
-            on peut dire que le présent n’est plus rien, qu’il disparaît, escamoté à son tour,
-            perdu dans la faillite générale. <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Plus de calmant...&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Plus de biscuit...&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Plus de bicyclette...&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Plus de nature...&nbsp;»</span>... <span class="STDitalic">Il n’y a plus de présent,</span> pourrait annoncer enfin <span class="quote" onclick="displayExtract('toDefine')">Clov</span>, de la même voix morne et triomphante.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Instants nuls, toujours nuls...&nbsp;»</span>, dit <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> dans son monologue final, conclusion logique à la phrase maintes fois reprise&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ça avance. Ça avance. Quelque chose suit son cours.&nbsp;»</span> Et, en définitive, <span class="quote" onclick="displayExtract('toDefine')">Hamm</span>est acculé à la constatation de son échec&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Je n’ai jamais été là. Clov&nbsp;!... Je n’ai jamais été là... Absent, toujours. Tout s’est fait sans moi...&nbsp;»</span></p>
-         <div class="smallgap"></div>
-         <p>De nouveau le trajet fatal s’est accompli. <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> et <span class="quote" onclick="displayExtract('toDefine')">Clov</span>, successeurs de <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> et <span class="quote" onclick="displayExtract('toDefine')">Didi</span>, ont retrouvé le sort commun de tous les personnages de <span class="ref">Beckett</span>&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>, <span class="quote" onclick="displayExtract('toDefine')">Lucky</span>, <span class="quote" onclick="displayExtract('toDefine')">Murphy</span>, <span class="quote" onclick="displayExtract('toDefine')">Molloy</span>, <span class="quote" onclick="displayExtract('toDefine')">Malone</span>, <span class="quote" onclick="displayExtract('toDefine')">Mahood</span>, <span class="quote" onclick="displayExtract('toDefine')">Worm</span>..., etc.</p>
-         <p>La scène de théâtre, lieu privilégié de la présence, n’a pas résisté longtemps à la
-            contagion. La progression du mal s’est faite au même rythme sûr que dans les récits.
-            Après avoir cru un moment que nous avions saisi le vrai homme, nous sommes donc contraints
-            de confesser notre erreur. <span class="quote" onclick="displayExtract('toDefine')">Didi</span> n’était qu’une illusion, c’est sans doute ce qui lui donnait cette allure dansante,
-            ce balancement d’une jambe sur l’autre, ce costume légèrement clownesque... Il n’était,
-            lui aussi, qu’une créature de mensonge, provisoire en tout cas, vite retombée dans
-            le domaine du rêve et de la fiction.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Je n’ai jamais été là&nbsp;»</span>, dit <span class="quote" onclick="displayExtract('toDefine')">Hamm</span>, et devant cet aveu plus rien ne compte, car il est impossible de l’entendre autrement
-            que sous sa forme la plus générale&nbsp;: <span class="STDitalic">Personne n’a jamais été là.</span></p>
-         <p>Et si, après <span class="STDitalic">Godot</span> et <span class="STDitalic">Fin de Partie,</span> vient maintenant une troisième pièce, ce sera probablement de nouveau <span class="STDitalic">L’Innommable,</span> troisième volet de la trilogie romanesque. <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> nous en laisse déjà imaginer le ton, par le roman qu’il invente au fur et à mesure,
-            créant des péripéties factices et faisant agir des fantômes de personnages. Puisqu’il
-            n’est pas là lui-même, il ne lui reste plus qu’à se raconter des histoires, à manœuvrer des marionnettes,
-            à sa place, pour aider à passer le temps... À moins que Samuel Beckett ne nous réserve
-            de nouvelles surprises...</p>
-      </article>
-      <section class="extract_section">
-         <p>Some text here.</p>
-         <div id="pr_02_01" class="extractHide">
-            <p><span class="STDsmall STDgray">[10] </span>[...] Ces gens-là j'ai essayé de les aimer, ils ont <span class="STDsmall STDgray">[11] </span>parfois un air qui trompe mais bien vite si tu leur parle de toi ils t'injurient,
-               ton chagrin leur fait horreur.</p>
-            <p>On m'a piqué avec une longue aiguille, c'est la vérité. Cette aiguille ellle m'est
-               restée vivante. Quand on commence une histoire le mieux est de dire je suis né, c'est
-               le meilleur départ car les enfances sont plus nombreuses à mesure qu'on grandit, ,
-               elles se multiplient et voilà déjà une cause de confusion. J'ai le cœur gros de commencements
-               toujours râtés. Et le but aussi, je n'en ai point.</p>
-            <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
-         </div>
-         <div id="pr_02_ToDefine" class="extractHide">
-            <p></p>
-            <p><span class="STDsmall STDgray">[16] </span>[...] Je me demande souvent si les esprits brillants existeraient sans leur mémoire,
-               je n'ai aucune mémoire, je voudrais pour n'être pas ridicule vivre dans un mon d'où
-               elle serait exclue, on ne pourrait partler que des choses du jour, et on inventerait,
-               on inventerait au fur et à mesure, c'est ça la vraie vie.</p>
-            <p>La naissance d'un objet, j'ai remarqué, n'a pas lieu aujourd'hui, il y a du mouvement
-               tout autour qui l'empêche de montrer la tête et demain tu t'avises qu'il existe. Par
-               conséquent la meilleure explication des origines serait de commencer par des bruits
-               de bouches et de glisser progressivement vers des paroles articulées jusqu'au moment
-               où l'auditeur sans se poser aucune question participe à ton histoire.</p>
-            <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
-         </div>
-         <p>
-            Some text here.</p>
-      </section>
-      <footer><a href="https://www.univ-lille.fr/" target="blanck"><img src="img/logo_u_lille.png" alt="logo université de lille">"</a></footer>
+      <div class="ch_nav"><a class="preceding" href="punr_ch08.html">&lt;</a><a class="following" href="punr_ch10.html">&gt;</a></div>
+      <nav class="articlenav">
+         <ol id="articlenav"></ol>
+      </nav>
+      <div class="corpus">
+         <article>
+            <h3>Samuel&nbsp;Beckett, ou la présence sur la scène <br><span class="STDsmall">(1953&nbsp;et&nbsp;1957)</span></h3>
+            <p>La condition de l’homme, dit  <span class="ref">Heidegger</span>, c’est d’être là. Probablement est-ce le théâtre, plus que tout autre mode de représentation
+               du réel, qui reproduit le plus naturellement cette situation. Le personnage de théâtre
+               <span class="STDitalic">est en scène,</span> c’est sa première qualité&nbsp;: il est <span class="STDitalic">là.</span></p>
+            <p>La rencontre de <span class="ref">Samuel&nbsp;Beckett</span> avec cette exigence présentait, a priori, un exceptionnel intérêt&nbsp;: on allait enfin
+               voir l’homme de <span class="ref">Beckett</span>, on allait voir <span class="STDitalic">l’Homme.</span> Car le romancier, à force de s’exténuer dans sa recherche, ne parvenait qu’à réduire
+               de plus en plus, à chaque page, nos possibilités de l’appréhender.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">Murphy</span>, <span class="quote" onclick="displayExtract('toDefine')">Molloy</span>, <span class="quote" onclick="displayExtract('toDefine')">Malone</span>, <span class="quote" onclick="displayExtract('toDefine')">Mahood</span>, <span class="quote" onclick="displayExtract('toDefine')">Worm</span>, le héros des récits de <span class="ref">Beckett</span> se dégrade de livre en livre, et de plus en plus vite. Infirme, mais capable encore
+               de se déplacer sur une bicyclette, il perd rapidement l’usage de ses membres, l’un
+               après l’autre&nbsp;; ne pouvant même plus se traîner, il se voit ensuite enfermé dans une
+               chambre, où ses sens l’abandonnent peu à peu. La chambre en se rétrécissant est bientôt réduite à une simple jarre où un tronc pourrissant, et évidemment
+               muet, achève de se désagréger. Enfin il ne reste plus que ceci&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;la forme de l’œuf et la consistance du mucilage&nbsp;»</span>. Mais cette forme et cette consistance sont elles-mêmes niées aussitôt par un absurde
+               détail vestimentaire&nbsp;: le personnage porte des molletières, ce qui est particulièrement
+               impossible à un œuf. Nous sommes donc une fois de plus mis en garde&nbsp;: l’homme, ce
+               n’est pas encore cela.</p>
+            <p>Ainsi toutes ces créatures, qui ont défilé sous nos yeux, elles ne servaient qu’à
+               nous abuser&nbsp;; elles occupaient les phrases du roman à la place de l’être insaisissable
+               qui refuse toujours d’y paraître, l’homme incapable de récupérer sa propre existence,
+               celui qui ne parvient jamais à être présent.</p>
+            <div class="smallgap"></div>
+            <p>Mais, maintenant, nous sommes au théâtre. Voici que le rideau se lève...</p>
+            <p>Le décor ne représente rien, ou à peu près. Une route&nbsp;? Disons, d’une façon plus générale&nbsp;:
+               <span class="STDitalic">dehors.</span> La seule précision notable est constituée par un arbre, chétif, à peine un arbuste,
+               et sans la moindre feuille&nbsp;; disons&nbsp;: un squelette d’arbuste.</p>
+            <p>Deux hommes sont en scène, sans âge, sans profession, sans situation de famille. Sans
+               domicile non plus&nbsp;; donc&nbsp;: deux <span class="STDitalic">vagabonds.</span> Physiquement, ils ont l’air intacts. L’un enlève ses chaussures, l’autre parle des
+               Évangiles. Ils mangent une carotte. Ils n’ont rien à se dire. Ils s’adressent l’un
+               à l’autre en se servant de deux diminutifs, qui semblent ne se rapporter à aucun nom
+               identifiable&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> et <span class="quote" onclick="displayExtract('toDefine')">Didi</span>.</p>
+            <p>Ils regardent à droite et à gauche, ils font mine de partir, de se quitter, et reviennent
+               toujours l’un près de l’autre au milieu de la scène. Ils ne peuvent pas aller ailleurs&nbsp;:
+               ils attendent un nommé Godot, dont on ne sait rien non plus, sinon qu’il ne viendra
+               pas&nbsp;; depuis le début, cela, au moins, est évident pour tout le monde.</p>
+            <p>Et personne ne s’étonne lorsque arrive un jeune garçon (<span class="quote" onclick="displayExtract('toDefine')">Didi</span> croit d’ailleurs l’avoir déjà vu la veille) qui leur apporte ce message&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Monsieur Godot ne viendra pas aujourd’hui, il viendra demain sûrement.&nbsp;»</span> Puis, la lumière décroît, avec rapidité&nbsp;; c’est la nuit. Les deux vagabonds décident
+               de s’en aller, pour revenir le lendemain. Mais ils ne bougent pas. Le rideau tombe.</p>
+            <p>Auparavant, deux autres personnages sont venus faire diversion&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>, à l’aspect florissant, qui tenait en laisse <span class="quote" onclick="displayExtract('toDefine')">Lucky</span>, son serviteur&nbsp;–&nbsp;celui-là tout à fait en ruine. <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span> s’est assis sur un pliant, a mangé une cuisse de poulet, fumé une pipe&nbsp;; puis il
+               a entrepris une description ampoulée du crépuscule. <span class="quote" onclick="displayExtract('toDefine')">Lucky</span>, au commandement, a effectué quelques sautillements, en guise de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;danse&nbsp;»</span>, et débité à toute vitesse un incompréhensible discours, fait de bégaiements et de
+               lambeaux.</p>
+            <p>Voilà pour le premier acte.</p>
+            <p>Acte deux&nbsp;: le lendemain. Mais est-ce bien le lendemain&nbsp;? Ou après&nbsp;? Ou avant&nbsp;? En
+               tout cas le décor est le même, à un détail près&nbsp;: l’arbre a maintenant trois feuilles.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">Didi</span> chante une chanson, sur ce thème&nbsp;: un chien vola une saucisse, on le tua, on l’enterra,
+               sur sa tombe on écrivit&nbsp;: un chien vola une saucisse... (<span class="STDitalic">ad libitum</span>). <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> remet ses chaussures, il mange un radis, etc. Il ne se rappelle pas être déjà venu
+               en cet endroit.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">Pozzo</span> et <span class="quote" onclick="displayExtract('toDefine')">Lucky</span> reviennent&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">Lucky</span> est muet, <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span> est aveugle et ne se souvient de rien. Le même petit garçon revient porter le même
+               message&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Monsieur Godot ne viendra pas aujourd’hui&nbsp;; il viendra demain.&nbsp;»</span> Non, l’enfant ne connaît pas les deux vagabonds, il ne les a jamais vus nulle part.</p>
+            <p>De nouveau c’est la nuit. <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> et <span class="quote" onclick="displayExtract('toDefine')">Didi</span> essayeraient bien de se pendre&nbsp;–&nbsp;les branches de l’arbre sont peut-être assez solides&nbsp;–,
+               malheureusement ils n’ont pas de corde... Ils décident de s’en aller, pour revenir
+               le lendemain. Mais ils ne bougent pas. Le rideau tombe.</p>
+            <p>Cela s’appelle&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;En attendant Godot&nbsp;»</span>. La représentation dure près de trois heures.</p>
+            <div class="smallgap"></div>
+            <p>De ce seul point de vue, il y a là de quoi surprendre&nbsp;: pendant ces trois heures,
+               la pièce <span class="STDitalic">tient,</span> sans un creux alors qu’elle n’est faite que de vide, sans un à-coup alors qu’il semblerait
+               qu’elle n’ait jamais de raison de continuer ou de prendre fin. D’un bout à l’autre
+               les spectateurs suivent&nbsp;; ils peuvent perdre contenance parfois, mais ils restent
+               comme accrochés à ces deux êtres, qui ne font rien, qui ne disent à peu près rien,
+               qui n’ont d’autre qualité que d’être présents.</p>
+            <p>Dès la création, la critique quasi unanime soulignait le caractère <span class="STDitalic">public</span> du spectacle. En effet les mots <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;théâtre de laboratoire&nbsp;»</span> ne conviennent plus ici&nbsp;: il s’agit de théâtre tout court, que tout le monde peut
+               voir, dont chacun tire aussitôt son profit.</p>
+            <p>Est-ce à dire que personne ne se méprend&nbsp;? Certes, non. On se méprend même de toute
+               part, comme chacun justement se méprend sur sa propre misère. Les explications ne
+               manquent pas, qu’on nous souffle à droite et à gauche, plus vaines les unes que les
+               autres&nbsp;:</p>
+            <p>Godot, c’est Dieu. Ne voyez-vous pas la racine <span class="STDitalic">God</span> que l’auteur emprunte à sa langue maternelle&nbsp;? Après tout, pourquoi pas&nbsp;? Godot&nbsp;–&nbsp;pourquoi
+               pas, aussi bien&nbsp;?&nbsp;–, c’est l’idéal terrestre d’un ordre social meilleur. N’en espère-t-on
+               pas le vivre et le couvert, ainsi que la possibilité de ne plus recevoir de coups&nbsp;?
+               Et ce <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>, qui précisément n’est pas Godot, n’est-ce pas celui qui tient asservie la pensée&nbsp;?
+               Ou bien Godot, c’est la mort&nbsp;: on se pendra demain, si elle ne vient pas toute seule.
+               Godot, c’est le silence&nbsp;; il faut parler <span class="STDitalic">en l’attendant</span>&nbsp;: pour avoir à la fin le droit de se taire. Godot, c’est ce <span class="STDitalic">moi</span> inaccessible que Beckett poursuit à travers toute son œuvre, avec cet espoir, toujours&nbsp;:
+               <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Cette fois, peut-être, ça va être moi, enfin.&nbsp;»</span></p>
+            <p>Mais ces images, même les plus dérisoires, qui tentent ainsi tant bien que mal de
+               limiter les dégâts, n’effacent dans l’esprit de personne la réalité même du drame,
+               cette part à la fois la plus profonde et tout à fait superficielle, dont il n’y a
+               rien d’autre à dire&nbsp;: Godot, c’est ce personnage que deux vagabonds attendent au bord
+               d’une route, et qui ne vient pas.</p>
+            <p>Quant à <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> et <span class="quote" onclick="displayExtract('toDefine')">Didi</span>, ils refusent encore plus obstinément toute autre signification que la plus banale,
+               la plus immédiate&nbsp;: ce sont des hommes. Et leur situation se résume en ce simple constat,
+               au-delà duquel il ne paraît pas possible de progresser&nbsp;: ils sont là, ils sont sur la scène.</p>
+            <div class="smallgap"></div>
+            <p>Des tentatives existaient sans doute déjà, depuis quelque temps, qui refusaient le
+               mouvement scénique du théâtre bourgeois. <span class="STDitalic">Godot</span> cependant marque, dans ce domaine, une sorte d’aboutissement. Nulle part le risque
+               n’avait été si grand, car il s’agit bien cette fois, sans ambiguïté, de l’essentiel&nbsp;;
+               nulle part, non plus, les moyens employés n’avaient été si <span class="STDitalic">pauvres</span>&nbsp;; or jamais, en fin de compte, la marge de malentendu n’a été aussi négligeable.
+               À tel point que nous sommes obligés de faire un retour en arrière pour mesurer ce
+               risque et cette pauvreté.</p>
+            <p>Il paraissait raisonnable de penser, jusqu’à ces dernières années, que, si le roman
+               par exemple pouvait s’affranchir de beaucoup de ses règles et accessoires traditionnels,
+               le théâtre du moins devait montrer plus de prudence. L’œuvre dramatique, en effet,
+               n’accède à sa vie propre qu’à la condition d’une entente avec un public, quel qu’il
+               soit&nbsp;; il fallait donc entourer celui-ci d’attentions&nbsp;: lui présenter des personnages
+               hors-série, l’intéresser par des situations piquantes, le prendre dans les engrenages
+               d’une intrigue, ou alors le sortir violemment de lui-même par une invention verbale
+               constante, relevant plus ou moins du délire, ou du lyrisme poétique.</p>
+            <p>Que nous propose <span class="STDitalic">En attendant Godot&nbsp;?</span> C’est peu de dire qu’il ne s’y passe rien. Qu’il n’y ait ni engrenages ni intrigue
+               d’aucune sorte, cela d’ailleurs s’est déjà vu sur d’autres scènes. Ici, c’est <span class="STDitalic">moins que rien </span>qu’il faudrait écrire&nbsp;: comme si nous assistions à une espèce de régression au-delà du rien. Comme toujours chez <span class="ref">Samuel&nbsp;Beckett</span>, ce peu qu’on nous avait donné au départ&nbsp;–&nbsp;et qui nous semblait être rien&nbsp;–&nbsp;se corrompt
+               bientôt sous nos yeux, se dégrade encore, semblable à ce <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span> qui revient privé de la vue, traîné par un <span class="quote" onclick="displayExtract('toDefine')">Lucky</span> privé de la parole&nbsp;–&nbsp;semblable aussi, par dérision, à cette carotte qui au second
+               acte n’est plus qu’un radis...</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ceci devient vraiment insignifiant&nbsp;»</span>, dit à ce propos l’un des compères. <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Pas encore assez&nbsp;»</span>, dit l’autre. Et un long silence ponctue sa réponse.</p>
+            <p>On jugera du même coup, d’après ces deux répliques, à quelle distance nous nous trouvons
+               du délire verbal mentionné plus haut. Du début jusqu’à la fin le dialogue est <span class="STDitalic">mourant,</span> exténué, situé constamment à ces frontières de l’agonie où se meuvent tous les <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;héros&nbsp;»</span> de <span class="ref">Beckett</span>, dont même, bien souvent, on ne pourrait affirmer qu’ils sont encore de ce côté-ci
+               de leur mort. Au milieu des silences, des redites et des phrases toutes faites (du
+               genre&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;On est ce qu’on est. Le fond ne change pas&nbsp;»</span>), l’un ou l’autre des deux vagabonds propose çà et là, pour passer le temps, de faire
+               la conversation, de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;se repentir&nbsp;»</span>, de se pendre, de raconter des histoires, de s’injurier, de jouer à <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Pozzo et Lucky&nbsp;»</span>, mais chaque fois la tentative tourne court et se perd après quelques échanges incertains
+               dans des points de suspension, des renoncements, des échecs.</p>
+            <p>Quant à l’argument, il se résume en trois mots –&nbsp;<span class="quote" onclick="displayExtract('toDefine')">«&nbsp;On attend Godot&nbsp;»</span>&nbsp;–&nbsp;qui reviennent sans cesse, comme un refrain. Mais comme un refrain stupide et lassant,
+               car cette attente n’intéresse personne&nbsp;; elle ne possède pas, en tant qu’attente, la moindre valeur scénique. Ce n’est ni un espoir,
+               ni une angoisse, ni même un désespoir. C’est tout juste un alibi.</p>
+            <p>Dans cette désagrégation générale, il y a comme un point culminant&nbsp;–&nbsp;c’est-à-dire,
+               en l’occurrence, l’envers d’un point culminant&nbsp;: un bas-fond, un cul-de-basse-fosse.
+               <span class="quote" onclick="displayExtract('toDefine')">Lucky</span> et <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>, infirmes, se sont effondrés l’un sur l’autre au milieu de la route&nbsp;; ils ne peuvent
+               plus se relever. Après un long marchandage, <span class="quote" onclick="displayExtract('toDefine')">Didi</span> vient à leur secours, mais il trébuche et s’affale sur eux&nbsp;; il doit à son tour appeler
+               à l’aide. <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> lui tend la main, perd l’équilibre et tombe. Il n’y a plus un seul personnage debout.
+               Il n’y a plus sur la scène que ce tas grouillant et geignant, où l’on aperçoit alors
+               la figure de <span class="quote" onclick="displayExtract('toDefine')">Didi</span> qui s’éclaire, pour prononcer d’une voix presque rassérénée&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Nous sommes des hommes&nbsp;!&nbsp;»</span></p>
+            <div class="smallgap"></div>
+            <p>On connaissait le théâtre d’idées. C’était un sain exercice d’intelligence, qui avait
+               son public (bien qu’il y soit fait parfois bon marché des situations et de la progression
+               dramatique). On s’y ennuyait un peu, mais on y <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;pensait&nbsp;»</span> ferme, dans la salle comme sur la scène. La pensée, même subversive, a toujours quelque
+               chose de rassurant. La parole&nbsp;–&nbsp;la belle parole&nbsp;– rassure aussi. Combien le discours
+               noble et harmonieux n’aura-t-il pas créé de malentendus, servant de masque tour à
+               tour aux idées ou à leur absence&nbsp;!</p>
+            <p>Ici, pas de malentendu&nbsp;: pas plus de pensée que de belle parole&nbsp;; l’une comme l’autre
+               ne figure dans le texte que sous forme de parodie, d’<span class="STDitalic">envers</span> une fois de plus, ou de cadavre.</p>
+            <p>La parole, c’est ce <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;crépuscule&nbsp;»</span> décrit par <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>&nbsp;; annoncé comme un morceau de choix à grand renfort d’éclaircissements de gorge et
+               de claquements de fouet, truffé d’expressions choisies et de gestes dramatiques, mais
+               saboté parallèlement par des interruptions soudaines, des exclamations familières,
+               des baisses d’inspiration grotesques&nbsp;:</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;... (Sa voix se fait chantante.) Il y a une heure (il regarde sa montre, ton prosaïque)
+                  environ, (ton à nouveau lyrique) après nous avoir versé depuis (il hésite, le ton
+                  baisse) mettons dix heures du matin (le ton s’élève) sans faiblir des torrents de
+                  lumière rouge et blanche&nbsp;»</span>, etc., jusqu’à cette fin en queue de poisson, crachée d’une voix morne, après un
+               silence&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;C’est comme ça que ça se passe sur cette putain de terre. (Long silence.)&nbsp;»</span></p>
+            <p>Et voici la pensée maintenant. Les deux vagabonds ont posé une question à <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>, mais personne ne peut se rappeler laquelle. Tous les trois se découvrent simultanément,
+               portent la main au front, se concentrent, crispés. Long silence. Tout à coup <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> s’exclame, il a trouvé&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Pourquoi ne dépose-t-il pas ses bagages&nbsp;?&nbsp;»</span></p>
+            <p>Il s’agit de <span class="quote" onclick="displayExtract('toDefine')">Lucky</span>. C’est effectivement la question qui a été posée quelques minutes plus tôt, mais
+               dans l’intervalle le serviteur a déposé les bagages&nbsp;; si bien que <span class="quote" onclick="displayExtract('toDefine')">Didi</span> convainc tout le monde en concluant&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Puisqu’il a déposé les bagages, il est impossible que nous ayons demandé pourquoi
+                  il ne les dépose pas.&nbsp;»</span> Ce qui est la logique même. Dans cet univers où le temps ne coule pas, les mots <span class="STDitalic">avant</span> et <span class="STDitalic">après </span>n’ont aucun sens&nbsp;; seule compte la situation présente&nbsp;: les bagages <span class="STDitalic">sont</span> déposés, comme depuis toujours.</p>
+            <p>De tels raisonnements se rencontraient déjà chez <span class="ref">Lewis&nbsp;Carroll</span> ou <span class="ref">Jarry</span>. <span class="ref">Beckett</span> fait mieux&nbsp;: il nous montre son penseur spécialisé, <span class="quote" onclick="displayExtract('toDefine')">Lucky</span>&nbsp;; sur l’injonction de son maître (<span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Pense&nbsp;! Porc&nbsp;!&nbsp;»</span>), il commence&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Étant donné l’existence telle qu’elle jaillit des récents travaux publics de Poinçon
+                  et Wattmann d’un Dieu personnel quaquaquaqua à barbe blanche quaqua hors du temps
+                  de l’étendue qui du haut de sa divine apathie sa divine athambie sa divine aphasie
+                  nous aime bien à quelques exceptions près on ne sait pourquoi mais ça viendra et souffre
+                  à l’instar...&nbsp;»</span>, etc. Les autres sont obligés, pour le faire taire, de le renverser, de le bourrer
+               de coups, de le piétiner et, seule méthode vraiment efficace, de lui enlever son chapeau.
+               Comme dit l’un des deux compères&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Penser, ce n’est pas le pire.&nbsp;»</span></p>
+            <p>On ne saurait trop insister sur le sérieux de semblables réflexions. Soixante-dix
+               siècles, et plus, d’analyse et de métaphysique ont tendance, au lieu de nous rendre
+               modestes, à nous dissimuler la faiblesse de nos ressources lorsqu’il s’agit de l’essentiel.
+               En fait, tout se passe comme si l’importance réelle d’une question se mesurait, précisément,
+               à l’impossibilité où nous sommes de lui appliquer une pensée honnête, sinon pour la
+               faire rétrograder.</p>
+            <div class="smallgap"></div>
+            <p>C’est ce mouvement&nbsp;–&nbsp;cette régression si dangereusement contagieuse&nbsp;–&nbsp;que marque toute
+               l’œuvre de Beckett. Les deux comparses, <span class="quote" onclick="displayExtract('toDefine')">Lucky</span> et <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>, se sont donc dégradés d’un acte à l’autre, à l’instar des Murphy, <span class="quote" onclick="displayExtract('toDefine')">Molloy</span>, <span class="quote" onclick="displayExtract('toDefine')">Malone</span>, etc. Les carottes se sont réduites à des radis. La chanson cyclique sur le chien
+               voleur, <span class="quote" onclick="displayExtract('toDefine')">Didi</span> a même fini par en perdre le fil. Et il en est à l’avenant de tous les autres accessoires
+               de la pièce.</p>
+            <p>Mais les deux vagabonds, eux, demeurent intacts, inchangés. Aussi sommes-nous certains,
+               cette fois, qu’ils ne sont pas de simples marionnettes dont le rôle se bornerait à
+               masquer l’absence du protagoniste. Ce Godot qu’ils sont censés attendre, ce n’est
+               pas lui <span class="STDitalic">qui a</span><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;à être&nbsp;»</span>, mais eux, <span class="quote" onclick="displayExtract('toDefine')">Didi</span> et <span class="quote" onclick="displayExtract('toDefine')">Gogo</span>.</p>
+            <p>Nous saisissons tout à coup, en les regardant, cette fonction majeure de la représentation
+               théâtrale&nbsp;: montrer en quoi consiste le fait d’<span class="STDitalic">être là.</span> Car c’est cela, précisément, que nous n’avions pas encore vu sur une scène, ou en
+               tout cas que nous n’avions pas vu avec autant de netteté, si peu de concessions et
+               tant d’évidence. Le personnage de théâtre, le plus souvent, ne fait que <span class="STDitalic">jouer un rôle,</span> comme le font autour de nous ceux qui se dérobent à leur propre existence. Dans la
+               pièce de <span class="ref">Beckett</span>, au contraire, tout se passe comme si les deux vagabonds se trouvaient en scène <span class="STDitalic">sans avoir de rôle.</span></p>
+            <p>Ils sont là&nbsp;; il faut qu’ils s’expliquent. Mais ils ne semblent pas avoir de texte
+               tout préparé et soigneusement appris par cœur, pour les soutenir. Ils doivent inventer.
+               Ils sont libres.</p>
+            <p>Bien entendu, cette liberté est sans emploi&nbsp;: de même qu’ils n’ont rien à réciter,
+               ils n’ont rien <span class="STDitalic">à inventer</span> non plus&nbsp;; et leur conversation, qu’aucune trame ne soutient, se réduit à des fragments
+               dérisoires&nbsp;: répliques automatiques, jeux de mots, discussions fictives plus ou moins
+               avortées. Ils essaient un peu de tout, au hasard. La seule chose qu’ils ne sont pas libres de faire, c’est de s’en
+               aller, de cesser d’être là&nbsp;: il faut bien qu’ils demeurent puisqu’ils attendent Godot.
+               Ils sont là au premier acte, du début jusqu’à la fin, et quand le rideau tombe c’est,
+               malgré l’annonce de leur départ, sur deux hommes qui continuent d’attendre. Ils sont
+               là encore au deuxième acte, qui n’apporte rien de nouveau&nbsp;; et de nouveau, malgré
+               l’annonce de leur départ, ils restent en scène lorsque le rideau tombe. Ils seront
+               encore là le lendemain, le lendemain du lendemain, et ainsi de suite... <span class="STDitalic">from day to day, to-morrow, and to-morrow, and to-morrow... </span>seuls en scène, debout, inutiles, sans avenir ni passé, irrémédiablement présents.</p>
+            <div class="smallgap"></div>
+            <p>Mais voilà que l’homme lui-même, celui qui est là sous nos yeux, finit par se dégrader
+               à son tour. Le rideau se relève sur une nouvelle pièce&nbsp;: <span class="STDitalic">Fin de partie, </span>une <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;vieille fin de partie perdue&nbsp;»</span>, précise <span class="quote" onclick="displayExtract('toDefine')">Hamm</span>, le protagoniste.</p>
+            <p>Pas plus que ses prédécesseurs, <span class="quote" onclick="displayExtract('toDefine')">Didi</span> et <span class="quote" onclick="displayExtract('toDefine')">Gogo</span>, <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> n’a la possibilité de partir pour aller ailleurs. Mais la raison en est devenue tragiquement
+               physique&nbsp;: il est paralysé, assis dans un fauteuil au milieu de la scène, et il est
+               aveugle. Autour de lui il n’y a rien que de hauts murs nus, sans fenêtre accessible.
+               <span class="quote" onclick="displayExtract('toDefine')">Clov</span>, une sorte d’infirmier à demi impotent lui-même, s’occupe tant bien que mal du moribond&nbsp;:
+               il peut juste, en guise de promenade, traîner le fauteuil de celui-ci, en rond, le
+               long des murs.</p>
+            <p>Par rapport aux deux vagabonds, <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> a donc perdu cette liberté dérisoire qui leur restait&nbsp;: ce n’est plus lui qui choisit de ne pas s’en aller. Lorsqu’il demande à <span class="quote" onclick="displayExtract('toDefine')">Clov</span> de construire un radeau et de l’y transporter, afin d’abandonner son corps au gré
+               des courants marins, il ne peut s’agir cette fois que d’une plaisanterie&nbsp;; comme si
+               <span class="quote" onclick="displayExtract('toDefine')">Hamm</span>, en renonçant aussitôt à ce projet, cherchait à se donner l’illusion du choix. En
+               fait, il nous apparaît comme enfermé dans sa retraite&nbsp;; s’il n’a pas le désir d’en
+               sortir, il n’en a pas non plus les moyens. C’est là une notable différence&nbsp;: il ne
+               s’agit plus pour l’homme d’affirmer une position, mais de subir un sort.</p>
+            <p>Et cependant, à l’intérieur de sa prison, il opère encore une parodie de choix&nbsp;: sa
+               promenade, il l’interrompt tout de suite, il exige qu’on le ramène au centre, exactement
+               au centre de la scène&nbsp;; bien que ne voyant rien, il prétend être sensible au moindre
+               écart dans un sens ou dans l’autre.</p>
+            <p>Être au milieu, être immobile, ce n’est pas suffisant&nbsp;: il faut encore se débarrasser
+               de tous les accessoires inutiles&nbsp;; <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> rejette bientôt, hors de portée, tout ce qu’il possédait encore&nbsp;: un sifflet pour
+               appeler, un bâton dont il pouvait à la rigueur se servir pour déplacer son fauteuil,
+               une ébauche de chien en chiffon qu’il pouvait caresser. Enfin il faut la solitude&nbsp;:
+               <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;C’est fini, Clov, nous avons fini. Je n’ai plus besoin de toi.&nbsp;»</span></p>
+            <p>En effet, le rôle du compagnon se termine&nbsp;: il n’y a plus de biscuit, il n’y a plus
+               de calmant, il n’y a plus rien à donner au malade. <span class="quote" onclick="displayExtract('toDefine')">Clov</span> n’a plus qu’à s’en aller. Il le fait... ou du moins il décide de le faire, mais,
+               chapeau sur la tête et valise à la main, tandis que <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> l’appelle en vain et le croit déjà loin peut-être, <span class="quote" onclick="displayExtract('toDefine')">Clov</span> reste là, près de la porte ouverte, les yeux fixés sur <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> qui voile son visage sous un linge sanglant, tandis que le rideau tombe.</p>
+            <div class="smallgap"></div>
+            <p>Ainsi, jusque dans cette dernière image, nous retrouvons bien le thème essentiel de
+               la <span class="STDitalic">présence&nbsp;:</span> tout ce qui est <span class="STDitalic">est ici,</span> hors de la scène il n’y a que le néant, le non-être. Il ne suffit pas que <span class="quote" onclick="displayExtract('toDefine')">Clov</span>, monté sur un escabeau pour accéder aux minuscules ouvertures donnant sur le pseudo-monde
+               extérieur, nous renseigne d’un mot sur le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;paysage&nbsp;»</span>&nbsp;: une mer vide et grise côté cour, un désert côté jardin. En réalité cette mer, ce
+               désert, d’ailleurs invisibles pour le spectateur, sont inhabitables au sens le plus
+               strict du mot&nbsp;: autant que pourrait l’être une toile de fond où seraient peints de
+               l’eau ou du sable. D’où ce dialogue&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Pourquoi restes-tu avec moi&nbsp;?&nbsp;–&nbsp;Pourquoi me gardes-tu&nbsp;?&nbsp;–&nbsp;Il n’y a personne d’autre.&nbsp;–&nbsp;Il
+                  n’y a pas d’autre place.&nbsp;»</span><span class="quote" onclick="displayExtract('toDefine')">Hamm</span>, d’ailleurs, ne cesse de le souligner&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Hors d’ici, c’est la mort&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Loin tu serais mort&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Loin de moi c’est la mort&nbsp;»</span>, etc.</p>
+            <p>De même, tout est présent dans le temps, comme tout l’est dans l’espace. À cet <span class="STDitalic">ici</span> inéluctable, répond un éternel <span class="STDitalic">maintenant&nbsp;:</span><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Hier&nbsp;! Qu’est-ce que ça veut dire&nbsp;: hier&nbsp;?&nbsp;»</span> s’exclame à plusieurs reprises <span class="quote" onclick="displayExtract('toDefine')">Hamm</span>. Et la conjonction de l’espace et du temps donne seulement, au sujet d’un troisième
+               personnage éventuel, cette certitude&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;S’il existe, il viendra ici.&nbsp;»</span></p>
+            <p>Sans passé, sans ailleurs, sans autre avenir que la mort, l’univers ainsi défini est
+               nécessairement privé de sens, dans les deux acceptions du terme&nbsp;: il exclut aussi
+               bien toute idée de <span class="STDitalic">progrès</span> qu’une quelconque <span class="STDitalic">signification.</span></p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">Hamm</span>, tout à coup, est pris d’un doute&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;On n’est pas en train de... de... signifier quelque chose&nbsp;?&nbsp;»</span> demande-t-il avec émotion. <span class="quote" onclick="displayExtract('toDefine')">Clov</span> le rassure aussitôt&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Signifier&nbsp;? Nous, signifier&nbsp;! (rire bref). Ah elle est bonne&nbsp;!&nbsp;»</span></p>
+            <div class="smallgap"></div>
+            <p>Mais cette attente de la mort, cette misère physique qui s’aggrave, ces menaces que
+               <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> brandit devant <span class="quote" onclick="displayExtract('toDefine')">Clov</span> (<span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Un jour tu seras aveugle. Comme moi. Tu seras assis quelque part, petit plein perdu
+                  dans le vide, pour toujours, dans le noir. Comme moi. Un jour tu diras, Je suis fatigué,
+                  je vais m’asseoir, et tu iras t’asseoir. Puis tu te diras, J’ai faim, je vais me lever
+                  et me faire à manger. Mais tu ne te lèveras pas...&nbsp;»</span>), toute cette pourriture progressive du présent, cela constitue malgré tout un avenir.</p>
+            <p>Alors la peur de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;signifier quelque chose&nbsp;»</span> se justifie parfaitement&nbsp;: par cette conscience acceptée d’un déroulement tragique,
+               le monde a récupéré d’un seul coup toute sa signification.</p>
+            <p>Et parallèlement, devant une telle menace (ce futur à la fois terrible et fatal),
+               on peut dire que le présent n’est plus rien, qu’il disparaît, escamoté à son tour,
+               perdu dans la faillite générale. <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Plus de calmant...&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Plus de biscuit...&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Plus de bicyclette...&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Plus de nature...&nbsp;»</span>... <span class="STDitalic">Il n’y a plus de présent,</span> pourrait annoncer enfin <span class="quote" onclick="displayExtract('toDefine')">Clov</span>, de la même voix morne et triomphante.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Instants nuls, toujours nuls...&nbsp;»</span>, dit <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> dans son monologue final, conclusion logique à la phrase maintes fois reprise&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ça avance. Ça avance. Quelque chose suit son cours.&nbsp;»</span> Et, en définitive, <span class="quote" onclick="displayExtract('toDefine')">Hamm</span>est acculé à la constatation de son échec&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Je n’ai jamais été là. Clov&nbsp;!... Je n’ai jamais été là... Absent, toujours. Tout s’est fait sans moi...&nbsp;»</span></p>
+            <div class="smallgap"></div>
+            <p>De nouveau le trajet fatal s’est accompli. <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> et <span class="quote" onclick="displayExtract('toDefine')">Clov</span>, successeurs de <span class="quote" onclick="displayExtract('toDefine')">Gogo</span> et <span class="quote" onclick="displayExtract('toDefine')">Didi</span>, ont retrouvé le sort commun de tous les personnages de <span class="ref">Beckett</span>&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">Pozzo</span>, <span class="quote" onclick="displayExtract('toDefine')">Lucky</span>, <span class="quote" onclick="displayExtract('toDefine')">Murphy</span>, <span class="quote" onclick="displayExtract('toDefine')">Molloy</span>, <span class="quote" onclick="displayExtract('toDefine')">Malone</span>, <span class="quote" onclick="displayExtract('toDefine')">Mahood</span>, <span class="quote" onclick="displayExtract('toDefine')">Worm</span>..., etc.</p>
+            <p>La scène de théâtre, lieu privilégié de la présence, n’a pas résisté longtemps à la
+               contagion. La progression du mal s’est faite au même rythme sûr que dans les récits.
+               Après avoir cru un moment que nous avions saisi le vrai homme, nous sommes donc contraints
+               de confesser notre erreur. <span class="quote" onclick="displayExtract('toDefine')">Didi</span> n’était qu’une illusion, c’est sans doute ce qui lui donnait cette allure dansante,
+               ce balancement d’une jambe sur l’autre, ce costume légèrement clownesque... Il n’était,
+               lui aussi, qu’une créature de mensonge, provisoire en tout cas, vite retombée dans
+               le domaine du rêve et de la fiction.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Je n’ai jamais été là&nbsp;»</span>, dit <span class="quote" onclick="displayExtract('toDefine')">Hamm</span>, et devant cet aveu plus rien ne compte, car il est impossible de l’entendre autrement
+               que sous sa forme la plus générale&nbsp;: <span class="STDitalic">Personne n’a jamais été là.</span></p>
+            <p>Et si, après <span class="STDitalic">Godot</span> et <span class="STDitalic">Fin de Partie,</span> vient maintenant une troisième pièce, ce sera probablement de nouveau <span class="STDitalic">L’Innommable,</span> troisième volet de la trilogie romanesque. <span class="quote" onclick="displayExtract('toDefine')">Hamm</span> nous en laisse déjà imaginer le ton, par le roman qu’il invente au fur et à mesure,
+               créant des péripéties factices et faisant agir des fantômes de personnages. Puisqu’il
+               n’est pas là lui-même, il ne lui reste plus qu’à se raconter des histoires, à manœuvrer des marionnettes,
+               à sa place, pour aider à passer le temps... À moins que Samuel Beckett ne nous réserve
+               de nouvelles surprises...</p>
+         </article>
+         <section class="extract_section">
+            <p>Some text here.</p>
+            <div id="pr_02_01" class="extractHide">
+               <p><span class="STDsmall STDgray">[10] </span>[...] Ces gens-là j'ai essayé de les aimer, ils ont <span class="STDsmall STDgray">[11] </span>parfois un air qui trompe mais bien vite si tu leur parle de toi ils t'injurient,
+                  ton chagrin leur fait horreur.</p>
+               <p>On m'a piqué avec une longue aiguille, c'est la vérité. Cette aiguille ellle m'est
+                  restée vivante. Quand on commence une histoire le mieux est de dire je suis né, c'est
+                  le meilleur départ car les enfances sont plus nombreuses à mesure qu'on grandit, ,
+                  elles se multiplient et voilà déjà une cause de confusion. J'ai le cœur gros de commencements
+                  toujours râtés. Et le but aussi, je n'en ai point.</p>
+               <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
+            </div>
+            <div id="pr_02_ToDefine" class="extractHide">
+               <p></p>
+               <p><span class="STDsmall STDgray">[16] </span>[...] Je me demande souvent si les esprits brillants existeraient sans leur mémoire,
+                  je n'ai aucune mémoire, je voudrais pour n'être pas ridicule vivre dans un mon d'où
+                  elle serait exclue, on ne pourrait partler que des choses du jour, et on inventerait,
+                  on inventerait au fur et à mesure, c'est ça la vraie vie.</p>
+               <p>La naissance d'un objet, j'ai remarqué, n'a pas lieu aujourd'hui, il y a du mouvement
+                  tout autour qui l'empêche de montrer la tête et demain tu t'avises qu'il existe. Par
+                  conséquent la meilleure explication des origines serait de commencer par des bruits
+                  de bouches et de glisser progressivement vers des paroles articulées jusqu'au moment
+                  où l'auditeur sans se poser aucune question participe à ton histoire.</p>
+               <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
+            </div>
+            <p>
+               Some text here.</p>
+         </section>
+      </div>
+      <div class="ch_nav"><a class="preceding" href="punr_ch08.html">&lt;</a><a class="following" href="punr_ch10.html">&gt;</a></div>
+      <footer><a href="https://www.univ-lille.fr/" target="blanck"><img src="img/logo_u_lille.png" alt="logo université de lille"></a></footer>
    </body>
 </html>

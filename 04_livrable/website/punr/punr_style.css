@@ -2,40 +2,53 @@
 *{
 /*	border: 1px solid red !important;*/
 	margin: 0;
+	box-sizing: border-box;
 }
 body{
 	margin: 0;
-	display: flex;
-	flex-wrap: wrap;
+/*	display: flex;*/
+/*	flex-wrap: wrap;*/
 }
 
 header{
 	margin: 0;
 	font-family: 'Source Code Pro', helvetica, sans-serif !important;
 	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 3px solid #000;
+}
+.header_div{
+	width: 100%;
+	display: flex;
+
 }
 nav{
-	min-width: 100%;
+/*	min-width: 80%;*/
 	display: flex;
 	align-content: stretch;
+	border-top: 1px solid black;
 }
 .nav_top ul, .nav-top ul li, .nav_top ul li a{
 /*	nav du site*/
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	display: flex;
 /*	flex-wrap: wrap;*/
 	align-content: center;
 /*	align-items: baseline;*/
 	font-size: 20pt;
 /*	max-width: 50%;*/
+	text-align: center;
 }
 .nav_top ul{
 	height: 100px;
+	display: flex;
+
 }
 .nav_top ul li{
 	height: 100px;
+	border-right: 1px solid #000;
 }
 .nav_top ul li a {
 	width: 100%;
@@ -47,16 +60,41 @@ nav{
 .nav_top ul li ol{
 /*	display: flex;*/
 	z-index: 999;
-	position: relative;
+	position: absolute;
 	width: 100%;
+	display: none;
+	padding: 0;
+	font-size: 10pt;
+	margin: 0;
+	font-family: inherit;
 }
 .nav_top ul li ol li {
-	list-style: decimal;
-	max-width: 50px;
-	display: none;
+	list-style: none;
+	width: 200px;
+/*	width: fit-content;*/
+	border-bottom: 1px solid #000;
+	height: fit-content;
+	list-style-position: inside;
+	background-color: #fff;
+
+/*	font-size: 11pt;*/
 }
-.nav_top ul li ol:hover li {
+.nav_top ul li ol li:nth-child(2n){
+	background-color: #bbb;
+}
+.nav_top ul li ol li a{
+	padding: 0;
+	font-size: 10pt;
+	text-decoration: none;
+	color: #000;
+}
+.nav_top ul li:hover ol {
 	display: block;
+	z-index: 999;
+
+}
+.nav_top ul li:hover{
+	background-color: #aaa!important;
 }
 
 .chapter_nav{
@@ -68,15 +106,18 @@ h1{
 	text-align: center;
 /*	width: 100%;*/
 /*	font-family: ;*/
-	flex-grow: 1;
+/*	flex-grow: 1;*/
 	border-top: 10px;
 	font-variant: small-caps;
 	min-width: 100%;
-	align-self: flex-end;
+/*	align-self: flex-end;*/
+}
+.h1_subtitle{
+	font-size: 40pt;
 }
 article{
 	margin-top: 50px;
-	width: 40%;
+	width: 50%;
 	align-self: center;
 }
 
@@ -93,7 +134,13 @@ footer img{
 div.legals{
 /*	contient les liens vers git et licence*/
 	display: grid;
+	flex-grow: 1;
+	align-content: baseline;
+	justify-content: right;
 /*voir reppol.css*/
+}
+div.legals img{
+	height: 32px;
 }
 
 .logo, .logo img{
@@ -121,40 +168,50 @@ h4{
 	font-size: 16pt;
 	margin-bottom: 0;
 }
-div.preceding{
+
+
+div.corpus{
+	display: flex;
+	margin: 0px 100px 0px 100px;
+}
+
+.ch_nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+	width: 80%;
+	margin: 0 100px 0 100px;
+}
+
+a.preceding, a.following{
 /*	le bouton précédent*/
 /*	position: absolute;*/
-	left: 0;
+/*	left: 0;*/
 	width: fit-content;
 	height: fit-content;
-	font-size: 30px;
+	font-size: 50pt;
 	font-weight: bold;
 	font-family: helvetica sans-serif;
-	margin-right: auto;
-
-}
-div.following{
-/*le bouton suivaznt	*/
-/*	position: absolute;*/
-/*	position: relative;*/
-
-/*	right: 0;*/
-	width: fit-content;
-	height: fit-content;
-	font-size: 30px;
-	font-weight: bold;
-	font-family: helvetica sans-serif;
-	margin-left: auto;
-
+	text-decoration: none;
+	color: initial;
+	display: block;
 }
 
 
 /*to check use, callage ? saut sémantique ?
 ==> ajouter au rapport technique*/
 div.smallgap{
-	height: 15px;
+	height: 20px;
 	width:100%;
 }
+div.corpus p:first-child::first-letter{
+	font-size: 150%;
+}
+.epigraph{
+
+}
+.epigraph_ref{}
 p{
 	text-align: justify;
 	font-size: 14pt;
@@ -163,6 +220,8 @@ p{
 	orphans: 3;
 	widows: 3;
 	line-break: normal;
+	margin-bottom: 5px;
+	text-indent: 60px;
 }
 .quote{
 	color:#00f;
@@ -177,7 +236,8 @@ p{
 section.extract_section{
 	width: 50%;
 	border:1px solid black;
-
+	margin-left: 100px;
+	margin-top: 50px;
 }
 .extractHide{
 	display: none;

@@ -10,314 +10,328 @@
       <meta name="author" content="adrien mevel, mathieu marchal, florence de chalonge, alain robbe-grillet">
       <meta name="description" content="digital critical edition of pour un nouveau roman by alain robbe-grillet fist published in 1963 this word has been realised as student project">
       <meta name="keywords" content="critical, edition, digital, robbe-grillet, litterature, french, 1963, nouveau roman, alain robbe-grillet, pour un nouveau roman, xxe siecle, xx, franch theory"><script src="script.js"></script></head>
-   <body>
+   <body onload="initialise()">
       <header id="top">
-         <h1>Pour un nouveau roman</h1>
-         <nav class="nav_top">
-            <ul>
-               <li><a href="home.html">Accueil</a></li>
-               <li><a href=""></a></li>
-               <li><a href=""></a></li>
-               <li>
-                  <ol class="chapter_nav">
-                     <li><a href="punr_ch01.html">À quoi servent les théories1955&nbsp;et&nbsp;1963</a></li>
-                     <li><a href="punr_ch02.html">Une voie pour le roman futur1956</a></li>
-                     <li><a href="punr_ch03.html">Sur quelques notions périmées1957</a></li>
-                     <li><a href="punr_ch04.html">Nature, humanisme, tragédie1958</a></li>
-                     <li><a href="punr_ch05.html">Éléments d’une anthologie moderne</a></li>
-                     <li><a href="punr_ch06.html">Énigmes et transparence chez Raymond&nbsp;Roussel 1963</a></li>
-                     <li><a href="punr_ch07.html">La conscience malade de Zeno1954</a></li>
-                     <li><a href="punr_ch08.html">Joë&nbsp;Bousquet le rêveur1953</a></li>
-                     <li><a href="punr_ch09.html">Samuel&nbsp;Beckett, ou la présence sur la scène 1953&nbsp;et&nbsp;1957</a></li>
-                     <li><a href="punr_ch10.html">Un roman qui s’invente lui-même1954</a></li>
-                     <li><a href="punr_ch11.html">Nouveau roman, homme nouveau1961</a></li>
-                     <li><a href="punr_ch12.html">Temps et description dans le récit d’aujourd’hui1963</a></li>
-                     <li><a href="punr_ch13.html">Du réalisme à la réalité1955&nbsp;et&nbsp;1963</a></li>
-                  </ol>
-               </li>
-            </ul>
-         </nav>
-         <div class="legals"><a href="" target="blanck"><img src="img/GitHub-Mark-32px.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_cc.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_by.png"></a></div>
+         <h1>Pour un nouveau roman<br><span class="h1_subtitle">Édition critque et numérique</span></h1>
+         <div class="header_div">
+            <nav class="nav_top">
+               <ul>
+                  <li><a href="home.html">Accueil</a></li>
+                  <li><a href="presentation.html">Présentation de l'œuvre</a></li>
+                  <li style="width:200px; height:100px; padding-top:9px">Corpus
+                     					
+                     <ol class="chapter_nav">
+                        <li><a href="punr_ch01.html">À quoi servent les théories</a></li>
+                        <li><a href="punr_ch02.html">Une voie pour le roman futur</a></li>
+                        <li><a href="punr_ch03.html">Sur quelques notions périmées</a></li>
+                        <li><a href="punr_ch04.html">Nature, humanisme, tragédie</a></li>
+                        <li><a href="punr_ch05.html">Éléments d’une anthologie moderne</a></li>
+                        <li><a href="punr_ch06.html">Énigmes et transparence chez Raymond&nbsp;Roussel </a></li>
+                        <li><a href="punr_ch07.html">La conscience malade de Zeno</a></li>
+                        <li><a href="punr_ch08.html">Joë&nbsp;Bousquet le rêveur</a></li>
+                        <li><a href="punr_ch09.html">Samuel&nbsp;Beckett, ou la présence sur la scène </a></li>
+                        <li><a href="punr_ch10.html">Un roman qui s’invente lui-même</a></li>
+                        <li><a href="punr_ch11.html">Nouveau roman, homme nouveau</a></li>
+                        <li><a href="punr_ch12.html">Temps et description dans le récit d’aujourd’hui</a></li>
+                        <li><a href="punr_ch13.html">Du réalisme à la réalité</a></li>
+                     </ol>
+                  </li>
+                  <li><a href="database.html">Illsutration de la base de données</a></li>
+                  <li><a href="timeline.html">Chronologie</a></li>
+               </ul>
+            </nav>
+            <div class="legals"><a href="https://github.com/mevel-a/ednitl_m2_memoire" target="blanck" style="grid-column:1;"><img src="img/GitHub-Mark-32px.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:2;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_cc.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:3;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_by.png"></a><a href="files/punr.xml" download="" style="grid-column:3; grid-row:2;"><img src="img/logo_xml.png" alt="XML"></a></div>
+         </div>
       </header>
-      <div class="preceding"><a href="punr_ch07.html">&lt;</a></div>
-      <div class="following"><a href="punr_ch09.html">&gt;</a></div>
-      <article>
-         <h4>Joë&nbsp;Bousquet le rêveur<br><span class="STDsmall">(1953)</span></h4><span class="quote" onclick="displayExtract('toDefine')">Un homme se connaissait comme le produit de ce monde. Il a voulu en devenir la conscience&nbsp;:
-            une façon de rêver qu’il en incarnerait le salut.J.&nbsp;B.</span><p><span class="ref">Joë&nbsp;Bousquet</span> est dans sa chambre, prisonnier, infirme, <span class="STDitalic">immobile</span>, il écrit&nbsp;:</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Je suis là, mais pas à la façon dont vous y êtes&nbsp;: si vous pouviez seulement voir
-               travailler mes yeux&nbsp;!...</span></p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Mon ombre tourne autour de moi, vous tournez autour de votre ombre.</span></p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;C’est difficile à faire comprendre aux autres que je ne vis pas comme eux. Ils sont
-               dans l’espace comme les poissons dans l’eau. Pas moi. Je suis un trou dans le lit
-               du fleuve.&nbsp;»</span></p>
-         <p>Lorsque, à l’âge de vingt ans, <span class="ref">Bousquet</span> se voit subitement <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;retranché de la vie&nbsp;»</span> par la blessure de guerre qui le paralyse pour le restant de ses jours, il songe
-            d’abord au suicide, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;par amour de la vie&nbsp;»</span>. Mais il s’aperçoit bientôt de son erreur&nbsp;: s’il a perdu l’usage de ses jambes, la vie, elle, ne peut lui échapper. Bien mieux, sa diminution
-            physique lui donne une force nouvelle pour construire autour de lui l’univers –&nbsp;force
-            que l’agitation de son corps avait sans doute détournée, ou masquée, jusque-là. Et,
-            si cette <span class="STDitalic">vie</span> qu’il élabore semble lui être apparue, au début, comme une sorte de produit de remplacement&nbsp;–&nbsp;merveilleux
-            pour lui, mais d’intérêt malgré tout secondaire pour celui qui aurait le choix&nbsp;–,
-            il la reconnaît très vite pour la plus précieuse, la plus profonde, la seule probablement
-            à être <span class="STDitalic">réelle...</span></p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Si tous les hommes vivaient immobiles, comme moi, ils auraient un nom chargé de
-               doute pour désigner les faits qui tournent sur eux-mêmes pour les envelopper...&nbsp;»</span></p>
-         <p>Si les hommes vivaient immobiles, s’ils acceptaient d’être ce <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;trou dans le lit du fleuve&nbsp;»</span>, ils verraient l’eau venir à eux de tous côtés, les courants s’organiser de façon
-            nouvelle, plus compréhensible, et le fleuve tout entier prendre son vrai sens.</p>
-         <p>Cette expérience dramatique, <span class="ref">Bousquet</span> n’a pas voulu la faire pour lui seul, et, plus peut-être que par ses œuvres proprement
-            poétiques ou romanesques, c’est par ces réflexions quotidiennes, dans lesquelles il
-            s’acharne à nous faire comprendre sa situation, qu’il se montre irremplaçable. Car
-            sa situation n’est qu’une image cruelle de celle même du créateur.</p>
-         <p>Le monde sensible qui l’entoure n’est plus, comme le rêve ou le souvenir, que la matière
-            à laquelle il doit prêter son imagination pour la sauver du néant. Il est prisonnier
-            dans sa chambre, il est condamné à l’inaction par la balle qu’il a reçue, mais c’est
-            lui en fin de compte qui donne une existence organisée à sa prison, c’est lui qui rachète au hasard
-            et au chaos cette balle perdue qui l’a brisé. Il n’est plus ici question d’insuffler
-            après coup une conscience à des phénomènes ayant déjà leur vie propre&nbsp;: sans cette
-            création, la matière ne saurait avoir aucune forme&nbsp;; <span class="ref">Bousquet</span> découvre enfin qu’il s’est lui-même infligé sa mutilation.</p>
-         <p>Dans <span class="STDitalic">Le Meneur de Lune</span> nous suivons la progression de page en page&nbsp;:</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;L’accident qui mutile un homme ne touche pas aux sources de son existence&nbsp;; il n’est
-               mortel qu’à ses habitudes. L’infortune physique ne corrompt que ce qui était à corrompre.</span></p>
-         <p>–&nbsp;Ainsi, après avoir été jeté dans ton lit d’infirme, tu as vu ta vie venir à toi&nbsp;?</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">–&nbsp;Hélas&nbsp;! qu’ai-je incarné de plus que l’accident dont j’avais été la victime&nbsp;?&nbsp;»</span></p>
-         <p>Et plus loin&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Fais ta vie à l’image de ce que tu portes en toi de meilleur. Si elle t’impose une
-               loi que tu n’as pas conçue, ne te sépare pas d’elle sous ce prétexte. Vous êtes, elle
-               et toi, le produit de la même volonté.&nbsp;»</span></p>
-         <p>Mais plus loin encore&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ce qui t’advient, tu l’avais souhaité...&nbsp;»</span></p>
-         <div class="smallgap"></div>
-         <p>Ce sont d’abord les souvenirs de jeunesse qui se recomposent en décors et événements
-            débarrassés de leur halo, modelés désormais dans une pâte moins fragile. L’opération
-            n’a rien d’appauvrissant, au contraire&nbsp;; ce n’est pas une maquette schématique qui
-            se substitue à une réalité trop complexe&nbsp;; ce sont vraiment <span class="STDitalic">la pierre et l’eau</span> que ce travail <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;édifie et désenlise&nbsp;»</span>.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Pas possible, lui dit une amie d’enfance, on dirait que la campagne où nous avons
-               vécu est à cent pieds sous terre et que tu y descends, quand nous croyons te voir.&nbsp;»</span></p>
-         <p>Mais <span class="ref">Bousquet</span> ne s’y trompe pas&nbsp;; il sait qu’il <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;abrite au milieu de ses souvenirs une expérience sournoise et profonde&nbsp;»</span>&nbsp;: il ne s’agit pas de <span class="STDitalic">descendre </span>vers le village enfoui, mais de le reconstruire, ou plutôt de lui donner pour la première
-            fois le jour&nbsp;; car le jardin, la maisonnette au bord des flots, la voie ferrée à ses
-            pieds, rien de tout cela n’a encore eu d’existence. Les témoins inattentifs peuvent
-            seuls les confondre avec les bribes éparses, corrompues par les années et la distance,
-            auxquelles ces constructions sont censées se rattacher. Lui sait que leur brillant,
-            leur qualité <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;de cohérence et de densité immuables&nbsp;»</span>, n’appartiennent qu’à un <span class="STDitalic">monde nouveau</span>, cette fois retrouvé pour toujours. Cette <span class="STDitalic">Neige d’un autre âge</span> ne fondra pas au premier rayon de soleil.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Dans mes évocations de Marceillens, ou du village où j’ai grandi, la référence au
-               souvenir s’ajoute comme une concession de plus en plus mollement accordée... Il m’apparaît
-               de plus en plus que rien dans cette opération n’est, à beaucoup près, aussi fictif
-               et convenu que la résolution de l’attribuer à ma mémoire...</span></p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Mon expérience de prisonnier m’a édifié&nbsp;; libre, j’engendrais l’étendue où je croyais
-               me déplacer comme un objet. Immobilisé, je me suis aperçu que le battement de mon
-               cœur créait sans relâche l’espace <a id="page_105"></a>où si souvent j’avais cru reconnaître le décor stéréotypé de mon enfance. Eussé-je
-               conservé mes jambes, j’aurais mobilisé de loin le versant boisé d’une promenade et
-               dissous dans l’effort de l’escalade la sensation que le battement de mon sang en distribuait
-               les reliefs, sur la pente docile de mon champ visuel. Maintenant je saisis mieux l’opération
-               qui reste inachevée. Croyant revivre des souvenirs, je crée sur un modèle de jadis
-               un paysage où je n’ai plus les moyens de pénétrer, mais où je fais pleuvoir du temps,
-               avançant parfois une page blanche à travers les fils consacrés de l’opération magique.&nbsp;»</span></p>
-         <p>La découverte est capitale, elle marque l’avènement de l’art en libérant la littérature
-            du souci de transcrire ou de témoigner. Le reportage exige de son auteur consciencieux
-            un déplacement physique, où l’essentiel est toujours plus ou moins <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;dissous dans l’effort de l’escalade&nbsp;»</span>&nbsp;; telle qu’elle est ici définie, la <span class="STDitalic">création</span> est au contraire inséparable de l’emprisonnement&nbsp;–&nbsp;dont l’orne d’ailleurs volontiers
-            l’imagerie populaire&nbsp;: le poète dans sa tour d’ivoire, <span class="ref">Sade</span> dans son cachot, <span class="ref">Marcel&nbsp;Proust</span> dans sa chambre capitonnée de liège. On a voulu souvent limiter cette prison à une
-            certaine qualité de solitude, presque toujours entendue comme solitude par rapport
-            aux hommes. Il faut y voir quelque chose de plus, et même quelque chose de très différent
-            quant à la portée&nbsp;: non seulement un isolement plus grave qui éloigne de façon tout
-            aussi radicale les objets et les décors, mais encore cette dimension nouvelle apportée
-            par l’interdiction de s’en rapprocher. C’est ce que marque de façon si précise la
-            dernière phrase du paragraphe&nbsp;–&nbsp;<span class="quote" onclick="displayExtract('toDefine')">«&nbsp;... un paysage où je n’ai plus les moyens de pénétrer, mais où je fais pleuvoir du temps...&nbsp;»</span>&nbsp;–&nbsp;les deux phénomènes (<span class="STDitalic">paralysie</span> du créateur et <span class="STDitalic">vie</span> de la création) y étant non pas juxtaposés mais liés par une relation causale très
-            stricte. Comme si cette faculté de donner la vie ne pouvait aller, paradoxalement,
-            sans une certaine incapacité à vivre&nbsp;; incapacité contre laquelle se révoltent ceux
-            qui en sont frappés&nbsp;–&nbsp;bien qu’ils ne cessent, en même temps, de souhaiter à leur propre
-            malheur un accomplissement définitif (<span class="quote" onclick="displayExtract('toDefine')">«&nbsp;si nous pouvions seulement prendre racine&nbsp;!&nbsp;»</span>), dont la mort est à la fois le terme, l’image la plus parfaite&nbsp;–&nbsp;et la dérision.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Si seulement mon existence, comme celle d’un arbre, était la fixité d’un lieu...
-               Ou, alors, comme celle de mon esprit, l’effacement de tous les lieux. Mais je suis
-               comme ce passant, là-bas&nbsp;; regardez-le marcher, il a l’air de courir après une voiture.
-               Il est lui-même, comme la plume qui vole est un oiseau.&nbsp;»</span></p>
-         <div class="smallgap"></div>
-         <p>Il y a aussi le faux sommeil du rêve, qui nous donne de l’<span class="STDitalic">état idéal</span> une approximation moins effrayante –&nbsp;provisoire et réversible en tout cas&nbsp;–&nbsp;et en
-            même temps plus efficace. Comme beaucoup de ses amis surréalistes, <span class="ref">Bousquet</span> note avec soin ses rêves&nbsp;; il aime <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;la souveraine solitude du songe&nbsp;»</span>&nbsp;; il redoute <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;l’angoisse qui l’emprisonne à l’instant du réveil&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;angoisse modèle qui nous pénètre jusqu’à l’écœurement de tout l’espace que nous
-               perdons&nbsp;»</span>. Il en vient donc très vite à susciter lui-même ses rêves&nbsp;; il s’efforce <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;d’entrer, le visage haut, dans ce monde que l’on dit imaginaire&nbsp;»</span>. Les paupières à demi closes sur ses yeux <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;pétrifiés&nbsp;»</span>, il sent autour de lui l’étendue qui se métamorphose&nbsp;:</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;... Toute la maison se transforme et semble s’agrandir et se taire, édifier sur
-               moi une solitude où le silence croissant de l’espace introduit la majesté et le moutonnement
-               d’une mer. Un mot venu sur mes lèvres achève de me fasciner avec la vision de cet
-               immeuble soudain ouvert à l’invisible et au rien. Ce mot, c’est&nbsp;: absence.&nbsp;»</span></p>
-         <p>Mais cet univers du rêve, qui a donné lieu, sous d’autres plumes ou pinceaux, à tant
-            de fantasmagories et de charlatanisme poétique, <span class="ref">Bousquet</span> nous en livre le secret&nbsp;–&nbsp;secret d’une simplicité extrême&nbsp;–&nbsp;qui éclaire en même temps
-            les rapports <span class="STDitalic">énigmatiques</span> qui lient la vie quotidienne à ce que devrait être l’art. Cette fois encore, plutôt
-            que d’en donner une paraphrase plus ou moins inexacte, citons <span class="STDitalic">in extenso</span> le paragraphe&nbsp;:</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Le rêve est plus réel que la vie éveillée parce que l’objet n’y est plus jamais
-               négligeable&nbsp;: le revolver, l’aiguille et la pendule y résument des événements qui, sans eux, ne seraient pas. L’événement et l’objet y
-               sont rigoureusement interchangeables, comme dans ces aventures accomplies et toutes jugées où une chambre d’hôtel raconte
-               intégralement un crime que l’imagination policière est incapable de réinventer sur-le-champ.
-               Et, lisant des histoires criminelles, ou des pages de Raymond&nbsp;Roussel, nous sentons le frisson de l’homme entré par le biais de rapports fictifs dans la plus nécessaire et la plus exacte de ses fonctions.&nbsp;»</span></p>
-         <p>C’est donc tout d’abord, semble-t-il, un univers signifiant&nbsp;; l’absurde et le gratuit
-            y sont ramenés à leur place, celle de signes non encore élucidés, qui pour le policier inspectant la <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;chambre d’hôtel&nbsp;»</span> deviendront peu à peu les indices. Par surcroît, tout y est révélé, objectivé, que
-            ce soit sous l’apparence de matière palpable (les ustensiles du <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;crime&nbsp;»</span>) ou de traces théoriquement plus fugitives. Les mots et les phrases, par exemple,
-            y deviennent aussi des <span class="STDitalic">objets, </span>dont la forme pourra donner lieu plus tard aux mêmes analyses. Chacun a pu éprouver&nbsp;–&nbsp;souvent
-            même sans y attacher d’importance&nbsp;–&nbsp;la netteté anormale avec laquelle apparaissent,
-            dans les rêves les plus anodins, une chaise, un caillou, une main, la chute d’un débris
-            quelconque (qui laisse cette impression bizarre qu’elle va de nouveau <span class="STDitalic">se reproduire,</span> aussi souvent qu’on le voudra, comme si le fragment détaché s’était <span class="STDitalic">éternisé à l’état de chute</span>), ou, exactement de la même façon, deux ou trois mots (prononcés par on ne sait plus
-            qui) dont l’image est restée dans l’esprit avec autant de précision que s’ils avaient
-            été gravés sur un écriteau à un croisement de routes.</p>
-         <p>Et l’on s’aperçoit vite que le sens utilitaire de ces mots, comme la signification
-            anecdotique de ces objets criminels, n’ont au fond aucun intérêt. Ce ne sont que des
-            sous-produits possibles des choses elles-mêmes, qui restent seules nécessaires, irremplaçables.
-            Elles s’imposent à nos sens avec une rigueur qui ne doit rien aux explications qu’on
-            leur découvrira ensuite. Leur présence est telle qu’elle suffit à nous convaincre
-            et à nous satisfaire totalement.</p>
-         <p>Il n’est pas étonnant, dans ces conditions, qu’un monde si parfait (c’est-à-dire achevé,
-            non pas simplifié et obligatoirement à sens unique, mais où l’ambiguïté elle-même est sans bavure), qui n’est plus la promesse d’un au-delà mais délivre
-            au contraire de toute nostalgie, il n’est pas étonnant que ce monde nous tire à lui
-            avec tant de force. L’expression populaire dit&nbsp;: <span class="STDitalic">se réfugier</span> dans le rêve. Il est question de tout autre chose&nbsp;; c’est la clef de <span class="STDitalic">ce monde-ci</span> que nous tenons en main et nous comprenons du même coup que le rêve dont nous parle
-            <span class="ref">Bousquet</span> n’est pas tout à fait celui de nos nuits agitées. Ce serait trop facile s’il suffisait
-            de fermer les yeux pour distinguer les contours réels de notre vie. Le décalage nécessaire
-            est moins commode à provoquer et il vaut sans doute mieux pour cela ne pas s’endormir.
-            Comme nous le pressentions, ce <span class="STDitalic">rêve éveillé</span> pourrait simplement être <span class="STDitalic">l’art,</span> dont le sommeil il est vrai livre quelquefois des lambeaux, mais que seule une activité
-            consciente nous permet de rassembler.</p>
-         <p>Ainsi, de même que le souvenir n’était qu’un alibi, les événements et les paysages
-            oniriques ne sont qu’un moyen pour pénétrer l’opacité des phénomènes plus pressants
-            qui nous cernent de toute part, et dont précisément l’urgence nous égare&nbsp;; encore
-            une fois, c’est <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;l’effort de l’escalade&nbsp;»</span> qu’il importe de fuir.</p>
-         <p>Pour tous ceux qui possèdent un corps valide, qui se laissent entraîner par lui et
-            qui chaque jour se dissolvent un peu plus dans le jeu des articulations et des muscles,
-            il convient de réagir contre les visions nocturnes. <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Rêver c’est un bon mot pour définir ce qui arrive dans l’imagination d’un homme,
-               immobilisé par le sommeil.&nbsp;»</span> Ce mot, chargé de toutes sortes de sous-entendus vaguement péjoratifs, sert couramment
-            aux hommes d’action pour maintenir l’intégrité de leur santé morale. Cependant <span class="ref">Joë&nbsp;Bousquet</span> devine qu’il compte malgré tout des frères parmi ses <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;ex-semblables&nbsp;»</span>.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;J’approuve, écrit-il, qu’en se rendant à son bureau un homme se raconte qu’il avait
-               rêvé la démarche que, vraiment, il accomplit.</span></p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Mais moi, qui ne me meus pas davantage éveillé qu’endormi, comment adopterais-je
-               vos façons, mes amis, de distinguer ces deux états&nbsp;?&nbsp;»</span></p>
-         <p>Peut-être le rêve sera-t-il donc d’un plus grand secours encore pour ces <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;amis&nbsp;»</span>, qui sont debout et qui marchent, s’ils savent tirer profit de la vue d’<span class="STDitalic">immobile</span> qui leur est ainsi prêtée&nbsp;; et en définitive c’est pour la même tâche, l’interprétation
-            du même univers, ou plutôt sa création, qu’il servira à eux comme à lui. <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ce ne serait, avoue-t-il, qu’un jeu absurde de regarder mes rêves si je ne suivais
-               pas sur les objets du jour l’impression qu’ils m’avaient donnée.&nbsp;»</span></p>
-         <p>Du reste, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;rien ne distingue le rêve du jour&nbsp;: les objets y sont semblables à ceux de la vie
-               éveillée&nbsp;»</span>. Seulement nous les voyons mieux, parce que l’éclairage <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;tombe de plus haut&nbsp;»</span>.</p>
-         <div class="smallgap"></div>
-         <p>Nous voici revenus sans conteste sur terre&nbsp;: ce sont bien les <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;objets du jour&nbsp;»</span> qu’il nous faut recueillir, et la netteté admirable entrevue tout à l’heure pendant
-            un instant est, en réalité, la leur... Du moins elle <span class="STDitalic">doit</span> l’être. C’est pour l’acquérir qu’ils réclament notre concours.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;N’imite pas le réel, collabore avec lui. Mets tes pensées et tes dons d’expression
-               au service des jours <a id="page_111"></a>et des faits qui les distinguent, asservis-toi à l’existence des choses, si tu n’es
-               pas ce qui leur manque tu n’es rien, tu enrichiras ce qui est de ce qui en était en
-               toi le pressentiment.&nbsp;»</span></p>
-         <p>Le rêve n’est que cela&nbsp;: le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;pressentiment&nbsp;»</span> de ce que sera le monde réel quand notre esprit aura donné sa forme définitive à
-            la matière. Malheureusement, ces fragments entraperçus ne suffisent pas à convaincre
-            l’homme de la nécessité où il se trouve d’être ce qui manque aux choses, si bien que,
-            par légèreté ou manque d’imagination, il préfère le plus souvent ignorer les révélations
-            partielles dont il a été le témoin. Sa situation <span class="STDitalic">dans</span> le monde accroît encore son aveuglement.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;La médiocrité du monde tient à l’imperfection de notre vision, à notre incapacité
-               d’attention. Notre vision des faits demeure vague et brumeuse, pareille à la perspective
-               creusée dans la nuit par les phares d’une auto, et si imparfaite que l’imagination
-               du conducteur doit sans cesse interpréter et paraphraser les signes aperçus. De nuit,
-               on ne voit bien une route qu’en s’arrachant à ce qu’on en voit.&nbsp;»</span></p>
-         <p>Plus grave que <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;l’incapacité d’interpréter les signes&nbsp;»</span> est l’état de mauvaise volonté dans lequel nous trouve cette exigence. Si nous ne
-            pouvons pas, c’est surtout parce que nous ne voulons pas. L’imperfection des phénomènes
-            qui constituent notre univers nous frappe, mais nous nous persuadons qu’elle ne nous
-            concerne pas. Avec la responsabilité du chaos nous abandonnons volontiers à quelque
-            puissance supérieure le souci de parachever l’œuvre, comme si notre condition de <span class="STDitalic">mortels</span> était une excuse suffisante à notre désistement.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Adaptée à la vie dont elle réfléchit tous les faits, la pensée s’interdit d’en faire
-               la somme. Nous ne voyons que le fait dans un fait, nous nous interdisons d’y déchiffrer
-               un épisode d’une vie vouée à la mort.</span></p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Notre pensée ne veut pas être la pensée de notre vie. Nous regardons passer les
-               choses pour oublier qu’elles nous regardent mourir.&nbsp;»</span></p>
-         <p>Contre cette inacceptable abdication, <span class="ref">Bousquet</span> développe une sorte de prédication obstinée, dont les thèmes essentiels transparaissent
-            à travers toute son œuvre. La <span class="STDitalic">matière réelle</span> est, dit-il, encore invisible&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ce que tu appelais de ce nom n’en est même pas l’image. La vraie matière est recouverte.
-               Il faut que ton âme se mêle à elle pour te la montrer.&nbsp;»</span> De même, le temps et l’espace sont l’œuvre de l’homme, ou plutôt <span class="STDitalic">seront</span> son œuvre. Ce qu’il y a à sauver, ce n’est pas soi-même, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;c’est la terre, le caillou, la cendre. Ton devoir est d’opérer le salut de l’espace et du temps.&nbsp;»</span> Il y a, dans la volonté de devenir ce sauveur, à la fois beaucoup d’orgueil et la
-            plus grande humilité, car la personne humaine y disparaît totalement au profit d’une
-            création problématique qui est seule à <span class="STDitalic">devoir être.</span> Mais, par vanité maladroite, l’homme veut d’abord <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;être&nbsp;»</span>, c’est cela justement qui fait son néant. <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Tu n’es pas... Tu n’es même pas maudit. La malédiction n’est que le lieu de ta dérisoire
-               et monstrueuse liberté.&nbsp;»</span></p>
-         <p>La plus haute qualité de notre esprit est seulement la faculté (et en termes de morale&nbsp;:
-            le devoir) de concevoir une forme qui puisse donner l’unité au monde et <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;l’élever à notre ressemblance&nbsp;»</span>. Ce sera, par un juste retour, le véritable avènement de l’homme, de cet homme qui est
-            <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;à venir&nbsp;»</span>.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;L’homme-nébuleuse est à rendre réel...&nbsp;»</span></p>
-         <div class="smallgap"></div>
-         <p>Les faits sont difficilement pénétrables. Néanmoins nous y découvrons peu à peu le
-            dessin de notre vie. Parlant de la sienne, <span class="ref">Bousquet</span>&nbsp;–&nbsp;dont un sort tragique semblait avoir, par hasard, brisé l’existence&nbsp;–&nbsp;écrit&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Il ne s’y produit pas un fait qui ne soit un trait de mon âme.&nbsp;»</span> Et plus loin&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Je suis à la fois le sujet et l’œuvre de ma volonté... L’homme existe par son adhésion
-               aux événements, par sa façon d’accomplir, à travers eux, l’événement qu’il aura été.&nbsp;»</span> Qui, mieux que ce blessé de guerre cloué depuis vingt ans à son lit, pouvait nous
-            rendre si émouvant et si explicite un tel enseignement&nbsp;?</p>
-         <p>Il ne suffit pas de récupérer le hasard. Mieux camouflés encore que les événements
-            a priori absurdes sont ceux qui semblent déjà intégrés dans un ordre, superficiel
-            mais rassurant, qui leur tient lieu de signification. Ceux-là passent tout à fait
-            inaperçus, on oublie de s’en méfier et ils ne nous étouffent que plus sûrement.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Les faits les plus innocents, les mieux liés à leurs causes paraissent se subordonner
-               à des relations souterraines dont notre âme aurait fourni le tracé. Intervenant dans
-               un monde refroidi, ils adhèrent cependant pour une période très courte à des vœux
-               que nous formions à leur propos. On dirait qu’ils se sont rencontrés en nous cherchant
-               et, tout en se pliant à des lois physiques, se sont, loin de nous, arrangés déjà à
-               la manière d’un rêve. Enfin, <a id="page_114"></a>ils ont été notre souvenir avant de nous être aventure.&nbsp;»</span></p>
-         <p>Sans doute la plus sérieuse conquête du surréalisme aura-t-elle été de rendre, par
-            une recherche systématique, aux <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;miracles apparents qui jettent un doute si vif sur la vision commune du réel&nbsp;»</span> toute leur valeur et tout leur poids&nbsp;: ceux de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;gages évidents d’un ordre inconnu&nbsp;»</span>&nbsp;; c’est en les dépistant sans faiblesse que nous entrerons <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;dans le château de chaque instant.&nbsp;»</span> Il est vain, en revanche, d’user ses forces à <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;rapprocher arbitrairement un fer à repasser et un faux-col en celluloïd&nbsp;»</span>&nbsp;; <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;l’impossibilité de trouver jamais du gratuit dans les rapports les plus hasardeux&nbsp;»</span> nous dispense de ces amusements, le monde quotidien offre assez de richesses pour
-            que nous puissions nous tenir à l’écart des extravagances. Les phénomènes les plus
-            ordinaires seront en fin de compte les plus merveilleux.</p>
-         <p>Nous devons enfin nous garder des constructions allégoriques et du symbolisme. (Là
-            aussi nous retrouvons une idée chère aux amis d’<span class="ref">André&nbsp;Breton</span>.) Chaque objet, chaque événement, chaque forme, est en effet son propre symbole&nbsp;:
-            <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ne dites pas qu’il y a des croix de bois et le signe de la croix. Il y aurait un signe irréel et une chose signifiée, qui serait réelle. L’un et l’autre
-               sont, à la fois, des réalités et des signes.&nbsp;»</span></p>
-         <p>L’univers de <span class="ref">Bousquet</span>&nbsp;–&nbsp;le nôtre&nbsp;–&nbsp;est un univers de signes. Tout y est signe&nbsp;; et non pas signe de quelque
-            chose d’autre, quelque chose de plus parfait situé hors de notre portée, mais signe
-            de soi-même, de cette réalité qui demande seulement à être révélée.</p>
-         <div class="smallgap"></div>
-         <p>Nous disposons pour cela d’une arme singulière, qui est le corps de la parole et de
-            l’écriture, <span class="STDitalic">le langage. </span>Encore le mot d’arme ne convient-il qu’à moitié pour désigner ce qui nous apparaît
-            en même temps comme un moyen et comme une fin&nbsp;: étant le signe par excellence (la
-            représentation de tous les signes), il ne saurait lui non plus avoir de signification
-            entièrement en dehors de soi. Rien, en somme, ne peut lui être extérieur.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Le langage n’est pas contenu dans la conscience, il la contient... L’expérience
-               du langage enferme toutes les autres... Après avoir écrit à une femme&nbsp;: “Je te prendrai
-               dans mes bras”, je n’ai plus que son fantôme à saisir...&nbsp;»</span></p>
-         <p>Si bien qu’au-delà du langage il n’y a probablement plus rien. Le monde <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;se fait en nous&nbsp;»</span> et <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;s’achève par la parole&nbsp;»</span>, car la parole est vérité&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Vérité quand de l’acte de nommer un objet elle tire l’avènement de l’homme.&nbsp;»</span></p>
-         <p>Écrire, c’est <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;donner notre réalité à la vérité, de qui nous la tenions, afin de redevenir dans
-               son sein légers comme des rêves&nbsp;»</span>.</p>
-         <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ayons le courage d’en convenir. L’homme n’existe que hors de lui-même, il n’est
-               que le négatif de l’existence et ce serait pour lui un progrès marqué que de se supprimer
-               tout à fait. Le paradoxe semble de taille. Notre existence serait-elle à conquérir&nbsp;?
-               Franchement je le crois. Nous sommes l’être à l’état de chute, de l’être en exil,
-               aussi éloignés de la vie que le froid mortel à qui appartient cependant le privilège
-               de purifier l’atmosphère et de donner la cohérence et la solidité à une masse d’eau.
-               J’ai compris. Je veux <a id="page_116"></a>recueillir mon néant à l’ombre d’une réalité digne de la lumière et forger de mes
-               mains un objet qui efface mes traces.&nbsp;»</span></p>
-         <p>Un texte <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;serré et irréductible&nbsp;»</span>, si parfait qu’il ne semble pas <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;avoir été touché&nbsp;»</span>, un objet si parfait qu’il effacerait nos traces... Ne reconnaissons-nous pas ici
-            la plus haute ambition de tout écrivain&nbsp;?</p>
-         <div class="smallgap"></div>
-         <p>Sans doute est-ce par cette réflexion constante sur la création littéraire (ou, d’une
-            façon plus générale, artistique) que l’œuvre de <span class="ref">Joë&nbsp;Bousquet</span> demeure pour nous si précieuse. Et, à cause d’elle, il faut passer sur ce que ces
-            pages peuvent avoir parfois de gênant&nbsp;: qui parle de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;chute&nbsp;»</span> et de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;l’être en exil&nbsp;»</span> semble bien près de parler du péché originel. Même sans lui tenir rigueur de l’emploi
-            fréquent du mot <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;âme&nbsp;»</span> là où le mot <span class="STDitalic">imagination</span> conviendrait certes plus clairement à son propos, nous ne pouvons réprimer notre
-            agacement devant l’espèce de mysticisme (d’ailleurs hérétique) qui baigne toute la
-            pensée de <span class="ref">Bousquet</span>. Plus grave qu’un vocabulaire suspect (<span class="quote" onclick="displayExtract('toDefine')">«&nbsp;âme&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;salut&nbsp;»</span>, etc.), il y a chez lui cette tentative de <span class="STDitalic">récupération globale</span> de l’univers par l’esprit humain. L’idée de <span class="STDitalic">totalité</span> mène toujours plus ou moins directement à celle de vérité absolue, c’est-à-dire supérieure,
-            donc bientôt à l’idée de Dieu.</p>
-         <p>Cependant, c’est ici l’homme lui-même qui doit <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;donner l’unité au monde et l’élever à sa ressemblance&nbsp;»</span>. On regrette surtout qu’il ne soit pas précisé que l’opération restera à l’échelle
-            humaine et aura de l’importance pour l’homme seulement, qu’il n’atteindra ainsi à
-            aucune essence des choses, et que la création enfin, à laquelle on nous invite, sera toujours à recommencer, par nous-mêmes
-            puis par ceux qui viendront après nous.</p>
-         <p>C’est alors en effet que l’<span class="STDitalic">invention</span> du monde peut prendre tout son sens&nbsp;–&nbsp;invention permanente, qui, on nous le dit bien,
-            appartient aux artistes mais aussi à tous les hommes. Dans le rêve, dans le souvenir,
-            comme dans le regard, notre imagination est la force organisatrice de notre vie, de
-            <span class="STDitalic">notre</span> monde. Chaque homme, à son tour, doit réinventer les choses autour de lui. Ce sont
-            les vraies choses, nettes, dures et brillantes, du monde réel. Elles ne renvoient
-            à aucun autre monde. Elles ne sont le signe de rien d’autre que d’elles-mêmes. Et
-            le seul contact que l’homme puisse entretenir avec elles, c’est de les imaginer.</p>
-      </article>
-      <section class="extract_section">
-         <p>Some text here.</p>
-         <div id="pr_02_01" class="extractHide">
-            <p><span class="STDsmall STDgray">[10] </span>[...] Ces gens-là j'ai essayé de les aimer, ils ont <span class="STDsmall STDgray">[11] </span>parfois un air qui trompe mais bien vite si tu leur parle de toi ils t'injurient,
-               ton chagrin leur fait horreur.</p>
-            <p>On m'a piqué avec une longue aiguille, c'est la vérité. Cette aiguille ellle m'est
-               restée vivante. Quand on commence une histoire le mieux est de dire je suis né, c'est
-               le meilleur départ car les enfances sont plus nombreuses à mesure qu'on grandit, ,
-               elles se multiplient et voilà déjà une cause de confusion. J'ai le cœur gros de commencements
-               toujours râtés. Et le but aussi, je n'en ai point.</p>
-            <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
-         </div>
-         <div id="pr_02_ToDefine" class="extractHide">
-            <p></p>
-            <p><span class="STDsmall STDgray">[16] </span>[...] Je me demande souvent si les esprits brillants existeraient sans leur mémoire,
-               je n'ai aucune mémoire, je voudrais pour n'être pas ridicule vivre dans un mon d'où
-               elle serait exclue, on ne pourrait partler que des choses du jour, et on inventerait,
-               on inventerait au fur et à mesure, c'est ça la vraie vie.</p>
-            <p>La naissance d'un objet, j'ai remarqué, n'a pas lieu aujourd'hui, il y a du mouvement
-               tout autour qui l'empêche de montrer la tête et demain tu t'avises qu'il existe. Par
-               conséquent la meilleure explication des origines serait de commencer par des bruits
-               de bouches et de glisser progressivement vers des paroles articulées jusqu'au moment
-               où l'auditeur sans se poser aucune question participe à ton histoire.</p>
-            <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
-         </div>
-         <p>
-            Some text here.</p>
-      </section>
-      <footer><a href="https://www.univ-lille.fr/" target="blanck"><img src="img/logo_u_lille.png" alt="logo université de lille">"</a></footer>
+      <div class="ch_nav"><a class="preceding" href="punr_ch07.html">&lt;</a><a class="following" href="punr_ch09.html">&gt;</a></div>
+      <nav class="articlenav">
+         <ol id="articlenav"></ol>
+      </nav>
+      <div class="corpus">
+         <article>
+            <h3>Joë&nbsp;Bousquet le rêveur<br><span class="STDsmall">(1953)</span></h3>
+            <div class="epigraph" onclick="displayExtract('toDefine')">
+               <p>Un homme se connaissait comme le produit de ce monde. Il a voulu en devenir la conscience&nbsp;:
+                  une façon de rêver qu’il en incarnerait le salut.</p>
+               <p class="epigraph_ref"><span class="ref">J.&nbsp;B.</span></p>
+            </div>
+            <p><span class="ref">Joë&nbsp;Bousquet</span> est dans sa chambre, prisonnier, infirme, <span class="STDitalic">immobile</span>, il écrit&nbsp;:</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Je suis là, mais pas à la façon dont vous y êtes&nbsp;: si vous pouviez seulement voir
+                  travailler mes yeux&nbsp;!...</span></p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Mon ombre tourne autour de moi, vous tournez autour de votre ombre.</span></p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;C’est difficile à faire comprendre aux autres que je ne vis pas comme eux. Ils sont
+                  dans l’espace comme les poissons dans l’eau. Pas moi. Je suis un trou dans le lit
+                  du fleuve.&nbsp;»</span></p>
+            <p>Lorsque, à l’âge de vingt ans, <span class="ref">Bousquet</span> se voit subitement <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;retranché de la vie&nbsp;»</span> par la blessure de guerre qui le paralyse pour le restant de ses jours, il songe
+               d’abord au suicide, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;par amour de la vie&nbsp;»</span>. Mais il s’aperçoit bientôt de son erreur&nbsp;: s’il a perdu l’usage de ses jambes, la vie, elle, ne peut lui échapper. Bien mieux, sa diminution
+               physique lui donne une force nouvelle pour construire autour de lui l’univers –&nbsp;force
+               que l’agitation de son corps avait sans doute détournée, ou masquée, jusque-là. Et,
+               si cette <span class="STDitalic">vie</span> qu’il élabore semble lui être apparue, au début, comme une sorte de produit de remplacement&nbsp;–&nbsp;merveilleux
+               pour lui, mais d’intérêt malgré tout secondaire pour celui qui aurait le choix&nbsp;–,
+               il la reconnaît très vite pour la plus précieuse, la plus profonde, la seule probablement
+               à être <span class="STDitalic">réelle...</span></p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Si tous les hommes vivaient immobiles, comme moi, ils auraient un nom chargé de
+                  doute pour désigner les faits qui tournent sur eux-mêmes pour les envelopper...&nbsp;»</span></p>
+            <p>Si les hommes vivaient immobiles, s’ils acceptaient d’être ce <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;trou dans le lit du fleuve&nbsp;»</span>, ils verraient l’eau venir à eux de tous côtés, les courants s’organiser de façon
+               nouvelle, plus compréhensible, et le fleuve tout entier prendre son vrai sens.</p>
+            <p>Cette expérience dramatique, <span class="ref">Bousquet</span> n’a pas voulu la faire pour lui seul, et, plus peut-être que par ses œuvres proprement
+               poétiques ou romanesques, c’est par ces réflexions quotidiennes, dans lesquelles il
+               s’acharne à nous faire comprendre sa situation, qu’il se montre irremplaçable. Car
+               sa situation n’est qu’une image cruelle de celle même du créateur.</p>
+            <p>Le monde sensible qui l’entoure n’est plus, comme le rêve ou le souvenir, que la matière
+               à laquelle il doit prêter son imagination pour la sauver du néant. Il est prisonnier
+               dans sa chambre, il est condamné à l’inaction par la balle qu’il a reçue, mais c’est
+               lui en fin de compte qui donne une existence organisée à sa prison, c’est lui qui rachète au hasard
+               et au chaos cette balle perdue qui l’a brisé. Il n’est plus ici question d’insuffler
+               après coup une conscience à des phénomènes ayant déjà leur vie propre&nbsp;: sans cette
+               création, la matière ne saurait avoir aucune forme&nbsp;; <span class="ref">Bousquet</span> découvre enfin qu’il s’est lui-même infligé sa mutilation.</p>
+            <p>Dans <span class="STDitalic">Le Meneur de Lune</span> nous suivons la progression de page en page&nbsp;:</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;L’accident qui mutile un homme ne touche pas aux sources de son existence&nbsp;; il n’est
+                  mortel qu’à ses habitudes. L’infortune physique ne corrompt que ce qui était à corrompre.</span></p>
+            <p>–&nbsp;Ainsi, après avoir été jeté dans ton lit d’infirme, tu as vu ta vie venir à toi&nbsp;?</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">–&nbsp;Hélas&nbsp;! qu’ai-je incarné de plus que l’accident dont j’avais été la victime&nbsp;?&nbsp;»</span></p>
+            <p>Et plus loin&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Fais ta vie à l’image de ce que tu portes en toi de meilleur. Si elle t’impose une
+                  loi que tu n’as pas conçue, ne te sépare pas d’elle sous ce prétexte. Vous êtes, elle
+                  et toi, le produit de la même volonté.&nbsp;»</span></p>
+            <p>Mais plus loin encore&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ce qui t’advient, tu l’avais souhaité...&nbsp;»</span></p>
+            <div class="smallgap"></div>
+            <p>Ce sont d’abord les souvenirs de jeunesse qui se recomposent en décors et événements
+               débarrassés de leur halo, modelés désormais dans une pâte moins fragile. L’opération
+               n’a rien d’appauvrissant, au contraire&nbsp;; ce n’est pas une maquette schématique qui
+               se substitue à une réalité trop complexe&nbsp;; ce sont vraiment <span class="STDitalic">la pierre et l’eau</span> que ce travail <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;édifie et désenlise&nbsp;»</span>.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Pas possible, lui dit une amie d’enfance, on dirait que la campagne où nous avons
+                  vécu est à cent pieds sous terre et que tu y descends, quand nous croyons te voir.&nbsp;»</span></p>
+            <p>Mais <span class="ref">Bousquet</span> ne s’y trompe pas&nbsp;; il sait qu’il <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;abrite au milieu de ses souvenirs une expérience sournoise et profonde&nbsp;»</span>&nbsp;: il ne s’agit pas de <span class="STDitalic">descendre </span>vers le village enfoui, mais de le reconstruire, ou plutôt de lui donner pour la première
+               fois le jour&nbsp;; car le jardin, la maisonnette au bord des flots, la voie ferrée à ses
+               pieds, rien de tout cela n’a encore eu d’existence. Les témoins inattentifs peuvent
+               seuls les confondre avec les bribes éparses, corrompues par les années et la distance,
+               auxquelles ces constructions sont censées se rattacher. Lui sait que leur brillant,
+               leur qualité <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;de cohérence et de densité immuables&nbsp;»</span>, n’appartiennent qu’à un <span class="STDitalic">monde nouveau</span>, cette fois retrouvé pour toujours. Cette <span class="STDitalic">Neige d’un autre âge</span> ne fondra pas au premier rayon de soleil.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Dans mes évocations de Marceillens, ou du village où j’ai grandi, la référence au
+                  souvenir s’ajoute comme une concession de plus en plus mollement accordée... Il m’apparaît
+                  de plus en plus que rien dans cette opération n’est, à beaucoup près, aussi fictif
+                  et convenu que la résolution de l’attribuer à ma mémoire...</span></p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Mon expérience de prisonnier m’a édifié&nbsp;; libre, j’engendrais l’étendue où je croyais
+                  me déplacer comme un objet. Immobilisé, je me suis aperçu que le battement de mon
+                  cœur créait sans relâche l’espace <a id="page_105"></a>où si souvent j’avais cru reconnaître le décor stéréotypé de mon enfance. Eussé-je
+                  conservé mes jambes, j’aurais mobilisé de loin le versant boisé d’une promenade et
+                  dissous dans l’effort de l’escalade la sensation que le battement de mon sang en distribuait
+                  les reliefs, sur la pente docile de mon champ visuel. Maintenant je saisis mieux l’opération
+                  qui reste inachevée. Croyant revivre des souvenirs, je crée sur un modèle de jadis
+                  un paysage où je n’ai plus les moyens de pénétrer, mais où je fais pleuvoir du temps,
+                  avançant parfois une page blanche à travers les fils consacrés de l’opération magique.&nbsp;»</span></p>
+            <p>La découverte est capitale, elle marque l’avènement de l’art en libérant la littérature
+               du souci de transcrire ou de témoigner. Le reportage exige de son auteur consciencieux
+               un déplacement physique, où l’essentiel est toujours plus ou moins <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;dissous dans l’effort de l’escalade&nbsp;»</span>&nbsp;; telle qu’elle est ici définie, la <span class="STDitalic">création</span> est au contraire inséparable de l’emprisonnement&nbsp;–&nbsp;dont l’orne d’ailleurs volontiers
+               l’imagerie populaire&nbsp;: le poète dans sa tour d’ivoire, <span class="ref">Sade</span> dans son cachot, <span class="ref">Marcel&nbsp;Proust</span> dans sa chambre capitonnée de liège. On a voulu souvent limiter cette prison à une
+               certaine qualité de solitude, presque toujours entendue comme solitude par rapport
+               aux hommes. Il faut y voir quelque chose de plus, et même quelque chose de très différent
+               quant à la portée&nbsp;: non seulement un isolement plus grave qui éloigne de façon tout
+               aussi radicale les objets et les décors, mais encore cette dimension nouvelle apportée
+               par l’interdiction de s’en rapprocher. C’est ce que marque de façon si précise la
+               dernière phrase du paragraphe&nbsp;–&nbsp;<span class="quote" onclick="displayExtract('toDefine')">«&nbsp;... un paysage où je n’ai plus les moyens de pénétrer, mais où je fais pleuvoir du temps...&nbsp;»</span>&nbsp;–&nbsp;les deux phénomènes (<span class="STDitalic">paralysie</span> du créateur et <span class="STDitalic">vie</span> de la création) y étant non pas juxtaposés mais liés par une relation causale très
+               stricte. Comme si cette faculté de donner la vie ne pouvait aller, paradoxalement,
+               sans une certaine incapacité à vivre&nbsp;; incapacité contre laquelle se révoltent ceux
+               qui en sont frappés&nbsp;–&nbsp;bien qu’ils ne cessent, en même temps, de souhaiter à leur propre
+               malheur un accomplissement définitif (<span class="quote" onclick="displayExtract('toDefine')">«&nbsp;si nous pouvions seulement prendre racine&nbsp;!&nbsp;»</span>), dont la mort est à la fois le terme, l’image la plus parfaite&nbsp;–&nbsp;et la dérision.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Si seulement mon existence, comme celle d’un arbre, était la fixité d’un lieu...
+                  Ou, alors, comme celle de mon esprit, l’effacement de tous les lieux. Mais je suis
+                  comme ce passant, là-bas&nbsp;; regardez-le marcher, il a l’air de courir après une voiture.
+                  Il est lui-même, comme la plume qui vole est un oiseau.&nbsp;»</span></p>
+            <div class="smallgap"></div>
+            <p>Il y a aussi le faux sommeil du rêve, qui nous donne de l’<span class="STDitalic">état idéal</span> une approximation moins effrayante –&nbsp;provisoire et réversible en tout cas&nbsp;–&nbsp;et en
+               même temps plus efficace. Comme beaucoup de ses amis surréalistes, <span class="ref">Bousquet</span> note avec soin ses rêves&nbsp;; il aime <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;la souveraine solitude du songe&nbsp;»</span>&nbsp;; il redoute <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;l’angoisse qui l’emprisonne à l’instant du réveil&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;angoisse modèle qui nous pénètre jusqu’à l’écœurement de tout l’espace que nous
+                  perdons&nbsp;»</span>. Il en vient donc très vite à susciter lui-même ses rêves&nbsp;; il s’efforce <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;d’entrer, le visage haut, dans ce monde que l’on dit imaginaire&nbsp;»</span>. Les paupières à demi closes sur ses yeux <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;pétrifiés&nbsp;»</span>, il sent autour de lui l’étendue qui se métamorphose&nbsp;:</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;... Toute la maison se transforme et semble s’agrandir et se taire, édifier sur
+                  moi une solitude où le silence croissant de l’espace introduit la majesté et le moutonnement
+                  d’une mer. Un mot venu sur mes lèvres achève de me fasciner avec la vision de cet
+                  immeuble soudain ouvert à l’invisible et au rien. Ce mot, c’est&nbsp;: absence.&nbsp;»</span></p>
+            <p>Mais cet univers du rêve, qui a donné lieu, sous d’autres plumes ou pinceaux, à tant
+               de fantasmagories et de charlatanisme poétique, <span class="ref">Bousquet</span> nous en livre le secret&nbsp;–&nbsp;secret d’une simplicité extrême&nbsp;–&nbsp;qui éclaire en même temps
+               les rapports <span class="STDitalic">énigmatiques</span> qui lient la vie quotidienne à ce que devrait être l’art. Cette fois encore, plutôt
+               que d’en donner une paraphrase plus ou moins inexacte, citons <span class="STDitalic">in extenso</span> le paragraphe&nbsp;:</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Le rêve est plus réel que la vie éveillée parce que l’objet n’y est plus jamais
+                  négligeable&nbsp;: le revolver, l’aiguille et la pendule y résument des événements qui, sans eux, ne seraient pas. L’événement et l’objet y
+                  sont rigoureusement interchangeables, comme dans ces aventures accomplies et toutes jugées où une chambre d’hôtel raconte
+                  intégralement un crime que l’imagination policière est incapable de réinventer sur-le-champ.
+                  Et, lisant des histoires criminelles, ou des pages de Raymond&nbsp;Roussel, nous sentons le frisson de l’homme entré par le biais de rapports fictifs dans la plus nécessaire et la plus exacte de ses fonctions.&nbsp;»</span></p>
+            <p>C’est donc tout d’abord, semble-t-il, un univers signifiant&nbsp;; l’absurde et le gratuit
+               y sont ramenés à leur place, celle de signes non encore élucidés, qui pour le policier inspectant la <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;chambre d’hôtel&nbsp;»</span> deviendront peu à peu les indices. Par surcroît, tout y est révélé, objectivé, que
+               ce soit sous l’apparence de matière palpable (les ustensiles du <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;crime&nbsp;»</span>) ou de traces théoriquement plus fugitives. Les mots et les phrases, par exemple,
+               y deviennent aussi des <span class="STDitalic">objets, </span>dont la forme pourra donner lieu plus tard aux mêmes analyses. Chacun a pu éprouver&nbsp;–&nbsp;souvent
+               même sans y attacher d’importance&nbsp;–&nbsp;la netteté anormale avec laquelle apparaissent,
+               dans les rêves les plus anodins, une chaise, un caillou, une main, la chute d’un débris
+               quelconque (qui laisse cette impression bizarre qu’elle va de nouveau <span class="STDitalic">se reproduire,</span> aussi souvent qu’on le voudra, comme si le fragment détaché s’était <span class="STDitalic">éternisé à l’état de chute</span>), ou, exactement de la même façon, deux ou trois mots (prononcés par on ne sait plus
+               qui) dont l’image est restée dans l’esprit avec autant de précision que s’ils avaient
+               été gravés sur un écriteau à un croisement de routes.</p>
+            <p>Et l’on s’aperçoit vite que le sens utilitaire de ces mots, comme la signification
+               anecdotique de ces objets criminels, n’ont au fond aucun intérêt. Ce ne sont que des
+               sous-produits possibles des choses elles-mêmes, qui restent seules nécessaires, irremplaçables.
+               Elles s’imposent à nos sens avec une rigueur qui ne doit rien aux explications qu’on
+               leur découvrira ensuite. Leur présence est telle qu’elle suffit à nous convaincre
+               et à nous satisfaire totalement.</p>
+            <p>Il n’est pas étonnant, dans ces conditions, qu’un monde si parfait (c’est-à-dire achevé,
+               non pas simplifié et obligatoirement à sens unique, mais où l’ambiguïté elle-même est sans bavure), qui n’est plus la promesse d’un au-delà mais délivre
+               au contraire de toute nostalgie, il n’est pas étonnant que ce monde nous tire à lui
+               avec tant de force. L’expression populaire dit&nbsp;: <span class="STDitalic">se réfugier</span> dans le rêve. Il est question de tout autre chose&nbsp;; c’est la clef de <span class="STDitalic">ce monde-ci</span> que nous tenons en main et nous comprenons du même coup que le rêve dont nous parle
+               <span class="ref">Bousquet</span> n’est pas tout à fait celui de nos nuits agitées. Ce serait trop facile s’il suffisait
+               de fermer les yeux pour distinguer les contours réels de notre vie. Le décalage nécessaire
+               est moins commode à provoquer et il vaut sans doute mieux pour cela ne pas s’endormir.
+               Comme nous le pressentions, ce <span class="STDitalic">rêve éveillé</span> pourrait simplement être <span class="STDitalic">l’art,</span> dont le sommeil il est vrai livre quelquefois des lambeaux, mais que seule une activité
+               consciente nous permet de rassembler.</p>
+            <p>Ainsi, de même que le souvenir n’était qu’un alibi, les événements et les paysages
+               oniriques ne sont qu’un moyen pour pénétrer l’opacité des phénomènes plus pressants
+               qui nous cernent de toute part, et dont précisément l’urgence nous égare&nbsp;; encore
+               une fois, c’est <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;l’effort de l’escalade&nbsp;»</span> qu’il importe de fuir.</p>
+            <p>Pour tous ceux qui possèdent un corps valide, qui se laissent entraîner par lui et
+               qui chaque jour se dissolvent un peu plus dans le jeu des articulations et des muscles,
+               il convient de réagir contre les visions nocturnes. <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Rêver c’est un bon mot pour définir ce qui arrive dans l’imagination d’un homme,
+                  immobilisé par le sommeil.&nbsp;»</span> Ce mot, chargé de toutes sortes de sous-entendus vaguement péjoratifs, sert couramment
+               aux hommes d’action pour maintenir l’intégrité de leur santé morale. Cependant <span class="ref">Joë&nbsp;Bousquet</span> devine qu’il compte malgré tout des frères parmi ses <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;ex-semblables&nbsp;»</span>.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;J’approuve, écrit-il, qu’en se rendant à son bureau un homme se raconte qu’il avait
+                  rêvé la démarche que, vraiment, il accomplit.</span></p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Mais moi, qui ne me meus pas davantage éveillé qu’endormi, comment adopterais-je
+                  vos façons, mes amis, de distinguer ces deux états&nbsp;?&nbsp;»</span></p>
+            <p>Peut-être le rêve sera-t-il donc d’un plus grand secours encore pour ces <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;amis&nbsp;»</span>, qui sont debout et qui marchent, s’ils savent tirer profit de la vue d’<span class="STDitalic">immobile</span> qui leur est ainsi prêtée&nbsp;; et en définitive c’est pour la même tâche, l’interprétation
+               du même univers, ou plutôt sa création, qu’il servira à eux comme à lui. <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ce ne serait, avoue-t-il, qu’un jeu absurde de regarder mes rêves si je ne suivais
+                  pas sur les objets du jour l’impression qu’ils m’avaient donnée.&nbsp;»</span></p>
+            <p>Du reste, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;rien ne distingue le rêve du jour&nbsp;: les objets y sont semblables à ceux de la vie
+                  éveillée&nbsp;»</span>. Seulement nous les voyons mieux, parce que l’éclairage <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;tombe de plus haut&nbsp;»</span>.</p>
+            <div class="smallgap"></div>
+            <p>Nous voici revenus sans conteste sur terre&nbsp;: ce sont bien les <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;objets du jour&nbsp;»</span> qu’il nous faut recueillir, et la netteté admirable entrevue tout à l’heure pendant
+               un instant est, en réalité, la leur... Du moins elle <span class="STDitalic">doit</span> l’être. C’est pour l’acquérir qu’ils réclament notre concours.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;N’imite pas le réel, collabore avec lui. Mets tes pensées et tes dons d’expression
+                  au service des jours <a id="page_111"></a>et des faits qui les distinguent, asservis-toi à l’existence des choses, si tu n’es
+                  pas ce qui leur manque tu n’es rien, tu enrichiras ce qui est de ce qui en était en
+                  toi le pressentiment.&nbsp;»</span></p>
+            <p>Le rêve n’est que cela&nbsp;: le <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;pressentiment&nbsp;»</span> de ce que sera le monde réel quand notre esprit aura donné sa forme définitive à
+               la matière. Malheureusement, ces fragments entraperçus ne suffisent pas à convaincre
+               l’homme de la nécessité où il se trouve d’être ce qui manque aux choses, si bien que,
+               par légèreté ou manque d’imagination, il préfère le plus souvent ignorer les révélations
+               partielles dont il a été le témoin. Sa situation <span class="STDitalic">dans</span> le monde accroît encore son aveuglement.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;La médiocrité du monde tient à l’imperfection de notre vision, à notre incapacité
+                  d’attention. Notre vision des faits demeure vague et brumeuse, pareille à la perspective
+                  creusée dans la nuit par les phares d’une auto, et si imparfaite que l’imagination
+                  du conducteur doit sans cesse interpréter et paraphraser les signes aperçus. De nuit,
+                  on ne voit bien une route qu’en s’arrachant à ce qu’on en voit.&nbsp;»</span></p>
+            <p>Plus grave que <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;l’incapacité d’interpréter les signes&nbsp;»</span> est l’état de mauvaise volonté dans lequel nous trouve cette exigence. Si nous ne
+               pouvons pas, c’est surtout parce que nous ne voulons pas. L’imperfection des phénomènes
+               qui constituent notre univers nous frappe, mais nous nous persuadons qu’elle ne nous
+               concerne pas. Avec la responsabilité du chaos nous abandonnons volontiers à quelque
+               puissance supérieure le souci de parachever l’œuvre, comme si notre condition de <span class="STDitalic">mortels</span> était une excuse suffisante à notre désistement.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Adaptée à la vie dont elle réfléchit tous les faits, la pensée s’interdit d’en faire
+                  la somme. Nous ne voyons que le fait dans un fait, nous nous interdisons d’y déchiffrer
+                  un épisode d’une vie vouée à la mort.</span></p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Notre pensée ne veut pas être la pensée de notre vie. Nous regardons passer les
+                  choses pour oublier qu’elles nous regardent mourir.&nbsp;»</span></p>
+            <p>Contre cette inacceptable abdication, <span class="ref">Bousquet</span> développe une sorte de prédication obstinée, dont les thèmes essentiels transparaissent
+               à travers toute son œuvre. La <span class="STDitalic">matière réelle</span> est, dit-il, encore invisible&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ce que tu appelais de ce nom n’en est même pas l’image. La vraie matière est recouverte.
+                  Il faut que ton âme se mêle à elle pour te la montrer.&nbsp;»</span> De même, le temps et l’espace sont l’œuvre de l’homme, ou plutôt <span class="STDitalic">seront</span> son œuvre. Ce qu’il y a à sauver, ce n’est pas soi-même, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;c’est la terre, le caillou, la cendre. Ton devoir est d’opérer le salut de l’espace et du temps.&nbsp;»</span> Il y a, dans la volonté de devenir ce sauveur, à la fois beaucoup d’orgueil et la
+               plus grande humilité, car la personne humaine y disparaît totalement au profit d’une
+               création problématique qui est seule à <span class="STDitalic">devoir être.</span> Mais, par vanité maladroite, l’homme veut d’abord <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;être&nbsp;»</span>, c’est cela justement qui fait son néant. <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Tu n’es pas... Tu n’es même pas maudit. La malédiction n’est que le lieu de ta dérisoire
+                  et monstrueuse liberté.&nbsp;»</span></p>
+            <p>La plus haute qualité de notre esprit est seulement la faculté (et en termes de morale&nbsp;:
+               le devoir) de concevoir une forme qui puisse donner l’unité au monde et <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;l’élever à notre ressemblance&nbsp;»</span>. Ce sera, par un juste retour, le véritable avènement de l’homme, de cet homme qui est
+               <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;à venir&nbsp;»</span>.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;L’homme-nébuleuse est à rendre réel...&nbsp;»</span></p>
+            <div class="smallgap"></div>
+            <p>Les faits sont difficilement pénétrables. Néanmoins nous y découvrons peu à peu le
+               dessin de notre vie. Parlant de la sienne, <span class="ref">Bousquet</span>&nbsp;–&nbsp;dont un sort tragique semblait avoir, par hasard, brisé l’existence&nbsp;–&nbsp;écrit&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Il ne s’y produit pas un fait qui ne soit un trait de mon âme.&nbsp;»</span> Et plus loin&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Je suis à la fois le sujet et l’œuvre de ma volonté... L’homme existe par son adhésion
+                  aux événements, par sa façon d’accomplir, à travers eux, l’événement qu’il aura été.&nbsp;»</span> Qui, mieux que ce blessé de guerre cloué depuis vingt ans à son lit, pouvait nous
+               rendre si émouvant et si explicite un tel enseignement&nbsp;?</p>
+            <p>Il ne suffit pas de récupérer le hasard. Mieux camouflés encore que les événements
+               a priori absurdes sont ceux qui semblent déjà intégrés dans un ordre, superficiel
+               mais rassurant, qui leur tient lieu de signification. Ceux-là passent tout à fait
+               inaperçus, on oublie de s’en méfier et ils ne nous étouffent que plus sûrement.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Les faits les plus innocents, les mieux liés à leurs causes paraissent se subordonner
+                  à des relations souterraines dont notre âme aurait fourni le tracé. Intervenant dans
+                  un monde refroidi, ils adhèrent cependant pour une période très courte à des vœux
+                  que nous formions à leur propos. On dirait qu’ils se sont rencontrés en nous cherchant
+                  et, tout en se pliant à des lois physiques, se sont, loin de nous, arrangés déjà à
+                  la manière d’un rêve. Enfin, <a id="page_114"></a>ils ont été notre souvenir avant de nous être aventure.&nbsp;»</span></p>
+            <p>Sans doute la plus sérieuse conquête du surréalisme aura-t-elle été de rendre, par
+               une recherche systématique, aux <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;miracles apparents qui jettent un doute si vif sur la vision commune du réel&nbsp;»</span> toute leur valeur et tout leur poids&nbsp;: ceux de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;gages évidents d’un ordre inconnu&nbsp;»</span>&nbsp;; c’est en les dépistant sans faiblesse que nous entrerons <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;dans le château de chaque instant.&nbsp;»</span> Il est vain, en revanche, d’user ses forces à <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;rapprocher arbitrairement un fer à repasser et un faux-col en celluloïd&nbsp;»</span>&nbsp;; <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;l’impossibilité de trouver jamais du gratuit dans les rapports les plus hasardeux&nbsp;»</span> nous dispense de ces amusements, le monde quotidien offre assez de richesses pour
+               que nous puissions nous tenir à l’écart des extravagances. Les phénomènes les plus
+               ordinaires seront en fin de compte les plus merveilleux.</p>
+            <p>Nous devons enfin nous garder des constructions allégoriques et du symbolisme. (Là
+               aussi nous retrouvons une idée chère aux amis d’<span class="ref">André&nbsp;Breton</span>.) Chaque objet, chaque événement, chaque forme, est en effet son propre symbole&nbsp;:
+               <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ne dites pas qu’il y a des croix de bois et le signe de la croix. Il y aurait un signe irréel et une chose signifiée, qui serait réelle. L’un et l’autre
+                  sont, à la fois, des réalités et des signes.&nbsp;»</span></p>
+            <p>L’univers de <span class="ref">Bousquet</span>&nbsp;–&nbsp;le nôtre&nbsp;–&nbsp;est un univers de signes. Tout y est signe&nbsp;; et non pas signe de quelque
+               chose d’autre, quelque chose de plus parfait situé hors de notre portée, mais signe
+               de soi-même, de cette réalité qui demande seulement à être révélée.</p>
+            <div class="smallgap"></div>
+            <p>Nous disposons pour cela d’une arme singulière, qui est le corps de la parole et de
+               l’écriture, <span class="STDitalic">le langage. </span>Encore le mot d’arme ne convient-il qu’à moitié pour désigner ce qui nous apparaît
+               en même temps comme un moyen et comme une fin&nbsp;: étant le signe par excellence (la
+               représentation de tous les signes), il ne saurait lui non plus avoir de signification
+               entièrement en dehors de soi. Rien, en somme, ne peut lui être extérieur.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Le langage n’est pas contenu dans la conscience, il la contient... L’expérience
+                  du langage enferme toutes les autres... Après avoir écrit à une femme&nbsp;: “Je te prendrai
+                  dans mes bras”, je n’ai plus que son fantôme à saisir...&nbsp;»</span></p>
+            <p>Si bien qu’au-delà du langage il n’y a probablement plus rien. Le monde <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;se fait en nous&nbsp;»</span> et <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;s’achève par la parole&nbsp;»</span>, car la parole est vérité&nbsp;: <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Vérité quand de l’acte de nommer un objet elle tire l’avènement de l’homme.&nbsp;»</span></p>
+            <p>Écrire, c’est <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;donner notre réalité à la vérité, de qui nous la tenions, afin de redevenir dans
+                  son sein légers comme des rêves&nbsp;»</span>.</p>
+            <p><span class="quote" onclick="displayExtract('toDefine')">«&nbsp;Ayons le courage d’en convenir. L’homme n’existe que hors de lui-même, il n’est
+                  que le négatif de l’existence et ce serait pour lui un progrès marqué que de se supprimer
+                  tout à fait. Le paradoxe semble de taille. Notre existence serait-elle à conquérir&nbsp;?
+                  Franchement je le crois. Nous sommes l’être à l’état de chute, de l’être en exil,
+                  aussi éloignés de la vie que le froid mortel à qui appartient cependant le privilège
+                  de purifier l’atmosphère et de donner la cohérence et la solidité à une masse d’eau.
+                  J’ai compris. Je veux <a id="page_116"></a>recueillir mon néant à l’ombre d’une réalité digne de la lumière et forger de mes
+                  mains un objet qui efface mes traces.&nbsp;»</span></p>
+            <p>Un texte <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;serré et irréductible&nbsp;»</span>, si parfait qu’il ne semble pas <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;avoir été touché&nbsp;»</span>, un objet si parfait qu’il effacerait nos traces... Ne reconnaissons-nous pas ici
+               la plus haute ambition de tout écrivain&nbsp;?</p>
+            <div class="smallgap"></div>
+            <p>Sans doute est-ce par cette réflexion constante sur la création littéraire (ou, d’une
+               façon plus générale, artistique) que l’œuvre de <span class="ref">Joë&nbsp;Bousquet</span> demeure pour nous si précieuse. Et, à cause d’elle, il faut passer sur ce que ces
+               pages peuvent avoir parfois de gênant&nbsp;: qui parle de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;chute&nbsp;»</span> et de <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;l’être en exil&nbsp;»</span> semble bien près de parler du péché originel. Même sans lui tenir rigueur de l’emploi
+               fréquent du mot <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;âme&nbsp;»</span> là où le mot <span class="STDitalic">imagination</span> conviendrait certes plus clairement à son propos, nous ne pouvons réprimer notre
+               agacement devant l’espèce de mysticisme (d’ailleurs hérétique) qui baigne toute la
+               pensée de <span class="ref">Bousquet</span>. Plus grave qu’un vocabulaire suspect (<span class="quote" onclick="displayExtract('toDefine')">«&nbsp;âme&nbsp;»</span>, <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;salut&nbsp;»</span>, etc.), il y a chez lui cette tentative de <span class="STDitalic">récupération globale</span> de l’univers par l’esprit humain. L’idée de <span class="STDitalic">totalité</span> mène toujours plus ou moins directement à celle de vérité absolue, c’est-à-dire supérieure,
+               donc bientôt à l’idée de Dieu.</p>
+            <p>Cependant, c’est ici l’homme lui-même qui doit <span class="quote" onclick="displayExtract('toDefine')">«&nbsp;donner l’unité au monde et l’élever à sa ressemblance&nbsp;»</span>. On regrette surtout qu’il ne soit pas précisé que l’opération restera à l’échelle
+               humaine et aura de l’importance pour l’homme seulement, qu’il n’atteindra ainsi à
+               aucune essence des choses, et que la création enfin, à laquelle on nous invite, sera toujours à recommencer, par nous-mêmes
+               puis par ceux qui viendront après nous.</p>
+            <p>C’est alors en effet que l’<span class="STDitalic">invention</span> du monde peut prendre tout son sens&nbsp;–&nbsp;invention permanente, qui, on nous le dit bien,
+               appartient aux artistes mais aussi à tous les hommes. Dans le rêve, dans le souvenir,
+               comme dans le regard, notre imagination est la force organisatrice de notre vie, de
+               <span class="STDitalic">notre</span> monde. Chaque homme, à son tour, doit réinventer les choses autour de lui. Ce sont
+               les vraies choses, nettes, dures et brillantes, du monde réel. Elles ne renvoient
+               à aucun autre monde. Elles ne sont le signe de rien d’autre que d’elles-mêmes. Et
+               le seul contact que l’homme puisse entretenir avec elles, c’est de les imaginer.</p>
+         </article>
+         <section class="extract_section">
+            <p>Some text here.</p>
+            <div id="pr_02_01" class="extractHide">
+               <p><span class="STDsmall STDgray">[10] </span>[...] Ces gens-là j'ai essayé de les aimer, ils ont <span class="STDsmall STDgray">[11] </span>parfois un air qui trompe mais bien vite si tu leur parle de toi ils t'injurient,
+                  ton chagrin leur fait horreur.</p>
+               <p>On m'a piqué avec une longue aiguille, c'est la vérité. Cette aiguille ellle m'est
+                  restée vivante. Quand on commence une histoire le mieux est de dire je suis né, c'est
+                  le meilleur départ car les enfances sont plus nombreuses à mesure qu'on grandit, ,
+                  elles se multiplient et voilà déjà une cause de confusion. J'ai le cœur gros de commencements
+                  toujours râtés. Et le but aussi, je n'en ai point.</p>
+               <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
+            </div>
+            <div id="pr_02_ToDefine" class="extractHide">
+               <p></p>
+               <p><span class="STDsmall STDgray">[16] </span>[...] Je me demande souvent si les esprits brillants existeraient sans leur mémoire,
+                  je n'ai aucune mémoire, je voudrais pour n'être pas ridicule vivre dans un mon d'où
+                  elle serait exclue, on ne pourrait partler que des choses du jour, et on inventerait,
+                  on inventerait au fur et à mesure, c'est ça la vraie vie.</p>
+               <p>La naissance d'un objet, j'ai remarqué, n'a pas lieu aujourd'hui, il y a du mouvement
+                  tout autour qui l'empêche de montrer la tête et demain tu t'avises qu'il existe. Par
+                  conséquent la meilleure explication des origines serait de commencer par des bruits
+                  de bouches et de glisser progressivement vers des paroles articulées jusqu'au moment
+                  où l'auditeur sans se poser aucune question participe à ton histoire.</p>
+               <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
+            </div>
+            <p>
+               Some text here.</p>
+         </section>
+      </div>
+      <div class="ch_nav"><a class="preceding" href="punr_ch07.html">&lt;</a><a class="following" href="punr_ch09.html">&gt;</a></div>
+      <footer><a href="https://www.univ-lille.fr/" target="blanck"><img src="img/logo_u_lille.png" alt="logo université de lille"></a></footer>
    </body>
 </html>

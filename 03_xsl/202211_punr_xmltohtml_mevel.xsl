@@ -25,12 +25,23 @@
 <!--	Déclaration de variables pour les adresses des pages constituées-->
 	<xsl:variable name="basename" select="'../04_livrable/website/punr/'"/>
 	<xsl:variable name="home" select="concat($basename,'home.html')"/>
+	
 	<xsl:variable name="index" select="concat($basename,'index.html')"/>
+	<xsl:variable name="index_link" select="'index.html'"/>
+	
 	<xsl:variable name="bib" select="concat($basename,'bibliography.html')"/>
+	<xsl:variable name="bib_link" select="'bibliography.html'"/>
+	
+	<xsl:variable name="presentation" select="concat($basename,'presentation.html')"/>
+	<xsl:variable name="presentation_link" select="'presentation.html'"/>
 	
 	<xsl:variable name="tl" select="concat($basename,'timeline.html')"/>
+	<xsl:variable name="tl_link" select="'timeline.html'"/>
+	
 	<xsl:variable name="db" select="concat($basename,'database.html')"/>
-<!--	<xsl:variable name=""/>-->
+	<xsl:variable name="db_link" select="'database.html'"/>
+	
+	<!--	<xsl:variable name=""/>-->
 <!--	<xsl:variable name="" select="''"/>-->
 	
 	
@@ -55,38 +66,50 @@
 		<nav class="nav_top">
 			<ul>
 				<li><a href="home.html">Accueil</a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li>
+				<li><a href="{$presentation_link}">Présentation de l'œuvre</a></li>
+				<li style="width:200px; height:100px; padding-top:9px">Corpus
 					<ol class="chapter_nav">
 						<xsl:for-each select="//TEI[@xml:id='punr']//div[@type='pagechap']">
-							<li><a href="{concat('punr_',@xml:id,'.html')}"><xsl:value-of select="descendant::head[1]"/></a></li>
-<!--							VA CHOPER DATE en plus à dégager-->
+							<li><a href="{concat('punr_',@xml:id,'.html')}"><!--<xsl:value-of select="descendant::head[1]"/>--><xsl:apply-templates select="head" mode="nav"/></a></li>
+							<!--							VA CHOPER DATE en plus à dégager-->
 						</xsl:for-each>
 					</ol>
 				</li>
+				<li><a href="{$db_link}">Illsutration de la base de données</a></li>
+				<li><a href="{$tl_link}">Chronologie</a></li>
+				<!--<li><a href="{}"></a></li>
+				<li><a href="{}"></a></li>
+				<li><a href="{}"></a></li>
+				<li><a href="{}"></a></li>-->
+				
 			</ul>
 		</nav>
+	</xsl:template>
+	<xsl:template mode="nav" match="date"/>
+	<xsl:template mode="nav" match="head">
+		<xsl:apply-templates mode="nav"/>
 	</xsl:template>
 <!--	tempalte pour FOOTER-->
 	<xsl:template name="footer">
 		<footer>
-			<a href="https://www.univ-lille.fr/" target="blanck"><img src="img/logo_u_lille.png" alt="logo université de lille"/>"</a>
+			<a href="https://www.univ-lille.fr/" target="blanck"><img src="img/logo_u_lille.png" alt="logo université de lille"/></a>
 		</footer>
 	</xsl:template>
 <!--	template pour HEADER-->
 	<xsl:template name="header">
 		<header id="top">
-			<h1>Pour un nouveau roman</h1>
-			<xsl:call-template name="nav"/>
-			<div class="legals">
-<!--				github need link-->
-				<a href="" target="blanck">
-					<img src="img/GitHub-Mark-32px.png"/>
-				</a>
-				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_cc.png"/></a>
-				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_by.png"/></a>
-				
+			<h1>Pour un nouveau roman<br /><span class="h1_subtitle">Édition critque et numérique</span></h1>
+			<div class="header_div">
+				<xsl:call-template name="nav"/>
+				<div class="legals">
+	<!--				github need link-->
+					<a href="https://github.com/mevel-a/ednitl_m2_memoire" target="blanck" style="grid-column:1;">
+						<img src="img/GitHub-Mark-32px.png"/>
+					</a>
+					<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:2;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_cc.png"/></a>
+					<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:3;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_by.png"/></a>
+					<a href="files/punr.xml" download="" style="grid-column:3; grid-row:2;"><img src="img/logo_xml.png" alt="XML"/></a>
+				</div>
 			</div>
 		</header>
 	</xsl:template>
@@ -108,39 +131,78 @@
 				<xsl:call-template name="head">
 					<xsl:with-param name="title" select="$title"/><!-- tentative de variable en cascade -->
 				</xsl:call-template>
-				<body>
-					<xsl:call-template name="header"/>
-						<xsl:choose>
-							<xsl:when test="$content='ch13'">
-								<div class="preceding"><a href="{concat('punr_',preceding::div[1][@type='pagechap']/@xml:id,'.html')}">&lt;</a></div>
-								<!--<div class="following"><a href="{concat('punr_',following::div[1][@type='pagechap']/@xml:id,'.html')}">&gt;</a></div>-->
-							</xsl:when>
-							<xsl:when test="$content='ch01'">
-								<!--<div class="preceding"><a href="{concat('punr_',preceding::div[1][@type='pagechap']/@xml:id,'.html')}">&lt;</a></div>-->
-								<div class="following"><a href="{concat('punr_',following::div[1][@type='pagechap']/@xml:id,'.html')}">&gt;</a></div>
-							</xsl:when>
-							<xsl:when test="contains($content,'ch')">
-								<div class="preceding"><a href="{concat('punr_',preceding-sibling::div[@type='pagechap'][1]/@xml:id,'.html')}">&lt;</a></div>
-								<div class="following"><a href="{concat('punr_',following::div[1][@type='pagechap']/@xml:id,'.html')}">&gt;</a></div>
-							</xsl:when>
-						</xsl:choose>
+				<body onload="initialise()">
+<!--Lance les scripts ENVOYER EN PARAMETRE DES TRUCS ¨POUR G2RER QUELLE VERSION DE LA NAV-->
 					
+					<xsl:call-template name="header"/>
+					<xsl:if test="contains($content,'ch')">
+						<div class="ch_nav">
+							<xsl:choose>
+								<xsl:when test="$content='ch13'">
+									<a class="preceding" href="{concat('punr_',preceding::div[1][@type='pagechap']/@xml:id,'.html')}">&lt;</a>
+									<!--<div class="following"><a href="{concat('punr_',following::div[1][@type='pagechap']/@xml:id,'.html')}">&gt;</a></div>-->
+								</xsl:when>
+								<xsl:when test="$content='ch01'">
+									<!--<div class="preceding"><a href="{concat('punr_',preceding::div[1][@type='pagechap']/@xml:id,'.html')}">&lt;</a></div>-->
+									<a class="following" href="{concat('punr_',following::div[1][@type='pagechap']/@xml:id,'.html')}">&gt;</a>
+								</xsl:when>
+								<xsl:when test="contains($content,'ch')">
+									<a class="preceding" href="{concat('punr_',preceding-sibling::div[@type='pagechap'][1]/@xml:id,'.html')}">&lt;</a>
+									<a class="following" href="{concat('punr_',following::div[1][@type='pagechap']/@xml:id,'.html')}">&gt;</a>
+								</xsl:when>
+							</xsl:choose>
+						</div>
+					</xsl:if>
+<!--					ICI la nav au sein de la page-->
+					<nav class="articlenav">
+						<ol id="articlenav">
+							
+						</ol>
+					</nav>
 						<xsl:choose>
 							<xsl:when test="contains($content,'ch')">
-								<article>
-									<xsl:apply-templates mode="corpus"/>
-								</article>
-								<section class="extract_section">
-									<xsl:apply-templates mode="extract" select="//TEI[not(@xml:id='punr')]//body"/>
-								</section>
+								<div class="corpus">
+									<article>
+										<xsl:apply-templates mode="corpus"/>
+									</article>
+									<section class="extract_section">
+										<xsl:apply-templates mode="extract" select="//TEI[not(@xml:id='punr')]//body"/>
+									</section>
+								</div>
 							</xsl:when>
 							<xsl:when test="$content='home'">
 								<article>
 									<xsl:apply-templates select="//publicationStmt[1]"/>
 								</article>
 							</xsl:when>
+							<xsl:when test="$content='pres'">
+<!--								LA PR2SENTATION DE L4OEUVRE-->
+							</xsl:when>
+							<xsl:when test="$content='db'">
+<!--								DATABASE-->
+							</xsl:when>
+							<xsl:when test="$content='tl'">
+<!--							TIMELINE GOES HERE-->
+							</xsl:when>
 						</xsl:choose>
-					
+					<xsl:if test="contains($content,'ch')">
+						<div class="ch_nav">
+							<xsl:choose>
+								<xsl:when test="$content='ch13'">
+									<a class="preceding" href="{concat('punr_',preceding::div[1][@type='pagechap']/@xml:id,'.html')}">&lt;</a>
+									<!--<div class="following"><a href="{concat('punr_',following::div[1][@type='pagechap']/@xml:id,'.html')}">&gt;</a></div>-->
+								</xsl:when>
+								<xsl:when test="$content='ch01'">
+									<!--<div class="preceding"><a href="{concat('punr_',preceding::div[1][@type='pagechap']/@xml:id,'.html')}">&lt;</a></div>-->
+									<a class="following" href="{concat('punr_',following::div[1][@type='pagechap']/@xml:id,'.html')}">&gt;</a>
+								</xsl:when>
+								<xsl:when test="contains($content,'ch')">
+									<a class="preceding" href="{concat('punr_',preceding-sibling::div[@type='pagechap'][1]/@xml:id,'.html')}">&lt;</a>
+									<a class="following" href="{concat('punr_',following::div[1][@type='pagechap']/@xml:id,'.html')}">&gt;</a>
+								</xsl:when>
+							</xsl:choose>
+						</div>
+					</xsl:if>
 					<xsl:call-template name="footer"/>
 				</body>
 			</html>
@@ -166,7 +228,11 @@
 			<xsl:with-param name="title" select="'accueil'"/>
 			<xsl:with-param name="content" select="'home'"/>
 		</xsl:call-template>
-		
+		<xsl:call-template name="body">
+			<xsl:with-param select="$presentation" name="doc"/>
+			<xsl:with-param select="'présentation de lœuvre'" name="title"/>
+			<xsl:with-param select="'pres'" name="content"/>
+		</xsl:call-template>
 		<xsl:call-template name="body">
 			<xsl:with-param select="$db" name="doc"/>
 			<xsl:with-param name="title" select="'illustration de la base de données'"/>
@@ -229,7 +295,14 @@
 	<xsl:template match="head" mode="corpus">
 		<xsl:choose>
 			<xsl:when test="@type='subsection_head'">
-				<h4><xsl:apply-templates mode="corpus"/></h4>
+				<xsl:choose>
+					<xsl:when test="not(ancestor::div[@type='subsection'])">
+						<h3><xsl:apply-templates mode="corpus"/></h3>
+					</xsl:when>
+					<xsl:otherwise>
+						<h4><xsl:apply-templates mode="corpus"/></h4>
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:when>
 			<xsl:otherwise>
 				<h3><xsl:apply-templates mode="corpus"/></h3>
@@ -261,8 +334,22 @@
 		<span class="ref"><xsl:apply-templates/></span>
 	</xsl:template>
 	<xsl:template mode="corpus" match="quote">
-		<span class="quote" onclick="displayExtract('{@corresp}')"><xsl:apply-templates/></span>
+		<xsl:choose>
+			<xsl:when test="@type='epigraph'">
+				<div class="epigraph" onclick="displayExtract('{@corresp}')">
+						<xsl:apply-templates mode="corpus" select="p"/>
+					<p class="epigraph_ref">
+						<xsl:apply-templates mode="corpus" select="ref"/>
+					</p>
+				</div>
+				
+			</xsl:when>
+			<xsl:otherwise>
+				<span class="quote" onclick="displayExtract('{@corresp}')"><xsl:apply-templates/></span>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
+	
 	<xsl:template match="comment()" mode="corpus">
 		<xsl:choose>
 			<xsl:when test=".='GAP HERE 0.6em'">
