@@ -5,20 +5,20 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>Pour un nouveau roman, ch05</title>
       <link rel="stylesheet" type="text/css" href="punr_style.css">
-      <link rel="icon" type="image/jpg" href="">
-      <meta charset="utf-8">
+      <link rel="icon" type="image/jpg" href=""><script src="script.js"></script><meta charset="utf-8">
       <meta name="author" content="adrien mevel, mathieu marchal, florence de chalonge, alain robbe-grillet">
       <meta name="description" content="digital critical edition of pour un nouveau roman by alain robbe-grillet fist published in 1963 this word has been realised as student project">
-      <meta name="keywords" content="critical, edition, digital, robbe-grillet, litterature, french, 1963, nouveau roman, alain robbe-grillet, pour un nouveau roman, xxe siecle, xx, franch theory"><script src="script.js"></script></head>
+      <meta name="keywords" content="critical, edition, digital, robbe-grillet, litterature, french, 1963, nouveau roman, alain robbe-grillet, pour un nouveau roman, xxe siecle, xx, french theory">
+   </head>
    <body onload="initialise()">
       <header id="top">
-         <h1>Pour un nouveau roman<br><span class="h1_subtitle">Édition critque et numérique</span></h1>
+         <h1><span class="STD_italic">Pour un nouveau roman</span><br><span class="h1_subtitle">Édition critque et numérique</span></h1>
          <div class="header_div">
             <nav class="nav_top">
                <ul>
                   <li><a href="home.html">Accueil</a></li>
                   <li><a href="presentation.html">Présentation de l'œuvre</a></li>
-                  <li style="width:200px; height:100px; padding-top:9px">Corpus
+                  <li style="width:200px; height:100px; padding-top:9px;flex-shrink: 0;">Corpus
                      					
                      <ol class="chapter_nav">
                         <li><a href="punr_ch01.html">À quoi servent les théories</a></li>
@@ -36,7 +36,7 @@
                         <li><a href="punr_ch13.html">Du réalisme à la réalité</a></li>
                      </ol>
                   </li>
-                  <li><a href="database.html">Illsutration de la base de données</a></li>
+                  <li><a href="database.html">Illustration de la base de données</a></li>
                   <li><a href="timeline.html">Chronologie</a></li>
                </ul>
             </nav>
@@ -44,13 +44,13 @@
          </div>
       </header>
       <div class="ch_nav"><a class="preceding" href="punr_ch04.html">&lt;</a><a class="following" href="punr_ch06.html">&gt;</a></div>
-      <nav class="articlenav">
-         <ol id="articlenav"></ol>
-      </nav>
       <div class="corpus">
+         <div class="articlenavs">
+            <h5>Au sein de cet article</h5>
+         </div>
          <article>
-            <h3>Éléments d’une anthologie moderne</h3>
-            <p>Les quelques œuvres qui vont être rapidement analysées, ou commentées, dans les pages
+            <h3 id="d1e1866">Éléments d’une anthologie moderne</h3>
+            <p class="first">Les quelques œuvres qui vont être rapidement analysées, ou commentées, dans les pages
                qui suivent sont loin d’être les seules à avoir marqué de leurs recherches la littérature
                de cette première moitié du <span class="STDsc">xx</span><span class="STDexposant">e</span> siècle. Ce ne sont même pas toujours celles qui m’auront personnellement le plus
                impressionné. On remarquera tout de suite l’absence, entre autres, de <span class="ref">Kafka</span>, et la présence au contraire d’écrivains de bien moindre importance. On ne manquera
@@ -64,8 +64,8 @@
                serait pas difficile de retrouver dans la plupart des recherches contemporaines.</p>
          </article>
          <section class="extract_section">
-            <p>Some text here.</p>
             <div id="pr_02_01" class="extractHide">
+               <div class="extract_close" onclick="closeExtract()">X</div>
                <p><span class="STDsmall STDgray">[10] </span>[...] Ces gens-là j'ai essayé de les aimer, ils ont <span class="STDsmall STDgray">[11] </span>parfois un air qui trompe mais bien vite si tu leur parle de toi ils t'injurient,
                   ton chagrin leur fait horreur.</p>
                <p>On m'a piqué avec une longue aiguille, c'est la vérité. Cette aiguille ellle m'est
@@ -76,6 +76,7 @@
                <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
             </div>
             <div id="pr_02_ToDefine" class="extractHide">
+               <div class="extract_close" onclick="closeExtract()">X</div>
                <p></p>
                <p><span class="STDsmall STDgray">[16] </span>[...] Je me demande souvent si les esprits brillants existeraient sans leur mémoire,
                   je n'ai aucune mémoire, je voudrais pour n'être pas ridicule vivre dans un mon d'où
@@ -88,8 +89,6 @@
                   où l'auditeur sans se poser aucune question participe à ton histoire.</p>
                <p><span class="STDitalic">Le Renard et la boussole</span>, Pinget Robert, Paris, Les Éditions de Minuit, [1953] 2000.</p>
             </div>
-            <p>
-               Some text here.</p>
          </section>
       </div>
       <div class="ch_nav"><a class="preceding" href="punr_ch04.html">&lt;</a><a class="following" href="punr_ch06.html">&gt;</a></div>

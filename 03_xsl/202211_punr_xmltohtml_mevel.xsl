@@ -11,7 +11,7 @@
 		<xd:desc>
 			<xd:p><xd:b>Created on:</xd:b> Nov 27, 2022</xd:p>
 			<xd:p><xd:b>Author:</xd:b> eXu</xd:p>
-			<xd:p>Conçu par Adrien Mével, étudiant en M2 EdNitl à L'unirsité de Lille dans le cadre d'un travail de recherche (mémoire) sous la direction de Mme Florence de Chalonge pour le versant scientifique et M. Mathieu Marchal pour le versant technique.</xd:p>
+			<xd:p>Conçu par Adrien Mével, étudiant en M2 EdNitl à l'Université de Lille dans le cadre d'un travail de recherche (mémoire) sous la direction de Mme Florence de Chalonge pour le versant scientifique et M. Mathieu Marchal pour le versant technique.</xd:p>
 			<xd:p>xsl produisant une édition critique et numérique de Pour un nouveau roman d'Alain Robbe-Grillet.</xd:p>
 		</xd:desc>
 	</xd:doc>
@@ -53,12 +53,12 @@
 			<title><xsl:value-of select="concat('Pour un nouveau roman, ', $title)"/></title>
 			<link rel="stylesheet" type="text/css" href="punr_style.css"/>
 			<link rel="icon" type="image/jpg" href=""/>
+			<script src="script.js"/>
+			
 			<meta charset="utf-8"/>
 			<meta name="author" content="adrien mevel, mathieu marchal, florence de chalonge, alain robbe-grillet"/>
 			<meta name="description" content="digital critical edition of pour un nouveau roman by alain robbe-grillet fist published in 1963 this word has been realised as student project"/>
-			<meta name="keywords" content="critical, edition, digital, robbe-grillet, litterature, french, 1963, nouveau roman, alain robbe-grillet, pour un nouveau roman, xxe siecle, xx, franch theory"/>
-			<script src="script.js"/>
-				
+			<meta name="keywords" content="critical, edition, digital, robbe-grillet, litterature, french, 1963, nouveau roman, alain robbe-grillet, pour un nouveau roman, xxe siecle, xx, french theory"/>
 		</head>
 	</xsl:template>
 <!--	template pour NAV-->
@@ -67,7 +67,7 @@
 			<ul>
 				<li><a href="home.html">Accueil</a></li>
 				<li><a href="{$presentation_link}">Présentation de l'œuvre</a></li>
-				<li style="width:200px; height:100px; padding-top:9px">Corpus
+				<li style="width:200px; height:100px; padding-top:9px;flex-shrink: 0;">Corpus
 					<ol class="chapter_nav">
 						<xsl:for-each select="//TEI[@xml:id='punr']//div[@type='pagechap']">
 							<li><a href="{concat('punr_',@xml:id,'.html')}"><!--<xsl:value-of select="descendant::head[1]"/>--><xsl:apply-templates select="head" mode="nav"/></a></li>
@@ -75,7 +75,7 @@
 						</xsl:for-each>
 					</ol>
 				</li>
-				<li><a href="{$db_link}">Illsutration de la base de données</a></li>
+				<li><a href="{$db_link}">Illustration de la base de données</a></li>
 				<li><a href="{$tl_link}">Chronologie</a></li>
 				<!--<li><a href="{}"></a></li>
 				<li><a href="{}"></a></li>
@@ -98,7 +98,7 @@
 <!--	template pour HEADER-->
 	<xsl:template name="header">
 		<header id="top">
-			<h1>Pour un nouveau roman<br /><span class="h1_subtitle">Édition critque et numérique</span></h1>
+			<h1><span class="STD_italic">Pour un nouveau roman</span><br /><span class="h1_subtitle">Édition critque et numérique</span></h1>
 			<div class="header_div">
 				<xsl:call-template name="nav"/>
 				<div class="legals">
@@ -114,10 +114,63 @@
 		</header>
 	</xsl:template>
 	
+	<xsl:template name="articlenav">
+		<xsl:param name="content"/>
+<!--			Quatre valeurs possibles ?
+			0 = quedall
+			1= h3+h4
+			2=h3+h4+a
+			3=a-->
+		<xsl:choose>
+			<xsl:when test="contains($content,'ch')">
+				<div class="articlenavs">
+					<h5>Au sein de cet article</h5>
+				<xsl:if test="$content='ch03'or$content='ch11'">
+					
+						<h6>Sous-sections</h6>
+						<ul id="articlenav">
+							<!--id inutile conservé pour historique reasons-->
+							<xsl:apply-templates mode="article_nav" select="head[not(@type='subsection_head')]"/>
+						</ul>
+				</xsl:if>
+					<!--<h6>Structure argumentative</h6>
+			<ol>
+				<xsl:apply-templates select="milestone[ancestor::TEI[@xml:id='punr']]"/>
+<!-\-				TO BE IMPLEMENTED LATER-\->
+			</ol>-->
+				</div>
+			</xsl:when>
+			<!--<xsl:when test="$content='ch03'or'ch11'">
+				
+			</xsl:when>-->
+			<xsl:otherwise></xsl:otherwise>
+		</xsl:choose>
+		
+	</xsl:template>
 	
-	
-	
-	
+	<xsl:template mode="article_nav" match="head[ancestor::div[not(@type='subsection')]]">
+		<xsl:param name="section" select="ancestor::div[@type='pagechap']/@xml:id"/>
+		<xsl:param name="head4nav">
+			<xsl:choose>
+				<xsl:when test="date">
+					<xsl:value-of select="substring-before(.,date)"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="."/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:param>
+		<li><a href="{concat('#',generate-id())}"><xsl:value-of select="$head4nav"/></a></li>
+				<xsl:if test="following::div[@type='subsection']">
+					<ol>
+						<xsl:apply-templates mode="article_nav" select="following::head[ancestor::div[@type='subsection']][ancestor::div[@xml:id=$section]]"/>
+					</ol>
+				</xsl:if>
+	</xsl:template>
+	<xsl:template mode="article_nav" match="head[ancestor::div[@type='subsection']]">
+		<li><a href="{concat('#',generate-id())}"><xsl:apply-templates/></a></li>
+	</xsl:template>
+	<xsl:template mode="article_nav" match="date|pb"/>
 
 	
 	<xsl:template name="body">
@@ -154,14 +207,15 @@
 						</div>
 					</xsl:if>
 <!--					ICI la nav au sein de la page-->
-					<nav class="articlenav">
+					<!--<nav class="articlenav">
 						<ol id="articlenav">
 							
 						</ol>
-					</nav>
+					</nav>-->
 						<xsl:choose>
 							<xsl:when test="contains($content,'ch')">
 								<div class="corpus">
+									<xsl:call-template name="articlenav"><xsl:with-param name="content" select="$content"/></xsl:call-template>
 									<article>
 										<xsl:apply-templates mode="corpus"/>
 									</article>
@@ -289,6 +343,8 @@
 	</xsl:template>
 	<xsl:template match="p" mode="corpus">
 		<p>
+			<xsl:if test="not(preceding-sibling::p)and(not(ancestor::quote[@type='epigraph']))and(not(ancestor::div[@type='subsection']))"><xsl:attribute name="class">first</xsl:attribute></xsl:if>
+			<!--<xsl:if test="ancestor::div[@type='subsection']and()"></xsl:if>-->
 			<xsl:apply-templates mode="corpus"/>
 		</p>
 	</xsl:template>
@@ -297,15 +353,15 @@
 			<xsl:when test="@type='subsection_head'">
 				<xsl:choose>
 					<xsl:when test="not(ancestor::div[@type='subsection'])">
-						<h3><xsl:apply-templates mode="corpus"/></h3>
+						<h3 id="{generate-id()}"><xsl:apply-templates mode="corpus"/></h3>
 					</xsl:when>
 					<xsl:otherwise>
-						<h4><xsl:apply-templates mode="corpus"/></h4>
+						<h4 id="{generate-id()}"><xsl:apply-templates mode="corpus"/></h4>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:when>
 			<xsl:otherwise>
-				<h3><xsl:apply-templates mode="corpus"/></h3>
+				<h3 id="{generate-id()}"><xsl:apply-templates mode="corpus"/></h3>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
@@ -372,6 +428,7 @@
 	</xsl:template>
 	<xsl:template match="div[not(ancestor::TEI[@xml:id='punr'])]" mode="extract">
 		<div id="{@xml:id}" class="extractHide">
+			<div class="extract_close" onclick="closeExtract()">X</div>
 			<xsl:apply-templates mode="extract"/>
 			<p><span class="STDitalic"><xsl:value-of select="ancestor::TEI/teiHeader/fileDesc/titleStmt/title[1]"/></span> <xsl:value-of select="preceding::sourceDesc[1]/p"/></p>
 		</div>
