@@ -233,7 +233,7 @@
 <!--								LA PR2SENTATION DE L4OEUVRE-->
 							</xsl:when>
 							<xsl:when test="$content='db'">
-<!--								DATABASE-->
+								<iframe width="100%" src="https://graphcommons.com/graphs/2ffc7c8c-3d1b-4814-966b-593b1c206f3c"></iframe>
 							</xsl:when>
 							<xsl:when test="$content='tl'">
 <!--							TIMELINE GOES HERE-->

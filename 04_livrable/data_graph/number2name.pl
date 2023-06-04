@@ -32,8 +32,3 @@ while (my $line=<TXTin>){
 print TXTout $txt;
 close (TXTin);
 close (TXTout);
-
-
-
-
-
