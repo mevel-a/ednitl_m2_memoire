@@ -1,0 +1,125 @@
+Node Type,Name,ttIdent,ttAuthor,ttDateFirst,ttDateLast
+œuvre,Fictions,1,Borges Jorge Luis,1944,1956
+œuvre,La Conscience de Zeno,2,Svevo Italo,1923,1954
+œuvre,Michael Kohlhaas,3,Kleist (von) Heinrich,1810,1830
+œuvre,Le Procès,4,Kafka Franz,1925,1933
+auteur,Schönberg Arnold,5,NULL,1874,1951
+auteur,Clouard Henri,6,NULL,1889,1974
+auteur,Balzac Honoré,7,NULL,1799,1850
+auteur,Dostoïevski Fedor,8,NULL,1821,1881
+auteur,Faulkner William,9,NULL,1897,1962
+auteur,Kafka Franz,10,NULL,1883,1924
+auteur,Beckett Samuel,11,NULL,1906,1989
+auteur,Sartre Jean-Paul,12,NULL,1905,1980
+auteur,Ehrenburg Ilya,13,NULL,1891,1967
+auteur,Jdanov Andreï,14,NULL,1896,1948
+auteur,Barthes Roland,15,NULL,1915,1980
+auteur,Mauriac François,16,NULL,1885,1970
+auteur,Rousseaux André,17,NULL,1896,1973
+auteur,Musset (de) Alphonse,18,NULL,1810,1857
+auteur,Hugo Victor,19,NULL,1802,1885
+auteur,Pascal Blaise,20,NULL,1623,1662
+auteur,Paulhan Jean,21,NULL,1884,1968
+auteur,Roussel Raymond,22,NULL,1877,1933
+auteur,Joyce James,23,NULL,1882,1941
+auteur,Bousquet Joë,24,NULL,1897,1950
+auteur,Sade (de) Donatien Alphonse François,25,NULL,1740,1814
+auteur,Proust Marcel,26,NULL,1871,1922
+auteur,Breton André,27,NULL,1893,1966
+auteur,Heidegger Martin,28,NULL,1889,1976
+auteur,Pinget Robert,29,NULL,1919,1997
+auteur,Robbe-Grillet Alain,30,NULL,1922,2008
+auteur,Simon Claude,31,NULL,1913,2005
+auteur,Flaubert Gustave,32,NULL,1821,1880
+auteur,Claudel Paul,33,NULL,1868,1955
+auteur,Camus Albert,34,NULL,1913,1960
+auteur,Zola Émile,35,NULL,1840,1902
+concept,caratères,36,[Hugo Victor],1838,NULL
+œuvre,La Nausée,37,Sartre Jean-Paul,1938,NULL
+œuvre,L'Étranger,38,Camus Albert,1942,NULL
+œuvre,Voyage au bout de la nuit,39,Céline Louis-Ferdinand,1932,NULL
+œuvre,Le Père Goriot,40,Balzac Honoré,1842,NULL
+œuvre,Qu'est-ce que la littérature,41,Sartre Jean-Paul,1948,NULL
+œuvre,L'Ère du soupçon,42,Sarraute Nathalie,1956,NULL
+œuvre,Le Vallon,43,Lamartine (de) Alphonse,1820,NULL
+œuvre,Situations I,44,Sartre Jean-Paul,1947,NULL
+œuvre,Le Parti pris des choses,45,Ponge Francis,1942,NULL
+œuvre,Le Sentiment tragique de la vie,46,Unamono (de) Miguel,1912,NULL
+œuvre,Le Chateau des Pyrénées,47,Magritte René,1959,NULL
+œuvre,Locus Solus,48,Roussel Raymond,1914,NULL
+œuvre,Les Frères Karamazov,49,Dostoïevski Fedor,1880,NULL
+œuvre,Moby Dick,50,Melville Herman,1851,NULL
+œuvre,Molloy,51,Beckett Samuel,1951,NULL
+œuvre,Le Meneur de lune,52,Bousquet Joë,1946,NULL
+œuvre,Murphy,53,Beckett Samuel,1938,NULL
+œuvre,Malone meurt,54,Beckett Samuel,1951,NULL
+œuvre,L'Innomable,55,Beckett Samuel,1953,NULL
+œuvre,En attendant Godot,56,Beckett Samuel,1952,NULL
+œuvre,[Oh les beaux jours!],57,Beckett Samuel,1961,NULL
+œuvre,Mahu ou le matériaux,58,Pinget Robert,1952,NULL
+œuvre,Le Renard et la Boussole,59,Pinget Robert,1953,NULL
+œuvre,L’Ingénieux Hidalgo Don Quichotte de la Manche,60,Cervantes (de) Miguel,1615,NULL
+œuvre,La Chartreuse de Parme,61,Stendhal,1841,NULL
+œuvre,Le Médecin de campagne,62,Balzac Honoré,1833,NULL
+œuvre,L'Immortelle,63,Robbe-Grillet Alain,1963,NULL
+œuvre,L'Année dernière à Marienbad,64,Resnais Alain,1961,NULL
+œuvre,La Jalousie,65,Robbe-Grillet Alain,1957,NULL
+œuvre,Le Voyeur,66,Robbe-Grillet Alain,1955,NULL
+œuvre,Le Chiendent,67,Queneau Raymond,1933,NULL
+œuvre,Loin de Rueil,68,Queneau Raymond,1944,NULL
+œuvre,Journal,69,Kafka Franz,1945,NULL
+œuvre,Le Château,70,Kafka Franz,1926,NULL
+concept,école du regard,71,[Barthes Roland],NULL,NULL
+concept,Roman objectif,72,[Barthes Roland],NULL,NULL
+concept,le cœur romantique de choses,73,un essayiste contemporain,NULL,NULL
+concept,être là [dasein],74,Heidegger,NULL,NULL
+concept,Balzac [selon Barthes],75,[Barthes Roland],NULL,NULL
+concept,bon sens,76,Descartes René,NULL,NULL
+concept,Tragédie,77,[Barthes Roland],NULL,NULL
+concept,effet de réel,78,[Barthes Roland],NULL,NULL
+articles,critiques de Les Gommes,79,NULL,NULL,NULL
+articles,critiques de Le Voyeur,80,NULL,NULL,NULL
+articles,éloges dans la presse,81,NULL,NULL,NULL
+articles,éloges dans les revues,82,NULL,NULL,NULL
+articles,réactions aux articles dans l'express,83,NULL,NULL,NULL
+articles,reproche des révolutionnaires les plus zélés,84,NULL,NULL,NULL
+œuvre,un de nos plus célèbres dictionnaires encyclopédiques,85,NULL,NULL,NULL
+courant artistique,réalisme socialiste,86,NULL,NULL,NULL
+auteur,jeune écrivan d'aujourd'hui,87,NULL,NULL,NULL
+entité collective,la plupart de nos romanciers contemporains,88,NULL,NULL,NULL
+entité collective,les plus sérieux essayistes,89,NULL,NULL,NULL
+entité collective,quelques esprits engagés dans des recherches comparables,90,NULL,NULL,NULL
+entité collective,certains matérialistes,91,NULL,NULL,NULL
+entité collective,on [les critiques],92,NULL,NULL,NULL
+œuvre,dessin satirique russe,93,NULL,NULL,NULL
+genre,roman noir,94,NULL,NULL,NULL
+concept,École de minuit,95,NULL,NULL,NULL
+concept,[antonomase],96,NULL,NULL,NULL
+concept,littérature de laboratoire,97,NULL,NULL,NULL
+concept,Russie et ses républiques [URSS],98,NULL,NULL,NULL
+concept,humanisme,99,NULL,NULL,NULL
+concept,valeurs de la chrétienté,100,NULL,NULL,NULL
+concept,fées des contes,101,NULL,NULL,NULL
+concept,la Nature,102,NULL,NULL,NULL
+concept,Œdipe (mythe),103,NULL,NULL,NULL
+concept,[république moderne],104,NULL,NULL,NULL
+courant artistique,[romantisme],105,NULL,NULL,NULL
+concept,[altérité],106,NULL,NULL,NULL
+concept,objet,107,NULL,NULL,NULL
+courant littéraire,surréalisme,108,NULL,NULL,NULL
+articles,réactions à L'Immortelle,109,NULL,NULL,NULL
+articles,interprétations de L'Année dernière à Marienbad,110,NULL,NULL,NULL
+courant artistique,classiques,111,NULL,NULL,NULL
+courant artistique,naturalisme,112,NULL,NULL,NULL
+entité collective,les engagés,113,NULL,NULL,NULL
+entité collective,la critique soviétique,114,NULL,NULL,NULL
+entité collective,la critique bourgeoise,115,NULL,NULL,NULL
+entité collective,la critique académique,116,NULL,NULL,NULL
+articles,critiques de La Jalousie,117,NULL,NULL,NULL
+concept,rationalisme des siècles passés,118,NULL,NULL,NULL
+entité collective,les prétendus descendants de Kafka,119,NULL,NULL,NULL
+concept,art décadent,120,NULL,NULL,NULL
+entité collective,extrême droite,121,NULL,NULL,NULL
+entité collective,extrême gauche,122,NULL,NULL,NULL
+institution,concours Lépine,123,NULL,1900,2022
+institution,Académie Française,124,NULL,1635,2022
