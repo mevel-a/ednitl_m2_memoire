@@ -6,7 +6,33 @@
 <p>Publication Information</p></publicationStmt><sourceDesc>
 <p>Information about the source</p></sourceDesc></fileDesc></teiHeader><text><body>
 <p>Some text here.</p></body></text></TEI>-->
-
+	<TEI xml:id="pr01">
+		<!--		Pinget Robert, 02, Le Renard et la boussole-->
+		<teiHeader><fileDesc><titleStmt><title>Mahu ou le matériau</title></titleStmt><publicationStmt>
+			<p>Encodage des extraits cités dans <title>Pour un nouveau roman</title>.</p>
+			<!--<p>Les présents extraits sont reproduits ici car ils correspondent à des citations produites par Alain Robbe-Grillet, au sein du chapitre « Un roman qui s'invente lui-même.  »</p>-->
+		</publicationStmt><sourceDesc>
+			<p>, Pinget Robert, Paris, Les Éditions de Minuit, [1952] 2000.</p>
+			<!--généré lors de l'affichage.-->
+		</sourceDesc></fileDesc></teiHeader><text><body>
+			<div xml:id="pr_01_01">
+				<p><pb n="12"/>[...] C'est des figues que j'ai photographié un été à Fantoine. Un été en vacances. J'ai senti... là, exactement, comme quand on fume la prmière cigarette du matin. ça fait le vide. J'ai failli tomber. Frédy m'a dit : « Qu'est-ce que tu as encore ? » Je lui ai dit : « C'est rien, c'est les figues. »</p>
+			</div>
+			<div xml:id="pr01_02">
+				<p><pb n="14"/>[...] Un jour j'étais vers dix heures devant l'école de Petite-Fiente. C'était la récré. Elle m'a vu devant la grille. Elle m'a appelé. Elle a appelé ses petites amies et elle m'a présenté : « Mahu-Maboul ». J'ai voulu la gifler mai il y avait la grille. C'est une sale gamine.</p>
+				<p resp="editor">On lit au début du chapitre suivant intitulé « La poste restante »</p>
+				
+				<p><pb n="15"/>J'avais peur d'avoir giflé Petite-Fiente.</p>
+				<p>One ne sait jamais avec elle. Elle a très bien pu dire : « Il y a la grille » pour faire semblant de n'avoir pas reçu la gifle. Je suis retourné à la sortie de l'école. Petite-Fiente était déjà oin. J'ai vu ses petites amies. Elles ont crié : « Voilà Mahu-Maboul qui a giflé Petite-Fiente, c'est un salaud. » Elles m'ont tiré la langue.</p>
+				<p>[...] <pb n="16"/> Je suis rentré. Juan était en train de tirer le volet de fer. « Bonsoir, Mahu. Vous excuserez la petite, pour cette histoire de gifle ? Oui, oui, elle m'a dit qu'elle vous a giflé. Excusez-la. C'est une sale gosse, mais vous savez, elle est nerveuse. Avec tous ces vermifuges qu'elle prend ! »</p>
+				<p>Je pense que c'est Sinture qui aura informé Juan par téléphone en l'obligeant à me dire que c'était Petite-Fiente qui le lui avait dit.</p>
+			</div>
+			<div xml:id="pr01_02">
+				<p><pb n="184"/>[...] La première partie, entre nous, c'est un roman raté mais aucune importance, elle m'a servi de gammes préliminaires, ce qui m'importe ce n'est pas de bien chanter, c'est d'entendre ma voix sans la bronchite, tu sais la bronchite il y a plein de petits sifflets.</p>
+			<p>Voilà, je n'ai plus rien à dire, néanmoins tout me demeure, j'ai gagné.</p>
+			</div>
+			
+		</body></text></TEI>
 <TEI xml:id="pr02">
 <!--		Pinget Robert, 02, Le Renard et la boussole-->
 <teiHeader><fileDesc><titleStmt><title>Le Renard et la boussole</title></titleStmt><publicationStmt>
@@ -74,16 +100,37 @@
 		<p><pb n="181"/>- Atroce.</p>
 	</div>
 	<div xml:id="pr_02_toDefine">
-		<p><pb n=""/>[...]</p>
+		<p><pb n="81"/>[...] C'est ma nature. La longue aiguille. elle m'injecte périodgiquement la varicelle, la scarlatine, la rougeole, toutes<pb n="82"/> ces maladies d'avant l'âge de raion. Il faut continuer de les avoir. si je m'écoutais je recommencerais par je suis né, là, maintenant. Par par manque d'idées, par scrupule. Si je n'tais pas né. ce serait le moyen d'y remédier à la sauvette. Qu'est-ce qui m'en empêche. Non je veux pas. Amour-propre. Peut-être même honneur. L'honneur de continuer. Messieurs, j'ai bien l'honneur. Le son de ma voix. Il est faux. JE me coupe la gorge et les oreilles.</p>
 	</div>
 	<div xml:id="pr_02_toDefine">
-		<p><pb n=""/>[...]</p>
+		<p><pb n="120"/>[...] on se promène presque de Pologne en Tchécoslovaquie, car les anciens nationaux de ces contrées, qui ont aoujourd'hui la supériorité numérique en Israël, se sont groupés entre eux, ils ont formé en général des communautés agricole à organisation collectiviste nommées kibboutsim ; je ne peux en quelques mots parler des kibboutsim, la question est trop complexe, il y en de types aussi divers qu'il y a de populations différentes. Ils ne sont pas tous animés du même esprit ; il y a les anciens, qui peuvent dater de trente ans s'étant formés sous le mandat anglais, et il y a les nouvecu ; je note simplement que les anciens sont difficiles à juger ; le passé douloureux de ceux qui les habitent fait que l'on oublie aisément la critique ; elle concernerait leur esprit un peu replié sur lui-même, pas très ouvert à l'apport extérieur, mais cela est vite dit. [...] Il est gouverné par l'assemblée des responsables des divers services techniques. Les membres de la communauté n'ont aucun salaire, seuls la nourriture et le logement leur sont fournis ; il faut une certaine abnégation pour se passer même d'argent de poche et n'avoir - sur demande - en une année, qu'à peine de quoi se rendre à la ville la plus proche ; mais ces gens semblent se contenter du minium. Un couple n'a d'autre joie que voir ses enfants<pb n="121"/> prospérer ; es enfants sont la proccupation numéro un de la collectivité ; ils sont élevés dans des condition d'hygièren et de salubirté remarquables par des spécialistes en puériculture, hors de leur milieu familial ; une nuersery pour le village, comme il n'y queun réfectoire pour tous les travailleurs, un local de douches, etc. Les enfants sont ainsi élevéss ensemble jusqu'à l'âge de dix-huit ans sans des insitution appropriées ; ils suivent l'enseignement de leur kibbouts, tout en travaillant le sol, et y demeurent jusqu'à leur service militaire ; libre à eux ensuite de s'atablir là ou ailleur. Quant aux jeunes kibboutsim, quelque misère qu'aient connue leurs fondateurs, l'hospitalité y est sigrande, si spontanée qu'on reste confondu de ses propres mesquineries.</p>
 	</div>
 	<div xml:id="pr_02_toDefine">
-		<p><pb n=""/>[...]</p>
+		<p><pb n="92"/>[...] Renard était au cinéma. Benjamin depuis la terre ferme avait du mal à les voir ensemble. L'image ne venait pas. Quelle follie cette conversation avec toi sans coupures, je n'ai pas le temps de reprendre mon souffle mais c'est ainsi que je l'ai voulue, une respiration c'est un changement d'air et je change d'air trop volontiers, j'ai voulu pour cette fois n'avoir pas recours au subterfuge. Subterfgue de respirer ? Oui, ital, mais l'exercice que font certains de retenir leur souffle les fait vivre plus intensément, et pense aux plongeurs, ils n'iraient pas loin en profondeur sans cette ascèse, attention, je ne suis pas un ascète, je choisis mal mes exemples, je ne désire rien<pb n="93"/> d'autre qu'une parole proche, depuis le temps que je le répète tu dois avoir saisi, ce que j'etends par quelle follie c'est ceci : décidé à rompre le silence je risque délibérément l'ennui pour toi de ces retours continuels sur mon nombril, au lieu de les garder pour moi je te les offre généreusement, il y a des générosité dont on se passerait assurément, mais en définitive pourquoi s'en passeraiet-on, c'est touchant un idéal honnête, il faut peut-être en subir les fastidieuses démonstrations ? J'y pense, j'y pense, un livre quelle prétention dans un sens mais quelle extraordinaire merveille s'il est raté dans les grandes largeurs. Les grandes largeurs. Il y a des expressions dans notre langue qui ont du chien.</p>
 	</div>
 	<div xml:id="pr_02_toDefine">
-		<p><pb n=""/>[...]</p>
+		<p><pb n="186"/>[...] Comme c'est étrange, voilà le retour déjà écrit. Je n'ai pas le courage d'imaginer celui de Renard et David, qu'ils restent dans la cale ou n'importe ailleurs, je les reouverai au coup de baguquette. Je leur suis reconnaissant, débordnt de reconnaissance, j'ai envie de leur faire un discours et de trinquer à leur bonheur, à leur résurrection, à leur permanence. Mais il vaut mieux me taire. On peut formuler des vœux et étrangleur ainsi leur réalisation. comme i lfaut être prudent ! Tout ressuscite par inadvertane. Me voici à Fantoine, mes amis n'ont pas changé, ou si peu, un nom parfois, est-cequ'ils me reconnaissent, ouis ils reviennent. D'abord Traïko, il me réptère qu'il m'aime, ses yeux sont comme l'eau de montagne, je leui dis ; « Pour en venir à quoi, Traïko, à quoi ? » et les autres aussi, auvec leur village qu'ils traînent derrière eux, Sinture et son lorgnon, Mlle Lorpailleur en quête de nouveautés littéraires, Latirail et son Larousse, Julia, le fils Pinson, tous ils reviennent et comme Traïko : « Tu ne nous aimes donc plus ? » Mais oui je vous aime, nous sommes liés pour la vie, c'est parce que je le sais que naguère entre deux portes je vous ai dit adieu pour toujours, me voici.</p>
+	</div>
+	<div xml:id="pr_02_toDefine">
+		<p><pb n="37"/>[...] C'est pourquoi ce Renard collé au Juif errant, ce Renard que j'aimais trouvant qu'il me ressemble s'est vu soudain à l'ordre du jour, il était consacré par les faits, plsu du tout arbitraire comme j'auriais pu le roire, il devenait moi sur le bateau car tout ce qui ressemble à prophétie, pressentiement, double-vue, transmission de pensée, lignes de la main et autres folâtreries me trouble.</p>
+	</div>
+	<div xml:id="pr_02_toDefine">
+		<p resp="editor">Le narrateur explique qu'il écrit un livre dont il tente de faire un résumé, Mme Lorpailleur lui répond.</p>
+		<p><pb n="221"/>[...] - Eh bien que... je dirai même l'ABC vous échappe...</p>
+		<p>- L'ABC ?</p>
+		<p>- Oui et non, mon cher, mais ce serait si long de vous expliquer... Si je puis me permettre une remarque à vue de nez votre travail eh bien, voyez-vous, une hsitoire simple...</p>
+		<p>On en revenait là. Je l'ai laissée s'écouter. Puis elle s'avise :</p>
+		<p>- De quoi traite-t-il ?</p>
+		<p>- Des origines.</p>
+		<p>- Beau sujet.</p>
+		<p>- Oui, figurez-vous, j'avais commence d'une certaine façon, ensuite ça a bifurqué, et il se trouve que le plus important est justement dans la bifurcation, c'est purement originel, c'est la source même...</p>
+		<p>Elle ne m'écoutait par. Elle dit :</p>
+		<p>- Moi si j'avais à parler des origines je commencerais par les miennes, je commencerais par : « Je suis née ».</p>
+	</div>
+	<div xml:id="pr_02_toDefine">
+		<p><pb n="222"/>[...] « Je suis née ici, je suis née là-bas, je suis née ailleurs, à l'envers, à l'endoit, au diable, au milieu de, à l'encontre de, à la place de, à l'étonnement de, au grand dam, au grand remords... », on n'en finit plus !</p>
+		<p>- À vous de m'abasourdir, mademoiselle ! C'est exactement ce que j'avais prévu...</p>
+		<p>- Écoutez ça : « Je suis née à X... en 1800 et quelque. Mon père était gendarme. On bien tristes à la maison, on s'asseyait à table tout contractés,[...]</p>
 	</div>
 <div xml:id="pr_02_02">
 <!--<p resp="editor">élément de commentaire avec degré de certitude etc genre Il pourrait s'agir de .....</p>-->
@@ -95,6 +142,23 @@
 <p><pb n="16"/>[...] Je me demande souvent si les esprits brillants existeraient sans leur mémoire, je n'ai aucune mémoire, je voudrais pour n'être pas ridicule vivre dans un mon d'où elle serait exclue, on ne pourrait partler que des choses du jour, et on inventerait, on inventerait au fur et à mesure, c'est ça la vraie vie.</p>
 <p>La naissance d'un objet, j'ai remarqué, n'a pas lieu aujourd'hui, il y a du mouvement tout autour qui l'empêche de montrer la tête et demain tu t'avises qu'il existe. Par conséquent la meilleure explication des origines serait de commencer par des bruits de bouches et de glisser progressivement vers des paroles articulées jusqu'au moment où l'auditeur sans se poser aucune question participe à ton histoire.</p>
 </div>
+	<div xml:id="pr_02_ToDefine">
+		<p resp="editor">Mlle Lorpailleur continue à démontrer qu'il faut commencer un livre par « Je suis née ».</p>
+		<p><pb n="239"/>[...] <hi rend="italic">balbutiante</hi></p>
+		<p>- A ga a ga a dada adaga agagada ?</p>
+		<p>- A b a bbu aaaa bubu</p>
+		<p>- Bubu ? cou a bubu ? Ta tu a tou la tata ?</p>
+		<p>- Mais non, voyons votre gand'tante désire un gâteau.</p>
+		<p><hi rend="italic">con anima</hi></p>
+		<p>Mon oncle épie à chamotter la vierge</p>
+		<p>Quand ils se tondent au foufou</p>
+		<p>Elle le bloque de baleine à sein</p>
+		<p>Pour agacer nazaire</p>
+	</div>
+	<div xml:id="pr_02_ToDefine">
+		<p resp="editor">Un exemple parmi d'autre :</p>
+		<p> J'écris <hi rend="small-caps">nylon</hi> en toutes lettres sur la porte qui reste fermée, je ne sais pas dessiner les machines. Un bulldozer géant pour la mécanique et trois puits de pétrole sur une tahe bleu pétrole. Dans tous les blancs qui restent je peins de bonshommes et des bonnes femmes en costumes du dimanche, des magiciens nègres  et des arlequins. Les signes du zodiaque aiss j'ai des tortues de mer, des chameaux et des colombes installées dans un vaporetto, c'est l'arche de Noë.</p>
+	</div>
 </body></text></TEI>
 <!--<TEI xml:id="idToDefine1"><teiHeader><fileDesc><titleStmt><title>
 Title</title></titleStmt><publicationStmt>
