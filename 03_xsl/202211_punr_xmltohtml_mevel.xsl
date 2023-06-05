@@ -434,7 +434,8 @@
 		</div>
 	</xsl:template>
 	<xsl:template match="p[not(ancestor::TEI[@xml:id='punr'])]" mode="extract">
-		<p><xsl:apply-templates/></p>
+		<p><xsl:if test="@resp='editor'"><xsl:attribute name="class" select="'STDsmall'"/></xsl:if>
+			<xsl:apply-templates/></p>
 	</xsl:template>
 	
 	

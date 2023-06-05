@@ -193,7 +193,7 @@ Afin de modéliser de manière efficace et rigoureuse le statut des références
 \begin{itemize}
     \item Valeur \textbf{0, explicite} citation, du moins segment présenté dans le texte comme telle dont la source (auteur ou œuvre est mentionné).
     \item Valeur \textbf{1, mention} l'entité est mentionnée sans être citée. Il peut s'agir d'une glose interprétée (où l'interprétation de Robbe-Grillet est explicite).
-    \item Valeur \textbf{2, mention ambiguë} cette valeur est réservée presque exclusivement à des entités collectives mentionnées sans nécessairement que les signifiés (les auteurs désignés par «~les critiques traditionnels~») soit identifiable. Pareille identification étant difficile voire impossible~: on constate qu'il s'agit bien souvent d'un procédé rhétorique visant à discréditer sans les nommer des adversaires réels ou imaginaires.
+    \item Valeur \textbf{2, mention ambiguë} cette valeur est réservée presque exclusivement à des entités collectives mentionnées sans nécessairement que les signifiés (les auteurs désignés par «~les critiques traditionnels~») soient identifiables. Pareille identification étant difficile voire impossible~: on constate qu'il s'agit bien souvent d'un procédé rhétorique visant à discréditer sans les nommer des adversaires réels ou imaginaires.
     \item Valeur \textbf{3, emprunt non déclaré fortement suggéré} réservée aux cas où \robbe{} emrunte un concept cite ou glose une référence dont il ne donnera pas la source mais dont la paternité est suffisamment présente à l'esprit de ces lecteurs ou suffisamment appuyé par lui pour être inféré. Ainsi lorsque Robbe-Grillet disserte sur tel élément de Balzac qui «~fait vrai~» le lecteur compétent reconnaît sans mal la conception de Barthes régulièrement mobilisé par \robbe.
     \item Valeur \textbf{4, emprunt ou mention non déclaré(e) non suggéré(e) reconstitué(e)} réservée pour des emprunts qui sont reconnus par l'éditeur sans qu'ils ne soient signalés par l'auteur, ainsi p.~69 lorsque \robbe{} cite des lieux propices à la poésie romantique y glissant «~vallon~» nous identifions Lamartine. Faisant l'objet d'une intervention de l'éditeur qui peut reconnaître des références non produites par Robbe-Grillet ou au contraire ne pas en reconnaître il nous a semblé nécessaire de différencier cette valeur de «~3~». Enfin notons que dans ces cas comme dans les cas précédents lorsque la valeur de l'un des attributs est reconstituée par l'éditeur nous les insérons entre crochet, pour les repérer et corriger aisément si besoin mais également par honnêteté intellectuelle si pareil travail devait être amené à intégrer un travail de recherche plus vaste sur \punr{}.
 \end{itemize}
@@ -249,6 +249,8 @@ Enfin si nous aurions pu faire des «~entités collectives~» des concepts en ve
 
 
 %défendre altérité, barthes, sarraute, urss
+
+
 
 
 \section{Encodage}
@@ -383,9 +385,23 @@ Les transformations XSL fonctionne par \textit{template}, patron, qui commande l
 \section{Une expérience de lecture~: ajouts de scripts}
 \label{js}
     \subsection{Script pour la lecture}
+
+\subsubsection{Javascript, présentation générale}
+Afin de permettre l'interactivité d'une page, nous employons un langage de programmation extrêmement courant~: javascript. Ce langage de programmation permet la programmation de fonction qui, selon l'élément sur lequel clique l'utilisateur provoquera tel ou tel comportement dans la page.
+\subsubsection{Afficher les citations}
+Ainsi en employant notre transformation xsl nous créons pour chacune des citations l'appel d'une fonction qui recevra en paramètre (selon la citation) l'identifiant du passage cité~; le script n'a alos plus qu'à rendre visible le passage concerné lorsque l'utilisateur clique sur une citation.
+
+Nous choisissons de programmer un affichage que nous espérons élégant et pratique. Au bout de la page apparaît un encart contenant l'extrait cité, sa source et des informations quant à l'emploi de la citation (est-ce une «~mention~», est-ce un «~blâme~» ou un «~éloge~»?). L'encart est censé permettre de continuer à lire \punr{} sans avoir à le refermer. Moins élégant peut-être qu'une version qui obscurcirait le reste de l'écran, nous pensons que permettre tel usage correspond davantage à ce que souhaiterait un lecteur effectif.
+
+\subsubsection{Afficher les variantes}
+
+
     \subsection{Interactivité de la base de donnée}
 
 
+Afin de rendre la base de donnée lisible, plus aisément que dans un tableau nous employons l'outil GraphCommons\footnoteB{Voir : \href{https://graphcommons.com/graphs/2ffc7c8c-3d1b-4814-966b-593b1c206f3c}{https://graphcommons.com/graphs/2ffc7c8c-3d1b-4814-966b-593b1c206f3c}.}.
+
+Cet outil premet la production de graphique depuis un fichier de type .csv, (soit un document texte, interprétable comme un tableau par les application de type tableur et assurant une interopérabilité très élevée notamment au sein de script perl ou javascript). Ainsi, nous exportant le contenu de la base de donnée au bon format puis retravaillons les données pour un meilleur affichage dans l'application (renommage des colonnes, explicitation des valeurs numériques, remplacement des valeurs de type identifiant par les noms correspondant) notamment grâce à des scripts perl rudimentaires.
 
 
 

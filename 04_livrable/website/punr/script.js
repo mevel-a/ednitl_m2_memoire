@@ -59,7 +59,9 @@ function initialise(){
 
 // LES TEST SONT EFFECTUES SUR pr_02_01 
 function displayExtract(corresp){
-	// 
+	// récupérer en paramètre les autres attributs
+	// pour ajouter une ligne avec statut axio et ref
+	
 	let toHide=document.getElementsByClassName('extractDisplay');
 	for (let toHides of toHide){
 		toHides.setAttribute('class','extractHide');

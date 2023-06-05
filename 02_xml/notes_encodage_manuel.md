@@ -5,9 +5,16 @@ choisit de baliser les deux pour + précis
 auteur = ref œuvre = quote
 	+ @cRef des œuvres = nomauteur_titre
 	+ @ana
-		+ eloge = 2
 		+ blame = 0
-		+ indifférent = 1
+		+ indifférent = 1*
+		+ eloge = 2
+		+ ambigue = 3
+	+@cert
+		+ 0, citation explicite
+		+ 1, mention
+		+ 2, mention ambiguë
+		+ 3, emprunt non déclaré fortement suggéré
+		+ 4, emprunt ou mention non déclaré(e) non suggéré(e) reconstitué(e)
 
 + humaniste/me get ref type=concept cref=philo_humanisme
 + Tragédie get ref (mais pas tous) cRef=litt_tragedie
