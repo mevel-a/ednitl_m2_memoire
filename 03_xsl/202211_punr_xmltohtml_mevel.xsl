@@ -233,7 +233,7 @@
 <!--								LA PR2SENTATION DE L4OEUVRE-->
 							</xsl:when>
 							<xsl:when test="$content='db'">
-								<iframe width="100%" src="https://graphcommons.com/graphs/2ffc7c8c-3d1b-4814-966b-593b1c206f3c"></iframe>
+								<iframe width="100%" src="https://graphcommons.com/graphs/2ffc7c8c-3d1b-4814-966b-593b1c206f3c" height="1000px" style="overflow:auto;"></iframe>
 							</xsl:when>
 							<xsl:when test="$content='tl'">
 <!--							TIMELINE GOES HERE-->
@@ -392,7 +392,7 @@
 	<xsl:template mode="corpus" match="quote">
 		<xsl:choose>
 			<xsl:when test="@type='epigraph'">
-				<div class="epigraph" onclick="displayExtract('{@corresp}')">
+				<div class="epigraph" onclick="displayExtract('{@corresp}','{@ana}','{@cert}');">
 						<xsl:apply-templates mode="corpus" select="p"/>
 					<p class="epigraph_ref">
 						<xsl:apply-templates mode="corpus" select="ref"/>
@@ -401,7 +401,7 @@
 				
 			</xsl:when>
 			<xsl:otherwise>
-				<span class="quote" onclick="displayExtract('{@corresp}')"><xsl:apply-templates/></span>
+				<span class="quote" onclick="displayExtract('{@corresp}','{@ana}','{@cert}');"><xsl:apply-templates/></span>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
@@ -430,11 +430,11 @@
 		<div id="{@xml:id}" class="extractHide">
 			<div class="extract_close" onclick="closeExtract()">X</div>
 			<xsl:apply-templates mode="extract"/>
-			<p><span class="STDitalic"><xsl:value-of select="ancestor::TEI/teiHeader/fileDesc/titleStmt/title[1]"/></span> <xsl:value-of select="preceding::sourceDesc[1]/p"/></p>
+			<p class="editor"><span class="STDitalic"><xsl:value-of select="ancestor::TEI/teiHeader/fileDesc/titleStmt/title[1]"/></span> <xsl:value-of select="preceding::sourceDesc[1]/p"/></p>
 		</div>
 	</xsl:template>
 	<xsl:template match="p[not(ancestor::TEI[@xml:id='punr'])]" mode="extract">
-		<p><xsl:if test="@resp='editor'"><xsl:attribute name="class" select="'STDsmall'"/></xsl:if>
+		<p><xsl:if test="@resp='editor'"><xsl:attribute name="class" select="'editor'"/></xsl:if>
 			<xsl:apply-templates/></p>
 	</xsl:template>
 	

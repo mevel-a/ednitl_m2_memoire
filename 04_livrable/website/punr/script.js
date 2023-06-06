@@ -58,20 +58,67 @@ function initialise(){
 
 
 // LES TEST SONT EFFECTUES SUR pr_02_01 
-function displayExtract(corresp){
+function displayExtract(corresp,mAxiologicStatus,mReferenceStatus){
 	// récupérer en paramètre les autres attributs
 	// pour ajouter une ligne avec statut axio et ref
-	
-	let toHide=document.getElementsByClassName('extractDisplay');
-	for (let toHides of toHide){
-		toHides.setAttribute('class','extractHide');
+	var mAxiologicStatusTreated='';
+	var mReferenceStatusTreated='';
+
+	// @ana=mAxiologicStatus
+	if (mAxiologicStatus=='1') {
+		mAxiologicStatusTreated='indifférent';
 	}
+	if (mAxiologicStatus=='2') {
+		mAxiologicStatusTreated='éloge';
+	}
+	if (mAxiologicStatus=='0') {
+		mAxiologicStatusTreated='blâme';
+	}
+	if (mAxiologicStatus=='3') {
+		mAxiologicStatusTreated='ambiguë';
+	}
+	// @cert=mReferenceStatus
+	if (mReferenceStatus=='0') {
+		mReferenceStatusTreated='citation explicite';
+	}
+	if (mReferenceStatus=='1') {
+		mReferenceStatusTreated='mention';
+	}
+	if (mReferenceStatus=='2') {
+		mReferenceStatusTreated='mention ambiguë';
+	}
+	if (mReferenceStatus=='3') {
+		mReferenceStatusTreated='emprunt non déclaré fortement suggéré';
+	}
+	if (mReferenceStatus=='4') {
+		mReferenceStatusTreated='emprunt ou mention non déclaré(e) non suggéré(e) reconstitué(e)';
+	}
+	// Quote ref status
+	let mQuoteStatus=document.createElement('p');
+	mQuoteStatus.setAttribute('class','editor deleteMe');
+	let mQuoteStatusTxt=document.createTextNode('Status de la référence : '+mReferenceStatusTreated+'.');
+	mQuoteStatus.appendChild(mQuoteStatusTxt);
+	// Quote axio status
+	let mQuoteAxStatus=document.createElement('p');
+	mQuoteAxStatus.setAttribute('class','editor deleteMe');
+	let mQuoteAxStatusTxt=document.createTextNode('Status axiologique : '+mAxiologicStatusTreated+'.');
+	mQuoteAxStatus.appendChild(mQuoteAxStatusTxt);
+
+	closeExtract();
 	let toDisplay=document.getElementById(corresp);
 	toDisplay.setAttribute('class','extractDisplay');
-}
+	toDisplay.appendChild(mQuoteStatus);
+	toDisplay.appendChild(mQuoteAxStatus);
+
+}	
+
 function closeExtract(){
 	let toHide=document.getElementsByClassName('extractDisplay');
 	for (let toHides of toHide){
 		toHides.setAttribute('class','extractHide');
-	}	
+	}
+	let toDelete=document.getElementsByClassName('deleteMe');
+	for (var i = toDelete.length - 1; i >= 0; i--) {
+		toDelete[i].remove();
+	}
 }
