@@ -387,9 +387,38 @@ Les transformations XSL fonctionne par \textit{template}, patron, qui commande l
     \subsection{Script pour la lecture}
 
 \subsubsection{Javascript, présentation générale}
-Afin de permettre l'interactivité d'une page, nous employons un langage de programmation extrêmement courant~: javascript. Ce langage de programmation permet la programmation de fonction qui, selon l'élément sur lequel clique l'utilisateur provoquera tel ou tel comportement dans la page.
+Afin de permettre l'interactivité d'une page, nous employons un langage de programmation extrêmement courant~: javascript. Ce langage de programmation permet la programmation de fonction qui, selon l'élément sur lequel clique l'utilisateur provoquera tel ou tel comportement au sein de la page.
+
+Une «~fonction~» est une suite d'instructions parfois conditionnés par des «~paramètres~», des informations extérieures à la fonction qui y sont injectées.
+
 \subsubsection{Afficher les citations}
-Ainsi en employant notre transformation xsl nous créons pour chacune des citations l'appel d'une fonction qui recevra en paramètre (selon la citation) l'identifiant du passage cité~; le script n'a alos plus qu'à rendre visible le passage concerné lorsque l'utilisateur clique sur une citation.
+% Afin d'expliciter la manière dont nous avons travaillé ces scripts, nous souhaiterions proposer une explication détaillée des techniques permettant l'affichage des extraits cités.
+
+% dans img/screen_quote_Xsl et Js1 et 2
+
+Au moyen de notre transformation xsl, nous créons pour chacune des citations l'appel d'une fonction qui recevra en paramètre (selon la citation) l'identifiant du passage cité~:
+%image de l'élément 
+
+On remarque que l'on injecte en paramètre l'identifiant (@corresp) du passage cité, et les statuts référentiels et axiologiques de la référence (@cert et @ana, respectivement) ainsi qu'un dernier paramètre dont les valeurs possibles sont «~1~» ou «~0~» qui sert à orienter le comportement de la fonction nommée «~displayExtract~».
+
+En effet, cette fonction n'a qu'à rendre visible le passage concerné lorsque l'utilisateur clique sur une citation, les choses se compliquent dès lors que nous souhaitons afficher plus d'un extrait pour une même citation. En effet, la même citation par exemple «~Don~Quichotte~» dans «~Un roman qui s'invente lui-même~» peut renvoyer à plusieurs passages de \textit{Le Renard et la boussole}, or l'encodage xml-tei nous permet précisèment d'insérer plussieurs valeurs à l'attribut @corresp séparées par un espace.
+
+On aura donc~: \begin{verbatim}<quote corresp="pr_02_25 pr_02_50">Don Quichotte</quote>\end{verbatim} à prétraiter car notre script Javascript ne peut recevoir qu'une seule valeur en paramètre et ne sera pas capable d'interpréter une suite de valeur comme tel. Dès lors nous avons opté pour un pré-traitement en xsl (voir \ref{%figure 1
+})
+%screen XSL
+
+%commentaire de l'xsl
+Nous souhaitons arriver au résultat suivant~: \begin{verbatim}<span onclick="displayExtract(pr_02_25_02);displayExtract(pr_02_25_50);>Don~Quichotte</span>\end{verbatim}, soit «~lorsque l'utilisateur clique sur ce segment la fonction displayExtract est appelé deux fois sur deux extrait différents, pour ce faire nous devons séparer les deux valeurs et répéter la valeur de l'attribut @onclick en ne changeant qu'un seul paramètre. Dans un premier template xsl nous testons la présence ou non d'un espace au sein de la valeur @corresp, s'il y a un espace une première partie de la valeur de l'attribut @onclick (soit un premier extrait) est gérée après quoi un autre template est appelé. Ce template nommé «~correspAffect~» reçoit en paramètre tout ce qui suit l'espace, il procède ensuite de même~: gère le premier extrait en créant l'appel de la fonction sur ce qui précède l'espace (soit le deuxième extrait), puis via un appel recursif va gérer les unes après les autres toutes les valeurs de l'attribut @corresp après l'espace. S'appelant lui-même le template boucle sur une partie toujours réduite de l'attribut @corresp qui correspondront à autant de paramètre ensuite envoyé dans le Javascript jusq'à ce qu'il n'y ait plus d'espace au sein du reste de @corresp, alors le template produit un dernier appel à la fonction puis s'arrête.
+%back to JS
+
+Une fois tous les appels à la fonction générés, il convient de permettre à la fonction elle-même de bel et bien afficher ces extraits. En effet, afin de permettre au lecteur de refermer un encart contenant un extrait à volonté, nous avons créé une fonction qui repère les extraits affichés (s'il y en a) et les cache (on revient donc à la situation initiale), or il paraît très probable que le lecteur ne ferme pas lui-même les encart~: aussi avons-nous décidé d'appeler la fonction refermant les encarts ouverts au sein de la fonction les affichants avant qu'elle ne les fasse apparaître. Ce qui pose un problème~: dans les cas où plusieurs extraits sont convoqués, la fonction les affichera puis les cachera de nouveaux jusqu'au dernier appelé. Nous ajoutons donc un dernier paramaître à cette fonction~: «~c~» dont les valeurs (0 ou 1) détermineront si la fonction doit, ou non, cacher les extraits précédemment affichés. 
+%capture d'écran fonction JS
+Ainsi voit-on \ref{%figureXXXX
+}   
+l.~%numéros ligne
+, l'ajout d'un '0' à la fin des appels générés s'ils ne sont pas les premiers (ou/et les seuls).
+
+Si c'est bien Javascript qui produit l'affichage et lie plusieurs éléments html généré via xsl depuis l'xml, c'est ici encore l'xsl qui nous permet de produire très efficacement des liens complexes entre différents langage de programmation.
 
 Nous choisissons de programmer un affichage que nous espérons élégant et pratique. En bas à droite de la page apparaît un encart contenant l'extrait cité, sa source et des informations quant à l'emploi de la citation (est-ce une «~mention~», est-ce un «~blâme~» ou un «~éloge~»?). L'encart est censé permettre de continuer à lire \punr{} sans avoir à le refermer. Moins élégant peut-être qu'une version qui obscurcirait le reste de l'écran, nous pensons que permettre tel usage correspond davantage à ce que souhaiterait un lecteur effectif.
 

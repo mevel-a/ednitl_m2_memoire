@@ -389,19 +389,37 @@
 	<xsl:template mode="corpus" match="ref">
 		<span class="ref"><xsl:apply-templates/></span>
 	</xsl:template>
-	<xsl:template mode="corpus" match="quote">
+	<xsl:template mode="corpus" match="quote"><!--patron gérant les éléments "citation"-->
 		<xsl:choose>
-			<xsl:when test="@type='epigraph'">
-				<div class="epigraph" onclick="displayExtract('{@corresp}','{@ana}','{@cert}');">
+			<xsl:when test="@type='epigraph'"><!--s'il s'agit d'un épigraphe, l'xsl insère l'appelle de la fonction javascript avec ses paramètres -->
+				<div class="epigraph" onclick="displayExtract('{@corresp}','{@ana}','{@cert}',1);">
 						<xsl:apply-templates mode="corpus" select="p"/>
 					<p class="epigraph_ref">
 						<xsl:apply-templates mode="corpus" select="ref"/>
 					</p>
 				</div>
-				
 			</xsl:when>
-			<xsl:otherwise>
-				<span class="quote" onclick="displayExtract('{@corresp}','{@ana}','{@cert}');"><xsl:apply-templates/></span>
+			<xsl:when test="contains(@corresp,' ')"><!--si l'attribut corresp contient un espace, c'est-à-dire si la référence renvoie à plusieurs passages-->
+				<span class="quote"><!-- l'élément est créé ainsi qu'un premier attribut appelant la fonction avec en paramètre l'identifiant du premier passage concerné -->
+					<xsl:attribute name="onclick">displayExtract('<xsl:value-of select="substring-before(@corresp,' ')"/>','<xsl:value-of select="@ana"/>','<xsl:value-of select="@cert"/>',1);<xsl:call-template name="correspAffect"><xsl:with-param select="substring-after(@corresp,' ')" name="corresp"/></xsl:call-template><!--dans la même valeur d'attribut on appelle un autre patron qui gèrera les identifiants aux autres passages (l. 414)--></xsl:attribute>
+					<xsl:apply-templates/>
+				</span>
+			</xsl:when>
+			<xsl:otherwise><!--si la référence ne renvoie qu'à un seul passage, version simple :-->
+				<span class="quote" onclick="displayExtract('{@corresp}','{@ana}','{@cert}',1);"><xsl:apply-templates/></span>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+	<xsl:template name="correspAffect">
+		<xsl:param name="corresp"/><!--ce template reçoit en paramètre la fin de l'attribut @corresp pour la traiter. Notons que ce template s'auto-appelle et boucle jusqu'à ce que la condition d'arrêt soit rempli-->
+		<xsl:choose>
+			<xsl:when test="contains($corresp,' ')"><!--Condition d'arrêt : "s'il y a un espace dans le contenu à traiter"
+			génère la suite de l'attribut, soit un appel à la même fonction javascript mais en changeant un paramètre : on récupère le contenu avant l'espace-->
+				<xsl:attribute name="onclick">displayExtract('<xsl:value-of select="substring-before($corresp,' ')"/>','<xsl:value-of select="@ana"/>','<xsl:value-of select="@cert"/>',0);<xsl:call-template name="correspAffect"><xsl:with-param select="substring-after($corresp,' ')" name="corresp"/></xsl:call-template><!--appel récursif, avec le contenu après l'espace --></xsl:attribute>
+			</xsl:when>
+			<xsl:otherwise><!--Dernière itération, lorsqu'il n'y a plus d'espace dans notre paramètre, il n'y a plus qu'un appel à la fonction displayExtract() à produire-->
+				<xsl:attribute name="onclick">displayExtract('<xsl:value-of select="$corresp"/>','<xsl:value-of select="@ana"/>','<xsl:value-of select="@cert"/>',0);</xsl:attribute>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>

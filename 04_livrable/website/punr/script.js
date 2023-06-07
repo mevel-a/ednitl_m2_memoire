@@ -56,25 +56,29 @@ function initialise(){
 // }
 
 
-
-// LES TEST SONT EFFECTUES SUR pr_02_01 
-function displayExtract(corresp,mAxiologicStatus,mReferenceStatus){
-
 // FERMETURE DES EXTRAITS DÉJÀ OUVERTS
-	closeExtract();
+function closeExtract(){
+	let toHide=document.getElementsByClassName('extractDisplay');
+	for (var i = toHide.length-1; i >= 0; i--){
+		toHide[i].setAttribute('class','extractHide');
+	}
+	// Suppression des paragraphes d'annotation créés, pour éviter les doublons.
+	let toDelete=document.getElementsByClassName('deleteMe');
+	for (var i = toDelete.length-1; i >= 0; i--) {
+		toDelete[i].remove();
+	}
+}
+function displayExtract(corresp,mAxiologicStatus,mReferenceStatus,c){
+// FERMETURE DES EXTRAITS DÉJÀ OUVERTS
+	if(c=='1'){closeExtract();}			
 // IDENTIFICATION DE L'EXTRAIT À AFFICHER
 	let toDisplay=document.getElementById(corresp);
-
-
 // CONSTITUTION DES ÉLÊMENTS DE COMMENTAIRES, mention du statut axiologie et référentiel
-	// 1. Tester les valeurs de l'attributs et le traduire en toutes lettres.
-
+	// 1. Tester les valeurs de l'attributs, le traduire en toutes lettres et lui donner de la couleur.
 	var mAxiologicStatusTreated='';
 	var mReferenceStatusTreated='';
 	var axiSpan=document.createElement('span');
 	var refSpan=document.createElement('span');
-
-	// @ana=mAxiologicStatus
 	if (mAxiologicStatus=='0') {
 		mAxiologicStatusTreated='blâme';
 		axiSpan.setAttribute('class','Axi0');
@@ -82,18 +86,15 @@ function displayExtract(corresp,mAxiologicStatus,mReferenceStatus){
 	if (mAxiologicStatus=='1') {
 		mAxiologicStatusTreated='indifférent';
 		axiSpan.setAttribute('class','Axi1');
-
 	}
 	if (mAxiologicStatus=='2') {
 		mAxiologicStatusTreated='éloge';
 		axiSpan.setAttribute('class','Axi2');
-
 	}
 	if (mAxiologicStatus=='3') {
 		mAxiologicStatusTreated='ambiguë';
 		axiSpan.setAttribute('class','Axi3');
 	}
-	// @cert=mReferenceStatus
 	if (mReferenceStatus=='0') {
 		mReferenceStatusTreated='citation explicite';
 		refSpan.setAttribute('class','Ref0');
@@ -120,16 +121,13 @@ function displayExtract(corresp,mAxiologicStatus,mReferenceStatus){
 	let separator=document.createTextNode(' ; ');
 	let point=document.createTextNode('.');
 
-
 	refSpan.appendChild(mReferenceStatusTreatedObj);
 	axiSpan.appendChild(mAxiologicStatusTreatedObj);
 
-	// 2 Création des éléments html etc
+	// 2 Création des éléments html etc.
 	let mQuoteStatus=document.createElement('p');
 	mQuoteStatus.setAttribute('class','editor deleteMe');
 	let mQuoteStatusTxt=document.createTextNode('Statuts de la référence : ');
-
-
 
 	mQuoteStatus.appendChild(mQuoteStatusTxt);
 	mQuoteStatus.appendChild(refSpan);
@@ -137,41 +135,15 @@ function displayExtract(corresp,mAxiologicStatus,mReferenceStatus){
 	mQuoteStatus.appendChild(axiSpan);
 	mQuoteStatus.appendChild(point);
 	
-
-	
 	// 3 Déduction de la position à laquelle on ajoute les info
-		// On insérera avant le frère du premier fils de la divTodisplay, soit avant l'élément qui suit la croix pour fermer (premier fils de ToDisplay), ie le 1er § (de l'extrait ou de commentaire de kl'éditeur).
+		// On insérera avant le frère du premier fils de la divTodisplay,
+	// soit avant l'élément qui suit la croix pour fermer (premier fils de ToDisplay),
+	// ie le 1er paragraphe (de l'extrait ou de commentaire de l'éditeur).
 	let firstChild=toDisplay.firstChild;
 	let theOneEvenbefore=firstChild.nextSibling;
 	let theOnebefore=theOneEvenbefore.nextSibling;
 	// 4 Apendage
 	toDisplay.insertBefore(mQuoteStatus,theOnebefore);
-
-	// toDisplay.appendChild(mQuoteStatus);
-	// toDisplay.appendChild(mQuoteAxStatus);
-
-
-
-
 // AFFICHAGE DE L'EXTRAIT CLIQUÉ
-
-
-
 	toDisplay.setAttribute('class','extractDisplay');
-
-
 }	
-
-
-// FERMETURE DES EXTRAITS DÉJÀ OUVERTS
-function closeExtract(){
-	let toHide=document.getElementsByClassName('extractDisplay');
-	for (let toHides of toHide){
-		toHides.setAttribute('class','extractHide');
-	}
-	// Suppression des paragraphes d'annotation créés, pour éviter les doublons.
-	let toDelete=document.getElementsByClassName('deleteMe');
-	for (var i = toDelete.length - 1; i >= 0; i--) {
-		toDelete[i].remove();
-	}
-}

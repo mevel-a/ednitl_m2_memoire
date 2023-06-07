@@ -269,16 +269,21 @@ p{
 
 /*Les extraits à afficher si clique*/
 section.extract_section{
-	width: 100%;
+/*	width: 100%;*/
 	border:1px solid black;
 
 /*	margin-left: 100px;*/
 /*	margin-top: 50px;*/
 	position: fixed;
 	bottom: 0;
-	left: 0;
+	right: 0;
 	z-index: 999;
 	background-color: #fff;
+	display: flex;
+	flex-flow: row-reverse;
+	max-width: 35%;
+	max-height: 500px;
+	overflow: auto;
 }
 .extractHide{
 	display: none;
@@ -290,16 +295,19 @@ section.extract_section{
 /*	position: relative;*/
 /*	top: 0;*/
 /*	position: fixed;*/
-	z-index: 999;
-	position: fixed;
+/*	z-index: 999;*/
+/*	position: fixed;*/
 	width: 35%;
 	background-color: #fff;
-	bottom:0;
-	right: 0;
+/*	bottom:0;*/
+/*	right: 0;*/
 	box-shadow: -5px -5px 7px  #666;
 	border-top-left-radius: 15px;
 	overflow: auto;
 	max-height: 500px;
+	flex-shrink: 0;
+	flex-grow: 1;
+	margin-left: 1px;
 
 /*	dégager la section, le centrer sur la page*/
 }
