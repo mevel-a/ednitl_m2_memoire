@@ -59,64 +59,117 @@ function initialise(){
 
 // LES TEST SONT EFFECTUES SUR pr_02_01 
 function displayExtract(corresp,mAxiologicStatus,mReferenceStatus){
-	// récupérer en paramètre les autres attributs
-	// pour ajouter une ligne avec statut axio et ref
+
+// FERMETURE DES EXTRAITS DÉJÀ OUVERTS
+	closeExtract();
+// IDENTIFICATION DE L'EXTRAIT À AFFICHER
+	let toDisplay=document.getElementById(corresp);
+
+
+// CONSTITUTION DES ÉLÊMENTS DE COMMENTAIRES, mention du statut axiologie et référentiel
+	// 1. Tester les valeurs de l'attributs et le traduire en toutes lettres.
+
 	var mAxiologicStatusTreated='';
 	var mReferenceStatusTreated='';
+	var axiSpan=document.createElement('span');
+	var refSpan=document.createElement('span');
 
 	// @ana=mAxiologicStatus
+	if (mAxiologicStatus=='0') {
+		mAxiologicStatusTreated='blâme';
+		axiSpan.setAttribute('class','Axi0');
+	}
 	if (mAxiologicStatus=='1') {
 		mAxiologicStatusTreated='indifférent';
+		axiSpan.setAttribute('class','Axi1');
+
 	}
 	if (mAxiologicStatus=='2') {
 		mAxiologicStatusTreated='éloge';
-	}
-	if (mAxiologicStatus=='0') {
-		mAxiologicStatusTreated='blâme';
+		axiSpan.setAttribute('class','Axi2');
+
 	}
 	if (mAxiologicStatus=='3') {
 		mAxiologicStatusTreated='ambiguë';
+		axiSpan.setAttribute('class','Axi3');
 	}
 	// @cert=mReferenceStatus
 	if (mReferenceStatus=='0') {
 		mReferenceStatusTreated='citation explicite';
+		refSpan.setAttribute('class','Ref0');
 	}
 	if (mReferenceStatus=='1') {
 		mReferenceStatusTreated='mention';
+		refSpan.setAttribute('class','Ref1');
 	}
 	if (mReferenceStatus=='2') {
 		mReferenceStatusTreated='mention ambiguë';
+		refSpan.setAttribute('class','Ref2');
 	}
 	if (mReferenceStatus=='3') {
 		mReferenceStatusTreated='emprunt non déclaré fortement suggéré';
+		refSpan.setAttribute('class','Ref3');
 	}
 	if (mReferenceStatus=='4') {
 		mReferenceStatusTreated='emprunt ou mention non déclaré(e) non suggéré(e) reconstitué(e)';
+		refSpan.setAttribute('class','Ref4');
 	}
-	// Quote ref status
+		//On oublie pas de transformer des variables textes en objet manipulable par DOM -_-'
+	let mReferenceStatusTreatedObj=document.createTextNode(mReferenceStatusTreated);
+	let mAxiologicStatusTreatedObj=document.createTextNode(mAxiologicStatusTreated);
+	let separator=document.createTextNode(' ; ');
+	let point=document.createTextNode('.');
+
+
+	refSpan.appendChild(mReferenceStatusTreatedObj);
+	axiSpan.appendChild(mAxiologicStatusTreatedObj);
+
+	// 2 Création des éléments html etc
 	let mQuoteStatus=document.createElement('p');
 	mQuoteStatus.setAttribute('class','editor deleteMe');
-	let mQuoteStatusTxt=document.createTextNode('Status de la référence : '+mReferenceStatusTreated+'.');
-	mQuoteStatus.appendChild(mQuoteStatusTxt);
-	// Quote axio status
-	let mQuoteAxStatus=document.createElement('p');
-	mQuoteAxStatus.setAttribute('class','editor deleteMe');
-	let mQuoteAxStatusTxt=document.createTextNode('Status axiologique : '+mAxiologicStatusTreated+'.');
-	mQuoteAxStatus.appendChild(mQuoteAxStatusTxt);
+	let mQuoteStatusTxt=document.createTextNode('Statuts de la référence : ');
 
-	closeExtract();
-	let toDisplay=document.getElementById(corresp);
+
+
+	mQuoteStatus.appendChild(mQuoteStatusTxt);
+	mQuoteStatus.appendChild(refSpan);
+	mQuoteStatus.appendChild(separator);
+	mQuoteStatus.appendChild(axiSpan);
+	mQuoteStatus.appendChild(point);
+	
+
+	
+	// 3 Déduction de la position à laquelle on ajoute les info
+		// On insérera avant le frère du premier fils de la divTodisplay, soit avant l'élément qui suit la croix pour fermer (premier fils de ToDisplay), ie le 1er § (de l'extrait ou de commentaire de kl'éditeur).
+	let firstChild=toDisplay.firstChild;
+	let theOneEvenbefore=firstChild.nextSibling;
+	let theOnebefore=theOneEvenbefore.nextSibling;
+	// 4 Apendage
+	toDisplay.insertBefore(mQuoteStatus,theOnebefore);
+
+	// toDisplay.appendChild(mQuoteStatus);
+	// toDisplay.appendChild(mQuoteAxStatus);
+
+
+
+
+// AFFICHAGE DE L'EXTRAIT CLIQUÉ
+
+
+
 	toDisplay.setAttribute('class','extractDisplay');
-	toDisplay.appendChild(mQuoteStatus);
-	toDisplay.appendChild(mQuoteAxStatus);
+
 
 }	
 
+
+// FERMETURE DES EXTRAITS DÉJÀ OUVERTS
 function closeExtract(){
 	let toHide=document.getElementsByClassName('extractDisplay');
 	for (let toHides of toHide){
 		toHides.setAttribute('class','extractHide');
 	}
+	// Suppression des paragraphes d'annotation créés, pour éviter les doublons.
 	let toDelete=document.getElementsByClassName('deleteMe');
 	for (var i = toDelete.length - 1; i >= 0; i--) {
 		toDelete[i].remove();

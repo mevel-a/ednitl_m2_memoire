@@ -438,6 +438,9 @@
 			<xsl:apply-templates/></p>
 	</xsl:template>
 	
+<!--	solution posssible pour +ieurs corresp : 
+	un template sur l'appel de script, qui va boucler (via foreach ou appel récursif (condition d'arrêt = notcontainswhitespace (attention ressemble à truc qui bugg sur xsl)) sur corresp en divisant avec un substring-befire et substring after qui se retrouve tous dans nouvel appel du script-->
+	
 	
 	
 	
