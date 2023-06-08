@@ -1,8 +1,32 @@
 function initialise(){
 	// dans l'idéal h3 et h4 ne sont lancés que si page=commentaire ou truc du genre
-
-
+	let body= document.getElementsByTagName('body')[0];
+	var punrtheme=localStorage.getItem('punrTheme');
+	
+	if (punrtheme=='dark') {
+		body.setAttribute('class','darkmode');
+		localStorage.setItem('punrTheme','dark');
+		
+	}else{}
 }
+
+
+
+
+function darkmode () {
+	let body= document.getElementsByTagName('body')[0];
+	var punrtheme=localStorage.getItem('punrTheme');
+	if (punrtheme=='dark') {
+		body.removeAttribute('class');
+		localStorage.removeItem('punrTheme');
+	}else{
+		body.setAttribute('class','darkmode');
+		localStorage.setItem('punrTheme','dark');
+	}
+}
+
+
+
 
 
 // function autonavh3(){
