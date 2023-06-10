@@ -335,9 +335,7 @@ Puis grâce à une transformation xsl (voir \ref{ref:xsl_gen})sommaire, nous gé
 
 Avant de passer à l'encodage manuel nous utilisons une autre transformation xsl afin de faciliter cette étape fastidieuse~:
 \begin{itemize}
-    \item Nous ajoutons des attributs aux éléments <quote> qui n'en ont pas, leurs valeurs doivent correspondre autant que possible aux éléments répértorié dans notre base de donnée (voir \ref{
-    % AJOUTER ICI
-    }).
+    \item Nous ajoutons des attributs aux éléments <quote> qui n'en ont pas, leurs valeurs doivent correspondre autant que possible aux éléments répértorié dans notre base de donnée (voir \ref{ref:db_modele_relationnel}).
     \begin{itemize}
         \item @type correspondant à ttNature
         \item @corresp qui correspond à l'@xml:id des extraits cités (encodé en <text>) et aux valeurs de ttIdent définie dans la base de donnée préfixé de "tt"
@@ -380,8 +378,17 @@ L'encodage des sources citées se fait également à la main, chacun des textes 
 Une fois l'encodage terminé, l'encodeur concçoit une transformation XSL, soit un fichier contenant des informations de traitement afin de passer d'un fichier XML peu lisible pour le lecteur à une édition numérique au format HTML. En effet les feuilles de styles XSL permettent de conserver le fichier XML originel pour en créer d'autres de types divers, en l'occurence nous nous contentons de produire un site internet, soit des pages au format HTML. Notons que le langage de balisage HTML est un dérivé de l'XML qui ne permet pas de structurer le contenu aussi finement que l'XML mais permet un affichage via navigateur web pour lecture.
     \subsection{Principes généraux}
 Les transformations XSL fonctionne par \textit{template}, patron, qui commande le traitement d'un ou de plusieurs éléments XML selon des restrictions diverses laissées au soin de l'auteur de la transformation. On peut par exemple transformer un élément <quote> muni d'un attribut @corresp en un lien hypertexte, qui, lié à des scripts (voir \ref{js}) permettra l'affichage de contenus supplémentaires. 
-    \subsection{}
+    \subsection{Mise en œuvre}
 }
+Pour tenter d'éviter une écriture redondante nous nous efforçons de produire des templates efficace et réemployable. Par exemple pour constituer les pages html de notre édition numérique il nous faut générer autant de «~<header/>~» (soit la section au sommet de la page) qu'il y a de page. Aussi, nous contentons-nous de n'écrire qu'une seule fois le «~<header/>~» (et tous les éléments identiques sur toutes les pages) au sein d'un template nommé qui est ensuite appelé à chage génération de page avec des paramètres permetttant de modifier quelques éléments essentiels qui doivent bien être unique (tel le titre de la page).
+%screen du template head et header
+
+
+
+Notons que la production des pages est générée par un template matchant la racine du document xml et appelant le template nommé «~body~» qui lui-même appelle les templates \go<header>\gf, \go<footer>\gf etc., adaptant le contenu de la page selon des paramètre déclaré au moment de l'appel du template.
+%screen du template body
+
+
 \section{Une expérience de lecture~: ajouts de scripts}
 \label{js}
     \subsection{Script pour la lecture}
@@ -395,32 +402,37 @@ Une «~fonction~» est une suite d'instructions parfois conditionnés par des «
 % Afin d'expliciter la manière dont nous avons travaillé ces scripts, nous souhaiterions proposer une explication détaillée des techniques permettant l'affichage des extraits cités.
 
 % dans img/screen_quote_Xsl et Js1 et 2
+La première fonction que nous développons sert à afficher les extraits des autres œuvres cités ou mentionnés par \robbe. Nous choisissons de programmer un affichage que nous espérons élégant et pratique. En bas à droite de la page apparaît un encart contenant l'extrait cité, sa source et des informations quant à l'emploi de la citation (est-ce une «~mention~», est-ce un «~blâme~» ou un «~éloge~»?). L'encart est censé permettre de continuer à lire \punr{} sans avoir à le refermer. Moins élégant peut-être qu'une version qui obscurcirait le reste de l'écran, nous pensons que permettre tel usage correspond davantage à ce que souhaiterait un lecteur effectif.
+
+
 
 Au moyen de notre transformation xsl, nous créons pour chacune des citations l'appel d'une fonction qui recevra en paramètre (selon la citation) l'identifiant du passage cité~:
 %image de l'élément 
 
 On remarque que l'on injecte en paramètre l'identifiant (@corresp) du passage cité, et les statuts référentiels et axiologiques de la référence (@cert et @ana, respectivement) ainsi qu'un dernier paramètre dont les valeurs possibles sont «~1~» ou «~0~» qui sert à orienter le comportement de la fonction nommée «~displayExtract~».
 
-En effet, cette fonction n'a qu'à rendre visible le passage concerné lorsque l'utilisateur clique sur une citation, les choses se compliquent dès lors que nous souhaitons afficher plus d'un extrait pour une même citation. En effet, la même citation par exemple «~Don~Quichotte~» dans «~Un roman qui s'invente lui-même~» peut renvoyer à plusieurs passages de \textit{Le Renard et la boussole}, or l'encodage xml-tei nous permet précisèment d'insérer plussieurs valeurs à l'attribut @corresp séparées par un espace.
+En effet, cette fonction n'a qu'à rendre visible le passage concerné lorsque l'utilisateur clique sur une citation. Cependant les choses se compliquent dès lors que nous souhaitons afficher plus d'un extrait pour une même citation. En effet, la même citation par exemple «~Don~Quichotte~» dans l'article «~Un roman qui s'invente lui-même~» peut renvoyer à plusieurs passages de \textit{Le Renard et la boussole}. Or l'encodage xml-tei nous permet précisèment d'insérer plussieurs valeurs à l'attribut @corresp séparées par un espace.
 
-On aura donc~: \begin{verbatim}<quote corresp="pr_02_25 pr_02_50">Don Quichotte</quote>\end{verbatim} à prétraiter car notre script Javascript ne peut recevoir qu'une seule valeur en paramètre et ne sera pas capable d'interpréter une suite de valeur comme tel. Dès lors nous avons opté pour un pré-traitement en xsl (voir \ref{%figure 1
+On aura donc~: \begin{verbatim}<quote corresp="pr_02_25 pr_02_50">Don Quichotte</quote>\end{verbatim} à prétraiter car notre script Javascript ne peut recevoir qu'une seule valeur en paramètre et ne sera pas capable d'interpréter une suite de valeur comme tel. Dès lors nous avons opté pour un prétraitement en xsl (voir \ref{%figure 1
 })
 %screen XSL
 
 %commentaire de l'xsl
-Nous souhaitons arriver au résultat suivant~: \begin{verbatim}<span onclick="displayExtract(pr_02_25_02);displayExtract(pr_02_25_50);>Don~Quichotte</span>\end{verbatim}, soit «~lorsque l'utilisateur clique sur ce segment la fonction displayExtract est appelé deux fois sur deux extrait différents, pour ce faire nous devons séparer les deux valeurs et répéter la valeur de l'attribut @onclick en ne changeant qu'un seul paramètre. Dans un premier template xsl nous testons la présence ou non d'un espace au sein de la valeur @corresp, s'il y a un espace une première partie de la valeur de l'attribut @onclick (soit un premier extrait) est gérée après quoi un autre template est appelé. Ce template nommé «~correspAffect~» reçoit en paramètre tout ce qui suit l'espace, il procède ensuite de même~: gère le premier extrait en créant l'appel de la fonction sur ce qui précède l'espace (soit le deuxième extrait), puis via un appel recursif va gérer les unes après les autres toutes les valeurs de l'attribut @corresp après l'espace. S'appelant lui-même le template boucle sur une partie toujours réduite de l'attribut @corresp qui correspondront à autant de paramètre ensuite envoyé dans le Javascript jusq'à ce qu'il n'y ait plus d'espace au sein du reste de @corresp, alors le template produit un dernier appel à la fonction puis s'arrête.
+Nous souhaitons arriver au résultat suivant~: \begin{verbatim}<span onclick="displayExtract(pr_02_25_02);displayExtract(pr_02_25_50);>Don~Quichotte</span>\end{verbatim}, soit «~lorsque l'utilisateur clique sur ce segment la fonction displayExtract est appelée deux fois sur deux extraits différents. Pour ce faire nous devons séparer les deux valeurs et répéter la valeur de l'attribut @onclick en ne changeant qu'un seul paramètre. Dans un premier template xsl nous testons la présence ou non d'un espace au sein de la valeur @corresp. S'il y a un espace une première partie de la valeur de l'attribut @onclick (soit un premier extrait) est gérée après quoi un autre template est appelé. Ce template nommé «~correspAffect~» reçoit en paramètre tout le contenui de l'attribut qui suit l'espace, il procède ensuite de même~: gère le premier extrait en créant l'appel de la fonction sur ce qui précède l'espace (soit le deuxième extrait), puis via un appel recursif va gérer les unes après les autres toutes les valeurs de l'attribut @corresp après l'espace. S'appelant lui-même le template boucle sur une partie toujours plus réduite de l'attribut @corresp qui correspondront à autant de paramètres ensuite envoyé dans le Javascript jusq'à ce qu'il n'y ait plus d'espace au sein du reste de @corresp, alors, le template produit un dernier appel à la fonction (s'il n'y a plus d'espace il reste l'identifiant d'un extrait) puis s'arrête.
 %back to JS
 
-Une fois tous les appels à la fonction générés, il convient de permettre à la fonction elle-même de bel et bien afficher ces extraits. En effet, afin de permettre au lecteur de refermer un encart contenant un extrait à volonté, nous avons créé une fonction qui repère les extraits affichés (s'il y en a) et les cache (on revient donc à la situation initiale), or il paraît très probable que le lecteur ne ferme pas lui-même les encart~: aussi avons-nous décidé d'appeler la fonction refermant les encarts ouverts au sein de la fonction les affichants avant qu'elle ne les fasse apparaître. Ce qui pose un problème~: dans les cas où plusieurs extraits sont convoqués, la fonction les affichera puis les cachera de nouveaux jusqu'au dernier appelé. Nous ajoutons donc un dernier paramaître à cette fonction~: «~c~» dont les valeurs (0 ou 1) détermineront si la fonction doit, ou non, cacher les extraits précédemment affichés. 
+Une fois tous les appels à la fonction générés, il convient de permettre à la fonction elle-même d'effectivement afficher ces extraits. En effet, afin de permettre au lecteur de refermer un encart contenant un extrait à volonté, nous avons créé une fonction qui repère les extraits affichés (s'il y en a) et les cache (on revient donc à la situation initiale). Cette fonction est attachée à un segment en haut des encarts des extraits où un «~X~» symbolise efficacement une croix.
+Cependant il paraît très probable que le lecteur ne ferme pas lui-même les encart, nous l'encourageons d'ailleurs à le faire en lui permettant de continuer à lire le texte sans (trop) d'encombrement visuel. Aussi avons-nous décidé d'appeler la fonction refermant les encarts ouverts au sein de la fonction les affichants avant qu'elle ne les fasse apparaître.
+Lorsqu'un seul extrait est à afficher cela ne pose pas de problème~: la fonction ferme les encarts affichées puis ouvre celui sur lequel le lecteur a cliqué. Cependant dans les cas où plusieurs extraits sont à afficher, la fonction les affichera puis les cachera de nouveaux jusqu'au dernier appelé. Nous ajoutons donc un dernier paramaître à cette fonction~: «~c~» dont les valeurs («~0~» ou «~1~») détermineront si la fonction doit, ou non, cacher les extraits précédemment affichés. 
 %capture d'écran fonction JS
 Ainsi voit-on \ref{%figureXXXX
 }   
 l.~%numéros ligne
 , l'ajout d'un '0' à la fin des appels générés s'ils ne sont pas les premiers (ou/et les seuls).
 
-Si c'est bien Javascript qui produit l'affichage et lie plusieurs éléments html généré via xsl depuis l'xml, c'est ici encore l'xsl qui nous permet de produire très efficacement des liens complexes entre différents langage de programmation.
+Si c'est bien Javascript qui produit l'affichage et lie plusieurs éléments html générés via xsl depuis l'xml, c'est ici encore l'xsl qui nous permet de produire très efficacement des liens complexes entre différents langage de programmation.
 
-Nous choisissons de programmer un affichage que nous espérons élégant et pratique. En bas à droite de la page apparaît un encart contenant l'extrait cité, sa source et des informations quant à l'emploi de la citation (est-ce une «~mention~», est-ce un «~blâme~» ou un «~éloge~»?). L'encart est censé permettre de continuer à lire \punr{} sans avoir à le refermer. Moins élégant peut-être qu'une version qui obscurcirait le reste de l'écran, nous pensons que permettre tel usage correspond davantage à ce que souhaiterait un lecteur effectif.
+
 
 \subsubsection{Afficher les variantes}
 
@@ -430,7 +442,8 @@ Nous choisissons de programmer un affichage que nous espérons élégant et prat
 
 Afin de rendre la base de donnée lisible, plus aisément que dans un tableau nous employons l'outil GraphCommons\footnoteB{Voir : \href{https://graphcommons.com/graphs/2ffc7c8c-3d1b-4814-966b-593b1c206f3c}{https://graphcommons.com/graphs/2ffc7c8c-3d1b-4814-966b-593b1c206f3c}.}.
 
-Cet outil premet la production de graphique depuis un fichier de type .csv, (soit un document texte, interprétable comme un tableau par les application de type tableur et assurant une interopérabilité très élevée notamment au sein de script perl ou javascript). Ainsi, nous exportant le contenu de la base de donnée au bon format puis retravaillons les données pour un meilleur affichage dans l'application (renommage des colonnes, explicitation des valeurs numériques, remplacement des valeurs de type identifiant par les noms correspondant) notamment grâce à des scripts perl rudimentaires.
+Cet outil premet la production de graphique depuis un fichier de type .csv, (soit un document texte, interprétable comme un tableau par les application de type tableur et assurant une interopérabilité très élevée notamment au sein de script perl ou javascript). Ainsi, nous exportant le contenu de la base de donnée au bon format puis retravaillons les données pour un meilleur affichage dans l'application.
+La base de données est d'abord exportée au format .csv, le tableau au fichier texte que l'on obtient a alors une colonne (les colonnes sont séparées au sein du texte par des virgules) par propriété des entitées (voir~: \ref{ref:db_modele_relationnel}) de la base afin d'être utilisable par l'application GraphCommons, les colonnes nécessitent d'être renommée et quelques valeurs ajustées. En effet, une colonne «~weight~» qui détermine la taille d'un lien est interprétée de manière croissante, or nous avions choisis de représenter l'intencité des liens de manière décroissante («~0~» étant la citation et «~la mention reconstitée~»), pour un affichage approrpiée nous modifions donc les valeurs pour les inverser et renommons les colonnes notamment grâce à des scripts perl rudimentaires.
 
 
 
@@ -442,10 +455,9 @@ Cet outil premet la production de graphique depuis un fichier de type .csv, (soi
 
 \section{Conclusion}
 
-Tout au long de notre travail nous nosu sommes efforcé d'employer la technique au service de questions scientifiques. Et si, bien souvent, la technique interroge le choix scientifique, nous nous sommes evertué à ne pas confondre questions et difficultés techniques. En effet trop souvent, sommes-nous tenter de remettre en question le 
+Tout au long de notre travail nous nous sommes efforcé d'employer la technique au service de questions scientifiques. Et si, bien souvent, la technique interroge le choix scientifique, nous nous sommes evertué à ne pas confondre questions et difficultés techniques. En effet trop souvent, sommes-nous tenter de remettre en question le 
 
 sans doute, tout n'y est pas, sans doute chercher à identifier et produire toutes les citations en contextes relève de l'impossible : \robbe{} peut s'être trompé, l'édition avoir disparu, une citation en appelle une autre, etc. Pareil projet cependant se mène non en ayant à cœur de couvrir l'ouvrage entier (du moins sans s'en faire l'illusion) et toute son époque, mais bien en sachant que l'on ne propose qu'une lecture, partialle partielle parmi d'autres,  qui n'épuise pas l'œuvre.
 
-%(cf«  aiguille » dans Renard et bousole 10-11 )\ref{}
 
 \end{document}
