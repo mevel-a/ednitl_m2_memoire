@@ -258,7 +258,10 @@ a.preceding{
 a.following{
 	margin-left: auto;
 }
-
+/*intro des articles*/
+details p {
+	font-size: 11pt;
+}
 
 /*to check use, callage ? saut sémantique ?
 ==> ajouter au rapport technique*/

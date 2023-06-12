@@ -218,6 +218,31 @@
 								<div class="corpus">
 									<xsl:call-template name="articlenav"><xsl:with-param name="content" select="$content"/></xsl:call-template>
 									<article>
+										<details>
+											<summary>Introduction</summary>
+											<xsl:choose>
+												<xsl:when test="$content='ch01'">
+													<p>Premier texte du recueil, cet article est identifiée par GaliaXXX comme une réécriture augmentée des articles « Il écrit comme Stendhal » publié en 1955 dans L'ExpressNBP et « La littérature, aujourd'hui - VI » publié dans le numéro 14 de Tel Quel en 1963NBP. Outre sa fonction de seuil et d'introduction aux écrits théoriques qui suivent ce texte place les jalons de la rhétorique de Robbe-Grillet.</p>
+													
+													<p>Se plaignant de la récéption de ses œuvres puis des articles publiés dans L'Express qui sont depuis devenus le présent recueil, Robbe-Grillet se positionne comme tenant du bon sens : il n'est pas un théoricien par vocation mais par réaction. Il ne s'agit pas tant de produire une nouvelle théorie que d'« éclair[er] davantage les éléments qui avaient été les plus négligés par les critiques, ou les plus distordus », combattre les « mythes du XIXe siècle » et de « tente[r] de préciser quelques contours ». Ce faisant Robbe-Grillet se place en moderne (hériter d'une tradition vivante qu'il commence d'esquisser ici) en opposition aux tenants d'une tradition « immobile, figée » voire « nuisible ». Contre les critiques, contre Sartre, Robbe-Grillet défend (non pas « un ») mais l'« exercice problématique de la littérature » qui constitue, avec le rejet d'une écriture traditionaliste décriée comme relevant d'un pastiche éculéeNBP et avec la condamnation d'une critique psychologisante, le premier jalon théorique de l'ouvrage et une véritable définition du rôle de la littérature complétée au fil du recueil.</p>
+													
+													<p>Notons enfin une technique usuelle chez Robbe-Grillet consistant à vider l'argumentation en limitant autant que possible la portée de ces écrits théoriques, si l'on aurait tord de considérer que Robbe-Grillet s'autorise ici à « se contredire », il est assez juste de constater qu'il prend soin de se dégager un espace entre sa pratique littéraire et sa pratique théorique dans lequel le lecteur devrait l'autoriser à rafiner sa pensée, la préciser et sans doute sans rien renier du cheminement lui-même, en retrancher quelques passages.</p>
+												</xsl:when>
+												<xsl:when test="$content='ch02'"></xsl:when>
+												<xsl:when test="$content='ch03'"></xsl:when>
+												<xsl:when test="$content='ch04'"></xsl:when>
+												<xsl:when test="$content='ch05'"></xsl:when>
+												<xsl:when test="$content='ch06'"></xsl:when>
+												<xsl:when test="$content='ch07'"></xsl:when>
+												<xsl:when test="$content='ch08'"></xsl:when>
+												<xsl:when test="$content='ch09'"></xsl:when>
+												<xsl:when test="$content='ch10'"></xsl:when>
+												<xsl:when test="$content='ch11'"></xsl:when>
+												<xsl:when test="$content='ch12'"></xsl:when>
+												<xsl:when test="$content='ch13'"></xsl:when>
+											</xsl:choose>
+										</details>
+										<div class="smallgap"/>
 										<xsl:apply-templates mode="corpus"/>
 									</article>
 									<section class="extract_section">
@@ -370,7 +395,7 @@
 		<br /><span class="STDsmall">(<xsl:apply-templates/>)</span>
 	</xsl:template>
 	<xsl:template match="pb[ancestor::TEI/@xml:id='punr']">
-		<a id="{concat('page_',@n)}"/>
+		<span id="{concat('page_',@n)}" class="STDgray STDsmall pb">[<xsl:value-of select="@n"/>]</span>
 	</xsl:template>
 	<!--<xsl:template match="pb[ancestor::TEI/not(@xml:id='punr')]">
 		<span class="STDsmall STDgray"></span>

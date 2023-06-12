@@ -8,9 +8,43 @@ function initialise(){
 		localStorage.setItem('punrTheme','dark');
 		
 	}else{}
+
+	var pbDis=localStorage.getItem('displayPb');
+	if(pbDis=='yes'){
+		displayPb();
+	}else{
+		hidePb();
+	}
+
 }
 
 
+// fouttre ça sur un bouton en haut de page
+function displayPb{
+	let pbs=document.getElementsByClassName('pb');
+	var pbDis=localStorage.getItem('displayPb');
+	
+	if(pbDis=='yes'){
+		for (var i = toHide.length-1; i >= 0; i--){
+			pbs[i] --> change style to display=inline
+
+	}
+	}else{
+		hidePb();
+	}
+
+	
+
+}
+
+function hidePb{
+	for (var i = pbs.length-1; i >= 0; i--) {
+		// pbs[i].setAttribute('class','none');
+
+		pbs[i] --> change style to display=none
+	}
+		localStorage.removeItem('displayPb');
+}
 
 
 function darkmode () {
