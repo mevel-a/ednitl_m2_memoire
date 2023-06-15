@@ -168,6 +168,7 @@ button.darkbutton{
 	color: inherit;
 	background-color: inherit;
 	cursor: pointer;
+	box-shadow: #666 1px 1px 0px;
 }
 
 div.legals img{
@@ -298,6 +299,33 @@ p{
 .ref{
 	color: #0f0;
 	cursor: pointer;
+	position:relative;
+
+}
+.ref .refinfo{
+	display: none;
+	text-indent: 0;
+
+}
+.ref:hover .refinfo{
+	position: absolute;
+	display: block;
+	left: 20px;
+	top: -30px; 
+	white-space: normal;
+	border: 2px solid #18130e;
+	border-radius: 5px;
+	max-width: 600px;
+	margin: 0px;
+	padding: 6px;
+	background-color: inherit;
+	opacity: 0.96;
+	filter: alpha(opacity=96); /*for IE8 et -*/
+/*	line-height: inherit;*/
+	text-align:justify;
+	color: inherit;
+/*	font-size: 80%;*/
+/*	font-family: inherit;*/
 }
 
 /*Les extraits à afficher si clique*/

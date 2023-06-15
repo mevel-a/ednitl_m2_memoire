@@ -2,46 +2,49 @@ function initialise(){
 	// dans l'idéal h3 et h4 ne sont lancés que si page=commentaire ou truc du genre
 	let body= document.getElementsByTagName('body')[0];
 	var punrtheme=localStorage.getItem('punrTheme');
-	
+	let refinfos=document.getElementsByClassName('refinfo');
 	if (punrtheme=='dark') {
 		body.setAttribute('class','darkmode');
 		localStorage.setItem('punrTheme','dark');
-		
+		for (var i = refinfos.length - 1; i >= 0; i--) {
+			refinfos[i].style.backgroundColor="#000";
+			refinfos[i].style.color="#F2F2F2";
+		}
 	}else{}
-
 	var pbDis=localStorage.getItem('displayPb');
 	if(pbDis=='yes'){
-		displayPb();
-	}else{
-		hidePb();
-	}
-
+		for (var i = pbs.length-1; i >= 0; i--){
+			pbs[i].style.display='inline';
+			localStorage.setItem('displayPb','yes');
+		}
+		
+	}else{hidePb();}
 }
 
 
 // fouttre ça sur un bouton en haut de page
-function displayPb{
+function displayPb(){
 	let pbs=document.getElementsByClassName('pb');
 	var pbDis=localStorage.getItem('displayPb');
 	
 	if(pbDis=='yes'){
-		for (var i = toHide.length-1; i >= 0; i--){
-			pbs[i] --> change style to display=inline
-
-	}
-	}else{
 		hidePb();
+		
+	}else{
+		for (var i = pbs.length-1; i >= 0; i--){
+			pbs[i].style.display='inline';
+			localStorage.setItem('displayPb','yes');
+		}
 	}
 
 	
 
 }
 
-function hidePb{
+function hidePb(){
+	let pbs=document.getElementsByClassName('pb');
 	for (var i = pbs.length-1; i >= 0; i--) {
-		// pbs[i].setAttribute('class','none');
-
-		pbs[i] --> change style to display=none
+		pbs[i].style.display='none';
 	}
 		localStorage.removeItem('displayPb');
 }
@@ -50,12 +53,21 @@ function hidePb{
 function darkmode () {
 	let body= document.getElementsByTagName('body')[0];
 	var punrtheme=localStorage.getItem('punrTheme');
+	let refinfos=document.getElementsByClassName('refinfo');
 	if (punrtheme=='dark') {
 		body.removeAttribute('class');
 		localStorage.removeItem('punrTheme');
+		for (var i = refinfos.length - 1; i >= 0; i--) {
+			refinfos[i].style.backgroundColor="#fff";
+			refinfos[i].style.color="#000";
+		}
 	}else{
 		body.setAttribute('class','darkmode');
 		localStorage.setItem('punrTheme','dark');
+		for (var i = refinfos.length - 1; i >= 0; i--) {
+			refinfos[i].style.backgroundColor="#000";
+			refinfos[i].style.color="#F2F2F2";
+		}
 	}
 }
 

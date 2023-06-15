@@ -126,6 +126,7 @@
 			<xsl:when test="contains($content,'ch')">
 				<div class="articlenavs">
 					<h5>Au sein de cet article</h5>
+					<button class="darkbutton" onclick="displayPb();">Afficher les pages</button>
 				<xsl:if test="$content='ch03'or$content='ch11'">
 					
 						<h6>Sous-sections</h6>
@@ -394,7 +395,7 @@
 	<xsl:template match="date[ancestor::head]" mode="corpus">
 		<br /><span class="STDsmall">(<xsl:apply-templates/>)</span>
 	</xsl:template>
-	<xsl:template match="pb[ancestor::TEI/@xml:id='punr']">
+	<xsl:template match="pb[ancestor::TEI[@xml:id='punr']]" mode="corpus">
 		<span id="{concat('page_',@n)}" class="STDgray STDsmall pb">[<xsl:value-of select="@n"/>]</span>
 	</xsl:template>
 	<!--<xsl:template match="pb[ancestor::TEI/not(@xml:id='punr')]">
@@ -413,7 +414,25 @@
 <!--	quote, ref
 	3 mai 2023,non testé, fout juste de la couleur pour être vu-->
 	<xsl:template mode="corpus" match="ref">
-		<span class="ref"><xsl:apply-templates/></span>
+		<xsl:param name="type" select="@type"/>
+		<xsl:param name="cert">
+			<xsl:choose>
+				<xsl:when test="@cert='0'">citation explicite</xsl:when>
+				<xsl:when test="@cert='1'">mention</xsl:when>
+				<xsl:when test="@cert='2'">mention ambiguë</xsl:when>
+				<xsl:when test="@cert='3'">emprunt non déclaré fortement suggéré</xsl:when>
+				<xsl:when test="@cert='4'">emprunt ou mention non déclaré(e) non suggéré(e) reconstitué(e)</xsl:when>
+			</xsl:choose>
+		</xsl:param>
+		<xsl:param name="ana">
+			<xsl:choose>
+				<xsl:when test="@ana='0'">blâme</xsl:when>
+				<xsl:when test="@ana='1'">éloge</xsl:when>
+				<xsl:when test="@ana='2'">indifférent</xsl:when>
+				<xsl:when test="@ana='3'">ambiguë</xsl:when>
+			</xsl:choose>
+		</xsl:param>
+		<span class="ref"><xsl:apply-templates/><span class="refinfo"><xsl:value-of select="@type"/>, <span class="Ref{@cert}"><xsl:value-of select="$cert"/></span>, <span class="axi{@ana}"><xsl:value-of select="@ana"/></span>.</span></span>
 	</xsl:template>
 	<xsl:template mode="corpus" match="quote"><!--patron gérant les éléments "citation"-->
 		<xsl:choose>
