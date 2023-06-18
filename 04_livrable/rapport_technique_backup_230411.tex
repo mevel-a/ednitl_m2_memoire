@@ -13,7 +13,7 @@
 \renewcommand{\footrulewidth}{0.3pt}
 \usepackage{hyperref}
 \pagestyle{fancy}
-\lhead{{\scshape{Mével}} Adrien M2 EdNitl}
+\lhead{{\scshape{Mével}} Adrien M2 EdNITL}
 \chead{}
 \rhead{2022-2023}
 \fancyfoot[]{}
@@ -45,7 +45,7 @@
 
 
 \vspace*{2cm}
-Mme~Florence~\textsc{de Challonge}
+Mme~Florence~\textsc{de Chalonge}
 
 
 M.~Matthieu~\textsc{Marchal}
@@ -83,9 +83,67 @@ Année universitaire 2022-2023
 \vspace{3cm}
 \section{Introduction au projet d'édition numérique}
 %le projet en général viteuf
-% reflexion blabla
+Publié en 1963, \punr{}, est une œuvre composite dont l'unité tient à l'adéquation entre des prises de positions pleinement assumée et un style polémique. Loin d'être (seulement) un recueil de préconisation stylistique, le recueil offre une vue globale sur les débats littéraire de son époque (dont il est le reflet et le miroir). Le texte dans son ensemble constitue une véritable théorie littéraire séparant le bon grain et l'ivraie à la fois dans la tradition littéraire et dans la littérature contemporaine.
+
+L'édition que nous réalisons entend proposer un contenu scientifique permettant de saisir la cohérence des théories esthétique de Robbe-Grillet et un versant numérique permettant de proposer une lecture du recueil enrichie par des éléments d'analyses et de contextualisation.
+
+
+
+
 
 Le présent document se veut un exposé des modalités et difficultés techniques que nous avons pû rencontrer et des moyens mis en œuvre pour les surmonter. Chaque outil utilisé fera l'objet d'une présentation succinte, après quoi leur apport au projet et les choix ayant mené à la réalisation de l'édition numérique de \punr{} seront détaillés.
+
+
+
+\subsection{États des lieux de l'édition dans sa version actuelle (juin 2023)}
+
+Lors d'un précédent rendu nous nous donnions pour objectif de mettre en valeur les relations intertextuelles qui sous-tendaient l'œuvre (voir~: \ref{fig:projet}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.3]{img/202211_mevel_punr_edition_numerique.png}
+    \caption{Schéma du projet original}
+    \label{fig:projet}
+\end{figure}
+
+
+
+En effet, dans le projet original un simple clique sur une citation devait permettre de lire la citation en contexte (soit un ou deux paragraphes entourant le ou les passages cités). La proposition initiale envisageait déjà des limites aux citations à traiter ainsi mais les choix n'étaient pas encore fait. En effet, le nombre de citation a identifié et le temps nécessaire à l'intégration de nombreux extraits relativement conséquents étaient les frains principaux à cettte proposition, qui a, depuis été adapté.
+
+Nous opérons une première distinction entre «~références~» et «~citations~». Lorsque p.~136 Robbe-Grillet écrit «~\textit{Mahu ou le Matériau}, ce titre est déjà un programme~», il s'agit d'une référence~; mais lorsqu'au paragraphe précédent Robbe-Grillet écrit «~"J'y pense, j'y pense [...]"~», il s'agit d'une citation.
+
+Seules les citations font l'objet d'un traitement proprement transtextuel. Si l'objectif initial, et surtout, idéal, de ce travail était de traiter l'intégralité des citations, le temps nécessaire à un tel travail nous imposa de réduire la voilure.
+
+
+
+% dire que les statuts référentiels sont gérés dans DB
+% les références et quote = infobulle avec les infos de statut
+    % pas de propos général sur des références 
+         % pas surchargé truc
+         % intérêt ?
+    % nous posons encore la question d'en ajouter en tant que note explicative
+% réduction des quote en context
+    % sartre
+    % pinget
+    % 
+
+% la table des matières pour son versant rhétorique/stylistique, articulation de la pensée, encore en chantier
+Nous nous proposions de fournir pour les articles une table des matières qui permettrait de «~piocher~» dans le recueil des passages de la pensée de Robbe-Grillet. Ces renvois ne sont pas encore implémentés mais le seront prochainement (voir \ref{%ENCODAGE
+}).
+%A DEPLACER
+Nous employons des éléments <milestone/>, bornes, pour inscrire les points rhétorique importants. Lors de la transformation XSL ces <milestone> seront transformé en élément <a/>, \textit{anchor} ancre, ces éléments sans contenu seront invisible au lecteur mais permettront de constituer un menu de navigation sur la gauche de l'écran en XSL (voir \ref{%
+}). Leur attribut @id construit sur le modèle~: «~refutation2~»
+sera d'une part nécessaire à la bonne exécution du script (le lien hypertexte créé dans la navigation renvera vers cet identifiant unique à chaque ancre au sein du texte) et permettra de produire un nom compréhensible dans le menu~; «~refutation2~» sera analysé par la transformation qui écrira dans le lien hypertexte «~Deuxième réfutation~».
+
+% idem glossaire des idées adverses et des expressions préférés.
+Les glossaires des concepts adverses et des expressions privilégiés ne sont pas encore implémentés. Nous savons cependant déjà comment ils le seront (voir \ref{}). Ces deux indexs seront deux pages du site que le lecteur retrouvera dans un menu déroulant de la navigation en haut de page «~Commentaires thématiques~», après une courte introduction chacun des termes utilisés sera listé avec une mention de page et en un clic sur le terme, le lecteur pourr être redirigé vers la mention. Si chacun aucun des termes ne fera l'objet d'un commentaire spécifique, une introduction générale aux index sera intégrés. Cette introduction servira à présenter cette part du travail et également à délivrer un commentaire sur l'aspect stylistique ici mis en valeur. Il ne nous a pas semblé opportun d'ajouter un commentaire pour chaque terme, d'une part car ces termes sont rarement en eux-même des termes difficiles («~personnage~», «~intrigue~» etc.) et d'autre part car un renvoie vers le passage du texte où le terme est employé nous semblait un outil bien plus intéressant autant pour le lecteur expert que pour le lecteur néophyte.
+
+%À mettre à l'endroit encodage
+Les expressions qui devront figurer dans ces index seront encodées en tant que <w/>, "\textit{word}" et munies d'attributs @type dont les valeurs "0" ou "1" orienteront grâce à la transformation XSL (voir~: \ref{%REFERENCE
+}), le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement
+
+
+
 
 % \section{Projet d'édition}
 \section{Conception et réalisation d'une base de donnée}
