@@ -211,7 +211,7 @@ if($file=="08"){
 	$line=~s/(Heidegger)/ <ref type=\"author\" cRef=\"$1_martin\">$1<\/ref>/g;
 
 # madame de La Fayette
-	$line=~s/(Madame) (de) (La) (Fayette)/<ref type=\"author\" cRef=\"$3_$4_$1_$2\">$1 $2 $3 $4<\/ref>/g;	
+	$line=~s/(madame) (de) (La) (Fayette)/<ref type=\"author\" cRef=\"$3_$4_$1_$2\">$1 $2 $3 $4<\/ref>/g;	
 
 
 	$line=~s/(Hamm)/<quote>$1<\/quote>/g;

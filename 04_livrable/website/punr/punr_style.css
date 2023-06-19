@@ -321,11 +321,8 @@ p{
 	background-color: inherit;
 	opacity: 0.96;
 	filter: alpha(opacity=96); /*for IE8 et -*/
-/*	line-height: inherit;*/
 	text-align:justify;
 	color: inherit;
-/*	font-size: 80%;*/
-/*	font-family: inherit;*/
 }
 
 /*Les extraits à afficher si clique*/

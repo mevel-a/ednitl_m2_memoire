@@ -108,44 +108,47 @@ Lors d'un précédent rendu nous nous donnions pour objectif de mettre en valeur
 
 
 
-En effet, dans le projet original un simple clique sur une citation devait permettre de lire la citation en contexte (soit un ou deux paragraphes entourant le ou les passages cités). La proposition initiale envisageait déjà des limites aux citations à traiter ainsi mais les choix n'étaient pas encore fait. En effet, le nombre de citation a identifié et le temps nécessaire à l'intégration de nombreux extraits relativement conséquents étaient les frains principaux à cettte proposition, qui a, depuis été adapté.
+En effet dans le projet original, un simple clique sur une citation devait permettre de lire la citation en contexte (soit un ou deux paragraphes entourant le ou les passages cités). La proposition initiale envisageait déjà des limites aux citations à traiter ainsi mais les choix n'étaient pas encore fait. En effet, le nombre de citation a identifié et le temps nécessaire à l'intégration de nombreux extraits relativement conséquents étaient les frains principaux à cettte proposition, qui a, depuis été adapté.
 
 Nous opérons une première distinction entre «~références~» et «~citations~». Lorsque p.~136 Robbe-Grillet écrit «~\textit{Mahu ou le Matériau}, ce titre est déjà un programme~», il s'agit d'une référence~; mais lorsqu'au paragraphe précédent Robbe-Grillet écrit «~"J'y pense, j'y pense [...]"~», il s'agit d'une citation.
 
-Seules les citations font l'objet d'un traitement proprement transtextuel. Si l'objectif initial, et surtout, idéal, de ce travail était de traiter l'intégralité des citations, le temps nécessaire à un tel travail nous imposa de réduire la voilure.
+Seules les citations issus des écrit de Sartre font l'objet d'un traitement proprement transtextuel. Nous privilégions cette partie du corpus car nous pensons insister dans le versant scientifique du projet sur les rapports conflictuels mais fédoncs qu'entretient la pensée de Robbe-Grillet dans \punr{}. Ainsi notre édition est-elle la plus proche possible de notre travail scientifique. %lol
+Notons que nous ajoutons aux intertextes issus de Sartre, les citations issu des œuvres de Robert~Pinget \textit{Le Renard et la boussole} et \textit{Mahu ou le matériau}. Cet ajout plutôt qu'un autre tient davantage à des raisons techniques que scientifiques~: nous avons mené nos tests de faisabilité technique sur ce corpus.
+\begin{itemize}
+    \item La diversité de ces œuvres dans lesquels la digression perpétuelle fait office de narration permettait d'interroger les limites des extraits à intégrer. En effet afin d'intégrer le contexte d'une citation, il nous fallait déterminer quel était ce contexte~; un ou deux paragraphes~? Une phrase avant et après~? \textit{Quid} alors des cas où les phrases elles-mêmes sont très longues voire déstructurée~? Nous optons pour un découpage dont nous espérons que la cohérence apparaîtra au lecteur~; plutôt que des bornes quantifiables en terme de distance textuelle, nous nous sommes efforcés d'intégrer des extraits tenus par une unité cohérente, que cette unité relève de l'épisode ou de la plus petite digression possible (dans le cas de Pinget).
+    \item D'un point de vue technique, les citations issues des œuvres de Pinget nous permettait également d'identifier des citations pouvant renvoyer à plusieurs extraits d'une même œuvre, ce qui nous posait un problème technique que nous avons souhaité résoudre (voir~: \ref{%REFERENCE AU TEMPLATE DES QUOTE
+    }).
+    \item Enfin Pinget nous a semblé être l'auteur pour lequel Robbe-Grillet réservait le plus d'éloge. La section «~Un roman qui s'invente lui-même~» est situé en fin de l'«~Anthologie~» laissant entendre qu'il s'agit du plus «~modderne~» selon Robbe-Grillet qui écrivait encore dans les années 1990 dans le quotidien \textit{Le Monde} que «~\footnoteB{%REFENRECE
+    }~» %REFERENCE MANQUANTe
+    . Nous avions ainsi deux des pôles axiologiques les plus éloignés mentionnés explicitement.
+    \item La version actuelle (juin 2023) ne contient pour l'instant que les citations de Robert Pinget afin de démontrer, d'une part la possibilité mais aussi l'intérêt d'un tel traitement.
+\end{itemize}
 
+Si l'objectif initial, et surtout, idéal, de ce travail était de traiter l'intégralité des citations, le temps nécessaire à un tel travail nous imposa de réduire la voilure.
+Ainsi, si toutes les références et citations feront l'objet d'un traitement minime~: en html et css (voir \ref{htmlCss}), nous programmons l'affichage d'une infobulle pour chacun de ces éléments lorsque la souris de l'utilisateur passe dessus, affichant~: les statuts référentiels et axiologiques de la référence ou citation sur laquelle passe le curseur. Un code couleur permet au demeurant d'expliciter les valeurs (rouge, vert, bleu et noir pour les status axiologiques et des nuances allant du jaune au maron pour le statut référentiel).
 
+Dans la version actuelle, le code permettant cet affichage est déjà implémenté et les valeurs déterminées (notamment dans la base de données voir~: \ref{ref:dbEtabValeurs
+}) mais l'encodage des attributs n'est pas encore terminé (voir \ref{tei}), dès lors l'affichage est encore défectueux sur nombre de ces éléments. Par ailleurs si la version actuelle met en valeur les références et les citations en leur donnant une couleur particulière (vert et bleu respectivement), la version finale du présent travail se passera de cette mise en forme qui nous paraît nuire au confort de lecture.
 
-% dire que les statuts référentiels sont gérés dans DB
-% les références et quote = infobulle avec les infos de statut
-    % pas de propos général sur des références 
-         % pas surchargé truc
-         % intérêt ?
-    % nous posons encore la question d'en ajouter en tant que note explicative
-% réduction des quote en context
-    % sartre
-    % pinget
-    % 
-
-% la table des matières pour son versant rhétorique/stylistique, articulation de la pensée, encore en chantier
-Nous nous proposions de fournir pour les articles une table des matières qui permettrait de «~piocher~» dans le recueil des passages de la pensée de Robbe-Grillet. Ces renvois ne sont pas encore implémentés mais le seront prochainement (voir \ref{%ENCODAGE
-}).
-%A DEPLACER
-Nous employons des éléments <milestone/>, bornes, pour inscrire les points rhétorique importants. Lors de la transformation XSL ces <milestone> seront transformé en élément <a/>, \textit{anchor} ancre, ces éléments sans contenu seront invisible au lecteur mais permettront de constituer un menu de navigation sur la gauche de l'écran en XSL (voir \ref{%
-}). Leur attribut @id construit sur le modèle~: «~refutation2~»
-sera d'une part nécessaire à la bonne exécution du script (le lien hypertexte créé dans la navigation renvera vers cet identifiant unique à chaque ancre au sein du texte) et permettra de produire un nom compréhensible dans le menu~; «~refutation2~» sera analysé par la transformation qui écrira dans le lien hypertexte «~Deuxième réfutation~».
-
-% idem glossaire des idées adverses et des expressions préférés.
-Les glossaires des concepts adverses et des expressions privilégiés ne sont pas encore implémentés. Nous savons cependant déjà comment ils le seront (voir \ref{}). Ces deux indexs seront deux pages du site que le lecteur retrouvera dans un menu déroulant de la navigation en haut de page «~Commentaires thématiques~», après une courte introduction chacun des termes utilisés sera listé avec une mention de page et en un clic sur le terme, le lecteur pourr être redirigé vers la mention. Si chacun aucun des termes ne fera l'objet d'un commentaire spécifique, une introduction générale aux index sera intégrés. Cette introduction servira à présenter cette part du travail et également à délivrer un commentaire sur l'aspect stylistique ici mis en valeur. Il ne nous a pas semblé opportun d'ajouter un commentaire pour chaque terme, d'une part car ces termes sont rarement en eux-même des termes difficiles («~personnage~», «~intrigue~» etc.) et d'autre part car un renvoie vers le passage du texte où le terme est employé nous semblait un outil bien plus intéressant autant pour le lecteur expert que pour le lecteur néophyte.
-
-%À mettre à l'endroit encodage
-Les expressions qui devront figurer dans ces index seront encodées en tant que <w/>, "\textit{word}" et munies d'attributs @type dont les valeurs "0" ou "1" orienteront grâce à la transformation XSL (voir~: \ref{%REFERENCE
-}), le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement
+Enfin, toujours dans un souci d'offrir la lecture la plus agréable possible, nous choisissons de ne pas produire de note explicative sur la plupart des références.
+\begin{itemize}
+    \item Le contenu de ces notes nous paraîssait devoir être à la fois trop général et trop court pour avoir un quelconque intérêt scientifique.
+    \item Pour un temps conséquent consacré à concevoir et implémenter ces notes au contenu factuel, quel intérêt pour un lecteur néophyte qui a à sa disposition des encyclopédies en ligne.
+    \item Ces notes surchargeraient l'appareil critique, déjà conséquent de notre édition et, au fond, contrevenaient en partie au prinicipe de l'édition~: donner à lire, sans prendre par la main le lecteur, supposé capable de naviguer lui-même au sein de l'édition.
+\end{itemize}
 
 
 
 
-% \section{Projet d'édition}
+
+Nous nous proposions de fournir pour les articles une table des matières qui permettrait de «~piocher~» dans le recueil des passages de la pensée de Robbe-Grillet. Ces renvois ne sont pas encore implémentés mais le seront prochainement (voir~: \ref{encMilestone}).
+
+Les glossaires des concepts adverses et des expressions privilégiés ne sont pas encore implémentés. Nous savons cependant déjà comment ils le seront (voir \ref{encW}). Ces deux indexs seront deux pages du site que le lecteur retrouvera dans un menu déroulant de la navigation en haut de page «~Commentaires thématiques~», après une courte introduction chacun des termes utilisés sera listé avec une mention de page et en un clic sur le terme, le lecteur pourr être redirigé vers la mention. Si chacun aucun des termes ne fera l'objet d'un commentaire spécifique, une introduction générale aux index sera intégrés. Cette introduction servira à présenter cette part du travail et également à délivrer un commentaire sur l'aspect stylistique ici mis en valeur. Il ne nous a pas semblé opportun d'ajouter un commentaire pour chaque terme, d'une part car ces termes sont rarement en eux-même des termes difficiles («~personnage~», «~intrigue~» etc.) et d'autre part car un renvoie vers le passage du texte où le terme est employé nous semblait un outil bien plus intéressant autant pour le lecteur expert que pour le lecteur néophyte.
+
+
+
+
+
 \section{Conception et réalisation d'une base de donnée}
     \subsection{Principes généraux}
     On appelle base de donnée un mode de structuration de l'information qui permet de stocker un grand nombre d'informations sur un petit espace disque. Il existe plusieurs modèles de structuration de ces bases de données, mais pour le présent travail n'est employé que le modèle le plus courant~: le modèle relationnel.
@@ -448,6 +451,13 @@ le moteur renvoie une erreur. Une solution existe sans doute mais pour moins d'u
 
 L'encodage des sources citées se fait également à la main, chacun des textes du corpus sont ajoutés aux éléments <TEI> munis d'un attribut @xml:id servant à les identifier sur le modèle~: initialdel'auteur\_numérodel'œuvre~» ainsi \textit{Mahu ou le matériau} sera désigné par «~pr\_01~» et \textit{Le Renard et la boussole} par «~pr\_02~». Chacun des extraits est ensuite inséré dans un élément <div> ayant aussi un attribut @xml:id construit sur le modèle~: iddel'œuvre\_pagededébutdelacitation~», ainsi le premier extrait de \textit{Le Renard et la boussole} correspondra à «~pr\_02\_09~».    
 
+\label{encMilestone} Nous employons des éléments <milestone/>, bornes, pour inscrire les points rhétorique importants. Lors de la transformation XSL ces <milestone> seront transformé en élément <a/>, \textit{anchor} ancre, ces éléments sans contenu seront invisible au lecteur mais permettront de constituer un menu de navigation sur la gauche de l'écran en XSL (voir \ref{ref:xsl-gen}). Leur attribut @id construit sur le modèle~: «~refutation2~»
+sera d'une part nécessaire à la bonne exécution du script (le lien hypertexte créé dans la navigation renvera vers cet identifiant unique à chaque ancre au sein du texte) et permettra de produire un nom compréhensible dans le menu~; «~refutation2~» sera analysé par la transformation qui écrira dans le lien hypertexte «~Deuxième réfutation~».
+
+
+%À mettre à l'endroit encodage
+\label{encW} Les expressions devant figurer dans ces index seront encodées en tant que <w/>, "\textit{word}" et munies d'attributs @type dont les valeurs "0" ou "1" orienteront grâce à la transformation XSL (voir~: \ref{ref:xsl_gen}), le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivemen.
+
 \section{Vers l'édition numérique : transformation XSL}
 \label{ref:xsl_gen}
 Une fois l'encodage terminé, l'encodeur concçoit une transformation XSL, soit un fichier contenant des informations de traitement afin de passer d'un fichier XML peu lisible pour le lecteur à une édition numérique au format HTML. En effet les feuilles de styles XSL permettent de conserver le fichier XML originel pour en créer d'autres de types divers, en l'occurence nous nous contentons de produire un site internet, soit des pages au format HTML. Notons que le langage de balisage HTML est un dérivé de l'XML qui ne permet pas de structurer le contenu aussi finement que l'XML mais permet un affichage via navigateur web pour lecture.
@@ -474,6 +484,47 @@ Notons que la production des pages est générée par un template matchant la ra
     \caption{Extrait du template gérant la génération des pages du site}
     \label{fig:enter-label}
 \end{figure}
+
+\section{Résultat de la transformation : html et css}
+
+\label{htmlCss}
+
+Nos feuilles XSL ont transformé notre document xml difficilement lissible par un lecteur en plusieurs documents html, qui, liés à un fichier css, devient bien plus lisible.
+
+Architecture du web langage html est, comme le langage xml dont il est un dérivé, un langage de balisage. Il s'agit ici encore de baliser des segments textuels en vu de les décrire mais contrairment à l'xml les balises utilisables en html sont limitées afin d'être interprétable par un navigateur internet. Parmi ces balises on trouve~:
+\begin{itemize}
+    \item <p/>, un paragraphe,
+    \item <span/> un segment de texte,
+    \item <a/> une ancre, ou lien hypertexte.
+\end{itemize}
+Si le html intervient au niveau sémantique, le css \textit{Cascading Style Sheeet}, lui, sert à la mise en forme. C'est ce langage qui permet de transformer des segmentations sémantiques en véritable boîte sur la page ou de mettre en valeur (par un jeu de couleur par exemple) tel ou tel élément des pages.
+
+\subsection{Les notes de l'édition critique : création d'infobulle}
+
+\label{htmlCssInfo}
+
+%figure{screen_cssinfo.png ou truc du genre}
+
+Les interactions html/css permettent de générer des affichages utiles à notre édition numérique. Détailler les moinds recoins des choix esthétiques et pratiques que nous avons été amené à faire n'aurait sans doute que peu de sens, cependant le travail effectué sur les infobulles mérite d'être examiné en détail, afin d'expliciter la manière dont le css agit sur le html.
+
+
+Comme en xml-tei, nous disposons d'attributs spécifique au html pour caractériser nos éléments. Parmi eux l'attribut @class est d'une utilité particulière pour permettre les interactions entre html et d'autres langages de programmation (dans le cas de notre travail css et Javascript). Ces attributs @class et leurs valeurs sont générés par notre transformation xsl et nous avons, dans le cas des infobulles un résultat qui ressemble à ceci~:
+\verbatim{<span class="ref">contenu sur lequel porte la note<span class="refinfo">la note elle-même</span></span> la suite du contenu}, 
+soit deux éléments <span/>, segments textuels le second muni d'une classe «~refinfo~» à l'intérieur du premier classé «~ref~» contient le contenu de la note qui sera en infobulle. L'affichage standard d'un tel code serait le suivant~:
+\verbatim{contenu sur lequel porte la notela note elle-même la suite du contenu}.
+Or nous souhaitons que le second segment ne s'affiche que lorsque le curseur passe sur la souris. C'est ici qu'intervient le css. %figure{screen_cssinfo.png ou truc du genre}
+
+Comme on peut le voir dans \ref{screenCssInfo}, css emploie des \textit{selector} auquel il attribut des propriétés. En l'occurence la \textit{class} «~ref~» est semectionnée ligne 299 et lui est attribué une couleur (vert) ligne 300.
+
+
+
+%expliquer @class (sert aussi pour la section JS)
+%exemple des infobulles
+    %pseudoclasse
+
+
+
+
 
 
 \section{Une expérience de lecture~: ajouts de scripts}
