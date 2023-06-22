@@ -7,7 +7,7 @@ function initialise(){
 		body.setAttribute('class','darkmode');
 		localStorage.setItem('punrTheme','dark');
 		for (var i = refinfos.length - 1; i >= 0; i--) {
-			refinfos[i].style.backgroundColor="#000";
+			refinfos[i].style.backgroundColor="#2E2E2E";
 			refinfos[i].style.color="#F2F2F2";
 		}
 	}else{}
@@ -36,9 +36,6 @@ function displayPb(){
 			localStorage.setItem('displayPb','yes');
 		}
 	}
-
-	
-
 }
 
 function hidePb(){
@@ -65,7 +62,7 @@ function darkmode () {
 		body.setAttribute('class','darkmode');
 		localStorage.setItem('punrTheme','dark');
 		for (var i = refinfos.length - 1; i >= 0; i--) {
-			refinfos[i].style.backgroundColor="#000";
+			refinfos[i].style.backgroundColor="#2E2E2E";
 			refinfos[i].style.color="#F2F2F2";
 		}
 	}

@@ -118,9 +118,9 @@ Notons que nous ajoutons aux intertextes issus de Sartre, les citations issu des
     \item La diversité de ces œuvres dans lesquels la digression perpétuelle fait office de narration permettait d'interroger les limites des extraits à intégrer. En effet afin d'intégrer le contexte d'une citation, il nous fallait déterminer quel était ce contexte~; un ou deux paragraphes~? Une phrase avant et après~? \textit{Quid} alors des cas où les phrases elles-mêmes sont très longues voire déstructurée~? Nous optons pour un découpage dont nous espérons que la cohérence apparaîtra au lecteur~; plutôt que des bornes quantifiables en terme de distance textuelle, nous nous sommes efforcés d'intégrer des extraits tenus par une unité cohérente, que cette unité relève de l'épisode ou de la plus petite digression possible (dans le cas de Pinget).
     \item D'un point de vue technique, les citations issues des œuvres de Pinget nous permettait également d'identifier des citations pouvant renvoyer à plusieurs extraits d'une même œuvre, ce qui nous posait un problème technique que nous avons souhaité résoudre (voir~: \ref{%REFERENCE AU TEMPLATE DES QUOTE
     }).
-    \item Enfin Pinget nous a semblé être l'auteur pour lequel Robbe-Grillet réservait le plus d'éloge. La section «~Un roman qui s'invente lui-même~» est situé en fin de l'«~Anthologie~» laissant entendre qu'il s'agit du plus «~modderne~» selon Robbe-Grillet qui écrivait encore dans les années 1990 dans le quotidien \textit{Le Monde} que «~\footnoteB{%REFENRECE
-    }~» %REFERENCE MANQUANTe
-    . Nous avions ainsi deux des pôles axiologiques les plus éloignés mentionnés explicitement.
+    \item Enfin Pinget nous a semblé être l'auteur pour lequel Robbe-Grillet réservait le plus d'éloge. La section «~Un roman qui s'invente lui-même~» est situé en fin de l'«~Anthologie~» laissant entendre qu'il s'agit du plus «~modderne~»
+    %selon Robbe-Grillet qui écrivait encore dans les années 1990 dans le quotidien \textit{Le Monde} que «~\footnoteB{%REFENRECE }~» %REFERENCE MANQUANTe
+    . Nous avions ainsi deux des pôles axiologiques mentionnés explicitement les plus éloignés.
     \item La version actuelle (juin 2023) ne contient pour l'instant que les citations de Robert Pinget afin de démontrer, d'une part la possibilité mais aussi l'intérêt d'un tel traitement.
 \end{itemize}
 
@@ -509,12 +509,23 @@ Les interactions html/css permettent de générer des affichages utiles à notre
 
 
 Comme en xml-tei, nous disposons d'attributs spécifique au html pour caractériser nos éléments. Parmi eux l'attribut @class est d'une utilité particulière pour permettre les interactions entre html et d'autres langages de programmation (dans le cas de notre travail css et Javascript). Ces attributs @class et leurs valeurs sont générés par notre transformation xsl et nous avons, dans le cas des infobulles un résultat qui ressemble à ceci~:
-\verbatim{<span class="ref">contenu sur lequel porte la note<span class="refinfo">la note elle-même</span></span> la suite du contenu}, 
+\verb|<span class="ref">contenu sur lequel porte la note<span class="refinfo">la note elle-même</span></span> la suite du contenu|, 
 soit deux éléments <span/>, segments textuels le second muni d'une classe «~refinfo~» à l'intérieur du premier classé «~ref~» contient le contenu de la note qui sera en infobulle. L'affichage standard d'un tel code serait le suivant~:
-\verbatim{contenu sur lequel porte la notela note elle-même la suite du contenu}.
-Or nous souhaitons que le second segment ne s'affiche que lorsque le curseur passe sur la souris. C'est ici qu'intervient le css. %figure{screen_cssinfo.png ou truc du genre}
+\verb|contenu sur lequel porte la notela note elle-même la suite du contenu|.
+Or nous souhaitons que le second segment ne s'affiche que lorsque le curseur passe sur la souris. C'est ici qu'intervient le css.
 
-Comme on peut le voir dans \ref{screenCssInfo}, css emploie des \textit{selector} auquel il attribut des propriétés. En l'occurence la \textit{class} «~ref~» est semectionnée ligne 299 et lui est attribué une couleur (vert) ligne 300.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{img/screen_css_infobulle.jpg}
+    \caption{Le code css gérant les infobulles}
+    \label{screenCssInfo}
+\end{figure}
+
+Comme on peut le voir dans la figure \ref{screenCssInfo}, css emploie des \textit{selector} auquel il attribut des propriétés. En l'occurence la \textit{class} «~ref~» est semectionnée ligne~299 et lui est attribué une couleur (vert) ligne~300.
+
+Nous intérésse davantage le selecteur (ou plutôt les sélecteurs additionnés pour restreindre les éléments ciblés) suivant «~.ref .refinfo~» qui se lit~: l'élément classé «~refinfo~» contenu dans un élément classé «~ref~». Ligne~304 lui est attribuée la propriété «~display:none~» qui empêche l'affichage de l'élément, le contenu de l'infobulle sera présent mais invisible. Il ne sera rendu visible que grâce à la propriété «~display:block~» attribuée aux éléments concernés par les sélecteurs «~.ref:hover .refinfo~», soit l'élément classé «~refinfo~» contenu dans un élément classé «~ref~» sur lequel l'utilisateur passe la souris (on parle de \textit{pseudoclass} pour désigner le sélecteur «~hover~»). Les autres propriétés correspondent à des choix de designs pensés pour rendre l'infobulle lisible et pratique, ainsi les propriétés de positionnement «~position:absolute;left:20px;top:-30px;~» servent à ordonner le positionnement des infobulles selon une position absolue déterminée par rapport au dernier ancêtre positionné (en l'occurence l'ancêtre classé «~ref~» muni de la propriété «~position:relative;~»), le navigateur soustrait à ce point de référence 30~px depuis son sommet (l'infobulle apparaît plus haut) et y ajoute 20~px depuis la gauche (l'infobulle est légérement décallée à droite).
+
+Un tel résultat pourrait être atteind en Javascript mais l'execution d'un tel script serait légèrement plus lourde pour le navigateur et son écriture plus complexe que quelques propriétés css correctement agencées. Notons que les attributs @class ne sont pas seulement utilisé par le css mais également exploité par les scripts détaillés infra.
 
 
 
@@ -571,10 +582,10 @@ On remarque que l'on injecte en paramètre l'identifiant (@corresp) du passage c
 
 En effet, cette fonction n'a qu'à rendre visible le passage concerné lorsque l'utilisateur clique sur une citation. Cependant les choses se compliquent dès lors que nous souhaitons afficher plus d'un extrait pour une même citation. En effet, la même citation par exemple «~Don~Quichotte~» dans l'article «~Un roman qui s'invente lui-même~» peut renvoyer à plusieurs passages de \textit{Le Renard et la boussole}. Or l'encodage xml-tei nous permet précisèment d'insérer plussieurs valeurs à l'attribut @corresp séparées par un espace.
 
-On aura donc~: \begin{verbatim}<quote corresp="pr_02_25 pr_02_50">Don Quichotte</quote>\end{verbatim} à prétraiter car notre script Javascript ne peut recevoir qu'une seule valeur en paramètre et ne sera pas capable d'interpréter une suite de valeur comme tel. Dès lors nous avons opté pour un prétraitement en xsl (voir \ref{fig:corrspAfect}).
+On aura donc~: \verb|<quote corresp="pr_02_25 pr_02_50">Don Quichotte</quote>| à prétraiter car notre script Javascript ne peut recevoir qu'une seule valeur en paramètre et ne sera pas capable d'interpréter une suite de valeur comme tel. Dès lors nous avons opté pour un prétraitement en xsl (voir \ref{fig:corrspAfect}).
 
 
-Nous souhaitons arriver au résultat suivant~: \begin{verbatim}<span onclick="displayExtract(pr_02_25_02);displayExtract(pr_02_25_50);>Don~Quichotte</span>\end{verbatim}, soit «~lorsque l'utilisateur clique sur ce segment la fonction displayExtract est appelée deux fois sur deux extraits différents. Pour ce faire nous devons séparer les deux valeurs et répéter la valeur de l'attribut @onclick en ne changeant qu'un seul paramètre. Dans un premier template xsl nous testons la présence ou non d'un espace au sein de la valeur @corresp. S'il y a un espace une première partie de la valeur de l'attribut @onclick (soit un premier extrait) est gérée après quoi un autre template est appelé. Ce template nommé «~correspAffect~» reçoit en paramètre tout le contenu de l'attribut qui suit l'espace, il procède ensuite de même~: gère le premier extrait en créant l'appel de la fonction sur ce qui précède l'espace (soit le deuxième extrait), puis via un appel recursif va gérer les unes après les autres toutes les valeurs de l'attribut @corresp après l'espace. S'appelant lui-même le template boucle sur une partie toujours plus réduite de l'attribut @corresp qui correspondront à autant de paramètres ensuite envoyé dans le Javascript jusq'à ce qu'il n'y ait plus d'espace au sein du reste de @corresp, alors, le template produit un dernier appel à la fonction (s'il n'y a plus d'espace il reste l'identifiant d'un extrait) puis s'arrête.
+Nous souhaitons arriver au résultat suivant~: \verb|<span onclick="displayExtract(pr_02_25_02);displayExtract(pr_02_25_50);>Don~Quichotte</span>|, soit «~lorsque l'utilisateur clique sur ce segment la fonction displayExtract est appelée deux fois sur deux extraits différents. Pour ce faire nous devons séparer les deux valeurs et répéter la valeur de l'attribut @onclick en ne changeant qu'un seul paramètre. Dans un premier template xsl nous testons la présence ou non d'un espace au sein de la valeur @corresp. S'il y a un espace une première partie de la valeur de l'attribut @onclick (soit un premier extrait) est gérée après quoi un autre template est appelé. Ce template nommé «~correspAffect~» reçoit en paramètre tout le contenu de l'attribut qui suit l'espace, il procède ensuite de même~: gère le premier extrait en créant l'appel de la fonction sur ce qui précède l'espace (soit le deuxième extrait), puis via un appel recursif va gérer les unes après les autres toutes les valeurs de l'attribut @corresp après l'espace. S'appelant lui-même le template boucle sur une partie toujours plus réduite de l'attribut @corresp qui correspondront à autant de paramètres ensuite envoyé dans le Javascript jusq'à ce qu'il n'y ait plus d'espace au sein du reste de @corresp, alors, le template produit un dernier appel à la fonction (s'il n'y a plus d'espace il reste l'identifiant d'un extrait) puis s'arrête.
 
 \begin{figure}[H]
     \centering
@@ -601,7 +612,8 @@ Afin de permettre un confort de lecture accru, du moins personnalisable, deux bo
 
 % \subsubsection{Les références}
 
-\subsubsection{Afficher les variantes}
+    \subsubsection{Afficher les variantes}
+
 
 
     \subsection{Interactivité de la base de donnée}

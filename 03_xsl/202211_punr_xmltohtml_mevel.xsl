@@ -365,7 +365,7 @@
 <!--			<xsl:if test="@rend='italic'">STDitalic</xsl:if>-->
 		</xsl:variable>
 		<span class="{$class}">
-			<xsl:apply-templates/>
+			<xsl:apply-templates mode="corpus"/>
 		</span>
 	</xsl:template>
 	<xsl:template match="p" mode="corpus">
@@ -427,12 +427,12 @@
 		<xsl:param name="ana">
 			<xsl:choose>
 				<xsl:when test="@ana='0'">blâme</xsl:when>
-				<xsl:when test="@ana='1'">éloge</xsl:when>
-				<xsl:when test="@ana='2'">indifférent</xsl:when>
+				<xsl:when test="@ana='1'">indifférent</xsl:when>
+				<xsl:when test="@ana='2'">éloge</xsl:when>
 				<xsl:when test="@ana='3'">ambiguë</xsl:when>
 			</xsl:choose>
 		</xsl:param>
-		<span class="ref"><xsl:apply-templates/><span class="refinfo"><xsl:value-of select="@type"/>, <span class="Ref{@cert}"><xsl:value-of select="$cert"/></span>, <span class="axi{@ana}"><xsl:value-of select="@ana"/></span>.</span></span>
+		<span class="ref"><xsl:apply-templates/><span class="refinfo"><xsl:value-of select="@type"/>, <span class="Ref{@cert}"><xsl:value-of select="$cert"/></span>, <span class="Axi{@ana}"><xsl:value-of select="$ana"/></span>.</span></span>
 	</xsl:template>
 	<xsl:template mode="corpus" match="quote"><!--patron gérant les éléments "citation"-->
 		<xsl:choose>

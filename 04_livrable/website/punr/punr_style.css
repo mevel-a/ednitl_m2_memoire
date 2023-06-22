@@ -300,12 +300,10 @@ p{
 	color: #0f0;
 	cursor: pointer;
 	position:relative;
-
 }
 .ref .refinfo{
 	display: none;
 	text-indent: 0;
-
 }
 .ref:hover .refinfo{
 	position: absolute;
@@ -316,13 +314,15 @@ p{
 	border: 2px solid #18130e;
 	border-radius: 5px;
 	max-width: 600px;
+	min-width: 200px;
 	margin: 0px;
 	padding: 6px;
 	background-color: inherit;
-	opacity: 0.96;
-	filter: alpha(opacity=96); /*for IE8 et -*/
+/*	opacity: 0.96;*/
+/*	filter: alpha(opacity=96); /*for IE8 et -*/
 	text-align:justify;
 	color: inherit;
+	font-style: initial;
 }
 
 /*Les extraits à afficher si clique*/
