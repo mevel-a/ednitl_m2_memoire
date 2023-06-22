@@ -75,8 +75,14 @@
 						</xsl:for-each>
 					</ol>
 				</li>
-				<li><a href="{$db_link}">Illustration de la base de données</a></li>
-				<li><a href="{$tl_link}">Chronologie</a></li>
+				<li style="width:200px; height:100px; padding-top:9px;flex-shrink: 0;">Commentaires thématiques
+					<ol class="chapter_nav" style="list-style:none;">
+						<li><a href="{$db_link}">Illustration de la base de données</a></li>
+						<li><a href="{$tl_link}">Chronologie</a></li>
+						<li><a href="{$index_link}">Index des notions adverses et des expressions préférées</a></li>
+					</ol>
+				</li>
+				
 				<!--<li><a href="{}"></a></li>
 				<li><a href="{}"></a></li>
 				<li><a href="{}"></a></li>
@@ -265,6 +271,24 @@
 							<xsl:when test="$content='tl'">
 <!--							TIMELINE GOES HERE-->
 							</xsl:when>
+							<xsl:when test="$content='index'">
+								<article class="index">
+									<section class="intro">intro goes here</section>
+<!--									<div class="separ"/>-->
+									<section class="index bad">
+										<h2>Index des notions adverses</h2>
+										<ul>
+											<xsl:apply-templates select="//w[@type='0']" mode="adv_index"/>
+										</ul>
+									</section>
+									<section class="index">
+										<h2>Index des expressions préférées</h2>
+										<ul>
+											<xsl:apply-templates select="//w[@type='1']" mode="pref_index"/>
+										</ul>
+									</section>
+								</article>
+							</xsl:when>
 						</xsl:choose>
 					<xsl:if test="contains($content,'ch')">
 						<div class="ch_nav">
@@ -334,6 +358,11 @@
 			<xsl:with-param name="title" select="'bibliographie'"/>
 			<xsl:with-param name="content" select="'bib'"/>
 		</xsl:call-template>
+		<xsl:call-template name="body">
+			<xsl:with-param name="doc" select="$index"/>
+			<xsl:with-param name="title" select="'Index'"/>
+			<xsl:with-param name="content" select="'index'"/>
+		</xsl:call-template>
 		<!--<xsl:call-template name="body">
 			<xsl:with-param name="doc" select="$"/>
 			<xsl:with-param name="title" select="'index'"/>
@@ -348,9 +377,18 @@
 			etc-->
 	</xsl:template>
 	
-	
-	
-	
+<!--	Index des notions adverses-->
+	<xsl:template match="w[@type='0']" mode="adv_index">
+		<xsl:param name="ch" select="ancestor::div[@type='pagechap']/@xml:id"/>
+		<xsl:param name="pn" select="preceding::pb[1]/@n"/>
+		<li><xsl:apply-templates/><span class="STDgray"> ; [<a target="blanck" href="{concat('punr_',$ch,'.html#page_',$pn)}"><xsl:value-of select="preceding::pb[1]/@n"/></a>]</span></li>
+	</xsl:template>
+<!--	Index des formulées préférées-->
+	<xsl:template match="w[@type='1']" mode="pref_index">
+		<xsl:param name="ch" select="ancestor::div[@type='pagechap']/@xml:id"/>
+		<xsl:param name="pn" select="preceding::pb[1]/@n"/>
+		<li><xsl:apply-templates/><span class="STDgray"> ; [<a target="blanck" href="{concat('punr_',$ch,'.html#page_',$pn)}"><xsl:value-of select="preceding::pb[1]/@n"/></a>]</span></li>
+	</xsl:template>
 	
 	
 <!--	MODE CORPUS, gère mise en forme du corpus

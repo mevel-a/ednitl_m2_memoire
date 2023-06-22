@@ -37,7 +37,6 @@ function displayPb(){
 		}
 	}
 }
-
 function hidePb(){
 	let pbs=document.getElementsByClassName('pb');
 	for (var i = pbs.length-1; i >= 0; i--) {

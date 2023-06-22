@@ -180,7 +180,24 @@ div.legals img{
 	height: 32px;
 	margin: 2px;
 }
-
+article.index{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left:100px;
+	padding-right:100px;
+	width: 100%;
+}
+section.intro{
+	width: 100%;
+	margin-bottom: 60px;
+}
+section.index{
+	width: 50%;
+	border:1px solid #000;
+}
+section.index h2{
+	margin-bottom: 20px;
+}
 h2{
 	font-size: 35pt;
 	font-family: 'Source Code Pro', helvetica, sans-serif !important;
