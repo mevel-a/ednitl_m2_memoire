@@ -442,3 +442,14 @@ section.extract_section{
 .STDgray{
 	color: #666;
 }
+
+div.STDtop{
+	position: fixed;
+	bottom: 100px;
+	left: 30px;
+	transform:rotate(90deg);
+	color: inherit;
+	font-size: 40pt;
+	font-weight: bold;
+/*	border-radius: 50%;*/
+}
