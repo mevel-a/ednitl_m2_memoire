@@ -60,7 +60,7 @@
 			<meta name="description" content="digital critical edition of pour un nouveau roman by alain robbe-grillet fist published in 1963 this word has been realised as student project"/>
 			<meta name="keywords" content="critical, edition, digital, robbe-grillet, litterature, french, 1963, nouveau roman, alain robbe-grillet, pour un nouveau roman, xxe siecle, xx, french theory"/>
 		</head>
-		<div class="STDtop">&lt;</div>
+		<div class="STDtop"><a href="#top" target="blanck">&lt;</a></div>
 	</xsl:template>
 <!--	template pour NAV-->
 	<xsl:template name="nav">
