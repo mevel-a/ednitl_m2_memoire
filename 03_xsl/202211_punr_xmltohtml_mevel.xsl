@@ -60,7 +60,6 @@
 			<meta name="description" content="digital critical edition of pour un nouveau roman by alain robbe-grillet fist published in 1963 this word has been realised as student project"/>
 			<meta name="keywords" content="critical, edition, digital, robbe-grillet, litterature, french, 1963, nouveau roman, alain robbe-grillet, pour un nouveau roman, xxe siecle, xx, french theory"/>
 		</head>
-		<div class="STDtop"><a href="#top" target="blanck">&lt;</a></div>
 	</xsl:template>
 <!--	template pour NAV-->
 	<xsl:template name="nav">
@@ -120,6 +119,7 @@
 				</div>
 			</div>
 		</header>
+		<div class="STDtop"><a href="#top">&lt;</a></div>
 	</xsl:template>
 	
 	<xsl:template name="articlenav">
@@ -236,15 +236,36 @@
 													
 													<p>Notons enfin une technique usuelle chez Robbe-Grillet consistant à vider l'argumentation en limitant autant que possible la portée de ces écrits théoriques, si l'on aurait tord de considérer que Robbe-Grillet s'autorise ici à « se contredire », il est assez juste de constater qu'il prend soin de se dégager un espace entre sa pratique littéraire et sa pratique théorique dans lequel le lecteur devrait l'autoriser à rafiner sa pensée, la préciser et sans doute sans rien renier du cheminement lui-même, en retrancher quelques passages.</p>
 												</xsl:when>
-												<xsl:when test="$content='ch02'"></xsl:when>
-												<xsl:when test="$content='ch03'"></xsl:when>
-												<xsl:when test="$content='ch04'"></xsl:when>
-												<xsl:when test="$content='ch05'"></xsl:when>
-												<xsl:when test="$content='ch06'"></xsl:when>
+												<xsl:when test="$content='ch02'">
+													<p>Initialement publié en 1956 dans le numéros 43 de la Nouvelle Revue Française et enrichi des articles « Réalisme et révolution » et « Pour un réalisme de la présence » publié dans L'Express en janvier 1955 et en janvier 1956 respectivement, cet article constitue sans doute l'une des charges les plus violentes adressés aux contemporains de Robbe-Grillet au sein du recueil.</p>
+													<p>Plus encore c'est sans doute dans ce texte que l'on mesure l'habileté (ou la mauvaise foi) de Robbe-Grillet en sa capacité à se mettre à la place de ses adversaires, qui dès lors ne peuvent que sembler des adversaires supposés, imaginaires, les personnages d'un roman.</p>
+													<p>L'auteur se montre à leur égard tantôt moqueur « Mais tous avouent, sans voir là rien d'anormal, que leurs préoccupations d'écrivains datent de plusieurs siècles », compréhensif « Comment feraient-elles [les choses] pour changer ? Vers quoi iraient-elles ? » enfin pédagogue « Or le monde n'est ni signifiant ni absurde. Il est, tout simplement. ».</p>
+													<p>Cette variété de ton, si elle sert la démonstration, doit aussi être perçue comme les traces de l'assemblage qui produisit l'article en cette forme. [justifier voir GALIA]</p>
+													<p>Au demeurant, le glissement à un ton plus théorique que polémique sert ici aussi l'économie globale du recueil. Par son titre et son sujet apparent : l'avenir du roman, cet article semble programmatique. Loin de délivrer des propos abstraits sur l'avenir du roman, ce texte s'avère être un état des lieux de la littérature contemporaine, tenant deux pants de la littérature contemporaine, les héritiers de Balzac, du côté des consommateurs, de ceux qui croit au « cœur » humain éternel et de la littérature telle qu'elle est, en opposition à la littérature telle qu'elle pourrait être, les littérature acceptant le risque de jouïr pleineemnt de leur liberté d'écrivain pour écrire une littérature plus proche de la réalité.</p>
+													<p>Est introduit dans ce chapitre surtout un hiatus entre l'importance de ces deux littératures et leur degré de contemporanéité. Alors que la littérature dominnante repose sur des idées au mieux de plusieurs siècle, au pire proprement délirante (coeur romantique des choses) ; une littérature consciente du temps présent et de sa responsabilité à résister contre l'appropriation systématique » a toute les difficultés à exister.</p>
+													<p>Si ce texte semble dérouler toutes les raisons psychologiques (chez les lecteurs, les auteurs, les critiques) etc. qui empêche à cette littérature nouvelle de prendre la place qui lui est dûe, c'est bien un paradoxe qu'expose en creux Robbe-Grillet invitant le lecteur à se positionner pour ce langage littérautre qui « déjà change ».</p>
+												</xsl:when>
+												<xsl:when test="$content='ch03'">
+													<p>Issu de cinq publications entre octobre et novembre 1957 dans le magazine France Observateur (« Écrire pour son temps »,« Il n'y a pas "d'avant-garde" »,« La mort du personnage »,« Un joli talent de conteur »,« La forme et le contenu ») et deux publications dans L'Express en décembre 1955 et février 1956 « Littérature engagée, littérature réactionnaire »,« Le réalisme socialiste est bourgeois », cet article plus qu'une charge envers la littérature de son temps s'attaque à la conception même que l'on se fait de la littérature s'en prenant aux termes employés pour en parler.</p>
+														<p>Commençant par développer le sens de ces termes tels que la critique les emploie, Robbe-Grillet s'emploie à en démontrer l'inanité en s'appuyant sur des exemples qui constitue en creux une filiation dont le dernier né n'est autre que le Nouveau Roman.</p>
+													<p>Si le texte s'emploie à démontrer que ces concepts sont « périmés », ce n'est pas seulement du fait d'un besoin de variété dans la production littéraire mais bien que les temps ont changé : certaines certitudes se sont évanouies, outre les notions des critiques académiques, c'est peut-être une certaine attitude face au monde teinté de métaphysique, de romantisme ou de positivisme, qui est ici rejetté. Plus qu'une vision nouvelle de ce que sont l'art et les œuvres, « De quelques notions périmées » nous dit : la modernité c'est de ne plus croire. Cette non-croyance, ou plutôt ce soupçon, se pose non seulement sur les théories mais également sur leurs vecteurs : la forme.</p>
+												</xsl:when>
+												<xsl:when test="$content='ch04'"><p>Initialement publié en octobre 1958 dans le numéro 70 de la Nouvelle Revue Française, ce passage nous paraît être le plus existentialiste de Pour un nouveau roman. Si existentialiste que la philosophie de Sartre, l'absurde de Camus semble des fétiches, du moins des œuvres qui ne prennent pas acte de ce qu'elles énoncent.</p>
+													<p>À lire ces pages, il semblque l'existentialisme prenant acte d'un monde dépourvu de sens n'a pas su se défaire de la métaphysique. Entraînant un hiatus irrémédiable entre l'homme et le monde, dû à son incapacité à se défaire d'outils qu'il sait défectueux. Ce hiatus, Robbe-Grillet à la suite de Barthes propose de l'appeler la « Tragédie ».</p>
+													<p>Lorsque l'on cessera de chercher l'homme partout on pourra peut-être s'intéresser aux phénomènes, nous dit en substance Robbe-Grillet s'attelant à donner au lecteur les clefs de la littérature qu'il est en train de produire, presque un manuel du moins des recommandations techniques pour une forme débarassée de la tragédie, aux yeux de Robbe-Grillet, sans doute elle aussi périmée.</p></xsl:when>
+												<xsl:when test="$content='ch05'">
+													<p>Les écrits théorique s'interrompent et s'intercalent un texte inédit ayant vocation de seuil. Aux récriminations contre une littérature périmées, aux recommendations techniques succèdent les cas pratiques : nous sommes invités à lire la modernité à travers les lectures de Robbe-Grillet.</p>
+													<p>À la filiation prestigieuse (car constituée de classique relativement éloignés) se surimpose une filiation à la fois plus contemporaine et moins connus du grand public.</p>
+													<p>À travers ces critiques, Robbe-Grillet défend deux pendants de la modernité : des techniques et une certaine attitude qu'il préconise à l'endroit des œuvres littéraire. Que devrait-on lire ? Comment devrait-on lire ?</p>
+													<p>Si l'on ne pourrait affirmer avec certitude que Robbe-grillet défend l'idée d'un progrès en art, on observe du moins une gradation dans l'ordre de ces chroniques : plutôt que d'être insérées dans leur ordre de publication ces critiques sont organisés de la plus éloignée à la plus proche de la modernité.</p>
+												</xsl:when>
+												<xsl:when test="$content='ch06'"><p>Publiée en décembre 1963 dans la revue Critique, cette analyse du style de Raymond Roussel semble partir du constat que Raymond Roussel écrit « mal » c'est-à-dire qu'il ne répond pas aux habitudes de la réception. En effet, il ne s'agit pas d'une littérature du secret, ni même du dévoilement mais une littérature d'un imaginaire loufoque décrit avec la banalité de ce qui n'est que pour être. En cela ce cas pratique est à la fois une démonstration de la modernité selon Robbe-Grillet mais également de l'incapacité du discours de la critique contemporaine à rendre compte du fait littéraire, même relativement ancien.</p></xsl:when>
 												<xsl:when test="$content='ch07'"></xsl:when>
 												<xsl:when test="$content='ch08'"></xsl:when>
 												<xsl:when test="$content='ch09'"></xsl:when>
-												<xsl:when test="$content='ch10'"></xsl:when>
+												<xsl:when test="$content='ch10'"><p>Dans cet article, initialement paru dansXXXX enXXX, Robbe-Grillet fait la critique de deux romans de Robert Pinget (auteur rattaché au NR XXXRICARDOU?XXX) Mahu ou le matériau et Le Renard et la boussole paru en 1952 et 1953 respectivement. Robbe-Grillet s'y emploie à résumer l'intrigue autant que faire ce peut (le terme même d'« intrigue » semble ici inaproprié). Ce résumé vaut commentaire tant l'explicitation des détours de ces œuvres ne peut être que le récit d'une écriture.</p>
+													<p>Si, comme l'ensemble des critiques au sein de Pour un nouveau roman, le texte semble une digression dans l'économie de la démonstration, cette digression elle-même puisqu'elle est assemblée au recueil vaut d'emblée aux yeux du lecteur illustration des thèses.</p>
+													<p>Que nous démontre la lecture de Pinget que nous livre Robbe-Grillet ? Robbe-Grillet ne tire aucune conclusion dans cet article, cependant la relative inanité de l'exercice auquel il se livre ici, dénouer le fil de l'aventure, semble la meilleure incarnation possible des thèses exposées dans « De quelques notions périmées » : son analyse du personnage de Renard, le récit insaisiçable se veulent les preuves que le discours habituel de la critique n'a pas prise sur les œuvres du nouveau roman (et peut-être Robbe-Grillet non plus). Enfin il convient de souligner que l'article souvre sur l'assertion initiale déplorant le fait que les œuvres de Pinget passe inaperçu. Outre le fait que cette affirmation semble corroborer les propos que Robbe-Grillet tient également dans «XXX», il n'est sans doute pas anodin que l'éditeur Robbe-Grillet publie à propos de Pinget publié chez Minuit.</p></xsl:when>
 												<xsl:when test="$content='ch11'"></xsl:when>
 												<xsl:when test="$content='ch12'"></xsl:when>
 												<xsl:when test="$content='ch13'"></xsl:when>
