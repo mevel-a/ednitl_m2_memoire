@@ -453,3 +453,7 @@ div.STDtop{
 	font-weight: bold;
 /*	border-radius: 50%;*/
 }
+div.STDtop a{
+	text-decoration: none;
+	color: inherit;
+}
