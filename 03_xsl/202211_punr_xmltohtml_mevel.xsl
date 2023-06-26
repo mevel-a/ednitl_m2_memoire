@@ -230,9 +230,9 @@
 											<summary>Introduction</summary>
 											<xsl:choose>
 												<xsl:when test="$content='ch01'">
-													<p>Premier texte du recueil, cet article est identifiée par Galia <span class="STDsc">Yanoshevsky</span> comme une réécriture augmentée des articles « Il écrit comme Stendhal » publié le 25 octobre 1955 dans <span class="STDitalic">L'Express</span> et « La littérature, aujourd'hui - VI » publié dans le numéro 14 de <span span="STDitalic">Tel Quel</span> en 1963. Outre sa fonction de seuil et d'introduction aux écrits théoriques qui suivent ce texte place les jalons de la rhétorique de Robbe-Grillet.</p>
+													<p>Premier texte du recueil, cet article est identifiée par Galia <span class="STDsc">Yanoshevsky</span> comme une réécriture augmentée des articles « Il écrit comme Stendhal » publié le 25 octobre 1955 dans <span class="STDitalic">L'Express</span> et « La littérature, aujourd'hui - VI » publié dans le numéro 14 de <span class="STDitalic">Tel Quel</span> en 1963. Outre sa fonction de seuil et d'introduction aux écrits théoriques qui suivent ce texte place les jalons de la rhétorique de Robbe-Grillet.</p>
 													
-													<p>Se plaignant de la récéption de ses œuvres puis des articles publiés dans <span class="STDitalic">L'Express</span> qui sont depuis devenus le présent recueil, Robbe-Grillet se positionne comme tenant du bon sens : il n'est pas un théoricien par vocation mais par réaction. Il ne s'agit pas tant de produire une nouvelle théorie que d'« éclair[er] davantage les éléments qui avaient été les plus négligés par les critiques, ou les plus distordus », combattre les « mythes du XIXe siècle » et de « tente[r] de préciser quelques contours ». Ce faisant Robbe-Grillet se place en moderne (hériter d'une tradition vivante qu'il commence d'esquisser ici) en opposition aux tenants d'une tradition « immobile, figée » voire « nuisible ». Contre les critiques, contre Sartre, Robbe-Grillet défend (non pas « un ») mais l'« exercice problématique de la littérature » qui constitue, avec le rejet d'une écriture traditionaliste décriée comme relevant d'un pastiche éculéeNBP et avec la condamnation d'une critique psychologisante, le premier jalon théorique de l'ouvrage et une véritable définition du rôle de la littérature complétée au fil du recueil.</p>
+													<p>Se plaignant de la récéption de ses œuvres puis des articles publiés dans <span class="STDitalic">L'Express</span> qui sont depuis devenus le présent recueil, Robbe-Grillet se positionne comme tenant du bon sens : il n'est pas un théoricien par vocation mais par réaction. Il ne s'agit pas tant de produire une nouvelle théorie que d'« éclair[er] davantage les éléments qui avaient été les plus négligés par les critiques, ou les plus distordus », combattre les « mythes du XIXe siècle » et de « tente[r] de préciser quelques contours ». Ce faisant Robbe-Grillet se place en moderne (hériter d'une tradition vivante qu'il commence d'esquisser ici) en opposition aux tenants d'une tradition « immobile, figée » voire « nuisible ». Contre les critiques, contre Sartre, Robbe-Grillet défend (non pas « un ») mais l'« exercice problématique de la littérature » qui constitue, avec le rejet d'une écriture traditionaliste décriée comme relevant d'un pastiche éculée et avec la condamnation d'une critique psychologisante, le premier jalon théorique de l'ouvrage et une véritable définition du rôle de la littérature complétée au fil du recueil.</p>
 													
 													<p>Notons enfin une technique usuelle chez Robbe-Grillet consistant à vider l'argumentation en limitant autant que possible la portée de ces écrits théoriques, si l'on aurait tord de considérer que Robbe-Grillet s'autorise ici à se contredire, il est juste de constater qu'il prend soin de se dégager un espace entre sa pratique littéraire et sa pratique théorique dans lequel le lecteur devrait l'autoriser à rafiner sa pensée, la préciser et sans rien renier du cheminement lui-même, en retrancher quelques passages.</p>
 												</xsl:when>
@@ -279,8 +279,46 @@
 								</div>
 							</xsl:when>
 							<xsl:when test="$content='home'">
-								<article>
-									<xsl:apply-templates select="//publicationStmt[1]"/>
+								<article class="comment">
+									<section>
+										<p>Ce site est une édition critique et numérique de <span class="STDitalic">Pour un nouveau roman</span> publié en 1963 par Alain Robbe-Grillet réalisée par Adrien Mével étudiant de Master 2 Lettres modernes « Éditions Numériques et Imprimées de Textes Littéraires », année universitaire 2022-2023, dans le cadre d'un travail de recherche encadré par Mme Florence <span class="STDsc">de Chalonge</span> et M. Matthieu <span class="STDsc">Marchal</span>.</p>
+										<p>Produite à partir d'un encodage xml-tei, cette édition a l'ambition de replacer l'œuvre dans son contexte et ses cotextes, questionnant l'objet éditorial lui-même (<span class="STDitalic">Pour un nouveau roman</span> est un reccueil d'articles précédemment publié dans divers journaux et revues réunis) et la représentation que cette œuvre véhicule de la tradition littéraire et de son environnement critique et littéraire contemporain.</p>
+									</section>
+									<section>
+										<h3>La version juin 2023 contient :</h3>
+										<ul>
+											<li>l'ensemble du texte</li>
+											<li>l'architecture du site qui sera amené à être enrichi</li>
+											<li>la possibilité de faire apparaître ou non les numéros de page au sein du texte (le bouton est sur la gauche)</li>
+											<li>les éléments &lt;ref&gt; (soit les références) signalés par une infobulle jusqu'à la section <a href="punr_ch05.html">« Éléments d'une anthologie moderne »</a>.</li>
+											<li>les éléments &lt;w&gt; (soit les termes des index thématiques) encodés jusqu'à la section <a href="punr_ch05.html">« Éléments d'une anthologie moderne »</a>.</li>
+											<li>les éléments &lt;quote&gt; (soit les citations) repérés sur l'ensemble du recueil et les élémnents &lt;quote&gt; issus des œuvres de Robert Pinget de la section <a href="punr_ch10.html">« Un roman qui s'invente lui-même »</a> en contexte.</li>
+											<li>une <a href="{$db_link}">illustration de la base de données</a> proche de sa version définitive.
+											<ul><li>La page est un peu longue à charger et nécessite (contrairement aux autres) d'être connecté à internet.</li></ul></li>
+											<li>des introductions, qui seront amenées à être complétées, voire remaniées aux articles : 
+											<ul>
+												<li><a href="punr_ch01.html">« À quoi servent les théories »</a></li>
+												<li><a href="punr_ch02.html">« Une voie pour le roman futur »</a></li>
+												<li><a href="punr_ch03.html">«Sur quelques notions périmées  »</a></li>
+												<li><a href="punr_ch04.html">« Nature, humanisme, tragédie »</a></li>
+												<li><a href="punr_ch05.html">« Éléments d’une anthologie moderne »</a></li>
+												<li><a href="punr_ch10.html">« Un roman qui s'invente lui-même »</a></li>
+											</ul></li>
+											<li>une première version des <a href="{$index_link}">index des notions adverses et des expressions préférées</a></li>
+											<!--<li></li>
+											<li></li>-->
+										</ul>
+										<h3>Y sera ajouté :</h3>
+										<ul>
+											<li>les contextes des citations des œuvres de Sartre</li>
+											<li>une chronologie et d'autres commentaires thématiques</li>
+											<li>l'index des notions, en contexte plutôt que seule</li>
+											<li>les éléments &lt;ref&gt; pleinement encodés sur l'ensemble du recueil</li>
+											<li>des notes explicatives, en infobulles</li>
+											<li>une navigation par "élément rhétorique" au sein des articles</li>
+											<li>une bibliographie</li>
+										</ul>
+									</section>
 								</article>
 							</xsl:when>
 							<xsl:when test="$content='pres'">
@@ -294,7 +332,7 @@
 							</xsl:when>
 							<xsl:when test="$content='index'">
 								<article class="index">
-									<section class="intro">intro goes here</section>
+									<section class="intro"><p></p></section>
 <!--									<div class="separ"/>-->
 									<section class="index bad">
 										<h2>Index des notions adverses</h2>

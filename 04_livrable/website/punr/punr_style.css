@@ -142,6 +142,9 @@ article{
 	align-self: center;
 /*	margin-left: 200px;*/
 }
+article.comment{
+	margin-left: 5%;
+}
 
 footer{
 	display: flex;

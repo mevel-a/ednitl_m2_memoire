@@ -246,7 +246,13 @@
 				<xsl:otherwise>9</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<ref type="{@type}" cRef="{translate(lower-case(@cRef),'ëéêèöï','eeeeoi')}" cert="{$cert}"><xsl:apply-templates/></ref>
+		<xsl:variable name="ana">
+			<xsl:choose>
+				<xsl:when test="@ana"><xsl:value-of select="@ana"/></xsl:when>
+				<xsl:otherwise>mAxiologicStatus</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<ref type="{@type}" cRef="{translate(lower-case(@cRef),'ëéêèöï','eeeeoi')}" cert="{$cert}" ana="{$ana}"><xsl:apply-templates/></ref>
 	</xsl:template>
 
 
