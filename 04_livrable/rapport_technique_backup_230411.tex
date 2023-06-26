@@ -144,7 +144,10 @@ Enfin, toujours dans un souci d'offrir la lecture la plus agréable possible, no
 
 Nous nous proposions de fournir pour les articles une table des matières qui permettrait de «~piocher~» dans le recueil des passages de la pensée de Robbe-Grillet. Ces renvois ne sont pas encore implémentés mais le seront prochainement (voir~: \ref{encMilestone}).
 
-Les glossaires des concepts adverses et des expressions privilégiées ne sont pas encore implémentés. Nous savons cependant déjà comment ils le seront (voir \ref{encW}). Ces deux index seront deux pages du site que le lecteur retrouvera dans un menu déroulant de la navigation en haut de page «~Commentaires thématiques~», après une courte introduction chacun des termes utilisés sera listé avec une mention de page et en un clic sur le terme, le lecteur pourra être redirigé vers la mention. Si aucun des termes ne fera l'objet d'un commentaire spécifique, une introduction générale aux index sera intégrée. Cette introduction servira à présenter cette part du travail et également à délivrer un commentaire sur l'aspect stylistique ici mis en valeur. Il ne nous a pas semblé opportun d'ajouter un commentaire pour chaque terme, d'une part car ces termes sont rarement en eux-mêmes des termes difficiles («~personnage~», «~intrigue~» etc.) et d'autre part car un renvoi vers le passage du texte où le terme est employé nous semblait un outil bien plus intéressant autant pour le lecteur expert que pour le lecteur néophyte.
+Les glossaires des concepts adverses et des expressions privilégiées ne sont pas encore pleinement implémentés. D'une part l'encodage n'est pas terminé et d'autre part, la version actuelle ne liste que les expressions elle-mêmes, dans une version ultérieure l'encodage sera modifié afin d'afficher le contexte des expressions, permettant au lecteur de mieux saisir le sens des expressions (le terme «~vrai~» seul a moins d'intérêt que l'expression «~écrire de "vrai" roman~». %Nous savons cependant déjà comment ils le seront (voir \ref{encW}).
+ Ces deux index sont deux pages du site que le lecteur trouve dans un menu déroulant de la navigation en haut de page «~Commentaires thématiques~». Après une courte introduction chacun des termes utilisés sera listé avec une mention de page et en un clic sur le terme, le lecteur pourra être redirigé vers la mention. Si aucun des termes ne fera l'objet d'un commentaire spécifique, une introduction générale aux index sera intégrée. Cette introduction servira à présenter cette part du travail et également à délivrer un commentaire sur l'aspect stylistique ici mis en valeur. Il ne nous a pas semblé opportun d'ajouter un commentaire pour chaque terme, d'une part car ces termes sont rarement en eux-mêmes des termes difficiles («~personnage~», «~intrigue~» etc.) et d'autre part car un renvoi vers le passage du texte où le terme est employé nous semblait un outil bien plus intéressant autant pour le lecteur expert que pour le lecteur néophyte.
+
+%ajouter le passage sur les choix car ARG != systématique
 
 
 
@@ -456,7 +459,7 @@ sera d'une part nécessaire à la bonne exécution du script (le lien hypertexte
 
 
 %À mettre à l'endroit encodage
-\label{encW} Les expressions devant figurer dans ces index seront encodées en tant que <w/>, "\textit{word}" et munies d'attributs @type dont les valeurs "0" ou "1" orienteront grâce à la transformation XSL (voir~: \ref{ref:xsl_gen}), le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement.
+\label{encW} Les expressions devant figurer dans ces index seront encodées en tant que <w/>, "\textit{word}" et  si ces éléments sont pour l'instant munis d'attributs @type dont les valeurs "0" ou "1" oriente grâce à la transformation XSL (voir~: \ref{ref:xsl_gen}), le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement~; la version finale verra l'attribut @type remonter sur un élément <ab/>, \textit{arbitrary segment}, qui englobera l'expression et son contexte. Au sein de son contexte, l'expression sera mise en valeur afin d'être clairement visible.
 
 \section{Vers l'édition numérique : transformation XSL}
 \label{ref:xsl_gen}
