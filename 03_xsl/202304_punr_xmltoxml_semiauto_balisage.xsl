@@ -262,11 +262,23 @@
 					<xsl:attribute name="type" select="@type"/>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:attribute name="type" select="descendant::term/@type"/>
+					<xsl:attribute name="type" select="descendant::term[1]/@type"/>
 				</xsl:otherwise>
 			</xsl:choose>
 			<xsl:apply-templates/>
 		</xsl:element>
+	</xsl:template>
+	<xsl:template match="term">
+		<xsl:variable name="type">
+			<xsl:choose>
+				<xsl:when test="@type">
+					<xsl:value-of select="@type"/>
+				</xsl:when>
+				<xsl:otherwise>deleteMe</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:if test="not(ancestor::span)"><xsl:comment>SPANmeMATE</xsl:comment></xsl:if>
+		<term type="{$type}"><xsl:apply-templates/></term>
 	</xsl:template>
 	<xsl:template match="w">
 		<xsl:element name="term">
@@ -275,7 +287,10 @@
 			</xsl:if>
 			<xsl:apply-templates/>
 		</xsl:element>
-<!--		230630 Il y a 246 <W/> to convert-->
+<!--		230630 Il y a 246 <W/> to convert
+		230630 il y a maintenant 246 <term/>
+				- 1 (l. 259 car fakecit)
+				- ATTENTION CHECK L262 PLUSIEURS <term/> <span/>-->
 	</xsl:template>
 
 
