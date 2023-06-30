@@ -254,6 +254,29 @@
 		</xsl:variable>
 		<ref type="{@type}" cRef="{translate(lower-case(@cRef),'ëéêèöï','eeeeoi')}" cert="{$cert}" ana="{$ana}"><xsl:apply-templates/></ref>
 	</xsl:template>
+	
+	<xsl:template match="span">
+		<xsl:element name="{local-name()}">
+			<xsl:choose>
+				<xsl:when test="@type">
+					<xsl:attribute name="type" select="@type"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:attribute name="type" select="descendant::term/@type"/>
+				</xsl:otherwise>
+			</xsl:choose>
+			<xsl:apply-templates/>
+		</xsl:element>
+	</xsl:template>
+	<xsl:template match="w">
+		<xsl:element name="term">
+			<xsl:if test="@type">
+				<xsl:attribute name="type" select="@type"/>
+			</xsl:if>
+			<xsl:apply-templates/>
+		</xsl:element>
+<!--		230630 Il y a 246 <W/> to convert-->
+	</xsl:template>
 
 
 	<!--	# quote @corresp="toDefine" @cert="mReferenceStatus" @ana="mAxiologicStatus" @type="ttNature"-->
@@ -323,7 +346,7 @@
 	-->
 	<xd:doc>
 		<xd:desc>
-			<xd:p>Template de traitement des "subsection_head", supprime les capitales de mise en forme (au demeurant peu élégante), rétablit les majuscules au nom propres et à la première lettre du titre. Pour ce faire le template teste via paramètre s'il s'agit de la première ligne d'un titre ou de la seconde (= un second élément dont la première lettre serait mise en capitale sinon) et ajoute un espace s'il s'agit de la deuxième ligne. </xd:p>
+			<xd:p>Template de traitement des "subsection_head", supprime les capitales de mise en forme (au demeurant peu élégantes), rétablit les majuscules au nom propres et à la première lettre du titre. Pour ce faire le template teste via paramètre s'il s'agit de la première ligne d'un titre ou de la seconde (= un second élément dont la première lettre serait mise en capitale sinon) et ajoute un espace s'il s'agit de la deuxième ligne. </xd:p>
 		</xd:desc>
 		<xd:param name="originalString">la string originale envoyé depuis le template gérant les head</xd:param>
 		<xd:param name="second">s'il s'agit du deuxième élément d'un même titre de sous-section (une deuxième ligne), contient '1' envoyé depuis le template gérant les head</xd:param>

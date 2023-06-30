@@ -337,13 +337,15 @@
 									<section class="index bad">
 										<h2>Index des notions adverses</h2>
 										<ul>
-											<xsl:apply-templates select="//w[@type='0']" mode="adv_index"/>
+											<xsl:apply-templates select="//term[@type='0']" mode="adv_index"/>
+<!--											<xsl:apply-templates select="//span[@type='0']" mode="adv_index"/>-->
 										</ul>
 									</section>
 									<section class="index">
 										<h2>Index des expressions préférées</h2>
 										<ul>
-											<xsl:apply-templates select="//w[@type='1']" mode="pref_index"/>
+											<xsl:apply-templates select="//term[@type='1']" mode="pref_index"/>
+											<!--<xsl:apply-templates select="//span[@type='1']" mode="adv_index"/>-->
 										</ul>
 									</section>
 								</article>
@@ -437,17 +439,41 @@
 	</xsl:template>
 	
 <!--	Index des notions adverses-->
-	<xsl:template match="w[@type='0']" mode="adv_index">
+	<xsl:template match="term[@type='0']" mode="adv_index">
 		<xsl:param name="ch" select="ancestor::div[@type='pagechap']/@xml:id"/>
 		<xsl:param name="pn" select="preceding::pb[1]/@n"/>
 		<li><xsl:apply-templates/><span class="STDgray"> ; [<a target="blanck" href="{concat('punr_',$ch,'.html#page_',$pn)}"><xsl:value-of select="preceding::pb[1]/@n"/></a>]</span></li>
 	</xsl:template>
+	
+	
 <!--	Index des formulées préférées-->
-	<xsl:template match="w[@type='1']" mode="pref_index">
+	<xsl:template match="term[@type='1']" mode="pref_index">
 		<xsl:param name="ch" select="ancestor::div[@type='pagechap']/@xml:id"/>
 		<xsl:param name="pn" select="preceding::pb[1]/@n"/>
 		<li><xsl:apply-templates/><span class="STDgray"> ; [<a target="blanck" href="{concat('punr_',$ch,'.html#page_',$pn)}"><xsl:value-of select="preceding::pb[1]/@n"/></a>]</span></li>
 	</xsl:template>
+	
+	
+	
+<!--	LES DEUX INDEX DES FORMULES ETC. EN V2 AVEC <AB/>-->
+	<xsl:template match="span[@type='0']" mode="adv_index">
+		<xsl:param name="ch" select="ancestor::div[@type='pagechap']/@xml:id"/>
+		<xsl:param name="pn" select="preceding::pb[1]/@n"/>
+		<li><xsl:apply-templates mode="adv_index"/><span class="STDgray"> ; [<a target="blanck" href="{concat('punr_',$ch,'.html#page_',$pn)}"><xsl:value-of select="preceding::pb[1]/@n"/></a>]</span></li>
+	</xsl:template>
+	<xsl:template match="span[@type='1']" mode="pref_index">
+		<xsl:param name="ch" select="ancestor::div[@type='pagechap']/@xml:id"/>
+		<xsl:param name="pn" select="preceding::pb[1]/@n"/>
+		<li><xsl:apply-templates mode="pref_index"/><span class="STDgray"> ; [<a target="blanck" href="{concat('punr_',$ch,'.html#page_',$pn)}"><xsl:value-of select="preceding::pb[1]/@n"/></a>]</span></li>
+	</xsl:template>
+	<xsl:template match="term" mode="pref_index">
+		<span class="Axi2"><xsl:apply-templates/></span>
+	</xsl:template>
+	<xsl:template match="term" mode="adv_index">
+		<span class="Axi0"><xsl:apply-templates/></span>
+	</xsl:template>
+	
+	
 	
 	
 <!--	MODE CORPUS, gère mise en forme du corpus
