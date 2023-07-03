@@ -214,6 +214,7 @@ h3{
 	font-variant: small-caps;
 	text-align: center;
 }
+.intro h3{text-align:left;}
 h4{
 	font-style: italic;
 	font-weight: bold;
@@ -282,6 +283,15 @@ a.following{
 /*intro des articles*/
 details p {
 	font-size: 11pt;
+}
+.intro details p {
+	font-size: 14pt;
+}
+summary{
+	font-size: 20pt;
+	font-family: 'Source Code Pro', helvetica, sans-serif !important;
+	font-variant: small-caps;
+	text-align: left;
 }
 
 /*to check use, callage ? saut sémantique ?

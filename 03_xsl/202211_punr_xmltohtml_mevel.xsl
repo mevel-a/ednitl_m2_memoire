@@ -304,15 +304,19 @@
 												<li><a href="punr_ch05.html">« Éléments d’une anthologie moderne »</a></li>
 												<li><a href="punr_ch10.html">« Un roman qui s'invente lui-même »</a></li>
 											</ul></li>
-											<li>une première version des <a href="{$index_link}">index des notions adverses et des expressions préférées</a></li>
+											<li>les <a href="{$index_link}">index des notions adverses et des expressions préférées</a></li>
 											<!--<li></li>
 											<li></li>-->
 										</ul>
 										<h3>Y sera ajouté :</h3>
 										<ul>
 											<li>les contextes des citations des œuvres de Sartre</li>
-											<li>une chronologie et d'autres commentaires thématiques</li>
-											<li>l'index des notions, en contexte plutôt que seule</li>
+											<li>une chronologie et d'autres commentaires thématiques
+											<ul>
+												<li>commentaire vis à vis de Sartre, l'esthétique d'ARG</li>
+												<li>sur les index, commentaire des termes non retenus etc...</li>
+												<li>la rhétorique d'ARG</li>
+											</ul></li>
 											<li>les éléments &lt;ref&gt; pleinement encodés sur l'ensemble du recueil</li>
 											<li>des notes explicatives, en infobulles</li>
 											<li>une navigation par "élément rhétorique" au sein des articles</li>
@@ -332,20 +336,28 @@
 							</xsl:when>
 							<xsl:when test="$content='index'">
 								<article class="index">
-									<section class="intro"><p></p></section>
+									<section class="intro">
+										<h2>Introduction aux index</h2>
+										<p></p>
+										<details><summary>Méthode d'encodage</summary>
+											<p>Les expressions devant figurer dans ces index seront encodées en tant que <term/>, "terme (considéré technique)" et  si ces éléments sont pour l'instant munis d'attributs @type dont les valeurs "0" ou "1" oriente grâce à la transformation XSL, le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement~; la version finale verra l'attribut @type remonter sur un élément <span/>, "morceau du texte lié à une interprétation", qui englobera l'expression et son contexte. Au sein de son contexte, l'expression sera mise en valeur afin d'être clairement visible.</p>
+											<p>Dans une version précédente soumise à évaluation nous nous proposions d'encoder ces éléments avec le couple <w/> "<span class="STDitalic">word</span>" et <ab/> "<span class="STDitalic">arbitrary segment</span>". Cette solution a finalement était rejeté car elle n'était pas valide en xml-tei. Aussi nous sommes-nous orientés vers des éléments plus spécifiques~: employant des chercher/remplacer pour remplacer tous les élémnents <w/> déjà placé en élément <term/></p></details>
+										<!--<h3>Méthode d'encodage</h3>
+										<p></p>-->
+									</section>
 <!--									<div class="separ"/>-->
 									<section class="index bad">
 										<h2>Index des notions adverses</h2>
 										<ul>
-											<xsl:apply-templates select="//term[@type='0']" mode="adv_index"/>
-<!--											<xsl:apply-templates select="//span[@type='0']" mode="adv_index"/>-->
+<!--											<xsl:apply-templates select="//term[@type='0']" mode="adv_index"/>-->
+											<xsl:apply-templates select="//span[@type='0']" mode="adv_index"/>
 										</ul>
 									</section>
 									<section class="index">
 										<h2>Index des expressions préférées</h2>
 										<ul>
-											<xsl:apply-templates select="//term[@type='1']" mode="pref_index"/>
-											<!--<xsl:apply-templates select="//span[@type='1']" mode="adv_index"/>-->
+<!--											<xsl:apply-templates select="//term[@type='1']" mode="pref_index"/>-->
+											<xsl:apply-templates select="//span[@type='1']" mode="pref_index"/>
 										</ul>
 									</section>
 								</article>
@@ -439,19 +451,19 @@
 	</xsl:template>
 	
 <!--	Index des notions adverses-->
-	<xsl:template match="term[@type='0']" mode="adv_index">
+	<!--<xsl:template match="term[@type='0']" mode="adv_index">
 		<xsl:param name="ch" select="ancestor::div[@type='pagechap']/@xml:id"/>
 		<xsl:param name="pn" select="preceding::pb[1]/@n"/>
 		<li><xsl:apply-templates/><span class="STDgray"> ; [<a target="blanck" href="{concat('punr_',$ch,'.html#page_',$pn)}"><xsl:value-of select="preceding::pb[1]/@n"/></a>]</span></li>
 	</xsl:template>
 	
 	
-<!--	Index des formulées préférées-->
+<!-\-	Index des formulées préférées-\->
 	<xsl:template match="term[@type='1']" mode="pref_index">
 		<xsl:param name="ch" select="ancestor::div[@type='pagechap']/@xml:id"/>
 		<xsl:param name="pn" select="preceding::pb[1]/@n"/>
 		<li><xsl:apply-templates/><span class="STDgray"> ; [<a target="blanck" href="{concat('punr_',$ch,'.html#page_',$pn)}"><xsl:value-of select="preceding::pb[1]/@n"/></a>]</span></li>
-	</xsl:template>
+	</xsl:template>-->
 	
 	
 	
