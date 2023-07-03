@@ -615,6 +615,14 @@
 	</xsl:template>
 	
 	
+<!--	MILESTONE AJOUT DU 230703-->
+	<xsl:template match="milestone" mode="corpus">
+		<a id="{@id}" class="{local-name()}"/>
+<!--		+ un autre attribut qui contient ce que JS récupère en paramètre mais on sait pas encore lequel et that's suck. Ou alors @id != généré auto et c'est @id qui fait double emploi en servant à reconstitué une string ==> js traite la string et ça c'est relou ++-->
+	</xsl:template>
+<!--	FIN FIN AJOUT DU 230703-->
+	
+	
 <!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI-->
 	<!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI-->
 	<!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI--><!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI--><!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI--><!--	LES EXTRAITS CITÉS SONT GÉRÉS ICI-->

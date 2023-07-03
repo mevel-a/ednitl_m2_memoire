@@ -268,6 +268,34 @@
 			<xsl:apply-templates/>
 		</xsl:element>
 	</xsl:template>
+	
+<!--	AJOUT DU 230703-->
+<!--		génére id pour milestone et recréé l'élément en gérant le pb xml:id
+			Par ailleurs, ces éléments seront transformés en <a id="@" class="milestone">-->
+	<xsl:template match="milestone">
+		<xsl:element name="{local-name()}">
+			<xsl:if test="not(@id)">
+				<xsl:attribute name="xml:id" select="generate-id()"/>
+			</xsl:if>
+			<xsl:for-each select="@*">
+				<xsl:choose>
+					<xsl:when test="local-name() = 'id'">
+						<xsl:attribute name="xml:id">
+							<xsl:value-of select="."/>
+						</xsl:attribute>
+					</xsl:when>
+<!--					<xsl:when test=></xsl:when>-->
+					<xsl:otherwise>
+						<xsl:attribute name="{local-name()}">
+							<xsl:value-of select="."/>
+						</xsl:attribute>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:for-each>
+			<xsl:apply-templates/>
+		</xsl:element>
+	</xsl:template>
+<!--	FIN AJOUT DU 230703-->
 	<xsl:template match="term">
 		<xsl:variable name="type">
 			<xsl:choose>

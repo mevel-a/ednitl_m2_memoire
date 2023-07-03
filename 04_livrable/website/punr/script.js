@@ -91,6 +91,38 @@ function darkmode () {
 // 	}
 // }
 
+
+
+
+// VERSION OUTDATÉE QUI SERT PLUS À RIEN
+	// doit pouvoir servir aux milestones
+		// repère span class=milestone, et récupère en paramètre une string généré dans l'appel fonction via xsl
+		//  les ids sont générées par xsl et récupéré en JS pour faire les liens.
+		// fouttre une id rhetoNav sur un nouvelle navigation dans le texte
+				// 230703 ON NE SAIT PAS Où METTRE LE @RHETOstep dans l'html, xml=ana mais html ?
+function rhetoNav(rhetoStep){
+	var milestone=document.getElementsByClassName('milestone');
+	var nav=document.getElementById('rhetoNav');
+	for (var milestones of milestone){
+		let att=document.createAttribute('href');
+		att.value=milestones.getAttribute('id');
+		att.value='#'+att.value;
+
+
+		let li=document.createElement('li');
+		let a =document.createElement('a');
+		a.setAttributeNode(att);
+
+		// this need to change
+			//  get le param 
+		// let textmilestone=document.createTextNode(rhetoStep);
+
+		a.appendChild(rhetoStep);
+		li.appendChild(a);
+		nav.appendChild(li);
+	}
+}
+
 // function autonavh4(){
 // 	var h4=document.getElementsByTagName('h4');
 // 	var nav=document.getElementById('articlenav');
