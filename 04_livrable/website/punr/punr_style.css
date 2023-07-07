@@ -172,6 +172,8 @@ button.darkbutton{
 	background-color: inherit;
 	cursor: pointer;
 	box-shadow: #666 1px 1px 0px;
+	margin: 5px;
+	width: 80%;
 }
 
 div.legals img{
@@ -192,6 +194,11 @@ article.index{
 }
 section.intro{
 	width: 100%;
+	margin-bottom: 60px;
+}
+
+.index section.intro{
+	width: 50%;
 	margin-bottom: 60px;
 }
 section.index{
@@ -323,11 +330,11 @@ p{
 	text-indent: 60px;
 }
 .quote{
-	color:#00f;
+/*	color:#00f;*/
 	cursor: pointer;
 }
 .ref{
-	color: #0f0;
+/*	color: #0f0;*/
 	cursor: pointer;
 	position:relative;
 }
@@ -412,6 +419,11 @@ section.extract_section{
 .editor{
 	font-size: 9pt;
 	text-indent: 5px;
+}
+
+.milestone{
+	font-size: 20pt;
+	color: #f0f;
 }
 
 

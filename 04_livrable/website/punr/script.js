@@ -3,6 +3,15 @@ function initialise(){
 	let body= document.getElementsByTagName('body')[0];
 	var punrtheme=localStorage.getItem('punrTheme');
 	let refinfos=document.getElementsByClassName('refinfo');
+// trouve les page begining
+	let pbs=document.getElementsByClassName('pb');
+// trouve les quote
+	let Quotes=document.getElementsByClassName('quote');
+// trouve les ref
+	let refs=document.getElementsByClassName('ref');
+// trouver les milestone
+	let milestones=document.getElementsByClassName('milestone');
+
 	if (punrtheme=='dark') {
 		body.setAttribute('class','darkmode');
 		localStorage.setItem('punrTheme','dark');
@@ -19,6 +28,31 @@ function initialise(){
 		}
 		
 	}else{hidePb();}
+
+
+	var refDis=localStorage.getItem('displayRef');
+	if(refDis=='yes'){
+		for (var i = refs.length-1; i >= 0; i--){
+			refs[i].style.color='#0f0';
+			localStorage.setItem('displayRef','yes');
+		}
+	}else{hideRef();}
+
+	var QuoteDis=localStorage.getItem('displayQuote');
+	if(QuoteDis=='yes'){
+		for (var i = Quotes.length-1; i >= 0; i--){
+			Quotes[i].style.color='#00f';
+			localStorage.setItem('displayQuote','yes');
+		}
+	}else{hideQuote();}
+
+	var milestoneDis=localStorage.getItem('displayMilestone');
+	if(milestoneDis=='yes'){
+		for(var i=milestones.length-1;i>=0;i--){
+			milestones[i].innerHTML='*';
+			localStorage.setItem('displayRef','yes');
+		}
+	}else{hideMilestone();}
 }
 
 
@@ -44,6 +78,77 @@ function hidePb(){
 	}
 		localStorage.removeItem('displayPb');
 }
+
+
+
+// fonction pour afficher les enrichissement de couleurs des éléments REF
+function displayRef(){
+	let refs=document.getElementsByClassName('ref');
+	var refDis=localStorage.getItem('displayRef');
+	
+	if(refDis=='yes'){
+		hideRef();
+		
+	}else{
+		for (var i = refs.length-1; i >= 0; i--){
+			refs[i].style.color='#0f0';
+			localStorage.setItem('displayRef','yes');
+		}
+	}
+}
+function hideRef(){
+	let refs=document.getElementsByClassName('ref');
+	for (var i = refs.length-1; i >= 0; i--) {
+		refs[i].style.color='inherit';
+	}
+		localStorage.removeItem('displayRef');
+}
+
+// fonction pour afficher les enerichissement des couelrus des éléments quote
+function displayQuote(){
+	let Quotes=document.getElementsByClassName('quote');
+	var QuoteDis=localStorage.getItem('displayQuote');
+	
+	if(QuoteDis=='yes'){
+		hideQuote();
+		
+	}else{
+		for (var i = Quotes.length-1; i >= 0; i--){
+			Quotes[i].style.color='#00f';
+			localStorage.setItem('displayQuote','yes');
+		}
+	}
+}
+function hideQuote(){
+	let Quotes=document.getElementsByClassName('quote');
+	for (var i = Quotes.length-1; i >= 0; i--) {
+		Quotes[i].style.color='inherit';
+	}
+		localStorage.removeItem('displayQuote');
+}
+// fonction pour afficher les milestone
+function displayMilestone(){
+	let milestones=document.getElementsByClassName('milestone');
+	var milestoneDis=localStorage.getItem('displayMilestone');
+	if(milestoneDis=='yes'){
+		hideMilestone();
+	}else{
+		for(var i=milestones.length-1;i>=0;i--){
+			milestones[i].innerHTML='*';
+			localStorage.setItem('displayMilestone','yes');
+
+		}
+	}
+}
+function hideMilestone(){
+	let milestones=document.getElementsByClassName('milestone');
+	for(var i=milestones.length-1;i>=0;i--){
+			milestones[i].innerHTML='';
+		}
+	localStorage.removeItem('displayMilestone');
+
+}
+
 
 
 function darkmode () {
@@ -100,28 +205,28 @@ function darkmode () {
 		//  les ids sont générées par xsl et récupéré en JS pour faire les liens.
 		// fouttre une id rhetoNav sur un nouvelle navigation dans le texte
 				// 230703 ON NE SAIT PAS Où METTRE LE @RHETOstep dans l'html, xml=ana mais html ?
-function rhetoNav(rhetoStep){
-	var milestone=document.getElementsByClassName('milestone');
-	var nav=document.getElementById('rhetoNav');
-	for (var milestones of milestone){
-		let att=document.createAttribute('href');
-		att.value=milestones.getAttribute('id');
-		att.value='#'+att.value;
+// function rhetoNav(rhetoStep){
+// 	var milestone=document.getElementsByClassName('milestone');
+// 	var nav=document.getElementById('rhetoNav');
+// 	for (var milestones of milestone){
+// 		let att=document.createAttribute('href');
+// 		att.value=milestones.getAttribute('id');
+// 		att.value='#'+att.value;
 
 
-		let li=document.createElement('li');
-		let a =document.createElement('a');
-		a.setAttributeNode(att);
+// 		let li=document.createElement('li');
+// 		let a =document.createElement('a');
+// 		a.setAttributeNode(att);
 
-		// this need to change
-			//  get le param 
-		// let textmilestone=document.createTextNode(rhetoStep);
+// 		// this need to change
+// 			//  get le param 
+// 		// let textmilestone=document.createTextNode(rhetoStep);
 
-		a.appendChild(rhetoStep);
-		li.appendChild(a);
-		nav.appendChild(li);
-	}
-}
+// 		a.appendChild(rhetoStep);
+// 		li.appendChild(a);
+// 		nav.appendChild(li);
+// 	}
+// }
 
 // function autonavh4(){
 // 	var h4=document.getElementsByTagName('h4');

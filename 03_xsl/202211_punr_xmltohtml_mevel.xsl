@@ -11,7 +11,7 @@
 		<xd:desc>
 			<xd:p><xd:b>Created on:</xd:b> Nov 27, 2022</xd:p>
 			<xd:p><xd:b>Author:</xd:b> eXu</xd:p>
-			<xd:p>Conçu par Adrien Mével, étudiant en M2 EdNitl à l'Université de Lille dans le cadre d'un travail de recherche (mémoire) sous la direction de Mme Florence de Chalonge pour le versant scientifique et M. Mathieu Marchal pour le versant technique.</xd:p>
+			<xd:p>Conçu par Adrien Mével, étudiant en M2 EdNitl à l'Université de Lille dans le cadre d'un travail de recherche (mémoire) sous la direction de Mme Florence de Chalonge pour le versant scientifique et M. Mathieu Marchal pour +le versant technique.</xd:p>
 			<xd:p>xsl produisant une édition critique et numérique de Pour un nouveau roman d'Alain Robbe-Grillet.</xd:p>
 		</xd:desc>
 	</xd:doc>
@@ -28,6 +28,8 @@
 	
 	<xsl:variable name="index" select="concat($basename,'index.html')"/>
 	<xsl:variable name="index_link" select="'index.html'"/>
+	<xsl:variable name="index0" select="concat($basename,'index0.html')"/>
+	<xsl:variable name="index0_link" select="'index0.html'"/>
 	
 	<xsl:variable name="bib" select="concat($basename,'bibliography.html')"/>
 	<xsl:variable name="bib_link" select="'bibliography.html'"/>
@@ -79,7 +81,8 @@
 					<ol class="chapter_nav" style="list-style:none;">
 						<li><a href="{$db_link}">Illustration de la base de données</a></li>
 						<li><a href="{$tl_link}">Chronologie</a></li>
-						<li><a href="{$index_link}">Index des notions adverses et des expressions préférées</a></li>
+						<li><a href="{$index0_link}">Index des notions adverses </a></li>
+						<li><a href="{$index_link}">Index des expressions privilégiées</a></li>
 					</ol>
 				</li>
 				
@@ -134,14 +137,23 @@
 				<div class="articlenavs">
 					<h5>Au sein de cet article</h5>
 					<button class="darkbutton" onclick="displayPb();">Afficher les pages</button>
-				<xsl:if test="$content='ch03'or$content='ch11'">
-					
+					<button class="darkbutton" onclick="displayRef();">Afficher les références</button>
+					<button class="darkbutton" onclick="displayQuote();">Afficher les citations</button>
+					<button class="darkbutton" onclick="displayMilestone();">Afficher les étapes argumentatives</button>
+<!--					<button class="darkbutton" onclick="displayMilestone();">Afficher les bornes argumentatives</button>-->
+					<xsl:if test="$content='ch03'or$content='ch11'">
 						<h6>Sous-sections</h6>
 						<ul id="articlenav">
 							<!--id inutile conservé pour historique reasons-->
 							<xsl:apply-templates mode="article_nav" select="head[not(@type='subsection_head')]"/>
 						</ul>
-				</xsl:if>
+					</xsl:if>
+					<xsl:if test="contains($content,'ch')">
+						<h6>Structure argumentative</h6>
+						<ul id="rhetonav">
+							<xsl:apply-templates mode="rhetoNav" select="//div[@xml:id=$content]//milestone"/>
+						</ul>
+					</xsl:if>
 					<!--<h6>Structure argumentative</h6>
 			<ol>
 				<xsl:apply-templates select="milestone[ancestor::TEI[@xml:id='punr']]"/>
@@ -156,7 +168,28 @@
 		</xsl:choose>
 		
 	</xsl:template>
-	
+	<xsl:template mode="rhetoNav" match="milestone">
+		<xsl:variable select="@xml:id" name="id"/>
+		<li><a href="{concat('#',$id)}"><xsl:call-template name="rhetoAffect"><xsl:with-param select="@type" name="nature"></xsl:with-param></xsl:call-template></a></li>
+	</xsl:template>
+	<xsl:template name="rhetoAffect">
+		<xsl:param name="nature"/>
+		<xsl:param name="nature_transforme">
+			<xsl:choose>
+				<xsl:when test="contains($nature,'1')">Première </xsl:when>
+				<xsl:when test="contains($nature,'2')">Deuxième </xsl:when>
+				<xsl:when test="contains($nature,'3')">Troisième </xsl:when>
+				<xsl:when test="contains($nature,'4')">Quatrième </xsl:when>
+				<xsl:when test="contains($nature,'5')">Cinquième </xsl:when>
+			</xsl:choose>
+			<xsl:choose>
+				<xsl:when test="contains($nature,'refutation')">réfutation</xsl:when>
+				<xsl:when test="contains($nature,'exposition')">exposition</xsl:when>
+				<xsl:when test="contains($nature,'concession')">concession</xsl:when>
+			</xsl:choose>
+		</xsl:param>
+		<xsl:value-of select="$nature_transforme"/>
+	</xsl:template>
 	<xsl:template mode="article_nav" match="head[ancestor::div[not(@type='subsection')]]">
 		<xsl:param name="section" select="ancestor::div[@type='pagechap']/@xml:id"/>
 		<xsl:param name="head4nav">
@@ -231,7 +264,6 @@
 											<xsl:choose>
 												<xsl:when test="$content='ch01'">
 													<p>Premier texte du recueil, cet article est identifiée par Galia <span class="STDsc">Yanoshevsky</span> comme une réécriture augmentée des articles « Il écrit comme Stendhal » publié le 25 octobre 1955 dans <span class="STDitalic">L'Express</span> et « La littérature, aujourd'hui - VI » publié dans le numéro 14 de <span class="STDitalic">Tel Quel</span> en 1963. Outre sa fonction de seuil et d'introduction aux écrits théoriques qui suivent ce texte place les jalons de la rhétorique de Robbe-Grillet.</p>
-													
 													<p>Se plaignant de la récéption de ses œuvres puis des articles publiés dans <span class="STDitalic">L'Express</span> qui sont depuis devenus le présent recueil, Robbe-Grillet se positionne comme tenant du bon sens : il n'est pas un théoricien par vocation mais par réaction. Il ne s'agit pas tant de produire une nouvelle théorie que d'« éclair[er] davantage les éléments qui avaient été les plus négligés par les critiques, ou les plus distordus », combattre les « mythes du XIXe siècle » et de « tente[r] de préciser quelques contours ». Ce faisant Robbe-Grillet se place en moderne (hériter d'une tradition vivante qu'il commence d'esquisser ici) en opposition aux tenants d'une tradition « immobile, figée » voire « nuisible ». Contre les critiques, contre Sartre, Robbe-Grillet défend (non pas « un ») mais l'« exercice problématique de la littérature » qui constitue, avec le rejet d'une écriture traditionaliste décriée comme relevant d'un pastiche éculée et avec la condamnation d'une critique psychologisante, le premier jalon théorique de l'ouvrage et une véritable définition du rôle de la littérature complétée au fil du recueil.</p>
 													
 													<p>Notons enfin une technique usuelle chez Robbe-Grillet consistant à vider l'argumentation en limitant autant que possible la portée de ces écrits théoriques, si l'on aurait tord de considérer que Robbe-Grillet s'autorise ici à se contredire, il est juste de constater qu'il prend soin de se dégager un espace entre sa pratique littéraire et sa pratique théorique dans lequel le lecteur devrait l'autoriser à rafiner sa pensée, la préciser et sans rien renier du cheminement lui-même, en retrancher quelques passages.</p>
@@ -304,7 +336,8 @@
 												<li><a href="punr_ch05.html">« Éléments d’une anthologie moderne »</a></li>
 												<li><a href="punr_ch10.html">« Un roman qui s'invente lui-même »</a></li>
 											</ul></li>
-											<li>les <a href="{$index_link}">index des notions adverses et des expressions préférées</a></li>
+											<li>les <a href="{$index_link}">index des expressions privilégiées</a></li>
+											<li><a href="{$index0_link}">Index des notions adverses</a></li>
 											<!--<li></li>
 											<li></li>-->
 										</ul>
@@ -317,7 +350,7 @@
 												<li>sur les index, commentaire des termes non retenus etc...</li>
 												<li>la rhétorique d'ARG</li>
 											</ul></li>
-											<li>les éléments &lt;ref&gt; pleinement encodés sur l'ensemble du recueil</li>
+											<!--<li>les éléments &lt;ref&gt; pleinement encodés sur l'ensemble du recueil</li>-->
 											<li>des notes explicatives, en infobulles</li>
 											<li>une navigation par "élément rhétorique" au sein des articles</li>
 											<li>une bibliographie</li>
@@ -334,27 +367,55 @@
 							<xsl:when test="$content='tl'">
 <!--							TIMELINE GOES HERE-->
 							</xsl:when>
+							<xsl:when test="$content='index0'">
+								<article class="index">
+									<section class="intro">
+										<h2>Introduction à l'index des notions adverses</h2>
+										<p></p>
+										<details><summary>Méthode d'encodage</summary>
+											<p>Les expressions devant figurer dans ces index sont encodées en tant que &lt;term/&gt;, « terme (considéré technique) »au sein d'éléments &lt;span&gt; « passage lié à une interprétation », munis d'attributs @type dont les valeurs « 0 » ou « 1 » orientent grâce à la transformation XSL, le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement. Les éléments &lt;span&gt; englobe l"expression et son contexte permettant de l'expliciter (en effet la recension des adjectifs « vrai » ou « difficile »  seuls serait de peu d'intérêt), l'expression encodée en &lt;term&gt; est ensuite mise en valeur via css, en rouge ou vert pour les notions adverses ou les expressions privilégiées respectivement.</p>
+											<p>Dans une version précédente soumise à évaluation nous nous proposions d'encoder ces éléments avec le couple &lt;w/&gt; « <span class="STDitalic">word</span> » et &lt;ab/&gt; « <span class="STDitalic">arbitrary segment</span> ». Cette solution a finalement était rejetée car elle n'était pas valide en xml-tei. Aussi, nous sommes-nous orientés vers des éléments plus spécifiques : employant des chercher/remplacer pour remplacer tous les élémnents &lt;w/&gt; déjà placés en élément &lt;term/&gt;.<br />Enfin, notre transformation xsl de balisage semi-automatique, légèrement modifiée nous permit de faire remonter l'attribut @type placé sur les éléments &lt;w&gt; sur les éléments &lt;span&gt;.</p></details>
+										<!--<h3>Méthode d'encodage</h3>
+										<p></p>-->
+									</section>
+									<!--									<div class="separ"/>-->
+									<section class="index bad">
+										<h2>Index des notions adverses</h2>
+										<ul>
+											<!--											<xsl:apply-templates select="//term[@type='0']" mode="adv_index"/>-->
+											<xsl:apply-templates select="//span[@type='0']" mode="adv_index"/>
+										</ul>
+									</section>
+									<!--<section class="index">
+										<h2>Index des expressions privilégiées</h2>
+										<ul>
+											<!-\-											<xsl:apply-templates select="//term[@type='1']" mode="pref_index"/>-\->
+											<xsl:apply-templates select="//span[@type='1']" mode="pref_index"/>
+										</ul>
+									</section>-->
+								</article>
+							</xsl:when>
 							<xsl:when test="$content='index'">
 								<article class="index">
 									<section class="intro">
-										<h2>Introduction aux index</h2>
+										<h2>Introduction à l'index des expressions privilégiées</h2>
 										<p></p>
 										<details><summary>Méthode d'encodage</summary>
-											<p>Les expressions devant figurer dans ces index seront encodées en tant que <term/>, "terme (considéré technique)" et  si ces éléments sont pour l'instant munis d'attributs @type dont les valeurs "0" ou "1" oriente grâce à la transformation XSL, le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement~; la version finale verra l'attribut @type remonter sur un élément <span/>, "morceau du texte lié à une interprétation", qui englobera l'expression et son contexte. Au sein de son contexte, l'expression sera mise en valeur afin d'être clairement visible.</p>
-											<p>Dans une version précédente soumise à évaluation nous nous proposions d'encoder ces éléments avec le couple <w/> "<span class="STDitalic">word</span>" et <ab/> "<span class="STDitalic">arbitrary segment</span>". Cette solution a finalement était rejeté car elle n'était pas valide en xml-tei. Aussi nous sommes-nous orientés vers des éléments plus spécifiques~: employant des chercher/remplacer pour remplacer tous les élémnents <w/> déjà placé en élément <term/></p></details>
+											<p>Les expressions devant figurer dans ces index sont encodées en tant que &lt;term/&gt;, « terme (considéré technique) »au sein d'éléments &lt;span&gt; « passage lié à une interprétation », munis d'attributs @type dont les valeurs « 0 » ou « 1 » orientent grâce à la transformation XSL, le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement. Les éléments &lt;span&gt; englobe l"expression et son contexte permettant de l'expliciter (en effet la recension des adjectifs « vrai » ou « difficile »  seuls serait de peu d'intérêt), l'expression encodée en &lt;term&gt; est ensuite mise en valeur via css, en rouge ou vert pour les notions adverses ou les expressions privilégiées respectivement.</p>
+											<p>Dans une version précédente soumise à évaluation nous nous proposions d'encoder ces éléments avec le couple &lt;w/&gt; « <span class="STDitalic">word</span> » et &lt;ab/&gt; « <span class="STDitalic">arbitrary segment</span> ». Cette solution a finalement était rejetée car elle n'était pas valide en xml-tei. Aussi, nous sommes-nous orientés vers des éléments plus spécifiques : employant des chercher/remplacer pour remplacer tous les élémnents &lt;w/&gt; déjà placés en élément &lt;term/&gt;.<br />Enfin, notre transformation xsl de balisage semi-automatique, légèrement modifiée nous permit de faire remonter l'attribut @type placé sur les éléments &lt;w&gt; sur les éléments &lt;span&gt;.</p></details>
 										<!--<h3>Méthode d'encodage</h3>
 										<p></p>-->
 									</section>
 <!--									<div class="separ"/>-->
-									<section class="index bad">
+									<!--<section class="index bad">
 										<h2>Index des notions adverses</h2>
 										<ul>
-<!--											<xsl:apply-templates select="//term[@type='0']" mode="adv_index"/>-->
+<!-\-											<xsl:apply-templates select="//term[@type='0']" mode="adv_index"/>-\->
 											<xsl:apply-templates select="//span[@type='0']" mode="adv_index"/>
 										</ul>
-									</section>
+									</section>-->
 									<section class="index">
-										<h2>Index des expressions préférées</h2>
+										<h2>Index des expressions privilégiées</h2>
 										<ul>
 <!--											<xsl:apply-templates select="//term[@type='1']" mode="pref_index"/>-->
 											<xsl:apply-templates select="//span[@type='1']" mode="pref_index"/>
@@ -423,7 +484,7 @@
 		</xsl:call-template>
 		<xsl:call-template name="body">
 			<xsl:with-param name="doc" select="$index"/>
-			<xsl:with-param name="title" select="'index'"/>
+			<xsl:with-param name="title" select="'index des expressions privilégiées'"/>
 			<xsl:with-param name="content" select="'index'"/>
 		</xsl:call-template>
 		<xsl:call-template name="body">
@@ -432,9 +493,9 @@
 			<xsl:with-param name="content" select="'bib'"/>
 		</xsl:call-template>
 		<xsl:call-template name="body">
-			<xsl:with-param name="doc" select="$index"/>
-			<xsl:with-param name="title" select="'Index'"/>
-			<xsl:with-param name="content" select="'index'"/>
+			<xsl:with-param name="doc" select="$index0"/>
+			<xsl:with-param name="title" select="'Index des notions adverses'"/>
+			<xsl:with-param name="content" select="'index0'"/>
 		</xsl:call-template>
 		<!--<xsl:call-template name="body">
 			<xsl:with-param name="doc" select="$"/>
@@ -617,7 +678,7 @@
 	
 <!--	MILESTONE AJOUT DU 230703-->
 	<xsl:template match="milestone" mode="corpus">
-		<a id="{@id}" class="{local-name()}"/>
+		<a id="{@xml:id}" class="{local-name()}"/>
 <!--		+ un autre attribut qui contient ce que JS récupère en paramètre mais on sait pas encore lequel et that's suck. Ou alors @id != généré auto et c'est @id qui fait double emploi en servant à reconstitué une string ==> js traite la string et ça c'est relou ++-->
 	</xsl:template>
 <!--	FIN FIN AJOUT DU 230703-->

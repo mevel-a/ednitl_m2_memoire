@@ -459,9 +459,11 @@ sera d'une part nécessaire à la bonne exécution du script (le lien hypertexte
 
 
 %À mettre à l'endroit encodage
-\label{encW} Les expressions devant figurer dans ces index seront encodées en tant que <term/>, "terme (considéré technique)" et  si ces éléments sont pour l'instant munis d'attributs @type dont les valeurs "0" ou "1" oriente grâce à la transformation XSL (voir~: \ref{ref:xsl_gen}), le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement~; la version finale verra l'attribut @type remonter sur un élément <span/>, "morceau du texte lié à une interprétation", qui englobera l'expression et son contexte. Au sein de son contexte, l'expression sera mise en valeur afin d'être clairement visible.
+\label{encW} Les expressions devant figurer dans ces index sont encodées en tant que <term/>, «~terme (considéré technique)~»au sein d'éléments <span> «~passage lié à une interprétation~», munis d'attributs @type dont les valeurs «~0~» ou «~1~» orientent grâce à la transformation XSL, le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement. Les éléments <span> englobe l"expression et son contexte permettant de l'expliciter (en effet la recension des adjectifs «~vrai~» ou «~difficile~»  seuls serait de peu d'intérêt), l'expression encodée en <term> est ensuite mise en valeur via css, en rouge ou vert pour les notions adverses ou les expressions privilégiées respectivement.
 
-Dans une version précédente soumise à évaluation nous nous proposions d'encoder ces éléments avec le couple <w/> "\textit{word}" et <ab/> "\textit{arbitrary segment}". Cette solution a finalement était rejeté car elle n'était pas valide en xml-tei. Aussi nous sommes-nous orientés vers des éléments plus spécifiques~: employant des chercher/remplacer pour remplacer tous les élémnents <w/> déjà placé en élément <term/>
+Dans une version précédente soumise à évaluation nous nous proposions d'encoder ces éléments avec le couple <w/> «~\textit{word}~» et <ab/> «~\textit{arbitrary segment}~». Cette solution a finalement était rejetée car elle n'était pas valide en xml-tei. Aussi, nous sommes-nous orientés vers des éléments plus spécifiques~: employant des chercher/remplacer pour remplacer tous les élémnents <w/> déjà placés en élément <term/>.<br />Enfin, notre transformation xsl de balisage semi-automatique, légèrement modifiée nous permit de faire remonter l'attribut @type placé sur les éléments <w> sur les éléments <span>.
+
+
 
 \section{Vers l'édition numérique : transformation XSL}
 \label{ref:xsl_gen}
@@ -571,7 +573,7 @@ La première fonction que nous développons sert à afficher les extraits des au
 \end{figure}
 
 
-Au moyen de notre transformation xsl, nous créons pour chacune des citations l'appel d'une fonction qui recevra en paramètre (selon la citation) l'identifiant du passage cité~:
+Au moyen de notre transformation xsl, nous créons pour chacune des citations l'appel d'une fonction qui recevra en paramètre (selon la citation) l'identifiant du passage cité.
 
 
 On remarque que l'on injecte en paramètre l'identifiant (@corresp) du passage cité, et les statuts référentiels et axiologiques de la référence (@cert et @ana, respectivement) ainsi qu'un dernier paramètre dont les valeurs possibles sont «~1~» ou «~0~» qui sert à orienter le comportement de la fonction nommée «~displayExtract~».
@@ -646,7 +648,6 @@ La base de données est d'abord exportée au format .csv, le tableau au fichier 
 
 Tout au long de notre travail nous nous sommes efforcés d'employer la technique au service de questions scientifiques. Et si, bien souvent, la technique interroge le choix scientifique, nous nous sommes évertués à ne pas confondre questions et difficultés techniques. 
 
-Sans doute, tout n'y est pas, sans doute chercher à identifier et produire toutes les citations en contextes relève de l'impossible~: \robbe{} peut s'être trompé, l'édition avoir disparu, une citation en appelle une autre, etc. Pareil projet cependant se mène non en ayant à cœur de couvrir l'ouvrage entier (du moins sans s'en faire l'illusion) et toute son époque, mais bien en sachant que l'on ne propose qu'une lecture, partiale partielle parmi d'autres,  qui n'épuise pas l'œuvre.
-
+Sans doute, tout n'y est pas, sans doute chercher à identifier et produire toutes les citations en contextes relève de l'impossible~: \robbe{} peut s'être trompé, l'édition avoir disparu, une citation en appelle une autre, etc. Pareil projet cependant se mène non en ayant à cœur de couvrir l'ouvrage entier (du moins sans s'en faire l'illusion) et toute son époque, mais bien en sachant que l'on ne propose qu'une lecture, partiale partielle parmi d'autres, qui n'épuise pas l'œuvre.
 
 \end{document}
