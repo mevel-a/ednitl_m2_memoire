@@ -539,6 +539,18 @@
 		<xsl:param name="pn" select="preceding::pb[1]/@n"/>
 		<li><xsl:apply-templates mode="pref_index"/><span class="STDgray"> ; [<a target="blanck" href="{concat('punr_',$ch,'.html#page_',$pn)}"><xsl:value-of select="preceding::pb[1]/@n"/></a>]</span></li>
 	</xsl:template>
+	<xsl:template match="hi" mode="pref_index">
+		<xsl:variable name="class">
+			<xsl:if test="@rend='exposant'">STDexposant</xsl:if>
+			<xsl:if test="@rend='italic'">STDitalic</xsl:if>
+			<xsl:if test="@rend='small_caps'">STDsc</xsl:if>
+			<!--			<xsl:if test="@rend='italic'">STDitalic</xsl:if>-->
+			<!--			<xsl:if test="@rend='italic'">STDitalic</xsl:if>-->
+		</xsl:variable>
+		<span class="{$class}">
+			<xsl:apply-templates mode="corpus"/>
+		</span>
+	</xsl:template>
 	<xsl:template match="term" mode="pref_index">
 		<span class="Axi2"><xsl:apply-templates/></span>
 	</xsl:template>

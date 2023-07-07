@@ -128,8 +128,7 @@ Notons que nous ajoutons aux intertextes issus de Sartre, les citations issues d
 Si l'objectif initial, et surtout, idéal, de ce travail était de traiter l'intégralité des citations, le temps nécessaire à un tel travail nous imposa de réduire la voilure.
 Ainsi, si toutes les références et citations feront l'objet d'un traitement minime~: en html et css (voir \ref{htmlCss}), nous programmons l'affichage d'une infobulle pour chacun de ces éléments lorsque la souris de l'utilisateur passe dessus, affichant~: les statuts référentiels et axiologiques de la référence ou citation sur laquelle passe le curseur. Un code couleur permet au demeurant d'expliciter les valeurs (rouge, vert, bleu et noir pour les statuts axiologiques et des nuances allant du jaune au maron pour le statut référentiel).
 
-Dans la version actuelle, le code permettant cet affichage est déjà implémenté et les valeurs déterminées (notamment dans la base de données voir~: \ref{ref:dbEtabValeurs
-}) mais l'encodage des attributs n'est pas encore terminé (voir \ref{tei}), dès lors l'affichage est encore défectueux sur nombre de ces éléments. Par ailleurs si la version actuelle met en valeur les références et les citations en leur donnant une couleur particulière (vert et bleu respectivement), la version finale du présent travail se passera de cette mise en forme qui nous paraît nuire au confort de lecture.
+% Dans la version actuelle, le code permettant cet affichage est déjà implémenté et les valeurs déterminées (notamment dans la base de données voir~: \ref{ref:dbEtabValeurs}) mais l'encodage des attributs n'est pas encore terminé (voir \ref{tei}), dès lors l'affichage est encore défectueux sur nombre de ces éléments. Par ailleurs, si la version actuelle met en valeur les références et les citations en leur donnant une couleur particulière (vert et bleu respectivement), la version finale du présent travail se passera de cette mise en forme qui nous paraît nuire au confort de lecture.
 
 Enfin, toujours dans un souci d'offrir la lecture la plus agréable possible, nous choisissons de ne pas produire de note explicative sur la plupart des références.
 \begin{itemize}
@@ -144,10 +143,7 @@ Enfin, toujours dans un souci d'offrir la lecture la plus agréable possible, no
 
 Nous nous proposions de fournir pour les articles une table des matières qui permettrait de «~piocher~» dans le recueil des passages de la pensée de Robbe-Grillet. Ces renvois ne sont pas encore implémentés mais le seront prochainement (voir~: \ref{encMilestone}).
 
-Les glossaires des concepts adverses et des expressions privilégiées ne sont pas encore pleinement implémentés. D'une part l'encodage n'est pas terminé et d'autre part, la version actuelle ne liste que les expressions elle-mêmes, dans une version ultérieure l'encodage sera modifié afin d'afficher le contexte des expressions, permettant au lecteur de mieux saisir le sens des expressions (le terme «~vrai~» seul a moins d'intérêt que l'expression «~écrire de "vrai" roman~». %Nous savons cependant déjà comment ils le seront (voir \ref{encW}).
- Ces deux index sont deux pages du site que le lecteur trouve dans un menu déroulant de la navigation en haut de page «~Commentaires thématiques~». Après une courte introduction chacun des termes utilisés sera listé avec une mention de page et en un clic sur le terme, le lecteur pourra être redirigé vers la mention. Si aucun des termes ne fera l'objet d'un commentaire spécifique, une introduction générale aux index sera intégrée. Cette introduction servira à présenter cette part du travail et également à délivrer un commentaire sur l'aspect stylistique ici mis en valeur. Il ne nous a pas semblé opportun d'ajouter un commentaire pour chaque terme, d'une part car ces termes sont rarement en eux-mêmes des termes difficiles («~personnage~», «~intrigue~» etc.) et d'autre part car un renvoi vers le passage du texte où le terme est employé nous semblait un outil bien plus intéressant autant pour le lecteur expert que pour le lecteur néophyte.
 
-%ajouter le passage sur les choix car ARG != systématique
 
 
 
@@ -458,10 +454,35 @@ L'encodage des sources citées se fait également à la main, chacun des textes 
 sera d'une part nécessaire à la bonne exécution du script (le lien hypertexte créé dans la navigation renvera vers cet identifiant unique à chaque ancre au sein du texte) et permettra de produire un nom compréhensible dans le menu~; «~refutation2~» sera analysé par la transformation qui écrira dans le lien hypertexte «~Deuxième réfutation~».
 
 
-%À mettre à l'endroit encodage
-\label{encW} Les expressions devant figurer dans ces index sont encodées en tant que <term/>, «~terme (considéré technique)~»au sein d'éléments <span> «~passage lié à une interprétation~», munis d'attributs @type dont les valeurs «~0~» ou «~1~» orientent grâce à la transformation XSL, le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement. Les éléments <span> englobe l"expression et son contexte permettant de l'expliciter (en effet la recension des adjectifs «~vrai~» ou «~difficile~»  seuls serait de peu d'intérêt), l'expression encodée en <term> est ensuite mise en valeur via css, en rouge ou vert pour les notions adverses ou les expressions privilégiées respectivement.
+
+Les index des concepts adverses et des expressions privilégiées constituent des outils à l'usage des chercheurs mais également un point d'entré ludique dans le corpus.
+
+ \label{encW} Les expressions devant figurer dans ces index sont encodées en tant que <term/>, «~terme (considéré technique)~»au sein d'éléments <span> «~passage lié à une interprétation~», munis d'attributs @type dont les valeurs «~0~» ou «~1~» orientent grâce à la transformation XSL, le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement. Les éléments <span> englobe l"expression et son contexte permettant de l'expliciter (en effet la recension des adjectifs «~vrai~» ou «~difficile~»  seuls serait de peu d'intérêt), l'expression encodée en <term> est ensuite mise en valeur via css, en rouge ou vert pour les notions adverses ou les expressions privilégiées respectivement.
 
 Dans une version précédente soumise à évaluation nous nous proposions d'encoder ces éléments avec le couple <w/> «~\textit{word}~» et <ab/> «~\textit{arbitrary segment}~». Cette solution a finalement était rejetée car elle n'était pas valide en xml-tei. Aussi, nous sommes-nous orientés vers des éléments plus spécifiques~: employant des chercher/remplacer pour remplacer tous les élémnents <w/> déjà placés en élément <term/>.<br />Enfin, notre transformation xsl de balisage semi-automatique, légèrement modifiée nous permit de faire remonter l'attribut @type placé sur les éléments <w> sur les éléments <span>.
+
+
+Ces deux index sont deux pages du site que le lecteur trouve dans un menu déroulant de la navigation en haut de page «~Commentaires thématiques~». Après une courte introduction chacun des termes utilisés est listé avec une mention de page et en un clic sur le numéro de page, le lecteur peut être redirigé vers le passage du texte concerné. Si aucun des termes ne fait l'objet d'un commentaire spécifique (autre qu'à titre d'exemple), une introduction générale aux index est intégrée. Cette introduction sert à présenter cette part du travail et également à délivrer un commentaire sur l'aspect stylistique ici mis en valeur. Il ne nous a pas semblé opportun d'ajouter un commentaire pour chaque terme, d'une part car ces termes sont rarement en eux-mêmes des termes difficiles («~personnage~», «~intrigue~» etc.) et d'autre part car un renvoi vers le passage du texte où le terme est employé nous semblait un outil bien plus intéressant autant pour le lecteur expert que pour le lecteur néophyte. Enfin, il nous semble que c'est en tant que système que ces expressions font sens. 
+
+
+% pour partie scientifique
+% pour partie scientifique
+% pour partie scientifique
+% pour partie scientifique
+Les choix d'encodages des <term/> méritent commentaire. En effet, si l'intuition d'origine avait pour origine les mises en valeurs typographiques de certains termes, mis entre guillemets sans être des citations ou mis en italique, il semblait évident que tous les termes entre guillemets ne méritaient pas d'être intégrés en tant que «~notions adverses~» et tous les termes en italiques en «~expressions privilégiées~»~; certains étaient des citations d'autre un simple procédé d'emphase. Or, à bien y regarder les termes encodés en expressions privilégiées n'étaient pas tous des effets d'emphase~? Ne voit-on pas plutôt Robbe-Grillet insister sur telle ou telle formulation par opposition à une autre explicitement mentionée ou non~? C'est en tout cas ce qui nous est apparu après un examen minutieux. En effet, les expressions privilégiées loin de revêtir l'évidence de concept nettement défini sont davantage des adjectifs qui changent le sens des termes qui les entourent et font signe vers les concepts d'une philosophie, du moins d'une esthétique qui se définit surtout par son opposition à la métaphysique éculée contre laquelle Robbe-Grillet engage son texte. Ainsi les articles indéfinis «~\textit{des} questions, et \textit{des} réponses~» page~64, l'adjectif «~vrai~» pages~24 et~162 (3~fois) et les multiples occurences du verbes «~être~» souvent accompagné de l'adverbe «~là~» (pages~20, 21, 177), expressions privilégiées contenant une assertion possitive sont-ils parmi les termes les plus courants de la langue française et, seul, difficilement rattachable à telle ou telle théorie ésthétique, si ce n'est à une insistance sur l'immanence opposée à la métaphysique prêté aux adversaire de \robbe{}. Sans doute la relative banalité des termes mis en avant par la typographie sert à la démonstration~: l'acceptation de l'immanence des choses difficilement contestable se trouve aussi dans ce choix typographique qui sert à démontrer avec force que l'évidence, c'est-à-dire le bon sens est du côté de Robbe-Grillet.
+
+
+
+Notons que l'appréciation «~privilégiées~» porte bien sur la formulation et non le contenu sémantique~: «~Aussi le livre n’est-il pas écrit dans un langage [...]. Seuls, en effet, les objets déjà chargés d’un contenu humain flagrant sont neutralisés, avec soin, et \textit{pour des raisons morales}~» page~69, n'est pas privilégié le fait de choisir son style pour des raisons morales mais bien le propos de Robbe-Grillet sur le style de \textit{L'Étranger}, et ce, peu importe le statut axiologique de ce style au sein de \punr{}.
+% pour partie scientifique
+% pour partie scientifique
+% pour partie scientifique
+%pour partie scientifique
+
+%ajouter le passage sur les choix car ARG != systématique
+
+
+
 
 
 
