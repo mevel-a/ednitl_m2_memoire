@@ -333,16 +333,22 @@ p{
 /*	color:#00f;*/
 	cursor: pointer;
 }
-.ref{
+.ref, .note{
 /*	color: #0f0;*/
 	cursor: pointer;
 	position:relative;
 }
-.ref .refinfo{
+.ref .refinfo, .note .noteinfo{
 	display: none;
 	text-indent: 0;
 }
-.ref:hover .refinfo{
+
+.note{
+/*	color: #f0f;*/
+	text-decoration: underline;
+}
+
+.ref:hover .refinfo, .note:hover .noteinfo{
 	position: absolute;
 	display: block;
 	left: 20px;
@@ -361,6 +367,7 @@ p{
 	color: inherit;
 	font-style: initial;
 }
+
 
 /*Les extraits à afficher si clique*/
 section.extract_section{

@@ -688,6 +688,11 @@
 	</xsl:template>
 	
 	
+<!--	NOTES ajout du 230709-->
+	<xsl:template match="span[descendant::note]" mode="corpus">
+		<span class="note"><xsl:apply-templates mode="corpus"/></span>
+	</xsl:template>
+	
 <!--	MILESTONE AJOUT DU 230703-->
 	<xsl:template match="milestone" mode="corpus">
 		<a id="{@xml:id}" class="{local-name()}"/>
@@ -714,12 +719,29 @@
 	</xsl:template>
 	<xsl:template match="p[not(ancestor::TEI[@xml:id='punr'])]" mode="extract">
 		<p><xsl:if test="@resp='editor'"><xsl:attribute name="class" select="'editor'"/></xsl:if>
-			<xsl:apply-templates/></p>
+			<xsl:apply-templates mode="extract"/></p>
+	</xsl:template>
+	<xsl:template match="hi[not(ancestor::TEI[@xml:id='punr'])]" mode="extract">
+		<xsl:variable name="class">
+			<xsl:if test="@rend='exposant'">STDexposant</xsl:if>
+			<xsl:if test="@rend='italic'">STDitalic</xsl:if>
+			<xsl:if test="@rend='small_caps'">STDsc</xsl:if>
+			<!--			<xsl:if test="@rend='italic'">STDitalic</xsl:if>-->
+			<!--			<xsl:if test="@rend='italic'">STDitalic</xsl:if>-->
+		</xsl:variable>
+		<span class="{$class}">
+			<xsl:apply-templates mode="extract"/>
+		</span>
+	</xsl:template>
+	<xsl:template match="span[descendant::note]" mode="extract">
+		<span class="note"><xsl:apply-templates mode="extract"/></span>
 	</xsl:template>
 	
-<!--	solution posssible pour +ieurs corresp : 
-	un template sur l'appel de script, qui va boucler (via foreach ou appel récursif (condition d'arrêt = notcontainswhitespace (attention ressemble à truc qui bugg sur xsl)) sur corresp en divisant avec un substring-befire et substring after qui se retrouve tous dans nouvel appel du script-->
 	
+	<xsl:template match="note[not(ancestor::TEI[@xml:id='punr'])]" mode="extract">
+		<span class="noteinfo"><xsl:apply-templates mode="extract"/></span>
+	</xsl:template>
+
 	
 	
 	

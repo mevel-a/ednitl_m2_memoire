@@ -90,7 +90,6 @@ L'édition que nous réalisons entend proposer un contenu scientifique permettan
 
 
 
-
 Le présent document se veut un exposé des modalités et difficultés techniques que nous avons rencontrées et des moyens mis en œuvre pour les surmonter.
 
 Chaque outil utilisé fera l'objet d'une présentation succinte, après quoi leur apport au projet et les choix ayant mené à la réalisation de l'édition numérique de \punr{} seront détaillés.
@@ -536,6 +535,8 @@ Si le html intervient au niveau sémantique, le css \textit{Cascading Style Shee
 Les interactions html/css permettent de générer des affichages utiles à notre édition numérique. Détailler les moinds recoins des choix esthétiques et pratiques que nous avons été amené à faire n'aurait sans doute que peu de sens, cependant le travail effectué sur les infobulles mérite d'être examiné en détail, afin d'expliciter la manière dont le css agit sur le html.
 
 
+
+
 Comme en xml-tei, nous disposons d'attributs spécifiques au html pour caractériser nos éléments. Parmi eux l'attribut @class est d'une utilité particulière pour permettre les interactions entre html et d'autres langages de programmation (dans le cas de notre travail css et Javascript). Ces attributs @class et leurs valeurs sont générés par notre transformation xsl et nous avons, dans le cas des infobulles un résultat qui ressemble à ceci~:
 
 \begin{verbatim}
@@ -553,18 +554,19 @@ Or nous souhaitons que le second segment ne s'affiche que lorsque le curseur pas
     \label{screenCssInfo}
 \end{figure}
 
+\subsubsection{Les notes liées aux références transtextuelles}
+
 Comme on peut le voir dans la figure \ref{screenCssInfo}, css emploie des \textit{selector} auquel il attribut des propriétés. En l'occurence la \textit{class} «~ref~» est sélectionnée ligne~299 et lui est attribuée une couleur (vert) ligne~300.
 
 Nous intéresse davantage le selecteur (ou plutôt les sélecteurs additionnés pour restreindre les éléments ciblés) suivant «~.ref .refinfo~» qui se lit~: l'élément classé «~refinfo~» contenu dans un élément classé «~ref~». Ligne~304 lui est attribuée la propriété «~display:none~» qui empêche l'affichage de l'élément, le contenu de l'infobulle sera présent mais invisible. Il ne sera rendu visible que grâce à la propriété «~display:block~» attribuée aux éléments concernés par les sélecteurs «~.ref:hover .refinfo~», soit l'élément classé «~refinfo~» contenu dans un élément classé «~ref~» sur lequel l'utilisateur passe la souris (on parle de \textit{pseudoclass} pour désigner le sélecteur «~hover~»). Les autres propriétés correspondent à des choix de designs pensés pour rendre l'infobulle lisible et pratique, ainsi les propriétés de positionnement «~position:absolute;left:20px;top:-30px;~» servent à ordonner le positionnement des infobulles selon une position absolue déterminée par rapport au dernier ancêtre positionné (en l'occurence l'ancêtre classé «~ref~» muni de la propriété «~position:relative;~»), le navigateur soustrait à ce point de référence 30~px depuis son sommet (l'infobulle apparaît plus haut) et y ajoute 20~px depuis la gauche (l'infobulle est légérement décallée à droite).
 
 Un tel résultat pourrait être atteint en Javascript mais l'execution d'un tel script serait légèrement plus lourde pour le navigateur et son écriture plus complexe que quelques propriétés css correctement agencées. Notons que les attributs @class ne sont pas seulement utilisés par le css mais également exploité par les scripts détaillés infra.
 
+\subsubsection{Notes critiques non liées aux références transtextuelles}
 
+Nous pourrions souhaiter ajouter des notes explicatives sur le corpus, ou simplement des notes type notes de bas de page au sein de nos commentaires.
 
-%expliquer @class (sert aussi pour la section JS)
-%exemple des infobulles
-    %pseudoclasse
-
+S'il suffit pour les notes de nos commentaires d'être insérées directement au sein de des éléments html approprié pour se comporter comme des infobulles, l'ajout de note au sein du corpu nécessite un encodage particulier. Nous choisissons d'encoder le contenu de la note en tant qu'élément <note/> que nous insérons au sein d'un élément <span/> (sans attribut @type) qui contiendra la portion de texte concernée par l'annotation et l'annotation au sein de l'élément <note/>. Après quoi, notre transformation xsl vers html produit un élément <span/> classé « note » contenant l'élément <span/> classé « noteinfo » contenant le contenu de la note. Ces éléments sont classés différemment des notes liées aux références afin de permettre d'en distinguer la nature, mais leur fonctionnement est strictement identique (elles sont liées aux même propriétés css).
 
 
 
