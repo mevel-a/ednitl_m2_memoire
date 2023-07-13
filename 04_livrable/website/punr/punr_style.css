@@ -328,6 +328,7 @@ p{
 	line-break: normal;
 	margin-bottom: 5px;
 	text-indent: 60px;
+	background-color: inherit;
 }
 .quote{
 /*	color:#00f;*/
@@ -337,6 +338,7 @@ p{
 /*	color: #0f0;*/
 	cursor: pointer;
 	position:relative;
+	background-color: inherit;
 }
 .ref .refinfo, .note .noteinfo{
 	display: none;

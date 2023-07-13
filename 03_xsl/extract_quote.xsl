@@ -26,8 +26,12 @@
 					
 				</head>
 				<body>
+					<h2>Les éléments quote rentrés en tant que texte du corpus mais non exploités</h2>
 					<ul>
 						<xsl:apply-templates select="//div[ancestor::TEI[not(@xml:id='punr')]]" mode="quote"/>
+					</ul>
+					<h2>Tous les éléments quotes</h2>
+					<ul>
 						<xsl:apply-templates select="//quote" mode="quote"/>
 					</ul>
 				</body>
