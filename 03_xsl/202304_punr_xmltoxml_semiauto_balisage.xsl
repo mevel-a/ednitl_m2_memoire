@@ -41,6 +41,12 @@
 			<xsl:apply-templates/>
 		</xsl:element>
 	</xsl:template>
+	<!--CORRECTION EDITION NUMERO DES PAGES 06082023
+			tourne une fois puis c'est tout
+		<xsl:template match="pb[ancestor::TEI[@xml:id='punr']]">
+		<xsl:param name="integerN" select="number(@n)"></xsl:param>
+		<pb n="{$integerN+1}"/>
+	</xsl:template>-->
 	<xsl:template match="comment()">
 		<xsl:text>
 </xsl:text><xsl:comment select="."/><xsl:text>
@@ -261,6 +267,7 @@
 				<xsl:when test="@type">
 					<xsl:attribute name="type" select="@type"/>
 				</xsl:when>
+				<xsl:when test="descendant::note"/>
 				<xsl:otherwise>
 					<xsl:attribute name="type" select="descendant::term[1]/@type"/>
 				</xsl:otherwise>

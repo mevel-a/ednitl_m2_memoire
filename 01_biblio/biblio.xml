@@ -231,8 +231,8 @@
 			<title>L'Ère du soupçon</title>
 			<city>Paris</city>
 			<ed>Gallimard</ed>
-			<coll>Pléiade</coll>
-			<date type="effective">1996</date>
+			<coll>Folio essais</coll>
+			<date type="effective">2019</date>
 			<date type="first">1956</date>
 		</ref>
 	</div>
@@ -528,7 +528,7 @@
 			
 			<title>Qu'est-ce que la littérature ?</title>
 			
-			<city>Parus</city>
+			<city>Paris</city>
 			
 			<ed>Gallimard</ed>
 			
@@ -536,6 +536,21 @@
 			
 			<date type="effective">2008</date>
 			<date type="first">1948</date>
+		</ref>
+		<ref xml:id="sjp03" read="1">
+			<author>
+				<name>Sartre</name>
+				<surname>Jean-Paul</surname>
+			</author>
+			<title>Situations, I Critiques littéraires</title>
+			<city>Paris</city>
+			
+			<ed>Gallimard</ed>
+			
+			<coll>Folio essais</coll>
+			
+			<date type="effective">2020</date>
+			<date type="first">1947</date>
 		</ref>
 		<ref xml:id="s01" read="2">
 			<author>
@@ -594,7 +609,19 @@
 			<date type="trad">1986</date>
 			<date type="first">1954</date>
 		</ref>
-		<ref xml:id="pr01" read="0">
+		<ref xml:id="bh01" read="1">
+			<author>
+				<name>Balzac</name>
+				<surname>Honoré</surname>
+			</author>
+			<title>Le Médecin de campagne</title>
+			<ed>Gallimard</ed>
+			<city>Paris</city>
+			<coll>folio classique</coll>
+			<date type="first">1833</date>
+			<date type="effective">2021</date>
+		</ref>
+		<ref xml:id="pr01" read="1">
 			<author>
 				<name>Pinget</name>
 				<surname>Robert</surname>
@@ -610,7 +637,7 @@
 			<date type="effective">1997</date>
 			<date type="first">1952</date>
 		</ref>
-		<ref xml:id="pr02" read="0">
+		<ref xml:id="pr02" read="1">
 			<author>
 				<name>Pinget</name>
 				<surname>Robert</surname>
