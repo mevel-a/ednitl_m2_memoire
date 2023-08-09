@@ -204,6 +204,26 @@
 			<date type="effective">Janvier-Février, 2002</date>
 			<pages>83-96</pages>
 		</ref>
+		<ref xml:id="mb01" read="1">
+			<author><name>Morissette</name><surname>Bruce</surname></author>
+			<title>Les romans de Robbe-Grillet</title>
+			<ed>Les Éditions de Minuit</ed>
+			<city>Paris</city>
+			<date type="effective">1971</date>
+			<date type="first">1963</date>
+		</ref>
+		<ref xml:id="yg02" read="1" type="article">
+			<author>
+				<name>Yanoshevsky</name>
+				<surname>Galia</surname>
+			</author>
+			<title>La critique littéraire et les romans de Robbe-Grillet</title>
+			<ed>Roman 20-50</ed>
+			<city>Lille</city>
+			<online>https://www.cairn.info/revue-roman2050-2010-3-page-67.htm</online>
+			<date type="effective">2010/3 (hors série n° 6)</date>
+			<pages>67-82</pages>
+		</ref>
 		<ref xml:id="yg01" read="0">
 			<author>
 				<name>Yanoshevsky</name>

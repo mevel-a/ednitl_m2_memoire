@@ -42,6 +42,17 @@
 		<xsl:text>
 %</xsl:text>
 	</xsl:variable>
+	<xsl:template match="ul">
+<xsl:text>\begin{itemize}
+</xsl:text><xsl:apply-templates/>
+<xsl:text>\end{itemize}
+</xsl:text>
+	</xsl:template>
+	<xsl:template match="li">
+<xsl:text>
+	\item </xsl:text><xsl:apply-templates/><xsl:text>
+</xsl:text>
+	</xsl:template>
 	<xsl:template match="comment()">
 		<xsl:choose>
 			<xsl:when test="contains(.,'ch01')">
@@ -61,8 +72,7 @@
 			<xsl:when test="contains(.,'ch06')">
 \subsubsection{Énigmes et transparences chez Raymond Roussel}
 			</xsl:when>
-			<xsl:when test="contains(.,'ch07')">\
-subsubsection{La conscience malade de Zeno}
+			<xsl:when test="contains(.,'ch07')">\subsubsection{La conscience malade de Zeno}
 			</xsl:when>
 			<xsl:when test="contains(.,'ch08')">
 \subsubsection{Joë Bousquet le rêveur}
@@ -71,7 +81,7 @@ subsubsection{La conscience malade de Zeno}
 \subsubsection{Samuel Beckett ou la présence sur la scène}
 			</xsl:when>
 			<xsl:when test="contains(.,'ch10')">
-\subsubsection{Un roman qui s'invente lui-même
+\subsubsection{Un roman qui s'invente lui-même}
 			</xsl:when>
 			<xsl:when test="contains(.,'ch11')">
 \subsubsection{Nouveau roman, homme nouveau}
