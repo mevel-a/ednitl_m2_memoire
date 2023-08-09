@@ -43,6 +43,7 @@
 	</xsl:template>
 	<!--CORRECTION EDITION NUMERO DES PAGES 06082023
 			tourne une fois puis c'est tout
+				les pb des html d'origine (qui ne sont pas des <pb> mais passons) qui marque la fin des pages et pas les débuts de pages donc décalage d'une page (choix qui nous paraît étrange étant donné que ces fins de page semble bien placé au début des pages suivante (ex : les débuts de chapitre commence bien par un <pb>))
 		<xsl:template match="pb[ancestor::TEI[@xml:id='punr']]">
 		<xsl:param name="integerN" select="number(@n)"></xsl:param>
 		<pb n="{$integerN+1}"/>
@@ -278,7 +279,7 @@
 	
 <!--	AJOUT DU 230703-->
 <!--		génére id pour milestone et recréé l'élément en gérant le pb xml:id
-			Par ailleurs, ces éléments seront transformés en <a id="@" class="milestone">-->
+			Par ailleurs, ces éléments seront transformés en <a id="@" class="milestone"> dans la transfo xmltohtml-->
 	<xsl:template match="milestone">
 		<xsl:element name="{local-name()}">
 			<xsl:if test="not(@id)">
