@@ -8,18 +8,27 @@
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{wallpaper}
+\usepackage{csquotes}
 \usepackage[top=2.5cm, bottom=2cm, left=2cm, right=2cm, heightrounded, marginparwidth=3.5cm, marginparsep=0.3cm]{geometry}
 \renewcommand{\headrulewidth}{0.1pt}
 \renewcommand{\footrulewidth}{0.3pt}
 \usepackage{hyperref}
 \pagestyle{fancy}
-\lhead{{\scshape{Mével}} Adrien M2 EdNitl}
+\lhead{{\scshape{Mével}} Adrien M2 EdNITL}
 \chead{}
 \rhead{2022-2023}
 \fancyfoot[]{}
 \rfoot{\thepage}
 \usepackage[french]{babel}
 \setlength{\headheight}{20.61049pt}
+
+%POUR PASSAGE EN REPORT SI BESOIN
+\fancypagestyle{plain}{%
+\fancyhf{}% clear all header and footer fields
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}%
+\renewcommand{\footrulewidth}{0.3pt}%
+}
 
 \begin{document}
 \ULCornerWallPaper{0.23}{img/logo_u_lille.png}
@@ -43,7 +52,7 @@
 
 
 \vspace*{2cm}
-Mme~Florence~\textsc{de Challonge}
+Mme~Florence~\textsc{de Chalonge}
 
 
 M.~Matthieu~\textsc{Marchal}
@@ -70,10 +79,463 @@ Année universitaire 2022-2023
 
 \end{titlepage}	
 
-\begin{center}
-\end{center}
-\vspace{3cm}
+
 \newcommand{\punr}{\textit{Pour un nouveau roman}}
 \newcommand{\robbe}{Alain~Robbe-Grillet}
+\newcommand{\galia}{Galia~\textsc{Yanoshevsky}}
+\newcommand{\op}{\textit{Op. cit.}, p.~}
+\newcommand{\fullgalia}{\textsc{Yanoshevsky} Galia, \textit{Les discours du Nouveau Roman~: Essais, entretiens, débats}, Villeneuve d'Ascq, Presses universitaires du Septentrion, 2006, p.~}
 
+\vspace*{3cm}
+
+\addcontentsline{toc}{section}{Introduction}
+
+Constitué par un regroupement de textes publiés aux fils des années selon des modalités différentes (tantôt dans des revues spécialisées tantôt dans des journaux généraliste) pour des projets (polémiques ou théoriques) particuliers, \punr{} est une œuvre composite. Il est constitué de critiques d'ouvrages pas toujours contemporains, des textes de théorie littéraire voire même de métaphysique ou de phénoménologie~; cet ouvrage dont on ne perçoit pas toujours l'unité est pourtant loin d'un recueil dans lequel chaque article pourrait se lire indépendamment des autres, réunis par commodité plus que nécessité en un livre unique permettant au grand public de s'approprier les nouveautés de la recherche. En effet quelques fils directeurs traversent et animent les textes~: on y trouve des références spécifiques témoignage d'une époque littéraire, un style polémique, une pensée somme toute entière et constituée~; l'œuvre tient par un effort, au demeurant moindre et \textit{a posteriori}, d'unification via l'insertion de seuil et les réécritures partielles.
+
+Des récriminations contre «~les critiques~» à un air du temps phénoménologique critique de la métaphysique classique en passant par une certaine vision du bon-sens, l'œuvre qui se présente comme n'étant pas une théorie du roman semble pourtant (re)tracer une voie à la littérature de son époque. \punr, qu'est-ce~? Les propos épars d'un relativement jeune auteur tentant d'occuper le terrain et de promouvoir ses textes~? Un moment de Robbe-Grillet~? Une époque de l'histoire littéraire~? Un livret de recommandations (aux publics, aux critiques, aux auteurs)~? Ou bel et bien une doctrine littéraire~?
+
+Si le texte peut être lu comme tout cela à la fois, cela tient sans doute à la complexité d'une pensée faite de recoins. Tentant de maintenir un équilibre délicat entre légitimation par la tradition et refus d'une autre tradition, entre l'affirmation de ce qu'il ne faudrait pas écrire et le refus de délivrer les consignes de la nouvelle école, \punr{} réfute et emprunte (explicitement ou non) aux modèles et aux adversaires que son auteur s'est choisi. L'habileté tenant à un art consommé de l'ironie et du sous-entendu permettant d'emprunter à ceux-là même que l'on entend discréditer.
+
+Déclarant la pleine liberté de l'auteur tout en assénant qu'il ne faudrait plus écrire comme ceci ou comme cela, quelle unité \punr~? Nous pensons que la pleine compréhension de la manière dont diverses lectures s'imbriquent en un recueil tient à la tenue des fils polémiques et théoriques qui sous-tendent l'ensemble. 
+
+Nous détaillerons la structure de l'œuvre, détaillant les publications initiales à l'origine de chaque article composant le recueil, avant de nous intéresser aux techniques stylistiques qui sous-tendent la rhétorique polémique de \robbe, enfin nous nous pencherons sur les théories esthétiques développées dans l'ouvrage.
+
+\newpage
+
+\section{La mise en recueil d'articles disparates}
+
+
+%brève présentation  de la structure générale
+%intro à chacun des textes
+
+Le recueil \punr est une collection de plusieurs articles publiés dans des journaux et des revues aux profils divers, allant du quotidien national (\textit{L'Express} à la revue spécialisé \textit{Critique}. Le travail d'identification des sources primaires des articles et de la mise en recueil ayant déjà été mené par Mme~\galia\footnote{\textsc{Yanoshevsky} Galia, \textit{Les Discours du Nouveau Roman~: Essais, entretiens, débats}, Villeneuve d'Ascq, Presses universitaires du Septentrion, 2006}, cette section du présent travaille reprend pour la majeure partie les observation de \galia.
+\begin{quote}
+    L’ensemble des essais manifeste un développement qui se donne comme un palimpseste, tout en exposant graduellement le programme qu’il propose pour le Nouveau Roman. L’effet de palimpseste est produit par la répétition des mêmes thèmes~–~profondeur et surfaces, descriptions et notions périmées tels le personnage et l’intrigue~–~chaque fois traités sous différents angles\footnote{\fullgalia87}.
+\end{quote}
+Le recueil est constitué de treize~articles parmi lesquels cinq sont en réalité des critiques d'œuvres, dont la portée théorique plus général n'est explicité que par la mise en recueil elle-même.
+
+Au moment de la publication de \punr, \robbe{} est un auteur connu du public~: ses chroniques dans des journaux grands publics (\textit{L'Express} dès~1955, \textit{Le Figaro} en~1962 et en~1963 en réponse à un critique du journal, \textit{France Observateur} tout au long de l'année~1957) donne à Robbe-Grillet une stature aux yeux du public\footnote{\fullgalia77} que la publication du recueil consacre définitivement. Encore aujourd'hui, le nom de Robbe-Grillet est synonyme de «~chef de file du nouveau roman~».
+
+Bruce~Morissette\footnote{\textsc{Morissette} Bruce, \textit{Les Romans de Robbe-Grillet}, Paris, Éditions de Minuit, 1971 [1963]} souligne que les premières théories de Robbe-Grillet sont publiées dans les essais critiques qu'il publie dans la revue \textit{Critique} et \textit{Nouvelle Revue Française} dès 1953. Ces cinq~critiques (un sixième texte de ce sous-ensemble en constitue une introduction rédigée pour le recueil) en plus de servir à donner une filiation au mouvement du Nouveau roman servent également la constitution d'un public, d'une communauté de sens et de références. Lisant ces critiques, le lecteur chausse en quelque sorte les lunettes de Robbe-Grillet pour lire à travers elle. Par ailleurs ce détour par la critique sert la mise en scène d'une pensée qui ne se veut pas purement théorique et une mise en perspective de cette pensée~: elle dépasse très largement les œuvres de Robbe-Grillet seule et permet de saisir des enjeux esthétiques contemporains aux origines plus anciennes. Enfin, le recueil, devenant par l'adjonction de ses critiques un texte ouvertement composite, paraît traiter de sujets d'autant plus riches et vastes que son contenu formel en est hétérogène.
+
+Les critiques intégrés à \punr{} sont identifiées par \galia~:
+\begin{itemize}
+    \item «~Samuel Beckett, Auteur dramatique~», \textit{Critique}, n°~69, février~1953, p.~108-114
+    \item «~Joë Bousquet le rêveur~», \textit{Critique}, n°~77, octobre~1953, p.~819-829
+    \item «Un roman qui s'invente lui-même~»,\textit{Critique}, n°~80, janvier~1954, p.~82-88
+    \item «~La conscience malade de Zeno~», \textit{Nouvelle Revue Française}, n°~19, juillet~1954, p.~138-141
+    \item «~Samuel Beckett ou la présence sur la scène~», \textit{Critique}, n°~189, février~1963, p.~108-114
+    \item «~Énigmes et transparences chez Raymond~Roussel~», \textit{Critique}, n°~199, décembre~1963, p.~1027-1033
+\end{itemize}
+
+
+
+
+Après la publication de son premier roman \textit{Les Gommes}\footnote{\textsc{Robbe-Grillet} Alain,\textit{Les Gommes}, Paris, Éditions des Minuit, 1953}. C'est après la publication de son deuxième roman \textit{Le Voyeur}\footnote{\textsc{Robbe-Grillet} Alain,\textit{Le Voyeur}, Paris, Éditions des Minuit, 1955} couronné du prix des critiques et surtout de ce que les Éditions de Minuit appelèrent «~la querelle du voyeur~», que \robbe{} commence à publier dans \textit{L'Express} des articles au visé proprement théorique dans la série de neuf~chroniques intitulée «~Littérature aujourd'hui~». D'après Bruce~Morissette, cette controverse lancée par Émile~Henriot dans \textit{Le Monde}\footnote{\textsc{Henriot} Émile, «~Le prix des critiques "\textit{Le Voyeur}", d'Alain Robbe-Grillet, \textit{Le Monde},15~juin~1955} marque le début des colloques, articles et analyses du phénomène «~nouveau roman~». Au sein de l'arène médiatique, Robbe-Grillet expose ses vues sur la littérature et s'exposer lui-même en tant que progressiste opposé, entre autre, aux Académiciens (dont Émile~Henriot fait partie). \galia{} identifie ces neufs articles\footnote{\fullgalia77}~:
+\begin{itemize}
+    \item «~Réalisme et révolution~», 3~janv.~1955, p.~15.%Y
+    \item «~Il écrit comme Stendhal~», 25~oct.~1955, p.~8.%Y
+    \item «~Pourquoi la mort du roman~?~», 8~nov.~1955, p.~8.%
+    \item «~L’écrivain lui aussi doit être intelligent~», 22~nov.~1955, p.~10.%
+    \item «~Les Français lisent trop~», L’Express, 6~déc.~1955, p.~11.%
+    \item «~Littérature engagée, littérature réactionnaire~», 20~déc.~1955, p.~11.%Y
+    \item «~Pour un réalisme de la présence~», 17~janv.~1956.%Y
+    \item «~Kafka discrédité par ses descendants~», 31~janv.~1956, p.~11.%
+    \item «~Le réalisme socialiste est bourgeois~», 21~févr.~1956, p.~11.%Y
+\end{itemize}
+Parmi lesquels seuls «~Réalisme et révolution~», «~Il écrit comme Stendhal~», «~Littérature engagée, littérature réactionnaire~», «~Pour un réalisme de la présence~» et «~Le réalisme socialiste est bourgeois~» sont intégrés à \punr. Concernant cette série d'article \galia{} note qu'elle contient déjà le ton polémique s'attaquant aux autres littérature et l'appel à un renouveau de la littérature par la fondation d'un «~nouveau réalisme~»\footnote{\fullgalia80}. Toujours dans sa thèse, \galia{} résume les thèses de l'ensemble des articles, à la lecture de ces résumés il nous paraît légitime de penser que certains articles n'ont pas été retenus car leur finalité fut jugée redondante~:
+\begin{itemize}
+    \item «~Pourquoi la mort du roman~?~» dénonce l'idée selon laquelle le roman serait en train de disparaître. Une nouvelle définition de ce qui constitue le réalisme suffirait permettre au roman de se renouveler et donc de survivre. En plus d'être l'un des fils directeur du recueil, cette affirmation est étayée en détail dans l'article «~Du réalisme à la réalité~» (issu d'une publication du \textit{Figaro}\footnote{\textsc{Robbe-Grillet} Alain, «~Monsieur personne répond... Pour un "nouveau roman"~», Paris, \textit{Le Figaro Littéraire}, 5-11~décembre~1963, p.~1-26}, deux articles de \textit{L'Express}\footnote{\textsc{Robbe-Grillet} Alain, «~Réalisme et révolution~», Paris, \textit{L'Express}, 3~janvier~1955, p.~15 et «~Pour un réalisme de la présence~», Paris, \textit{L'Express}, 17~janvier~1956, p.~11} et l'entretien de \textit{Tel Quel}\footnote{\textsc{Robbe-Grillet} Alain, «~La Littérature aujourd'hui~–~\textsc{vi}~», n°~14, été~1963, p.~39-45}).
+    \item «~L’écrivain lui aussi doit être intelligent~» s'attaque au \textit{topos} selon lequel ce seraient l'«~alcoolisme, le malheur, la passion mystique, la folie~» des écrivains qui seraient à l'origine des chefs d'œuvre. \robbe{} défend dès le premier texte du recueil final le droit de l'écrivain à écrire et théoriser en conscience.
+    \item «~Les Français lisent trop~» se veut la définition d'un public au Nouveau roman et discute la difficulté à proposer des innovations en littérature. Ce sont là les enjeux du recueil achevé régulièrement abordé, notamment dans «~Temps et description dans le roman d'aujourd'hui~».
+    \item «~Kafka discrédité par ses descendants~» s'attaque à une lecture métaphysique de Kafka (selon laquelle ses romans laisserait entrevoir un «~au-delà inaccessible~»). Si \punr{} fait l'impasse sur une quelconque analyse de Kafka, les références multiples à Kafka tout au long du recueil en tant que précurseurs suffisent à imposer comme une évidence le fait que ses écrits participeraient des théories esthétiques de Robbe-Grillet.
+\end{itemize}
+
+Une seconde série d'articles est publiée au cours de l'année~1957 dans la rubrique «~La vie des lettres, Littérature d’aujourd’hui~» de l'hebdomadaire \textit{France Observateur}~:
+\begin{itemize}
+    \item «~Écrire pour son temps~», n°~387, 10~oct.~1957, p.~17.
+    \item «~Il n’y a pas "d’avant-garde"~», n°~388, 17~oct.~1957, p.~19.
+    \item «~La mort du personnage~», n°~389, 24~oct.~1957, p.~20.
+    \item «~Un joli talent de conteur…~» n°~390, 31~oct.~1957, p.~19.
+    \item «~La forme et le contenu~», n°~392, 14~nov.~1957, p.~19.
+\end{itemize}
+Identifiés par \galia, tous ces articles sont à l'origine de l'article le plus proche des thèses de Nathalie~Sarraute\footnote{\textsc{Sarraute} Nathalie, \textit{L'Ère du soupçon}, Paris, Gallimard, coll. «~folio essais~», 2019 [1956]} intitulé «~De quelques notions périmées~». Ces articles sont marqués par une opposition vis-à-vis de la critique, du moins des termes qu'elle emploie, qualifiés de «~lieux communs~» dans «~Il n’y a pas "d’avant-garde"~».
+
+Enfin \punr{} est également constitué d'article de revues, au ton moins polémique et occupant au sein du recueil des places importantes (le premier et les derniers articles du versant plus théorique de \punr). Ces articles «~entérin[e] les conceptions développées dans les journaux\footnote{\fullgalia84}~» et consacre le passage «~d’un romancier et critique débutant et controversé, à l’expression théorique de l’écrivain qui participe activement aux polémiques littéraires de son époque, et affronte les figures principales de la scène littéraire dominante\footnote{\fullgalia84}~». Quatre articles publiés dans des revues spécialisées sont intégrés à \punr~:
+\begin{itemize}
+    \item «~La Littérature aujourd'hui~–~VI~», \textit{Tel Quel}, n°~14, été~1963, p.~39-45. Il s'agit du sixième entretien d'une série d'\textit{interview} sur la situation de la littérature, Robbe-Grillet y est alors convoqué en tant que chef de file déclaré du Nouveau Roman\footnote{\fullgalia88}.
+    \item «~Une voie pour le roman futur~», \textit{Nouvelle Revue Française}, n°~43, juillet~1956, p.~77-84.
+    \item «~Nature, Humanisme, Tragédie~», \textit{Nouvelle Revue Française}, n°~70, octobre~1958, p.~580-603.
+    \item «~Nouveau Roman, homme nouveau~», \textit{Revue de Paris}, n°~68, septembre~1961, p.~115-121.
+\end{itemize}
+
+
+%    Recherche d'unité et commentaire des réécritures.
+    
+    %la constitution de l'ensemble~: thèmes récurrents, résolutions (ou non) d'ambiguïtés au fil des textes.
+
+%utilisation des introductions à chaque article
+% et la thèse de Galia ++
+
+\subsection{Offrir un corpus théorique au Nouveau Roman}
+
+Comme le signale \galia, les références à Sarraute et Barthes p.~74-75 sont implicites, sans doute même volontairement masquée pour mettre en valeur la portée manifestaire du recueil~: la théorie du Nouveau Roman sera signée Robbe-Grillet.
+% émerge du bon sens, d'une nécessité inscrite dans son temps et non d'une vue de l'esprit, en laboratoire .
+%Refus d'avoir des dettes~?
+%Plagiat ?
+%Unité du recueil qui sera davantage clôt sur lui-même~?
+
+
+
+\subsection{Une filiation au nouveau roman}
+
+%Un sens à l'histoire de la littérature ?
+
+Sans doute, point crucial de l'œuvre~: donner plus qu'une légitimité au Nouveau Roman, une nécessité~: le Nouveau Roman est l'aboutissement d'évolutions anciennes, soit l'avenir du roman des années~1950.
+
+\subsection{Introductions aux articles}
+
+Afin d'offrir un aperçu des spécificités de chacun des articles et d'expliciter leur place au sein de l'économie générale du recueil, nous reproduisons ici les introductions à ces articles rédigés pour figurer dans notre édition critique numérique.
+
+
+
+\subsubsection{À quoi servent les théories}
+Premier texte du recueil, cet article est identifiée par Galia \textsc{Yanoshevsky} comme une réécriture augmentée des articles «~Il écrit comme Stendhal~» publié le 25~octobre~1955 dans \textit{L'Express} et «~La littérature, aujourd'hui - VI~» publié dans le numéro 14 de \textit{Tel Quel} en 1963. Outre sa fonction de seuil et d'introduction aux écrits théoriques qui suivent ce texte place les jalons de la rhétorique de Robbe-Grillet.
+
+Se plaignant de la récéption de ses œuvres puis des articles publiés dans \textit{L'Express} qui sont depuis devenus le présent recueil, Robbe-Grillet se positionne comme tenant du bon sens~: il n'est pas un théoricien par vocation mais par réaction. Il ne s'agit pas tant de produire une nouvelle théorie que d'«~éclair[er] davantage les éléments qui avaient été les plus négligés par les critiques, ou les plus distordus~», combattre les «~mythes du XIXe siècle~» et de «~tente[r] de préciser quelques contours~». Ce faisant Robbe-Grillet se place en moderne (hériter d'une tradition vivante qu'il commence d'esquisser ici) en opposition aux tenants d'une tradition «~immobile, figée~» voire «~nuisible~». Contre les critiques, contre Sartre, Robbe-Grillet défend (non pas «~un~») mais l'«~exercice problématique de la littérature~» qui constitue, avec le rejet d'une écriture traditionaliste décriée comme relevant d'un pastiche éculée et avec la condamnation d'une critique psychologisante, le premier jalon théorique de l'ouvrage et une véritable définition du rôle de la littérature complétée au fil du recueil.
+
+Notons enfin une technique usuelle chez Robbe-Grillet consistant à vider l'argumentation en limitant autant que possible la portée de ces écrits théoriques, si l'on aurait tord de considérer que Robbe-Grillet s'autorise ici à se contredire, il est juste de constater qu'il prend soin de se dégager un espace entre sa pratique littéraire et sa pratique théorique dans lequel le lecteur devrait l'autoriser à rafiner sa pensée, la préciser et sans rien renier du cheminement lui-même, en retrancher quelques passages.
+
+
+\subsubsection{Une voie pour le roman futur}
+			Initialement publié en 1956 dans le numéros 43 de la\textit{ Nouvelle Revue Française} et enrichi des articles «~Réalisme et révolution~» et «~Pour un réalisme de la présence~» publié dans \textit{L'Express} en janvier 1955 et en janvier 1956 respectivement, cet article constitue sans doute l'une des charges les plus violentes adressés aux contemporains de Robbe-Grillet au sein du recueil.
+
+Plus encore c'est sans doute dans ce texte que l'on mesure l'habileté (ou la mauvaise foi) de Robbe-Grillet en sa capacité à se mettre à la place de ses adversaires, qui dès lors ne peuvent que sembler des adversaires supposés, imaginaires, les personnages d'un roman.
+
+L'auteur se montre à leur égard tantôt moqueur «~Mais tous avouent, sans voir là rien d'anormal, que leurs préoccupations d'écrivains datent de plusieurs siècles~», compréhensif «~Comment feraient-elles [les choses] pour changer ? Vers quoi iraient-elles ?~» enfin pédagogue «~Or le monde n'est ni signifiant ni absurde. Il est, tout simplement.~».
+
+%<p>Cette variété de ton, si elle sert la démonstration, doit aussi être perçue comme les traces de l'assemblage qui produisit l'article en cette forme. [justifier voir GALIA]</p>
+	
+	
+Au service de la démonstration cette variété de ton est la reprise d'éléments argumentatifs déjà développés semblent des traces de l'assemblage des différents articles de presses.
+
+Au demeurant, le glissement à un ton plus théorique que polémique sert aussi l'économie globale du recueil. Par son titre et son sujet apparent : l'avenir du roman, cet article semble programmatique. Loin de délivrer des propos abstraits sur l'avenir du roman, ce texte s'avère être un état des lieux de la littérature contemporaine, tenant deux pants de la littérature contemporaine, les héritiers de Balzac, du côté des consommateurs, de ceux qui croit au «~cœur~» humain éternel et de la littérature telle qu'elle est, en opposition à la littérature telle qu'elle pourrait être, les littérature acceptant le risque de jouïr pleinement de leur liberté d'écrivain pour écrire une littérature plus proche de la réalité.
+
+Est introduit dans ce chapitre surtout un hiatus entre l'importance de ces deux littératures et leur degré de contemporanéité. Alors que la littérature dominnante repose au mieux sur des idées de plusieurs siècle, au pire proprement délirante (le «~coeur romantique des choses~»)~; une littérature consciente du temps présent et de sa responsabilité à résister contre «~[l']appropriation systématique~» a toute les difficultés à exister.
+
+Si ce texte semble dérouler toutes les raisons psychologiques (chez les lecteurs, les auteurs, les critiques) etc. qui empêche à cette littérature nouvelle de prendre la place qui lui est dûe, c'est bien un paradoxe qu'expose Robbe-Grillet invitant le lecteur à se positionner pour ce langage littérautre qui «~déjà change~».
+
+
+\subsubsection{Sur quelques notions périmées}
+			Issu de cinq publications entre octobre et novembre 1957 dans le magazine \textit{France Observateur} («~Écrire pour son temps~»,«~Il n'y a pas "d'avant-garde"~»,«~La mort du personnage~»,«~Un joli talent de conteur~»,«~La forme et le contenu~») et deux publications dans \textit{L'Express} en décembre 1955 et février 1956 «~Littérature engagée, littérature réactionnaire~»,«~Le réalisme socialiste est bourgeois~», cet article plus qu'une charge envers la littérature de son temps s'attaque à la conception même que l'on se fait de la littérature s'en prenant aux termes employés pour en parler.
+
+Commençant par développer le sens de ces termes tels que la critique les emploie, Robbe-Grillet s'ingénie à en démontrer l'inanité en s'appuyant sur des exemples qui constitue en creux une filiation dont le dernier né n'est autre que le Nouveau~Roman.
+
+Si le texte s'emploie à démontrer que ces concepts sont «~périmés~», ce n'est pas seulement du fait d'un besoin de variété dans la production littéraire mais bien que les temps ont changé. Certaines certitudes se sont évanouies, outre les notions des critiques académiques, c'est peut-être une attitude face au monde teintée de métaphysique, de romantisme ou de positivisme, qui est ici rejettée. Plus qu'une vision nouvelle de ce que sont l'art et les œuvres, «~De quelques notions périmées~» nous dit~: la modernité c'est de ne plus croire. Cette non-croyance, ou plutôt ce soupçon, se pose non seulement sur les théories mais également sur leurs vecteurs : la forme.
+
+
+\subsubsection{Nature, humanisme, tragédie}
+			Initialement publié en octobre~1958 dans le numéro~70 de la \textit{Nouvelle Revue Française}, ce passage nous paraît être le plus existentialiste de \textit{Pour un nouveau roman}. Si existentialiste que la philosophie de Sartre et l'absurde de Camus semblent des fétiches, du moins des œuvres qui ne prennent pas acte de ce qu'elles énoncent.
+
+À lire ces pages, il semble que l'existentialisme prenant acte d'un monde dépourvu de sens n'a pas su se défaire de la métaphysique, entraînant un hiatus irrémédiable entre l'homme et le monde, dû à son incapacité à se défaire d'outils qu'il sait défectueux. Ce hiatus, Robbe-Grillet à la suite de Barthes propose de l'appeler «~la Tragédie~».
+
+Lorsque l'on cessera de chercher l'homme partout on pourra peut-être s'intéresser aux phénomènes, nous dit en substance Robbe-Grillet s'attelant à donner au lecteur les clefs de la littérature qu'il est en train de produire, nous sommes presque devant un manuel, du moins des recommandations techniques pour une forme débarassée de la tragédie, aux yeux de Robbe-Grillet, elle aussi périmée.
+
+				\subsubsection{Éléments d'une anthologie moderne}
+			Les écrits théorique s'interrompent et s'intercalent un texte inédit ayant vocation de seuil. Aux récriminations contre une littérature périmées, aux recommendations techniques succèdent les cas pratiques~: nous sommes invités à lire la modernité à travers les lectures de Robbe-Grillet.
+
+À la filiation prestigieuse (car constituée de classique relativement éloignés de son époque) se surimpose une filiation à la fois plus contemporaine, esquissant une voie pour la littérature. Si l'on ne pourrait affirmer avec certitude que Robbe-grillet défend l'idée d'un progrès en art, on observe du moins une gradation dans l'ordre de ces chroniques~: plutôt que d'être insérées dans leur ordre de publication ces critiques sont organisés de la plus éloignée à la plus proche de la modernité.
+
+À travers ces critiques, Robbe-Grillet défend deux pendants de la modernité : des techniques ld'écriture, mais aussi une certaine attitude qu'il préconise à l'endroit des œuvres littéraire. Que devrait-on lire~? Comment devrait-on lire~? À ces questions ce court texte propose un début de réponse.
+
+
+\subsubsection{Énigmes et transparences chez Raymond Roussel}
+			Publiée en décembre 1963 dans la revue \textit{Critique}, cette analyse du style de Raymond Roussel semble partir du constat que Raymond Roussel écrit «~mal~» c'est-à-dire qu'il ne répond pas aux habitudes de la réception. En effet, il ne s'agit pas d'une littérature du secret, ni même du dévoilement mais une littérature d'un imaginaire loufoque décrit avec la banalité de ce qui n'est que pour être. En cela ce cas pratique est à la fois une démonstration de la modernité selon Robbe-Grillet mais également de l'incapacité du discours de la critique contemporaine à rendre compte du fait littéraire, même relativement ancien.
+
+\subsubsection{La conscience malade de Zeno}
+			Cette critique est parue initialement dans le numéro~19, juillet~1954 de la\textit{Nouvelle Revue Française}.
+
+Présenté dans les premières lignes comme s'il s'agissait d'un roman classique au sens auquel l'entend Robbe-Grillet (une narration, un protagoniste, presque des épisodes, etc.), \textit{La Conscience de Zeno} se révèle un exemple de roman moderne.
+
+Et si les thèses esthétiques de Robbe-Grillet n'y sont jamais détaillées ou même explicitement mentionnées, le lecteur attentif en décèle les indices. Le roman d'Italo Svevo traite du monde perçu depuis la conscience du protagoniste, c'est-à-dire de la conscience elle-même. L'œuvre se présente comme un journal non chronologique, donc plus proche d'un livre à part entière du fait de ce travail sur le temps, écrit à porpos de et par le protagoniste qui traite de son objet, lui-même sa conscience mais également du moyen pour la saisir, l'écriture elle-même. Robbe-Grillet invite à s'intéresser à la situation d'énonciation de l'ouvrage, devenu un roman du soupçon, posant la question~: «~Qui parle~?~»
+
+
+\subsubsection{Joë Bousquet le rêveur}
+			Cette critique est la reprise d'une critique publiée pour la première fois dans le numéro~77, octobre~1954 de la revue \textit{Critique}.
+
+À travers l'évocation de l'œuvre de Joë Bousquet, Robbe-Grillet illustre sa thèse sur la création littérature. La création littéraire n'est pas le fait d'une restitution, mais bien d'une création. Les objets ne sont pas symboles ou symptomes d'une profondeur inaccessible. Notons à ce propos que Robbe-Grillet cite un passage de Bousquet qui rapproche cette thèse de Roussel et du roman policier (page~108). Et s'il n'y a pas de profondeur, la signification existe mais toujours comme un «~sous-produit~» (p.~109) des choses elle-même qui n'y participe en aucun cas.
+
+Bousquet est pour Robbe-Grillet l'exemple d'une littérature défaite de mysticisme, une illustration de la phénoménologie en littérature, défaite de métaphysique et surtout de tragédie~: si \textit{Le Meneur de lune} est pour Robbe-Grillet l'expression du hiatus entre le monde et l'homme, cela semble l'occasion d'une célébration et non d'une plainte.
+
+
+\subsubsection{Samuel Beckett ou la présence sur la scène}
+			Constitué de deux critiques sur Beckett «~Samuel Beckett, Auteur dramatique~» et «~Samuel Becket ou la présence sur la scène~», respectivement parus dans les numéros~69 (février~1953) et~189 (février~1963) de \textit{Critique}, cet article confirme la gradation qu'on observe de critique en critique~: des précurseurs de la modernité on passe ici à ce que Robbe-Grillet considère être la modernité.
+
+Lorsque Robbe-Grillet traite Beckett et \textit{a fortiori} à la parution du recueil, son théâtre est largement reconnu. Dès lors s'agit-il pour Robbe-Grillet de chercher la continuité d'une œuvre, sa direction pour les rattacher au projet du nouveau roman. Qui voit Robbe-Grillet~? Une lecture d'Heidegger qui coïncide avec ses thèses esthétiques, une contagion, un amenuisement progressif des choses, mais aussi un reflet de la condition humaine défait de tragédie et de métaphysique triste. Robbe-Grillet dépeint ici un théâtre neuf où le spectateur, loin de «~"pens[er]" ferme~» est stimulé tout au long de la représentation.
+
+
+\subsubsection{Un roman qui s'invente lui-même}
+Dans cet article, initialement paru dans \textit{Critique} en janvier~1954, Robbe-Grillet fait la critique de deux romans de Robert Pinget (auteur rattaché au nouveau roamn) \textit{Mahu ou le matériau} et \textit{Le Renard et la boussole} paru en 1952 et 1953. Robbe-Grillet s'y emploie à résumer l'intrigue autant que faire ce peut (le terme même d'«~intrigue~» semble ici inaproprié). Ce résumé vaut commentaire tant l'explicitation des détours de ces œuvres ne peut être que le récit d'une écriture.
+
+Si, comme l'ensemble des critiques au sein de Pour un nouveau roman, le texte semble une digression dans l'économie de la démonstration, cette digression elle-même puisqu'elle est assemblée au recueil vaut d'emblée aux yeux du lecteur illustration des thèses.
+
+Que nous démontre la lecture de Pinget que nous livre Robbe-Grillet~? Robbe-Grillet ne tire aucune conclusion dans cet article, cependant la relative inanité de l'exercice auquel il se livre ici, dénouer le fil de l'aventure, semble la meilleure incarnation possible des thèses exposées dans «~De quelques notions périmées~» : son analyse du personnage de Renard, le récit insaisissable se veulent les preuves que le discours habituel de la critique n'a pas prise sur les œuvres du nouveau roman% (et peut-être Robbe-Grillet non plus)
+. Enfin il convient de souligner que l'article souvre sur l'assertion initiale déplorant le fait que les œuvres de Pinget passe inaperçu. Outre le fait que cette affirmation semble corroborer les propos que Robbe-Grillet tient également dans «~Une voie pour le roman futur~».%, il n'est sans doute pas anodin que l'éditeur Robbe-Grillet publie à propos de Pinget publié chez Minuit.
+	
+	
+
+
+
+\subsubsection{Nouveau roman, homme nouveau}
+			Bilan et relance de ce qui a été exposé dans le recueil, de ce qui a été écrit dans la presse «~Nouveau roman, homme nouveau~» initialement paru en~1961 dans le numéro~68 de la revue spécialisée \textit{Revue de Paris} s'affirme comme une lutte pas à pas, une subversion, «~un contre pied~» contre la \textit{doxa} fautive.
+
+Robbe-Grillet rétablit (c'est-à-dire qu'il prescrit) la juste lecture du nouveau roman et de ses grands principes. Ce texte est sans doute le plus offensif, du moins le plus clairement sur une structure antagonistique vis-à-vis d'adversaires non désignés mais en lesquels on reconnaît \textit{Qu'est-ce que la littérature~?} de Sartre allant jusqu'à en reprendre la lettre «~Le seul engagement possible, pour l'écrivain, c'est la littérature~» (p.~152 chez Robbe-Grillet pour en proposer des contradictions frontales présentées comme des nuances ou des nuances présentées comme des contradictions frontales.
+
+
+\subsubsection{Temps et description dans le récit d'aujourd'hui}
+			«~Temps et description dans le récit d'aujourdhui~» est en partie issue de la réécriture de «~Comment mesurer l'inventeur des mesures~?~» initialement publié dans \textit{L'Express} en juin 1963.
+
+Contrairement à l'usage du recueil l'article s'ouvre sur une concession faite au critique~: il est difficile de penser la nouveauté. Aussi, Robbe-Grillet se propose t-il ici de leurs venir en aide en soumettant quelques théories liées à la technique de cette littérature nouvelle~: prenant le contre-pied de la critique qui rapproche le nouveau roman du cinéma, Robbe-Grillet s'emploie à démontrer l'intérêt des nouvelles techniques mises en œuvre dans la description et le traitement du temps. C'est encore une fois de l'histoire dont il est question, et du rapport qu'entretient le lecteur avec la narration.
+
+
+\subsubsection{Du réalisme à la réalité}
+			Continuant sur la lancé des articles plus théoriques que polémiques «~Du réalisme à la réalité~» est issue de quatre sources~:
+
+\begin{itemize}
+
+	\item «~La Littérature aujourd'hui~–~\textsc{vi}~», l'entretien de \textit{Tel Quel} publié en 1963
+
+	\item «~Monsieur personne répond….Pour un ‘‘nouveau roman’’~», publié en~1963 dans \textit{Le Figaro Littéraire}
+
+	\item «~Réalisme et révolution~», premier article publié en janvier~1955 de la série de chroniques de \textit{L'Express}.
+
+	\item «~Pour un réalisme de la présence~», issu de la même série publié en janvier~1956.
+\end{itemize}
+De par sa place et son ton, cet article se présente comme une conclusion. Robbe-Grillet y traite du sens sinon de la direction de la littérature, partant d'une affirmation énoncé avec l'évidence d'un constat~: il n'y a de littérature que du réel et c'est précisèment ce souci de la réalité qui explique la succession des courants et des écoles littéraire et artistiques. Deux raisons sont brièvement esquissées~: les modes qui passent et le monde qui change. Mais la raison principale développée par Robbe-Grillet est la l'épuisement des formes qui se figent et devient convention. L'art véritable ne peut être que création et au nom d'une littérature plus réaliste Robbe-Grillet esquisse les contours d'un changement de paradigme~:l'invention n'est plus dissimulée mais bien exposée.
+
+Prenons garde de ne pas mésinterpréter l'expression «~servir à quelque chose~». La valeur de la littérature n'est pas dans son inutilité, mais dans son incapacité à servir les idéologues(comprendre~: les engagés, les critiques, tous réactionnaires selon Robbe-Grillet) car le propre de la création réellement nouvelle est qu'elle subvertie toujours au nom d'une forme et d'un sens défaits de l'habitude et de la paresse.
+
+
+
+
+
+ 
+
+%			le sens de la littérature, le progrès (?) l'histoire de litt est resaisi ici
+	
+	
+%		part d'affirmation énoncé avec évidence d'un constat , il n'y a de littérature que du réel
+%		moteur de l'histoire litt = la volonté de plus de réel, 
+%		lorsque les genres littéraires/les écoles litt
+%			deux raisons brèvement esquissées~: sucession des genres et  + le monde change
+%			contre le réalisme en tant que genre, écoles devenu convention qui ne rend pas compte du réel mais d'une petite partie 
+%			prend appui sur son inspiration son processus créatif pour critiquer l'idée de représenter le réel
+%		changement de paradigme, l'invention ++ et le mensonge contre 
+%		
+%		critique via détour par Kafka des analyses littéraires qui cherche à ramener au connu des formes nouvelles
+%		==> le but de la littérature est donc de dégager des idées neuves grâce à une forme neuve imaginative
+%		propos politique là dessus où il se peint à demi-mot en progressiste
+%		s'ouvre sur une invitation explicite au lecteur et au romancier à rejoindre une ambition ++ pour la littérature
+%		
+%		
+%		ne pas mésinterpréter « servir à qqch » qui pourrait être compris comme servir à qq1, les idéologues qui cherchent à produire une forme fermé pour un contenu préétabli
+%		conclut sur notion esthétique forme/sens nouvelle
+%		
+	
+	
+%		redef de réalisme
+	
+	
+
+\newpage
+
+\section{Un style polémique}
+
+\subsection{Des adversaires désignés ?}
+
+    % utiliser la DB et la commenter
+
+De par sa portée polémique, \punr{} se désigne des adversaires. Parmi lesquels on trouve~: les critiques généralement non nommés (à quelques exceptions près) et désignés par une expression «~les critiques~»~: ils sont les adversaires privilégiés et assimilés aux porteurs d'une \textit{doxa} à laquelle le texte s'oppose. Leurs propos réels ou supposés sont mis en valeur tout au long du texte et constituent l'un des points saillants que notre édition entend mettre en évidence (voir \ref{gloss}). Outre l'usage du discours indirect libre, de la citation (réelle ou fictive) on distingue l'usage de la périphrase pour désigner sans nommer, englober sans nuance les thèses adverses au sein de groupes dont les contours sont assez lâches pour permettre une contestation facile et assez serrés pour permettre des charges précises.
+
+\subsubsection{Les critiques : tenants d'un ordre littéraire rétrograde}
+%attaque ad nominem
+%les critiques classiques
+%les académiciens
+
+\subsubsection{Les « socialistes socialistes »}
+
+
+
+Par ailleurs les adversaires nommés ou désignés de manière si précise que l'implicite s'expose en procédé rhétorique, semblent constituer des \textit{exempla} de groupes adversaires. Ainsi Sartre dont l'éloge nuancé pour \textit{La Nausée} semble \textit{exemplum} du groupe «~socialistes révolutionnnaires~». En effet Robbe-Grillet semble ne pas faire de distinction entre «~les engagés~» et «~les réalistes socialistes~», ainsi lit-on page~40 à propos de la notion périmée d'engagement~:
+\begin{quote}
+    On l’a pourtant vu, il y a quelques années, renaître à gauche sous de nouveaux habits~: «~l’engagement~»~; et c’est aussi, à l’Est et avec des couleurs plus naïves, le «~réalisme socialiste~».
+\end{quote}
+Exemple type des références à l'engagement dans \punr{} renvoyant de manière implicite à l'ouvrage de Sartre \textit{Qu'est-ce que la littérature}\footnote{\textsc{Sartre} Jean-Paul, \textit{Qu'est-ce que la littérature}, Paris, Gallimard, coll. «~folio essais~», 2008 [1948]} paru en 1948 (ou à la série d'articles du même nom publié de février à juillet 1947 dans \textit{Les Temps modernes} (voir~: \ref{vsSartre}), le raccourci nous paraît manifeste.
+%rattacher ça à Sartre en disant que c'est une allusion à 
+
+
+Mais il y a plus, au fil du texte se révèle une homologie structurale entre les engagés et les réalistes socialistes. À la sous-section suivante «~La forme et le contenu~», le terme «~engagé~» disparaît au profit de «~partisans du réalisme socialiste~» (page~47), «~serviteurs de Jdanov~» (page~48), la fusion des deux groupes est définitivement consommée page~50 «~les romans "engagés" qui se prétendent révolutionnaires~», par un zeugme Robbe-Grillet reproche une littérature rétrograde (de par sa pauvreté formelle) aux engagés tout en faisant signe vers une littérature censée soutenir la révolution. Par ailleurs, l'argument ne manque pas d'intérêt~: puisque les «~partisan du réalisme socialiste~» et les «~critiques bourgeois les plus endurci~» considèrent la littérature par les mêmes outils (distinguant forme et fond), ce sont les mêmes et il n'est plus utile de les distinguer. Écrivant au fil de la pensée, du moins le laissant entendre, l'écriture de Robbe-Grillet s'embarrasse de peu de concessions~: le résumé qu'il fait du réalisme socialisme ressemble à s'y méprendre à l'engagement Sartrien et toute concession faite à l'un servira à dénigrer l'autre, par exemple page~46~: 
+%Si cette affirmation semble à nuancer au vu de la page~46, une concession faite à Sartre~:
+\begin{quote}
+    Que reste-t-il alors de l’engagement~? Sartre, qui avait vu le danger de cette littérature moralisatrice, avait prêché pour une littérature \textit{morale}, qui prétendait seulement éveiller des consciences politiques en posant les problèmes de notre société, mais qui aurait échappé à l’esprit de propagande en rétablissant le lecteur dans sa liberté. L’expérience a montré que c’était là encore une utopie~: dès qu’apparaît le souci de signifier quelque chose (quelque chose d’extérieur à l’art) la littérature commence à reculer, à disparaître.
+\end{quote}
+
+
+
+\subsubsection{L'intérêt du sous-entendu}
+Si l'on distingue quelques individualités nommés ou suggérés (voir \textit{infra}), les adversaires de Robbe-Grillet ne sont généralement pas nommés directement mais toujours désignés par des périphrases, telles page~29 «~nos bons critiques~» page 34 «~les gens sérieux~» ou des tournures impersonnelles page~33 «~On louera seulement le romancier~» ou page~16 «~Il ne semble guère raisonnable~». Nous pensons qu'il s'agit là d'un choix délibéré.
+
+\begin{quote}
+    D'autres critiques qui se montrent négatifs par rapport à son projet,
+comme François Mauriac et André Rousseaux, par exemple, se voient
+accorder une place d’honneur dans le recueil. Certains, comme Jean-
+René Huguenin, n’y figurent qu’implicitement, fournissant toutefois à
+Robbe-Grillet un cadre polémique dans lequel il peut avancer ses
+thèses en réagissant à leurs remarques, et parfois même en les inventant,
+quand elles ne sont pas exprimées en toutes lettres\footnote{\textit{Op. cit.}, p.~75}.
+\end{quote}
+
+Jean-René~Huguenin mais aussi Jean~Guéhenno sont deux auteurs qui prirent position publiquement contre le nouveau roman, tel le rapporte \galia\footnote{\textit{Op. cit.}, p.~137} le premier dans \textit{Le Figaro Littéraire}\footnote{Jean \textsc{Guéhenno}, «~Le roman de Monsieur Personne~»,\textit{ Le Figaro Littéraire}, 28 Nov.-4 déc. 1963}, le second dans la revue \textit{Arts}\footnote{Jean-René \textsc{Huguenin}, «~Le nouveau roman~: une mode qui passe~», \textit{Arts}, n°~836, 27~sept.-3~oct.~1961.}, pourquoi sont-ils épargnés alors que Mauriac et Rousseaux sont tous deux cités page~55~? 
+%LA REF à Huguenin c'est p. 181
+On aurait sans doute tort de penser qu'il s'agit là d'un procédé pour éviter de se faire de nouveaux ennemis, puisque ces deux auteurs se sont ouvertement positionnés contre le nouveau roman~; et que deux auteurs bien plus connus, eux, le sont. C'est que \punr, ne s'adresse pas à ces critiques et peut-être même pas au lecteur de la presse spécialisé mais à un lectorat plus large qui suit de loin, voire pas du tout, les polémiques littéraires. Le recueil bien que moins diffusé qu'un titre comme \textit{L'Express} s'adresse à un public plus large et possiblement à une époque éloignée de ces débats. 
+
+En évitant de citer explicitement ses adversaires moins connus, \robbe{} leur témoigne un relatif mépris~: ils ne méritent pas d'être cités mais seulement d'être rejetés au sein d'une entité collective «~les critiques~» reflet de la \textit{doxa}, qui, par définition, ne sert qu'à être mise en échec par la démonstration du grand auteur (voir \ref{rhétoChemin}). Ainsi, les nuances de la pensée des adversaires, auxquels on peut dès lors prêter les propos que l'on souhaite (puisqu'il n'y a plus d'auteur identifié, nul n'est accusé à tort), sont gommées dans une masse informe et caricaturale qu'il est aisée pour \robbe{} de critiquer voire de moquer. %stratagème 1 de Schopenhauer
+
+Mais surtout ce renvoi à une entité collective permet et c'est là l'enjeu principal d'un manifeste, de se constituer un public qui partage la même défiance à l'égard du champs littéraire hostile aux néo-romanciers, en s'attachant tous les déçus ou les lassés de la littérature contemporaine de laquelle \robbe{} entend se distinguer. Se constitue aux yeux du lecteur un bloc monolithique à la fois rétrograde «~Mais tous avouent, sans voir là rien d’anormal, que leurs préoccupations d’écrivains datent de plusieurs siècles~» (page~17)~; dominant, en témoigne l'adjonction des termes «~la plupart [des critiques, des auteurs]~» p.~17 p.~33 ou encore «~académiques~» p.~35 p.~86~; et leurs thèses objet de moquerie de l'auteur, tel le «~cœur romantique des choses~» page~23 (et plus généralement une grande partie des termes placés entre guillemet recensé dans notre index des notions adverses (voir~: \ref{gloss})). Par là, le lecteur est invité à épouser les thèses de \punr{} par dégoût pour les propos prêtés à ces «~critiques traditionnels~».
+
+
+
+  %  Enfin notre étude entend dégager les raisons théoriques qui organiser la distribution des bons et des mauvais points par \robbe{} aux œuvres citées (telles \textit{La Nausée}, \textit{L'Étranger}, \textit{Le Parti pris des choses})  et aux critiques.
+
+
+\subsection{Une technique argumentative : le cheminement}
+\label{rhétoChemin}
+% exposition
+% réfutation
+
+%exemple en gros de deux chapitre qui détaille le chemin et fai lien avec édition numérique
+
+Outre le principe, somme toute classique en rhétorique, d'exposer la thèse adverse que l'on s'emploie à défaire, il convient de noter que les thèses adverses sont le véritable moteur de l'argumentation. Citant un entretien de Robbe-Grillet issu du numéro~764 de \textit{Les Lettres françaises}, \galia{} que les critiques nourrissent la pensée de l'écrivain \robbe~: «~il peut y avoir un dialogue entre romanciers et critiques. Il est même quelquefois très profitable\footnote{Anne \textsc{Villelaur}, «~Le nouveau roman est en train de réfléchir sur lui-même~», \textit{Les Lettres françaises}, n°~764, 12-18.03.1959, p.~4}~». Le débat est mis en scène dans l'écriture et en retour la met en branle, d'une part par le phénomène d'exposition/réfutation mais aussi par les multiples commentaires digressifs qui prennent appui sur la pensée adverse~: 
+\begin{quote}
+À moins d’estimer que le monde est désormais entièrement découvert (et, dans ce cas, le plus sage serait de s’arrêter tout à faire d’écrire), on ne peut que tenter d’aller plus loin\footnote{\op 172}.    
+\end{quote}
+Chaque expression prêtée à l'adversaire fait l'objet d'une réfutation montrée comme immédiate et donc spontanée. De par son statut digressif, l'usage des parenthèses semblent sous-tendre une incise dans une pensée en mouvement, l'inspiration soudaine dans le souffle d'une théorie qui s'achemine à force de réfuter les thèses adverses. Ainsi, l'écriture de Robbe-Grillet est-elle dans \punr{} faites de rebonds, sur et à propos de critiques adressés à ces écrits, du moins de positions qu'il ne partage pas. Suite immédiate du passage précédemment cité, l'essayiste avance pas à pas sur les traces de ces adversaires~:
+\begin{quote}
+    Il ne s’agit pas de «~faire mieux~», mais de [...]
+    
+    À quoi cela sert-il, dira-t-on, [...]
+    
+    La critique académique, à l’Ouest comme dans les pays communistes, emploie le mot « réalisme » comme si[...]\footnote{\op 172-173}
+\end{quote}
+
+Ainsi progresse l'exposition des théorie de Robbe-Grillet, en réaction à des critiques qu'il se fait lui-même, comme si elle venait rectifier les erreurs ou les biais idéologiques des critiques.
+
+%Nous tirons, à dessein, cette citation du dernier chapitre du recueil «~Du réalisme à la réalité~», dans lequel la technique de l'exposition/réfutation ne structure pas l'article. Souhaité conclusif, la réfutation est bien présente mais plus diffuse c'est que pour une fois les thèses adverses ne font pas le cœur de l'argumentation. Au contraire, ici, \robbe{} déroule sa pensée. Or, si les thèses adverses ne sont pas exposées avec la même ampleur que dans les premiers articles du recueil, elles sont bien présentes et utilisées pour relancer l'argumentation qui semble ne pouvoir se faire sans elles~: 
+
+
+
+
+
+\subsubsection{L'histoire d'une dispute}
+Sous l'impulsion des détours et des rebonds la pensée se fait presque narration. L'emploi du discours indirect libre et la capacité de Robbe-Grillet à laisser une place aux discours adverses dont le lecteur perçoit aisément qu'ils sont (re)constitués pour les besoins de la mise en scène du débat~: 
+\begin{quote}
+    Il ne semble guère raisonnable, à première vue, de penser qu’une littérature entièrement \textit{nouvelle} soit un jour – maintenant, par exemple – possible. Les nombreuses tentatives, qui se sont succédé depuis plus de trente ans, pour faire sortir le récit de ses ornières n’ont abouti, au mieux, qu’à des œuvres isolées\footnote{\textit{Op. cit.}, p.~16}.
+\end{quote}transforme par moment l'essayiste en un narrateur omniscient qui se plaît à commenter avec force ironie et force affectivité.
+\begin{quote}
+    Non seulement le livre déplut et fut considéré comme une sorte d’attentat saugrenu contre les belles-lettres, mais on démontra de surcroît comment il était normal qu’il fût à ce point exécrable, puisqu’il s’avouait le produit de la préméditation~: son auteur –~ô scandale~!~– se permettait d’avoir des opinions sur son propre métier\footnote{\textit{Op. cit.}, p.~10}.
+\end{quote}
+L'emploi du passé simple et les antagonismes fort qui sous-tendent toute l'œuvre font du recueil d'essai, du moins de ces premiers chapitres qui concentrent ces effets utiles, sans doute aux yeux d'\robbe{} à l'exposition des termes du débats, une histoire. Le lecteur est ainsi invité à assister à l'émergence du Nouveau Roman devenu par moment l'objet d'une joute épique entre le narrateur et les antagonistes qu'il s'est constitué.
+
+\subsubsection{Robbe-Grillet, défenseur du bon sens ?}
+%puisque l'idée d'ARG découle de la position adverse elle paraît de bon sens
+%rectifier les erreurs ou les biais idéologiques des critiques.
+%début de homme nouveau roman nouveau contrepied = bon sens
+De par sa structure, ses arguments à la fois rhétoriques mais également théoriques (où ce que l'on serait tenté d'appeler «~la bonne foi~» est l'un des concepts opérant la distinction), \robbe{} se place comme le tenant du bon sens.
+
+Or, ce concept de «~bon sens~» mérite d'être interrogé, du moins défini. Si tous s'en réclament, chacun y projette un rapport particulier au savoir. Dans le cas d'\robbe{} le bon sens n'est pas la \textit{doxa}, un avis partagé immédiatement par le plus grand nombre mais bien le résultat d'un dénuement, d'un dévoilement, permettant d'accéder à la vérité (non identique au réel) qui n'étant pas immédiatement donnée doit faire l'objet d'un travail (de la pensée ou de la forme) pour défaire l'habitude qui prend tantôt l'apparence de clichés tantôt celle de la tradition.
+
+Nous proposons ici un examen des moyens rhétoriques mais surtout du rapport complexe qu'entretiennent la «~vérité~», du moins la signification, et le réel articulés et explicités dans l'œuvre par le recourt au «~bon sens~». Les moyens de la justification de la position théorique (l'appel au bon sens en tant que dévoilement) coïncide avec la théorie littéraire d'\robbe{} où le réel est ce qui résiste et la signification toujours artificielle.
+
+
+
+\subsection{Des oppositions/dichotomie structurantes}
+
+% les index réalisés
+%le jeu d'opposition bien que réel est aussi en partie illusoire puisque dès l'exposition de la th_se adverse elle est déjà discrédité
+
+%À quoi cela sert-il, dira-t-on, si c’est pour aboutir ensuite, après un temps plus ou moins long, à un nouveau formalisme, aussi sclérosé bientôt que ne l’était l’ancien ? Cela revient à demander pourquoi vivre, puisqu’il faut mourir et laisser la place à d’autres vivants. L’art est vie. Rien n’y est jamais gagné de façon définitive. Il ne peut exister sans cette remise en question permanente. Mais le mouvement de ces évolutions et révolutions fait sa perpétuelle renaissance. p. 172
+% rappele la tragédie mais n'est pas vécu comme un drame loin de là
+
+
+%TRANSITION LEUR PROXIMITÉ AVEC SARTRE
+\newpage
+
+\section{Une théorie esthétique}
+
+\subsection{De plein pieds dans son époque : postulats et références}
+
+%sarraute
+\begin{quote}
+    En effet, dans le passage entre les articles originels et l’essai final, l’appel à l’autorité de Sarraute se fait par un jeu d’inclusion et d’exclusion de la référence explicite. Dans la version d’origine de l’essai (publiée dans la Nouvelle Revue Française), Robbe-Grillet fait appel à l’autorité de Sarraute par un épigraphe tiré de \textit{L’Ère du Soupçon}, sans pour autant noter explicitement que ce passage lui appartient. Or dans la version finale qui paraît au sein du recueil, cet épigraphe est omis. On peut dès lors se demander pourquoi l’épigraphe, type de citation utilisé pour relier un discours nouveau à un ensemble textuel plus large en l’intégrant dans l’espace des énonciations qui le précèdent, est effacé de la version finale qui figure dans Pour un nouveau roman. Le gommage du renvoi explicite à Sarraute comme source directe est sans doute dû au fait que l’inclusion de l’essai dans un recueil nouveau demande de le détacher de son appartenance à un ensemble préalable, en l’occurrence de le couper des écrits de Sarraute. Bien qu’ayant comme point de départ ou comme catalyseur les essais théoriques de cette dernière, Robbe-Grillet veut, dans la logique du nouvel ensemble, donner à ses propres essais mis en recueil une unité dotée de son autonomie propre.
+    
+    Suivant la même logique, «~Le réalisme, la psychologie et l’avenir du roman~» compte rendu de L’Ère du soupçon publié initialement dans la revue Critique\footnote{\textsc{Robbe-Grillet} Alain, «~Le réalisme, la psychologie et l’avenir du roman~», \textit{Critique}, n°~111-112, août-septembre~1956, p.~695-701}, ne figurera pas dans le recueil final, quoique ce texte participe, selon Sarraute, à leur tentative commune de créer «~une sorte de mouvement~»\footnote{\fullgalia95-96}
+\end{quote}
+%Dans l’acte fondateur du recueil, Robbe-Grillet ne peut pas se permettre d’étaler les différences d’opinion qui se font jour au sein du mouvement naissant\footnote{\fullgalia98}.
+%l’essai « Pour un nouveau roman » est entièrement fondé sur l’article « Littérature objective » (1954) où Barthes analyse La Jalousie et Le Voyeur 89. Non seulement Robbe-Grillet y reprend les vocables qui caractérisent le discours de Barthes, mais il emprunte également les idées et les concepts de celui-ci\footnote{\fullgalia98}.
+%+ pp. 108-109
+%+ p. 112
+
+%p. 114 sur les réponses de la presse 
+%«La paraphrase est plutôt fictive dans la mesure où elle ne reflète pas la véritable critique de Rousseaux et de Mauriac (les adjectifs mentionnés ci-dessus ne figurent pas dans leurs articles respectifs). C’est-à-dire qu’il met dans la bouche de ses critiques des termes hyperboliques\footnote{\fullgalia116}~»
+
+
+%p. 120-121 sur la constitution théorique de « NAture humanisme etc
+
+%p. 129-130 sur Nr HN version originale et constitution du collectif
+
+
+%phénoménologie, critique du sujet de la rhétorique 
+    %du romantisme
+    %plus original contre la mélancolie après les camps
+
+
+
+Notons un trait, qui nous paraît d'époque~: les «~critiques bourgeois~» ne sont mentionnés qu'une fois p.~47 comme élément portant la charge péjorative d'une comparaison~; tant il est évident qu'on ne peut vouloir être bourgeois. On pourrait identifier les critiques désignés ainsi aux Académiciens (p.~%TROUVE
+) et aux critiques traditionnels (p.~%TROUVE
+) mais il convient de souligner le fait que le terme «~bourgeois~» n'apparaît chez Robbe-Grillet que pour dénigrer les engagés en les qualifiant de ce que l'auteur considère sans doute comme le plus grand affront qu'on puisse leur faire. Au contraire lorsque Robbe-Grillet s'attaque à la littérature traditionnelle ou académique, il évite ce terme~: son désaccord ne se situe pas dans le champs social mais bien dans celui de la littérature et à ce titre il semble incarner une position peut-être plus radicale que les socialistes réalistes.
+
+
+\subsection{Un positionnement littéraire, contre Sartre ?}
+\label{vsSartre}
+%rapport ambigue qui semble bien davntage un positionnement dans le champs littéraire et un apport de nuance que l'on ne pourrait balayer d'un revers de mains comme n'étant qu'une posture
+
+%p. 50-51
+%fin du recueil 
+
+\subsection{Une théorie de l'art : l'écart}
+    % Innovation contre l'habitude
+    % antiroman ?
+    % dès lors la moindre divergence paraît un élément important + les commencements
+
+\subsection{Quelle(s) postérité(s) à \punr?}
+
+    
+
+
+\newpage
+\addcontentsline{toc}{section}{Conclusion}
+%plongée dans une époque, mais aussi et surtout percevoir l'enthousiasme du moins l'énergie des commencements
+
+
+\newpage
+
+\section{Annexes}
+
+\subsection{Index rhétoriques}
+\label{gloss}
+\subsubsection{Index des notions adverses}
+\subsubsection{Index des expressions privilégiées}
+
+\newpage
+\tableofcontents
 \end{document}
