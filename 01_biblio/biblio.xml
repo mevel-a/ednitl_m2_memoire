@@ -187,6 +187,20 @@
 			<date type="effective">11/07/2017</date>
 			<pages>64-67</pages>
 		</ref>
+		<ref xml:id="gg01" read="1" type="article">
+			<author>
+				<name>Gérard</name><surname>Genette</surname>
+			</author>
+			<title><!--Vertige fixé-->Figures I</title>
+			<city>Paris</city>
+			<ed>Éditions du seuil</ed>
+			<coll>points essai</coll>
+			<date type="first">1966</date>
+			<date type="effective">2014</date>
+			<pages>69-90</pages>
+		</ref>
+		<!--	
+			AJOUTER AJOUTERAJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER AJOUTER  https://www.radiofrance.fr/franceculture/podcasts/les-nuits-de-france-culture/claude-simon-j-ai-appris-a-ecrire-dans-joyce-et-dans-faulkner-6832681-->
 		<ref xml:id="dr01" read="1" type="article">
 			<author><name>Duval</name> <surname>Romain</surname></author>
 			<title>Le formalisme contre les formes</title>

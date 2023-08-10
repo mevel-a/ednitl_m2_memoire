@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.4.1" Device="LAPTOP-9OFQSFHP" Modified="2023-08-03 12:03:16 +0200" ModID="7CD14832-53B2-4102-92E2-BC3B59486589">
+<ScrivenerProject Template="No" Version="2.0" Identifier="6D3C08EB-EF42-4FBB-9AE0-4903DB6F4F7E" Creator="SCRWIN-3.1.4.1" Device="LAPTOP-3B08EOV7" Modified="2023-08-10 16:17:23 +0200" ModID="68D2131F-5E27-47C1-86B8-B77AD5F46032">
     <Binder>
         <BinderItem UUID="8E61D5F6-11A8-44D9-9378-A48333405434" Type="DraftFolder" Created="2021-09-06 16:50:24 +0200" Modified="2021-09-06 16:50:24 +0200">
             <Title>Draft</Title>
@@ -14,7 +14,7 @@
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>4492,0</TextSelection>
+                        <TextSelection>65,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="37AC9DB5-E56D-473D-AC1B-24CF5F89E5AB" Type="Text" Created="2022-10-22 12:13:16 +0200" Modified="2022-12-06 18:36:17 +0200">
@@ -24,7 +24,7 @@
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>13563,0</TextSelection>
+                        <TextSelection Caret="2504">2496,8</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="787B3096-CF1B-4D04-B794-4358EA83BDAE" Type="Text" Created="2022-10-22 14:25:04 +0200" Modified="2022-11-19 15:05:58 +0200">
@@ -35,7 +35,7 @@
                         <NotesTextSelection Caret="450">0,450</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection Caret="119">110,9</TextSelection>
+                        <TextSelection>71,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="1B2A891E-D47F-4ADA-8D46-390FD69C5094" Type="Text" Created="2022-11-23 11:50:56 +0200" Modified="2022-11-23 14:13:21 +0200">
@@ -46,7 +46,7 @@
                         <NotesTextSelection>95,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>20261,0</TextSelection>
+                        <TextSelection>65,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="BA7AA0D2-0D4E-48E4-8464-C1FE6D64D8EA" Type="Folder" Created="2022-11-21 15:58:13 +0200" Modified="2022-11-21 15:58:42 +0200">
@@ -66,7 +66,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>1366,0</TextSelection>
+                                <TextSelection Caret="26">21,5</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem UUID="9B1F5397-81F3-4CC9-A584-AA5307A27D04" Type="Text" Created="2022-11-21 15:58:05 +0200" Modified="2022-11-21 17:49:06 +0200">
@@ -77,7 +77,7 @@
                                 <NotesTextSelection>147,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>24527,0</TextSelection>
+                                <TextSelection Caret="2434">2429,5</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem UUID="400A2D15-E2E9-408E-9C39-D4F25BABA611" Type="Text" Created="2022-11-21 16:29:46 +0200" Modified="2022-11-21 17:45:32 +0200">
@@ -87,7 +87,7 @@
                                 <NotesTextSelection>133,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>5631,0</TextSelection>
+                                <TextSelection>220,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem UUID="8B9E018A-8C0F-48D1-80BF-6DF9024354F2" Type="Text" Created="2022-11-21 16:00:32 +0200" Modified="2022-11-21 17:46:22 +0200">
@@ -97,7 +97,7 @@
                                 <NotesTextSelection>148,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>1881,0</TextSelection>
+                                <TextSelection Caret="1259">1254,5</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem UUID="22BB3F9E-9029-4F46-8C63-098F13188064" Type="Text" Created="2022-11-21 17:18:30 +0200" Modified="2022-11-21 17:18:42 +0200">
@@ -166,7 +166,7 @@
                                 <NotesTextSelection>11,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>6347,0</TextSelection>
+                                <TextSelection Caret="2040">2035,5</TextSelection>
                             </TextSettings>
                             <Keywords>
                                 <KeywordID>30</KeywordID>
@@ -212,7 +212,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>835,0</TextSelection>
+                                <TextSelection>883,5</TextSelection>
                             </TextSettings>
                             <Keywords>
                                 <KeywordID>4</KeywordID>
@@ -233,7 +233,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>1859,0</TextSelection>
+                                <TextSelection>2376,5</TextSelection>
                             </TextSettings>
                             <Keywords>
                                 <KeywordID>30</KeywordID>
@@ -246,7 +246,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>858,0</TextSelection>
+                                <TextSelection Caret="412">407,5</TextSelection>
                             </TextSettings>
                             <Keywords>
                                 <KeywordID>24</KeywordID>
@@ -312,7 +312,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>7547,0</TextSelection>
+                                <TextSelection>3448,5</TextSelection>
                             </TextSettings>
                             <Keywords>
                                 <KeywordID>4</KeywordID>
@@ -331,7 +331,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>3378,0</TextSelection>
+                                <TextSelection Caret="962">954,8</TextSelection>
                             </TextSettings>
                             <Keywords>
                                 <KeywordID>15</KeywordID>
@@ -348,7 +348,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>2805,1</TextSelection>
+                                <TextSelection>1025,8</TextSelection>
                             </TextSettings>
                             <Keywords>
                                 <KeywordID>6</KeywordID>
@@ -365,7 +365,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>171,0</TextSelection>
+                                <TextSelection Caret="563">558,5</TextSelection>
                             </TextSettings>
                             <Keywords>
                                 <KeywordID>31</KeywordID>
@@ -459,7 +459,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection>7316,0</TextSelection>
                             </TextSettings>
                             <Children>
                                 <BinderItem UUID="8F405762-C5DD-41AB-B880-9923F86161A7" Type="Text" Created="2022-11-19 13:46:27 +0200" Modified="2022-11-19 13:46:28 +0200">
@@ -468,7 +468,7 @@
                                         <IncludeInCompile>Yes</IncludeInCompile>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>0,0</TextSelection>
+                                        <TextSelection Caret="2678">2673,5</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
                             </Children>
@@ -480,7 +480,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>1297,0</TextSelection>
+                                <TextSelection Caret="1882">1877,5</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem UUID="7CF88225-F4F4-40CB-B0DA-4DA51D1CBF44" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 13:46:28 +0200">
@@ -490,7 +490,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection Caret="71">66,5</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem UUID="EEE708B0-5479-4AF8-95EB-5A2DDF5D29B5" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 13:46:28 +0200">
@@ -520,7 +520,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection Caret="2770">2765,5</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem UUID="4F75F7BC-73BF-4745-8B2C-E8C12F23CE3D" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 13:46:28 +0200">
@@ -550,7 +550,7 @@
                                         <IncludeInCompile>Yes</IncludeInCompile>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>2748,0</TextSelection>
+                                        <TextSelection Caret="7329">7324,5</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
                             </Children>
@@ -562,7 +562,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection Caret="5407">5398,9</TextSelection>
+                                <TextSelection Caret="1312">1307,5</TextSelection>
                             </TextSettings>
                             <Children>
                                 <BinderItem UUID="61A99AFA-44D0-4887-A4E6-03AFDE038215" Type="Text" Created="2022-11-19 13:46:28 +0200" Modified="2022-11-19 13:46:28 +0200">
@@ -572,7 +572,7 @@
                                         <IncludeInCompile>Yes</IncludeInCompile>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>0,0</TextSelection>
+                                        <TextSelection>4035,5</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
                                 <BinderItem UUID="2025D73E-3CFB-40B6-B7DF-C17BC9982ED9" Type="Text" Created="2022-11-19 13:46:29 +0200" Modified="2022-11-19 13:46:29 +0200">
@@ -582,7 +582,7 @@
                                         <IncludeInCompile>Yes</IncludeInCompile>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>0,0</TextSelection>
+                                        <TextSelection Caret="3434">3429,5</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
                             </Children>
@@ -605,7 +605,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>551,0</TextSelection>
+                                <TextSelection>43,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem UUID="D9A47FF1-F176-4E7D-8570-5D059E98B952" Type="Text" Created="2022-11-19 15:43:39 +0200" Modified="2022-11-19 16:57:27 +0200">
@@ -615,7 +615,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>2865,0</TextSelection>
+                                <TextSelection>1953,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
@@ -704,12 +704,12 @@
         </BinderItem>
     </Binder>
     <Collections>
-        <Collection Type="Binder" ID="CA7E6BB2-DEB5-464E-A21C-BE893237EB15" Color="0.000000 0.207843 0.313725">
+        <Collection Type="Binder" ID="CA7E6BB2-DEB5-464E-A21C-BE893237EB15" Color="0.400000 0.600000 0.800000">
             <Title>Binder</Title>
         </Collection>
-        <Collection Type="RecentSearch" ID="1CAEFC5B-720F-43D1-84E5-22AF5646D49F" Color="0.113725 0.392157 0.360784">
+        <Collection Type="RecentSearch" ID="1CAEFC5B-720F-43D1-84E5-22AF5646D49F" Color="0.000000 0.984314 0.662745">
             <Title>Search Results</Title>
-            <SearchSettings Operator="Any" Type="All" Scope="All" CompileSetting="All" CaseSensitive="No" IgnoreDiacritics="No"></SearchSettings>
+            <SearchSettings Operator="Any" Type="All" Scope="All" CompileSetting="All" CaseSensitive="No" IgnoreDiacritics="No">roman</SearchSettings>
         </Collection>
     </Collections>
     <Keywords>
@@ -963,10 +963,10 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2021-09-06 15:50:24 +0200" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="0" Characters="0" Date="2023-08-03 12:03:16 +0200"/>
+        <PreviousSession Words="0" Characters="0" Date="2023-08-10 16:17:23 +0200"/>
     </ProjectTargets>
     <BookmarksFolderUUID>A9394880-F5D6-462F-A916-2A703EA7B05F</BookmarksFolderUUID>
-    <RecentWritingHistory Date="2023-08-03 00:00:00 +0200">
+    <RecentWritingHistory Date="2023-08-10 00:00:00 +0200">
         <DraftWordCount>0</DraftWordCount>
         <DraftCharCount>0</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
