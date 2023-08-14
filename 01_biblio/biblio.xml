@@ -285,6 +285,34 @@
 		</ref>
 	</div>
 	<div>
+		<head>Articles parus du temps des publications des articles</head>
+		<ref xml:id="he01" read="1" type="article">
+			<author><name>Henriot</name><surname>Émile</surname></author>
+			<title>Le prix des critiques "Le Voyeur", d'Alain Robbe-Grillet</title>
+			<city>Paris</city>
+			<ed>Le Monde</ed>
+			<date type="effective">15 juin 1955</date>
+			<online>https://www.lemonde.fr/archives/article/1955/06/15/le-prix-des-critiques-le-voyeur-d-alain-robbe-grillet_1958094_1819218.html</online>
+		</ref>
+		<ref xml:id="mf01" read="0" type="article">
+			<author><name>Mauriac</name><surname>François</surname></author>
+	
+			<title></title>
+			<city></city>
+			<ed></ed>
+			<date type="effective"></date>
+		</ref>
+		<ref xml:id="ra01" read="0" type="article">
+			<author><name>Rousseaux</name><surname>André</surname></author>
+		<title></title>
+			<city></city>
+			<ed></ed>
+			<date type="effective"></date>
+		</ref>
+<!--		mauric et rousseaux goes here
+		barthes aussi -->
+	</div>
+	<div>
 		<head>Œuvres citées</head>
 		<ref xml:id="bh01" read="2">
 			<author>
@@ -643,7 +671,7 @@
 			<date type="trad">1986</date>
 			<date type="first">1954</date>
 		</ref>
-		<ref xml:id="bh01" read="1">
+		<ref xml:id="bh02" read="1">
 			<author>
 				<name>Balzac</name>
 				<surname>Honoré</surname>

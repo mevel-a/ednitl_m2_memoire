@@ -176,16 +176,22 @@
 		<xsl:param name="nature"/>
 		<xsl:param name="nature_transforme">
 			<xsl:choose>
+				<xsl:when test="contains($nature,'10')">Dixième </xsl:when>
 				<xsl:when test="contains($nature,'1')">Première </xsl:when>
 				<xsl:when test="contains($nature,'2')">Deuxième </xsl:when>
 				<xsl:when test="contains($nature,'3')">Troisième </xsl:when>
 				<xsl:when test="contains($nature,'4')">Quatrième </xsl:when>
 				<xsl:when test="contains($nature,'5')">Cinquième </xsl:when>
+				<xsl:when test="contains($nature,'6')">Sixième </xsl:when>
+				<xsl:when test="contains($nature,'7')">Septième </xsl:when>
+				<xsl:when test="contains($nature,'8')">Huitième </xsl:when>
+				<xsl:when test="contains($nature,'9')">Neuvième </xsl:when>
 			</xsl:choose>
 			<xsl:choose>
 				<xsl:when test="contains($nature,'refutation')">réfutation</xsl:when>
 				<xsl:when test="contains($nature,'exposition')">exposition</xsl:when>
 				<xsl:when test="contains($nature,'concession')">concession</xsl:when>
+				<xsl:when test="contains($nature,'conclusion')">conclusion</xsl:when>
 			</xsl:choose>
 		</xsl:param>
 		<xsl:value-of select="$nature_transforme"/>
