@@ -10,6 +10,8 @@
 			<xd:p><xd:b>Created on:</xd:b> Nov 22, 2022</xd:p>
 			<xd:p><xd:b>Author:</xd:b> Mével Adrien</xd:p>
 			<xd:p>Transformation de biblio en xml to latex, encodage maison et médiocre mais suffisant.</xd:p>
+			<xd:p>To note : après une première version médiocre les derniers ajouts à la bibliographie ont été implémenté d'une manière relativement contestable. Cette xsl est un brouillon qui doit être améliorée, pour être réellement performant. Idem pour l'xml qu'il traite qui devrait dans l'idéal être associé à un schémas scrupuleusement établi. Mais le temps (et la motivation) manquent.</xd:p>
+			<xd:p>Il est assez clair à présent (août 2023) que l'utilisation de value of au sein d'un seul template était stupide. L'inspiration de départ était : un contrôle en amont et l'idée assez sotte que les cas de figure serait peu nombreux, donc facilement modulable via des <if/>. La bonne idée aurait peut-être était un template nommé appelé sur chaque référence qui teste le @type et affecte dans l'ordre des templates nommés (un par info) qui eux-même utilise des choice etc.. pour rafiner l'affichage des virgules etc.</xd:p>
 		</xd:desc>
 	</xd:doc>
 	<xsl:output method="text" encoding="UTF-8" indent="0" use-character-maps="chars"/>
@@ -78,9 +80,10 @@
 		
 		
 		
-		<xsl:apply-templates><xsl:sort select="date/@type='first'"/></xsl:apply-templates>
-		
-		
+<!--		<xsl:apply-templates select="ref"><xsl:sort select="@when"/></xsl:apply-templates>-->
+		<!--
+		Tentative ordre alphabétique-->
+		<xsl:apply-templates select="ref"><xsl:sort select="lower-case(descendant::author[1])"/></xsl:apply-templates>
 		
 		
 		
@@ -94,27 +97,19 @@
 	</xsl:template>-->
 	
 	<xsl:template match="ref">
-		<xsl:for-each select="author">\textsc{<xsl:value-of select="author/name"/>}<xsl:if test="author/surname"> <xsl:value-of select="author/surname"/> </xsl:if><xsl:if test="following::author"> ,</xsl:if></xsl:for-each><xsl:if test="child::traductor">, \textsc{<xsl:value-of select="traductor/name"/>} <xsl:value-of select="traductor/surname"/> (trad.)</xsl:if>, \textit{<xsl:value-of select="title"/>}<xsl:if test="@type=not('nocity')">, <xsl:value-of select="city"/></xsl:if>, <xsl:value-of select="ed"/><xsl:if test="child::coll">, coll. «~<xsl:value-of select="coll"/>~»</xsl:if>, <xsl:value-of select="date[@type='effective']"/> <xsl:if test="child::date[@type='trad']"><xsl:value-of select="child::date[@type='trad']"/> pour la traduction française, </xsl:if><xsl:if test="child::date[@type='first']"> [<xsl:value-of select="date[@type='first']"/>]</xsl:if><xsl:if test="online">
+		<xsl:for-each select="author">\textsc{<xsl:value-of select="name[1]"/>}<xsl:if test="firstname[1]"><xsl:text> </xsl:text><xsl:value-of select="firstname[1]"/> </xsl:if><xsl:if test="following-sibling::author">, </xsl:if></xsl:for-each><xsl:if test="child::traductor">, \textsc{<xsl:value-of select="traductor/name"/>} <xsl:value-of select="traductor/firstname"/> (trad.)</xsl:if>, \textit{<xsl:value-of select="title"/>}<xsl:if test="not(@type='nocity')">, <xsl:value-of select="city"/></xsl:if>, <xsl:value-of select="ed"/><xsl:if test="child::coll">, coll. «~<xsl:value-of select="coll"/>~»</xsl:if>, <xsl:value-of select="date[@type='effective']"/> <xsl:if test="child::date[@type='trad']"><xsl:value-of select="child::date[@type='trad']"/> pour la traduction française, </xsl:if><xsl:if test="child::date[@type='first']"> [<xsl:value-of select="date[@type='first']"/>]</xsl:if><xsl:if test="online">
 			
 			En ligne~: \hyperlink{<xsl:value-of select="online"/>}{<xsl:value-of select="online"/>}, consulté le \today
 		</xsl:if>\par 
-		 
-		
 	</xsl:template>
 	<xsl:template match="ref[@type='article']">
-		\textsc{<xsl:value-of select="author/name"/>} <xsl:value-of select="author/surname"/> <xsl:if test="child::traductor">, \textsc{<xsl:value-of select="traductor/name"/>} <xsl:value-of select="traductor/surname"/> (trad.)</xsl:if><xsl:if test="child::editor">, \textsc{<xsl:value-of select="editor/name"/>} <xsl:value-of select="editor/surname"/> (ed.)</xsl:if>, \textit{<xsl:value-of select="title"/>}, <xsl:value-of select="city"/>, <xsl:value-of select="ed"/><xsl:if test="child::coll">, coll. «~<xsl:value-of select="coll"/>~»</xsl:if>, <xsl:value-of select="date[@type='effective']"/> <xsl:if test="child::date[@type='trad']">, <xsl:value-of select="child::date[@type='trad']"/> pour la traduction française, </xsl:if><xsl:if test="child::date[@type='first']">[<xsl:value-of select="date[@type='first']"/>]</xsl:if><xsl:if test="child::pages">, p.~<xsl:value-of select="pages"/></xsl:if><xsl:if test="online">
+		<xsl:for-each select="author">\textsc{<xsl:value-of select="name[1]"/>}<xsl:text> </xsl:text><xsl:value-of select="firstname[1]"/><xsl:if test="following-sibling::author">, </xsl:if></xsl:for-each> <xsl:if test="child::traductor">, \textsc{<xsl:value-of select="traductor/name"/>} <xsl:value-of select="traductor/firstname"/> (trad.)</xsl:if><xsl:if test="child::editor">, \textsc{<xsl:value-of select="editor/name"/>} <xsl:value-of select="editor/firstname"/> (ed.)</xsl:if>, « <xsl:value-of select="title"/> », <xsl:if test="city"><xsl:value-of select="city"/>,</xsl:if> \textit{<xsl:value-of select="ed"/>}<xsl:if test="child::coll">, coll. «~<xsl:value-of select="coll"/>~»</xsl:if>, <xsl:value-of select="date[@type='effective']"/> <xsl:if test="child::date[@type='trad']">, <xsl:value-of select="child::date[@type='trad']"/> pour la traduction française, </xsl:if><xsl:if test="child::date[@type='first']">[<xsl:value-of select="date[@type='first']"/>]</xsl:if><xsl:if test="child::pages">, p.~<xsl:value-of select="pages"/></xsl:if><xsl:if test="online">
 			
 			En ligne~: \hyperlink{<xsl:value-of select="online"/>}{<xsl:value-of select="online"/>}, consulté le \today
 		</xsl:if>\par
-		
-		
-		
-		
 	</xsl:template>
 	<xsl:template match="ref[@type='online']">
 		\textit{<xsl:value-of select="title"/>} en ligne~: \hyperlink{<xsl:value-of select="online"/>}{<xsl:value-of select="online"/>}, consulté le <xsl:value-of select="date"/>\par
-		
-		
-		
+
 	</xsl:template>
 </xsl:stylesheet>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bibliography>
-	<!--<ref xml:id="" read="">
+	<!--<ref when="" xml:id="" read="">
 		<author>
 			<name/>
-			<surname/>
+			<firstname/>
 		</author>
 		
 		<title/>
@@ -20,10 +20,10 @@
 
 	<div>
 		<head>Édition citée de Pour un nouveau roman</head>
-		<ref xml:id="rga00" read="1">
+		<ref when="1963" xml:id="rga00" read="1">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			
 			<title>Pour un nouveau roman</title>
@@ -40,10 +40,10 @@
 	</div>
 	<div>
 		<head>Première publication des textes constituants l'ensemble</head>
-		<ref xml:id="rga10" read="0" type="article">
+		<ref when="19551025" xml:id="rga10" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Il écrit comme Stendhal</title>
 			<ed>L'Express, </ed>
@@ -51,10 +51,10 @@
 			<date type="effective">1955/10/25</date>
 			<pages>8</pages>
 		</ref>
-		<ref xml:id="rga11" read="0" type="article">
+		<ref when="196307" xml:id="rga11" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>La littérature aujourd'hui - VI</title>
 			<ed>Tel Quel, n°14</ed>
@@ -62,10 +62,10 @@
 			<date type="effective">1963 été</date>
 			<pages>39-45</pages>
 		</ref>
-		<ref xml:id="rga12" read="0" type="article">
+		<ref when="195607" xml:id="rga12" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Une voie pour le roman futur</title>
 			<ed>Nouvelle Revue Française, n°43</ed>
@@ -73,10 +73,10 @@
 			<date type="effective">1956/07</date>
 			<pages>77-84</pages>
 		</ref>
-		<ref xml:id="rga13" read="0" type="article">
+		<ref when="19550117" xml:id="rga13" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Pour un réalisme de la présence</title>
 			<ed>L'Express</ed>
@@ -84,10 +84,10 @@
 			<date type="effective">1956/01/17</date>
 			<pages>11</pages>
 		</ref>
-		<ref xml:id="rga14" read="0" type="article">
+		<ref when="19550103" xml:id="rga14" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Réalisme et révolution</title>
 			<ed>L'Express</ed>
@@ -95,10 +95,10 @@
 			<date type="effective">1955/01/03</date>
 			<pages>15</pages>
 		</ref>
-		<ref xml:id="rga15" read="0" type="article">
+		<ref when="19551220" xml:id="rga15" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Littérature engagée, littérature réactionnaire</title>
 			<ed>L'Express</ed>
@@ -106,10 +106,10 @@
 			<date type="effective">1955/12/20</date>
 			<pages>11</pages>
 		</ref>
-		<ref xml:id="rga16" read="0" type="article">
+		<ref when="19571114" xml:id="rga16" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>La Forme et le contenu</title>
 			<ed>France Observateur, n°392</ed>
@@ -117,10 +117,10 @@
 			<date type="effective">1957/11/14</date>
 			<pages>19</pages>
 		</ref>
-		<ref xml:id="rga17" read="0" type="article">
+		<ref when="19571017" xml:id="rga17" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Il n'y a pas "d'avant garde"</title>
 			<ed>France Observateur, n°388</ed>
@@ -128,10 +128,10 @@
 			<date type="effective">1957/10/17</date>
 			<pages>19</pages>
 		</ref>
-		<ref xml:id="rga18" read="0" type="article">
+		<ref when="19571031" xml:id="rga18" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Un joli talent de conteur</title>
 			<ed>France Observateur, n°390</ed>
@@ -139,10 +139,10 @@
 			<date type="effective">1957/10/31</date>
 			<pages>19</pages>
 		</ref>
-		<ref xml:id="rga19" read="0" type="article">
+		<ref when="19571010" xml:id="rga19" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Écrire pour son temps</title>
 			<ed>France Observateur, n°387</ed>
@@ -150,10 +150,10 @@
 			<date type="effective">1957/10/10</date>
 			<pages>17</pages>
 		</ref>
-		<ref xml:id="rga20" read="0" type="article">
+		<ref when="19560221" xml:id="rga20" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Le réalisme socialiste est bourgeois</title>
 			<ed>L'Express</ed>
@@ -161,10 +161,10 @@
 			<date type="effective">1956/02/21</date>
 			<pages>11</pages>
 		</ref>
-		<ref xml:id="rga21" read="0" type="article">
+		<ref when="19571024" xml:id="rga21" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>La mort du personnage</title>
 			<ed>France Observateur, n°389</ed>
@@ -172,10 +172,10 @@
 			<date type="effective">1957/10/24</date>
 			<pages>20</pages>
 		</ref>
-		<ref xml:id="rga22" read="0" type="article">
+		<ref when="195810" xml:id="rga22" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Nature, Humanisme, Tragédie</title>
 			<ed>Nouvelle Revue Française, n°70</ed>
@@ -183,10 +183,10 @@
 			<date type="effective">1958/10</date>
 			<pages>580-603</pages>
 		</ref>
-		<ref xml:id="rga23" read="0" type="article">
+		<ref when="196312" xml:id="rga23" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Énigmes et transparences chez Raymond Roussel</title>
 			<ed>Critique, n°199</ed>
@@ -194,10 +194,10 @@
 			<date type="effective">1963/12</date>
 			<pages>1027-1033</pages>
 		</ref>
-		<ref xml:id="rga24" read="0" type="article">
+		<ref when="195407" xml:id="rga24" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>La conscience malade de Zeno</title>
 			<ed>Nouvelle Revue Française, n°19</ed>
@@ -205,10 +205,10 @@
 			<date type="effective">1954/07</date>
 			<pages>138-141</pages>
 		</ref>
-		<ref xml:id="rga25" read="0" type="article">
+		<ref when="195310" xml:id="rga25" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Joë Bousquet le rêveur</title>
 			<ed>Critique, n°77</ed>
@@ -216,10 +216,10 @@
 			<date type="effective">1953/10</date>
 			<pages>819-829</pages>
 		</ref>
-		<ref xml:id="rga26" read="0" type="article">
+		<ref when="196302" xml:id="rga26" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Samuel Beckett ou la présence sur la scène</title>
 			<ed>Critique, n°189</ed>
@@ -227,10 +227,10 @@
 			<date type="effective">1963/02</date>
 			<pages>108-114</pages>
 		</ref>
-		<ref xml:id="rga27" read="0" type="article">
+		<ref when="195302" xml:id="rga27" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Samuel Beckett, Auteur dramatique</title>
 			<ed>Critique, n°69</ed>
@@ -238,10 +238,10 @@
 			<date type="effective">1953/02</date>
 			<pages>108-114</pages>
 		</ref>
-		<ref xml:id="rga28" read="0" type="article">
+		<ref when="195401" xml:id="rga28" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Un roman qui s'invente lui-même</title>
 			<ed>Critique, n°80</ed>
@@ -249,10 +249,10 @@
 			<date type="effective">1954/01</date>
 			<pages>82-88</pages>
 		</ref>
-		<ref xml:id="rga29" read="0" type="article">
+		<ref when="196109" xml:id="rga29" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Nouveau roman, homme nouveau</title>
 			<ed>Revue de Paris, n°68</ed>
@@ -260,10 +260,10 @@
 			<date type="effective">1961/09</date>
 			<pages>115-121</pages>
 		</ref>
-		<ref xml:id="rga30" read="0" type="article">
+		<ref when="19630620" xml:id="rga30" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Comment mesurer l'inventeur des mesures</title>
 			<ed>L'Express, n°627</ed>
@@ -271,10 +271,10 @@
 			<date type="effective">1963/06/20</date>
 			<pages>44-45</pages>
 		</ref>
-		<ref xml:id="rga31" read="0" type="article">
+		<ref when="19631205" xml:id="rga31" read="0" type="article">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Monsieur Personne répond... Pour un "nouveau roman"</title>
 			<ed>Le Figaro Littéraire</ed>
@@ -285,10 +285,10 @@
 	</div>
 	<div>
 		<head>Œuvres d'Alain Robbe-Grillet citées</head>
-		<ref xml:id="rga01" read="2">
+		<ref when="1953" xml:id="rga01" read="2">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			
 			<title>Les Gommes</title>
@@ -302,10 +302,10 @@
 			<date type="effective">1998</date>
 			<date type="first">1953</date>
 		</ref>
-		<ref xml:id="rga02" read="0">
+		<ref when="1955" xml:id="rga02" read="0">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Le Voyeur</title>
 			<city>Paris</city>
@@ -316,10 +316,10 @@
 <!--			<date type="effective">1998</date>-->
 			<date type="first">1955</date>
 		</ref>
-		<ref xml:id="rga03" read="1">
+		<ref when="1957" xml:id="rga03" read="1">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			
 			<title>La Jalousie</title>
@@ -333,10 +333,10 @@
 			<date type="effective">1957</date>
 			<date type="first">2017</date>
 		</ref>
-		<ref xml:id="rga04" read="0">
+		<ref when="1959" xml:id="rga04" read="0">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Dans le labyrinthe</title>
 			<city>Paris</city>
@@ -347,20 +347,20 @@
 			<!--			<date type="effective">1998</date>-->
 			<date type="first">1959</date>
 		</ref>
-		<ref xml:id="rga05" read="1" type="nocity">
+		<ref when="1961" xml:id="rga05" read="1" type="nocity">
 			<author>
 				<name>Resnais</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>L'Année dernière à Marienbad</title>
 			<ed>Silverfilms, Argos Films, Cinétel, Les Films Tamara, Precitel, Société Nouvelle des films Cormoran, Cineriz, Como Films, Terra Film Produktion</ed>
 			<date type="effective">1961</date>
 		</ref>
 		
-		<ref xml:id="rga06" read="1" type="nocity">
+		<ref when="1963" xml:id="rga06" read="1" type="nocity">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>L'Immortelle</title>
 			<ed>Cocinor, Como Films, Dino De Laurentiis Cinematografica, Les Films Tamara</ed>
@@ -371,10 +371,10 @@
 	<div>
 		<head>Œuvres d'Alain Robbe-Grillet non citées</head>
 <!--		djiin, les derniers jours de corinthe un régicide-->
-		<ref xml:id="rga08" read="1">
+		<ref when="1981" xml:id="rga08" read="1">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			
 			<title>Djinn</title>
@@ -388,10 +388,10 @@
 			<date type="effective">1981</date>
 			<date type="first">2018</date>
 		</ref>
-		<ref xml:id="rga07" read="1">
+		<ref when="1978" xml:id="rga07" read="1">
 			<author>
 				<name>Robbe-Grillet</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>Un Régicide</title>
 			<city>Paris</city>
@@ -403,11 +403,11 @@
 	
 	
 	<div>
-		<head>Publications ayant particpé au débat (articles de presse, ouvrage, entretien)</head>
-		<ref xml:id="sn00" read="0">
+		<head>Publications ayant participées au débat</head>
+		<ref when="1956" xml:id="sn00" read="0">
 			<author>
 				<name>Sarraute</name>
-				<surname>Nathalie</surname>
+				<firstname>Nathalie</firstname>
 			</author>
 			<title>L'Ère du soupçon</title>
 			<city>Paris</city>
@@ -416,10 +416,10 @@
 			<date type="effective">2019</date>
 			<date type="first">1956</date>
 		</ref>
-		<ref xml:id="rj01" read="1">
+		<ref when="1973" xml:id="rj01" read="1">
 			<author>
 				<name>Ricardou</name>
-				<surname>Jean</surname>
+				<firstname>Jean</firstname>
 			</author>
 			
 			<title>Le Nouveau Roman</title>
@@ -434,30 +434,30 @@
 			<date type="effective">1990</date>
 			<date type="first">1973</date>
 		</ref>
-		<ref type="nocity" read="1" xml:id="sc01">
+		<ref when="19880208" type="nocity" read="1" xml:id="sc01">
 			<author>
 				<name>Simon</name>
-				<surname>Claude</surname>
+				<firstname>Claude</firstname>
 			</author>
 			<author>
 				<name>Veinstein</name>
-				<surname>Alain</surname>
+				<firstname>Alain</firstname>
 			</author>
 			<title>La Nuit sur un plateau</title>
 			<ed>France culture</ed>
 			<date type="effective">émission du 8 février 1988</date>
 			<online>https://www.radiofrance.fr/franceculture/podcasts/les-nuits-de-france-culture/claude-simon-j-ai-appris-a-ecrire-dans-joyce-et-dans-faulkner-6832681</online>
 		</ref>
-		<ref xml:id="he01" read="1" type="article">
-			<author><name>Henriot</name><surname>Émile</surname></author>
+		<ref when="19550615" xml:id="he01" read="1" type="article">
+			<author><name>Henriot</name><firstname>Émile</firstname></author>
 			<title>Le prix des critiques "Le Voyeur", d'Alain Robbe-Grillet</title>
 			<city>Paris</city>
 			<ed>Le Monde</ed>
 			<date type="effective">15 juin 1955</date>
 			<online>https://www.lemonde.fr/archives/article/1955/06/15/le-prix-des-critiques-le-voyeur-d-alain-robbe-grillet_1958094_1819218.html</online>
 		</ref>
-		<ref xml:id="mf01" read="0" type="article">
-			<author><name>Mauriac</name><surname>François</surname></author>
+		<ref when="19560728" xml:id="mf01" read="0" type="article">
+			<author><name>Mauriac</name><firstname>François</firstname></author>
 			
 			<title>Technique du cageot</title>
 			<city>Paris</city>
@@ -465,32 +465,32 @@
 			<date type="effective">28 juillet 1956</date>
 			<pages>1-3</pages>
 		</ref>
-		<ref xml:id="ra01" read="0" type="article">
-			<author><name>Rousseaux</name><surname>André</surname></author>
+		<ref when="19570413" xml:id="ra01" read="0" type="article">
+			<author><name>Rousseaux</name><firstname>André</firstname></author>
 			<title>Les Surfaces d'Alain Robbe-Grillet</title>
 			<city>Paris</city>
 			<ed>Le Figaro littériare</ed>
 			<date type="effective">13 avril 1957</date>
 			<pages>2</pages>
 		</ref>
-		<ref xml:id="hjr01" read="1" type="article">
-			<author><name>Huguenin</name><surname>Jean-René</surname></author>
+		<ref when="19610927" xml:id="hjr01" read="1" type="article">
+			<author><name>Huguenin</name><firstname>Jean-René</firstname></author>
 			<title>Le nouveau roman : une mode qui passe</title>
 			<ed>Arts</ed>
 			<city>Paris</city>
 			<date type="first">, n° 836, 27 septembre-03 ocotobre 1961</date>
 			<pages>1</pages>
 		</ref>
-		<ref read="0" xml:id="bar01" type="article">
-			<author><name>Barthes</name><surname>Roland</surname></author>
+		<ref when="195407" read="0" xml:id="bar01" type="article">
+			<author><name>Barthes</name><firstname>Roland</firstname></author>
 			<title>Littérature objective</title>
 			<ed>Critique</ed>
 			<city>Paris</city>
 			<date type="first">vol. XV, n° 86-87, juillet-août 1954</date>
 			<pages>581-591</pages>
 		</ref>
-		<ref read="0" xml:id="bar02" type="article">
-			<author><name>Barthes</name><surname>Roland</surname></author>
+		<ref when="195509" read="0" xml:id="bar02" type="article">
+			<author><name>Barthes</name><firstname>Roland</firstname></author>
 			<title>Littérature littérale</title>
 			<ed>Critique</ed>
 			<city>Paris</city>
@@ -500,11 +500,105 @@
 	</div>
 	<div>
 		<head>Sur le Nouveau Roman</head>
+		<ref when="201309" xml:id="arm01" read="1" type="article">
+			<author><name>Allemand</name><firstname>Roger-Michelle</firstname></author>
+			<title>Nouveau Roman, Nouveau Monde</title>
+			<ed>Analyses</ed>
+			<city>Paris</city>
+			<date type="effective">vol. 8, n° 3, automne 2013</date>
+			<pages>142-170</pages>
+		</ref>
+		<ref when="201009" xml:id="hs01" read="1" type="article">
+			<author><name>Houppermans</name><firstname>Sjef</firstname></author>
+			<title>Les Gommes : un roman policier poli et scié</title>
+			<ed>Roman 20-50</ed>
+<!--			<city></city>-->
+			<date type="effective">Hors-série n° 6, septembre 2010</date>
+			<pages>97-110</pages>
+			<online>https://www.cairn.info/revue-roman2050-2010-3-page-97.htm&amp;wt.src=pdf</online>
+		</ref>
+		<ref when="201009" xml:id="br01" read="1" type="article">
+			<author><name>Barilli</name><firstname>Renato</firstname></author>
+			<title>Quand la jalousie s'attache aux choses</title>
+			<ed>Roman 20-50</ed>
+			<!--			<city></city>-->
+			<date type="effective">Hors-série n° 6, septembre 2010</date>
+			<pages>123-130</pages>
+			<online>https://www.cairn.info/revue-roman2050-2010-3-page-123.htm&amp;wt.src=pdf</online>
+		</ref>
+		<ref when="201009" xml:id="mc01" read="1" type="article">
+			<author><name>Milat</name><firstname>Christian</firstname></author>
+			<title>Le Fils jaloux des Gommes, narrateur « absent »de La Jalousie ?</title>
+			<ed>Roman 20-50</ed>
+			<!--			<city></city>-->
+			<date type="effective">Hors-série n° 6, septembre 2010</date>
+			<pages>21-34</pages>
+			<online>https://www.cairn.info/revue-roman2050-2010-3-page-21.htm&amp;wt.src=pdf</online>
+		</ref>
+		<ref when="201009" xml:id="mf01" read="1" type="article">
+			<author><name>Migeot</name><firstname>François</firstname></author>
+			<title>Inconscient et poétique : La Jalousie</title>
+			<ed>Roman 20-50</ed>
+			<!--			<city></city>-->
+			<date type="effective">Hors-série n° 6, septembre 2010</date>
+			<pages>177-194</pages>
+			<online>https://www.cairn.info/revue-roman2050-2010-3-page-177.htm&amp;wt.src=pdf</online>
+		</ref>
+		<ref when="201009" xml:id="arm02" read="1" type="article">
+			<author><name>Allemand</name><firstname>Roger-Michel</firstname></author>
+			<title>Le Temps de l'effacement</title>
+			<ed>Roman 20-50</ed>
+			<!--			<city></city>-->
+			<date type="effective">Hors-série n° 6, septembre 2010</date>
+			<pages>5-20</pages>
+			<online>https://www.cairn.info/revue-roman2050-2010-3-page-5.htm&amp;wt.src=pdf</online>
+		</ref>
 		
-		<ref xml:id="cf01" read="1" type="article">
+		
+		<ref when="200503" xml:id="le01" read="" type="article">
+			<author><name>Lambert</name><firstname>Emmanuelle</firstname></author>
+			<ed>Société &amp; représentations</ed>
+			<title>Alaine Robbe-Grillet et ses archives</title>
+			<date type="effective">n° 19, 2005/1</date>
+			<pages>197-210</pages>
+		</ref>
+		<ref when="2005" xml:id="db01" read="1" type="article">
+			<author><name>Denis</name><firstname>Benoît</firstname></author>
+			<author><name>Boujou</name><firstname>Emmanuel (dir.)</firstname></author>
+			<title>Engagement littéraire et morale de la littérature</title>
+			<ed>L'Engagement littéraire</ed>
+			<city>Presses Universitaires de Rennes, Rennes</city>
+			<date type="effective">2005</date>
+			<pages>31-42</pages>
+			<online>https://doi.org/10.4000/books.pur.30038</online>
+		</ref>
+		<ref when="20190930" xml:id="bt01" read="1" type="article">
+			<author><name>Bishop</name><firstname>Tom</firstname></author> 
+			<author><name>Jost</name><firstname>François</firstname></author> 
+			<author><name>Pinget</name><firstname>Robert</firstname></author> 
+			<author><name>Robbe-Grillet</name><firstname>Alain</firstname></author> 
+			<author><name>Rybalka</name><firstname>Michel</firstname></author> 
+			<author><name>Sarraute</name><firstname>Nathalie</firstname></author> 
+			<author><name>Simon</name><firstname>Claude</firstname></author> 
+			<author><name>Wittig</name><firstname>Monique</firstname></author> 
+			<title>Table ronde. Le Nouveau Roman : passé, présent,
+				futur</title>
+			<ed>Cahiers Claude Simon</ed>
+			<date type="effective">30 septembre 2019</date>
+			<pages>37-54</pages>
+		</ref>
+		<ref when="1964" xml:id="jl01" read="1" type="article">
+			<author><name>Janvier</name><firstname>Ludovic</firstname></author>
+			<title>Alain Robbe-Grillet et le couple fascination-liberté</title>
+			<ed>Une Parole exigeante</ed>
+			<city>Paris, Les Éditions de Minuit</city>
+			<date type="effective">1964</date>
+			<pages>111-145</pages>
+		</ref>
+		<ref when="20170711" xml:id="cf01" read="1" type="article">
 			<author>
 				<name>de Chalonge</name>
-				<surname>Florence</surname>
+				<firstname>Florence</firstname>
 			</author>
 			<title>Les Défis du Nouveau roman</title>
 			<city>Paris</city>
@@ -513,28 +607,52 @@
 			<date type="effective">11/07/2017</date>
 			<pages>64-67</pages>
 		</ref>
-		<ref xml:id="gg01" read="1" type="article">
+		<ref when="1966" xml:id="gg01" read="1" type="article">
 			<author>
-				<name>Gérard</name><surname>Genette</surname>
+				<name>Genette</name><firstname>Gérard</firstname>
 			</author>
-			<title><!--Vertige fixé-->Figures I</title>
-			<city>Paris</city>
-			<ed>Éditions du seuil</ed>
+			<title>Vertige fixé</title>
+			<city>Paris, Éditions du seuil</city>
+			<ed>Figures I</ed>
 			<coll>points essai</coll>
 			<date type="first">1966</date>
 			<date type="effective">2014</date>
 			<pages>69-90</pages>
 		</ref>
-		<ref xml:id="dr01" read="1" type="article">
-			<author><name>Duval</name> <surname>Romain</surname></author>
+		<ref when="2009" xml:id="ba01" type="article" read="1">
+			<author>
+				<name>Boschetti</name><firstname>Anna</firstname>
+			</author>
+			<author>
+				<name>Sapiro</name><firstname>Gisèle (dir. )</firstname>
+			</author>
+			<title>La recomposition de l'espace intellectuel en Europe après 1945</title>
+			<ed>L'Espace intellectuel en Europe</ed>
+			<city>Paris, La Découverte</city>
+			<date type="effective">2009</date>
+			<pages>147-182</pages>
+		</ref>
+		<ref when="202306" xml:id="df01" type="article" read="1">
+			<author>
+				<name>Dosse</name><firstname>François</firstname>
+			</author>
+			<title>Le jour où... S'inventa le « nouveau roman »</title>
+			<ed>Sciences Humaines</ed>
+			<date type="effective">n° 56, 2023/3</date>
+			<pages>55-54</pages>
+			<online>https://doi.org/10.3917/sh.356.0054</online>
+		</ref>
+		<ref when="201202" xml:id="dr01" read="1" type="article">
+			<author><name>Duval</name> <firstname>Romain</firstname></author>
 			<title>Le formalisme contre les formes</title>
 			<ed>Nouvelle revue d’esthétique</ed>
 		<city>Paris</city>	<online>https://www.cairn.info/revue-nouvelle-revue-d-esthetique-2012-2-page-141.htm</online>
 			<date type="effective">2012/2</date>
 			<pages>141-151</pages>
 		</ref>
-		<ref xml:id="mc01" read="1" type="article">
-			<author><name>Milat</name><surname>Christian</surname></author>
+		
+		<ref when="200201" xml:id="mc01" read="1" type="article">
+			<author><name>Milat</name><firstname>Christian</firstname></author>
 			<title>Sartre et Robbe-Grillet, ou les chemins de l'écriture</title>
 			<ed>Revue d'Histoire littéraire de la France</ed>
 			<city>Paris</city>
@@ -542,18 +660,18 @@
 			<date type="effective">Janvier-Février, 2002</date>
 			<pages>83-96</pages>
 		</ref>
-		<ref xml:id="mb01" read="1">
-			<author><name>Morissette</name><surname>Bruce</surname></author>
+		<ref when="1963" xml:id="mb01" read="1">
+			<author><name>Morissette</name><firstname>Bruce</firstname></author>
 			<title>Les romans de Robbe-Grillet</title>
 			<ed>Les Éditions de Minuit</ed>
 			<city>Paris</city>
 			<date type="effective">1971</date>
 			<date type="first">1963</date>
 		</ref>
-		<ref xml:id="yg02" read="1" type="article">
+		<ref when="201006" xml:id="yg02" read="1" type="article">
 			<author>
 				<name>Yanoshevsky</name>
-				<surname>Galia</surname>
+				<firstname>Galia</firstname>
 			</author>
 			<title>La critique littéraire et les romans de Robbe-Grillet</title>
 			<ed>Roman 20-50</ed>
@@ -562,10 +680,10 @@
 			<date type="effective">2010/3 (hors série n° 6)</date>
 			<pages>67-82</pages>
 		</ref>
-		<ref xml:id="yg01" read="0">
+		<ref when="2006" xml:id="yg01" read="0">
 			<author>
 				<name>Yanoshevsky</name>
-				<surname>Galia</surname>
+				<firstname>Galia</firstname>
 			</author>
 			
 			<title>Les discours du Nouveau Roman : Essais, entretiens, débats</title>
@@ -581,14 +699,59 @@
 <!--			<date type="first"/>-->
 <online>https://doi-org.ressources-electroniques.univ-lille.fr/10.4000/books.septentrion.54734</online>
 		</ref>
-		
+		<ref when="1972" type="article">
+			<author>
+				<name>Matvejevitch</name>
+				<firstname>Predrag</firstname>
+			</author>
+			<title>L'engagement en littérature : vu sous les aspects de la sociologie et de la créatio</title>
+			<ed>L'Homme et la société</ed>
+			<date type="effective">n° 26, 1972</date>
+			<pages>119-132</pages>
+			<online>http://dx.doi.org/10.3406/homso.1972.1725</online>
+		</ref>
+		<ref when="202204" type="article">
+			<author>
+				<name>Kremer</name>
+				<firstname>Nathalie</firstname>
+			</author>
+			<title>L'Espace du récit</title>
+			<ed>Poétique</ed>
+			<date type="effective">n° 192, 2022/2</date>
+			<pages>83-96</pages>
+			<online>https://doi.org/10.3917/poeti.192.0083</online>
+		</ref>
+		<ref when="199603" type="article">
+			<author>
+				<name>Simonin</name>
+				<firstname>Anne</firstname>
+			</author>
+			<title>La Littérature saisie par l'histoire. Nouveau Roman et guerre d'Algérie aux Éditions de Minuit</title>
+			<ed>Actes de la recherche en sciences sociales</ed>
+			<date type="effective">vol. 111-112, mars 1996</date>
+			<pages>59-75</pages>
+			<online>https://doi.org/10.3406/arss.1996.3168</online>
+		</ref>
+		<ref when="200401" type="article">
+			<author>
+				<name>Simonin</name>
+				<firstname>Anne</firstname>
+			</author>
+			<title>Le catalogue de l'éditeur, un outil pour l'histoire. L'exemple des éditions de minuit</title>
+			<ed>Vingtième Siècle. Revue d'histoire</ed>
+			<date type="effective">n° 81, 2004/1</date>
+			<pages>119-129</pages>
+			<online>https://doi.org/10.3917/ving.081.0119</online>
+		</ref>
 	</div>
+	
+	
 	<div>
-		<head>Critiques généralistes</head>
-		<ref xml:id="hv01" read="2">
+		<head>Œuvres citées</head>
+		<ref when="1838" xml:id="hv01" read="2">
 			<author>
 				<name>Hugo</name>
-				<surname>Victor</surname>
+				<firstname>Victor</firstname>
 			</author>
 			<title>Ruy Blas</title>
 			<city>Paris</city>
@@ -596,14 +759,10 @@
 			<date type="effective">2009</date>
 			<date type="first">1838</date>
 		</ref>
-	</div>
-	
-	<div>
-		<head>Œuvres citées</head>
-		<ref xml:id="bh01" read="2">
+		<ref when="1842" xml:id="bh01" read="2">
 			<author>
 				<name>Balzac</name>
-				<surname>Honoré</surname>
+				<firstname>Honoré</firstname>
 			</author>
 			<title>Le Père Goriot</title>
 			<city>Paris</city>
@@ -612,10 +771,10 @@
 			<date type="effective">1989</date>
 			<date type="first">1842</date>
 		</ref>
-		<ref xml:id="fg01" read="2">
+		<ref when="1857" xml:id="fg01" read="2">
 			<author>
 				<name>Flaubert</name>
-				<surname>Gustave</surname>
+				<firstname>Gustave</firstname>
 			</author>
 			<title>Madame Bovary</title>
 			<city>Paris</city>
@@ -624,10 +783,10 @@
 			<date type="effective">1998</date>
 			<date type="first">1857</date>
 		</ref>
-		<ref xml:id="bb01" read="0">
+		<ref when="1951" xml:id="bb01" read="0">
 			<author>
 				<name>Beckett</name>
-				<surname>Samuel</surname>
+				<firstname>Samuel</firstname>
 			</author>
 			
 			<title>Molloy</title>
@@ -641,10 +800,10 @@
 			<date type="effective">1982</date>
 			<date type="first">1951</date>
 		</ref>
-		<ref xml:id="bs02" read="2">
+		<ref when="1957" xml:id="bs02" read="2">
 			<author>
 				<name>Beckett</name>
-				<surname>Samuel</surname>
+				<firstname>Samuel</firstname>
 			</author>
 			
 			<title>Fin de partie</title>
@@ -658,10 +817,10 @@
 			<date type="effective">2009</date>
 			<date type="first">1957</date>
 		</ref>
-		<ref xml:id="bs03" read="2">
+		<ref when="1952" xml:id="bs03" read="2">
 			<author>
 				<name>Beckett</name>
-				<surname>Samuel</surname>
+				<firstname>Samuel</firstname>
 			</author>
 			
 			<title>En attendant Godot</title>
@@ -675,10 +834,10 @@
 			<date type="effective">2007</date>
 			<date type="first">1952</date>
 		</ref>
-		<ref xml:id="ca01" read="2">
+		<ref when="1942" xml:id="ca01" read="2">
 			<author>
 				<name>Camus</name>
-				<surname>Albert</surname>
+				<firstname>Albert</firstname>
 			</author>
 			
 			<title>L'Étranger</title>
@@ -692,10 +851,10 @@
 			<date type="effective">2010</date>
 			<date type="first">1942</date>
 		</ref>
-		<ref xml:id="c01" read="0">
+		<ref when="1952" xml:id="c01" read="0">
 			<author>
 				<name>Céline</name>
-				<surname/>
+				<firstname/>
 			</author>
 			
 			<title>Voyage au bout de la nuit</title>
@@ -709,14 +868,14 @@
 			<date type="effective">2011</date>
 			<date type="first">1952</date>
 		</ref>
-		<ref xml:id="df01" read="0">
+		<ref when="1880" xml:id="df01" read="0">
 			<author>
 				<name>Dostoïevski</name>
-				<surname>Fédor</surname>
+				<firstname>Fédor</firstname>
 			</author>
 			<traductor>
 				<name>Markowicz</name>
-				<surname>André</surname>
+				<firstname>André</firstname>
 			</traductor>
 			
 			<title>Les Fères Karamazov</title>
@@ -730,14 +889,14 @@
 			<date type="trad">2002</date>
 			<date type="first">1880</date>
 		</ref>
-		<ref xml:id="fw01" read="2">
+		<ref when="1931" xml:id="fw01" read="2">
 			<author>
 				<name>Faulkner</name>
-				<surname>William</surname>
+				<firstname>William</firstname>
 			</author>
 			<traductor>
 				<name>Coindreau</name>
-				<surname>Maurice Edgar</surname>
+				<firstname>Maurice Edgar</firstname>
 			</traductor>
 			
 			<title>Le Bruit et la fureur</title>
@@ -752,14 +911,14 @@
 			<date type="trad">1972</date>
 			<date type="first">1931</date>
 		</ref>
-		<ref xml:id="kf01" read="2">
+		<ref when="1926" xml:id="kf01" read="2">
 			<author>
 				<name>Kafka</name>
-				<surname>Franz</surname>
+				<firstname>Franz</firstname>
 			</author>
 			<traductor>
 				<name>Nesme</name>
-				<surname>Axel</surname>
+				<firstname>Axel</firstname>
 			</traductor>
 			
 			<title>Le Château</title>
@@ -774,14 +933,14 @@
 			<date type="trad">2001</date>
 			<date type="first">1926</date>
 		</ref>
-		<ref xml:id="kf02" read="2">
+		<ref when="1925" xml:id="kf02" read="2">
 			<author>
 				<name>Kafka</name>
-				<surname>Franz</surname>
+				<firstname>Franz</firstname>
 			</author>
 			<traductor>
 				<name>Vialatte</name>
-				<surname>Alexandre</surname>
+				<firstname>Alexandre</firstname>
 			</traductor>
 			
 			<title>Le Procès</title>
@@ -796,10 +955,10 @@
 			<date type="trad">1933</date>
 			<date type="first">1925</date>
 		</ref>
-		<ref xml:id="pb" read="2">
+		<ref when="1670" xml:id="pb" read="2">
 			<author>
 				<name>Pascal</name>
-				<surname>Blaise</surname>
+				<firstname>Blaise</firstname>
 			</author>
 			<editor>
 				<name>Sellier</name>
@@ -817,10 +976,10 @@
 			<date type="effective">2009</date>
 			<date type="first">1670</date>
 		</ref>
-		<ref xml:id="pm01" read="0">
+		<ref when="1913" xml:id="pm01" read="0">
 			<author>
 				<name>Proust</name>
-				<surname>Marcel</surname>
+				<firstname>Marcel</firstname>
 			</author>
 			
 			<title>Du côté de chez Swann</title>
@@ -834,10 +993,10 @@
 			<date type="effective">1988</date>
 			<date type="first">1913</date>
 		</ref>
-		<ref xml:id="qr01" read="2">
+		<ref when="1933" xml:id="qr01" read="2">
 			<author>
 				<name>Queneau</name>
-				<surname>Raymond</surname>
+				<firstname>Raymond</firstname>
 			</author>
 			
 			<title>Le Chiendent</title>
@@ -851,10 +1010,10 @@
 			<date type="effective">2009</date>
 			<date type="first">1933</date>
 		</ref>
-		<ref xml:id="sjp02" read="2">
+		<ref when="1938" xml:id="sjp02" read="2">
 			<author>
 				<name>Sartre</name>
-				<surname>Jean-Paul</surname>
+				<firstname>Jean-Paul</firstname>
 			</author>
 			
 			<title>La Nausée</title>
@@ -868,10 +1027,10 @@
 			<date type="effective">2009</date>
 			<date type="first">1938</date>
 		</ref>
-		<ref xml:id="sjp01" read="2">
+		<ref when="1948" xml:id="sjp01" read="2">
 			<author>
 				<name>Sartre</name>
-				<surname>Jean-Paul</surname>
+				<firstname>Jean-Paul</firstname>
 			</author>
 			
 			<title>Qu'est-ce que la littérature ?</title>
@@ -885,10 +1044,10 @@
 			<date type="effective">2008</date>
 			<date type="first">1948</date>
 		</ref>
-		<ref xml:id="sjp03" read="1">
+		<ref when="1947" xml:id="sjp03" read="1">
 			<author>
 				<name>Sartre</name>
-				<surname>Jean-Paul</surname>
+				<firstname>Jean-Paul</firstname>
 			</author>
 			<title>Situations, I Critiques littéraires</title>
 			<city>Paris</city>
@@ -900,10 +1059,10 @@
 			<date type="effective">2020</date>
 			<date type="first">1947</date>
 		</ref>
-		<ref xml:id="s01" read="2">
+		<ref when="1839" xml:id="s01" read="2">
 			<author>
 				<name>Stendhal</name>
-				<surname/>
+				<firstname/>
 			</author>
 			
 			<title>La Chartreuse de Parme</title>
@@ -917,10 +1076,10 @@
 			<date type="effective">2008</date>
 			<date type="first">1839</date>
 		</ref>
-		<ref xml:id="rr01" read="0">
+		<ref when="1965" xml:id="rr01" read="0">
 			<author>
 				<name>Roussel</name>
-				<surname>Raymond</surname>
+				<firstname>Raymond</firstname>
 			</author>
 				<title>Locus solus</title>
 				
@@ -933,17 +1092,17 @@
 				<date type="effective">2005</date>
 				<date type="first">1965</date>
 		</ref>
-		<ref xml:id="si01" read="0">
+		<ref when="1954" xml:id="si01" read="0">
 			<author>
 				<name>Svevo</name>
-				<surname>Italo</surname>
+				<firstname>Italo</firstname>
 			</author>
 			
 			<traductor>
 				<name>Michel</name>
-				<surname>Paul-Henri</surname>
+				<firstname>Paul-Henri</firstname>
 				<name>Fusco</name>
-				<surname>Mario</surname>
+				<firstname>Mario</firstname>
 			</traductor>
 			
 			<title>La Conscience de Zeno</title>
@@ -957,10 +1116,10 @@
 			<date type="trad">1986</date>
 			<date type="first">1954</date>
 		</ref>
-		<ref xml:id="bh02" read="1">
+		<ref when="1833" xml:id="bh02" read="1">
 			<author>
 				<name>Balzac</name>
-				<surname>Honoré</surname>
+				<firstname>Honoré</firstname>
 			</author>
 			<title>Le Médecin de campagne</title>
 			<ed>Gallimard</ed>
@@ -969,10 +1128,10 @@
 			<date type="first">1833</date>
 			<date type="effective">2021</date>
 		</ref>
-		<ref xml:id="pr01" read="1">
+		<ref when="1952" xml:id="pr01" read="1">
 			<author>
 				<name>Pinget</name>
-				<surname>Robert</surname>
+				<firstname>Robert</firstname>
 			</author>
 			
 			<title>Mahu ou le matériau</title>
@@ -985,10 +1144,10 @@
 			<date type="effective">1997</date>
 			<date type="first">1952</date>
 		</ref>
-		<ref xml:id="pr02" read="1">
+		<ref when="1953" xml:id="pr02" read="1">
 			<author>
 				<name>Pinget</name>
-				<surname>Robert</surname>
+				<firstname>Robert</firstname>
 			</author>
 			
 			<title>Le Renard et la boussole</title>
@@ -1001,10 +1160,10 @@
 			<date type="effective">2000</date>
 			<date type="first">1953</date>
 		</ref>
-		<ref xml:id="pf01" read="1">
+		<ref when="1942" xml:id="pf01" read="1">
 			<author>
 				<name>Ponge</name>
-				<surname>Francis</surname>
+				<firstname>Francis</firstname>
 				
 			</author>
 			<title>Le Parti pris des choses</title>
@@ -1017,13 +1176,13 @@
 	</div>
 	<div>
 		<head>Modèle d'édition critique</head>
-		<ref xml:id="v01" read="1">
+		<ref when="1678" xml:id="v01" read="1">
 			<author>
 				<name>Valincourt</name>
 			</author>
 			<editor>
 				<name>Montalbetti</name>
-				<surname>Christine</surname>
+				<firstname>Christine</firstname>
 			</editor>
 			
 			<title>Lettres à Madame la marquise *** sur le sujet de La Princese de Clèves</title>
@@ -1037,10 +1196,10 @@
 			<date type="effective">2021</date>
 			<date type="first">1678</date>
 		</ref>
-		<ref xml:id="dm00" read="1">
+		<ref when="2011" xml:id="dm00" read="1">
 			<author>
 				<name>Duras</name>
-				<surname>Marguerite</surname>
+				<firstname>Marguerite</firstname>
 			</author>
 			<title>Œuvres complètes</title>
 			<city>Paris</city>
@@ -1048,10 +1207,10 @@
 			<coll>Pléiade</coll>
 			<date type="effective">2011</date>
 		</ref>
-		<ref xml:id="rj02" read="1" type="online">
+		<ref when="20221123" xml:id="rj02" read="1" type="online">
 <!--			<author>
 				<name>Ricardou</name>
-				<surname>Jean</surname>
+				<firstname>Jean</firstname>
 			</author>-->
 			<title>Site du fonds Jean Ricardou</title>
 			<online>https://jeanricardou.org/</online>
@@ -1060,10 +1219,10 @@
 	</div>
 	
 	
-	<!--<ref xml:id="" read="">
+	<!--<ref when="" xml:id="" read="">
 		<author>
 			<name/>
-			<surname/>
+			<firstname/>
 		</author>
 		<title/>
 		<city/>
