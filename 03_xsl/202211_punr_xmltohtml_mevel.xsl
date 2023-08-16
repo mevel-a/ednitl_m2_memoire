@@ -569,14 +569,14 @@
 			<!--			<xsl:if test="@rend='italic'">STDitalic</xsl:if>-->
 		</xsl:variable>
 		<span class="{$class}">
-			<xsl:apply-templates mode="corpus"/>
+			<xsl:apply-templates mode="pref_index"/>
 		</span>
 	</xsl:template>
 	<xsl:template match="term" mode="pref_index">
-		<span class="Axi2"><xsl:apply-templates/></span>
+		<span class="Axi2"><xsl:apply-templates mode="pref_index"/></span>
 	</xsl:template>
 	<xsl:template match="term" mode="adv_index">
-		<span class="Axi0"><xsl:apply-templates/></span>
+		<span class="Axi0"><xsl:apply-templates mode="adv_index"/></span>
 	</xsl:template>
 	
 	

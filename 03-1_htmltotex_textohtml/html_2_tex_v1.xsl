@@ -20,6 +20,7 @@
 	<xsl:character-map name="tex">
 		<xsl:output-character string="~" character=" "/><!--unbreakable space-->
 		<xsl:output-character character="_" string="\_"/><!--underscore-->
+<!--		<xsl:output-character string=" "/>-->
 	</xsl:character-map>
 	
 	
@@ -34,6 +35,9 @@
 	</xsl:template>
 	<xsl:template match="span[@class='STDitalic']">
 <xsl:text>\textit{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
+	</xsl:template>
+	<xsl:template match="span[@class='STDgray']">
+		<xsl:text>{\color{gray}</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
 	</xsl:template>
 	<xsl:variable name="n">
 <xsl:text>
@@ -53,6 +57,12 @@
 	\item </xsl:text><xsl:apply-templates/><xsl:text>
 </xsl:text>
 	</xsl:template>
+	
+	
+	
+	
+	
+	
 	<xsl:template match="comment()">
 		<xsl:choose>
 			<xsl:when test="contains(.,'ch01')">
