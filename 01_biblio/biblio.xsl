@@ -19,6 +19,7 @@
 		<!--<xsl:output-character character="}" string="\}"/>-->
 		<xsl:output-character character="_" string="\_"/>
 		<xsl:output-character character="^" string="\^"/>
+		<xsl:output-character character=" " string="~"/>
 		<!--		AJOUT REMPLACEMENT DES CARACTÈRES SPÉCIAUX vers unicode pour latex-->
 		<!--		<xsl:output-character character="ſ" string='\int'/>-->
 		<!--		<xsl:output-character character="ꝛ" string='\char"A75B'/>-->
@@ -93,7 +94,7 @@
 	</xsl:template>-->
 	
 	<xsl:template match="ref">
-		\textsc{<xsl:value-of select="author/name"/>} <xsl:value-of select="author/surname"/> <xsl:if test="child::traductor">, \textsc{<xsl:value-of select="traductor/name"/>} <xsl:value-of select="traductor/surname"/> (trad.)</xsl:if>, \textit{<xsl:value-of select="title"/>}, <xsl:value-of select="city"/>, <xsl:value-of select="ed"/><xsl:if test="child::coll">, coll. «~<xsl:value-of select="coll"/>~»</xsl:if>, <xsl:value-of select="date[@type='effective']"/> <xsl:if test="child::date[@type='trad']"><xsl:value-of select="child::date[@type='trad']"/> pour la traduction française, </xsl:if><xsl:if test="child::date[@type='first']"> [<xsl:value-of select="date[@type='first']"/>]</xsl:if><xsl:if test="online">
+		<xsl:for-each select="author">\textsc{<xsl:value-of select="author/name"/>}<xsl:if test="author/surname"> <xsl:value-of select="author/surname"/> </xsl:if><xsl:if test="following::author"> ,</xsl:if></xsl:for-each><xsl:if test="child::traductor">, \textsc{<xsl:value-of select="traductor/name"/>} <xsl:value-of select="traductor/surname"/> (trad.)</xsl:if>, \textit{<xsl:value-of select="title"/>}<xsl:if test="@type=not('nocity')">, <xsl:value-of select="city"/></xsl:if>, <xsl:value-of select="ed"/><xsl:if test="child::coll">, coll. «~<xsl:value-of select="coll"/>~»</xsl:if>, <xsl:value-of select="date[@type='effective']"/> <xsl:if test="child::date[@type='trad']"><xsl:value-of select="child::date[@type='trad']"/> pour la traduction française, </xsl:if><xsl:if test="child::date[@type='first']"> [<xsl:value-of select="date[@type='first']"/>]</xsl:if><xsl:if test="online">
 			
 			En ligne~: \hyperlink{<xsl:value-of select="online"/>}{<xsl:value-of select="online"/>}, consulté le \today
 		</xsl:if>\par 
@@ -101,7 +102,7 @@
 		
 	</xsl:template>
 	<xsl:template match="ref[@type='article']">
-		\textsc{<xsl:value-of select="author/name"/>} <xsl:value-of select="author/surname"/> <xsl:if test="child::traductor">, \textsc{<xsl:value-of select="traductor/name"/>} <xsl:value-of select="traductor/surname"/> (trad.)</xsl:if><xsl:if test="child::editor">, \textsc{<xsl:value-of select="editor/name"/>} <xsl:value-of select="editor/surname"/> (ed.)</xsl:if>, \textit{<xsl:value-of select="title"/>}, <xsl:value-of select="city"/>, <xsl:value-of select="ed"/><xsl:if test="child::coll">, coll. «~<xsl:value-of select="coll"/>~»</xsl:if>, <xsl:value-of select="date[@type='effective']"/> <xsl:if test="child::date[@type='trad']"><xsl:value-of select="child::date[@type='trad']"/> pour la traduction française, </xsl:if><xsl:if test="child::date[@type='first']">[<xsl:value-of select="date[@type='first']"/>]</xsl:if><xsl:if test="child::pages">, p.~<xsl:value-of select="pages"/></xsl:if><xsl:if test="online">
+		\textsc{<xsl:value-of select="author/name"/>} <xsl:value-of select="author/surname"/> <xsl:if test="child::traductor">, \textsc{<xsl:value-of select="traductor/name"/>} <xsl:value-of select="traductor/surname"/> (trad.)</xsl:if><xsl:if test="child::editor">, \textsc{<xsl:value-of select="editor/name"/>} <xsl:value-of select="editor/surname"/> (ed.)</xsl:if>, \textit{<xsl:value-of select="title"/>}, <xsl:value-of select="city"/>, <xsl:value-of select="ed"/><xsl:if test="child::coll">, coll. «~<xsl:value-of select="coll"/>~»</xsl:if>, <xsl:value-of select="date[@type='effective']"/> <xsl:if test="child::date[@type='trad']">, <xsl:value-of select="child::date[@type='trad']"/> pour la traduction française, </xsl:if><xsl:if test="child::date[@type='first']">[<xsl:value-of select="date[@type='first']"/>]</xsl:if><xsl:if test="child::pages">, p.~<xsl:value-of select="pages"/></xsl:if><xsl:if test="online">
 			
 			En ligne~: \hyperlink{<xsl:value-of select="online"/>}{<xsl:value-of select="online"/>}, consulté le \today
 		</xsl:if>\par
