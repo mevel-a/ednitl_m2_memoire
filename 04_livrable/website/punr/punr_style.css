@@ -492,3 +492,47 @@ div.STDtop a{
 	text-decoration: none;
 	color: inherit;
 }
+.STDnote{
+/*	color: #0f0;*/
+	cursor: pointer;
+	position:relative;
+	background-color: inherit;
+}
+.STDnote .STDnoteinfo{
+	display: none;
+	text-indent: 0;
+}
+
+.STDnote{
+/*	color: #f0f;*/
+	text-decoration: underline;
+}
+.STDquote{
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 11pt;
+}
+
+.STDnote:hover .STDnoteinfo{
+	position: absolute;
+	display: block;
+	left: 20px;
+	top: -30px; 
+	white-space: normal;
+	border: 2px solid #18130e;
+	border-radius: 5px;
+	max-width: 600px;
+	min-width: 200px;
+	margin: 0px;
+	padding: 6px;
+	background-color: inherit;
+/*	opacity: 0.96;*/
+/*	filter: alpha(opacity=96); /*for IE8 et -*/
+	text-align:justify;
+	color: inherit;
+	font-style: initial;
+	z-index: 999;
+}
+div.separ{
+	height: 60px;
+}
