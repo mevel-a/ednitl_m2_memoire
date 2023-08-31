@@ -12,7 +12,7 @@ binmode(TEX, ":utf8");
 open (HTML, ">../03-1_htmltotex_textohtml/output.html");#pour le texte complet
 binmode(HTML, ":utf8");
 
-my $txt="";
+my $txt="<link rel=\"stylesheet\" type=\"text/css\" href=\"..\\04_livrable\\website\\punr\\punr_style.css\">";
 #Lecture du tex et conversion vers html de quelques éléments clefs
 while (my $line=<TEX>){
 	chop $line;
@@ -22,12 +22,13 @@ while (my $line=<TEX>){
 	$line=~s/>/&gt;/g;
 
 #commande persos
-	$line=~s/\\punr\{?\}?/<span clas="STDitalic">Pour un nouveau roman<\/span> /g,
+	$line=~s/\\punr\{?\}?/<span class="STDitalic">Pour un nouveau roman<\/span> /g,
 	$line=~s/\\robbe\{?\}?/Alain Robbe-Grillet /g,
 	$line=~s/\\go/« /g;
 	$line=~s/\\gf/ »/g;
-	$line=~s/\\qql//g;
-	$line=~s/\\galia/Galia <span class="STDsc">Yanoshevsky<\/span>/g;
+	$line=~s/\\op/<span class="STDitalic">Op. cit.<\/span>, p. /g;
+	$line=~s/\\qql/\\textsc\{Sartre\} Jean-Paul, \\textit\{Qu'est-ce que la littérature\}, Paris, Gallimard, coll. «~folio essais~», 2008 [1948], p.~/g;
+	$line=~s/\\galia\{?\}?/Galia <span class="STDsc">Yanoshevsky<\/span> /g;
 	$line=~s/\\fullgalia/<span class="STDsc">Yanoshevsky<\/span> Galia, <span class="STDitalic">Les discours du Nouveau Roman : Essais, entretiens, débats<\/span>, Villeneuve d'Ascq, Presses universitaires du Septentrion, 2006, p. /g;
 	$line=~s/\\gege/<span class="STDsc">Genette<\/span> Gérard, « Vertige fixé », \\textit\{Figures I\}, Paris, Éditions du seuil, coll.~«~points essai~», 2014[1966], p.~/g;
 	$line=~s/\\inte/\\footnote\{\\textsc\{Boschetti\}~Anna, \\textsc\{Sapiro\}~Gisèle (dir.~), «~La recomposition de l'espace intellectuel en Europe après 1945~», Paris, La Découverte, \\textit\{L'Espace intellectuel en Europe\}, 2009, p.~147-182<br \/>En ligne~: \\href\{https:\/\/doi.org\/10.3917\/dec.sapir.2009.01.0147\}\{https:\/\/doi.org\/10.3917\/dec.sapir.2009.01.0147\}\}/g;
@@ -35,9 +36,9 @@ while (my $line=<TEX>){
 	$line=~s/\\mila/\\textsc\{Milat\}~Christian, «~Sartre et Robbe-Grillet, ou les chemins de l'écriture~», Paris, \\textit\{Revue d'Histoire littéraire de la France\}, Janvier-Février, 2002, p.~/g;
 
 #mise en forme courant selon punr.css
-	$line=~s/\\textit\{/<span clas="STDitalic">/g;
-	$line=~s/\\textsc\{/<span clas="STDsc">/g;
-	$line=~s/\\superscript\{/<span clas="STDexposant">/g;
+	$line=~s/\\textit\{/<span class="STDitalic">/g;
+	$line=~s/\\textsc\{/<span class="STDsc">/g;
+	$line=~s/\\textsuperscript\{/<span class="STDexposant">/g;
 	$line=~s/\\begin\{itemize\}/<ul>/g;
 	$line=~s/\\end\{itemize\}/<\/ul>/g;
 	$line=~s/\\begin\{enumerate\}/<ol>/g;
@@ -46,7 +47,7 @@ while (my $line=<TEX>){
 	$line=~s/\\NoAutoSpaceBeforeFDP//g;
 	$line=~s/\\begin\{verbatim\}/<span class="STDgray" style="font-family:courier,monospace;">/g;
 	$line=~s/\\end\{verbatim\}/<\/span>/g;
-	$line=~s/\\vspace\*\{3cm\}/<div class="separ"\/>/g;
+	$line=~s/\\vspace\*\{3cm\}/<div class="separ"><\/div>/g;
 	$line=~s/\\newpage/<!--SAUT DE PAGE-->/g;
 #citations longues
 	$line=~s/\\begin\{quote\}/<p class="STDquote">/g;
@@ -60,13 +61,9 @@ while (my $line=<TEX>){
 	$line=~s/\\centering//g;
 	$line=~s/\\includegraphics[scale=0.3]\{img\/(\w+)\}/<img src="img\/$1"\/>/g;
 	$line=~s/\\caption\{(\w+)\}/<p class="STDimgCaption">$1<\/p>/g;
-	$line=~s/\\end\{figure\}//g;
+	$line=~s/\\end\{figure\}/<\/div>/g;
 	# $line=~s/\//g;
 	# $line=~s///g;
-
-#footnotes-->infobullle
-	$line=~s/\s(.+)\\footnoteB?\{(.*)\}/ <span class="STDnote">$1<span class="STDnoteinfo">$2<\/span><\/span>/g;
-	$line=~s/\s(.+)\\footnote\{(.*)\}/ <span class="STDnote">$1<span class="STDnoteinfo">$2<\/span><\/span>/g;
 
 
 #titraille
@@ -80,12 +77,19 @@ while (my $line=<TEX>){
 
 
 #ancres et liens
-	$line=~s/\\ref\{(.+)\}/<a href="#$1">ici<\/a>/g;
-	$line=~s/\\label\{(.+)\}/<a id="$1"\/>/g;
+	$line=~s/\\ref\{(\w+)\}/<a href="#$1">ici<\/a>/g;
+	$line=~s/\\label\{(\w+)\}/<a id="$1"><\/a>/g;
 	$line=~s/\\href\{(.+)\}\{.+\}/<a href="$1">$1<\/a>/g;
 	$line=~s/\\hyperlink\{(.+)\}\{.+\}/<a href="$1">$1<\/a>/g;
 
 
+#footnotes-->infobullle
+	# $line=~s/\\footnote\{/<span class="STDexposant">/g;
+
+	# $line=~s/\\footnote\{(.+)\}/<span class="STDnote">NOTEICI<span class="STDnoteinfo">$1<\/span> <\/span>/g;
+	# $line=~s/\\footnoteB\{(.+)\}/<span class="STDnote">NOTEICI<span class="STDnoteinfo">$1<\/span> <\/span>/g;
+	# $line=~s/\\footnoteB?\{/<\/span><span class="STDnote">NOTEICI<span class="STDnoteinfo">/g;
+# la substitution des footnotes en infobule ne fonctionne pas, et provoque un bug étrange aussi il est retiré les infobulles seront ajoutées à la main ou via regex
 
 
 #need to rester à la fin pour compléter et non effacer les remplacements précédents

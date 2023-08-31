@@ -139,11 +139,12 @@ h1{
 article{
 	margin-top: 50px;
 	width: 50%;
+	background-color: inherit;
 	align-self: center;
 /*	margin-left: 200px;*/
 }
 article.comment{
-	margin-left: 5%;
+	margin-left: 10%;
 }
 
 footer{
@@ -508,8 +509,8 @@ div.STDtop a{
 	text-decoration: underline;
 }
 .STDquote{
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
 	font-size: 11pt;
 }
 
