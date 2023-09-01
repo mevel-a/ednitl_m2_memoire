@@ -6,7 +6,7 @@ use open ':std', ':locale'; #debug UTF8 voir bookmark firefox
 use open ':encoding(UTF-8)'; #debug UTF8 voir bookmark firefox
 
 #création variables et ouvertures de fichier pour écriture
-open (TEX,"../03-1_htmltotex_textohtml/input.tex");
+open (TEX,"../03-1_htmltotex_textohtml/biblio_to_convert.tex");
 binmode(TEX, ":utf8");
 
 open (HTML, ">../03-1_htmltotex_textohtml/output.html");#pour le texte complet
@@ -47,7 +47,7 @@ while (my $line=<TEX>){
 	$line=~s/\\NoAutoSpaceBeforeFDP//g;
 	$line=~s/\\begin\{verbatim\}/<span class="STDgray" style="font-family:courier,monospace;">/g;
 	$line=~s/\\end\{verbatim\}/<\/span>/g;
-	$line=~s/\\vspace\*\{3cm\}/<div class="separ"><\/div>/g;
+	$line=~s/\\vspace\*?\{\dcm\}/<div class="separ"><\/div>/g;
 	$line=~s/\\newpage/<!--SAUT DE PAGE-->/g;
 #citations longues
 	$line=~s/\\begin\{quote\}/<p class="STDquote">/g;
@@ -57,10 +57,10 @@ while (my $line=<TEX>){
 #insécable
 	$line=~s/~/ /g;
 #image
-	$line=~s/\\begin\{figure\}[H]/<div class="STDimg">/g;
+	$line=~s/\\begin\{figure\}\[H\]/<div class="STDimg">/g;
 	$line=~s/\\centering//g;
-	$line=~s/\\includegraphics[scale=0.3]\{img\/(\w+)\}/<img src="img\/$1"\/>/g;
-	$line=~s/\\caption\{(\w+)\}/<p class="STDimgCaption">$1<\/p>/g;
+	$line=~s/\\includegraphics\[scale=.+\]\{img\/(.+)\}/<img src="img\/$1"\/>/g;
+	$line=~s/\\caption\{(.+)\}/<p class="STDimgCaption">$1<\/p>/g;
 	$line=~s/\\end\{figure\}/<\/div>/g;
 	# $line=~s/\//g;
 	# $line=~s///g;
@@ -77,8 +77,8 @@ while (my $line=<TEX>){
 
 
 #ancres et liens
-	$line=~s/\\ref\{(\w+)\}/<a href="#$1">ici<\/a>/g;
-	$line=~s/\\label\{(\w+)\}/<a id="$1"><\/a>/g;
+	$line=~s/\\ref\{(.+)\}/<a href="#$1">ici<\/a>/g;
+	$line=~s/\\label\{(.+)\}/<a id="$1"><\/a>/g;
 	$line=~s/\\href\{(.+)\}\{.+\}/<a href="$1">$1<\/a>/g;
 	$line=~s/\\hyperlink\{(.+)\}\{.+\}/<a href="$1">$1<\/a>/g;
 
@@ -104,3 +104,8 @@ while (my $line=<TEX>){
 close (TEX);
 print HTML "$txt\n";
 close (HTML);
+
+
+# regex in oxygen
+# <span class="STDnote">*<span class="STDinfonote">
+# </span>

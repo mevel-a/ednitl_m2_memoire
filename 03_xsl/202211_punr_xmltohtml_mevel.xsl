@@ -52,6 +52,30 @@
 	<xsl:variable name="polemos" select="concat($basename,'polemos.html')"/>
 	<xsl:variable name="polemos_link" select="'polemos.html'"/>
 	
+	<xsl:variable name="polemos2" select="concat($basename,'polemos2.html')"/>
+	<xsl:variable name="polemos2_link" select="'polemos2.html'"/>
+	
+	<xsl:variable name="sartre" select="concat($basename,'sartre.html')"/>
+	<xsl:variable name="sartre_link" select="'sartre.html'"/>
+	
+	<xsl:variable name="pheno" select="concat($basename,'pheno.html')"/>
+	<xsl:variable name="pheno_link" select="'pheno.html'"/>
+	
+	<xsl:variable name="epo" select="concat($basename,'epo.html')"/>
+	<xsl:variable name="epo_link" select="'epo.html'"/>
+	
+	<xsl:variable name="ecart" select="concat($basename,'ecart.html')"/>
+	<xsl:variable name="ecart_link" select="'ecart.html'"/>
+	
+	<xsl:variable name="about" select="concat($basename,'about.html')"/>
+	<xsl:variable name="about_link" select="'about.html'"/>
+	
+	<!--<xsl:variable name="bib" select="concat($basename,'bibliography.html')"/>
+	<xsl:variable name="bib_link" select="'bibliography.html'"/>-->
+	<!--
+	<xsl:variable name="polemos2" select="concat($basename,'polemos2.html')"/>
+	<xsl:variable name="polemos2_link" select="'polemos2.html'"/>-->
+	
 	<!--	<xsl:variable name=""/>-->
 <!--	<xsl:variable name="" select="''"/>-->
 	
@@ -92,17 +116,19 @@
 <!--						<li><a href="{$db_c_link}">Commentaire de la base de données</a></li>-->
 						<li><a href="{$disp_link}">Un texte disparate</a></li>
 						<li><a href="{$uni_link}">L'unicité des articles</a></li>
-<!--						<li><a href="{$_link}"></a></li>-->
-<!--						<li><a href="{$_link}"></a></li>-->
-<!--						<li><a href="{$_link}"></a></li>-->
-<!--						<li><a href="{$_link}"></a></li>-->
+						<li><a href="{$sartre_link}">Une positionnement littéraire : contre Sartre ?</a></li>
+						<li><a href="{$pheno_link}">L'écriture au crible de postulats phénoménologiques</a></li>
+						<li><a href="{$epo_link}">Des références contemporaines</a></li>
+						<li><a href="{$ecart_link}">Une théorie de la valeur littéraire : l'écart</a></li>
+						<li><a href="{$polemos2_link}">Un style polémique : au fil du texte</a></li>
 						<li><a href="{$polemos_link}">Un style polémique : des adversaires</a></li>
 <!--						<li><a href="{$tl_link}">Chronologie</a></li>-->
 						<li><a href="{$index0_link}">Index des notions adverses </a></li>
 						<li><a href="{$index_link}">Index des expressions privilégiées</a></li>
 					</ol>
 				</li>
-				
+				<li><a href="{$about_link}">À propos de cette édition</a></li>
+				<li><a href="{$bib_link}">Bibliographie</a></li>
 				<!--<li><a href="{}"></a></li>
 				<li><a href="{}"></a></li>
 				<li><a href="{}"></a></li>
@@ -348,6 +374,356 @@
 									</section>
 								</div>
 							</xsl:when>
+							<xsl:when test="$content='about'">
+								<article class="comment">
+									<div class="separ"></div>
+<h2>Introduction au projet d'édition numérique</h2>
+<p>Publié en 1963, <span class="STDitalic">Pour un nouveau roman</span> , est une œuvre composite dont l'unité tient à l'adéquation entre des prises de positions assumées et un style polémique. Loin d'être (seulement) un recueil de préconisations stylistiques, le recueil offre une vue globale sur les débats littéraires de son époque dont il est le reflet et le miroir. Le texte dans son ensemble constitue une véritable théorie littéraire séparant le bon grain et l'ivraie à la fois dans la tradition littéraire et dans la littérature contemporaine.</p>
+<p>L'édition que nous réalisons entend proposer un contenu scientifique permettant de saisir la cohérence des théories esthétiques de Robbe-Grillet et un versant numérique permettant de proposer une lecture du recueil enrichie par des éléments d'analyses et de contextualisation.</p>
+<p>
+Le présent document se veut un exposé des modalités techniques mises en œuvres, des difficultés que nous avons rencontrées, suivi des moyens mis en œuvre pour les surmonter.</p>
+<p>Chaque outil utilisé fera l'objet d'une présentation succinte, après quoi leur apport au projet et les choix ayant mené à la réalisation de l'édition numérique de <span class="STDitalic">Pour un nouveau roman</span>  seront détaillés.</p>
+<h3>Le projet initial de l'édition numérique</h3>
+<p>Lors d'un précédent rendu nous nous donnions pour objectif de mettre en valeur les relations intertextuelles qui sous-tendaient l'œuvre (voir : <a href="#fig:projet">ici</a>).</p>
+<div class="STDimg">
+    
+    <img src="img/202211_mevel_punr_edition_numerique.png"/>
+    <p class="STDimgCaption">Schéma du projet original</p>
+    <a id="fig:projet"></a>
+</div>
+
+<p>Nous opérons une première distinction entre « références » et « citations ». Lorsque p. 136 Robbe-Grillet écrit « <span class="STDitalic">Mahu ou le Matériau</span>, ce titre est déjà un programme », il s'agit d'une référence ; mais lorsque au paragraphe précédent Robbe-Grillet écrit « "J'y pense, j'y pense [...]" », il s'agit d'une citation.</p>
+<p>Un simple clic sur une citation (soit un passage extrait hors du texte de Robbe-Grillet) devait permettre de lire la citation en contexte (soit un ou deux paragraphes entourant le ou les passages cités). La proposition initiale envisageait déjà des limites aux citations à traiter ainsi mais les choix n'étaient pas encore faits. En effet, le nombre de citation à identifier et le temps nécessaire à l'intégration de nombreux extraits relativement conséquents étaient les freins principaux à cette proposition, qui a, depuis été adaptée.</p>
+<p>
+Dans l'état actuel, seules les citations issues des écrits de Sartre font l'objet d'un traitement proprement transtextuel. Nous privilégions cette partie du corpus car nous pensons insister dans le versant scientifique du projet sur les rapports qu'entretient la pensée de Robbe-Grillet dans <span class="STDitalic">Pour un nouveau roman</span>  avec celle de Sartre. Ainsi notre édition est-elle la plus proche possible de notre travail scientifique. Notons que nous ajoutons aux intertextes issus de Sartre, les citations issues des œuvres de Robert Pinget <span class="STDitalic">Le Renard et la boussole</span> et <span class="STDitalic">Mahu ou le matériau</span>. Cet ajout plutôt qu'un autre tient davantage à des raisons techniques que scientifiques : nous avons mené nos tests de faisabilité technique sur ce corpus.
+<ul>
+    <li> La diversité de ces œuvres dans lesquelles la digression perpétuelle fait office de narration permettent d'interroger les limites des extraits à intégrer. Afin d'intégrer le contexte d'une citation, il nous fallait déterminer quel était ce contexte ; un ou deux paragraphes ? Une phrase avant et après ? <span class="STDitalic">Quid</span> alors des cas où les phrases elles-mêmes sont très longues voire déstructurées ? Nous optons pour un découpage dont nous espérons que la cohérence apparaîtra au lecteur ; plutôt que des bornes quantifiables en termes de distance textuelle, nous nous sommes efforcés d'intégrer des extraits tenus par une unité cohérente, que cette unité relève de l'épisode ou de la plus petite digression possible (dans le cas de Pinget).</li>
+    <li> D'un point de vue technique, les citations issues des œuvres de Pinget nous permettent également d'identifier des citations pouvant renvoyer à plusieurs extraits d'une même œuvre, ce qui nous posait un problème technique que nous avons souhaité résoudre (voir : <a href="#quote_dis">ici</a>).</li>
+    <li> Enfin Pinget nous a semblé être l'auteur pour lequel Robbe-Grillet réservait le plus d'éloge. La section « Un roman qui s'invente lui-même » est située en fin de l'« Anthologie » laissant entendre qu'il s'agit de l'auteur le plus « moderne ».</li>
+        Nous avions ainsi deux des pôles axiologiques mentionnés explicitement les plus éloignés.
+    <li> La version actuelle (juin 2023) ne contient pour l'instant que les citations de Robert Pinget afin de démontrer, d'une part la possibilité mais aussi l'intérêt d'un tel traitement.</li>
+</ul></p>
+<p>Si l'objectif initial, et surtout, idéal, de ce travail était de traiter l'intégralité des citations, le temps nécessaire à un tel travail nous imposa de réduire la voilure.
+Ainsi, si toutes les références et citations feront l'objet d'un traitement minime : en HTMLet CSS (voir <a href="#htmlCss">ici</a>), nous programmons l'affichage d'une infobulle pour chacun de ces éléments lorsque la souris de l'utilisateur passe dessus, affichant : les statuts référentiels et axiologiques de la référence ou citation sur laquelle passe le curseur. Un code couleur permet au demeurant d'expliciter les valeurs (rouge, vert, bleu et noir pour les statuts axiologiques et des nuances allant du jaune au maron pour le statut référentiel).</p>
+<p>
+Enfin, toujours dans un souci d'offrir la lecture la plus agréable possible, nous choisissons de ne pas produire de note explicative sur la plupart des références.
+<ul>
+    <li> Le contenu de ces notes nous paraîssait devoir être à la fois trop général et trop court pour avoir un quelconque intérêt scientifique.</li>
+    <li> Malgré le temps conséquent consacré à concevoir et implémenter ces notes au contenu factuel, l'intérêt pour un lecteur néophyte qui a à sa disposition des encyclopédies en ligne nous paraissait très faible ; plus encore pour un lecteur spécialiste qui n'apprendrait sans doute rien, ou si peu de telles notes.</li>
+    <li> Ces notes surchargeraient l'appareil critique de notre édition et, au fond, contreviendraient en partie au principe de l'édition : donner à lire, sans prendre par la main le lecteur, supposé capable de naviguer lui-même au sein de l'édition.</li>
+</ul></p>
+<p></p>
+<p></p>
+<p></p>
+<p><h2>Encodage</h2>
+Afin de proposer une édition numérique enrichie de <span class="STDitalic">Pour un nouveau roman</span> , nous optons pour un encodage en XML-tei. Pensé courant octobre et novembre, l'encodage à proprement parler a commencé début mars.
+    <h3>Principes généraux</h3>
+Le langage XML est un langage de balisage : l'encodeur entoure chacun des éléments qu'il juge devoir être encodé (l'ensemble du texte, un paragraphe, un mot, voire une lettre) de balises ouvrantes et fermantes éclairant la nature du passage qu'elles entourent (libre à l'encodeur d'encadrer un paragraphe en tant que paragraphe ou en tant que saut sémantique).</p>
+<p><div class="STDimg">
+    
+    <img src="img/screen_encodage.jpg"/>
+    <p class="STDimgCaption">Exemple d'encodage xml-tei</p>
+    <a id="fig:screen_encodage"></a>
+</div></p>
+<p>L'encodeur étant libre de choisir les éléments qu'il encode et comment il les encode, des conventions internationales ont émérgé afin de permettre l'interopérabilité des corpus balisés. Le plus utilisé en science humaine demeure sans doute le standard de la <span class="STDitalic">Text Encoding Initiative</span> (TEI) que nous employons pour la présente édition. Initialement pensé pour la restitution de sources anciennes (tels des manuscrits du <span class="STDsc">XVI</span><span class="STDexposant">e</span>) cet encodage nous permet d'identifier des éléments structurels très fins et de mettre en correspondance différents extraits constituant un corpus (voir <a href="#tei">ici</a>).</p>
+<p>Lors du rapport d'étape soumis courant décembre 2022, nous avions l'intention de produire une ODD. C'est-à-dire un fichier permettant la génération d'un schéma et d'une documentation technique sur les choix d'encodage fait pour le présent travail (soit une spécialisation des éléments xml-TEI). Le temps nous a finalement manqué pour produire un tel travail qui nous a paru au demeurant en partie redondant avec le présent document.</p>
+    <h3>Mise en œuvre</h3>
+
+<h4>Un premier fichier d'encodage</h4>
+<p>
+<a id="premier_enc"></a>
+Afin de pouvoir encoder le texte du <span class="STDitalic">Pour un nouveau roman</span>  nous nous sommes procuré une version numérique du texte en achetant la seule édition disponible de l'œuvre au format « .epub ». Nous savons que les fichiers d'un epub se présentent sous la forme d'une archive : il suffit de changer l'extension « .epub » en « .zip » pour pouvoir explorer son contenu et en extraire les fichiers contenant le texte.</p>
+<p>Ces fichiers se présentent sous la forme de fichiers « .html », un fichier par chapitre du recueil. Grâce à un script perl nous récupérons l'ensemble du contenu textuel au sein d'un seul fichier .xml.</p>
+<p>Le même script procède simultanément au nettoyage des fichiers d'origine (nous remplaçons les balises HTMLpar des balises xml-tei lorsque cela est pertinent et supprimons toutes les balises inutiles).</p>
+<p>Ont été supprimés :
+<ul>
+    <li> les éléments &lt;div&gt; vides servant à espacer le corps du texte (une indication des suppressions et des tailles des éléments supprimés est à chaque fois ajoutée en commentaire dans le fichier d'encodage)</li>
+    <li> les éléments &lt;span&gt; parasites qui redoublaient, entre autres, tous les éléments &lt;p&gt; sans ajouter d'information de mise en forme</li>
+    <li> les éléments &lt;b&gt; et &lt;a&gt; muni d'un attribut @id marquant le début des chapitres</li>
+</ul>
+<p>Ont été remplacés par les balises xml-tei jugées pertinentes :
+<ul>
+    <li> les éléments &lt;a&gt; munis d'un attribut @id signalant les débuts de page par des éléments &lt;pb&gt; munis d'un attribut @n</li>
+    <li> les éléments &lt;i&gt;, au demeurant dépréciés selon les normes actuelles du web, par des éléments &lt;hi&gt; munis d'un attribut @rend avec pour valeur "italic"</li>
+    <li> les éléments &lt;p&gt; marquant les paragraphes ont été conservés mais sans leur attribut @class de valeur "txt"</li>
+    <li> les éléments &lt;h1&gt; marquant les titres ont été remplacés par des éléments &lt;head&gt;</li>
+    <li> les éléments &lt;h2&gt; marquant les titres de sous-sections (par exemple « L'intrigue », sous-section de « De quelques notions périmées ») par des éléments &lt;head&gt; avec un attribut @type ayant pour valeur "subsection\_head"</li>
+    <li> les éléments &lt;small&gt; par des éléments &lt;hi&gt; munis d'un attribut @rend avec pour valeur "small-caps"</li>
+    <li> les éléments &lt;sup&gt; par des éléments &lt;hi&gt; munis d'un attribut @rend avec pour valeur "exposant"</li>
+    <li> les éléments &lt;blockquote&gt; par des éléments &lt;cit&gt;</li>
+    <li> les éléments &lt;p&gt; et leurs attributs marquant la mise en forme du nom de l'auteur de la citation mise en exergue, par un élément &lt;ref&gt;</li>
+</ul></p>
+<p>Notons que le nettoyage a été effectué en conservant, grâce à des commentaires, les traces de balises supprimées que l'on pourrait vouloir restaurer (tels les éléments &lt;div&gt; utilisés dans les fichiers HTMLd'origine pour insérer du blanc dans le corps du texte).</p>
+<p>Nous ajoutons des balises ouvrantes &lt;quote&gt; à chaque fois que le script de nettoyage rencontre le caractère "«" et fermante après le caractère "»", afin d'effectuer un premier repérage automatique des citations ou emprunts, qui seront ensuite complétés et corrigés à la main si besoin. Notons que le script de nettoyage ajoute également ces éléments en début et en fin de paragraphe du segment « Joë Bousquet le rêveur » où cela est nécessaire (lorsque Alain Robbe-Grillet  cite plus d'un paragraphe il n'insère pas de guillemets, rendant le balisage automatique plus laborieux).</p>
+<p>Nous ajoutons également des éléments &lt;div&gt; marquant les sections du texte autour de chaque article du recueil ainsi qu'autour des passages identifiables à des sous-sections (telles les « notions périmées ») cette fois munis d'attributs @type ayant pour valeur "subsection".</p>
+<p>Nous obtenons alors un fichier « .xml » valide qui n'est encore qu'une première étape pour l'encodage complet.</p>
+<h4>Vers un encodage XML-TEI en vue d'une édition numérique</h4>
+<a id="tei"></a>
+<p>Afin d'intégrer les références transtextuelles de <span class="STDitalic">Pour un nouveau roman</span>  à notre édition pour permettre l'édition enrichie que nous nous proposons de réaliser nous employons un encodage de type « corpus ». </p>
+<div class="STDimg">
+    <img src="img/screen_itei_corpus.jpg"/>
+    <p class="STDimgCaption">La structure du fichier d'encodage</p>
+    <a id="fig:screen_tei_corpus"></a>
+</div>
+<p>Alors que la majorité des encodages TEI se contente d'un seul élément &lt;TEI&gt; contenant l'œuvre ou le manuscrit encodé nous employons un élément &lt;corpus&gt; qui contiendra plusieurs éléments &lt;TEI&gt; identifiés grâce à des attributs @xml:id. Une version vide du fichier XML a pour cela été produite. Cet XML vide converti au format texte brut est ensuite injecté par le script de fusion et de nettoyage des fichiers qui compose <span class="STDitalic">Pour un nouveau roman</span> . Il contient :</p>
+<ul>
+    <li> un élément &lt;teiHeader&gt; (sorte de carte d'identité du document ou du texte) pour l'ensemble du fichier, contenant des informations succintes sur le projet d'édition auquel est rattaché le fichier.</li>
+    <li> et quelques éléments &lt;TEI&gt; accompagnés de &lt;teiHeader&gt;, vides pour les extraits des références transtextuelles.</li>
+    <li> un élément &lt;TEI&gt; et &lt;teiHeader&gt; contenant les informations relatives à l'édition de <span class="STDitalic">Pour un nouveau roman</span> . C'est cet élément &lt;TEI&gt; dans lequel sera injecté le texte nettoyé et pré-encodé par le script.</li>
+</ul></p>
+<p>Si nous reproduisons l'intégralité de <span class="STDitalic">Pour un nouveau roman</span>  dans l'élément &lt;text&gt; qui lui correspond nous n'insérons dans les autres éléments &lt;text&gt; que les extraits qui nous intéressent : nous produisons bien une édition de <span class="STDitalic">Pour un nouveau roman</span>  inscrit dans un corpus plus vaste, pas l'édition d'un corpus dont <span class="STDitalic">Pour un nouveau roman</span>  ne serait qu'un élément. Extraits transtextuels et passages de <span class="STDitalic">Pour un nouveau roman</span>  correspondant sont ensuite liés via un jeu d'attributs @corresp et @xml:id.</p>
+<div class="STDimg">
+    
+    <img src="img/screen_corresp.jpg"/>
+    <p class="STDimgCaption">Exemple de correspondance</p>
+    <a id="fig:screen_corresp"></a>
+</div>
+<h4>Encodage sémantique automatisé</h4>
+<p>On désigne généralement par « encodage sémantique » l'ajout d'éléments XML identifiant des noms de personnages, des toponymes, des dates, des références, etc. Afin d'accélerer cette étape fastidieuse nous optons pour un premier encodage automatisé. Pour cela, nous ajoutons à notre script de nettoyage des lignes servant à repérer les noms d'auteurs et à les baliser selon le modèle suivant :
+<ul>
+    <li> un élément &lt;ref&gt; (référence)</li>
+    <li> muni d'un attribut @type avec pour valeur "author"</li>
+    <li> et d'un attribut @cRef (référence canonique) dont la valeur est constituée sur le modèle « nom\_prenom ». Générée automatiquement par le script, cette valeur comprendra des majuscules et/ou des lettres accentuées (puisque Alain Robbe-Grillet  écrit « Samuel Beckett » la valeur sera "Beckett\_Samuel"), elle fera l'objet d'une correction grâce à l'emploi d'une feuille xsl.</li>
+</ul>
+Afin d'éviter le double balisage, nous balisons la dénomination complète (« Samuel Beckett ») en ajoutant un espace insécable entre le prénom et le nom, avant de baliser « Beckett » seul, s'il est précédé d'un espace sécable.</p>
+<p>
+Puis grâce à une transformation XSL (voir <a href="#ref:xsl_gen">ici</a>)sommaire, nous générons l'affichage des éléments &lt;quote&gt;, &lt;ref&gt; et &lt;hi&gt; munis d'un attribut @rend="italic" afin de les identifier, corriger et compléter si besoin. Cette vérification se fait livre en main : la transformation renvoie également pour chaque élément identifié à la page à laquelle il apparaît. Cette étape est répétée plusieurs fois, ce qui nous permet de raffiner le balisage automatique à chaque passage.</p>
+<p>Avant de passer à l'encodage manuel nous utilisons une autre transformation XSL afin de faciliter cette étape fastidieuse :
+<ul>
+    <li> Nous ajoutons des attributs aux éléments &lt;quote&gt; qui n'en ont pas, leurs valeurs doivent correspondre autant que possible aux éléments répertoriés dans notre base de données (voir <a href="#ref:db_modele_relationnel">ici</a>).</li>
+    <ul>
+        <li> @type correspondant à ttNature</li>
+        <li> @corresp qui correspond à l'@xml:id des extraits cités (encodé en &lt;text&gt;) et aux valeurs de ttIdent définies dans la base de données préfixé de "tt"</li>
+        <li> @cert qui correspond à mReferenceStatu, soit le statut de la référence (est-elle mentionnée, citée, etc.)</li>
+        <li> @ana correspondant au mAxiologicStatus (s'agit-il d'un blâme, d'un éloge, ou d'une mention indiférente ?).</li>
+    </ul>
+    <li> Nous modifions les valeurs des @xml:id des éléments &lt;div&gt; qui entourent chacun des articles du texte, afin de les faire correspondre aux valeurs de notre base de donnée.</li>
+        <ul>
+            <li> Par exemple, le chapitre « À quoi servent les théories » encodé par un &lt;div&gt; n'aura plus comme valeur de l'@xml:id "page006" mais "1". L'utilisation des pages comme identifiants nous paraît superflue, vu la présence d'éléments &lt;pb&gt; à chaque début de page.</li>
+        </ul>
+    <li> Nous retouchons les titres (de sections et de sous-sections) afin de corriger l'encodage d'origine qui encodait chacune des lignes d'un titre ou sous-titre ainsi que les dates dans deux éléments &lt;head&gt; différents. Les capitales sont également remplacées par des minuscules qui seront plus tard affichées en petites capitales.</li>
+    <li> Les mentions des dates sont intégrées aux titres et encodées en tant que &lt;date&gt; avec un attribut @rend dont la valeur est "italic". Par ailleurs, nous en retirons les parenthèses qui provoquaient une erreur sans doute due au moteur d'expression régulière d'Oxygen\footnoteB{En expression régulière, les signes « () » servent à garder en mémoire les caractères qu'ils contiennent. Or, notre transformation recourait au moteur d'expression régulière inclus dans Oxygen pour intégrer les dates au titre. Ceci provoquait une erreur : la transformation considérait que les caractères « () » devait être interprétés comme des délimiteurs d'expression régulière et non comme le contenu à supprimer, ainsi les dates étaient bien supprimées mais pas les parenthèses les entourants., les parenthèses seront rétablies dans la version HTMLde l'édition.</li>
+    <li> Tous les autres éléments et attributs déjà présents sont reproduits à l'identique. Par là nous nous assurons de pouvoir réappliquer la transformation sur notre fichier d'encodage manuel autant de fois que nécessaire. Nous nous contenterons de modifier le nom du fichier de sortie afin de ne pas écraser les précédentes itérations. Ainsi nous pouvons appliquer des corrections « en cours de route » sans perdre les ajouts manuels.</li>
+</ul></p>
+
+<h4>Encodage sémantique à la main</h4>
+<p>Certains contenus textuels ne peuvent être repérés automatiquement et nécessitent donc d'être encodés à la main.</p>
+<p>En effet il convient d'attribuer les bonnes valeurs aux attributs, voire de rectifier l'encodage automatique qui ne peut, par exemple, distinguer entre la mention à la page 164 d'un titre « L'Année dernière à Marienbad » et la mention d'un élément diégétique de cette œuvre « se sont-ils vraiment rencontrés, aimés, l’année dernière à Marienbad ? » un peu plus loin.</p>
+<p>Notons par ailleurs les difficultés à limiter le balisage. En effet l'on pourrait considérer certains éléments diégétiques, tels les allusions aux personnages des œuvres de Beckett ou les supposées réactions sus-citées que Alain Robbe-Grillet  prête au public comme devant être encodées en tant que &lt;quote&gt; : citer un personnage d'une œuvre, n'est-ce pas citer l'œuvre ? ces réactions mêmes (re)constituées par Alain Robbe-Grillet  ne sont-elles pas des éléments textuels mobilisés par Alain Robbe-Grillet  à la manière de citation à réfuter ?</p>
+<p>Pour régler ces difficultés nous nous appuyons sur les objectifs que nous nous sommes fixés au moment où nous avons élaboré ce projet d'édition numérique : nous souhaitons produire une édition qui expose les relations transtextuelles de <span class="STDitalic">Pour un nouveau roman</span>  pour le replacer dans son époque, ou plutôt pour donner les représentations que le texte produit de son époque. Dès lors, il nous paraît opportun de baliser les réactions du public décrites ou (re)constituées par Alain Robbe-Grillet  afin de permettre de les comparer à la réalité de ces réactions. Au contraire les paraphrases (surtout si elles sont exactes) d'œuvres longuement commentées par Alain Robbe-Grillet , ne nous intéresse que modéremment. La source identifiée, ou plutôt, vérifiée, l'intérêt des passages cités n'ont que peu d'interêt par rapport au commentaire dans son ensemble.</p>
+<p>De manière plus anecdotique, la recherche de chaînes de caractères contenant des apostrophes telles « L'Étranger, L'Immortelle » pose un problème épineux à résoudre car l'apostrophe est le signe utilisé par le moteur de recherche pour délimiter la chaîne. On écrit 
+<ul>
+    <li> 'L'étranger', </li>
+    <li> 'L\&apos;étranger',</li>
+    <li> 'L''''étranger' ; </li>
+</ul>
+le moteur renvoie une erreur. Après quelques essais nous abandonnons la correction de ce segment : pour moins d'une dizaine de mentions aisément identifiées à la main, chercher une solution trop longtemps ne présentait aucun intérêt.</p>
+<p>L'encodage des sources citées se fait également à la main, chacun des textes du corpus est ajouté aux éléments &lt;TEI&gt; munis d'un attribut @xml:id servant à l'identifier sur le modèle : initialdel'auteur\_numérodel'œuvre » ainsi <span class="STDitalic">Mahu ou le matériau</span> sera désigné par « pr\_01 » et <span class="STDitalic">Le Renard et la boussole</span> par « pr\_02 ». Chacun des extraits est ensuite inséré dans un élément &lt;div&gt; ayant aussi un attribut @xml:id construit sur le modèle : iddel'œuvre\_pagededébutdelacitation », ainsi le premier extrait de <span class="STDitalic">Le Renard et la boussole</span> correspondra à « pr\_02\_09 ».    </p>
+<p><a id="encMilestone"></a> Nous employons des éléments &lt;milestone/&gt;, bornes, pour inscrire les points rhétoriques importants. Lors de la transformation XSL ces &lt;milestone&gt; seront transformés en élément &lt;a/&gt;, <span class="STDitalic">anchor></span> ancre, ces éléments sans contenu seront invisibles au lecteur mais permettront de constituer un menu de navigation sur la gauche de l'écran en XSL (voir <a href="#ref:xsl-gen">ici</a>). Leur attribut @id construit sur le modèle : « refutation2 »
+sera d'une part nécessaire à la bonne exécution du script (le lien hypertexte créé dans la navigation renvera vers cet identifiant unique à chaque ancre au sein du texte) et permettra de produire un nom compréhensible dans le menu ; « refutation2 » sera analysé par la transformation qui écrira dans le lien hypertexte « Deuxième réfutation ».</p>
+<p></p>
+<p>Les index des concepts adverses et des expressions privilégiées constituent des outils à l'usage des chercheurs mais également un point d'entré ludique dans le corpus.</p>
+<p> <a id="encW"></a> Les expressions devant figurer dans ces index sont encodées en tant que &lt;term/&gt;, « terme (considéré technique) »au sein d'éléments &lt;span&gt; « passage lié à une interprétation », munis d'attributs @type dont les valeurs « 0 » ou « 1 » orientent grâce à la transformation XSL, le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement. Les éléments &lt;span&gt; englobe l"expression et son contexte permettant de l'expliciter (en effet la recension des adjectifs « vrai » ou « difficile »  seuls serait de peu d'intérêt), l'expression encodée en &lt;term&gt; est ensuite mise en valeur via css, en rouge ou vert pour les notions adverses ou les expressions privilégiées respectivement.</p>
+<p>Dans une version précédente soumise à évaluation nous nous proposions d'encoder ces éléments avec le couple &lt;w/&gt; « <span class="STDitalic">word</span> » et &lt;ab/&gt; « <span class="STDitalic">arbitrary segment</span> ». Cette solution a finalement était rejetée car elle n'était pas valide en xml-tei. Aussi, nous sommes-nous orientés vers des éléments plus spécifiques : employant des chercher/remplacer pour remplacer tous les élémnents &lt;w/&gt; déjà placés en élément &lt;term/&gt;.&lt;br /&gt;Enfin, notre transformation XSL de balisage semi-automatique, légèrement modifiée nous permit de faire remonter l'attribut @type placé sur les éléments &lt;w&gt; sur les éléments &lt;span&gt;.</p>
+<p>Ces deux index prennent la forme de deux pages du site que le lecteur trouve dans un menu déroulant de la navigation en haut de page « Commentaires thématiques ». Après une courte introduction chacun des termes utilisés est listé avec une mention de page et en un clic sur le numéro de page, le lecteur peut être redirigé vers le passage du texte concerné. Si aucun des termes ne fait l'objet d'un commentaire spécifique (autre qu'à titre d'exemple), une introduction générale aux index est intégrée. Cette introduction sert à présenter cette part du travail et également à délivrer un commentaire sur l'aspect stylistique ici mis en valeur. Il ne nous a pas semblé opportun d'ajouter un commentaire pour chaque terme, d'une part car ces termes sont rarement en eux-mêmes des termes difficiles (« personnage », « intrigue » etc.) et d'autre part car un renvoi vers le passage du texte où le terme est employé nous semblait un outil bien plus intéressant autant pour le lecteur expert que pour le lecteur néophyte. Enfin, il nous semble que c'est en tant que système que ces expressions font sens. </p>
+<h2>Vers l'édition numérique : transformation XSL</h2>
+<a id="ref:xsl_gen"></a>
+<p>Une fois l'encodage terminé, l'encodeur conçoit une transformation XSL, soit un fichier contenant des informations de traitement afin de passer d'un fichier XML peu lisible pour le lecteur à une édition numérique pour une lecture dans un navigateur web. En effet les feuilles de styles XSL permettent de conserver le fichier XML originel pour en créer d'autres de types divers, en l'occurence nous nous contentons de produire un site internet, soit des pages au format HTML. Notons que le langage de balisage HTMLest un dérivé de l'XML qui ne permet pas de structurer le contenu aussi finement que l'XML mais permet un affichage via navigateur web pour lecture.</p>
+    <h3>Principes généraux</h3>
+<p>Les transformations XSL fonctionnent par <span class="STDitalic">template</span>, patron, qui commande le traitement d'un ou de plusieurs éléments XML selon des restrictions diverses laissées au soin de l'auteur de la transformation. On peut par exemple transformer un élément &lt;quote&gt; muni d'un attribut @corresp en un lien hypertexte, qui, lié à des scripts (voir <a href="#js">ici</a>) permettra l'affichage de contenus supplémentaires.</p>
+    <h3>Mise en œuvre</h3>
+<p>Pour tenter d'éviter une écriture redondante nous nous efforçons de produire des templates efficaces et réemployables. Par exemple pour constituer les pages HTMLde notre édition numérique il nous faut générer autant de « &lt;header/&gt; » (soit la section au sommet de la page) qu'il y a de pages. Aussi, nous contentons-nous de n'écrire qu'une seule fois le « &lt;header/&gt; » (et tous les éléments identiques sur toutes les pages) au sein d'un template nommé qui est ensuite appelé à chage génération de page avec des paramètres permettant de modifier quelques éléments essentiels qui doivent bien être uniques (tel le titre de la page).</p>
+<div class="STDimg">
+    
+    <img src="img/screen_header.jpg"/>
+    <p class="STDimgCaption">Templates gérant le bas (footer) et le haut (header) des pages</p>
+    <a id="fig:enter-label"></a>
+</div>
+
+<p>Notons que la production des pages est générée par un template matchant la racine du document XML et appelant le template nommé « body » qui lui-même appelle les templates « &lt;header&gt; », « &lt;footer&gt; », etc. adaptant le contenu de la page selon des paramètres déclarés au moment de l'appel du template.</p>
+<div class="STDimg">
+    
+    <img src="img/screen_body.jpg"/>
+    <p class="STDimgCaption">Extrait du template gérant la génération des pages du site</p>
+    <a id="fig:enter-label"></a>
+</div>
+<h2>Résultat de la transformation : HTMLet css</h2>
+<p><a id="htmlCss"></a></p>
+<p>Nos feuilles XSL ont transformé notre document XML difficilement lisible par un lecteur en plusieurs documents html, qui, liés à un fichier css, deviennent bien plus lisibles.</p>
+<p>Architecture du web, le langage HTMLest, comme le langage XML dont il est un dérivé, un langage de balisage. Il s'agit ici encore de baliser des segments textuels en vu de les décrire mais contrairment à l'xml les balises utilisables en HTMLsont limitées afin d'être interprétables par un navigateur internet. Parmi ces balises on trouve :
+<ul>
+    <li> &lt;p/&gt;, un paragraphe,</li>
+    <li> &lt;span/&gt; un segment de texte,</li>
+    <li> &lt;a/&gt; une ancre, ou lien hypertexte.</li>
+</ul>
+Si le HTMLintervient au niveau sémantique, le CSS <span class="STDitalic">Cascading Style Sheeet</span>, lui, sert à la mise en forme. C'est ce langage qui permet de transformer des segmentations sémantiques en véritable boîte sur la page ou de mettre en valeur (par un jeu de couleur par exemple) tel ou tel élément des pages.</p>
+<p><h3>Les notes de l'édition critique : création d'infobulles</h3></p>
+<p><a id="htmlCssInfo"></a></p>
+<p>
+Les interactions html/css permettent de générer des affichages utiles à notre édition numérique. Détailler avec précision les choix esthétiques et pratiques que nous avons été amené à faire n'aurait sans doute que peu de sens, cependant le travail effectué sur les infobulles mérite d'être examiné en détail, afin d'expliciter la manière dont le CSS agit sur le html.</p>
+<p>Comme en xml-tei, nous disposons d'attributs spécifiques au HTMLpour caractériser nos éléments. Parmi eux l'attribut @class est d'une utilité particulière pour permettre les interactions entre HTMLet d'autres langages de programmation (dans le cas de notre travail CSS et Javascript). Ces attributs @class et leurs valeurs sont générés par notre transformation XSL et nous avons, dans le cas des infobulles un résultat qui ressemble à ceci :</p>
+<p><span class="STDgray" style="font-family:courier,monospace;">
+    &lt;span class="ref"&gt;contenu sur lequel porte la note&lt;span class="refinfo"&gt;la
+note elle-même&lt;/span&gt;&lt;/span&gt; la suite du contenu
+</span></p>
+<p>, soit deux éléments &lt;span/&gt;, segments textuels, le second muni d'une classe « refinfo » à l'intérieur du premier classé « ref » contient le contenu de la note qui sera en infobulle. L'affichage standard d'un tel code serait le suivant :<br />
+<span class="STDgray" style="font-family:courier,monospace;">contenu sur lequel porte la notela note elle-même la suite du contenu</span><br />
+Or nous souhaitons que le second segment ne s'affiche que lorsque le curseur passe sur la souris. C'est ici qu'intervient le css.</p>
+<p><div class="STDimg">
+    
+    <img src="img/screen_css_infobulle.jpg"/>
+    <p class="STDimgCaption">Le code CSS gérant les infobulles</p>
+    <a id="screenCssInfo"></a>
+</div></p>
+<h4>Les notes liées aux références transtextuelles</h4>
+<p>Comme on peut le voir dans la figure <a href="#screenCssInfo">, CSS emploie des <span class="STDitalic">selector</span> auquel il attribue des propriétés. En l'occurence la <span class="STDitalic">class</span></a> « ref » est sélectionnée ligne 299 et lui est attribuée une couleur (vert) ligne 300.</p>
+<p>Nous intéresse davantage le selecteur (ou plutôt les sélecteurs additionnés pour restreindre les éléments ciblés) suivant « .ref .refinfo » qui se lit : l'élément classé « refinfo » contenu dans un élément classé « ref ». Ligne 304 lui est attribuée la propriété « display:none » qui empêche l'affichage de l'élément, le contenu de l'infobulle sera présent mais invisible. Il ne sera rendu visible que grâce à la propriété « display:block » attribuée aux éléments concernés par les sélecteurs « .ref:hover .refinfo », soit l'élément classé « refinfo » contenu dans un élément classé « ref » sur lequel l'utilisateur passe la souris (on parle de <span class="STDitalic">pseudoclass</span> pour désigner le sélecteur « hover »). Les autres propriétés correspondent à des choix de designs pensés pour rendre l'infobulle lisible et pratique, ainsi les propriétés de positionnement « position:absolute;left:20px;top:-30px; » servent à ordonner le positionnement des infobulles selon une position absolue déterminée par rapport au dernier ancêtre positionné (en l'occurence l'ancêtre classé « ref » muni de la propriété « position:relative; »), le navigateur soustrait à ce point de référence 30 px depuis son sommet (l'infobulle apparaît plus haut) et y ajoute 20 px depuis la gauche (l'infobulle est légérement décallée à droite).</p>
+<p>Un tel résultat pourrait être atteint en Javascript mais l'execution d'un tel script serait légèrement plus lourde pour le navigateur et son écriture plus complexe que quelques propriétés CSS correctement agencées. Notons que les attributs @class ne sont pas seulement utilisés par le CSS mais également exploité par les scripts détaillés infra.</p>
+<h4>Notes critiques non liées aux références transtextuelles</h4>
+<p>Nous pourrions souhaiter ajouter des notes explicatives sur le corpus, ou simplement des notes type notes de bas de page au sein de nos commentaires.</p>
+<p>S'il suffit pour les notes de nos commentaires d'être insérées directement au sein de des éléments HTMLapproprié pour se comporter comme des infobulles, l'ajout de note au sein du corpu nécessite un encodage particulier. Nous choisissons d'encoder le contenu de la note en tant qu'élément &lt;note/&gt; que nous insérons au sein d'un élément &lt;span/&gt; (sans attribut @type) qui contiendra la portion de texte concernée par l'annotation et l'annotation au sein de l'élément &lt;note/&gt;. Après quoi, notre transformation XSL vers HTMLproduit un élément &lt;span/&gt; classé « note » contenant l'élément &lt;span/&gt; classé « noteinfo » contenant le contenu de la note. Ces éléments sont classés différemment des notes liées aux références afin de permettre d'en distinguer la nature, mais leur fonctionnement est strictement identique (elles sont liées aux même propriétés CSS).</p>
+<h2>Une expérience de lecture : ajouts de scripts</h2>
+<a id="js"></a>
+    <h3>Script pour la lecture</h3>
+<h4>Javascript, présentation générale</h4>
+<p>Afin de permettre l'interactivité d'une page, nous employons un langage de programmation extrêmement courant : javascript. Ce langage de programmation permet la programmation de fonctions qui, selon l'élément sur lequel clique l'utilisateur, provoqueront tel ou tel comportement au sein de la page.</p>
+<p>Une « fonction » est une suite d'instructions parfois conditionnées par des « paramètres », des informations extérieures à la fonction qui y sont injectées.</p>
+<h4>Afficher les citations</h4>
+<a id="quote_dis"></a>
+<p>La première fonction que nous développons sert à afficher les extraits des autres œuvres cités ou mentionnés par Alain Robbe-Grillet . Nous choisissons de programmer un affichage que nous espérons élégant et pratique. En bas à droite de la page apparaît un encart contenant l'extrait cité, sa source et des informations quant à l'emploi de la citation (est-ce une « mention », est-ce un « blâme » ou un « éloge »?). L'encart est censé permettre de continuer à lire <span class="STDitalic">Pour un nouveau roman</span>  sans avoir à le refermer. Moins élégant peut-être qu'une version qui obscurcirait le reste de l'écran, nous pensons que permettre tel usage correspond davantage à ce que souhaiterait un lecteur effectif.</p>
+<div class="STDimg">
+    <img src="img/screen_quote_result.jpg"/>
+    <p class="STDimgCaption">Capture d'écran du résultat obtenu</p>
+    <a id="fig:quote"></a>
+</div>
+<p>
+Au moyen de notre transformation XSL, nous créons pour chacune des citations l'appel d'une fonction qui recevra en paramètre (selon la citation) l'identifiant du passage cité.</p>
+<p>
+On remarque que l'on injecte en paramètre l'identifiant (@corresp) du passage cité, et les statuts référentiels et axiologiques de la référence (@cert et @ana, respectivement) ainsi qu'un dernier paramètre dont les valeurs possibles sont « 1 » ou « 0 » qui sert à orienter le comportement de la fonction nommée « displayExtract ».</p>
+<div class="STDimg">
+
+<img src="img/screen_quote_js1.jpg"/>
+    <p class="STDimgCaption">Extrait du script gérant l'affichage des extraits cités</p>
+    <a id="fig:displayExtract1"></a>
+</div>
+<div class="STDimg">
+    
+    <img src="img/screen_quote_js2.jpg"/>
+    <p class="STDimgCaption">Extrait du script gérant l'affichage des extraits cités</p>
+    <a id="fig:displayExtract2"></a>
+</div>
+<p>En effet, cette fonction n'a qu'à rendre visible le passage concerné lorsque l'utilisateur clic sur une citation. Cependant les choses se compliquent dès lors que nous souhaitons afficher plus d'un extrait pour une même citation. En effet, la même citation par exemple « Don Quichotte » dans l'article « Un roman qui s'invente lui-même » peut renvoyer à plusieurs passages de <span class="STDitalic">Le Renard et la boussole</span>. Or l'encodage xml-tei nous permet précisément d'insérer plusieurs valeurs à l'attribut @corresp séparées par un espace.</p>
+<p>On aura donc : \verb|&lt;quote corresp="pr_02_25 pr_02_50"&gt;Don Quichotte&lt;/quote&gt;| à prétraiter car notre script Javascript ne peut recevoir qu'une seule valeur en paramètre et ne sera pas capable d'interpréter une suite de valeurs comme telle. Dès lors nous avons opté pour un prétraitement en XSL (voir <a href="#fig:corrspAfect">ici</a>).</p>
+<p>Nous souhaitons arriver au résultat suivant : <span class="STDgray" style="font-family:courier,monospace;">&lt;span onclick="displayExtract(pr_02_25_02);displayExtract(pr_02_25_50);&gt;Don
+Quichotte&lt;/span&gt;</span>, soit « lorsque l'utilisateur clique sur ce segment la fonction displayExtract est appelée deux fois sur deux extraits différents. Pour ce faire nous devons séparer les deux valeurs et répéter la valeur de l'attribut @onclick en ne changeant qu'un seul paramètre. Dans un premier template XSL nous testons la présence ou non d'un espace au sein de la valeur @corresp. S'il y a un espace une première partie de la valeur de l'attribut @onclick (soit un premier extrait) est gérée après quoi un autre template est appelé. Ce template nommé « correspAffect » reçoit en paramètre tout le contenu de l'attribut qui suit l'espace, il procède ensuite de même : gère le premier extrait en créant l'appel de la fonction sur ce qui précède l'espace (soit le deuxième extrait), puis via un appel recursif va gérer les unes après les autres toutes les valeurs de l'attribut @corresp après l'espace. S'appelant lui-même le template boucle sur une partie toujours plus réduite de l'attribut @corresp qui correspondra à autant de paramètres ensuite envoyés dans le Javascript jusq'à ce qu'il n'y ait plus d'espace au sein du reste de @corresp, alors, le template produit un dernier appel à la fonction (s'il n'y a plus d'espace il reste l'identifiant d'un extrait) puis s'arrête.</p>
+<div class="STDimg">
+    
+    <img src="img/screen_quote_xsl.jpg"/>
+    <p class="STDimgCaption">Le template correspAffect qui sépare les correspondances multiples</p>
+    <a id="fig:corrspAfect"></a>
+</div>
+
+<p>Une fois tous les appels à la fonction générés, il convient de permettre à la fonction elle-même d'afficher effectivement ces extraits. En effet, afin de permettre au lecteur de refermer un encart contenant un extrait à volonté, nous avons créé une fonction qui repère les extraits affichés (s'il y en a) et les cache (on revient donc à la situation initiale). Cette fonction est attachée à un segment en haut des encarts des extraits où un « X » symbolise efficacement une croix.<br />
+Cependant il paraît très probable que le lecteur ne ferme pas lui-même les encarts, nous l'encourageons d'ailleurs à le faire en lui permettant de continuer à lire le texte sans (trop) d'encombrement visuel. Aussi avons-nous décidé d'appeler la fonction refermant les encarts ouverts au sein de la fonction les affichant avant qu'elle ne les fasse apparaître.<br />
+Lorsqu'un seul extrait est à afficher cela ne pose pas de problème : la fonction ferme les encarts affichées puis ouvre celui sur lequel le lecteur a clic. Cependant dans les cas où plusieurs extraits sont à afficher, la fonction les affichera puis les cachera de nouveau jusqu'au dernier appelé. Nous ajoutons donc un dernier paramètre à cette fonction : « c » dont les valeurs (« 0 » ou « 1 ») détermineront si la fonction doit, ou non, cacher les extraits précédemment affichés. 
+Ainsi voit-on <a href="#fig:corrspAfect">ici</a>, lignes 419-422, l'ajout d'un '0' à la fin des appels générés s'ils ne sont pas les premiers (ou/et les seuls).</p>
+<p>
+Si c'est bien Javascript qui produit l'affichage et lie plusieurs éléments HTMLgénérés via XSL depuis l'xml, c'est ici encore l'xsl qui nous permet de produire très efficacement des liens complexes entre différents langage de programmation.</p>
+<h4>Permettre des variantes d'affichage</h4>
+<p>Afin de permettre un confort de lecture accru, du moins personnalisable, deux boutons sont ajoutés. Le premier situé en haut à droite de la page permet de passer d'un thème clair à un thème sombre. Le second n'est présent que sur les pages des articles de <span class="STDitalic">Pour un nouveau roman</span>  et permet d'afficher ou de masquer les numéros de page de l'édition utilisée pour le présent travail\footnoteB{Alain Robbe-Grillet ,<span class="STDitalic">Pour un nouveau roman</span> , Paris, Éditions de Minuit, coll. « Double », [1963] 2011. Ces deux boutons appellent des fonctions qui stockent le choix de l'utilisateur ce qui évite à l'utilisateur d'avoir à clicr de nouveau à chaque chargement de page. Notons que le choix de l'utilisateur est stocké parmi les fichiers temporaires du navigateur employé, dès lors il peut-être supprimé en vidant le cache du navigateur mais également en cliquant sur les boutons de manière à réinitialiser l'affichage, car le passage au thème clair et le masquage des numéros de page éliminent le fichier temporaire.</p>
+<h4>Afficher les variantes</h4>
+    <h3>Interactivité de la base de donnée</h3>
+<p>
+Afin de rendre la base de données lisible, plus aisément que dans un tableau nous employons l'outil GraphCommons\footnoteB{Voir : <a href="https://graphcommons.com/graphs/2ffc7c8c-3d1b-4814-966b-593b1c206f3c">https://graphcommons.com/graphs/2ffc7c8c-3d1b-4814-966b-593b1c206f3c</a>.</p>
+<p>Cet outil premet la production de graphique depuis un fichier de type .csv, (soit un document texte, interprétable comme un tableau par les applications de type tableur et assurant une interopérabilité très élevée notamment au sein de script perl ou javascript). Ainsi, nous exportons le contenu de la base de données au bon format puis retravaillons les données pour un meilleur affichage dans l'application.
+La base de données est d'abord exportée au format .csv, le tableau au fichier texte que l'on obtient a alors une colonne (les colonnes sont séparées au sein du texte par des virgules) par propriété des entitées (voir : <a href="#ref:db_modele_relationnel">ici</a>) de la base afin d'être utilisable par l'application GraphCommons, les colonnes nécessitent d'être renommées et quelques valeurs ajustées. En effet, une colonne « weight » qui détermine la taille d'un lien est interprétée de manière croissante, or nous avions choisi de représenter l'intensité des liens de manière décroissante (« 0 » étant la citation et « la mention reconstituée »), pour un affichage approrpié nous modifions donc les valeurs pour les inverser et renommons les colonnes notamment grâce à des scripts perl rudimentaires.</p>
+<h2>Conception et réalisation d'une base de donnée</h2>
+    <h3>Principes généraux</h3>
+   <p> On appelle base de données un mode de structuration de l'information qui permet de stocker un grand nombre d'informations sur un petit espace disque. Il existe plusieurs modèles de structuration de ces bases de données, mais pour le présent travail n'est employé que le modèle le plus courant : le modèle relationnel.</p>
+<p>    Dans une base de données relationnelle on ne stocke pas seulement des informations brutes telles « Robbe-Grillet, Une voie pour le roman futur » mais bien des informations mises en relations les unes avec les autres, chacune ayant une nature définie au sein de la base, on aurait donc plutôt : « L'auteur Robbe-Grillet a écrit l'article nommé "Une voie pour le roman futur". ».</p>
+<p>    Nous nous proposons d'illustrer via une base de données les liens que tisse chacun des textes constituant l'ensemble avec les publications antérieures et les référents (textuels ou autres) qui sous-tendent l'argumentation tout en rendant compte des différents thèmes abordés afin de donner une vue d'ensemble du recueil perçu comme un tissu de textes au sein d'un environnement dont il donne, de manière implicite et/ou explicite, une représentation.</p>
+<p>    Les bases de données étant un mode pérenne de stockage et de partage des données, cet outil nous a semblé renforcer l'interopérabilité de notre travail. En effet, notre fichier XML étant un objet tourné vers l'édition, s'il est lui aussi pérenne et modifiable ; un ingénieur d'étude ou un chercheur au profil différent du nôtre pourrait préférer se servir de la base de donnée. Rapide, modifiable à souhait et pratique d'utilisation pour une alimentation continue au fil d'une lecture, la base de données relationnelle nous paraît un outil performant pour traiter et mettre en valeur les relations transtextuelles qui parcourent <span class="STDitalic">Pour un nouveau roman</span> et l'intègrent au sein d'un corpus plus vaste. On pourrait s'imaginer qu'une fois la base établie et rendue accessible au public, des corrections ou des propositions émergent du lectorat. En effet si nous nous sommes efforcé de produire un travail rigoureux il paraît difficilement concevable qu'aucune erreur n'est était commise et aucune référence oubliée. On pourrait même aller jusqu'à imaginer une équipe de chercheurs, au profil plus axés humanités numériques que littérature seuls, se répartissent des sections du <span class="STDitalic">Pour un nouveau roman</span>  et entrent au fur et à mesure de leur lecture les références et citations, avant de se contrôler mutuellement. </p>
+
+
+    <h3>Mise en œuvre</h3>
+<h4>Modèle conceptuel</h4>
+<a id="ref:db_modele_conceptuel"></a>
+<p> La première étape de constitution d'une base de données est l'élaboration d'un modèle conceptuel. Ce modèle conceptuel constitue une représentation sommaire d'une partie restreinte du monde, en l'occurrence une lecture donnée de <span class="STDitalic">Pour un nouveau roman</span>  . Les modèles conceptuels sont constitués : 
+    <ul>
+        <li> d'entités, les objets représentés (par exemple : les premières publications, les articles de <span class="STDitalic">Pour un nouveau roman</span> , les références transtextuelles).</li>
+        <li> chacun des objets d'une entité sont appelés « instances » (ainsi « Une voie pour le roman futur » est une instance de l'entité ARTICLES).</li>
+        <li> d'attributs, les qualités de ces objets (par exemple : date de publication, page de début, nature de la référence).</li>
+        <li> d'associations, les relations qui unissent les entités (par exemple : « correspond à », « mentionne »), elles peuvent également être munies d'attributs.</li>
+        <li> chacune des associations est munie de cardinalités qui précisent le nombre minimal et maximal de fois où l’entité est impliquée dans l’association. Par exemple : l'entité « ARTICLE » peut ne pas mentionner d'entités de TRANSTEXTS et peut en mentionner un nombre virtuellement infini, la cardinalité de l'association « MENTION » à l'endroit de « ARTICLES » sera donc 0,n ; où 0 équivaut à la cardinalité minimale et n (plus d'une fois) à la cardinalité maximale.</li>
+    </ul>
+    Par convention on évite l'usage d'accents et d'espace et les noms d'entités et d'associations sont inscrits en majuscule, les entités sont représentées par un rectangle, les associations par un cercle (voir figure <a href="#concept">ici</a>). Par ailleurs, parmi les attributs, notons la nécessité d'utiliser l'un des attributs comme clef primaire soulignée par convention, identifiant de chacun des objets.</p>
+<p>
+<div class="STDimg">
+    
+    <img src="img/MEMmodele_conceptuel.png"/>
+    <p class="STDimgCaption">Modèle conceptuel</p>
+    <a id="concept"></a>
+</div>
+Afin de permettre une implémentation aisée et rigoureuse nous préfixons nos attributs avec la (ou les) première(s) lettre(s) de l'entité ou de l'association à laquelle ils renvoient ; dans les cas où une association commence par la même lettre qu'une autre entité nous lui substituons les initiales des deux entités mises en relation.</p>
+<p>Chacun des articles de <span class="STDitalic">Pour un nouveau roman</span>  constitue une instance de l'entité ARTICLES définie par un identifiant (aIdent), un titre (aTitle), une ou deux dates (aDateFirst et aDateLast) déclarée(s) par Alain Robbe-Grillet , leur place dans le recueil (aOrder) et leur étendue incarnée par deux attributs aPageBegining et aPageEnd correspondant respectivement à la première et à la dernière page de l'article.</p>
+<p>La deuxième entité FIRSTPUBLICATIONS est liée par une association FROM à 
+ARTICLES. Ses attributs préfixés « fp » caractérisent l'instance constituée par la première publication, ceux préfixés « fpSrc » décrivent la source de cette première publication, soit le journal ou la revue dont elle est issue. Créer une nouvelle entité pour ces sources ne nous a pas paru nécessaire car ces sources ne nous intéressent qu'en ce qu'elles induisent une tonalité (polémique, scientifique, savante, profane) ou une réception particulière aux premières publications.</p>
+<p>
+Intitulée TRANSTEXTS, la quatrième et dernière entité est constituée de toutes les œuvres, auteurs ou concepts (identifiés comme étant de seconde main) mentionnées par Alain Robbe-Grillet . La nature diverse (« caricature bien connue » ou simplement « Heidegger ») des instances de cette entité explique le foisonnement d'attributs qui seront, selon les cas, sans valeur ou bel et bien mobilisés.</p>
+<p>L'association MENTION illustre les liens qu'entretiennent les ARTICLES avec les TRANSTEXTS, les attributs mAxiologicStatus et mReferenceStatus caractérisent le lien que <span class="STDitalic">Pour un nouveau roman</span>  entretient avec telle ou telle référence. Si les valeurs possibles de mAxiologicStatus sont relativement restreintes (« eloge », « blame », « ambigue »), les valeurs de mReferenceStatus sont plus difficiles à caractériser simplement. En effet si dans certains cas Alain Robbe-Grillet  cite une œuvre de manière explicite en donnant auteur et titre, il s'épargne bien souvent de donner des références précises ; alors nous faut-il être en mesure de caractériser toutes les nuances de l'implicite : l'auteur est-il cité sans être nommé ? l'emprunt manifeste est-il désigné comme un emprunt d'une source à son tour déclarée ou non ? etc. Aussi optons-nous pour un système similaire à celui mis en œuvre pour l'attribut asImportance. Si nous nous sommes efforcé d'établir un système rigoureux et adapté au texte, telles catégories ne se défont jamais tout à fait d'une appréciation subjective (voir <a href="#ref:dbEtabValeurs">ici</a>).</p>
+
+<h4>Modèle relationnel</h4>
+<a id="ref:db_modele_relationnel"></a>
+<p>La deuxième étape de la constitution d'une base de données est la conversion du modèle conceptuel au modèle relationnel qui correspond à une représentation schématique de la manière dont les données seront inscrites dans la base. Le point crucial de cette conversion est la gestion des associations. Entités et associations sont remplacées par des relations ou <span class="STDitalic">tables</span> qui, selon les cas, illustrent des relations de dépendances ou non entre elles.</p>
+<p>En effet, lorsqu'une seule des entités liées par une association à une autre a une cardinalité maximale de « 1 », cela signifie qu'elle n'a pas d'existence indépendante de l'autre entité. Alors l'association ne devient pas une relation mais n'est plus présente dans le modèle relationnel que par la présence d'une « clef secondaire » dans la relation dépendante de l'autre, cette clef secondaire a la même valeur que la clef primaire de l'instance cible.
+Au contraire, lorsque les deux entités sont reliées par une association dont les cardinalités maximales sont « n », alors l'association devient une relation contenant deux clefs secondaires : les clefs primaires des deux instances liées par l'association. Ce qui donne pour notre modèle :</p>
+<p><div class="STDimg">
+    
+    <img src="img/MEMmodele_relationnel.png"/>
+    <p class="STDimgCaption">Modèle relationnel</p>
+    <a id="relationnel"></a>
+</div></p>
+<p>L'association FROM reliant les entités FIRSTPUBLICATIONS et ARTICLES disparaît dans le modèle relationnel car la cardinalité maximal de FIRSTPUBLICATIONS a pour valeur « 1 », laquelle est donc dépendante de ARTICLE dont la cardinalité maximale a pour valeur « n » (un article peut être une compilation ou une réécriture de plusieurs publications premières mais les articles originaux ne correspondent jamais qu'à un seul article du recueil final). Dès lors les instances FIRSTPUBLICATIONS contiennent désormais une clef secondaire qui correspond à la clef primaire d'une instance de ARTICLES.</p>
+<p>L'association ABOUT devient une table car les deux entités qu'elle relie ont pour cardinalité maximale « n » (un même SUBJECT peut être traité par plusieurs ARTICLES et chaque ARTICLES peut traiter de plusieurs SUBJECT). ABOUT est dans le modèle relationnel une relation avec pour clef primaire deux clefs secondaires, l'une correspondant à la clef primaire de ARTICLES, l'autre correspondant à la clef primaire de SUBJECTS.</p>
+<p>L'association MENTION devient une table car les deux entités qu'elle relie ont pour cardinalité maximale « n » (un même ARTICLES peut faire référence à plusieurs TRANSTEXTS et chaque TRANSTEXTS peut être mentionné par plusieurs ARTICLES). MENTION est dans le modèle relationnel une relation avec pour clef primaire deux clefs secondaires, l'une correspondant à la clef primaire de ARTICLES, l'autre correspondant à la clef primaire de TRANSTEXTS.</p>
+
+<h4>Implémentation</h4>
+<p>Lors de l'implémentation, nous nous connectons à un serveur local (soit un serveur hébergé sur notre propre machine) via un logiciel dédié et rentrons à la main ou grâce à des scripts les données qui prennent dans l'interface de l'application l'apparence de tableaux (on retrouve notre modèle relationnel). Les scripts servant à la création de la base n'ont en eux-mêmes que peu d'intérêt : on envoie littéralement des chaînes de caractères dans un ordre donné, dans un langage qui semble d'un anglais délesté d'une bonne part de sa syntaxe.<br />En décembre 2022, nous avons produit une première version de cette base de données relationnelle dans le cadre de l'évaluation du cours de base données animé par Mme Delphine <span class="STDsc">Tribout</span>. Le modèle soumis alors à évaluation nécessitait quatre entités : la base incluait une entité « SUBJECTS », un recensement des domaines abstraits dont traitaient les ARTICLES. Afin d'être le plus pertinent possible nous nous proposions de produire des valeurs les plus précises possibles pour l'attribut sDomain (« théorie Litteraire <span class="STDsc">xx</span><span class="STDexposant">e</span> » plutôt que « litterature »).</p>
+<p>Cette entité a depuis été retirée du modèle car elle nous semblait avoir peu d'intérêt tant le choix des domaines à affubler à tel ou tel article était d'une part redondant (les mêmes domaines étaient attribués à tous les articles), d'autre part le fruit d'une appréciation personnelle parfois difficile à objectiver. Si un outil est toujours le produit d'une recherche particulière et, dès lors, le résultat d'une lecture donnée, le découpage des domaines traités par les articles du recueil nous paraissait au mieux d'un intérêt limité (« À quoi servent les théories » traite de théorie littéraire du <span class="STDsc">xx</span><span class="STDexposant">e</span> et de philosophie), au pire, difficilement défendable. Par exemple, nous avions réuni l'ensemble des filiations du nouveau roman tels « Faulkner » ou « Kafka » généralement mentionnés ensemble au sein du domaine « histoire littéraire internationale synchronique » plutôt que de les séparer dans des catégories par siècle et/ou pays car Alain Robbe-Grillet  ne fait pas une histoire de la littérature anglaise ou tchèque mais inscrit ses références dans une histoire littéraire internationale ; on aurait pu également considérer que ces références, puisqu'elles s'inscrivent dans une volonté de décrire une filiation au nouveau roman, devraient être rattachées au domaine « théorie littéraire <span class="STDsc">xx</span><span class="STDexposant">e</span> ». De manière générale, il nous semblait que l'attribution de domaine aux références, effectuée en fonction de notre lecture du recueil, induisait trop de choix problématiques pour être pleinement satisfaisante.</p>
+<h3>Mode d'établissement des valeurs des attributs</h3> 
+<a id="ref:dbEtabValeurs"></a>
+<h4>aOrder, conception de la structure du recueil</h4>
+<p>Il convient de noter une particularité dans la structure du recueil qui a nécessité un choix de notre part : cinq articles sont présentés dans le recueil comme des sous-sections d'un chapitre « Éléments d'une anthologie moderne », dès lors il eût pu paraître nécessaire de prévoir des valeurs de aOrder sur le modèle 5.1, 5.2 etc. dénotant sections et sous-sections, cependant dans la mesure où l'article enchâssant les cinq critiques littéraires constituant l'ensemble est ajouté <span class="STDitalic">a posteriori</span> il nous a paru préférable de le considérer comme un article à part entière détaché de ses sous-articles qui n'entretiennent aucun lien explicite si ce n'est leur introduction, sorte de propos général ayant une fonction de seuil, ce choix nous paraît d'autant plus déterminant que l'on note l'absence de conclusion achevant de constituer l'ensemble.</p>
+<p>De même si la table des matières de <span class="STDitalic">Pour un nouveau roman</span>  présente des sous-sections « personnage », « intrigue », « engagement » de l'article « De quelques notions périmées », ces sous-sections sont bien moins marquées dans le texte et nous semblent constituer davantage des paragraphes titrés issus d'articles fortement réécrits pour s'intégrer comme un tout homogène.</p>
+<h4>Valeurs de mReferenceStatus</h4>
+<p>Afin de modéliser de manière efficace et rigoureuse le statut des références, nous avons opté pour un système d'entiers inversement proportionnels au degré d'explicite des références dans le texte d'Alain Robbe-Grillet .</p>
+<ul>
+    <li> Valeur <span class="STDbold">0, explicite</span> : citation, du moins segment présenté dans le texte comme telle dont la source (auteur ou œuvre) est mentionnée.</li>
+    <li> Valeur <span class="STDbold">1, mention</span> : l'entité est mentionnée sans être citée. Il peut s'agir d'une glose interprétée (où l'interprétation de Robbe-Grillet est explicite).</li>
+    <li> Valeur <span class="STDbold">2, mention ambiguë</span> : cette valeur est réservée presque exclusivement à des entités collectives mentionnées sans nécessairement que les signifiés (les auteurs désignés par « les critiques traditionnels ») soient identifiables. Pareille identification étant difficile voire impossible : on constate qu'il s'agit bien souvent d'un procédé rhétorique visant à discréditer sans les nommer des adversaires réels ou imaginaires.</li>
+    <li> Valeur <span class="STDbold">3, emprunt non déclaré fortement suggéré</span> : réservée aux cas où Alain Robbe-Grillet  emprunte un concept, cite ou glose une référence dont il ne donnera pas la source mais dont la paternité est suffisamment présente à l'esprit de ses lecteurs ou suffisamment appuyée par lui pour être inférée. Ainsi lorsque Robbe-Grillet disserte sur « Le petit détail qui fait vrai » à la page 176, le lecteur compétent reconnaît sans mal la conception que défendait Barthes du style de Balzac régulièrement mobilisée par Alain Robbe-Grillet .</li>
+    <li> Valeur <span class="STDbold">4, emprunt ou mention non déclaré(e) non suggéré(e) reconstitué(e)</span> : réservée pour des emprunts que nous identifions sans qu'ils ne soient signalés par l'auteur. Ainsi p. 69 lorsque Alain Robbe-Grillet  cite des lieux propices à la poésie romantique y glissant « vallon » nous identifions Lamartine. Enfin notons que dans ces cas comme dans les cas précédents lorsque la valeur de l'un des attributs est reconstituée par l'éditeur nous les insérons entre crochets, pour les repérer et corriger aisément si besoin mais également par honnêteté intellectuelle si pareil travail devait être amené à intégrer un travail de recherche plus vaste sur <span class="STDitalic">Pour un nouveau roman</span> .</li>
+</ul>
+<p>Faisant toutes deux l'objet d'une interprétation de l'éditeur, les valeurs « 3 » et « 4 » peuvent sembler proches. C'est en effet le cas, elles dépendent fortement de l'éditeur qui peut reconnaître des références non produites par Robbe-Grillet ou au contraire ne pas en reconnaître. Il nous a néanmoins semblé nécessaire de différencier la valeur « 4 » de « 3 » car « 4 » marque un degré d'intervention plus élevé qui pourrait relevé de la surinterprétation : si nous proposons de lire une référence à Lamartine dans l'emploi du terme « vallon » p. 69, il convient de remettre cette proposition à sa juste place. Les indices pour identifier la références sont maigres : le contexte traite d'un style anthropomorphique induisant fortement la poésie romantique sans qu'elle ne soit explicitement citée. Là où la valeur « 3 » aurait pour modèle une expression du type « un certain poète romantique ayant écrit un certain poème à propos d'un vallon » ; le lecteur interprète et risque de se tromper mais il est bien sûr que le texte suggère un auteur. </p>
+<p>Si pareil projet devait bénéficier d'une équipe plutôt que d'un seul encodeur/éditeur, nous serions tentés de faire de la catégorie « 4 » une catégorie temporaire dont chacun des membres serait destiné à être évalué pour être passé en « 3 » ou supprimé. Nous pensons que cette catégorie « 4 » marque plus encore que les autres la subjectivité de l'éditeur et qu'il serait nécessaire ici d'avoir recourt à une forme de collégialité ou de collaboration pour faire un sort aux références identifiées comme relevant de cette catégorie.</p>
+<h4>Valeurs de mAxiologicStatus</h4>
+<p>Pour délimiter les valeurs de axiologicStatus nous partons de deux polarités premières, le blâme et l'éloge constituant le moteur des théories de Alain Robbe-Grillet  et le cœur de sa rhétorique, auxquels nous adjoignons deux autres statuts axiologique : l'ambiguïté et l'indifférence. </p>
+<p>S'il est aisé de reconnaître que la référence Balzac (ses œuvres ou le concept empreint des conceptions de Barthes) fait l'objet d'un blâme il est plus difficile de juger le statut d'un référent comme Stendhal qui n'est pas mentionné pour lui-même mais comme argument servant à critiquer « un jeune écrivain contemporain qui écrirait comme Stendhal ». Nous avons choisi d'utiliser les valeurs « blame » et « eloge » de manière indifférente lorsque la référence est critiquée ou vantée de manière explicite ou sollicité comme raison d'une critique ou d'un éloge portant sur une tierce référence.</p>
+<p>Le statut « ambiguë » sert lorsque Alain Robbe-Grillet  exprime de manière explicite une difficulté à rejeter ou inclure tout à fait une référence comme symptomatique de la modernité (objet d'éloge) ou de la tradition (objet de blâme). Cette valeur sert également dans les cas où Alain Robbe-Grillet  se sert d'un argument proprement sartrien pour critiquer Sartre (parfois désigné de manière implicite (valeur 3 de mReferenceStatus) par une formule telle « les engagés » ou pléthore de synonymes désignant ce que l'on qualifierait encore aujourd'hui de « stalinien »). Cette valeur marque donc également l'habilité rhétorique, d'aucuns diraient la « mauvaise foi » d'Alain Robbe-Grillet . Notons cependant que le pastiche à valeur de charge au sein de « Nouveau roman, homme nouveau » n'est pas considéré comme ambiguë car l'emprunt à Sartre ici ne sert qu'à renforcer encore une opposition frontale à ses thèses.</p>
+<p>Enfin la valeur « indifférent » sert à désigner une mention qui n'est pas mobilisée dans l'argumentation semblant avoir une valeur plus neutre de comparaison dénuée du moindre jugement de valeur sur le référent lui-même. En effet dans les premières pages du recueil Alain Robbe-Grillet  s'attaque à un « dictionnaire encyclopédique de notre temps » pour la définition que celui-ci propose de Schönberg. Si dans ce cas, la référence au musicien n'est pas tout à fait neutre (le choix de ce compositeur intellectuel supposé hermétique rappelle le nouveau roman), il est difficile de rattacher le référent « Schönberg » au système axiologique de l'essai ; c'est bien le dictionnaire encyclopédique qui fait l'objet d'une charge. Et si l'on devine une sympathie pour le musicien de la part de Robbe-Grillet, cette sympathie est inférée par le lecteur sans être partie prenante de l'argumentaire.</p>
+<h4>Les valeurs datées de TRANSTEXTS et FIRSTPUBLICATIONS en <span class="STDitalic">string</span></h4>
+<p>Dans le cas des dates de TRANSTEXTS constituées selon les cas d'une seule date ttDateFirst (de publication) ou de deux ttDateFirst et ttDateLast (naissance et mort d'un auteur ou première publication et traduction française antérieure à la publication de l'article au sein duquel la référence est mobilisée). Lors de l'implémentation des données relevant des dates un problèmes mineurs s'est posé à nous. Les données rentrées doivent être rattachées à un <span class="STDitalic">domain</span> soit un type de valeur au sein d'une liste étendue mais fermée contenant entre autre : date, entier, décimal etc. Or SQL pose une limite au <span class="STDitalic">domain</span> date : il ne permet pas d'enregistrer des dates antérieures à 1900. Nous avons dû opter pour le domaine <span class="STDitalic">string</span> car certaines dates étaient antérieures à 1900.</p>
+<p>De même dans le cas des FIRSTPUBLICATIONS, nous avons choisi dans le modèle relationnel d'utiliser le domaine <span class="STDitalic">string</span> pour l'attribut fpDate car selon la nature de la source (quotidien, mensuel, annuel) la valeur de l'attribut changera de structure (10 octobre 1957, été 1963) ne permettant pas de l'inscrire comme une date (à moins de créer des dates arbitraires, ce qui n'aurait à nos yeux pas de sens).</p>
+
+<h4>Valeurs de l'attribut ttTitle de TRANSTEXTS</h4>
+<p>Au sein de TRANSTEXTS nous réunissons des instances de nature diverse (les discriminer est le rôle de l'attribut ttNature) pour lesquels le choix de l'attribut ttTitle peut sembler étrange : nous nous trouvons parfois à employer cet attribut pour inscrire le nom d'un concept dans la base. En effet si la dénomination de « titre » peut paraître saugrenue pour des instances de nature « concept » elle nous paraissait moins arbitraire que n'aurait pu l'être « nom » pour des œuvres, au demeurant l'emploi de « nom » ne nous satisfaisait pas non plus pour désigner les concepts. Par ailleurs considérer un concept comme un titre avait l'avantage de pouvoir plus aisément lui attribuer un auteur, voire appliquer des mises à jour ultérieures sur la base dans le cas où l'usage particulier que Robbe-Grillet fait de tel ou tel concept pourrait être rattaché à une œuvre particulière.</p>
+<p>Notons que dans les cas où nous reconstituons une référence non mentionnée et peu sous-entendue (valeur « 4 » de mReferenceStatus) ou complétons pour paraphraser des propos allusifs de Robbe-Grillet, nous ajoutons des crochets droits à la valeur afin de noter notre intervention. Dans ces cas nous nous sommes efforcé de suivre une dénomination canonique non ambiguë.</p>
+
+<h2>Conclusion</h2>
+<p>Tout au long de notre travail nous nous sommes efforcé d'employer la technique au service de questions scientifiques. Et si, bien souvent, la technique interroge le choix scientifique, nous nous sommes évertué à ne pas confondre questions et difficultés techniques. </p>
+<p>Sans doute, tout n'y est pas, sans doute chercher à identifier et produire toutes les citations en contexte relève de l'impossible : Alain Robbe-Grillet  peut s'être trompé, l'édition avoir disparu, une citation en appelle une autre, etc. Pareil projet cependant se mène non en ayant à cœur de couvrir l'ouvrage entier (du moins sans s'en faire l'illusion) et toute son époque, mais bien en sachant que l'on ne propose qu'une lecture parmi d'autres, qui n'épuise pas l'œuvre.</p>
+								</article>
+							</xsl:when>
 							<xsl:when test="$content='home'">
 								<article class="comment">
 									<section>
@@ -359,7 +735,7 @@
 										<ul>
 											<li>l'ensemble du texte</li>
 <!--											<li>l'architecture du site qui sera amené à être enrichie</li>-->
-											<li>la possibilité de faire apparaître les références, les citations, les sauts rhétoriques et les numéros de page <span class="STDitalic">via</span> des boutons sur la gauche de l'écran</li>
+											<li>la possibilité de faire apparaître les références, les citations, les sauts rhétoriques (seulement jusqu'à la troisième section du corpus) et les numéros de page <span class="STDitalic">via</span> des boutons sur la gauche de l'écran</li>
 <!--											<li>la possibilité de faire apparaître ou non les numéros de page au sein du texte (le bouton est sur la gauche)</li>-->
 											<li>les éléments &lt;ref&gt; (soit les références) signalés par une infobulle jusqu'à la section sur l'ensemble du texte.</li>
 											<li>les éléments &lt;w&gt; (soit les termes des index thématiques) encodés jusqu'à la section sur l'ensemble du texte.</li>
@@ -390,13 +766,531 @@
 									</section>
 								</article>
 							</xsl:when>
+							<xsl:when test="$content='bib'">
+								<article class="comment">
+								<h2>Bibliographie</h2>
+								<div class="separ"></div>
+								<h3>Édition citée de Pour un nouveau roman</h3>
+								<div class="separ"></div>
+								
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, <span class="STDitalic">Pour un nouveau roman</span>, Paris, Les Éditions de Minuit, coll. « Double », 2013 [1963]</p>
+								<div class="separ"></div>
+								<h3>Première publication des textes constituants l'ensemble</h3>
+								<div class="separ"></div>
+								
+								
+								
+								
+								
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Il écrit comme Stendhal », Paris, <span class="STDitalic">L'Express, </span>, 1955/10/25, p. 8</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « La littérature aujourd'hui - VI », Paris, <span class="STDitalic">Tel Quel, n° 14</span>, 1963 été, p. 39-45</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Une voie pour le roman futur », Paris, <span class="STDitalic">Nouvelle Revue Française, n° 43</span>, 1956/07, p. 77-84</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Pour un réalisme de la présence », Paris, <span class="STDitalic">L'Express</span>, 1956/01/17, p. 11</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Réalisme et révolution », Paris, <span class="STDitalic">L'Express</span>, 1955/01/03, p. 15</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Littérature engagée, littérature réactionnaire », Paris, <span class="STDitalic">L'Express</span>, 1955/12/20, p. 11</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « La Forme et le contenu », Paris, <span class="STDitalic">France Observateur, n° 392</span>, 1957/11/14, p. 19</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Il n'y a pas "d'avant garde" », Paris, <span class="STDitalic">France Observateur, n° 388</span>, 1957/10/17, p. 19</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Un joli talent de conteur », Paris, <span class="STDitalic">France Observateur, n° 390</span>, 1957/10/31, p. 19</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Écrire pour son temps », Paris, <span class="STDitalic">France Observateur, n° 387</span>, 1957/10/10, p. 17</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Le réalisme socialiste est bourgeois », Paris, <span class="STDitalic">L'Express</span>, 1956/02/21, p. 11</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « La mort du personnage », Paris, <span class="STDitalic">France Observateur, n° 389</span>, 1957/10/24, p. 20</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Nature, Humanisme, Tragédie », Paris, <span class="STDitalic">Nouvelle Revue Française, n° 70</span>, 1958/10, p. 580-603</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Énigmes et transparences chez Raymond Roussel », Paris, <span class="STDitalic">Critique, n° 199</span>, 1963/12, p. 1027-1033</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « La conscience malade de Zeno », Paris, <span class="STDitalic">Nouvelle Revue Française, n° 19</span>, 1954/07, p. 138-141</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Joë Bousquet le rêveur », Paris, <span class="STDitalic">Critique, n° 77</span>, 1953/10, p. 819-829</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Samuel Beckett ou la présence sur la scène », Paris, <span class="STDitalic">Critique, n° 189</span>, 1963/02, p. 108-114</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Samuel Beckett, Auteur dramatique », Paris, <span class="STDitalic">Critique, n° 69</span>, 1953/02, p. 108-114</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Un roman qui s'invente lui-même », Paris, <span class="STDitalic">Critique, n° 80</span>, 1954/01, p. 82-88</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Nouveau roman, homme nouveau », Paris, <span class="STDitalic">Revue de Paris, n° 68</span>, 1961/09, p. 115-121</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Comment mesurer l'inventeur des mesures », Paris, <span class="STDitalic">L'Express, n° 627</span>, 1963/06/20, p. 44-45</p>
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, « Monsieur Personne répond... Pour un "nouveau roman" », Paris, <span class="STDitalic">Le Figaro Littéraire</span>, 1963/12/05-11, p. 1-26</p>
+								
+								<div class="separ"></div>
+								<h3>Œuvres d'Alain Robbe-Grillet citées</h3>
+								<div class="separ"></div>
+								
+								
+								
+								
+								
+								<p><span class="STDsc">Resnais</span> Alain, <span class="STDitalic">L'Année dernière à Marienbad</span>, Silverfilms, Argos Films, Cinétel, Les Films Tamara, Precitel, Société Nouvelle des films Cormoran, Cineriz, Como Films, Terra Film Produktion, 1961</p> 
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, <span class="STDitalic">Les Gommes</span>, Paris, Les Éditions de Minuit, 1998 [1953]</p> 
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, <span class="STDitalic">Le Voyeur</span>, Paris, Les Éditions de Minuit,  [1955]</p> 
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, <span class="STDitalic">La Jalousie</span>, Paris, Les Éditions de Minuit, coll. « Double », 1957 [2017]</p> 
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, <span class="STDitalic">Dans le labyrinthe</span>, Paris, Les Éditions de Minuit,  [1959]</p> 
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, <span class="STDitalic">L'Immortelle</span>, Cocinor, Como Films, Dino De Laurentiis Cinematografica, Les Films Tamara, 1963</p> 
+								
+								<div class="separ"></div>
+								<h3>Œuvres d'Alain Robbe-Grillet non citées</h3>
+								<div class="separ"></div>
+								
+								
+								
+								
+								
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, <span class="STDitalic">Djinn</span>, Paris, Les Éditions de Minuit, coll. « Double », 1981 [2018]</p> 
+								<p><span class="STDsc">Robbe-Grillet</span> Alain, <span class="STDitalic">Un Régicide</span>, Paris, Les Éditions de Minuit, 2006 [1978]</p> 
+								
+								<div class="separ"></div>
+								<h3>Publications ayant participées au débat</h3>
+								<div class="separ"></div>
+								
+								
+								
+								
+								
+								<p><span class="STDsc">Barthes</span> Roland, « Littérature objective », Paris, <span class="STDitalic">Critique</span>, [vol. XV, n° 86-87, juillet-août 1954], p. 581-591</p>
+								<p><span class="STDsc">Barthes</span> Roland, « Littérature littérale », Paris, <span class="STDitalic">Critique</span>, [septembre-octobre 1955], p. 820-826</p>
+								<p><span class="STDsc">Henriot</span> Émile, « Le prix des critiques "Le Voyeur", d'Alain Robbe-Grillet », Paris, <span class="STDitalic">Le Monde</span>, 15 juin 1955
+									<br/>En ligne : <a href="https://www.lemonde.fr/archives/article/1955/06/15/le-prix-des-critiques-le-voyeur-d-alain-robbe-grillet\_1958094\_1819218.html">https://www.lemonde.fr/archives/article/1955/06/15/le-prix-des-critiques-le-voyeur-d-alain-robbe-grillet\_1958094\_1819218.html</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023
+								</p>
+								<p><span class="STDsc">Huguenin</span> Jean-René, « Le nouveau roman : une mode qui passe », Paris, <span class="STDitalic">Arts</span>, [, n° 836, 27 septembre-03 ocotobre 1961], p. 1</p>
+								<p><span class="STDsc">Mauriac</span> François, « Technique du cageot », Paris, <span class="STDitalic">Le Figaro littéraire</span>, 28 juillet 1956, p. 1-3</p>
+								<p><span class="STDsc">Ricardou</span> Jean, <span class="STDitalic">Le Nouveau Roman suivi de Les Raisons de l'ensemble</span>, Paris, Éditions du Seuil, coll. « Points », 1990 [1973]</p> 
+								<p><span class="STDsc">Rousseaux</span> André, « Les Surfaces d'Alain Robbe-Grillet », Paris, <span class="STDitalic">Le Figaro littériare</span>, 13 avril 1957, p. 2</p>
+								<p><span class="STDsc">Sarraute</span> Nathalie, <span class="STDitalic">L'Ère du soupçon</span>, Paris, Gallimard, coll. « Folio essais », 2019 [1956]</p> 
+								<p><span class="STDsc">Simon</span> Claude, <span class="STDsc">Veinstein</span> Alain, <span class="STDitalic">La Nuit sur un plateau</span>, France culture, émission du 8 février 1988
+									
+									<br />En ligne : <a href="https://www.radiofrance.fr/franceculture/podcasts/les-nuits-de-france-culture/claude-simon-j-ai-appris-a-ecrire-dans-joyce-et-dans-faulkner-6832681">https://www.radiofrance.fr/franceculture/podcasts/les-nuits-de-france-culture/claude-simon-j-ai-appris-a-ecrire-dans-joyce-et-dans-faulkner-6832681</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023
+								</p>
+								
+								<div class="separ"></div>
+								<h3>Sur le Nouveau Roman</h3>
+								<div class="separ"></div>
+								
+								
+								
+								
+								
+								<p><span class="STDsc">Allemand</span> Roger-Michel, « Le Temps de l'effacement »,  <span class="STDitalic">Roman 20-50</span>, Hors-série n° 6, septembre 2010, p. 5-20
+									
+									<br/>En ligne : <a href="'https://www.cairn.info/revue-roman2050-2010-3-page-5.htm&amp;wt.src=pdf'">https://www.cairn.info/revue-roman2050-2010-3-page-5.htm&amp;wt.src=pdf</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023
+								</p>
+								<p><span class="STDsc">Allemand</span> Roger-Michelle, « Nouveau Roman, Nouveau Monde », Paris, <span class="STDitalic">Analyses</span>, vol. 8, n° 3, automne 2013, p. 142-170</p>
+								<p><span class="STDsc">Barilli</span> Renato, « Quand la jalousie s'attache aux choses »,  <span class="STDitalic">Roman 20-50</span>, Hors-série n° 6, septembre 2010, p. 123-130
+									
+									<br/>En ligne : <a href="https://www.cairn.info/revue-roman2050-2010-3-page-123.htm&amp;wt.src=pdf">https://www.cairn.info/revue-roman2050-2010-3-page-123.htm&amp;wt.src=pdf</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023
+								</p>
+								<p><span class="STDsc">Bishop</span> Tom, <span class="STDsc">Jost</span> François, <span class="STDsc">Pinget</span> Robert, <span class="STDsc">Robbe-Grillet</span> Alain, <span class="STDsc">Rybalka</span> Michel, <span class="STDsc">Sarraute</span> Nathalie, <span class="STDsc">Simon</span> Claude, <span class="STDsc">Wittig</span> Monique, « Table ronde. Le Nouveau Roman : passé, présent,futur »,  <span class="STDitalic">Cahiers Claude Simon</span>, 30 septembre 2019, p. 37-54</p>
+								<p><span class="STDsc">Boschetti</span> Anna, <span class="STDsc">Sapiro</span> Gisèle (dir. ), « La recomposition de l'espace intellectuel en Europe après 1945 », Paris, La Découverte, <span class="STDitalic">L'Espace intellectuel en Europe</span>, 2009, p. 147-182
+									<br />En ligne : <a href="https://doi.org/10.3917/dec.sapir.2009.01.0147">https://doi.org/10.3917/dec.sapir.2009.01.0147</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023</p>
+								<p><span class="STDsc">Butor</span> Michel, <span class="STDsc">Calle-Gruber</span> Mireille (dir. ), <span class="STDitalic">Œuvres complètes</span> vol. 2, Paris, Édition de la Différence, 2006</p>
+								<p><span class="STDsc">de Chalonge</span> Florence, « Les Défis du Nouveau roman », Paris, <span class="STDitalic">Canopé</span>, 11/07/2017, p. 64-67</p>
+								<p><span class="STDsc">Denis</span> Benoît, <span class="STDsc">Boujou</span> Emmanuel (dir.), « Engagement littéraire et morale de la littérature », Presses Universitaires de Rennes, Rennes, <span class="STDitalic">L'Engagement littéraire</span>, 2005, p. 31-42<br />			
+									En ligne : <a href="https://doi.org/10.4000/books.pur.30038">https://doi.org/10.4000/books.pur.30038</a></p>
+								<p><span class="STDsc">Dosse</span> François, « Le jour où... S'inventa le « nouveau roman » »,  <span class="STDitalic">Sciences Humaines</span>, n° 56, 2023/3, p. 55-54
+									<br />			En ligne : <a href="https://doi.org/10.3917/sh.356.0054">https://doi.org/10.3917/sh.356.0054</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023
+								</p>
+								<p><span class="STDsc">Duval</span> Romain, « Le formalisme contre les formes », Paris, <span class="STDitalic">Nouvelle revue d’esthétique</span>, 2012/2, p. 141-151
+									<br />			En ligne : <a href="https://www.cairn.info/revue-nouvelle-revue-d-esthetique-2012-2-page-141.htm">https://www.cairn.info/revue-nouvelle-revue-d-esthetique-2012-2-page-141.htm</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023
+								</p>
+								<p><span class="STDsc">Genette</span> Gérard, « Vertige fixé », <span class="STDitalic">Figures I</span>, Paris, Éditions du seuil, coll. « points essai », 2014[1966], p. 69-90</p>
+								<p><span class="STDsc">Houppermans</span> Sjef, « Les Gommes : un roman policier poli et scié »,  <span class="STDitalic">Roman 20-50</span>, Hors-série n° 6, septembre 2010, p. 97-110
+									<br />			En ligne : <a href="https://www.cairn.info/revue-roman2050-2010-3-page-97.htm&amp;wt.src=pdf">https://www.cairn.info/revue-roman2050-2010-3-page-97.htm&amp;wt.src=pdf</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023
+								</p>
+								<p><span class="STDsc">Janvier</span> Ludovic, « Alain Robbe-Grillet et le couple fascination-liberté », Paris, Les Éditions de Minuit, <span class="STDitalic">Une Parole exigeante</span>, 1964, p. 111-145<br />En ligne : https://www.cairn.info/une-parole-exigeante--9782707335289-page-111.htm; consulté le 1<span class='STDexposant'>er</span> septembre 2023 </p>
+								<p><span class="STDsc">Kremer</span> Nathalie, « L'Espace du récit »,  <span class="STDitalic">Poétique</span>, n° 192, 2022/2, p. 83-96<br />			
+									En ligne : <a href="https://doi.org/10.3917/poeti.192.0083">https://doi.org/10.3917/poeti.192.0083</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023</p>
+								<p><span class="STDsc">Lambert</span> Emmanuelle, « Alaine Robbe-Grillet et ses archives »,  <span class="STDitalic">Société &amp; représentations</span>, n° 19, 2005/1, p. 197-210</p>
+								<p><span class="STDsc">Matvejevitch</span> Predrag, « L'engagement en littérature : vu sous les aspects de la sociologie et de la créatio »,  <span class="STDitalic">L'Homme et la société</span>, n° 26, 1972, p. 119-132<br />En ligne : <a href="http://dx.doi.org/10.3406/homso.1972.1725">http://dx.doi.org/10.3406/homso.1972.1725</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023</p>
+								<p><span class="STDsc">Migeot</span> François, « Inconscient et poétique : La Jalousie »,  <span class="STDitalic">Roman 20-50</span>, Hors-série n° 6, septembre 2010, p. 177-194<br />En ligne : <a href="https://www.cairn.info/revue-roman2050-2010-3-page-177.htm&amp;wt.src=pdf">https://www.cairn.info/revue-roman2050-2010-3-page-177.htm&amp;wt.src=pdf</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023</p>
+								
+								<p><span class="STDsc">Milat</span> Christian, « Le Fils jaloux des Gommes, narrateur « absent »de La Jalousie ? »,  <span class="STDitalic">Roman 20-50</span>, Hors-série n° 6, septembre 2010, p. 21-34<br />En ligne : <a href="https://www.cairn.info/revue-roman2050-2010-3-page-21.htm&amp;wt.src=pdf">https://www.cairn.info/revue-roman2050-2010-3-page-21.htm&amp;wt.src=pdf</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023</p>
+								<p><span class="STDsc">Milat</span> Christian, « Sartre et Robbe-Grillet, ou les chemins de l'écriture », Paris, <span class="STDitalic">Revue d'Histoire littéraire de la France</span>, Janvier-Février, 2002, p. 83-96<br />
+									
+									En ligne : <a href="https://www.jstor.org/stable/40534639">https://www.jstor.org/stable/40534639</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023
+								</p>
+								<p><span class="STDsc">Morissette</span> Bruce, <span class="STDitalic">Les romans de Robbe-Grillet</span>, Paris, Les Éditions de Minuit, 1971 [1963]</p> 
+								<p><span class="STDsc">Simonin</span> Anne, « La Littérature saisie par l'histoire. Nouveau Roman et guerre d'Algérie aux Éditions de Minuit »,  <span class="STDitalic">Actes de la recherche en sciences sociales</span>, vol. 111-112, mars 1996, p. 59-75<br />
+									
+									En ligne : <a href="https://doi.org/10.3406/arss.1996.3168">https://doi.org/10.3406/arss.1996.3168</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023
+									</p>
+										<p><span class="STDsc">Simonin</span> Anne, « Le catalogue de l'éditeur, un outil pour l'histoire. L'exemple des éditions de minuit »,  <span class="STDitalic">Vingtième Siècle. Revue d'histoire</span>, n° 81, 2004/1, p. 119-129<br />
+											
+											En ligne : <a href="https://doi.org/10.3917/ving.081.0119">https://doi.org/10.3917/ving.081.0119</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023
+										</p>
+										<p><span class="STDsc">Yanoshevsky</span> Galia, « La critique littéraire et les romans de Robbe-Grillet », Lille, <span class="STDitalic">Roman 20-50</span>, 2010/3 (hors série n° 6), p. 67-82<br />
+											
+											En ligne : <a href="https://www.cairn.info/revue-roman2050-2010-3-page-67.htm">https://www.cairn.info/revue-roman2050-2010-3-page-67.htm</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023
+										</p>
+										<p><span class="STDsc">Yanoshevsky</span> Galia, <span class="STDitalic">Les discours du Nouveau Roman : Essais, entretiens, débats</span>, Villeneuve d'Ascq, Presses universitaires du Septentrion, 2006
+											<br />
+											En ligne : <a href="https://doi-org.ressources-electroniques.univ-lille.fr/10.4000/books.septentrion.54734">https://doi-org.ressources-electroniques.univ-lille.fr/10.4000/books.septentrion.54734</a>, consulté le 1<span class='STDexposant'>er</span> septembre 2023
+										</p>
+										
+										<div class="separ"></div>
+										<h3>Œuvres citées</h3>
+										<div class="separ"></div>
+										
+										
+										
+										
+										
+										<p><span class="STDsc">Balzac</span> Honoré, <span class="STDitalic">Le Père Goriot</span>, Paris, Pocket, coll. « Pocket Classique », 1989 [1842]</p> 
+										<p><span class="STDsc">Balzac</span> Honoré, <span class="STDitalic">Le Médecin de campagne</span>, Paris, Gallimard, coll. « folio classique », 2021 [1833]</p> 
+										<p><span class="STDsc">Beckett</span> Samuel, <span class="STDitalic">Molloy</span>, Paris, Les Éditions de Minuit, coll. « Double », 1982 [1951]</p> 
+										<p><span class="STDsc">Beckett</span> Samuel, <span class="STDitalic">Fin de partie</span>, Paris, Les Éditions de Minuit, 2009 [1957]</p> 
+										<p><span class="STDsc">Beckett</span> Samuel, <span class="STDitalic">En attendant Godot</span>, Paris, Les Éditions de Minuit, 2007 [1952]</p> 
+										<p><span class="STDsc">Camus</span> Albert, <span class="STDitalic">L'Étranger</span>, Paris, Gallimard, coll. « Folio », 2010 [1942]</p> 
+										<p><span class="STDsc">Céline</span> , <span class="STDitalic">Voyage au bout de la nuit</span>, Paris, Gallimard, coll. « Folioplus classiques », 2011 [1952]</p> 
+										<p><span class="STDsc">Dostoïevski</span> Fédor, <span class="STDsc">Markowicz</span> André (trad.), <span class="STDitalic">Les Fères Karamazov</span>, Paris, Actes Sud, coll. « Babel », 2002 pour la traduction française,  [1880]</p> 
+										<p><span class="STDsc">Faulkner</span> William, <span class="STDsc">Coindreau</span> Maurice Edgar (trad.), <span class="STDitalic">Le Bruit et la fureur</span>, Paris, Gallimard, coll. « Folio », 20071972 pour la traduction française,  [1931]</p> 
+										<p><span class="STDsc">Flaubert</span> Gustave, <span class="STDitalic">Madame Bovary</span>, Paris, Pocket, coll. « Pocket Classique », 1998 [1857]</p> 
+										<p><span class="STDsc">Hugo</span> Victor, <span class="STDitalic">Ruy Blas</span>, Paris, Livre de poche, 2009 [1838]</p> 
+										<p><span class="STDsc">Kafka</span> Franz, <span class="STDsc">Nesme</span> Axel (trad.), <span class="STDitalic">Le Château</span>, Paris, Librairie Générale Française, coll. « Le Livre de poche », 20072001 pour la traduction française,  [1926]</p> 
+										<p><span class="STDsc">Kafka</span> Franz, <span class="STDsc">Vialatte</span> Alexandre (trad.), <span class="STDitalic">Le Procès</span>, Paris, Gallimard, coll. « Folio classique », 20091933 pour la traduction française,  [1925]</p> 
+										<p><span class="STDsc">Pascal</span> Blaise, <span class="STDitalic">Pensées</span>, Paris, Pocket, coll. « Agora », 2009 [1670]</p> 
+										<p><span class="STDsc">Pinget</span> Robert, <span class="STDitalic">Mahu ou le matériau</span>, Paris, Les Éditions de Minuit, 1997 [1952]</p> 
+										<p><span class="STDsc">Pinget</span> Robert, <span class="STDitalic">Le Renard et la boussole</span>, Paris, Les Éditions de Minuit, 2000 [1953]</p> 
+										<p><span class="STDsc">Ponge</span> Francis, <span class="STDitalic">Le Parti pris des choses</span>, Paris, Gallimard, coll. « nrf », 2013 [1942]</p> 
+										<p><span class="STDsc">Proust</span> Marcel, <span class="STDitalic">Du côté de chez Swann</span>, Paris, Gallimard, coll. « Folio classique », 1988 [1913]</p> 
+										<p><span class="STDsc">Queneau</span> Raymond, <span class="STDitalic">Le Chiendent</span>, Paris, Gallimard, coll. « Folio », 2009 [1933]</p> 
+										<p><span class="STDsc">Roussel</span> Raymond, <span class="STDitalic">Locus solus</span>, Paris, Flammarion, coll. « GF », 2005 [1965]</p> 
+										<p><span class="STDsc">Sartre</span> Jean-Paul, <span class="STDitalic">La Nausée</span>, Paris, Gallimard, coll. « Folio », 2009 [1938]</p> 
+										<p><span class="STDsc">Sartre</span> Jean-Paul, <span class="STDitalic">Qu'est-ce que la littérature ?</span>, Paris, Gallimard, coll. « Folio essais », 2008 [1948]</p> 
+										<p><span class="STDsc">Sartre</span> Jean-Paul, <span class="STDitalic">Situations, I Critiques littéraires</span>, Paris, Gallimard, coll. « Folio essais », 2020 [1947]</p> 
+										<p><span class="STDsc">Stendhal</span> , <span class="STDitalic">La Chartreuse de Parme</span>, Paris, Pocket, coll. « Pocket Classiques », 2008 [1839]</p> 
+										<p><span class="STDsc">Svevo</span> Italo, <span class="STDsc">Michel Fusco</span> Paul-Henri Mario (trad.), <span class="STDitalic">La Conscience de Zeno</span>, Paris, Gallimard, coll. « Folio », 20101986 pour la traduction française,  [1954]</p> 
+										
+										<div class="separ"></div>
+										<h3>Modèle d'édition critique</h3>
+										<div class="separ"></div>
+										
+										
+										
+										
+										
+										
+										<p><span class="STDitalic">Site du fonds Jean Ricardou</span> en ligne : <a href="https://jeanricardou.org/">https://jeanricardou.org/</a>, consulté le 23 novembre 2022</p>
+										
+										<p><span class="STDsc">Duras</span> Marguerite, <span class="STDitalic">Œuvres complètes</span>, Paris, Gallimard, coll. « Pléiade », 2011</p> 
+										<p><span class="STDsc">Valincourt</span>, <span class="STDitalic">Lettres à Madame la marquise *** sur le sujet de La Princese de Clèves</span>, Paris, Flammarion, coll. « Garnier Flammarion », 2021 [1678]</p>
+								</article>
+							</xsl:when>
 							<xsl:when test="$content='pres'">
 <!--								LA PR2SENTATION DE L4OEUVRE-->
-								<h2>Introduction</h2>
+								<article class="comment"><h2>Introduction</h2>
 								<p>Constitué par un regroupement de textes publiés au fil des années selon des modalités différentes (tantôt dans des revues spécialisées tantôt dans des journaux généralistes) pour des projets (polémiques ou théoriques) particuliers, <span class="STDitalic">Pour un nouveau roman</span>  est une œuvre composite. Il est constitué de critiques d'ouvrages, pas toujours contemporains, de textes de théorie littéraire voire de métaphysique ou de phénoménologie ; cet ouvrage dont on ne perçoit pas toujours l'unité est pourtant loin d'un recueil dans lequel chaque article pourrait se lire indépendamment des autres, réunis par commodité plus que nécessité en un livre unique permettant au grand public de s'approprier les nouveautés de la recherche. En effet quelques fils directeurs traversent et animent les textes : on y trouve des références spécifiques, témoignages d'une époque littéraire, un style polémique, une pensée somme toute entière et constituée ; l'œuvre tient par un effort, au demeurant moindre et <span class="STDitalic">a posteriori</span>, d'unification via l'insertion de seuils et les réécritures partielles.</p>
 								<p>Des récriminations contre « les critiques » à un air du temps phénoménologique, critique de la métaphysique classique en passant par une certaine vision du bon-sens, l'œuvre qui se présente comme n'étant pas une théorie du roman semble pourtant (re)tracer une voie à la littérature de son époque. <span class="STDitalic">Pour un nouveau roman</span> , qu'est-ce ? Les propos épars d'un relativement jeune auteur tentant d'occuper le terrain et de promouvoir ses textes ? Un moment de Robbe-Grillet ? Une époque de l'histoire littéraire ? Un livret de recommandations (aux publics, aux critiques, aux auteurs) ? Ou bel et bien une doctrine littéraire ?</p>
 								<p>Si le texte peut être lu comme tout cela à la fois, cela tient sans doute à la complexité d'une pensée faite de recoins. Tentant de maintenir un équilibre délicat entre légitimation par la tradition et refus d'une autre tradition, entre l'affirmation de ce qu'il ne faudrait pas écrire et le refus de délivrer les consignes de la nouvelle école, <span class="STDitalic">Pour un nouveau roman</span>  réfute et emprunte (explicitement ou non) aux modèles et aux adversaires que son auteur s'est choisis. L'habileté tenant à un art consommé de l'ironie et du sous-entendu permettant d'emprunter à ceux-là même que l'on entend discréditer.</p>
 								<p>Déclarant la pleine liberté de l'auteur tout en assénant qu'il ne faudrait plus écrire comme ceci ou comme cela, quelle unité <span class="STDitalic">Pour un nouveau roman</span>  ? Nous pensons que la pleine compréhension de la manière dont diverses lectures s'imbriquent en un recueil tient à la tenue des fils polémiques et théoriques qui sous-tendent l'ensemble.</p>
+								<div class="separ"></div>
+								
+								<p>Collection d'articles épars écrits pour répondre à des circonstances, voire une injonction à défendre et conquérir une position dans le champ littéraire, <span class="STDitalic">Pour un nouveau roman</span>  est un objet difficile à saisir. Proposer une lecture des thèses et des moyens à la fois théoriques et surtout rhétoriques employés par Robbe-Grillet n'est pas chose aisée, car il faut à la fois maintenir une distance critique (les articles sont écrits en réaction, en situation, et en cela des moments de leur auteur) et entretenir une proximité capable de dénicher les articulations d'une pensée qui progresse par à-coups, par coups portés à des adversaires réels ou supposés. C'est pourtant ce que nous nous sommes efforcés de faire, pénétrant pleinement dans le détail du texte et l'ouvrant également sur son époque et au-delà sur les possibles dont il est issu et ceux qu'il a engendrés.</p>
+								
+								<p>Au moyen d'une écriture qui s'expose comme une recherche, une aventure, Robbe-Grillet consacre un changement d'époque à l'émergence de laquelle le Nouveau Roman est appelé à participer : destituant les vieux mythes et dépoussiérant les vieux modèles de pensée du récit. Une nouvelle manière de voir et de vivre est possible car une nouvelle manière d'écrire est bel et bien sous nos yeux. Et s'il s'agit d'une écriture exigeante, c'est que le lecteur est invité à y prendre toute sa place pour ne pas lire ce que lui imposent des schémas rétrogrades mais bien le texte devenu phénomène plus opaque mais surtout plus subversif.
+								</p>
+								<p>Lire <span class="STDitalic">Pour un nouveau roman</span> , c'est plonger dans une époque mais aussi et surtout percevoir l'enthousiasme du moins l'énergie d'un commencement, son (relatif) fracas et ses errances. Le lire aujourd'hui, c'est peut-être aussi mesurer l'écart qui nous éloigne de cet ouvrage qui fit date et être tenté de reprendre, corriger, débattre les propos d'Alain Robbe-Grillet  qui prit le risque de devenir daté. C'est tout le geste d'une époque que l'on entrevoit dans ce livre : examiner le soupçon qui nous saisit sur nos certitudes ou celles que l'on cherche à nous imposer.</p>
+								
+								<p>C'est une pareille lecture à la fois consciente d'avoir à faire à un objet représentatif d'une époque et tout à fait contemporaine, critique vis-à-vis de ce texte devenu « manifeste », que tente de promouvoir notre édition numérique : en somme, interroger et donner à lire une œuvre de rupture.</p></article>
+								
+								<div class="separ"></div>
+								
+								
+							</xsl:when>
+							<xsl:when test="$content='epo'">
+								<article class="comment"><h3>Des thèmes liés à une époque</h3>
+									
+									<p>Si à certains égards <span class="STDitalic">Pour un nouveau roman</span>  n'a rien perdu de son actualité, il paraît par certains aspects « daté », témoin et fondateur d'une époque. En effet, les références structuralistes (Barthes) et l'inspiration phénoménologique (Heidegger) sont des traits et des positionnements qui dépassent très largement le seul Robbe-Grillet, mais incarnent l'héritage philosophique et esthétique de ce moment, allant de pair avec le soupçon, soit la remise en cause de la métaphysique, des canons de la culture classique perçue comme « bourgeoise ».</p>
+									
+									<p><span class="STDitalic">Pour un nouveau roman</span>  se veut l'ouvrage de la modernité, celle des années 1950-1960. Cette modernité revendiquée autant sur le plan philosophique qu'esthétique s'incarne notamment dans le choix de citer Joyce et Faulkner comme précurseurs du Nouveau Roman (voir <span class="STDitalic">supra</span> : <a href="#filiation">ici</a>) et le cinéma comme référence<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 157</span></span>. En effet comme l'écrit Anne <span class="STDsc">Boschetti</span> dans un article publié au sein de <span class="STDitalic">L'Espace intellectuel en Europe</span> dirigé par Gisèle <span class="STDsc">Sapiro</span> :</p>
+									<p class="STDquote">
+										Afficher l’appropriation des acquis du roman américain [...], c’est se proclamer moderne et se démarquer des modèles jusque-là dominants dans les champs littéraires européens, du fait de l’image des États-Unis – alimentée par le cinéma – comme Nouvelle frontière, univers à la fois jeune, « barbare », et en avance sur le monde européen\footnote{<span class="STDsc">Boschetti</span> Anna, <span class="STDsc">Sapiro</span> Gisèle (dir. ), « La recomposition de l'espace intellectuel en Europe après 1945 », Paris, La Découverte, <span class="STDitalic">L'Espace intellectuel en Europe</span>, 2009, p. 147-182<br />En ligne : <a href="https://doi.org/10.3917/dec.sapir.2009.01.0147">https://doi.org/10.3917/dec.sapir.2009.01.0147</a>.
+									</p>
+									<p>Cette modernité est avant tout une modernité qui rompt avec la métaphysique et ses tentations :</p>
+									<p class="STDquote">
+										L’homme voit les choses et il s’aperçoit, maintenant, qu’il peut échapper au pacte métaphysique que d’autres avaient conclu pour lui, jadis, et qu’il peut échapper du même coup à l’asservissement et à la peur. Qu’il peut..., qu’il <span class="STDitalic">pourra</span>, du moins, un jour<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 65</span></span>.
+									</p>
+									<p>Notons dans ce passage la mise en scène d'une fracture entre l'époque présente et son sujet « l'homme » qui peut ou pourra se défaire d'un rapport aliénant au monde, déjà révolu par l'opposition entre le présent et le parfait marquant l'achèvement, semblant presque rejeter hors de l'humain les « autres » partisans de la métaphysique.</p>
+									
+									<p>Si les critiques que Robbe-Grillet fait aux engagés et aux critiques académiques, n'ont pas tant vieilli, en elles-mêmes, les termes du dénigrement font irrémédiablement signe vers une époque : l'après guerre, la guerre froide et la nécessité de choisir un camp. Ainsi trouve t-on des expressions telles : les « critiques bourgeois » mentionnés page 47 comme élément portant la charge péjorative d'une comparaison ; tant il est évident qu'on ne peut vouloir être bourgeois. Le terme apparaît surtout pour dénigrer la littérature classique dont Balzac est l'<span class="STDitalic">exemplum</span><span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 50</span></span> et les critiques, mais il convient de souligner le fait que le terme « bourgeois » n'apparaît également chez Robbe-Grillet que pour dénigrer « les engagés », en les qualifiant de ce que l'auteur considère sans doute comme le plus grand affront qu'on puisse leur faire<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 46</span></span> (en cela même plus grave que « réaliste socialiste », utilisé avec moins de précautions). Au contraire lorsque Robbe-Grillet s'attaque à la littérature traditionnelle ou académique, il n'emploie pas exclusivement ce terme : son désaccord ne se situe pas dans le champ social mais bien dans celui de la littérature et à ce titre il semble incarner une position peut-être plus radicale que les socialistes réalistes. Ce choix évite à <span class="STDitalic">Pour un nouveau roman</span>  de perdre tout son intérêt : alors qu'aujourd'hui le terme « bourgeois » n'a pas disparu de l'invective publique, celui de « réaliste socialiste » n'a plus guère cours que pour désigner un mouvement artistique, et l'insulte paraît plus délirante qu'injurieuse tant il paraît difficile d'imaginer un paysage intellectuel où l'on se revendique de l'URSS. Lisant <span class="STDitalic">Pour un nouveau roman</span> , le lecteur perçoit une époque marquée par</p>
+									<p class="STDquote">
+										les succès électoraux des partis communistes dans des pays comme la France et l’Italie, la dépendance politique des pays européens par rapport aux deux grandes puissances, USA et URSS, la guerre froide<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Boschetti</span> Anna, <span class="STDsc">Sapiro</span> Gisèle (dir. ), « La recomposition de l'espace intellectuel en Europe après 1945 », Paris, La Découverte, <span class="STDitalic">L'Espace intellectuel en Europe</span>, 2009, p. 147-182
+										
+										En ligne : <a href="https://doi.org/10.3917/dec.sapir.2009.01.0147">https://doi.org/10.3917/dec.sapir.2009.01.0147</a></span></span>.
+									</p>
+									
+									
+									<p>De même, l'obsession du texte à se positionner contre Sartre tout en lui empruntant certaines des thèses et des expressions de manière parfois explicite (fait relativement rare chez l'essayiste), constitue un positionnement circonstancié : on ne peut pas faire abstraction de la figure de l'écrivain-philosophe à propos duquel, Anna <span class="STDsc">Boschetti</span> écrit qu'il était « l’intellectuel sans conteste le plus célèbre et le plus influent de la période ici examinée [de la fin de la guerre aux années 1960]<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Boschetti</span> Anna, <span class="STDsc">Sapiro</span> Gisèle (dir. ), « La recomposition de l'espace intellectuel en Europe après 1945 », Paris, La Découverte, <span class="STDitalic">L'Espace intellectuel en Europe</span>, 2009, p. 147-182
+									
+									En ligne : <a href="https://doi.org/10.3917/dec.sapir.2009.01.0147">https://doi.org/10.3917/dec.sapir.2009.01.0147</a></span></span> »</p></article>
+							</xsl:when>
+							<xsl:when test="$content='pheno'">
+								<article class="comment">
+									<h3>L'écriture au crible de postulats phénoménologiques</h3>
+									<a id="3phéno"></a>
+									<p><span class="STDitalic">Pour un nouveau roman</span>  entend insister sur la rupture consommée du sujet avec le monde et se positionne contre un contact « sympathique », une entente, une projection du sujet sur le monde dont la littérature serait complice :</p>
+									<p class="STDquote">
+										À chaque instant, des franges de culture (psychologie, morale, métaphysique, etc.) viennent s’ajouter aux choses, leur donnant un aspect moins étranger, plus compréhensible, plus rassurant. Parfois le camouflage est complet : un geste s’efface de notre esprit au profit des émotions supposées qui lui auraient donné naissance, nous retenons qu’un paysage est « austère » ou « calme » sans pouvoir en citer aucune ligne, aucun des éléments principaux<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 21</span></span>.
+									</p>
+									
+									<p class="STDquote">
+										Alain Robbe-Grillet a commencé par s’élever contre « le cœur romantique des choses », une douteuse solidarité entre l’homme et l’univers, qui finalement aliène l’un et l’autre, l’un à l’autre au profit d’une conception tragique — vaguement masochiste — de la vie, contre le règne de l’adjectif, et du vocabulaire analogique, contre la signification à tout prix<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Janvier</span> Ludovic, « Alain Robbe-Grillet et le couple fascination-liberté », Paris, Les Éditions de Minuit, <span class="STDitalic">Une Parole exigeante</span>, 1964, p. 111-145<br />En ligne : https://www.cairn.info/une-parole-exigeante--9782707335289-page-111.htm; consulté le \today</span></span>.
+									</p>
+									<p>Toute une série d'arrières mondes s'intercale entre le sujet et les objets. Cette séparation aux allures de proximités mensongères, lorsqu'elle s'effrite, est l'objet d'un vertige qui pourrait être une définition d'une épiphanie esthétique :</p>
+									<p class="STDquote">
+										D’un seul coup toute la belle construction s’écroule : ouvrant les yeux à l’improviste, nous avons éprouvé, une fois de trop, le choc de cette réalité têtue dont nous faisions semblant d’être venus à bout. Autour de nous, défiant la meute de nos adjectifs animistes ou ménagers, les choses sont là<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 21-22</span></span>. 
+									</p>
+									<p>C'est là le point de départ de la philosophie de Robbe-Grillet qui, à la suite de la phénoménologie, constate l'impossibilité de rendre compte du réel au delà de ce que l'on en perçoit. En d'autres termes, le monde est fait de phénomènes, soit d'objets toujours saisis par l'homme. Décrivant l'écriture néo-romanesque comme ne s'attachant qu'à l'homme dans son rapport au monde (décrivant donc en creux ce rapport), Alain Robbe-Grillet  écrit page 147 :</p>
+									<p class="STDquote">
+										L’homme y est présent à chaque page, à chaque ligne, à chaque mot. Même si l’on y trouve beaucoup d’objets, et décrits avec minutie, il y a toujours et d’abord le regard qui les voit, la pensée qui les revoit, la passion qui les déforme. Les objets de nos romans n’ont jamais de présence en dehors des perceptions humaines, réelles ou imaginaires ; ce sont des objets comparables à ceux de notre vie quotidienne, tels qu’ils occupent notre esprit à tout moment<span class="STDnote">*<span class="STDnoteinfo"></span></span>.
+									</p>
+									
+									<p>Et qui plus est, par un homme défini à la page 27 comme étant inscrit lui-même au sein de déterminisme, « l'idée de "condition" remplaçant désormais celui de "nature" », il y a des hommes et non pas l'Homme, qui, dès lors n'est plus un sujet sérieux (contrairement aux hommes saisis en situation).</p>
+									
+									
+									<p>De cela, résulte un rejet de la métaphore<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 59</span></span> qui révélerait toute une métaphysique<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 60</span></span> dont les implications sont fondamentales sur la littérature perçue comme complice d'un anthropocentrisme illusoire<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 62</span></span> et surtout démodé : « Le culte exclusif de "l'humain" a fait place à une prise de conscience plus vaste, moins anthropocentriste<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 33</span></span> ».</p>
+									
+									
+									<p>On pourrait en déduire qu'écrire est chose vaine : le hiatus entre l'homme et le monde est tel qu'il ne peut être comblé. Robbe-Grillet choisit une autre solution : en faire son parti et changer de littérature désillusionnée sans être absurde (une autre forme de métaphysique teintée de romantisme), une littérature contre « toute théorie explicative qui tenterait de les enfermer dans un quelconque système de référence, sentimental, sociologique, freudien, métaphysique, ou autre<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 23</span></span> ».</p>
+									
+									
+									<p>Loin d'être une vision qui se dit objective. C'est bien le choix de se placer dans l'homme et son rapport au monde, et, le premier n'ayant pas de nature innée, le second ne pouvant être réellement touché, placer l'écriture au sein de ce rapport problématique et en faire l'objet de l'écriture. Ainsi lorsqu'Alain Robbe-Grillet  commente le rôle de la description dans le « roman d'aujourd'hui » à la page 160, nous lisons la position de la littérature comme une dialectique :</p>
+									<p class="STDquote">
+										Quelques paragraphes encore et, lorsque la description prend fin, on s’aperçoit qu’elle n’a rien laissé debout derrière elle : elle s’est accomplie dans un double mouvement de création et de gommage, que l’on retrouve d’ailleurs dans le livre à tous les niveaux et en particulier dans sa structure globale – d’où vient la déception inhérente aux œuvres d’aujourd’hui.
+									</p>
+									<p>Ce double mouvement est la conscience du sujet, mimée par l'écriture néo-romanesque, de la présence et de l'absence du monde.</p>
+									<p class="STDquote">
+										C’est bien le « je » qui parle et se pose face au monde, mais du moins tente-t-il avec force de voir le monde<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Janvier</span> Ludovic, « Alain Robbe-Grillet et le couple fascination-liberté », Paris, Les Éditions de Minuit, <span class="STDitalic">Une Parole exigeante</span>, 1964, p. 111-145<br />En ligne : https://www.cairn.info/une-parole-exigeante--9782707335289-page-111.htm; consulté le \today</span></span>.
+									</p>
+									<p>Peut-être les protagonistes des romans de Robbe-Grillet seraient malheureux et empreints d'un rapport tragique ou absurde au monde, s'ils n'étaient pas que des personnages. Mais ce n'est pas le sujet du Nouveau Roman qui s'adresse à des lecteurs auxquels on soumet, non un discours sur le monde, mais des représentations de discours sur le monde, du moins de rapports au monde. Si la question de la supposée psychologie des personnages du Nouveau Roman est absurde au point qu'elle ne vient pas à l'esprit du lecteur c'est que le livre est lui-même perçu comme un objet. L'écriture se rappelle toujours au lecteur, on pense évidemment au mot célèbre de Jean Ricardou « Le récit n'est plus l'écriture d'une aventure mais l'aventure d'une écriture », mais aussi à ce passage de <span class="STDitalic">Pour un nouveau roman</span>  :</p>
+									<p class="STDquote">
+										Encore une fois, l’œuvre n’est pas un témoignage sur une réalité extérieure, mais elle est à elle-même sa propre réalité. Aussi, est-il impossible à l’auteur de rassurer tel spectateur inquiet sur le sort des héros après le mot « fin ». Après le mot « fin », il ne se passe plus rien du tout, par définition. Le seul avenir que l’œuvre puisse accepter, c’est un nouveau déroulement identique : en remettant les bobines du film dans l’appareil à projections<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 166-167</span></span>.
+									</p>
+									<p>Insistant sur la matérialité des œuvres et le fait qu'elles ne sont que ce qu'elles sont, Robbe-Grillet replace le livre comme un objet, certes pas tout à fait inerte puisqu'il requiert d'être actualisé par le lecteur<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 169</span></span>, mais un objet tout de même. Dès lors, les innovations formelles du Nouveau Roman « ne peu[vent] que convier le lecteur (ou le spectateur) à un autre mode de participation que celui dont il avait l’habitude<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 169</span></span> ». L'œuvre et, sans doute plutôt l'acte de la lecture, devient l'objet, un phénomène qui se montre comme tel au lecteur. L'œuvre n'est plus un signe vers le monde dont elle détiendrait les clefs, du moins plus seulement, mais surtout un signe vers elle-même en tant que signifiant (voir <span class="STDitalic">infra</span> <a href="#signe">ici</a>).</p>
+									
+									
+									
+									
+									<p>Cependant, les références explicites à la phénoménologie sont rares (Heidegger est cité à propos de Beckett) : que le monde est constitué de phénomènes et l'homme en son sein replacé à sa juste place semblent les postulats de l'écriture assénés avec la force des évidences plutôt que présentés avec l'humilité des recherches. C'est qu'au fond cette modernité philosophique est surtout employée comme un outil contre un certain romantisme des théories associées aux critiques littéraires, et sans doute au lectorat en général :</p>
+									<p class="STDquote">
+										Ici encore, on constate que les mythes du XIXe siècle conservent toute leur puissance : le grand romancier, le « génie », est une sorte de monstre inconscient, irresponsable et fatal, voire légèrement imbécile, de qui partent des « messages » que seul le lecteur doit déchiffrer. Tout ce qui risque d’obscurcir le jugement de l’écrivain est plus ou moins admis comme favorisant l’éclosion de son œuvre. L’alcoolisme, le malheur, la drogue, la passion mystique, la folie, ont tellement encombré les biographies plus ou moins romancées des artistes qu’il semble désormais tout naturel de voir là des nécessités essentielles de leur triste condition, de voir en tout cas une antinomie entre création et conscience<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 11-12</span></span>.
+									</p>
+									En pratique, c'est bien cela qu'on lit :
+									<p class="STDquote">
+										Un régicide (écrit en 1949), dont le château délabré est sur le
+										point de s’écrouler, édifice des anciens systèmes de valeurs,
+										désormais périmés<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Allemand</span> Roger-Michelle, « Nouveau Roman, Nouveau Monde », Paris, <span class="STDitalic">Analyses</span>, vol. 8, n° 3, automne 2013, p. 148</span></span></p>
+									
+									<p>Si la théorie du Nouveau Roman s'érige sur des références à la phénoménologie, il s'agit moins de mettre l'écriture à son service que de s'en servir pour discréditer une autre littérature naïve et fausse ; le lecteur est invité à voir, dans le nouveau roman l'âge adulte de la littérature débarrassée des faux-semblants.</p>
+									<p class="STDquote">
+										Se borner à la description, c’est évidemment récuser tous les autres modes d’approche de l’objet : la sympathie comme irréaliste, la tragédie comme aliénante, la compréhension comme relevant du seul domaine de la science<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 78-79</span></span>.
+									</p>
+									<p>Si le constat de l'impossibilité de parler du monde en dehors de l'homme est partagé avec les auteurs de l'absurde, l'absurde lui-même est rejeté comme un romantisme coupable à la page 84 :</p>
+									<p class="STDquote">
+										Il est facile de m’apercevoir, cependant, que la <span class="STDitalic">tragification</span> systématique de l’univers où je vis est souvent le résultat d’une volonté délibérée.
+									</p>
+									<p>Pour Robbe-Grillet, la littérature doit au moins tenter le « pari [..] seul raisonnable » de « guérir » l'homme<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 83</span></span>. Un autre postulat émerge donc : un autre homme est possible. Actant la fin d'une époque, <span class="STDitalic">Pour un nouveau roman</span> tente de consacrer le début d'une autre.</p>
+								</article>
+							</xsl:when>
+							<xsl:when test="$content='sartre'">
+								<article class="comment">
+									<h3>Un positionnement littéraire, contre Sartre ?</h3>
+									<a id="vsSartre"></a>
+									
+									<p>Alain Robbe-Grillet  se place en opposition frontale contre Sartre, cependant cette opposition n'est qu'une facette d'un rapport ambigu. En effet, ce positionnement dans le champ littéraire semble un véritable projet de nuancer le second par le premier, que l'on n'aurait tort de balayer d'un revers de mains comme n'étant qu'une posture, même s'il est incontestable que pour exister le jeune Robbe-Grillet perçoit la charge contre l'omniprésent Sartre comme une opportunité comme le souligne Christian <span class="STDsc">Milat</span><span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Milat</span> Christian, « Sartre et Robbe-Grillet, ou les chemins de l'écriture », Paris, <span class="STDitalic">Revue d'Histoire littéraire de la France</span>, Janvier-Février, 2002, p. 95</span></span>.</p>
+									<p>En effet, comme l'observe Bruce <span class="STDsc">Morissette</span><span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Morissette</span> Bruce, <span class="STDitalic">Les romans de Robbe-Grillet</span>, Paris, Les Éditions de Minuit, 1971 [1963]</span></span> le vocabulaire empreint de phénoménologie de Robbe-Grillet ne vient sans doute pas tant de Heidegger qu'il ne vient de Sartre et de Merleau-Ponty qui ont popularisé les thèses du philosophe Allemand, lequel n'est cité qu'une fois au sein de <span class="STDitalic">Pour un nouveau roman</span> à la page 119 à propos du théâtre de Beckett. Or, au vu de la volonté manifeste de Robbe-Grillet à effacer ses traces, cette mention sert sans doute davantage à effacer des dettes qu'à en reconnaître. Cette hypothèse nous paraît d'autant plus probable que certaines expressions privilégiées de Robbe-Grillet sont également présentes chez Sartre en italique, notamment l'usage de l'adjectif « <span class="STDitalic">vrai</span> » dans <span class="STDitalic">La Nausée</span> ou <span class="STDitalic">Qu'est-ce que la littérature</span>, respectivement aux pages 177 et 60 des éditions citées. Ce trait est plus prononcé encore si l'on ne compare que <span class="STDitalic">La Nausée</span> et <span class="STDitalic">Pour un nouveau roman</span> , l'italique sur les termes « être là » et «  exister » y sont régulièrement employés sans doute dans un effort pour rendre palpable le <span class="STDitalic">dasein</span> heidegerrien au lecteur. Il nous paraît dès lors probable que la connaissance en phénoménologie de Robbe-Grillet soit héritée de <span class="STDitalic">La Nausée</span> au demeurant longuement commentée dans <span class="STDitalic">Pour un nouveau roman</span>.</p>
+									<p>Ainsi lit-on dans <span class="STDitalic">Qu'est-ce que la littérature</span> des passages qui ont très bien pu inspirer la critique de la métaphysique citée <span class="STDitalic">supra</span> (voir : <a href="#3phéno">ici</a>)</p>
+									<p class="STDquote">
+										Qui pourrait distinguer le vert pomme de sa gaieté acide ? Et n'est-ce pas déjà trop dire que de nommer « la gaieté acide du vert pomme » ? [...] Ainsi parle-t-on du langage des fleurs. Mais si, après accord, les roses blanches signifient pour moi « fidélité », c'est que j'ai cessé de les voir comme roses : mon regard les traverse pour viser au-delà d'elles cette vertu abstraite ; je les oublie, je ne prends pas garde à leur foisonnement mousseux, à leur doux parfum croupi ; je ne les ai pas même perçues. Cela veut dire que je ne me suis pas comporté en artiste.<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Sartre</span> Jean-Paul, <span class="STDitalic">Qu'est-ce que la littérature</span>, Paris, Gallimard, coll. « folio essais », 2008 [1948], p. 14</span></span>
+									</p>
+									<p>L'essayiste a ensuite beau jeu de démontrer que le narrateur de <span class="STDitalic">La Nausée</span> (et à travers lui, l'auteur) ne parvient pas à se défaire d'adjectifs analogiques marquant encore l'appartenance de l'absurde à la métaphysique<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 75, p. 181</span></span>. La démonstration est juste et sans doute d'autant plus que cela coïncide avec le projet de l'absurde et de <span class="STDitalic">La Nausée</span> <span class="STDitalic">a fortiori</span>. Cependant si la critique de ce roman par Robbe-Grillet prend une part importante pour fonder une modernité qui dépassera cette œuvre qualifiée de « majeure » par Alain Robbe-Grillet , les points d'oppositions frontaux ne sont pas tout à fait ici. Robbe-Grillet « porte sa date » et sa date est postérieure à <span class="STDitalic">La Nausée</span>, qu'il s'agit donc de dépasser.</p>
+									<p class="STDquote">
+										[Robbe-Grillet] appartient à la génération qui relaye celle de Sartre et à qui revient la tâche de normaliser, de mettre en œuvre avec plus de rigueur et de constance la méthode que son prédécesseur avait pratiquée de manière discontinue<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Barilli</span> Renato, « Quand la jalousie s'attache aux choses », <span class="STDitalic">Roman 20-50</span>, Hors-série n° 6, septembre 2010, p. 124</span></span>.
+									</p>
+									<p>Les véritables lieux de l'opposition entre Sartre et Robbe-Grillet dans <span class="STDitalic">Pour un nouveau roman</span> semblent être la question de l'engagement et celle du sens perçu à travers l'articulation du fond et de la forme.</p>
+									
+									
+									<h4>L'engagement : question de fond ou de forme ?</h4>
+									
+									
+									<p>Dans <span class="STDitalic">Qu'est-ce que la littérature</span> Sartre affirme que l'écrivain doit s'engager et même que l'écrivain est, malgré lui, engagé. La critique acerbe que Robbe-Grillet fait des thèses de Sartre a déjà été commentée <span class="STDitalic">supra</span> (voir : <a href="#engages">ici</a>), l'outil principal étant l'assimilation des « engagés », des « réalistes socialistes » et de Sartre. Or la critique de l'engagement par Robbe-Grillet ressemble à s'y méprendre à ce qu'on lit chez Sartre :</p>
+									<p class="STDquote">
+										Sartre écrit « que l'œuvre d'art ne "peut s'accommoder de l'utilitarisme communiste<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Sartre</span> Jean-Paul, <span class="STDitalic">Qu'est-ce que la littérature</span>, Paris, Gallimard, coll. « folio essais », 2008 [1948], p. 261</span></span>"<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Milat</span> Christian, « Sartre et Robbe-Grillet, ou les chemins de l'écriture », Paris, <span class="STDitalic">Revue d'Histoire littéraire de la France</span>, Janvier-Février, 2002, p. 88</span></span> »
+									</p>
+									<p>Assertion que Christian <span class="STDsc">Milat</span> nuance en démontrant que ce rejet du réalisme socialiste chez Sartre est, au mieux, inconstant, et que Robbe-Grillet en est témoin dès le début des années 1960<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Milat</span> Christian, « Sartre et Robbe-Grillet, ou les chemins de l'écriture », Paris, <span class="STDitalic">Revue d'Histoire littéraire de la France</span>, Janvier-Février, 2002, p. 88-89</span></span>.</p>
+									
+									<p>Cependant ces différends personnels et les conflits de posture dans l'espace littéraire n'éclairent que peu l'œuvre qui nous intéresse. La question pour nous est plutôt : qu'est-ce qui dans <span class="STDitalic">Pour un nouveau roman</span>  s'oppose si frontalement à l'engagement, ou plutôt au « roman engagé » ?</p>
+									<p>Sans doute la modernité. En effet, le roman engagé est jugé sévèrement par Alain Robbe-Grillet , car il repose sur une forme éculée :</p>
+									<p class="STDquote">
+										D'où la gêne que nous éprouvons devant les romans « engagés » qui se prétendent révolutionnaires parce qu'ils mettent en scène la condition ouvrière et les problèmes du socialisme. Leur forme littéraire, qui date le plus souvent d'avant 1848, en fait les plus attardés des romans bourgeois<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 50</span></span></p>
+									<p class="STDquote">
+										Il ne s'agit, en somme, que de donner au monde des couleurs et une significations dépourvues de mièvrerie, suivant une formule plus ou moins abâtardie d'Émile Zola<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 175</span></span>.
+									</p>
+									
+									
+									<p>On retrouve pourtant dans <span class="STDitalic">Qu'est-ce que la littérature</span> des constats similaires à ceux de <span class="STDitalic">Pour un nouveau roman</span> cités précédemment. Sur le réalisme par exemple, Sartre écrit :</p>
+									<p class="STDquote">
+										L'erreur du réalisme a été de croire que le réel se révélait à la contemplation et que, en conséquence, on en pouvait faire une peinture impartiale. Comment serait-ce possible, puisque la perception même est partiale, puisque, à elle seule, la nomination est déjà modification de l'objet<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Sartre</span> Jean-Paul, <span class="STDitalic">Qu'est-ce que la littérature</span>, Paris, Gallimard, coll. « folio essais », 2008 [1948], p. 68</span></span> ?
+									</p>
+									<p> Ou, à propos des critiques, envers lesquels l'écrivain reconnu n'est pas beaucoup plus tendre, leur prêtant la même naïveté réactionnaire que son cadet Robbe-Grillet : « le but profond, c'est de se livrer sans en avoir l'air<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Sartre</span> Jean-Paul, <span class="STDitalic">Qu'est-ce que la littérature</span>, Paris, Gallimard, coll. « folio essais », 2008 [1948], p. 37</span></span> ».</p>
+										
+										<p>Sartre affiche par ailleurs un souci de la forme qui ne s'éloigne pas tant des formules de Robbe-Grillet :</p>
+										<p class="STDquote">
+											« chaque roman doit inventer sa propre forme<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 12</span></span> »</p>
+										<p class="STDquote">
+											« chacun invente la sienne [la forme] et on juge après coup<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Sartre</span> Jean-Paul, <span class="STDitalic">Qu'est-ce que la littérature</span>, Paris, Gallimard, coll. « folio essais », 2008 [1948], p. 31</span></span> »
+										</p>
+										
+										<p>Si l'on peut chercher la vérité de l'auteur entre les contradictions, nuances ou hésitations qui séparent (ou unissent) l'homme et l'œuvre :</p>
+										<p class="STDquote">
+											Robbe-Grillet, quant à lui, hésite entre la revendication des effets critiques que le « nouveau roman » exercerait, en tant que « nouveau réalisme », et une redéfinition de la notion d’engagement, qui dissocie l’œuvre (où l’engagement ne peut signifier, pour l’écrivain, que « la pleine conscience des problèmes actuels de son langage «) de formes d’intervention publique traditionnelles (en 1960 il signe la « Déclaration sur le droit à l’insoumission dans la guerre d’Algérie », connue comme « Manifeste des 121 »)<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Boschetti</span> Anna, <span class="STDsc">Sapiro</span> Gisèle (dir. ), « La recomposition de l'espace intellectuel en Europe après 1945 », Paris, La Découverte, <span class="STDitalic">L'Espace intellectuel en Europe</span>, 2009, p. 147-182<br />En ligne : <a href="https://doi.org/10.3917/dec.sapir.2009.01.0147">https://doi.org/10.3917/dec.sapir.2009.01.0147</a></span></span>.
+										</p>
+										<p>La doctrine que l'on pourrait tirer de <span class="STDitalic">Pour un nouveau roman</span> s'approche trop par moment d'un Sartre reformulé pour ne pas être le signe d'un enjeu considéré comme majeur pour Robbe-Grillet. Et si, l'on peut supposer qu'il s'agit à la fin des années 1950 de prendre position dans l'espace médiatique et littéraire en s'attaquant au nom le plus en vue du moment, la proximité que dénote l'écriture de Robbe-Grillet vis-à-vis de l'articulation sartrienne de certains concepts est remarquable.</p>
+										<p class="STDquote">
+											Or, si, aux yeux de Robbe-Grillet, effectivement, le « Nouveau Roman ne s'intéresse qu'à l'homme et à sa situation dans le monde<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 147</span></span> », pour Sartre également, « le sujet de la littérature a toujours été l'homme dans le monde<span class="STDnote">*<span class="STDnoteinfo">qql60</span></span> »<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Milat</span> Christian, « Sartre et Robbe-Grillet, ou les chemins de l'écriture », Paris, <span class="STDitalic">Revue d'Histoire littéraire de la France</span>, Janvier-Février, 2002, p. 90</span></span>
+										</p>
+										<p>À leurs yeux la littérature traite donc du même objet, et plus encore l'acte de lecture par lequel le texte s'actualise fait l'objet de développements analogues chez l'un et l'autre. Comme le note Christian <span class="STDsc">Milat</span><span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Milat</span> Christian, « Sartre et Robbe-Grillet, ou les chemins de l'écriture », Paris, <span class="STDitalic">Revue d'Histoire littéraire de la France</span>, Janvier-Février, 2002, p. 93</span></span>, chez Sartre le lecteur est à considérer comme une fin en soi (le livre s'adresse à sa liberté), la lecture l'invite à participer à la création<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Sartre</span> Jean-Paul, <span class="STDitalic">Qu'est-ce que la littérature</span>, Paris, Gallimard, coll. « folio essais », 2008 [1948], p. 56, entre autres.</span></span> tandis qu'Alain Robbe-Grillet  déclare « l'absolu besoin qu'il a de son concours<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 169</span></span> ».</p>
+										
+										<p>Ces exemples nous incitent à voir en <span class="STDitalic">Pour un nouveau roman</span>  non un refus de tout rapport au politique de la littérature au nom de l'art pour l'art, mais bien une véritable théorie concurrente des rapports que l'une entretient avec l'autre.</p>
+										<p class="STDquote">
+											Ainsi, pour le Nouveau Romancier, ce n'est pas parce que l'écrivain n'écrit pas à des fins politiques que son texte est dépourvu d'effets politiques<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Milat</span> Christian, « Sartre et Robbe-Grillet, ou les chemins de l'écriture », Paris, <span class="STDitalic">Revue d'Histoire littéraire de la France</span>, Janvier-Février, 2002, p. 90</span></span>
+										</p>
+										
+										
+										<p>La première divergence entre les deux auteurs semble se situer sur la question du sens : si Sartre écrit bien que la littérature ne peut être utilisée, il faut bien qu'elle puisse servir son auteur : « les grands écrivains voulaient détruire, édifier, démontrer<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Sartre</span> Jean-Paul, <span class="STDitalic">Qu'est-ce que la littérature</span>, Paris, Gallimard, coll. « folio essais », 2008 [1948], p. 35</span></span> ». Selon Sartre l'auteur n'écrit pas pour écrire car l'écriture ne cesse jamais d'être un outil de communication grâce auquel on dit quelque chose :</p>
+										<p class="STDquote">
+											Et le bon sens, que nos doctes oublient trop volontiers, ne cesse de le répéter. N'a-t-on pas coutume de poser à tous les jeunes gens qui se proposent d'écrire cette question de principe : « Avez-vous quelque chose à dire ? » Par quoi il faut entendre : quelque chose qui vaille la peine d'être communiqué. Mais comment comprendre ce qui en « vaut la peine » si ce n'est par recours à un système de valeur transcendant<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Sartre</span> Jean-Paul, <span class="STDitalic">Qu'est-ce que la littérature</span>, Paris, Gallimard, coll. « folio essais », 2008 [1948], p. 27</span></span> ? 
+										</p>
+										<p class="STDquote">
+											Quel aspect du monde veux-tu dévoiler, quel changement veux-tu apporter au monde par ce dévoilement ? L'écrivain « engagé » sait que la parole est action ; il sait que dévoiler c'est changer et qu'on ne peut dévoiler qu'en projetant de changer<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Sartre</span> Jean-Paul, <span class="STDitalic">Qu'est-ce que la littérature</span>, Paris, Gallimard, coll. « folio essais », 2008 [1948], p. 28</span></span>.
+										</p>
+										
+										<p>L'écriture, le récit et sans doute l'objet livre n'est finalement pas un problème pour l'auteur de <span class="STDitalic">La Nausée</span>, il va de soi et l'injonction à la recherche formelle est avant tout une concession faite à condition que le sens prime absolument et que la forme soit transparente.</p>
+										<p class="STDquote">
+											On n'est pas écrivain pour avoir choisi de dire certaines choses mais pour avoir choisi de les dire d'une certaine façon. Et le style, bien sûr, fait la valeur de la prose. Mais il doit passer inaperçu. [...]</p>
+										<p class="STDquote">
+											Et quand on le sait [ce qu'on veut écrire], il reste à décider comment on en écrira. Souvent les deux choix ne font qu'un, mais jamais, chez les bons auteurs, le second ne précède le premier<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Sartre</span> Jean-Paul, <span class="STDitalic">Qu'est-ce que la littérature</span>, Paris, Gallimard, coll. « folio essais », 2008 [1948], p. 30-31</span></span>.
+										</p>
+										
+										
+										
+										
+										<p>Ainsi la divergence véritable se situe sur la distinction entre le fond et la forme, comme le souligne Christian <span class="STDsc">Milat</span> :</p>
+										<p class="STDquote">
+											L'antériorité et la prééminence du signifié par rapport au signifiant posées ainsi par Sartre vont à l'encontre d'un principe, et peut-être du seul principe commun à tous les tenants du Nouveau Roman<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Milat</span> Christian, « Sartre et Robbe-Grillet, ou les chemins de l'écriture », Paris, <span class="STDitalic">Revue d'Histoire littéraire de la France</span>, Janvier-Février, 2002, p. 85</span></span>.
+										</p>
+										<p>Déjà détaillé <span class="STDitalic">supra</span> (voir : <a href="#engages">ici</a>), le principe ici mentionné est la prédominance de la forme sur le fond, ou plutôt l'entrelacement de l'un et l'autre à un point tel que les distinguer n'a pas de sens, voire constitue une faute selon Alain Robbe-Grillet  :</p>
+										<p class="STDquote">
+											Encore une fois, l'œuvre n'est pas un témoignage sur une réalité extérieure, mais elle est à elle-même sa propre réalité<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 166</span></span>.
+										</p>
+										<p class="STDquote">
+											Une chose devrait troubler les partisans du réalisme socialiste, c'est la parfaite ressemblance de leurs arguments, de leur vocabulaire, de leurs valeurs, avec ceux des critiques bourgeois les plus endurcis. Par exemple lorsqu'il s'agit de séparer la "forme" d'un roman de son "contenu", c'est-à-dire d'opposer l'<span class="STDitalic">écriture</span> (choix des mots et leur ordonnance, emploi des temps grammaticaux et des personnes, structure du récit, etc.) à l'anecdote qu'elle sert à rapporter (événements, actions des personnages, motivations de celles-ci, morale qui s'en dégage<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 47</span></span>).
+										</p>
+										
+										
+										<p>Mais une fois dégagée la pierre d'achoppement entre les deux théories (la distinction entre la forme et le fond) il convient de la replacer dans le projet des deux « écoles ». <span class="STDitalic">Qu'est-ce que la littérature ?</span> décrit l'écrivain en situation de dire « détruire, édifier, démontrer », le monde est encore l'objet sur lequel on espère avoir prise indirectement alors que dans <span class="STDitalic">Pour un nouveau roman</span>  l'objet n'est plus le monde mais le récit qu'on en fait, l'écrivain ne peut que faire et par ce faire, il peut subvertir.</p>
+										
+										<p>Le Nouveau Roman selon Robbe-Grillet a consommé la rupture entre l'homme et le monde et dire l'absurde n'a déjà plus d'intérêt. Et puisqu'on ne peut vivre en répétant le rapport absurde, d'après Alain Robbe-Grillet , il faut bien que la littérature se préoccupe d'autre chose : le récit de l'homme sur le monde qui prend toute sorte d'apparence, la perception, l'histoire, le temps, les événements, les sentiments, les uns et les autres interdépendants. C'est une révolution au sens où l'on ne parle plus du monde mais bel et bien du discours sur le monde (sans doute en tant qu'il fait monde) alors que Sartre (selon <span class="STDitalic">Pour un nouveau roman</span> ) entend encore parler du monde, répétant inlassablement le hiatus entre l'homme et le monde.</p>
+										
+										<p>Retraçant l'histoire des Éditions de Minuit (la publication de <span class="STDitalic">La Question</span> en 1958 et la signature par les néo-romanciers du <span class="STDitalic">Manifeste des 121</span> en 1960) au prisme de l'engagement en littérature Anne <span class="STDsc">Simonin</span> écrit :</p>
+										<p class="STDquote">
+											Mais les Éditions de Minuit ont fait davantage encore : elles n'ont pas seulement modifié les données politiques de l'engagement, elles ont transformé sa nature. En mêlant, à leur catalogue, Nouveau Roman et guerre d'Algérie, elles ont opéré une dissociation définitive entre littérature et politique<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Simonin</span> Anne, « La Littérature saisie par l'histoire. Nouveau Roman et guerre d'Algérie aux Éditions de Minuit »,  <span class="STDitalic">Actes de la recherche en sciences sociales</span>, vol. 111-112, mars 1996, p. 75</span></span>. 
+										</p>
+										
+										<p class="STDquote">
+											Pour le dire vite, revendiquer l’engagement après Sartre — et contre lui — consiste à réfuter l’idée selon laquelle la fonction sociale de la littérature se manifesterait d’abord par son implication dans le politique, en affirmant <span class="STDitalic">a contrario</span> que c’est dans l’exhibition de sa distance radicale avec cet ordre du politique que la littérature, rendue à elle-même, joue véritablement son rôle<span class="STDnote">*<span class="STDnoteinfo"><span class="STDsc">Denis</span> Benoît, <span class="STDsc">Boujou</span> Emmanuel (dir.), « Engagement littéraire et morale de la littérature », Presses Universitaires de Rennes, Rennes, <span class="STDitalic">L'Engagement littéraire</span>, 2005, p. 31-42<br />En ligne : <a href="https://doi.org/10.4000/books.pur.30038">https://doi.org/10.4000/books.pur.30038</a></span></span>.
+										</p>
+										
+										<p>La littérature constitue pour Minuit, plutôt qu'un engagement (soit un pas en avant dans le politique) une subversion (un pas de côté). Ce changement de rapport entre politique et littérature ne nous paraît pas tout à fait étranger à <span class="STDitalic">Pour un nouveau roman</span> .</p>
+										
+										<p class="STDquote">
+											Déjà l'observateur le moins conditionné ne parvient pas à voir le monde qui l'entoure avec des yeux libres. [...] Mais c'est la <span class="STDitalic">liberté</span> qui devrait du moins être possible, et qui n'est pas, elle non plus<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 20-21</span></span>.
+										</p>
+										<p>Cette liberté ne s'effectue pas autrement que par la littérature qui devient véritable objet d'émancipation :</p>
+										<p class="STDquote">
+											On est toujours décadent par rapport aux choses du passé : le béton armé par rapport à la pierre, le socialisme par rapport à la monarchie paternaliste, Proust par rapport à Balzac. Et ce n'est guère être inhumain que de vouloir bâtir une nouvelle vie pour l'homme ; cette vie ne paraît noire que si - toujours en train de pleurer les anciennes couleurs - on ne cherche pas à voir les nouvelles beautés qui l'éclairent. Ce que propose l’art d’aujourd’hui au lecteur, au spectateur, c’est en tout cas une façon de vivre, dans le monde présent, et de participer à la création permanente du monde de demain. Pour y parvenir, le nouveau roman demande seulement au public d’avoir confiance encore dans le pouvoir de la littérature, et il demande au romancier de n’avoir plus honte d’en faire.<span class="STDnote">*<span class="STDnoteinfo"><span class="STDitalic">Op. cit.</span>, p. 181-182</span></span>.
+										</p>
+										
+										<p>Telle émancipation ne vient pas tant de l'exemple donné par le citoyen Robbe-Grillet qui n'est pas le moins engagé politiquement, mais passe par une œuvre participant de la redéfinition du terme « réaliste » et de ce qui fait la valeur de l'œuvre littéraire non plus engagée, mais subversive.</p>
+								</article>
+							</xsl:when>
+							<xsl:when test="$content='ecart'">
+								<article class="comment"><h3>Une théorie de la valeur artistique : l'écart</h3>
+									<a id="theorie"></a>
+									
+									Si ce qui fait l'écrivain et la littérature c'est la forme, c'est que la forme ne saurait être sans signification : dès lors la prééminence du terme « écriture » qui réunit forme et fond en un seul signe ne doit pas nous étonner. L'écriture subvertit à condition de se faire exploration plutôt que ressassement. 
+									<p class="STDquote">
+										Ils savent, ceux-là, que la répétition systématique des formes du passé est non seulement absurde et vaine, mais qu’elle peut même devenir nuisible : en nous fermant les yeux sur notre situation réelle dans le monde présent, elle nous empêche en fin de compte de construire le monde et l’homme de demain\footnote{<span class="STDitalic">Op. cit.</span>, p. 10.
+									</p>
+									<p class="STDquote">
+										L’exploration de formes romanesques différentes révèle ce qu’il y a de contingent dans celle à laquelle nous sommes habitués, la démasque, nous en délivre, nous permet de retrouver au-delà de ce récit fixé tout ce qu’il camoufle ou qu’il tait, tout ce récit fondamental dans lequel baigne notre vie entière\footnote{<span class="STDsc">Butor</span> Michel, <span class="STDsc">Calle-Gruber</span> Mireille (dir. ), <span class="STDitalic">Œuvres complètes</span> vol. 2, Paris, Édition de la Différence, 2006, p. 21.
+									</p>
+									<p>Que l'on retrouve à la fois chez Michel Butor et Alain Robbe-Grillet , l'idée que l'innovation formelle n'est pas une quête vaine ou abstraite mais un vecteur d'émancipation illustre à quel point, le Nouveau Romain loin d'être en retrait des enjeux de son temps est en réalité une école de la libération : la modernité est une rupture et non une répétition. Le dialogue entre Butor et Robbe-Grillet se poursuit en ce sens.</p>
+									<p class="STDquote">
+										Chaque romancier, chaque roman, doit inventer sa propre forme. […] Loin de respecter des formes immuables, chaque nouveau livre tend à constituer ses lois de fonctionnement en même temps qu'à produire leur destruction\footnote{<span class="STDitalic">Op. cit.</span>, p. 12-13.
+									</p>
+									<p class="STDquote">
+										Des formes nouvelles révéleront dans la réalité des choses nouvelles, des liaisons nouvelles, et ceci, naturellement, d’autant plus que leur cohérence interne sera pus affirmée par rapport aux autres formes, d’autant plus qu’elles seront plus rigoureuses\footnote{<span class="STDsc">Butor</span> Michel, <span class="STDsc">Calle-Gruber</span> Mireille (dir. ), <span class="STDitalic">Œuvres complètes</span> vol. 2, Paris, Édition de la Différence, 2006, p. 222</p>
+									<p>Alors que Butor insiste moins sur la rupture et la nouveauté, Robbe-Grillet enfonce le clou et produit une théorie de l'histoire littéraire :</p>
+									<p class="STDquote">
+										L'écrivain doit accepter avec orgueil de porter sa propre date, sachant qu'il n'y a pas de chef-d'œuvre dans l'éternité, mais seulement des œuvres dans l'histoire ; et qu'elles ne se survivent que dans la mesure où elles ont laissé derrière elles le passé, et annoncé l'avenir\footnote{<span class="STDitalic">Op. cit.</span>, p. 11.
+									</p>
+									<p>Les formes se succèdent et ne se ressemblent pas « chaque nouvelle école voulait abattre celle qui la précédait\footnote{<span class="STDitalic">Op. cit.</span>, p. 171 » et l'effort fournit dans <span class="STDitalic">Pour un nouveau roman</span>  pour dégager une filiation au Nouveau Roman participe de cette description de la littérature en (r)évolution perpétuelle. Les œuvres survivent non par leur proximité avec ce qui les précédait, avec des canons et des règles établies, mais bien par le refus de ces règles et leur innovation formelle. Plus encore, ces innovations formelles ne se font pas, à côté mais contre.</p>
+									<p class="STDquote">
+										Ce sont ces œuvres qui, refusées jadis parce qu’elles ne correspondaient pas aux valeurs de l’époque, ont apporté au monde des significations nouvelles, de nouvelles valeurs, de nouveaux critères, sur lesquels nous vivons aujourd’hui.
+										
+										Mais aujourd’hui, comme hier, les œuvres nouvelles n’ont de raison d’être que si elles apportent à leur tour au monde de nouvelles significations\footnote{<span class="STDitalic">Op. cit.</span>, p. 155-156.
+										
+										Tout cela ne peut que convier le lecteur (ou le spectateur) à un autre mode de participation que celui dont il avait l’habitude\footnote{<span class="STDitalic">Op. cit.</span>, p. 169.				</p>
+									
+									<p>La valeur d'une œuvre ne se mesure qu'à l'aune de l'écart qu'elle consacre entre elle et ses prédécesseurs, c'est dans cet écart que se trouvent « les significations nouvelles » qui font l'homme de demain\footnote{<span class="STDitalic">Op. cit.</span>, p. 182.</p>
+									
+									<p>Ainsi Robbe-Grillet envisage t-il à la page 183 fin du recueil la fin du Nouveau-Roman lorsqu'il sera à son tour périmé :</p>
+									<p class="STDquote">
+										dès que le Nouveau Roman commencera à « servir à quelque chose », que ce soit à l’analyse psychologique, au roman catholique ou au réalisme socialiste, ce sera le signal pour les inventeurs qu’un Nouveau Nouveau Roman demande à voir le jour, dont on ne saurait pas encore à quoi il pourrait servir – sinon à la littérature.
+									</p>
+									
+									<p>Les formes littéraires font leur temps, non par le simple fait de la succession des modes mais par le souci qui travaille la littérature de se subvertir elle-même au nom d'un nouvel éclairage sur le monde : un nouveau réalisme dont le Nouveau Roman n'est alors que l'incarnation la plus récente.</p>
+									
+									<p>Robbe-Grillet se présente comme un auteur réaliste, du moins présente t-il le Nouveau Roman comme « ce nouveau réalisme dont le présent recueil tente de préciser quelques contours\footnote{<span class="STDitalic">Op. cit.</span>, p. 15 ». Ces contours ne sont pas tant détaillés, contrairement à ce que l'on pourrait supposer, au sein de l'article : « Du réalisme à la réalité » qui développe davantage une théorie de la succession des formes :</p>
+									<p class="STDquote">
+										À quoi cela sert-il, dira-t-on, si c’est pour aboutir ensuite, après un temps plus ou moins long, à un nouveau formalisme, aussi sclérosé bientôt que ne l’était l’ancien ? Cela revient à demander pourquoi vivre, puisqu’il faut mourir et laisser la place à d’autres vivants. L’art est vie. Rien n’y est jamais gagné de façon définitive. Il ne peut exister sans cette remise en question permanente. Mais le mouvement de ces évolutions et révolutions fait sa perpétuelle renaissance\footnote{<span class="STDitalic">Op. cit.</span>, p. 173.
+									</p>
+									<p>Au contraire, il faut bien chercher cette définition du nouveau réalisme tout au long du recueil, en creux, tant il semble se définir contre les formes éculées, contre les conventions, récits ou signes qui dissimulent, plutôt qu'ils ne révèlent,le monde. Au fond, la position réaliste que défend Robbe-Grillet dans <span class="STDitalic">Pour un nouveau roman</span>  est sans doute mieux résumée chez Sarraute : </p>
+									<p class="STDquote">
+										il [l'auteur réaliste] s'acharne à débarrasser ce qu'il observe de toute la gangue d'idées préconçues et d'images toutes faites qui l'enveloppe, de toute cette réalité de surface que tout le monde perçoit sans effort et dont chacun se sert, faute de mieux, et il arrive parfois à atteindre quelque chose d'encore inconnu qu'il lui semble être le premier à voir. Il s'aperçoit souvent, quand il cherche à mettre au jour cette parcelle de réalité qui est la sienne, que les méthodes de ses prédécesseurs, créées par eux pour leurs propres fins, ne peuvent plus lui servir. Il les rejette alors sans hésiter et s'efforce d'en trouver de nouvelles, destinées à son propre usage\footnote{<span class="STDsc">Sarraute</span> Nathalie, <span class="STDitalic">L'Ère du soupçon</span>, Paris, Gallimard, coll. « folio essais », 2019 [1956], p. 138.
+									</p>
+									<p>Ne manque à cette définition du réalisme pour être tout à fait équivalente à l'esthétique que défend <span class="STDitalic">Pour un nouveau roman</span> , le détour par une interrogation du récit lui-même. Les « surfaces » de Robbe-Grillet existent (virtuellement) en dépit de la conscience qui les perçoit (le narrateur) car la perception faite de langage est l'objet même du livre, questionnée pour montrer l'artifice des signes qui la constituent.</p>
+									
+									<h4>La transparence du signe en suspens</h4>
+									<a id="signe"></a>
+									
+									<p>Gérard <span class="STDsc">Genette</span> dans un article publié au sein de <span class="STDitalic">Figures I</span> définit deux Robbe-Grillet :</p>
+									<p class="STDquote">
+										On peut schématiser (grossièrement) l'opinion de Robbe-Grillet sur son œuvre en disant qu'il n'a jamais (du moins jusqu'à ce jour) renoncé à son intention réaliste, mais qu'il a prêté à cette injonction un contenu d'abord totalement objectif, puis purement subjectif\footnote{<span class="STDsc">Genette</span> Gérard, « Vertige fixé », <span class="STDitalic">Figures I</span>, Paris, Éditions du seuil, coll. « points essai », 2014[1966], p. 73.
+									</p>
+									<p>Nous sommes dans <span class="STDitalic">Pour un nouveau roman</span>  principalement en présence du second. Cependant il convient de noter que les développements sur les « surfaces\footnote{<span class="STDitalic">Op. cit.</span>, p. 56 » par opposition à la profondeur ne sont pas sans rappeler le premier Robbe-Grillet et constituent en réalité le passage de l'un à l'autre : les objets ne sont que surfaces parce qu'elles sont toujours saisies par une subjectivité montrée comme telle. En d'autres termes, l'écriture fait signe vers elle-même et dégage donc un espace en dehors d'elle-même où les choses ne sont que des choses, ce qui a son tour, permet la subversion des illusions attachées aux objets. Notons que ces objets au fil de <span class="STDitalic">Pour un nouveau roman</span>  cessent d'être des choses pour devenir des idéologies, des récits, des dogmes etc., soit des récits.</p>
+									
+									<p>Jean Ricardou n'écrit pas autre chose lorsqu'il détaille le rôle de la description au sein du Nouveau Roman :</p>
+									<p class="STDquote">
+										Ce qui est donc mis en cause ici, c'est ce qui, pour se poursuivre, connaît l'impérieux besoin de l'intégrité référentielle de l'objet : <span class="STDitalic">le récit</span>. <span class="STDitalic">C'est la force unitaire du récit qui s'oppose à la force disruptive de la description et en interrompt le procès de fragmentation infinie</span><span class="note">*</span><span class="noteinfo"><span class="STDsc">Ricardou</span> Jean, <span class="STDitalic">Le Nouveau Roman suivi de Les Raisons de l'ensemble</span>, Paris, Éditions du Seuil, coll. « Points », 1990 [1973]137</span>.
+									</p>
+									<p>Le Nouveau Roman est le lieu de l'émancipation car le récit sous ces formes non-autoréflexives est faux, donc aliénant. La création ne peut plus faire l'impasse sur son propre questionnement si elle souhaite être émancipatrice.</p>
+									<p class="STDquote">
+										En travaillant le domaine des Méta-Récits, dont le récit traditionnel n'est qu'une région particulière,  il explore l'incalculable champ des intelligibilités nouvelles. D'autre part, en contestant et subvertissant le récit traditionnel qui s'efforce de survivre dans les rigoureux climats du Méta-Récit, il en explore les conditions d'existence, souvent inaperçues tant elles vont quotidiennement de soi<span class="note">*</span><span class="noteinfo"><span class="STDsc">Ricardou</span> Jean, <span class="STDitalic">Le Nouveau Roman suivi de Les Raisons de l'ensemble</span>, Paris, Éditions du Seuil, coll. « Points », 1990 [1973]153</span>.
+									</p>
+									<p>Au contraire elle doit s'assumer en tant que création :</p>
+									<p class="STDquote">
+										Les « anomalies » de ce film, comme celles des romans qui l'ont précédé, relèveraient donc non pas d'une fiction délibérée, mais d'un réalisme plus poussé, plus fidèle que celui des romanciers (ou des cinéastes) classiques, que Robbe-Grillet accuse volontiers de s'enfermer dans un système de conventions arbitraires<span class="note">*</span><span class="noteinfo"><span class="STDsc">Genette</span> Gérard, « Vertige fixé », <span class="STDitalic">Figures I</span>, Paris, Éditions du seuil, coll. « points essai », 2014[1966], p. 72</span>.
+									</p>
+									
+									<p>Précisons, la fiction se montre comme fiction car elle est elle-même devenue objet de ce réalisme plus poussé. </p>
+									
+									<p>Ces passages font écho notamment à la page 182 de <span class="STDitalic">Pour un nouveau roman</span>  déjà abondamment commentée <span class="STDitalic">supra</span>.</p>
+									<p>Lisant les écrits de Robbe-Grillet à l'aune de <span class="STDitalic">Pour un nouveau roman</span> , nous concluons avec Genette sur l'écriture phénoménologique en tant que rappel à la matérialité du livre et surtout du texte en tant que texte : </p>
+									<p class="STDquote">
+										Robbe-Grillet ne connaît qu'un seul mode : l'indicatif. Restituer les nuances modales d'une « histoire » virtuelle considérée comme préexistante (ou sous-jacente) au récit actuel, cette entreprise (fort tentante, convenons-en, car elle satisfait une tendance naturelle, mais esthétiquement désastreuse, à « expliquer », c'est-à-dire le plus souvent à <span class="STDitalic">banaliser</span> toutes choses) revient à peu près à remettre consciencieusement dans ses plis tout ce que Robbe-Grillet a, non moins soigneusement déplié et étalé, ce qui suppose qu'on tienne pour nulle la seule réalité, la seule <span class="STDitalic">matière</span> du roman : son texte. [...] on oublie qu'en fait, tout est ici et maintenant, et que toute autre lecture qu'à l'indicatif présent n'est qu'un exercice tout juste bon à dégager la <span class="STDitalic">genèse</span> du texte<span class="note">*</span><span class="noteinfo"><span class="STDsc">Genette</span> Gérard, « Vertige fixé », <span class="STDitalic">Figures I</span>, Paris, Éditions du seuil, coll. « points essai », 2014[1966], p. 78</span>
+									</p>
+									<p>L'ébauche d'une telle conception se trouve selon nous la plus clairement exprimée au sein de l'article sur Beckett où l'on lit p. 132 :</p>
+									<p class="STDquote">
+										De même, tout est présent dans le temps, comme tout l’est dans l’espace. À cet <span class="STDitalic">ici</span> inéluctable, répond un éternel <span class="STDitalic">maintenant</span> : « Hier ! Qu’est-ce que ça veut dire : hier ? » s’exclame à plusieurs reprises Hamm. Et la conjonction de l’espace et du temps donne seulement, au sujet d’un troisième personnage éventuel, cette certitude : « S’il existe, il viendra ici. »
+										
+										Sans passé, sans ailleurs, sans autre avenir que la mort, l’univers ainsi défini est nécessairement privé de sens, dans les deux acceptions du terme : il exclut aussi bien toute idée de <span class="STDitalic">progrès</span> qu’une quelconque <span class="STDitalic">signification</span>.
+									</p>
+									<p>L'immanence ou le <span class="STDitalic">dasein</span> du théâtre de Beckett est une illustration en acte de la situation de l'homme dans le monde qui saute aux yeux du spectateur et incarne les caractéristiques du récit dans le Nouveau-Roman : objet, lui aussi, de la lecture.</p>
+									
+									<p>Le récit et surtout ses moyens : la narration, le personnage, en réalité tous les signes et la croyance en la transparence des signes devenus la transparence des choses vers un au-delà qui n'est autre qu'un récit (un autre signe), sont ainsi exposés dans le Nouveau-Roman, tout comme le personnage de Beckett « est là<span class="note">*</span><span class="noteinfo"><span class="STDitalic">Op. cit.</span>, p. 119</span> ». D'où l'insistance tout au long de <span class="STDitalic">Pour un nouveau roman</span>  sur les mots de la critique et les expressions à privilégier : le signe, au sens large, est en suspens voire en soupçon.</p></article>
 							</xsl:when>
 							<xsl:when test="$content='db'">
 								
@@ -405,6 +1299,90 @@
 							<!--<xsl:when test="$content='tl'">
 <!-\-							TIMELINE GOES HERE-\->
 							</xsl:when>-->
+							<xsl:when test="$content='polemos2'">
+								<article class="comment">
+									<h2>Un style polémique : au fil du texte</h2>
+									<h3>Une technique argumentative : le cheminement</h3>
+									<a id="rhétoChemin"></a>
+									
+									<p><span class="STDitalic">Pour un nouveau roman</span>  étant la somme d'articles publiés dans la presse, la voix de l'essayiste est fortement incarnée et l'argumentaire tente de s'approcher d'un cheminement progressif où la pensée se fait jour à elle-même. Si deux articles arborent une structure claire et un programme défini (« Sur quelques notions périmées » et « Nouveau Roman, homme nouveau »), tous sont construits selon un patron général identique : l'exposition de la thèse adverse puis sa réfutation, répété autant de fois que nécessaire au sein d'un article, si nécessaire, <span class="STDitalic">via</span> le détour par des concessions à leur tour réfutées. Est mimée ainsi une conversation avec la critique, dans laquelle le lecteur identifie bien-sûr les étapes d'une pensée, une délibération interne.</p>
+									
+									<p>Ces étapes sont mises en valeur dans notre édition numérique et permettent au lecteur d'identifier promptement les moments de la délibération.</p>
+									
+									
+									<p>Outre le principe, somme toute classique en rhétorique, d'exposer la thèse adverse que l'on s'emploie à défaire, il convient de noter que les thèses adverses sont le véritable moteur de l'argumentation. Citant un entretien de Robbe-Grillet issu du numéro 764 de <span class="STDitalic">Les Lettres françaises</span>, Galia <span class="STDsc">Yanoshevsky</span>  affirme que les critiques nourrissent la pensée de l'écrivain Alain Robbe-Grillet  : « il peut y avoir un dialogue entre romanciers et critiques. Il est même quelquefois très profitable\footnote{Anne <span class="STDsc">Villelaur</span>, « Le nouveau roman est en train de réfléchir sur lui-même », <span class="STDitalic">Les Lettres françaises</span>, n° 764, 12-18.03.1959, p. 4 ». Le débat est mis en scène dans l'écriture et en retour la met en branle, d'une part par le phénomène d'exposition/réfutation mais aussi par les multiples commentaires digressifs qui prennent appui sur la pensée adverse : </p>
+									<p class="STDquote">
+										À moins d’estimer que le monde est désormais entièrement découvert (et, dans ce cas, le plus sage serait de s’arrêter tout à faire d’écrire), on ne peut que tenter d’aller plus loin\footnote{<span class="STDitalic">Op. cit.</span>, p.  172								</p>
+									<p>Chaque expression prêtée à l'adversaire fait l'objet d'une réfutation montrée comme immédiate et donc spontanée. De par son statut digressif, l'usage des parenthèses semblent sous-tendre une incise dans une pensée en mouvement, l'inspiration soudaine dans le souffle d'une théorie qui s'achemine à force de réfuter les thèses adverses. Ainsi, l'écriture de Robbe-Grillet est-elle dans <span class="STDitalic">Pour un nouveau roman</span>  faite de rebonds, sur et à propos de critiques adressées à ces écrits, du moins de positions qu'il ne partage pas. Suite immédiate du passage précédemment cité, l'essayiste avance pas à pas sur les traces de ces adversaires </p>:
+									<p class="STDquote">
+										Il ne s’agit pas de « faire mieux », mais de [...]</p>
+										
+										<p class="STDquote">À quoi cela sert-il, dira-t-on, [...]</p>
+										
+										<p class="STDquote">La critique académique, à l’Ouest comme dans les pays communistes, emploie le mot « réalisme » comme si[...]\footnote{<span class="STDitalic">Op. cit.</span>, p.  172-173</p>
+									
+									<p>Ainsi progresse l'exposition des théories de Robbe-Grillet, en réaction à des critiques qu'il se fait lui-même, comme si elle venait rectifier les erreurs ou les biais idéologiques des critiques.</p>
+									
+									
+									
+									<h4>L'histoire d'une dispute</h4>
+									<a id="histoireDispute"></a>
+									<p>Sous l'impulsion des détours et des rebonds la pensée se fait presque narration. L'emploi du discours indirect libre et la capacité de Robbe-Grillet à laisser une place aux discours adverses dont le lecteur perçoit aisément qu'ils sont (re)constitués pour les besoins de la mise en scène du débat </p>
+									<p class="STDquote">
+										Il ne semble guère raisonnable, à première vue, de penser qu’une littérature entièrement <span class="STDitalic">nouvelle</span> soit un jour – maintenant, par exemple – possible. Les nombreuses tentatives, qui se sont succédées depuis plus de trente ans, pour faire sortir le récit de ses ornières n’ont abouti, au mieux, qu’à des œuvres isolées\footnote{<span class="STDitalic">Op. cit.</span>, p. 16
+									</p>transforment par moment l'essayiste en un narrateur omniscient qui se plaît à commenter avec force ironie et force affectivité.
+									<p class="STDquote">
+										Non seulement le livre déplut et fut considéré comme une sorte d’attentat saugrenu contre les belles-lettres, mais on démontra de surcroît comment il était normal qu’il fût à ce point exécrable, puisqu’il s’avouait le produit de la préméditation : son auteur – ô scandale ! – se permettait d’avoir des opinions sur son propre métier\footnote{<span class="STDitalic">Op. cit.</span>, p. 10				</p>
+									<p>L'emploi du passé simple et les antagonismes forts qui sous-tendent toute l'œuvre font du recueil d'essai, du moins de ces premiers chapitres qui concentrent ces effets utiles, sans doute aux yeux d'Alain Robbe-Grillet , à l'exposition des termes du débat, une histoire. Le lecteur est ainsi invité à assister à l'émergence du Nouveau Roman devenu par moment l'objet d'une joute épique entre le narrateur et les antagonistes qu'il s'est constitués.</p>
+									
+									<p>De même page 39, le récit, à mi-chemin entre le conte et la rhétorique, devient l'outil d'un argument qui vaut conclusion :</p>
+									<p class="STDquote">
+										Mais j’imagine sans mal que dans quelques dizaines d’années – plus tôt peut-être – lorsque cette écriture, assimilée, en voie de devenir académique, passera inaperçue à son tour, et qu’il s’agira bien entendu pour les jeunes romanciers de faire autre chose, la critique d’alors, trouvant une fois de plus qu’il ne se passe rien dans leurs livres, leur reprochera leur manque d’imagination et leur montrera nos romans en exemple : « Voyez, diront-ils, comme, dans les années cinquante, on savait inventer des histoires ! »
+									</p>
+									<p>autre saynète, qui n'est pas sans rappeler <span class="STDitalic">L'Ére du soupçon</span> :</p>
+									<p class="STDquote">
+										Puisque raconter pour distraire est futile et que raconter pour faire croire est devenu suspect, le romancier pense apercevoir une autre voie : raconter pour enseigner. Las de s’entendre déclarer avec condescendance par les gens assis : « Je ne lis plus de romans, j’ai passé l’âge, c’est bon pour les femmes (qui n’ont rien à faire), je préfère la réalité... » et autres niaiseries,  le romancier va se rabattre sur la littérature didactique.   
+									</p>
+									<p>Lecteurs potentiels, critiques actuels ou à venir et romanciers deviennent ainsi les personnages d'un argumentaire, permettant de tenir, de prêter aux uns et aux autres des attitudes comiques, outrancières, grotesques afin d'en montrer l'inanité, tout en ayant l'air de se placer en position empathique vis-à-vis de ses adversaires. Notons que le caractère très général de ces anecdotes demandent au lecteur d'investir de son vécu ces figures, et est ainsi à même de produire une certaine connivence entre ce dernier et Alain Robbe-Grillet . </p>
+									
+									
+									<h4>Robbe-Grillet, défenseur du bon sens ?</h4>
+									<a id="bonsens"></a>
+									
+									<p>De par la structure rhétorique (voir <span class="STDitalic">supra</span> <a href="#rhétoChemin">ici</a>) qui laisse entendre que les positions de Robbe-Grillet émergent d'une délibération, celui-ci se positionne clairement du côté du bon sens. </p>
+									
+									<p>Or, ce concept de « bon sens » mérite d'être interrogé, du moins défini. Si tous s'en réclament, chacun y projette un rapport particulier au savoir. Dans le cas d'Alain Robbe-Grillet  le bon sens n'est pas la <span class="STDitalic">doxa</span>, un avis partagé immédiatement par le plus grand nombre mais bien le résultat d'un dénuement, d'un dévoilement, permettant d'accéder à la vérité (non identique au réel) qui n'étant pas immédiatement donnée doit faire l'objet d'un travail (de la pensée ou de la forme) pour défaire l'habitude qui prend tantôt l'apparence de clichés tantôt celle de la tradition. Cette tradition n'est pas seulement une position adverse, un autre moyen d'accéder à la réalité mais un voile tissé d'illusions qui recouvre le réel. En cela le bon sens, s'il s'obtient en dépit d'un premier mouvement, ne peut être confondu avec une « profondeur » ou un secret enfoui dans les choses ; il relève plutôt de l'évidence des faits, dissimulée sous des positions de principes fautives. </p>
+									
+									<p>De là, la nécessité de rappeler que Alain Robbe-Grillet  ne se considère pas comme un théoricien</p>
+									<p class="STDquote">Je ne suis pas un théoricien du roman\footnote{<span class="STDitalic">Op. cit.</span>, p. 7.</p>
+									<p class="STDquote">Ainsi, loin d’édicter des règles, des théories, des lois, ni pour les autres ni pour nous-mêmes, c’est au contraire dans la lutte contre des lois trop rigides que nous nous sommes rencontrés\footnote{<span class="STDitalic">Op. cit.</span>, p. 145.</p>
+										<p class="STDquote">Mais nous, au contraire, qu’on accuse d’être des théoriciens, nous ne savons pas ce que doit être un roman, un vrai roman ; nous savons seulement que le roman d’aujourd’hui sera ce que nous le ferons, aujourd’hui, et que nous n’avons pas à cultiver la ressemblance avec ce qu’il était hier, mais à nous avancer plus loin\footnote{<span class="STDitalic">Op. cit.</span>, p. 146.</p>
+								<p>à l'inverse de ses détracteurs dont les positions sont artificielles, construites en dépit d'un état de fait palpable</p>
+									<p class="STDquote">
+										Le récit, tel que le conçoivent nos critiques académiques – et bien des lecteurs à leur suite – représente un ordre. Cet ordre, que l’on peut en effet qualifier de naturel, est lié à tout un système, rationaliste et organisateur, dont l’épanouissement correspond à la prise du pouvoir par la classe bourgeoise. En cette première moitié du <span class="STDsc">XIX</span><span class="STDexposant">e</span> siècle, qui vit l’apogée – avec <span class="STDitalic">la Comédie humaine</span> – d’une forme narrative dont on comprend qu’elle demeure pour beaucoup comme un paradis perdu du roman, quelques certitudes importantes avaient cours : la confiance en particulier dans une logique des choses juste et universelle.
+										[...]
+										Pourtant, là encore, il suffit de lire les grands romans du début de notre siècle pour constater que, si la désagrégation de l’intrigue n’a fait que se préciser au cours des dernières années, elle avait déjà cessé depuis longtemps de constituer l’armature du récit.
+										\footnote{<span class="STDitalic">Op. cit.</span>, p. 36-37</p>
+									<p>Les thèses des adversaires de Robbe-Grillet semblent devoir être toujours fausses puisqu'elles procèdent par la surimposition au réel de grilles de lecture prédéterminées, de clichés :</p>
+									<p class="STDquote">
+										La construction de nos livres n’est d’ailleurs déroutante que si l’on s’acharne à y rechercher la trace d’éléments qui ont en fait disparu depuis vingt, trente, ou quarante années, de tout roman vivant, ou se sont du moins singulièrement effrités : les caractères, la chronologie, les études sociologiques, etc\footnote{<span class="STDitalic">Op. cit.</span>, p. 146.</p>
+										<p class="STDquote">Comme il n’y avait pas, dans nos livres, de « personnages » au sens traditionnel du mot, on en a conclu, un peu hâtivement, qu’on n’y rencontrait pas d’hommes du tout. C’était bien mal les lire\footnote{<span class="STDitalic">Op. cit.</span>, p. 147</p>
+								<p>Au contraire les thèses de Robbe-Grillet sont exposées comme une acceptation de ce principe que souligne la fréquente introduction par des modalisateurs parfois adjoints à des tournures impersonnelles :</p>
+									
+									<p class="STDquote">Pourtant, là encore, il suffit de lire\footnote{<span class="STDitalic">Op. cit.</span>, p. 37</p>
+									<p class="STDquote">Malheureusement, elle ne convainc plus personne\footnote{<span class="STDitalic">Op. cit.</span>, p. 39</p>
+									<p class="STDquote">Hélas, dès que l’on passe à la pratique, les choses se gâtent\footnote{<span class="STDitalic">Op. cit.</span>, p. 41.</p>
+									<p class="STDquote">Regardons maintenant le résultat. Que nous offre le réalisme socialiste ?\footnote{<span class="STDitalic">Op. cit.</span>, p. 45</p>
+									<p class="STDquote">Qu’il n’y ait qu’un parallélisme assez lâche entre les trois romans que j’ai publiés à ce jour et mes vues théoriques sur un possible roman futur, c’est l’évidence même\footnote{<span class="STDitalic">Op. cit.</span>, p. 56.</p>
+									<p class="STDquote">Malheureusement, parmi les critiques qu’on lui prodiguait, et aussi, souvent, parmi les éloges, il y avait tant de simplifications extrêmes, tant d’erreurs, tant de malentendus, qu’une sorte de mythe monstrueux a fini par se constituer\footnote{<span class="STDitalic">Op. cit.</span>, p. 143</p>
+	<p>Ces débuts ou relances de réfutation au ton cinglant illustrent un fait : la conclusion est toujours déjà tirée avant d'être exprimée.</p>									<p>Notons que les moyens de la justification de la position théorique (l'appel au bon sens en tant que dévoilement) coïncide avec la théorie littéraire d'Alain Robbe-Grillet  où le réel est ce qui résiste et la signification toujours artificielle (voir <span class="STDitalic">infra</span> <a href="#3phéno">ici</a>).</p>
+									<p>De même, l'article « Nouveau Roman, homme nouveau » exprime clairement la méthode (prendre le contre-pied) : si le procédé repose sur un argument facile il n'en demeure pas moins juste , les adversaires ayant tort, c'est donc que l'inverse est vrai et Alain Robbe-Grillet  ne saurait avoir tort. </p>
+									<p class="STDquote">
+										chaque fois que la rumeur publique, ou tel critique spécialisé qui tout à la fois la reflète et l’alimente, nous prêtent une intention, on peut affirmer sans gros risque d’erreur que nous avons exactement l’intention inverse\footnote{<span class="STDitalic">Op. cit.</span>, p. 143.</p>
+									<p>Cependant, puisqu'il s'agit pour Alain Robbe-Grillet  de rétablir les faits contre les préjugés, il ne suffit en réalité pas d'en dire le contraire. C'est là qu'est l'habileté et la distinction entre « l'exact contre-pied\footnote{<span class="STDitalic">Op. cit.</span>, p. 144 » et l'« exactement [...] inverse\footnote{<span class="STDitalic">Op. cit.</span>, p. 143 » : les positions adverses résumées portent sur des positions de principes aux contours peu définis mais trop généraux pour ne pas prêter aisément le flan à la critique ; ainsi il suffit de proposer une position plus ouverte en contre point, pour paraître plus difficilement réfutable. Ainsi à la proposition « Le Nouveau Roman a fait table rase du passé » il rétorque « Le Nouveau Roman ne fait que poursuivre une évolution constante du genre romanesque » et non pas ce qui pourrait en être l'exact inverse « Le Nouveau Roman épouse pleinement l'ensemble de la tradition littéraire. ».</p>
+									<p>Admettons que la technique est appropriée pour un auteur qui souhaite défendre la liberté perçue comme un refus de supposées règles édictées par une tradition réactionnaire : plus la préconisation sera souple mieux elle s'intégrera au sein du système, dont on pourra toujours dire, sans doute à raison, qu'il n'est pas tout à fait un système.</p>
+								</article>
+							</xsl:when>
 							<xsl:when test="$content='polemos'">
 								<article class="comment">
 								<h2>Un style polémique</h2>
@@ -872,6 +1850,31 @@
 			<xsl:with-param name="title" select="'illustration de la base de données'"/>
 			<xsl:with-param name="content" select="'db'"/>
 		</xsl:call-template>
+		<xsl:call-template name="body">
+			<xsl:with-param name="doc" select="$sartre"/>
+			<xsl:with-param name="title" select="'Un positionnement littéraire : contre Sartre ?'"/>
+			<xsl:with-param name="content" select="'sartre'"/>
+		</xsl:call-template>
+		<xsl:call-template name="body">
+			<xsl:with-param name="doc" select="$about"/>
+			<xsl:with-param name="title" select="'À propos de cette édition'"/>
+			<xsl:with-param name="content" select="'about'"/>
+		</xsl:call-template>
+		<xsl:call-template name="body">
+			<xsl:with-param name="doc" select="$pheno"/>
+			<xsl:with-param name="title" select="'Écriture au crible de postulats phénoménologiques'"/>
+			<xsl:with-param name="content" select="'pheno'"/>
+		</xsl:call-template>
+		<xsl:call-template name="body">
+			<xsl:with-param name="doc" select="$epo"/>
+			<xsl:with-param name="title" select="'Des références contemporaines'"/>
+			<xsl:with-param name="content" select="'epo'"/>
+		</xsl:call-template>
+		<xsl:call-template name="body">
+			<xsl:with-param name="doc" select="$ecart"/>
+			<xsl:with-param name="title" select="'Une théorie de la valeur littéraire : écart'"/>
+			<xsl:with-param name="content" select="'ecart'"/>
+		</xsl:call-template>
 		<!--<xsl:call-template name="body">
 			<xsl:with-param name="doc" select="$tl"/>
 			<xsl:with-param name="title" select="'chronologie'"/>
@@ -907,6 +1910,17 @@
 			<xsl:with-param name="title" select="'Un style polémique : des adversaires'"/>
 			<xsl:with-param name="content" select="'polemos'"></xsl:with-param>
 		</xsl:call-template>
+		<xsl:call-template name="body">
+			<xsl:with-param name="doc" select="$polemos2"/>
+			<xsl:with-param name="title" select="'Un style polémique : des adversaires'"/>
+			<xsl:with-param name="content" select="'polemos2'"/>
+		</xsl:call-template>
+		<xsl:call-template name="body">
+			<xsl:with-param name="doc" select="$bib"/>
+			<xsl:with-param name="title" select="'Bibliographie'"/>
+			<xsl:with-param name="content" select="'bib'"/>
+		</xsl:call-template>
+
 		<!--<xsl:call-template name="body">
 			<xsl:with-param name="doc" select=""/>
 			<xsl:with-param name="title" select="''"/>

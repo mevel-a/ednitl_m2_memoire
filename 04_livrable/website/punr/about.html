@@ -1,0 +1,934 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Pour un nouveau roman, À propos de cette édition</title>
+      <link rel="stylesheet" type="text/css" href="punr_style.css">
+      <link rel="icon" type="image/jpg" href=""><script src="script.js"></script><meta charset="utf-8">
+      <meta name="author" content="adrien mevel, mathieu marchal, florence de chalonge, alain robbe-grillet">
+      <meta name="description" content="digital critical edition of pour un nouveau roman by alain robbe-grillet fist published in 1963 this word has been realised as student project">
+      <meta name="keywords" content="critical, edition, digital, robbe-grillet, litterature, french, 1963, nouveau roman, alain robbe-grillet, pour un nouveau roman, xxe siecle, xx, french theory">
+   </head>
+   <body onload="initialise()">
+      <header id="top">
+         <h1><span class="STD_italic">Pour un nouveau roman</span><br><span class="h1_subtitle">Édition critque et numérique</span></h1>
+         <div class="header_div">
+            <nav class="nav_top">
+               <ul>
+                  <li><a href="home.html">Accueil</a></li>
+                  <li><a href="presentation.html">Présentation de l'œuvre</a></li>
+                  <li style="width:200px; height:100px; padding-top:9px;flex-shrink: 0;">Corpus
+                     					
+                     <ol class="chapter_nav">
+                        <li><a href="punr_ch01.html">À quoi servent les théories</a></li>
+                        <li><a href="punr_ch02.html">Une voie pour le roman futur</a></li>
+                        <li><a href="punr_ch03.html">Sur quelques notions périmées</a></li>
+                        <li><a href="punr_ch04.html">Nature, humanisme, tragédie</a></li>
+                        <li><a href="punr_ch05.html">Éléments d’une anthologie moderne</a></li>
+                        <li><a href="punr_ch06.html">Énigmes et transparence chez Raymond&nbsp;Roussel </a></li>
+                        <li><a href="punr_ch07.html">La conscience malade de Zeno</a></li>
+                        <li><a href="punr_ch08.html">Joë&nbsp;Bousquet le rêveur</a></li>
+                        <li><a href="punr_ch09.html">Samuel&nbsp;Beckett, ou la présence sur la scène </a></li>
+                        <li><a href="punr_ch10.html">Un roman qui s’invente lui-même</a></li>
+                        <li><a href="punr_ch11.html">Nouveau roman, homme nouveau</a></li>
+                        <li><a href="punr_ch12.html">Temps et description dans le récit d’aujourd’hui</a></li>
+                        <li><a href="punr_ch13.html">Du réalisme à la réalité</a></li>
+                     </ol>
+                  </li>
+                  <li style="width:200px; height:100px; padding-top:9px;flex-shrink: 0;">Commentaires thématiques
+                     					
+                     <ol class="chapter_nav" style="list-style:none;">
+                        <li><a href="database.html">Illustration de la base de données</a></li>
+                        <li><a href="disp.html">Un texte disparate</a></li>
+                        <li><a href="uni.html">L'unicité des articles</a></li>
+                        <li><a href="sartre.html">Une positionnement littéraire : contre Sartre ?</a></li>
+                        <li><a href="pheno.html">L'écriture au crible de postulats phénoménologiques</a></li>
+                        <li><a href="epo.html">Des références contemporaines</a></li>
+                        <li><a href="ecart.html">Une théorie de la valeur littéraire : l'écart</a></li>
+                        <li><a href="polemos2.html">Un style polémique : au fil du texte</a></li>
+                        <li><a href="polemos.html">Un style polémique : des adversaires</a></li>
+                        <li><a href="index0.html">Index des notions adverses </a></li>
+                        <li><a href="index.html">Index des expressions privilégiées</a></li>
+                     </ol>
+                  </li>
+                  <li><a href="about.html">À propos de cette édition</a></li>
+                  <li><a href="bibliography.html">Bibliographie</a></li>
+               </ul>
+            </nav>
+            <div class="legals"><a href="https://github.com/mevel-a/ednitl_m2_memoire" target="blanck" style="grid-column:1;"><img src="img/GitHub-Mark-32px.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:2;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_cc.png"></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="blanck" style="grid-column:3;"><img alt="Licence Creative Commons" src="https://creativecommons.org/images/chooser/chooser_by.png"></a><a href="files/punr.xml" download="" style="grid-column:3; grid-row:2;"><img src="img/logo_xml.png" alt="XML"></a><button class="darkbutton" onclick="darkmode();" style="grid-column:1; grid-row:2;"><img src="img/sun_icon.png" class="sun"></button></div>
+         </div>
+      </header>
+      <div class="STDtop"><a href="#top">&lt;</a></div>
+      <article class="comment">
+         <div class="separ"></div>
+         <h2>Introduction au projet d'édition numérique</h2>
+         <p>Publié en 1963, <span class="STDitalic">Pour un nouveau roman</span> , est une œuvre composite dont l'unité tient à l'adéquation entre des prises de positions
+            assumées et un style polémique. Loin d'être (seulement) un recueil de préconisations
+            stylistiques, le recueil offre une vue globale sur les débats littéraires de son époque
+            dont il est le reflet et le miroir. Le texte dans son ensemble constitue une véritable
+            théorie littéraire séparant le bon grain et l'ivraie à la fois dans la tradition littéraire
+            et dans la littérature contemporaine.</p>
+         <p>L'édition que nous réalisons entend proposer un contenu scientifique permettant de
+            saisir la cohérence des théories esthétiques de Robbe-Grillet et un versant numérique
+            permettant de proposer une lecture du recueil enrichie par des éléments d'analyses
+            et de contextualisation.</p>
+         <p>
+            Le présent document se veut un exposé des modalités techniques mises en œuvres, des
+            difficultés que nous avons rencontrées, suivi des moyens mis en œuvre pour les surmonter.</p>
+         <p>Chaque outil utilisé fera l'objet d'une présentation succinte, après quoi leur apport
+            au projet et les choix ayant mené à la réalisation de l'édition numérique de <span class="STDitalic">Pour un nouveau roman</span>  seront détaillés.</p>
+         <h3>Le projet initial de l'édition numérique</h3>
+         <p>Lors d'un précédent rendu nous nous donnions pour objectif de mettre en valeur les
+            relations intertextuelles qui sous-tendaient l'œuvre (voir&nbsp;: <a href="#fig:projet">ici</a>).</p>
+         <div class="STDimg"><img src="img/202211_mevel_punr_edition_numerique.png"><p class="STDimgCaption">Schéma du projet original</p><a id="fig:projet"></a></div>
+         <p>Nous opérons une première distinction entre «&nbsp;références&nbsp;» et «&nbsp;citations&nbsp;». Lorsque
+            p.&nbsp;136 Robbe-Grillet écrit «&nbsp;<span class="STDitalic">Mahu ou le Matériau</span>, ce titre est déjà un programme&nbsp;», il s'agit d'une référence&nbsp;; mais lorsque au paragraphe
+            précédent Robbe-Grillet écrit «&nbsp;"J'y pense, j'y pense [...]"&nbsp;», il s'agit d'une citation.</p>
+         <p>Un simple clic sur une citation (soit un passage extrait hors du texte de Robbe-Grillet)
+            devait permettre de lire la citation en contexte (soit un ou deux paragraphes entourant
+            le ou les passages cités). La proposition initiale envisageait déjà des limites aux
+            citations à traiter ainsi mais les choix n'étaient pas encore faits. En effet, le
+            nombre de citation à identifier et le temps nécessaire à l'intégration de nombreux
+            extraits relativement conséquents étaient les freins principaux à cette proposition,
+            qui a, depuis été adaptée.</p>
+         <p>
+            Dans l'état actuel, seules les citations issues des écrits de Sartre font l'objet
+            d'un traitement proprement transtextuel. Nous privilégions cette partie du corpus
+            car nous pensons insister dans le versant scientifique du projet sur les rapports
+            qu'entretient la pensée de Robbe-Grillet dans <span class="STDitalic">Pour un nouveau roman</span>  avec celle de Sartre. Ainsi notre édition est-elle la plus proche possible de notre
+            travail scientifique. Notons que nous ajoutons aux intertextes issus de Sartre, les
+            citations issues des œuvres de Robert&nbsp;Pinget <span class="STDitalic">Le Renard et la boussole</span> et <span class="STDitalic">Mahu ou le matériau</span>. Cet ajout plutôt qu'un autre tient davantage à des raisons techniques que scientifiques&nbsp;:
+            nous avons mené nos tests de faisabilité technique sur ce corpus.
+            
+            <ul>
+               <li> La diversité de ces œuvres dans lesquelles la digression perpétuelle fait office
+                  de narration permettent d'interroger les limites des extraits à intégrer. Afin d'intégrer
+                  le contexte d'une citation, il nous fallait déterminer quel était ce contexte&nbsp;; un
+                  ou deux paragraphes&nbsp;? Une phrase avant et après&nbsp;? <span class="STDitalic">Quid</span> alors des cas où les phrases elles-mêmes sont très longues voire déstructurées&nbsp;?
+                  Nous optons pour un découpage dont nous espérons que la cohérence apparaîtra au lecteur&nbsp;;
+                  plutôt que des bornes quantifiables en termes de distance textuelle, nous nous sommes
+                  efforcés d'intégrer des extraits tenus par une unité cohérente, que cette unité relève
+                  de l'épisode ou de la plus petite digression possible (dans le cas de Pinget).</li>
+               <li> D'un point de vue technique, les citations issues des œuvres de Pinget nous permettent
+                  également d'identifier des citations pouvant renvoyer à plusieurs extraits d'une même
+                  œuvre, ce qui nous posait un problème technique que nous avons souhaité résoudre (voir&nbsp;:
+                  <a href="#quote_dis">ici</a>).</li>
+               <li> Enfin Pinget nous a semblé être l'auteur pour lequel Robbe-Grillet réservait le plus
+                  d'éloge. La section «&nbsp;Un roman qui s'invente lui-même&nbsp;» est située en fin de l'«&nbsp;Anthologie&nbsp;»
+                  laissant entendre qu'il s'agit de l'auteur le plus «&nbsp;moderne&nbsp;».</li>
+               Nous avions ainsi deux des pôles axiologiques mentionnés explicitement les plus éloignés.
+               
+               <li> La version actuelle (juin 2023) ne contient pour l'instant que les citations de Robert
+                  Pinget afin de démontrer, d'une part la possibilité mais aussi l'intérêt d'un tel
+                  traitement.</li>
+            </ul>
+         </p>
+         <p>Si l'objectif initial, et surtout, idéal, de ce travail était de traiter l'intégralité
+            des citations, le temps nécessaire à un tel travail nous imposa de réduire la voilure.
+            Ainsi, si toutes les références et citations feront l'objet d'un traitement minime&nbsp;:
+            en HTMLet CSS (voir <a href="#htmlCss">ici</a>), nous programmons l'affichage d'une infobulle pour chacun de ces éléments lorsque
+            la souris de l'utilisateur passe dessus, affichant&nbsp;: les statuts référentiels et axiologiques
+            de la référence ou citation sur laquelle passe le curseur. Un code couleur permet
+            au demeurant d'expliciter les valeurs (rouge, vert, bleu et noir pour les statuts
+            axiologiques et des nuances allant du jaune au maron pour le statut référentiel).</p>
+         <p>
+            Enfin, toujours dans un souci d'offrir la lecture la plus agréable possible, nous
+            choisissons de ne pas produire de note explicative sur la plupart des références.
+            
+            <ul>
+               <li> Le contenu de ces notes nous paraîssait devoir être à la fois trop général et trop
+                  court pour avoir un quelconque intérêt scientifique.</li>
+               <li> Malgré le temps conséquent consacré à concevoir et implémenter ces notes au contenu
+                  factuel, l'intérêt pour un lecteur néophyte qui a à sa disposition des encyclopédies
+                  en ligne nous paraissait très faible&nbsp;; plus encore pour un lecteur spécialiste qui
+                  n'apprendrait sans doute rien, ou si peu de telles notes.</li>
+               <li> Ces notes surchargeraient l'appareil critique de notre édition et, au fond, contreviendraient
+                  en partie au principe de l'édition&nbsp;: donner à lire, sans prendre par la main le lecteur,
+                  supposé capable de naviguer lui-même au sein de l'édition.</li>
+            </ul>
+         </p>
+         <p></p>
+         <p></p>
+         <p></p>
+         <p>
+            <h2>Encodage</h2>
+            Afin de proposer une édition numérique enrichie de <span class="STDitalic">Pour un nouveau roman</span> , nous optons pour un encodage en XML-tei. Pensé courant octobre et novembre, l'encodage
+            à proprement parler a commencé début mars.
+            
+            <h3>Principes généraux</h3>
+            Le langage XML est un langage de balisage&nbsp;: l'encodeur entoure chacun des éléments
+            qu'il juge devoir être encodé (l'ensemble du texte, un paragraphe, un mot, voire une
+            lettre) de balises ouvrantes et fermantes éclairant la nature du passage qu'elles
+            entourent (libre à l'encodeur d'encadrer un paragraphe en tant que paragraphe ou en
+            tant que saut sémantique).</p>
+         <p>
+            <div class="STDimg"><img src="img/screen_encodage.jpg"><p class="STDimgCaption">Exemple d'encodage xml-tei</p><a id="fig:screen_encodage"></a></div>
+         </p>
+         <p>L'encodeur étant libre de choisir les éléments qu'il encode et comment il les encode,
+            des conventions internationales ont émérgé afin de permettre l'interopérabilité des
+            corpus balisés. Le plus utilisé en science humaine demeure sans doute le standard
+            de la <span class="STDitalic">Text Encoding Initiative</span> (TEI) que nous employons pour la présente édition. Initialement pensé pour la restitution
+            de sources anciennes (tels des manuscrits du <span class="STDsc">XVI</span><span class="STDexposant">e</span>) cet encodage nous permet d'identifier des éléments structurels très fins et de mettre
+            en correspondance différents extraits constituant un corpus (voir <a href="#tei">ici</a>).</p>
+         <p>Lors du rapport d'étape soumis courant décembre&nbsp;2022, nous avions l'intention de produire
+            une ODD. C'est-à-dire un fichier permettant la génération d'un schéma et d'une documentation
+            technique sur les choix d'encodage fait pour le présent travail (soit une spécialisation
+            des éléments xml-TEI). Le temps nous a finalement manqué pour produire un tel travail
+            qui nous a paru au demeurant en partie redondant avec le présent document.</p>
+         <h3>Mise en œuvre</h3>
+         <h4>Un premier fichier d'encodage</h4>
+         <p><a id="premier_enc"></a>
+            Afin de pouvoir encoder le texte du <span class="STDitalic">Pour un nouveau roman</span>  nous nous sommes procuré une version numérique du texte en achetant la seule édition
+            disponible de l'œuvre au format «&nbsp;.epub&nbsp;». Nous savons que les fichiers d'un epub
+            se présentent sous la forme d'une archive&nbsp;: il suffit de changer l'extension «&nbsp;.epub&nbsp;»
+            en «&nbsp;.zip&nbsp;» pour pouvoir explorer son contenu et en extraire les fichiers contenant
+            le texte.</p>
+         <p>Ces fichiers se présentent sous la forme de fichiers «&nbsp;.html&nbsp;», un fichier par chapitre
+            du recueil. Grâce à un script perl nous récupérons l'ensemble du contenu textuel au
+            sein d'un seul fichier .xml.</p>
+         <p>Le même script procède simultanément au nettoyage des fichiers d'origine (nous remplaçons
+            les balises HTMLpar des balises xml-tei lorsque cela est pertinent et supprimons toutes
+            les balises inutiles).</p>
+         <p>Ont été supprimés&nbsp;:
+            
+            <ul>
+               <li> les éléments &lt;div&gt; vides servant à espacer le corps du texte (une indication des
+                  suppressions et des tailles des éléments supprimés est à chaque fois ajoutée en commentaire
+                  dans le fichier d'encodage)</li>
+               <li> les éléments &lt;span&gt; parasites qui redoublaient, entre autres, tous les éléments &lt;p&gt;
+                  sans ajouter d'information de mise en forme</li>
+               <li> les éléments &lt;b&gt; et &lt;a&gt; muni d'un attribut @id marquant le début des chapitres</li>
+            </ul>
+            <p>Ont été remplacés par les balises xml-tei jugées pertinentes&nbsp;:
+               
+               <ul>
+                  <li> les éléments &lt;a&gt; munis d'un attribut @id signalant les débuts de page par des éléments
+                     &lt;pb&gt; munis d'un attribut @n</li>
+                  <li> les éléments &lt;i&gt;, au demeurant dépréciés selon les normes actuelles du web, par des
+                     éléments &lt;hi&gt; munis d'un attribut @rend avec pour valeur "italic"</li>
+                  <li> les éléments &lt;p&gt; marquant les paragraphes ont été conservés mais sans leur attribut
+                     @class de valeur "txt"</li>
+                  <li> les éléments &lt;h1&gt; marquant les titres ont été remplacés par des éléments &lt;head&gt;</li>
+                  <li> les éléments &lt;h2&gt; marquant les titres de sous-sections (par exemple «&nbsp;L'intrigue&nbsp;»,
+                     sous-section de «&nbsp;De quelques notions périmées&nbsp;») par des éléments &lt;head&gt; avec un
+                     attribut @type ayant pour valeur "subsection\_head"</li>
+                  <li> les éléments &lt;small&gt; par des éléments &lt;hi&gt; munis d'un attribut @rend avec pour valeur
+                     "small-caps"</li>
+                  <li> les éléments &lt;sup&gt; par des éléments &lt;hi&gt; munis d'un attribut @rend avec pour valeur
+                     "exposant"</li>
+                  <li> les éléments &lt;blockquote&gt; par des éléments &lt;cit&gt;</li>
+                  <li> les éléments &lt;p&gt; et leurs attributs marquant la mise en forme du nom de l'auteur
+                     de la citation mise en exergue, par un élément &lt;ref&gt;</li>
+               </ul>
+            </p>
+            <p>Notons que le nettoyage a été effectué en conservant, grâce à des commentaires, les
+               traces de balises supprimées que l'on pourrait vouloir restaurer (tels les éléments
+               &lt;div&gt; utilisés dans les fichiers HTMLd'origine pour insérer du blanc dans le corps
+               du texte).</p>
+            <p>Nous ajoutons des balises ouvrantes &lt;quote&gt; à chaque fois que le script de nettoyage
+               rencontre le caractère "«" et fermante après le caractère "»", afin d'effectuer un
+               premier repérage automatique des citations ou emprunts, qui seront ensuite complétés
+               et corrigés à la main si besoin. Notons que le script de nettoyage ajoute également
+               ces éléments en début et en fin de paragraphe du segment «&nbsp;Joë Bousquet le rêveur&nbsp;»
+               où cela est nécessaire (lorsque Alain&nbsp;Robbe-Grillet  cite plus d'un paragraphe il
+               n'insère pas de guillemets, rendant le balisage automatique plus laborieux).</p>
+            <p>Nous ajoutons également des éléments &lt;div&gt; marquant les sections du texte autour de
+               chaque article du recueil ainsi qu'autour des passages identifiables à des sous-sections
+               (telles les «&nbsp;notions périmées&nbsp;») cette fois munis d'attributs @type ayant pour valeur
+               "subsection".</p>
+            <p>Nous obtenons alors un fichier «&nbsp;.xml&nbsp;» valide qui n'est encore qu'une première étape
+               pour l'encodage complet.</p>
+            <h4>Vers un encodage XML-TEI en vue d'une édition numérique</h4><a id="tei"></a><p>Afin d'intégrer les références transtextuelles de <span class="STDitalic">Pour un nouveau roman</span>  à notre édition pour permettre l'édition enrichie que nous nous proposons de réaliser
+               nous employons un encodage de type «&nbsp;corpus&nbsp;». </p>
+            <div class="STDimg"><img src="img/screen_itei_corpus.jpg"><p class="STDimgCaption">La structure du fichier d'encodage</p><a id="fig:screen_tei_corpus"></a></div>
+            <p>Alors que la majorité des encodages TEI se contente d'un seul élément &lt;TEI&gt; contenant
+               l'œuvre ou le manuscrit encodé nous employons un élément &lt;corpus&gt; qui contiendra plusieurs
+               éléments &lt;TEI&gt; identifiés grâce à des attributs @xml:id. Une version vide du fichier
+               XML a pour cela été produite. Cet XML vide converti au format texte brut est ensuite
+               injecté par le script de fusion et de nettoyage des fichiers qui compose <span class="STDitalic">Pour un nouveau roman</span> . Il contient&nbsp;:</p>
+            <ul>
+               <li> un élément &lt;teiHeader&gt; (sorte de carte d'identité du document ou du texte) pour l'ensemble
+                  du fichier, contenant des informations succintes sur le projet d'édition auquel est
+                  rattaché le fichier.</li>
+               <li> et quelques éléments &lt;TEI&gt; accompagnés de &lt;teiHeader&gt;, vides pour les extraits des
+                  références transtextuelles.</li>
+               <li> un élément &lt;TEI&gt; et &lt;teiHeader&gt; contenant les informations relatives à l'édition
+                  de <span class="STDitalic">Pour un nouveau roman</span> . C'est cet élément &lt;TEI&gt; dans lequel sera injecté le texte nettoyé et pré-encodé
+                  par le script.</li>
+            </ul>
+         </p>
+         <p>Si nous reproduisons l'intégralité de <span class="STDitalic">Pour un nouveau roman</span>  dans l'élément &lt;text&gt; qui lui correspond nous n'insérons dans les autres éléments
+            &lt;text&gt; que les extraits qui nous intéressent&nbsp;: nous produisons bien une édition de
+            <span class="STDitalic">Pour un nouveau roman</span>  inscrit dans un corpus plus vaste, pas l'édition d'un corpus dont <span class="STDitalic">Pour un nouveau roman</span>  ne serait qu'un élément. Extraits transtextuels et passages de <span class="STDitalic">Pour un nouveau roman</span>  correspondant sont ensuite liés via un jeu d'attributs @corresp et @xml:id.</p>
+         <div class="STDimg"><img src="img/screen_corresp.jpg"><p class="STDimgCaption">Exemple de correspondance</p><a id="fig:screen_corresp"></a></div>
+         <h4>Encodage sémantique automatisé</h4>
+         <p>On désigne généralement par «&nbsp;encodage sémantique&nbsp;» l'ajout d'éléments XML identifiant
+            des noms de personnages, des toponymes, des dates, des références, etc. Afin d'accélerer
+            cette étape fastidieuse nous optons pour un premier encodage automatisé. Pour cela,
+            nous ajoutons à notre script de nettoyage des lignes servant à repérer les noms d'auteurs
+            et à les baliser selon le modèle suivant&nbsp;:
+            
+            <ul>
+               <li> un élément &lt;ref&gt; (référence)</li>
+               <li> muni d'un attribut @type avec pour valeur "author"</li>
+               <li> et d'un attribut @cRef (référence canonique) dont la valeur est constituée sur le
+                  modèle «&nbsp;nom\_prenom&nbsp;». Générée automatiquement par le script, cette valeur comprendra
+                  des majuscules et/ou des lettres accentuées (puisque Alain&nbsp;Robbe-Grillet  écrit «&nbsp;Samuel
+                  Beckett&nbsp;» la valeur sera "Beckett\_Samuel"), elle fera l'objet d'une correction grâce
+                  à l'emploi d'une feuille xsl.</li>
+            </ul>
+            Afin d'éviter le double balisage, nous balisons la dénomination complète («&nbsp;Samuel
+            Beckett&nbsp;») en ajoutant un espace insécable entre le prénom et le nom, avant de baliser
+            «&nbsp;Beckett&nbsp;» seul, s'il est précédé d'un espace sécable.</p>
+         <p>
+            Puis grâce à une transformation XSL (voir <a href="#ref:xsl_gen">ici</a>)sommaire, nous générons l'affichage des éléments &lt;quote&gt;, &lt;ref&gt; et &lt;hi&gt; munis d'un
+            attribut @rend="italic" afin de les identifier, corriger et compléter si besoin. Cette
+            vérification se fait livre en main&nbsp;: la transformation renvoie également pour chaque
+            élément identifié à la page à laquelle il apparaît. Cette étape est répétée plusieurs
+            fois, ce qui nous permet de raffiner le balisage automatique à chaque passage.</p>
+         <p>Avant de passer à l'encodage manuel nous utilisons une autre transformation XSL afin
+            de faciliter cette étape fastidieuse&nbsp;:
+            
+            <ul>
+               <li> Nous ajoutons des attributs aux éléments &lt;quote&gt; qui n'en ont pas, leurs valeurs
+                  doivent correspondre autant que possible aux éléments répertoriés dans notre base
+                  de données (voir <a href="#ref:db_modele_relationnel">ici</a>).</li>
+               <ul>
+                  <li> @type correspondant à ttNature</li>
+                  <li> @corresp qui correspond à l'@xml:id des extraits cités (encodé en &lt;text&gt;) et aux
+                     valeurs de ttIdent définies dans la base de données préfixé de "tt"</li>
+                  <li> @cert qui correspond à mReferenceStatu, soit le statut de la référence (est-elle
+                     mentionnée, citée, etc.)</li>
+                  <li> @ana correspondant au mAxiologicStatus (s'agit-il d'un blâme, d'un éloge, ou d'une
+                     mention indiférente&nbsp;?).</li>
+               </ul>
+               <li> Nous modifions les valeurs des @xml:id des éléments &lt;div&gt; qui entourent chacun des
+                  articles du texte, afin de les faire correspondre aux valeurs de notre base de donnée.</li>
+               <ul>
+                  <li> Par exemple, le chapitre «&nbsp;À quoi servent les théories&nbsp;» encodé par un &lt;div&gt; n'aura
+                     plus comme valeur de l'@xml:id "page006" mais "1". L'utilisation des pages comme identifiants
+                     nous paraît superflue, vu la présence d'éléments &lt;pb&gt; à chaque début de page.</li>
+               </ul>
+               <li> Nous retouchons les titres (de sections et de sous-sections) afin de corriger l'encodage
+                  d'origine qui encodait chacune des lignes d'un titre ou sous-titre ainsi que les dates
+                  dans deux éléments &lt;head&gt; différents. Les capitales sont également remplacées par
+                  des minuscules qui seront plus tard affichées en petites capitales.</li>
+               <li> Les mentions des dates sont intégrées aux titres et encodées en tant que &lt;date&gt; avec
+                  un attribut @rend dont la valeur est "italic". Par ailleurs, nous en retirons les
+                  parenthèses qui provoquaient une erreur sans doute due au moteur d'expression régulière
+                  d'Oxygen\footnoteB{En expression régulière, les signes «&nbsp;()&nbsp;» servent à garder en
+                  mémoire les caractères qu'ils contiennent. Or, notre transformation recourait au moteur
+                  d'expression régulière inclus dans Oxygen pour intégrer les dates au titre. Ceci provoquait
+                  une erreur&nbsp;: la transformation considérait que les caractères «&nbsp;()&nbsp;» devait être interprétés
+                  comme des délimiteurs d'expression régulière et non comme le contenu à supprimer,
+                  ainsi les dates étaient bien supprimées mais pas les parenthèses les entourants.,
+                  les parenthèses seront rétablies dans la version HTMLde l'édition.</li>
+               <li> Tous les autres éléments et attributs déjà présents sont reproduits à l'identique.
+                  Par là nous nous assurons de pouvoir réappliquer la transformation sur notre fichier
+                  d'encodage manuel autant de fois que nécessaire. Nous nous contenterons de modifier
+                  le nom du fichier de sortie afin de ne pas écraser les précédentes itérations. Ainsi
+                  nous pouvons appliquer des corrections «&nbsp;en cours de route&nbsp;» sans perdre les ajouts
+                  manuels.</li>
+            </ul>
+         </p>
+         <h4>Encodage sémantique à la main</h4>
+         <p>Certains contenus textuels ne peuvent être repérés automatiquement et nécessitent
+            donc d'être encodés à la main.</p>
+         <p>En effet il convient d'attribuer les bonnes valeurs aux attributs, voire de rectifier
+            l'encodage automatique qui ne peut, par exemple, distinguer entre la mention à la
+            page&nbsp;164 d'un titre «&nbsp;L'Année dernière à Marienbad&nbsp;» et la mention d'un élément diégétique
+            de cette œuvre «&nbsp;se sont-ils vraiment rencontrés, aimés, l’année dernière à Marienbad&nbsp;?&nbsp;»
+            un peu plus loin.</p>
+         <p>Notons par ailleurs les difficultés à limiter le balisage. En effet l'on pourrait
+            considérer certains éléments diégétiques, tels les allusions aux personnages des œuvres
+            de Beckett ou les supposées réactions sus-citées que Alain&nbsp;Robbe-Grillet  prête au
+            public comme devant être encodées en tant que &lt;quote&gt;&nbsp;: citer un personnage d'une
+            œuvre, n'est-ce pas citer l'œuvre&nbsp;? ces réactions mêmes (re)constituées par Alain&nbsp;Robbe-Grillet
+            ne sont-elles pas des éléments textuels mobilisés par Alain&nbsp;Robbe-Grillet  à la manière
+            de citation à réfuter&nbsp;?</p>
+         <p>Pour régler ces difficultés nous nous appuyons sur les objectifs que nous nous sommes
+            fixés au moment où nous avons élaboré ce projet d'édition numérique&nbsp;: nous souhaitons
+            produire une édition qui expose les relations transtextuelles de <span class="STDitalic">Pour un nouveau roman</span>  pour le replacer dans son époque, ou plutôt pour donner les représentations que
+            le texte produit de son époque. Dès lors, il nous paraît opportun de baliser les réactions
+            du public décrites ou (re)constituées par Alain&nbsp;Robbe-Grillet  afin de permettre de
+            les comparer à la réalité de ces réactions. Au contraire les paraphrases (surtout
+            si elles sont exactes) d'œuvres longuement commentées par Alain&nbsp;Robbe-Grillet , ne
+            nous intéresse que modéremment. La source identifiée, ou plutôt, vérifiée, l'intérêt
+            des passages cités n'ont que peu d'interêt par rapport au commentaire dans son ensemble.</p>
+         <p>De manière plus anecdotique, la recherche de chaînes de caractères contenant des apostrophes
+            telles «&nbsp;L'Étranger, L'Immortelle&nbsp;» pose un problème épineux à résoudre car l'apostrophe
+            est le signe utilisé par le moteur de recherche pour délimiter la chaîne. On écrit
+            
+            
+            <ul>
+               <li> 'L'étranger', </li>
+               <li> 'L\'étranger',</li>
+               <li> 'L''''étranger'&nbsp;; </li>
+            </ul>
+            le moteur renvoie une erreur. Après quelques essais nous abandonnons la correction
+            de ce segment&nbsp;: pour moins d'une dizaine de mentions aisément identifiées à la main,
+            chercher une solution trop longtemps ne présentait aucun intérêt.</p>
+         <p>L'encodage des sources citées se fait également à la main, chacun des textes du corpus
+            est ajouté aux éléments &lt;TEI&gt; munis d'un attribut @xml:id servant à l'identifier sur
+            le modèle&nbsp;: initialdel'auteur\_numérodel'œuvre&nbsp;» ainsi <span class="STDitalic">Mahu ou le matériau</span> sera désigné par «&nbsp;pr\_01&nbsp;» et <span class="STDitalic">Le Renard et la boussole</span> par «&nbsp;pr\_02&nbsp;». Chacun des extraits est ensuite inséré dans un élément &lt;div&gt; ayant
+            aussi un attribut @xml:id construit sur le modèle&nbsp;: iddel'œuvre\_pagededébutdelacitation&nbsp;»,
+            ainsi le premier extrait de <span class="STDitalic">Le Renard et la boussole</span> correspondra à «&nbsp;pr\_02\_09&nbsp;».    </p>
+         <p><a id="encMilestone"></a> Nous employons des éléments &lt;milestone/&gt;, bornes, pour inscrire les points rhétoriques
+            importants. Lors de la transformation XSL ces &lt;milestone&gt; seront transformés en élément
+            &lt;a/&gt;, <span class="STDitalic">anchor&gt;</span> ancre, ces éléments sans contenu seront invisibles au lecteur mais permettront de
+            constituer un menu de navigation sur la gauche de l'écran en XSL (voir <a href="#ref:xsl-gen">ici</a>). Leur attribut @id construit sur le modèle&nbsp;: «&nbsp;refutation2&nbsp;»
+            sera d'une part nécessaire à la bonne exécution du script (le lien hypertexte créé
+            dans la navigation renvera vers cet identifiant unique à chaque ancre au sein du texte)
+            et permettra de produire un nom compréhensible dans le menu&nbsp;; «&nbsp;refutation2&nbsp;» sera
+            analysé par la transformation qui écrira dans le lien hypertexte «&nbsp;Deuxième réfutation&nbsp;».</p>
+         <p></p>
+         <p>Les index des concepts adverses et des expressions privilégiées constituent des outils
+            à l'usage des chercheurs mais également un point d'entré ludique dans le corpus.</p>
+         <p><a id="encW"></a> Les expressions devant figurer dans ces index sont encodées en tant que &lt;term/&gt;,
+            «&nbsp;terme (considéré technique)&nbsp;»au sein d'éléments &lt;span&gt; «&nbsp;passage lié à une interprétation&nbsp;»,
+            munis d'attributs @type dont les valeurs «&nbsp;0&nbsp;» ou «&nbsp;1&nbsp;» orientent grâce à la transformation
+            XSL, le mot vers l'index des concepts adverses ou des expressions privilégiées, respectivement.
+            Les éléments &lt;span&gt; englobe l"expression et son contexte permettant de l'expliciter
+            (en effet la recension des adjectifs «&nbsp;vrai&nbsp;» ou «&nbsp;difficile&nbsp;»  seuls serait de peu
+            d'intérêt), l'expression encodée en &lt;term&gt; est ensuite mise en valeur via css, en
+            rouge ou vert pour les notions adverses ou les expressions privilégiées respectivement.</p>
+         <p>Dans une version précédente soumise à évaluation nous nous proposions d'encoder ces
+            éléments avec le couple &lt;w/&gt; «&nbsp;<span class="STDitalic">word</span>&nbsp;» et &lt;ab/&gt; «&nbsp;<span class="STDitalic">arbitrary segment</span>&nbsp;». Cette solution a finalement était rejetée car elle n'était pas valide en xml-tei.
+            Aussi, nous sommes-nous orientés vers des éléments plus spécifiques&nbsp;: employant des
+            chercher/remplacer pour remplacer tous les élémnents &lt;w/&gt; déjà placés en élément &lt;term/&gt;.&lt;br
+            /&gt;Enfin, notre transformation XSL de balisage semi-automatique, légèrement modifiée
+            nous permit de faire remonter l'attribut @type placé sur les éléments &lt;w&gt; sur les
+            éléments &lt;span&gt;.</p>
+         <p>Ces deux index prennent la forme de deux pages du site que le lecteur trouve dans
+            un menu déroulant de la navigation en haut de page «&nbsp;Commentaires thématiques&nbsp;». Après
+            une courte introduction chacun des termes utilisés est listé avec une mention de page
+            et en un clic sur le numéro de page, le lecteur peut être redirigé vers le passage
+            du texte concerné. Si aucun des termes ne fait l'objet d'un commentaire spécifique
+            (autre qu'à titre d'exemple), une introduction générale aux index est intégrée. Cette
+            introduction sert à présenter cette part du travail et également à délivrer un commentaire
+            sur l'aspect stylistique ici mis en valeur. Il ne nous a pas semblé opportun d'ajouter
+            un commentaire pour chaque terme, d'une part car ces termes sont rarement en eux-mêmes
+            des termes difficiles («&nbsp;personnage&nbsp;», «&nbsp;intrigue&nbsp;» etc.) et d'autre part car un renvoi
+            vers le passage du texte où le terme est employé nous semblait un outil bien plus
+            intéressant autant pour le lecteur expert que pour le lecteur néophyte. Enfin, il
+            nous semble que c'est en tant que système que ces expressions font sens. </p>
+         <h2>Vers l'édition numérique : transformation XSL</h2><a id="ref:xsl_gen"></a><p>Une fois l'encodage terminé, l'encodeur conçoit une transformation XSL, soit un fichier
+            contenant des informations de traitement afin de passer d'un fichier XML peu lisible
+            pour le lecteur à une édition numérique pour une lecture dans un navigateur web. En
+            effet les feuilles de styles XSL permettent de conserver le fichier XML originel pour
+            en créer d'autres de types divers, en l'occurence nous nous contentons de produire
+            un site internet, soit des pages au format HTML. Notons que le langage de balisage
+            HTMLest un dérivé de l'XML qui ne permet pas de structurer le contenu aussi finement
+            que l'XML mais permet un affichage via navigateur web pour lecture.</p>
+         <h3>Principes généraux</h3>
+         <p>Les transformations XSL fonctionnent par <span class="STDitalic">template</span>, patron, qui commande le traitement d'un ou de plusieurs éléments XML selon des restrictions
+            diverses laissées au soin de l'auteur de la transformation. On peut par exemple transformer
+            un élément &lt;quote&gt; muni d'un attribut @corresp en un lien hypertexte, qui, lié à des
+            scripts (voir <a href="#js">ici</a>) permettra l'affichage de contenus supplémentaires.</p>
+         <h3>Mise en œuvre</h3>
+         <p>Pour tenter d'éviter une écriture redondante nous nous efforçons de produire des templates
+            efficaces et réemployables. Par exemple pour constituer les pages HTMLde notre édition
+            numérique il nous faut générer autant de «&nbsp;&lt;header/&gt;&nbsp;» (soit la section au sommet
+            de la page) qu'il y a de pages. Aussi, nous contentons-nous de n'écrire qu'une seule
+            fois le «&nbsp;&lt;header/&gt;&nbsp;» (et tous les éléments identiques sur toutes les pages) au sein
+            d'un template nommé qui est ensuite appelé à chage génération de page avec des paramètres
+            permettant de modifier quelques éléments essentiels qui doivent bien être uniques
+            (tel le titre de la page).</p>
+         <div class="STDimg"><img src="img/screen_header.jpg"><p class="STDimgCaption">Templates gérant le bas (footer) et le haut (header) des pages</p><a id="fig:enter-label"></a></div>
+         <p>Notons que la production des pages est générée par un template matchant la racine
+            du document XML et appelant le template nommé «&nbsp;body&nbsp;» qui lui-même appelle les templates
+            «&nbsp;&lt;header&gt;&nbsp;», «&nbsp;&lt;footer&gt;&nbsp;», etc. adaptant le contenu de la page selon des paramètres
+            déclarés au moment de l'appel du template.</p>
+         <div class="STDimg"><img src="img/screen_body.jpg"><p class="STDimgCaption">Extrait du template gérant la génération des pages du site</p><a id="fig:enter-label"></a></div>
+         <h2>Résultat de la transformation : HTMLet css</h2>
+         <p><a id="htmlCss"></a></p>
+         <p>Nos feuilles XSL ont transformé notre document XML difficilement lisible par un lecteur
+            en plusieurs documents html, qui, liés à un fichier css, deviennent bien plus lisibles.</p>
+         <p>Architecture du web, le langage HTMLest, comme le langage XML dont il est un dérivé,
+            un langage de balisage. Il s'agit ici encore de baliser des segments textuels en vu
+            de les décrire mais contrairment à l'xml les balises utilisables en HTMLsont limitées
+            afin d'être interprétables par un navigateur internet. Parmi ces balises on trouve&nbsp;:
+            
+            <ul>
+               <li> &lt;p/&gt;, un paragraphe,</li>
+               <li> &lt;span/&gt; un segment de texte,</li>
+               <li> &lt;a/&gt; une ancre, ou lien hypertexte.</li>
+            </ul>
+            Si le HTMLintervient au niveau sémantique, le CSS <span class="STDitalic">Cascading Style Sheeet</span>, lui, sert à la mise en forme. C'est ce langage qui permet de transformer des segmentations
+            sémantiques en véritable boîte sur la page ou de mettre en valeur (par un jeu de couleur
+            par exemple) tel ou tel élément des pages.</p>
+         <p>
+            <h3>Les notes de l'édition critique : création d'infobulles</h3>
+         </p>
+         <p><a id="htmlCssInfo"></a></p>
+         <p>
+            Les interactions html/css permettent de générer des affichages utiles à notre édition
+            numérique. Détailler avec précision les choix esthétiques et pratiques que nous avons
+            été amené à faire n'aurait sans doute que peu de sens, cependant le travail effectué
+            sur les infobulles mérite d'être examiné en détail, afin d'expliciter la manière dont
+            le CSS agit sur le html.</p>
+         <p>Comme en xml-tei, nous disposons d'attributs spécifiques au HTMLpour caractériser
+            nos éléments. Parmi eux l'attribut @class est d'une utilité particulière pour permettre
+            les interactions entre HTMLet d'autres langages de programmation (dans le cas de notre
+            travail CSS et Javascript). Ces attributs @class et leurs valeurs sont générés par
+            notre transformation XSL et nous avons, dans le cas des infobulles un résultat qui
+            ressemble à ceci&nbsp;:</p>
+         <p><span class="STDgray" style="font-family:courier,monospace;">
+               &lt;span class="ref"&gt;contenu sur lequel porte la note&lt;span class="refinfo"&gt;la
+               note elle-même&lt;/span&gt;&lt;/span&gt; la suite du contenu
+               </span></p>
+         <p>, soit deux éléments &lt;span/&gt;, segments textuels, le second muni d'une classe «&nbsp;refinfo&nbsp;»
+            à l'intérieur du premier classé «&nbsp;ref&nbsp;» contient le contenu de la note qui sera en
+            infobulle. L'affichage standard d'un tel code serait le suivant&nbsp;:<br><span class="STDgray" style="font-family:courier,monospace;">contenu sur lequel porte la notela note elle-même la suite du contenu</span><br>
+            Or nous souhaitons que le second segment ne s'affiche que lorsque le curseur passe
+            sur la souris. C'est ici qu'intervient le css.</p>
+         <p>
+            <div class="STDimg"><img src="img/screen_css_infobulle.jpg"><p class="STDimgCaption">Le code CSS gérant les infobulles</p><a id="screenCssInfo"></a></div>
+         </p>
+         <h4>Les notes liées aux références transtextuelles</h4>
+         <p>Comme on peut le voir dans la figure <a href="#screenCssInfo">, CSS emploie des <span class="STDitalic">selector</span> auquel il attribue des propriétés. En l'occurence la <span class="STDitalic">class</span></a> «&nbsp;ref&nbsp;» est sélectionnée ligne&nbsp;299 et lui est attribuée une couleur (vert) ligne&nbsp;300.</p>
+         <p>Nous intéresse davantage le selecteur (ou plutôt les sélecteurs additionnés pour restreindre
+            les éléments ciblés) suivant «&nbsp;.ref .refinfo&nbsp;» qui se lit&nbsp;: l'élément classé «&nbsp;refinfo&nbsp;»
+            contenu dans un élément classé «&nbsp;ref&nbsp;». Ligne&nbsp;304 lui est attribuée la propriété «&nbsp;display:none&nbsp;»
+            qui empêche l'affichage de l'élément, le contenu de l'infobulle sera présent mais
+            invisible. Il ne sera rendu visible que grâce à la propriété «&nbsp;display:block&nbsp;» attribuée
+            aux éléments concernés par les sélecteurs «&nbsp;.ref:hover .refinfo&nbsp;», soit l'élément
+            classé «&nbsp;refinfo&nbsp;» contenu dans un élément classé «&nbsp;ref&nbsp;» sur lequel l'utilisateur
+            passe la souris (on parle de <span class="STDitalic">pseudoclass</span> pour désigner le sélecteur «&nbsp;hover&nbsp;»). Les autres propriétés correspondent à des
+            choix de designs pensés pour rendre l'infobulle lisible et pratique, ainsi les propriétés
+            de positionnement «&nbsp;position:absolute;left:20px;top:-30px;&nbsp;» servent à ordonner le
+            positionnement des infobulles selon une position absolue déterminée par rapport au
+            dernier ancêtre positionné (en l'occurence l'ancêtre classé «&nbsp;ref&nbsp;» muni de la propriété
+            «&nbsp;position:relative;&nbsp;»), le navigateur soustrait à ce point de référence 30&nbsp;px depuis
+            son sommet (l'infobulle apparaît plus haut) et y ajoute 20&nbsp;px depuis la gauche (l'infobulle
+            est légérement décallée à droite).</p>
+         <p>Un tel résultat pourrait être atteint en Javascript mais l'execution d'un tel script
+            serait légèrement plus lourde pour le navigateur et son écriture plus complexe que
+            quelques propriétés CSS correctement agencées. Notons que les attributs @class ne
+            sont pas seulement utilisés par le CSS mais également exploité par les scripts détaillés
+            infra.</p>
+         <h4>Notes critiques non liées aux références transtextuelles</h4>
+         <p>Nous pourrions souhaiter ajouter des notes explicatives sur le corpus, ou simplement
+            des notes type notes de bas de page au sein de nos commentaires.</p>
+         <p>S'il suffit pour les notes de nos commentaires d'être insérées directement au sein
+            de des éléments HTMLapproprié pour se comporter comme des infobulles, l'ajout de note
+            au sein du corpu nécessite un encodage particulier. Nous choisissons d'encoder le
+            contenu de la note en tant qu'élément &lt;note/&gt; que nous insérons au sein d'un élément
+            &lt;span/&gt; (sans attribut @type) qui contiendra la portion de texte concernée par l'annotation
+            et l'annotation au sein de l'élément &lt;note/&gt;. Après quoi, notre transformation XSL
+            vers HTMLproduit un élément &lt;span/&gt; classé «&nbsp;note&nbsp;» contenant l'élément &lt;span/&gt; classé
+            «&nbsp;noteinfo&nbsp;» contenant le contenu de la note. Ces éléments sont classés différemment
+            des notes liées aux références afin de permettre d'en distinguer la nature, mais leur
+            fonctionnement est strictement identique (elles sont liées aux même propriétés CSS).</p>
+         <h2>Une expérience de lecture&nbsp;: ajouts de scripts</h2><a id="js"></a><h3>Script pour la lecture</h3>
+         <h4>Javascript, présentation générale</h4>
+         <p>Afin de permettre l'interactivité d'une page, nous employons un langage de programmation
+            extrêmement courant&nbsp;: javascript. Ce langage de programmation permet la programmation
+            de fonctions qui, selon l'élément sur lequel clique l'utilisateur, provoqueront tel
+            ou tel comportement au sein de la page.</p>
+         <p>Une «&nbsp;fonction&nbsp;» est une suite d'instructions parfois conditionnées par des «&nbsp;paramètres&nbsp;»,
+            des informations extérieures à la fonction qui y sont injectées.</p>
+         <h4>Afficher les citations</h4><a id="quote_dis"></a><p>La première fonction que nous développons sert à afficher les extraits des autres
+            œuvres cités ou mentionnés par Alain&nbsp;Robbe-Grillet . Nous choisissons de programmer
+            un affichage que nous espérons élégant et pratique. En bas à droite de la page apparaît
+            un encart contenant l'extrait cité, sa source et des informations quant à l'emploi
+            de la citation (est-ce une «&nbsp;mention&nbsp;», est-ce un «&nbsp;blâme&nbsp;» ou un «&nbsp;éloge&nbsp;»?). L'encart
+            est censé permettre de continuer à lire <span class="STDitalic">Pour un nouveau roman</span>  sans avoir à le refermer. Moins élégant peut-être qu'une version qui obscurcirait
+            le reste de l'écran, nous pensons que permettre tel usage correspond davantage à ce
+            que souhaiterait un lecteur effectif.</p>
+         <div class="STDimg"><img src="img/screen_quote_result.jpg"><p class="STDimgCaption">Capture d'écran du résultat obtenu</p><a id="fig:quote"></a></div>
+         <p>
+            Au moyen de notre transformation XSL, nous créons pour chacune des citations l'appel
+            d'une fonction qui recevra en paramètre (selon la citation) l'identifiant du passage
+            cité.</p>
+         <p>
+            On remarque que l'on injecte en paramètre l'identifiant (@corresp) du passage cité,
+            et les statuts référentiels et axiologiques de la référence (@cert et @ana, respectivement)
+            ainsi qu'un dernier paramètre dont les valeurs possibles sont «&nbsp;1&nbsp;» ou «&nbsp;0&nbsp;» qui sert
+            à orienter le comportement de la fonction nommée «&nbsp;displayExtract&nbsp;».</p>
+         <div class="STDimg"><img src="img/screen_quote_js1.jpg"><p class="STDimgCaption">Extrait du script gérant l'affichage des extraits cités</p><a id="fig:displayExtract1"></a></div>
+         <div class="STDimg"><img src="img/screen_quote_js2.jpg"><p class="STDimgCaption">Extrait du script gérant l'affichage des extraits cités</p><a id="fig:displayExtract2"></a></div>
+         <p>En effet, cette fonction n'a qu'à rendre visible le passage concerné lorsque l'utilisateur
+            clic sur une citation. Cependant les choses se compliquent dès lors que nous souhaitons
+            afficher plus d'un extrait pour une même citation. En effet, la même citation par
+            exemple «&nbsp;Don&nbsp;Quichotte&nbsp;» dans l'article «&nbsp;Un roman qui s'invente lui-même&nbsp;» peut
+            renvoyer à plusieurs passages de <span class="STDitalic">Le Renard et la boussole</span>. Or l'encodage xml-tei nous permet précisément d'insérer plusieurs valeurs à l'attribut
+            @corresp séparées par un espace.</p>
+         <p>On aura donc&nbsp;: \verb|&lt;quote corresp="pr_02_25 pr_02_50"&gt;Don Quichotte&lt;/quote&gt;| à prétraiter
+            car notre script Javascript ne peut recevoir qu'une seule valeur en paramètre et ne
+            sera pas capable d'interpréter une suite de valeurs comme telle. Dès lors nous avons
+            opté pour un prétraitement en XSL (voir <a href="#fig:corrspAfect">ici</a>).</p>
+         <p>Nous souhaitons arriver au résultat suivant&nbsp;: <span class="STDgray" style="font-family:courier,monospace;">&lt;span onclick="displayExtract(pr_02_25_02);displayExtract(pr_02_25_50);&gt;Don
+               Quichotte&lt;/span&gt;</span>, soit «&nbsp;lorsque l'utilisateur clique sur ce segment la fonction displayExtract est
+            appelée deux fois sur deux extraits différents. Pour ce faire nous devons séparer
+            les deux valeurs et répéter la valeur de l'attribut @onclick en ne changeant qu'un
+            seul paramètre. Dans un premier template XSL nous testons la présence ou non d'un
+            espace au sein de la valeur @corresp. S'il y a un espace une première partie de la
+            valeur de l'attribut @onclick (soit un premier extrait) est gérée après quoi un autre
+            template est appelé. Ce template nommé «&nbsp;correspAffect&nbsp;» reçoit en paramètre tout
+            le contenu de l'attribut qui suit l'espace, il procède ensuite de même&nbsp;: gère le premier
+            extrait en créant l'appel de la fonction sur ce qui précède l'espace (soit le deuxième
+            extrait), puis via un appel recursif va gérer les unes après les autres toutes les
+            valeurs de l'attribut @corresp après l'espace. S'appelant lui-même le template boucle
+            sur une partie toujours plus réduite de l'attribut @corresp qui correspondra à autant
+            de paramètres ensuite envoyés dans le Javascript jusq'à ce qu'il n'y ait plus d'espace
+            au sein du reste de @corresp, alors, le template produit un dernier appel à la fonction
+            (s'il n'y a plus d'espace il reste l'identifiant d'un extrait) puis s'arrête.</p>
+         <div class="STDimg"><img src="img/screen_quote_xsl.jpg"><p class="STDimgCaption">Le template correspAffect qui sépare les correspondances multiples</p><a id="fig:corrspAfect"></a></div>
+         <p>Une fois tous les appels à la fonction générés, il convient de permettre à la fonction
+            elle-même d'afficher effectivement ces extraits. En effet, afin de permettre au lecteur
+            de refermer un encart contenant un extrait à volonté, nous avons créé une fonction
+            qui repère les extraits affichés (s'il y en a) et les cache (on revient donc à la
+            situation initiale). Cette fonction est attachée à un segment en haut des encarts
+            des extraits où un «&nbsp;X&nbsp;» symbolise efficacement une croix.<br>
+            Cependant il paraît très probable que le lecteur ne ferme pas lui-même les encarts,
+            nous l'encourageons d'ailleurs à le faire en lui permettant de continuer à lire le
+            texte sans (trop) d'encombrement visuel. Aussi avons-nous décidé d'appeler la fonction
+            refermant les encarts ouverts au sein de la fonction les affichant avant qu'elle ne
+            les fasse apparaître.<br>
+            Lorsqu'un seul extrait est à afficher cela ne pose pas de problème&nbsp;: la fonction ferme
+            les encarts affichées puis ouvre celui sur lequel le lecteur a clic. Cependant dans
+            les cas où plusieurs extraits sont à afficher, la fonction les affichera puis les
+            cachera de nouveau jusqu'au dernier appelé. Nous ajoutons donc un dernier paramètre
+            à cette fonction&nbsp;: «&nbsp;c&nbsp;» dont les valeurs («&nbsp;0&nbsp;» ou «&nbsp;1&nbsp;») détermineront si la fonction
+            doit, ou non, cacher les extraits précédemment affichés. 
+            Ainsi voit-on <a href="#fig:corrspAfect">ici</a>, lignes&nbsp;419-422, l'ajout d'un '0' à la fin des appels générés s'ils ne sont pas les
+            premiers (ou/et les seuls).</p>
+         <p>
+            Si c'est bien Javascript qui produit l'affichage et lie plusieurs éléments HTMLgénérés
+            via XSL depuis l'xml, c'est ici encore l'xsl qui nous permet de produire très efficacement
+            des liens complexes entre différents langage de programmation.</p>
+         <h4>Permettre des variantes d'affichage</h4>
+         <p>Afin de permettre un confort de lecture accru, du moins personnalisable, deux boutons
+            sont ajoutés. Le premier situé en haut à droite de la page permet de passer d'un thème
+            clair à un thème sombre. Le second n'est présent que sur les pages des articles de
+            <span class="STDitalic">Pour un nouveau roman</span>  et permet d'afficher ou de masquer les numéros de page de l'édition utilisée pour
+            le présent travail\footnoteB{Alain&nbsp;Robbe-Grillet ,<span class="STDitalic">Pour un nouveau roman</span> , Paris, Éditions de Minuit, coll. «&nbsp;Double&nbsp;», [1963] 2011. Ces deux boutons appellent
+            des fonctions qui stockent le choix de l'utilisateur ce qui évite à l'utilisateur
+            d'avoir à clicr de nouveau à chaque chargement de page. Notons que le choix de l'utilisateur
+            est stocké parmi les fichiers temporaires du navigateur employé, dès lors il peut-être
+            supprimé en vidant le cache du navigateur mais également en cliquant sur les boutons
+            de manière à réinitialiser l'affichage, car le passage au thème clair et le masquage
+            des numéros de page éliminent le fichier temporaire.</p>
+         <h4>Afficher les variantes</h4>
+         <h3>Interactivité de la base de donnée</h3>
+         <p>
+            Afin de rendre la base de données lisible, plus aisément que dans un tableau nous
+            employons l'outil GraphCommons\footnoteB{Voir&nbsp;: <a href="https://graphcommons.com/graphs/2ffc7c8c-3d1b-4814-966b-593b1c206f3c">https://graphcommons.com/graphs/2ffc7c8c-3d1b-4814-966b-593b1c206f3c</a>.</p>
+         <p>Cet outil premet la production de graphique depuis un fichier de type .csv, (soit
+            un document texte, interprétable comme un tableau par les applications de type tableur
+            et assurant une interopérabilité très élevée notamment au sein de script perl ou javascript).
+            Ainsi, nous exportons le contenu de la base de données au bon format puis retravaillons
+            les données pour un meilleur affichage dans l'application.
+            La base de données est d'abord exportée au format .csv, le tableau au fichier texte
+            que l'on obtient a alors une colonne (les colonnes sont séparées au sein du texte
+            par des virgules) par propriété des entitées (voir&nbsp;: <a href="#ref:db_modele_relationnel">ici</a>) de la base afin d'être utilisable par l'application GraphCommons, les colonnes nécessitent
+            d'être renommées et quelques valeurs ajustées. En effet, une colonne «&nbsp;weight&nbsp;» qui
+            détermine la taille d'un lien est interprétée de manière croissante, or nous avions
+            choisi de représenter l'intensité des liens de manière décroissante («&nbsp;0&nbsp;» étant la
+            citation et «&nbsp;la mention reconstituée&nbsp;»), pour un affichage approrpié nous modifions
+            donc les valeurs pour les inverser et renommons les colonnes notamment grâce à des
+            scripts perl rudimentaires.</p>
+         <h2>Conception et réalisation d'une base de donnée</h2>
+         <h3>Principes généraux</h3>
+         <p> On appelle base de données un mode de structuration de l'information qui permet de
+            stocker un grand nombre d'informations sur un petit espace disque. Il existe plusieurs
+            modèles de structuration de ces bases de données, mais pour le présent travail n'est
+            employé que le modèle le plus courant&nbsp;: le modèle relationnel.</p>
+         <p>    Dans une base de données relationnelle on ne stocke pas seulement des informations
+            brutes telles «&nbsp;Robbe-Grillet, Une voie pour le roman futur&nbsp;» mais bien des informations
+            mises en relations les unes avec les autres, chacune ayant une nature définie au sein
+            de la base, on aurait donc plutôt&nbsp;: «&nbsp;L'auteur Robbe-Grillet a écrit l'article nommé
+            "Une voie pour le roman futur".&nbsp;».</p>
+         <p>    Nous nous proposons d'illustrer via une base de données les liens que tisse chacun
+            des textes constituant l'ensemble avec les publications antérieures et les référents
+            (textuels ou autres) qui sous-tendent l'argumentation tout en rendant compte des différents
+            thèmes abordés afin de donner une vue d'ensemble du recueil perçu comme un tissu de
+            textes au sein d'un environnement dont il donne, de manière implicite et/ou explicite,
+            une représentation.</p>
+         <p>    Les bases de données étant un mode pérenne de stockage et de partage des données,
+            cet outil nous a semblé renforcer l'interopérabilité de notre travail. En effet, notre
+            fichier XML étant un objet tourné vers l'édition, s'il est lui aussi pérenne et modifiable&nbsp;;
+            un ingénieur d'étude ou un chercheur au profil différent du nôtre pourrait préférer
+            se servir de la base de donnée. Rapide, modifiable à souhait et pratique d'utilisation
+            pour une alimentation continue au fil d'une lecture, la base de données relationnelle
+            nous paraît un outil performant pour traiter et mettre en valeur les relations transtextuelles
+            qui parcourent <span class="STDitalic">Pour un nouveau roman</span> et l'intègrent au sein d'un corpus plus vaste. On pourrait s'imaginer qu'une fois
+            la base établie et rendue accessible au public, des corrections ou des propositions
+            émergent du lectorat. En effet si nous nous sommes efforcé de produire un travail
+            rigoureux il paraît difficilement concevable qu'aucune erreur n'est était commise
+            et aucune référence oubliée. On pourrait même aller jusqu'à imaginer une équipe de
+            chercheurs, au profil plus axés humanités numériques que littérature seuls, se répartissent
+            des sections du <span class="STDitalic">Pour un nouveau roman</span>  et entrent au fur et à mesure de leur lecture les références et citations, avant
+            de se contrôler mutuellement. </p>
+         <h3>Mise en œuvre</h3>
+         <h4>Modèle conceptuel</h4><a id="ref:db_modele_conceptuel"></a><p> La première étape de constitution d'une base de données est l'élaboration d'un modèle
+            conceptuel. Ce modèle conceptuel constitue une représentation sommaire d'une partie
+            restreinte du monde, en l'occurrence une lecture donnée de <span class="STDitalic">Pour un nouveau roman</span>  . Les modèles conceptuels sont constitués&nbsp;: 
+            
+            <ul>
+               <li> d'entités, les objets représentés (par exemple&nbsp;: les premières publications, les
+                  articles de <span class="STDitalic">Pour un nouveau roman</span> , les références transtextuelles).</li>
+               <li> chacun des objets d'une entité sont appelés «&nbsp;instances&nbsp;» (ainsi «&nbsp;Une voie pour
+                  le roman futur&nbsp;» est une instance de l'entité ARTICLES).</li>
+               <li> d'attributs, les qualités de ces objets (par exemple&nbsp;: date de publication, page
+                  de début, nature de la référence).</li>
+               <li> d'associations, les relations qui unissent les entités (par exemple&nbsp;: «&nbsp;correspond
+                  à&nbsp;», «&nbsp;mentionne&nbsp;»), elles peuvent également être munies d'attributs.</li>
+               <li> chacune des associations est munie de cardinalités qui précisent le nombre minimal
+                  et maximal de fois où l’entité est impliquée dans l’association. Par exemple&nbsp;: l'entité
+                  «&nbsp;ARTICLE&nbsp;» peut ne pas mentionner d'entités de TRANSTEXTS et peut en mentionner un
+                  nombre virtuellement infini, la cardinalité de l'association «&nbsp;MENTION&nbsp;» à l'endroit
+                  de «&nbsp;ARTICLES&nbsp;» sera donc 0,n&nbsp;; où 0 équivaut à la cardinalité minimale et n (plus
+                  d'une fois) à la cardinalité maximale.</li>
+            </ul>
+            Par convention on évite l'usage d'accents et d'espace et les noms d'entités et d'associations
+            sont inscrits en majuscule, les entités sont représentées par un rectangle, les associations
+            par un cercle (voir figure <a href="#concept">ici</a>). Par ailleurs, parmi les attributs, notons la nécessité d'utiliser l'un des attributs
+            comme clef primaire soulignée par convention, identifiant de chacun des objets.</p>
+         <p>
+            <div class="STDimg"><img src="img/MEMmodele_conceptuel.png"><p class="STDimgCaption">Modèle conceptuel</p><a id="concept"></a></div>
+            Afin de permettre une implémentation aisée et rigoureuse nous préfixons nos attributs
+            avec la (ou les) première(s) lettre(s) de l'entité ou de l'association à laquelle
+            ils renvoient&nbsp;; dans les cas où une association commence par la même lettre qu'une
+            autre entité nous lui substituons les initiales des deux entités mises en relation.</p>
+         <p>Chacun des articles de <span class="STDitalic">Pour un nouveau roman</span>  constitue une instance de l'entité ARTICLES définie par un identifiant (aIdent),
+            un titre (aTitle), une ou deux dates (aDateFirst et aDateLast) déclarée(s) par Alain&nbsp;Robbe-Grillet
+            , leur place dans le recueil (aOrder) et leur étendue incarnée par deux attributs
+            aPageBegining et aPageEnd correspondant respectivement à la première et à la dernière
+            page de l'article.</p>
+         <p>La deuxième entité FIRSTPUBLICATIONS est liée par une association FROM à 
+            ARTICLES. Ses attributs préfixés «&nbsp;fp&nbsp;» caractérisent l'instance constituée par la
+            première publication, ceux préfixés «&nbsp;fpSrc&nbsp;» décrivent la source de cette première
+            publication, soit le journal ou la revue dont elle est issue. Créer une nouvelle entité
+            pour ces sources ne nous a pas paru nécessaire car ces sources ne nous intéressent
+            qu'en ce qu'elles induisent une tonalité (polémique, scientifique, savante, profane)
+            ou une réception particulière aux premières publications.</p>
+         <p>
+            Intitulée TRANSTEXTS, la quatrième et dernière entité est constituée de toutes les
+            œuvres, auteurs ou concepts (identifiés comme étant de seconde main) mentionnées par
+            Alain&nbsp;Robbe-Grillet . La nature diverse («&nbsp;caricature bien connue&nbsp;» ou simplement
+            «&nbsp;Heidegger&nbsp;») des instances de cette entité explique le foisonnement d'attributs
+            qui seront, selon les cas, sans valeur ou bel et bien mobilisés.</p>
+         <p>L'association MENTION illustre les liens qu'entretiennent les ARTICLES avec les TRANSTEXTS,
+            les attributs mAxiologicStatus et mReferenceStatus caractérisent le lien que <span class="STDitalic">Pour un nouveau roman</span>  entretient avec telle ou telle référence. Si les valeurs possibles de mAxiologicStatus
+            sont relativement restreintes («&nbsp;eloge&nbsp;», «&nbsp;blame&nbsp;», «&nbsp;ambigue&nbsp;»), les valeurs de
+            mReferenceStatus sont plus difficiles à caractériser simplement. En effet si dans
+            certains cas Alain&nbsp;Robbe-Grillet  cite une œuvre de manière explicite en donnant auteur
+            et titre, il s'épargne bien souvent de donner des références précises&nbsp;; alors nous
+            faut-il être en mesure de caractériser toutes les nuances de l'implicite&nbsp;: l'auteur
+            est-il cité sans être nommé&nbsp;? l'emprunt manifeste est-il désigné comme un emprunt
+            d'une source à son tour déclarée ou non&nbsp;? etc. Aussi optons-nous pour un système similaire
+            à celui mis en œuvre pour l'attribut asImportance. Si nous nous sommes efforcé d'établir
+            un système rigoureux et adapté au texte, telles catégories ne se défont jamais tout
+            à fait d'une appréciation subjective (voir <a href="#ref:dbEtabValeurs">ici</a>).</p>
+         <h4>Modèle relationnel</h4><a id="ref:db_modele_relationnel"></a><p>La deuxième étape de la constitution d'une base de données est la conversion du modèle
+            conceptuel au modèle relationnel qui correspond à une représentation schématique de
+            la manière dont les données seront inscrites dans la base. Le point crucial de cette
+            conversion est la gestion des associations. Entités et associations sont remplacées
+            par des relations ou <span class="STDitalic">tables</span> qui, selon les cas, illustrent des relations de dépendances ou non entre elles.</p>
+         <p>En effet, lorsqu'une seule des entités liées par une association à une autre a une
+            cardinalité maximale de «&nbsp;1&nbsp;», cela signifie qu'elle n'a pas d'existence indépendante
+            de l'autre entité. Alors l'association ne devient pas une relation mais n'est plus
+            présente dans le modèle relationnel que par la présence d'une «&nbsp;clef secondaire&nbsp;»
+            dans la relation dépendante de l'autre, cette clef secondaire a la même valeur que
+            la clef primaire de l'instance cible.
+            Au contraire, lorsque les deux entités sont reliées par une association dont les cardinalités
+            maximales sont «&nbsp;n&nbsp;», alors l'association devient une relation contenant deux clefs
+            secondaires&nbsp;: les clefs primaires des deux instances liées par l'association. Ce qui
+            donne pour notre modèle&nbsp;:</p>
+         <p>
+            <div class="STDimg"><img src="img/MEMmodele_relationnel.png"><p class="STDimgCaption">Modèle relationnel</p><a id="relationnel"></a></div>
+         </p>
+         <p>L'association FROM reliant les entités FIRSTPUBLICATIONS et ARTICLES disparaît dans
+            le modèle relationnel car la cardinalité maximal de FIRSTPUBLICATIONS a pour valeur
+            «&nbsp;1&nbsp;», laquelle est donc dépendante de ARTICLE dont la cardinalité maximale a pour
+            valeur «&nbsp;n&nbsp;» (un article peut être une compilation ou une réécriture de plusieurs
+            publications premières mais les articles originaux ne correspondent jamais qu'à un
+            seul article du recueil final). Dès lors les instances FIRSTPUBLICATIONS contiennent
+            désormais une clef secondaire qui correspond à la clef primaire d'une instance de
+            ARTICLES.</p>
+         <p>L'association ABOUT devient une table car les deux entités qu'elle relie ont pour
+            cardinalité maximale «&nbsp;n&nbsp;» (un même SUBJECT peut être traité par plusieurs ARTICLES
+            et chaque ARTICLES peut traiter de plusieurs SUBJECT). ABOUT est dans le modèle relationnel
+            une relation avec pour clef primaire deux clefs secondaires, l'une correspondant à
+            la clef primaire de ARTICLES, l'autre correspondant à la clef primaire de SUBJECTS.</p>
+         <p>L'association MENTION devient une table car les deux entités qu'elle relie ont pour
+            cardinalité maximale «&nbsp;n&nbsp;» (un même ARTICLES peut faire référence à plusieurs TRANSTEXTS
+            et chaque TRANSTEXTS peut être mentionné par plusieurs ARTICLES). MENTION est dans
+            le modèle relationnel une relation avec pour clef primaire deux clefs secondaires,
+            l'une correspondant à la clef primaire de ARTICLES, l'autre correspondant à la clef
+            primaire de TRANSTEXTS.</p>
+         <h4>Implémentation</h4>
+         <p>Lors de l'implémentation, nous nous connectons à un serveur local (soit un serveur
+            hébergé sur notre propre machine) via un logiciel dédié et rentrons à la main ou grâce
+            à des scripts les données qui prennent dans l'interface de l'application l'apparence
+            de tableaux (on retrouve notre modèle relationnel). Les scripts servant à la création
+            de la base n'ont en eux-mêmes que peu d'intérêt&nbsp;: on envoie littéralement des chaînes
+            de caractères dans un ordre donné, dans un langage qui semble d'un anglais délesté
+            d'une bonne part de sa syntaxe.<br>En décembre&nbsp;2022, nous avons produit une première version de cette base de données
+            relationnelle dans le cadre de l'évaluation du cours de base données animé par Mme&nbsp;Delphine&nbsp;<span class="STDsc">Tribout</span>. Le modèle soumis alors à évaluation nécessitait quatre entités&nbsp;: la base incluait
+            une entité «&nbsp;SUBJECTS&nbsp;», un recensement des domaines abstraits dont traitaient les
+            ARTICLES. Afin d'être le plus pertinent possible nous nous proposions de produire
+            des valeurs les plus précises possibles pour l'attribut sDomain («&nbsp;théorie Litteraire
+            <span class="STDsc">xx</span><span class="STDexposant">e</span>&nbsp;» plutôt que «&nbsp;litterature&nbsp;»).</p>
+         <p>Cette entité a depuis été retirée du modèle car elle nous semblait avoir peu d'intérêt
+            tant le choix des domaines à affubler à tel ou tel article était d'une part redondant
+            (les mêmes domaines étaient attribués à tous les articles), d'autre part le fruit
+            d'une appréciation personnelle parfois difficile à objectiver. Si un outil est toujours
+            le produit d'une recherche particulière et, dès lors, le résultat d'une lecture donnée,
+            le découpage des domaines traités par les articles du recueil nous paraissait au mieux
+            d'un intérêt limité («&nbsp;À quoi servent les théories&nbsp;» traite de théorie littéraire
+            du <span class="STDsc">xx</span><span class="STDexposant">e</span> et de philosophie), au pire, difficilement défendable. Par exemple, nous avions réuni
+            l'ensemble des filiations du nouveau roman tels «&nbsp;Faulkner&nbsp;» ou «&nbsp;Kafka&nbsp;» généralement
+            mentionnés ensemble au sein du domaine «&nbsp;histoire littéraire internationale synchronique&nbsp;»
+            plutôt que de les séparer dans des catégories par siècle et/ou pays car Alain&nbsp;Robbe-Grillet
+            ne fait pas une histoire de la littérature anglaise ou tchèque mais inscrit ses références
+            dans une histoire littéraire internationale&nbsp;; on aurait pu également considérer que
+            ces références, puisqu'elles s'inscrivent dans une volonté de décrire une filiation
+            au nouveau roman, devraient être rattachées au domaine «&nbsp;théorie littéraire <span class="STDsc">xx</span><span class="STDexposant">e</span>&nbsp;». De manière générale, il nous semblait que l'attribution de domaine aux références,
+            effectuée en fonction de notre lecture du recueil, induisait trop de choix problématiques
+            pour être pleinement satisfaisante.</p>
+         <h3>Mode d'établissement des valeurs des attributs</h3><a id="ref:dbEtabValeurs"></a><h4>aOrder, conception de la structure du recueil</h4>
+         <p>Il convient de noter une particularité dans la structure du recueil qui a nécessité
+            un choix de notre part&nbsp;: cinq articles sont présentés dans le recueil comme des sous-sections
+            d'un chapitre «&nbsp;Éléments d'une anthologie moderne&nbsp;», dès lors il eût pu paraître nécessaire
+            de prévoir des valeurs de aOrder sur le modèle 5.1, 5.2 etc. dénotant sections et
+            sous-sections, cependant dans la mesure où l'article enchâssant les cinq critiques
+            littéraires constituant l'ensemble est ajouté <span class="STDitalic">a posteriori</span> il nous a paru préférable de le considérer comme un article à part entière détaché
+            de ses sous-articles qui n'entretiennent aucun lien explicite si ce n'est leur introduction,
+            sorte de propos général ayant une fonction de seuil, ce choix nous paraît d'autant
+            plus déterminant que l'on note l'absence de conclusion achevant de constituer l'ensemble.</p>
+         <p>De même si la table des matières de <span class="STDitalic">Pour un nouveau roman</span>  présente des sous-sections «&nbsp;personnage&nbsp;», «&nbsp;intrigue&nbsp;», «&nbsp;engagement&nbsp;» de l'article
+            «&nbsp;De quelques notions périmées&nbsp;», ces sous-sections sont bien moins marquées dans
+            le texte et nous semblent constituer davantage des paragraphes titrés issus d'articles
+            fortement réécrits pour s'intégrer comme un tout homogène.</p>
+         <h4>Valeurs de mReferenceStatus</h4>
+         <p>Afin de modéliser de manière efficace et rigoureuse le statut des références, nous
+            avons opté pour un système d'entiers inversement proportionnels au degré d'explicite
+            des références dans le texte d'Alain&nbsp;Robbe-Grillet .</p>
+         <ul>
+            <li> Valeur <span class="STDbold">0, explicite</span>&nbsp;: citation, du moins segment présenté dans le texte comme telle dont la source (auteur
+               ou œuvre) est mentionnée.</li>
+            <li> Valeur <span class="STDbold">1, mention</span>&nbsp;: l'entité est mentionnée sans être citée. Il peut s'agir d'une glose interprétée
+               (où l'interprétation de Robbe-Grillet est explicite).</li>
+            <li> Valeur <span class="STDbold">2, mention ambiguë</span>&nbsp;: cette valeur est réservée presque exclusivement à des entités collectives mentionnées
+               sans nécessairement que les signifiés (les auteurs désignés par «&nbsp;les critiques traditionnels&nbsp;»)
+               soient identifiables. Pareille identification étant difficile voire impossible&nbsp;: on
+               constate qu'il s'agit bien souvent d'un procédé rhétorique visant à discréditer sans
+               les nommer des adversaires réels ou imaginaires.</li>
+            <li> Valeur <span class="STDbold">3, emprunt non déclaré fortement suggéré</span>&nbsp;: réservée aux cas où Alain&nbsp;Robbe-Grillet  emprunte un concept, cite ou glose une
+               référence dont il ne donnera pas la source mais dont la paternité est suffisamment
+               présente à l'esprit de ses lecteurs ou suffisamment appuyée par lui pour être inférée.
+               Ainsi lorsque Robbe-Grillet disserte sur «&nbsp;Le petit détail qui fait vrai&nbsp;» à la page&nbsp;176,
+               le lecteur compétent reconnaît sans mal la conception que défendait Barthes du style
+               de Balzac régulièrement mobilisée par Alain&nbsp;Robbe-Grillet .</li>
+            <li> Valeur <span class="STDbold">4, emprunt ou mention non déclaré(e) non suggéré(e) reconstitué(e)</span>&nbsp;: réservée pour des emprunts que nous identifions sans qu'ils ne soient signalés
+               par l'auteur. Ainsi p.&nbsp;69 lorsque Alain&nbsp;Robbe-Grillet  cite des lieux propices à la
+               poésie romantique y glissant «&nbsp;vallon&nbsp;» nous identifions Lamartine. Enfin notons que
+               dans ces cas comme dans les cas précédents lorsque la valeur de l'un des attributs
+               est reconstituée par l'éditeur nous les insérons entre crochets, pour les repérer
+               et corriger aisément si besoin mais également par honnêteté intellectuelle si pareil
+               travail devait être amené à intégrer un travail de recherche plus vaste sur <span class="STDitalic">Pour un nouveau roman</span> .</li>
+         </ul>
+         <p>Faisant toutes deux l'objet d'une interprétation de l'éditeur, les valeurs «&nbsp;3&nbsp;» et
+            «&nbsp;4&nbsp;» peuvent sembler proches. C'est en effet le cas, elles dépendent fortement de
+            l'éditeur qui peut reconnaître des références non produites par Robbe-Grillet ou au
+            contraire ne pas en reconnaître. Il nous a néanmoins semblé nécessaire de différencier
+            la valeur «&nbsp;4&nbsp;» de «&nbsp;3&nbsp;» car «&nbsp;4&nbsp;» marque un degré d'intervention plus élevé qui pourrait
+            relevé de la surinterprétation&nbsp;: si nous proposons de lire une référence à Lamartine
+            dans l'emploi du terme «&nbsp;vallon&nbsp;» p.&nbsp;69, il convient de remettre cette proposition
+            à sa juste place. Les indices pour identifier la références sont maigres&nbsp;: le contexte
+            traite d'un style anthropomorphique induisant fortement la poésie romantique sans
+            qu'elle ne soit explicitement citée. Là où la valeur «&nbsp;3&nbsp;» aurait pour modèle une
+            expression du type «&nbsp;un certain poète romantique ayant écrit un certain poème à propos
+            d'un vallon&nbsp;»&nbsp;; le lecteur interprète et risque de se tromper mais il est bien sûr
+            que le texte suggère un auteur. </p>
+         <p>Si pareil projet devait bénéficier d'une équipe plutôt que d'un seul encodeur/éditeur,
+            nous serions tentés de faire de la catégorie «&nbsp;4&nbsp;» une catégorie temporaire dont chacun
+            des membres serait destiné à être évalué pour être passé en «&nbsp;3&nbsp;» ou supprimé. Nous
+            pensons que cette catégorie «&nbsp;4&nbsp;» marque plus encore que les autres la subjectivité
+            de l'éditeur et qu'il serait nécessaire ici d'avoir recourt à une forme de collégialité
+            ou de collaboration pour faire un sort aux références identifiées comme relevant de
+            cette catégorie.</p>
+         <h4>Valeurs de mAxiologicStatus</h4>
+         <p>Pour délimiter les valeurs de axiologicStatus nous partons de deux polarités premières,
+            le blâme et l'éloge constituant le moteur des théories de Alain&nbsp;Robbe-Grillet  et
+            le cœur de sa rhétorique, auxquels nous adjoignons deux autres statuts axiologique&nbsp;:
+            l'ambiguïté et l'indifférence. </p>
+         <p>S'il est aisé de reconnaître que la référence Balzac (ses œuvres ou le concept empreint
+            des conceptions de Barthes) fait l'objet d'un blâme il est plus difficile de juger
+            le statut d'un référent comme Stendhal qui n'est pas mentionné pour lui-même mais
+            comme argument servant à critiquer «&nbsp;un jeune écrivain contemporain qui écrirait comme
+            Stendhal&nbsp;». Nous avons choisi d'utiliser les valeurs «&nbsp;blame&nbsp;» et «&nbsp;eloge&nbsp;» de manière
+            indifférente lorsque la référence est critiquée ou vantée de manière explicite ou
+            sollicité comme raison d'une critique ou d'un éloge portant sur une tierce référence.</p>
+         <p>Le statut «&nbsp;ambiguë&nbsp;» sert lorsque Alain&nbsp;Robbe-Grillet  exprime de manière explicite
+            une difficulté à rejeter ou inclure tout à fait une référence comme symptomatique
+            de la modernité (objet d'éloge) ou de la tradition (objet de blâme). Cette valeur
+            sert également dans les cas où Alain&nbsp;Robbe-Grillet  se sert d'un argument proprement
+            sartrien pour critiquer Sartre (parfois désigné de manière implicite (valeur 3 de
+            mReferenceStatus) par une formule telle «&nbsp;les engagés&nbsp;» ou pléthore de synonymes désignant
+            ce que l'on qualifierait encore aujourd'hui de «&nbsp;stalinien&nbsp;»). Cette valeur marque
+            donc également l'habilité rhétorique, d'aucuns diraient la «&nbsp;mauvaise foi&nbsp;» d'Alain&nbsp;Robbe-Grillet
+            . Notons cependant que le pastiche à valeur de charge au sein de «&nbsp;Nouveau roman,
+            homme nouveau&nbsp;» n'est pas considéré comme ambiguë car l'emprunt à Sartre ici ne sert
+            qu'à renforcer encore une opposition frontale à ses thèses.</p>
+         <p>Enfin la valeur «&nbsp;indifférent&nbsp;» sert à désigner une mention qui n'est pas mobilisée
+            dans l'argumentation semblant avoir une valeur plus neutre de comparaison dénuée du
+            moindre jugement de valeur sur le référent lui-même. En effet dans les premières pages
+            du recueil Alain&nbsp;Robbe-Grillet  s'attaque à un «&nbsp;dictionnaire encyclopédique de notre
+            temps&nbsp;» pour la définition que celui-ci propose de Schönberg. Si dans ce cas, la référence
+            au musicien n'est pas tout à fait neutre (le choix de ce compositeur intellectuel
+            supposé hermétique rappelle le nouveau roman), il est difficile de rattacher le référent
+            «&nbsp;Schönberg&nbsp;» au système axiologique de l'essai&nbsp;; c'est bien le dictionnaire encyclopédique
+            qui fait l'objet d'une charge. Et si l'on devine une sympathie pour le musicien de
+            la part de Robbe-Grillet, cette sympathie est inférée par le lecteur sans être partie
+            prenante de l'argumentaire.</p>
+         <h4>Les valeurs datées de TRANSTEXTS et FIRSTPUBLICATIONS en <span class="STDitalic">string</span></h4>
+         <p>Dans le cas des dates de TRANSTEXTS constituées selon les cas d'une seule date ttDateFirst
+            (de publication) ou de deux ttDateFirst et ttDateLast (naissance et mort d'un auteur
+            ou première publication et traduction française antérieure à la publication de l'article
+            au sein duquel la référence est mobilisée). Lors de l'implémentation des données relevant
+            des dates un problèmes mineurs s'est posé à nous. Les données rentrées doivent être
+            rattachées à un <span class="STDitalic">domain</span> soit un type de valeur au sein d'une liste étendue mais fermée contenant entre autre&nbsp;:
+            date, entier, décimal etc. Or SQL pose une limite au <span class="STDitalic">domain</span> date&nbsp;: il ne permet pas d'enregistrer des dates antérieures à&nbsp;1900. Nous avons dû
+            opter pour le domaine <span class="STDitalic">string</span> car certaines dates étaient antérieures à 1900.</p>
+         <p>De même dans le cas des FIRSTPUBLICATIONS, nous avons choisi dans le modèle relationnel
+            d'utiliser le domaine <span class="STDitalic">string</span> pour l'attribut fpDate car selon la nature de la source (quotidien, mensuel, annuel)
+            la valeur de l'attribut changera de structure (10&nbsp;octobre 1957, été 1963) ne permettant
+            pas de l'inscrire comme une date (à moins de créer des dates arbitraires, ce qui n'aurait
+            à nos yeux pas de sens).</p>
+         <h4>Valeurs de l'attribut ttTitle de TRANSTEXTS</h4>
+         <p>Au sein de TRANSTEXTS nous réunissons des instances de nature diverse (les discriminer
+            est le rôle de l'attribut ttNature) pour lesquels le choix de l'attribut ttTitle peut
+            sembler étrange&nbsp;: nous nous trouvons parfois à employer cet attribut pour inscrire
+            le nom d'un concept dans la base. En effet si la dénomination de «&nbsp;titre&nbsp;» peut paraître
+            saugrenue pour des instances de nature «&nbsp;concept&nbsp;» elle nous paraissait moins arbitraire
+            que n'aurait pu l'être «&nbsp;nom&nbsp;» pour des œuvres, au demeurant l'emploi de «&nbsp;nom&nbsp;» ne
+            nous satisfaisait pas non plus pour désigner les concepts. Par ailleurs considérer
+            un concept comme un titre avait l'avantage de pouvoir plus aisément lui attribuer
+            un auteur, voire appliquer des mises à jour ultérieures sur la base dans le cas où
+            l'usage particulier que Robbe-Grillet fait de tel ou tel concept pourrait être rattaché
+            à une œuvre particulière.</p>
+         <p>Notons que dans les cas où nous reconstituons une référence non mentionnée et peu
+            sous-entendue (valeur «&nbsp;4&nbsp;» de mReferenceStatus) ou complétons pour paraphraser des
+            propos allusifs de Robbe-Grillet, nous ajoutons des crochets droits à la valeur afin
+            de noter notre intervention. Dans ces cas nous nous sommes efforcé de suivre une dénomination
+            canonique non ambiguë.</p>
+         <h2>Conclusion</h2>
+         <p>Tout au long de notre travail nous nous sommes efforcé d'employer la technique au
+            service de questions scientifiques. Et si, bien souvent, la technique interroge le
+            choix scientifique, nous nous sommes évertué à ne pas confondre questions et difficultés
+            techniques. </p>
+         <p>Sans doute, tout n'y est pas, sans doute chercher à identifier et produire toutes
+            les citations en contexte relève de l'impossible&nbsp;: Alain&nbsp;Robbe-Grillet  peut s'être
+            trompé, l'édition avoir disparu, une citation en appelle une autre, etc. Pareil projet
+            cependant se mène non en ayant à cœur de couvrir l'ouvrage entier (du moins sans s'en
+            faire l'illusion) et toute son époque, mais bien en sachant que l'on ne propose qu'une
+            lecture parmi d'autres, qui n'épuise pas l'œuvre.</p>
+      </article>
+      <footer><a href="https://www.univ-lille.fr/" target="blanck"><img src="img/logo_u_lille.png" alt="logo université de lille"></a></footer>
+   </body>
+</html>
