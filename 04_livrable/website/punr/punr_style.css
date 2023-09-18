@@ -8,6 +8,7 @@ body{
 	margin: 0;
 /*	display: flex;*/
 /*	flex-wrap: wrap;*/
+	background-color: #F2F2F2;
 }
 .darkmode{
 	background-color: #2E2E2E;
@@ -463,6 +464,7 @@ section.extract_section{
 }
 .STDitalic{
 	font-style: italic;
+	background-color: inherit;
 }
 .STDbold{
 	font-weight: bold;
