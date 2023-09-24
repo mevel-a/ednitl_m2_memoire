@@ -480,7 +480,9 @@ section.extract_section{
 .STDgray{
 	color: #666;
 }
-
+div{
+	background-color: inherit;
+}
 div.STDtop{
 	position: fixed;
 	bottom: 100px;

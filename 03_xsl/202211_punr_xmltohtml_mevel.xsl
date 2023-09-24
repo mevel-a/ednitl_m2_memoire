@@ -150,7 +150,7 @@
 <!--	template pour HEADER-->
 	<xsl:template name="header">
 		<header id="top">
-			<h1><span class="STD_italic">Pour un nouveau roman</span><br /><span class="h1_subtitle">Édition critque et numérique</span></h1>
+			<h1><span class="STD_italic">Pour un nouveau roman</span><br /><span class="h1_subtitle">Édition critique et numérique</span></h1>
 			<div class="header_div">
 				<xsl:call-template name="nav"/>
 				<div class="legals">
@@ -1915,12 +1915,12 @@ Au contraire, lorsque les deux entités sont reliées par une association dont l
 			<xsl:with-param name="title" select="'Un style polémique : des adversaires'"/>
 			<xsl:with-param name="content" select="'polemos2'"/>
 		</xsl:call-template>
-		<xsl:call-template name="body">
+	<!--	<xsl:call-template name="body">
 			<xsl:with-param name="doc" select="$bib"/>
 			<xsl:with-param name="title" select="'Bibliographie'"/>
 			<xsl:with-param name="content" select="'bib'"/>
 		</xsl:call-template>
-
+-->
 		<!--<xsl:call-template name="body">
 			<xsl:with-param name="doc" select=""/>
 			<xsl:with-param name="title" select="''"/>
